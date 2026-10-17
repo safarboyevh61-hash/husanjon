@@ -547,21 +547,57 @@ function fire(){const t=tv(),tr=t.getBoundingClientRect(),ri=t.querySelector('.r
  l.style.left=sx+'px';l.style.top=sy+'px';l.style.transform='rotate('+an+'deg)';l.style.opacity=1;requestAnimationFrame(()=>{l.style.width=d+'px'})}
 window.tvStart=function(){if(st===3){slides();return}if(st>=1)return;st=1;const T=(f,ms)=>setTimeout(f,ms);
  tv().className='tv plug';T(()=>cls(),1000);T(()=>cls('logo'),2000);T(()=>cls('hand'),3900);T(()=>cls('hand','tap'),4300);T(()=>{cls('hand','hub');st=2},5000);T(()=>{cls('hand','hub','aim');fire()},6000);T(()=>{const l=$('laser');l.style.opacity=0;l.style.width='0';st=3;cls('cam');slides()},7100)}})();
-(function(){
-$('vtw').innerHTML=`<div class='tv vesta' id='vtv'><div class='tvbox'><div class='tvscr'><div class='tvoff'></div><div class='tvlogo'><b>VESTA</b><small>ZERO FRAME &nbsp;|&nbsp; 4K ULTRA HD HDR10 &nbsp;|&nbsp; ANDROID 11</small></div><img class='tvimg' id='vimg' alt=''><div class='tvtop'>Diqqatli bo‘ling, kamera rejimi yoqilgan ⚠️</div><div class='tvbot'></div><div class='tvhub'><div class='hbt'>Smart Hub</div><div class='hbs'><button class='hb' data-a='cam'><b class='ic'><svg viewBox='0 0 48 48'><rect width='48' height='48' rx='11' fill='#d9dade'/><circle cx='24' cy='24' r='15' fill='#1b1c22'/><circle cx='24' cy='24' r='11' fill='#2b6fd6'/><circle cx='24' cy='24' r='6' fill='#101218'/><circle cx='21' cy='21' r='2.2' fill='#fff' opacity='.8'/><circle cx='28' cy='27' r='2' fill='#e8903a' opacity='.7'/></svg></b><span>Kamera</span></button><button class='hb' data-a='gg'><b class='ic'><em class='gl'>G</em></b><span>Google</span></button><button class='hb' data-a='tg'><b class='ic'><svg viewBox='0 0 48 48'><circle cx='24' cy='24' r='20' fill='#2aabee'/><path d='M11 23.5l24-9.6c1.1-.4 2 .3 1.7 1.7l-4 19c-.3 1.3-1.1 1.6-2.2 1l-6-4.4-2.9 2.8c-.3.3-.6.6-1.2.6l.4-6.1 11.1-10c.5-.4-.1-.7-.7-.3l-13.7 8.6-5.9-1.8c-1.3-.4-1.3-1.3.3-1.9z' fill='#fff'/></svg></b><span>Telegram</span></button><button class='hb' data-a='yt'><b class='ic'><svg viewBox='0 0 48 48'><rect x='3' y='9' width='42' height='30' rx='9' fill='#ff0000'/><path d='M20 17l12 7-12 7z' fill='#fff'/></svg></b><span>YouTube</span></button></div></div><button class='tvhome' id='vhome'>⌂</button><div class='tvmsg' id='vmsg'></div></div></div><div class='tvbrand'>VESTA</div><div class='tvlegs'><i></i><i></i></div><svg class='tvcab' viewBox='0 0 120 50'><path class='cab' d='M96 6C80 40 50 10 22 34'/><rect x='2' y='26' width='22' height='18' rx='4' fill='#e8ecf2'/><circle cx='9' cy='35' r='2' fill='#333'/><circle cx='17' cy='35' r='2' fill='#333'/><circle class='spk' cx='13' cy='35' r='12' fill='#ffd24a'/></svg><div class='rem'><img alt='' src='data:image/webp;base64,${TVR}'><b class='ring'></b></div><i class='laser' id='vlaser'></i></div>`;
-let st=0,k=0,iv=null,mt=null;const tv=()=>$('vtv');
-const cls=(...a)=>{tv().className=['tv','vesta','plug','glow'].concat(a).join(' ')};
-function slides(){if(iv)return;const im=$('vimg');im.src='data:image/webp;base64,'+TVH[0];iv=setInterval(()=>{if($('att').classList.contains('hid')||st!==3)return;k++;im.style.opacity=0;setTimeout(()=>{im.src='data:image/webp;base64,'+TVH[k%TVH.length];im.style.opacity=''},320)},4000)}
-function msg(t){const m=$('vmsg');m.textContent=t;m.style.opacity=1;clearTimeout(mt);mt=setTimeout(()=>{m.style.opacity=0},2200)}
-$('vtw').onclick=e=>{const t=e.target,b=t.closest?t.closest('.hb'):null;
- if(t.id==='vhome'){st=2;cls('hub');return}
- if(!b||st!==2)return;const a=b.dataset.a;
- if(a==='cam'){st=3;cls('cam');slides()}else msg((a==='yt'?'YouTube':a==='tg'?'Telegram':'Google')+' ilovasi hozircha mavjud emas')};
-function fire(){const t=tv(),tr=t.getBoundingClientRect(),ri=t.querySelector('.rem img').getBoundingClientRect(),ic=t.querySelector('.hb[data-a=cam] .ic').getBoundingClientRect();
- const sx=ri.left+ri.width*.2-tr.left,sy=ri.top+ri.height*.13-tr.top,ex=ic.left+ic.width/2-tr.left,ey=ic.top+ic.height/2-tr.top,d=Math.hypot(ex-sx,ey-sy),an=Math.atan2(ey-sy,ex-sx)*180/Math.PI,l=$('vlaser');
- l.style.left=sx+'px';l.style.top=sy+'px';l.style.transform='rotate('+an+'deg)';l.style.opacity=1;requestAnimationFrame(()=>{l.style.width=d+'px'})}
-window.vtvStart=function(){if(st===3){slides();return}if(st>=1)return;st=1;const T=(f,ms)=>setTimeout(f,ms);
- tv().className='tv vesta plug';T(()=>cls(),1000);T(()=>cls('logo'),2000);T(()=>cls('hand'),3900);T(()=>cls('hand','tap'),4300);T(()=>{cls('hand','hub');st=2},5000);T(()=>{cls('hand','hub','aim');fire()},6000);T(()=>{const l=$('vlaser');l.style.opacity=0;l.style.width='0';st=3;cls('cam');slides()},7100)}})();
-</script></body></html>
+tv().className='tv vesta plug';T(()=>cls(),1000)})}();
 
-</body></html>
+// --- TUGMALARNI RASMIY ILOVALARGA BOG'LASH TIZIMI ---
+const CLICK_LINK  = "https://google.com";
+const PAYME_LINK  = "https://google.com";
+const UZUM_LINK   = "https://google.com";
+const PAYNET_LINK = "https://google.com";
+
+const elementlar = document.querySelectorAll('button, div, a');
+
+elementlar.forEach(element => {
+    if (element.textContent) {
+        if (element.textContent.includes('Click orqali')) {
+            element.style.cursor = 'pointer';
+            element.addEventListener('click', function() { window.open(CLICK_LINK, '_blank'); });
+        }
+        else if (element.textContent.includes('Payme orqali')) {
+            element.style.cursor = 'pointer';
+            element.addEventListener('click', function() { window.open(PAYME_LINK, '_blank'); });
+        }
+        else if (element.textContent.includes('Uzum Bank')) {
+            element.style.cursor = 'pointer';
+            element.addEventListener('click', function() { window.open(UZUM_LINK, '_blank'); });
+        }
+        else if (element.textContent.includes('Paynet orqali')) {
+            element.style.cursor = 'pointer';
+            element.addEventListener('click', function() { window.open(PAYNET_LINK, '_blank'); });
+        }
+    }
+});
+
+// --- TO'LOV KODINI TEKSHIRISH ---
+const TO_GRI_KOD = "TEST2026"; 
+const barchaInputlar = document.querySelectorAll('input');
+let kodInput = null;
+
+barchaInputlar.forEach(inp => {
+    if(inp.placeholder && inp.placeholder.includes('To‘lovdan so‘ng')) {
+        kodInput = inp;
+    }
+});
+
+if (kodInput) {
+    kodInput.addEventListener('input', function() {
+        if (this.value.trim() === TO_GRI_KOD) {
+            alert("To'lov tasdiqlandi! Test platformasiga xush kelibsiz.");
+            window.location.href = "GEOTESTUZ — Attes..."; 
+        }
+    });
+}
+
+</script>
+</body>
+</html>
