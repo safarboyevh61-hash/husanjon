@@ -198,7 +198,23 @@ var GEO_RASM={
 "gx18_v16": "rasmlar/gx18_v16.webp",
 "gx18_v18": "rasmlar/gx18_v18.webp",
 "gx18_v20": "rasmlar/gx18_v20.webp",
-"gx19_v5": "rasmlar/gx19_v5.webp"
+"gx19_v5": "rasmlar/gx19_v5.webp",
+"gx22_v1": "rasmlar/gx22_v1.webp",
+"gx22_v2": "rasmlar/gx22_v2.webp",
+"gx29_v1": "rasmlar/gx29_v1.webp",
+"gx31_v1": "rasmlar/gx31_v1.webp",
+"gx34_qq": "rasmlar/gx34_qq.webp",
+"gx34_mz": "rasmlar/gx34_mz.webp",
+"gx34_ch": "rasmlar/gx34_ch.webp",
+"gx34_oz": "rasmlar/gx34_oz.webp",
+"gx34_qd": "rasmlar/gx34_qd.webp",
+"gx34_sv": "rasmlar/gx34_sv.webp",
+"gx34_us": "rasmlar/gx34_us.webp",
+"gx36_oy": "rasmlar/gx36_oy.webp",
+"gx36_er": "rasmlar/gx36_er.webp",
+"gx36_dn": "rasmlar/gx36_dn.webp",
+"gx36_pt": "rasmlar/gx36_pt.webp",
+"gx36_nx": "rasmlar/gx36_nx.webp"
 };
 
 /* ===== 1-to‘plam ===== */
@@ -886,3 +902,532 @@ GEO_OCHIQ.push(["Qanday andaza asosida tuzilgan xaritalarda burchaklar, shakllar
 GEO_OCHIQ.push(["Xarita andazalari foydalanilgan yordamchi geometrik sirtlarning turiga qarab qanday turlarga bo‘linadi?",["konussimon, silindrsimon, azimutli","teng shaklli, teng hajmli, teng maydonli","konussimon, silindrsimon, aylana","teng maydonli, teng hajmli, ixtiyoriy"],0]);
 GEO_OCHIQ.push(["Materiklar va ayrim davlatlar qanday andazada tasvirlanadi?",["azimutli","silindrsimon","konussimon","teng maydonli"],2]);
 GEO_OCHIQ.push(["Dunyo xaritalari qanday andazada tuzilgan?",["ixtiyoriy","konussimon","silindrsimon","azimutli"],2]);
+
+/* ===== 21-to‘plam ===== */
+GEO_OCHIQ.push(["Bizga eng yaqin yulduz bo‘lgan Quyoshning diametri necha million kilometrga teng?",["1,12 mln km","1,39 mln km","1,55 mln km","2,01 mln km"],1]);
+GEO_OCHIQ.push(["Quyosh sistemasining necha foizidan ortiq massasi aynan Quyoshning o‘zida to‘plangan?",["90 % dan ortiq","95 % dan ortiq","98 % dan ortiq","99 % dan ortiq"],3]);
+GEO_OCHIQ.push(["Quyosh sistemasida nechta asteroid borligi aytilgan?",["20 000 dan ortiq","30 000 dan ortiq","40 000 dan ortiq","50 000 dan ortiq"],2]);
+GEO_OCHIQ.push(["Yerning aylanish o‘qi orbita tekisligiga nisbatan necha gradus burchak hosil qiladi?",["15°","23,5°","45°","66,5°"],3]);
+GEO_OCHIQ.push(["Oyning massasi Yer massasidan necha marta kichik?",["40 marta","60 marta","81 marta","99 marta"],2]);
+GEO_OCHIQ.push(["Oy Yer atrofida ellips orbita bo‘ylab necha sutkada aylanib chiqadi?",["28,24 sutka","27,32 sutka","29,5 sutka","29,7 sutka"],1]);
+GEO_OCHIQ.push(["Quyosh sistemasida nechta yo‘ldosh mavjudligi qayd etilgan?",["100 dan ortiq","120 dan ortiq","160 dan ortiq","200 dan ortiq"],2]);
+GEO_OCHIQ.push(["Oyning o‘rtacha zichligi nechaga teng?",["5,52 g/sm³","3,34 g/sm³","1,08 g/sm³","5,97 g/sm³"],1]);
+GEO_OCHIQ.push(["Quyoshdan tarqaladigan issiqlikning qancha qismi Yerga yetib keladi?",["milliarddan bir qismi","milliarddan ikki qismi","yuz milliondan uch qismi","milliarddan besh qismi"],1]);
+GEO_OCHIQ.push(["Quyosh sistemasida taxminan nechta kometa mavjud?",["500 mingga yaqin","1 millionga yaqin","2 millionga yaqin","5 millionga yaqin"],1]);
+GEO_OCHIQ.push(["Oyning radiusi necha kilometrga teng?",["1738 km","2136 km","6378 km","6356 km"],0]);
+GEO_OCHIQ.push(["Oy Yerdan qancha masofada (o‘rtacha) uzoqlikda joylashgan?",["150 ming km","384 ming km","400 ming km","1,39 mln km"],1]);
+GEO_OCHIQ.push(["O‘rta Osiyo o‘lkasining eng shimoliy nuqtasi qaysi kenglikda va qayer yaqinida joylashgan?",["34° shimoliy kenglik, Hindukush tog‘larida","53,8° shimoliy kenglik, Ayritov yaqinida","48° shimoliy kenglik, Qo‘stanoygacha","50,3° sharqiy uzunlik, Tubqarag‘ay burnida"],1]);
+GEO_OCHIQ.push(["Yer aylanishining burchak tezligi 1 soatda necha gradusga teng?",["1° ga","15° ga","66,5° ga","360° ga"],1]);
+GEO_OCHIQ.push(["O‘lkaning (O‘rta Osiyoning) eng janubiy nuqtasi qaysi tog‘lar va tizmalar tutashgan joy (34° shimoliy kenglik)ga to‘g‘ri keladi?",["Hindukush tog‘larining g‘arbiy tarmog‘i bo‘lgan Mug‘ojar va Ustyurt tog‘lariga","Atlas va Alp tog‘lariga","Hindukush tog‘larining g‘arbiy tarmog‘i bo‘lgan Safedko‘h va Nishopur tog‘lariga","Savir va O‘rkashar tog‘lariga"],2]);
+GEO_OCHIQ.push(["12 balli seysmik shkalaning qaysi ballida bino va mebel tebranib, uyqudagi kishilar uyg‘onib ketadi?",["3 ballida","4 ballida","5 ballida","6 ballida"],2]);
+GEO_OCHIQ.push(["12 balli seysmik shkalaning «Yakson etuvchi» darajasida infratuzilmada qanday asosiy o‘zgarishlar sodir bo‘ladi?",["to‘g‘on to‘siqlari ishdan chiqadi, temiryo‘llar bukiladi, yer yuzida eni 1 m gacha yoriqlar paydo bo‘ladi","ko‘prik, to‘g‘on va temiryo‘llar butunlay buziladi, yer yuzida keng va chuqur jarliklar hosil bo‘ladi","yer yuzi qiyofasi va relyefi butunlay o‘zgaradi, daryolar o‘zanini o‘zgartiradi","A va B javoblar to‘g‘ri"],0]);
+GEO_OCHIQ.push(["12 balli seysmik shkalada «Vayron qiluvchi» deb nomlangan zilzila kuchi necha ballga teng?",["7 ballga","8 ballga","9 ballga","10 ballga"],1]);
+GEO_OCHIQ.push(["12 balli («O‘ta halokatli») zilzilaning boshqa darajalardan ajratib turuvchi asosiy tavsifi qaysi?",["g‘isht va betondan ishlangan uylarning butunlay buzilishi","yer yuzi qiyofasi, relyefining o‘zgarishi va daryolarning o‘zanini o‘zgartirishi","tog‘larda surilmalar va o‘pirilishlar yuz berishi","yer yuzida keng va chuqur jarliklarning hosil bo‘lishi"],1]);
+GEO_OCHIQ.push(["Vujudga kelishiga ko‘ra quruqlik bilan bog‘liq yotqiziqlar nima deb ataladi?",["akkumulyativ yotqiziqlar","jigarrang okean loyqasi","terrigen yotqiziqlar","qizil tusli okean gili"],2]);
+GEO_OCHIQ.push(["12 balli seysmik shkalaga ko‘ra qaysi balli zilzilada yangi ko‘llar hosil bo‘ladi?",["9 ballida","10 ballida","11 ballida","12 ballida"],1]);
+
+/* ===== 22-to‘plam ===== */
+GEO_OCHIQ.push(["Rasmda ko‘rsatilgan shamol turini aniqlang.",["Briz","Musson","Passat","Fyon"],1,"gx22_v1"]);
+GEO_OCHIQ.push(["Ushbu rasmda vulqon krateri va vulqon kanali qaysi raqamlarda ko‘rsatilgan?",["3, 2","1, 4","5, 6","5, 2"],0,"gx22_v2"]);
+GEO_OCHIQ.push(["Toshkent viloyatining qaysi tumanlari asosan sabzavot va meva yetishtirishga ixtisoslashgan?",["Yangiyo‘l, Qibray, Bo‘stonliq, Parkent","Parkent, G‘azalkent, Angren, Nurobod","Bekobod, Do‘stobod, Chinoz, Chirchiq","Piskent, Oqqo‘rg‘on, Bo‘ka, Olmaliq"],0]);
+GEO_OCHIQ.push(["Pachkamar suv ombori qaysi daryoning oqimini tartibga solish maqsadida qurilgan?",["Qashqadaryoning","G‘uzordaryoning","Oqsuvdaryoning","Tanxozdaryoning"],1]);
+GEO_OCHIQ.push(["X asrning oxirida Shimoliy Amerika materigining shimoli-sharqiy qismini va Grenlandiya orolini kim o‘rgandi?",["A. Makkenzi","Jon Kabot","G. Gudzon","Erik Rauda"],3]);
+GEO_OCHIQ.push(["To‘rg‘ay supasimon o‘lkasining janubiy qismi, Qozog‘iston past tog‘larining juda katta janubiy qismida qanday tabiat zonasi tarkib topgan?",["Dasht","Cho‘l","Chalacho‘l","Adir"],2]);
+GEO_OCHIQ.push(["Mamlakatimizdagi birinchi paxta tozalash zavodi qayerda bunyod etilgan?",["Samarqand","Toshkent","Namangan","Bekobod"],1]);
+GEO_OCHIQ.push(["Guri suv ombori qaysi daryoda barpo etilgan?",["Karuna","Volga","Niger","Missisipi"],0]);
+
+/* ===== 23-to‘plam ===== */
+GEO_OCHIQ.push(["1823–1825-yillarda Dunyo okeani bo‘ylab ekspeditsiyada marjon orollarining kelib chiqishini o‘rgangan olim kim?",["E. Lens","O. E. Kotsebu","A. Gumboldt","R. Amundsen"],1]);
+GEO_OCHIQ.push(["Okean chuqurligini o‘lchash uchun birinchi bor batometrni qo‘llagan fizik olimni toping.",["O. E. Kotsebu","A. Gumboldt","Ch. Layel","E. Lens"],3]);
+GEO_OCHIQ.push(["Afrikaning ichki qismlarini o‘rgangan tadqiqotchi kim?",["R. Piri","D. Livingston","P. P. Semyonov-Tyanshanskiy","A. Gumboldt"],1]);
+GEO_OCHIQ.push(["Kimning boshchiligida O‘rta Osiyoning ichki hududlari o‘rganilgan?",["D. Livingston","O. E. Kotsebu","F. F. Bellinsgauzen","P. P. Semyonov-Tyanshanskiy"],3]);
+GEO_OCHIQ.push(["1909-yilda Shimoliy qutbni zabt etgan sayyohni aniqlang.",["R. Amundsen","R. Piri","E. Lens","Ch. Layel"],1]);
+GEO_OCHIQ.push(["1911-yilda Janubiy qutbni birinchi bo‘lib egallagan tadqiqotchi kim?",["R. Piri","F. F. Bellinsgauzen","R. Amundsen","O. E. Kotsebu"],2]);
+GEO_OCHIQ.push(["Aleksandr Gumboldt o‘zining ko‘p yillik tadqiqot ma’lumotlarini umumlashtirib, qaysi yirik ko‘p jildlik asarlarni yozgan?",["\"Geografiya asoslari\" va \"Tabiat\"","\"Tabiat manzarasi\" va \"Kosmos\"","\"Sayohatnoma\" va \"Ekspeditsiya\"","\"Dunyo okeani\" va \"Kosmos\""],1]);
+GEO_OCHIQ.push(["Tabiatni bir butun, qat’iy qonuniyatli va uzluksiz rivojlanadigan tizim sifatida qarab, \"yangi geografiya\"ga asos solgan olim kim?",["E. Lens","O. E. Kotsebu","A. Gumboldt","Ch. Layel"],2]);
+GEO_OCHIQ.push(["Quyosh sistemasining Galaktika markazigacha bo‘lgan masofasi necha yorug‘lik yiliga teng?",["10–15 ming yorug‘lik yiliga","23–28 ming yorug‘lik yiliga","35–40 ming yorug‘lik yiliga","50–60 ming yorug‘lik yiliga"],1]);
+GEO_OCHIQ.push(["Quyosh sistemasi Galaktika markazi atrofida qanday tezlik bilan harakatlanadi?",["100–120 km/s","180–220 km/s","200–220 km/s","250–300 km/s"],2]);
+GEO_OCHIQ.push(["Quyosh sistemasi Galaktika markazi atrofida bir marta to‘liq aylanib chiqishi uchun necha million yil ketadi?",["200–220 mln yil","180–200 mln yil","200–230 mln yil","180–220 mln yil"],3]);
+GEO_OCHIQ.push(["Yerdagi tektonik sikllarning davomiyligi necha million yil deb hisoblanadi?",["100 mln yil","150 mln yil","200 mln yil","250 mln yil"],2]);
+GEO_OCHIQ.push(["Tabiat zonalligi ta’limoti qaysi olim tomonidan ishlab chiqilgan?",["Ch. Layel","V. A. Vernadskiy","V. V. Dokuchayev","A. A. Grigoryev"],2]);
+GEO_OCHIQ.push(["Kim tomonidan geografik qobiq ta’limoti ishlab chiqilgan?",["Ch. Layel","V. V. Dokuchayev","V. A. Vernadskiy","A. A. Grigoryev"],3]);
+GEO_OCHIQ.push(["Qaysi olim tomonidan biosfera ta’limoti yaratildi?",["V. A. Vernadskiy","Ch. Layel","V. V. Dokuchayev","A. A. Grigoryev"],0]);
+GEO_OCHIQ.push(["\"Kosmografiyaga kirish\" nomli asar qaysi olimga tegishli?",["S. Myunsterga","A. Gumboldtga","M. Valdzemullerga","M. Lomonosovga"],2]);
+GEO_OCHIQ.push(["\"Kosmografiya\" nomli asar qaysi olimga tegishli?",["S. Myunsterga","A. Gumboldtga","M. Valdzemullerga","A. A. Grigoryevga"],0]);
+GEO_OCHIQ.push(["\"Kosmos\" nomli asar qaysi olimga tegishli?",["S. Myunsterga","A. Gumboldtga","M. Valdzemullerga","M. Lomonosovga"],1]);
+
+/* ===== 24-to‘plam ===== */
+GEO_OCHIQ.push(["Yer po‘sti va mantiya oralig‘idagi chegarani kim aniqlagan?",["1912-yilda Andriya Moxorovichich","1909-yilda xorvat Andriya Moxorovichich","1907-yilda rus Laptevlar","1912-yilda Vegener"],1]);
+GEO_OCHIQ.push(["Mobilizm g‘oyasini ishlab chiqqan shaxsni aniqlang.",["A. Vegener 1912-yil","Moxorovichich 1909-yil","Laptevlar 1820-yil","Bretan"],0]);
+GEO_OCHIQ.push(["\"Dunyo okeani\" atamasini fanga kim kiritdi?",["Y. M. Shokalskiy 1917-yilda","Moxorovichich 1909-yilda","Vegener 1912-yilda","T.j.y"],0]);
+GEO_OCHIQ.push(["Qaysi shaxs Dunyo okeanini 5 ta qismga ajratgan?",["B. Varenius 1650-yilda","Moxorovichich 1912-yilda","Vegener 1909-yilda","Shokalskiy 1917-yilda"],0]);
+GEO_OCHIQ.push(["Afrikaning shimoliy va sharqiy sohillarini, Nil havzasini, Sahroi Kabirning g‘arbiy qismini, Niger daryosining yuqori oqimidan o‘rta oqimigacha o‘rgangan qaysi shaxs?",["Ibn Battuta","David Livingston","Yunker","Stenli"],0]);
+GEO_OCHIQ.push(["Janubiy Afrikani g‘arbdan sharqqa kesib o‘tdi. Zambezi daryosini tekshirdi, bu daryoda katta va go‘zal sharsharani topib, qirolicha Viktoriya nomi bilan atadi. Kongo daryosining yuqori oqimini, Nyasa ko‘lini, Kalaxari cho‘lini o‘rgandi. Bu qaysi shaxs?",["David Livingston","Stenli","Nikolay Vavilov","T.j.y"],0]);
+GEO_OCHIQ.push(["Qaysi shaxs Zanzibar orolini, Viktoriya ko‘lini va Nil daryosining boshlanish irmog‘i Kagera ekanligini aniqladi, Lualaba va Kongo daryolarini quyi oqimiga qadar o‘rgandi?",["G. M. Stenli","Vavilov","Ibn Battuta","Livingston"],0]);
+GEO_OCHIQ.push(["Qaysi shaxs XIX asr oxirida Markaziy va Sharqiy Afrikaga sayohat qildi, turli tadqiqotlar o‘tkazdi va qiziqarli ma’lumotlar to‘pladi?",["Vasiliy Yunker","Livingston","Ibn Battuta","Stenli"],0]);
+GEO_OCHIQ.push(["1926–1927-yillarda materikning shimoli-sharqiy qismlariga madaniy o‘simliklarni o‘rganish uchun ekspeditsiya tashkil etib, 6000 dan ortiq madaniy o‘simlik namunasini to‘plagan va Efiopiya qimmatli qattiq bug‘doy navining vatani ekanligini aniqlagan shaxs kim?",["N. Vavilov","Yunker","Stenli","Ibn Battuta"],0]);
+GEO_OCHIQ.push(["Janubiy okean deb nom bergan qaysi shaxs?",["V. Balboa","Makarov","Jak Iv Kusto","Vasko da Gama"],0]);
+GEO_OCHIQ.push(["Okeaniya orollari, aholisi haqida qiziqarli ma’lumotlar to‘pladi. Okeaniya tabiati va aholisini o‘rganishda kimning hissasi katta?",["N. N. Mikluxo-Maklay","Stenli","Yunker","Golovin, Litke"],0]);
+GEO_OCHIQ.push(["Janubiy Amerikani tekshirgan dastlabki olimlardan biri nemis geografi va sayyohi kim bo‘lgan va u fransuz botanigi qaysi shaxs bilan birga XVIII–XIX asr chegarasida materik tabiatini o‘rganish uchun ekspeditsiya uyushtirdi?",["A. Gumboldt","E. Bonplan","A va B","A. Rubsov"],2]);
+GEO_OCHIQ.push(["XIX asr boshlarida va XX asr boshlarida rossiyalik qaysi shaxslar Janubiy Amerikaga ekspeditsiya uyushtirib, qimmatli ma’lumotlar to‘plashdi?",["N. Rubsov","G. Langsdorf","N. Vavilov","A, B, C"],3]);
+GEO_OCHIQ.push(["XV asr oxirida qaysi shaxs Nyufaundlend orolini va Labrador yarimorolini kashf qildi?",["Jon Kabot","Gudzon","Makkenzi","A. Chirikov"],0]);
+GEO_OCHIQ.push(["Angliyalik dengizchi va sayyohlar XVIII asrda materikning sharqiy va shimoliy qismlarini o‘rgandi. XX asrda qaysi shaxs materikning shimoliy qirg‘oqlarini birinchi bo‘lib o‘rgandi va Yerning shimoliy magnit qutbining geografik o‘rnini aniqladi?",["G. Gudzon","A. Makkenzi","R. Amundsen","Aleksey Chirikov","A, B, C"],4]);
+GEO_OCHIQ.push(["XVIII asr o‘rtalarida qaysi shaxslar Aleut orollari bo‘ylab suzishdi?",["Vitus Bering","Aleksey Chirikov","A va B","Grigoriy Shelexov"],2]);
+GEO_OCHIQ.push(["Qaysi shaxs rus manzilgohiga asos soldi?",["Grigoriy Shelexov","Bering","Chukotka","Vityaz"],0]);
+GEO_OCHIQ.push(["Qaysi shaxs \"qayrilgan dengiz\" nomini bergan?",["Pifey","Gerodot","Ptolemey","Eratosfen"],0]);
+GEO_OCHIQ.push(["Yunoncha \"Borey\" – shimoldagi shamollar xudosi deb kim atagan?",["Giperborey","Pifey","Aristotel","Eratosfen"],0]);
+GEO_OCHIQ.push(["Okeanni o‘rganishda kimlar tashkil etgan ekspeditsiyalar muhim ahamiyatga ega bo‘ldi? Shuningdek, qaysi shaxslar Shimoliy qutbni birinchi bo‘lib zabt etdi (1903–1906-y., 1918–1920-y.) va boshqa qimmatli ma’lumotlar to‘pladi?",["Pyotr Lomonosov","Shved olimi Nordenshyold","Nansen, Makarov","Amundsen, Piri","Hammasi"],4]);
+GEO_OCHIQ.push(["Qaysi rus sayyohi yevropaliklardan birinchi bo‘lib Tyanshanga ikki marta sayohat qilgan, Markaziy Osiyodagi Tyanshan tog‘larining chegarasini, undagi balandlik mintaqalarini birinchi aniqlagan va bu yerda qor chegarasi Alp tog‘laridan baland ekanligini qayd etgan?",["Semyonov-Tyanshanskiy","Stenli","Gudzon","Arafur"],0]);
+
+/* ===== 25-to‘plam ===== */
+GEO_OCHIQ.push(["Rivojlangan mamlakatlarda aholi jon boshiga YaIM necha AQSH dollaridan ortiq bo‘lishi kerak?",["15 000","20 000","25 000","30 000"],2]);
+GEO_OCHIQ.push(["Jahon mamlakatlari iqtisodiy rivojlanish darajasiga ko‘ra nechta yirik blokka bo‘linadi?",["2 ta","3 ta","4 ta","5 ta"],1]);
+GEO_OCHIQ.push(["2020-yil ma’lumotlariga ko‘ra, rivojlanayotgan mamlakatlarda qancha aholi yashaydi?",["4,5 mlrd kishi","5,5 mlrd kishi","6,5 mlrd kishi","7,5 mlrd kishi"],2]);
+GEO_OCHIQ.push(["2020-yil ma’lumotlariga ko‘ra, Qatar aholi jon boshiga to‘g‘ri keladigan YaIM miqdori bo‘yicha jahonda nechanchi o‘rinni egallagan?",["2-o‘rin","3-o‘rin","4-o‘rin","5-o‘rin"],2]);
+GEO_OCHIQ.push(["2020-yil ma’lumotlariga ko‘ra, Qatarda aholi jon boshiga YaIM miqdori necha AQSH dollarini tashkil etgan?",["42 154","48 947","63 078","89 949"],3]);
+GEO_OCHIQ.push(["AQSH aholi jon boshiga YaIM ko‘rsatkichi bo‘yicha dunyoda nechanchi o‘rinda turadi?",["2-o‘rin","9-o‘rin","15-o‘rin","25-o‘rin"],0]);
+GEO_OCHIQ.push(["AQSHning aholi soni necha million kishi?",["38,2","83,2","126,0","329,9"],3]);
+GEO_OCHIQ.push(["Kanadaning umumiy maydoni necha ming km²?",["377,9","9984,6","357,4","9519,4"],1]);
+GEO_OCHIQ.push(["Yaponiyaning aholi soni necha million kishini tashkil etadi?",["126,0","38,2","377,9","83,2","329,9"],0]);
+GEO_OCHIQ.push(["Insoniyat tarixida ma’lumotlarga ko‘ra, jami necha mingdan ortiq urushlar ro‘y bergan?",["10 mingdan ortiq","14 mingdan ortiq","20 mingdan ortiq","70 mingdan ortiq"],1]);
+GEO_OCHIQ.push(["XX asrdagi Ikkinchi jahon urushida jami qancha kishi qurbon bo‘lgan?",["14 milliondan ziyod","24 milliondan ziyod","48 milliondan ziyod","70 milliondan ziyod"],3]);
+GEO_OCHIQ.push(["Hozirgi kunda dunyoda necha milliardgacha kishi ocharchilikka duch kelmoqda?",["1 milliarddan ortiq","1,2 milliardgacha","1,5 milliardgacha","1,7 milliardgacha"],1]);
+GEO_OCHIQ.push(["Dunyoda qancha aholining o‘rtacha umr ko‘rishi 60 yoshga yetmaydi?",["1 milliarddan ortiq","1,2 milliardgacha","1,5 milliardgacha","1,7 milliarddan ortiq"],3]);
+GEO_OCHIQ.push(["Necha milliard odamning tibbiy xizmatlardan foydalanish imkoniyati umuman yo‘q?",["1 milliarddan ortiq","1,2 milliardgacha","1,5 milliard","1,7 milliarddan ortiq"],2]);
+GEO_OCHIQ.push(["Dunyoda qancha odam o‘ta kambag‘al turmush kechirmoqda?",["200 milliondan ortiq","800 milliondan ziyod","1 milliarddan ortiq","1,7 milliarddan ortiq"],2]);
+GEO_OCHIQ.push(["Dunyoda necha milliondan ortiq bola maktab ta’limini olmayapti?",["24 milliondan ortiq","34 milliondan ortiq","48 milliondan ortiq","200 milliondan ortiq"],3]);
+GEO_OCHIQ.push(["Jahonda qancha kishi mutloq savodsiz (yozish va o‘qishni bilmaydi)?",["200 milliondan ortiq","800 milliondan ziyod","1 milliarddan ortiq","1,2 milliardgacha"],1]);
+GEO_OCHIQ.push(["BMTning eng sust rivojlangan mamlakatlar ro‘yxati dastlab qaysi yilda tuzilgan?",["1961-yilda","1971-yilda","2014-yilda","2017-yilda"],1]);
+GEO_OCHIQ.push(["BMTning sust rivojlangan davlatlar ro‘yxatiga dastlab nechta davlat kiritilgan edi?",["11 davlat","24 davlat","34 davlat","48 davlat"],1]);
+GEO_OCHIQ.push(["2014-yil holatiga ko‘ra sust rivojlangan 48 ta mamlakatdan nechtasi Afrika qit’asida joylashgan?",["1 tasi","4 tasi","9 tasi","34 tasi"],3]);
+
+/* ===== 26-to‘plam ===== */
+GEO_OCHIQ.push(["2014-yilgi holatga ko‘ra BMTning sust rivojlangan mamlakatlar ro‘yxatida nechta davlat qayd qilingan?",["24 davlat","34 davlat","48 davlat","93 davlat"],2]);
+GEO_OCHIQ.push(["Sust rivojlangan 48 ta mamlakatdan nechtasi Osiyoda joylashgan?",["1 tasi","4 tasi","9 tasi","34 tasi"],2]);
+GEO_OCHIQ.push(["Eng sust rivojlangan davlatlardan nechtasi Okeaniyada joylashgan?",["1 tasi","4 tasi","9 tasi","34 tasi"],1]);
+GEO_OCHIQ.push(["Lotin Amerikasidan eng sust rivojlangan mamlakatlar toifasiga nechta davlat kiritilgan?",["1 ta","4 ta","9 ta","34 ta"],0]);
+GEO_OCHIQ.push(["Sust rivojlangan mamlakatlar toifasida jahon aholisining necha foizdan ortig‘i yashaydi?",["9 foizdan ortig‘i","11 foizdan ortig‘i","24 foizdan ortig‘i","34 foizdan ortig‘i"],1]);
+GEO_OCHIQ.push(["Dunyoda jami necha milliardga yaqin odamlar yetarli darajada oziq-ovqat mahsulotlarini iste’mol qila olmayotganlar hisoblanadi?",["1,1 milliardga yaqin","1,2 milliardga yaqin","1,5 milliardga yaqin","2,1 milliardga yaqin"],1]);
+GEO_OCHIQ.push(["Energetika muammosini hal etishda ko‘pchilik mutaxassislar fikricha, asosan nechta yo‘nalishdagi harakatlar bilan bog‘liq chora-tadbirlar ko‘rilishi lozim?",["2 ta","3 ta","4 ta","5 ta"],0]);
+
+/* ===== 27-to‘plam ===== */
+GEO_OCHIQ.push(["\"Okrug keskin kontinental iqlim xususiyatiga ega bo‘lib, qishi quruq va sovuq, yozi issiq va quruq, sovuq bo‘lmaydigan kunlar O‘zbekiston bo‘yicha eng qisqa, tabiiy geografik okrugida doimiy oqar suvlar yo‘q. O‘simligi, asosan, shuvoq va sho‘ralardan iborat\". Matndagi ma’lumotlar qaysi tabiiy geografik okrugga oid ekanligini aniqlang.",["Quyi Amudaryo","Ustyurt","Qizilqum","Quyi Zarafshon"],1]);
+GEO_OCHIQ.push(["Qashqadaryo tabiiy geografik okrugining iqlimiga oid ma’lumotni toping.",["Tabiiy geografik okrugning yozi issiq, quruq va davomli, qishi nisbatan iliq. Okrug shimol va sharq tomondan tog‘lar bilan o‘ralgan. Bu esa Arktika va Sibirdan keladigan sovuq havo massalarining yo‘lini to‘sadi. Aksincha, g‘arbiy qismi ochiq bo‘lib, mo‘tadil dengiz va subtropik havo massalarining to‘siqsiz kirib kelishiga imkon beradi.","Okrug iqlimi O‘zbekiston tekislik qismiga o‘xshash bo‘lib, qishi sovuq, yozi issiq va quruq, yog‘in kam. Okrug janubda joylashganligidan hamda shimol, shimoli sharqdan tog‘lar bilan o‘ralganligidan qishda havo haddan tashqari sovib ketmaydi.","Okrugning tekislikdan iborat ekanligi va janubida tog‘ tizmalarining mavjudligi natijasida iqlimi o‘ziga xosdir. Qishda Arktika va Sibir sovuq havo massalari bemalol to‘siqsiz tekislikka kirib keladi. Bu sovuq havo massalari okrug janubidagi tog‘lardan o‘ta olmay, tekislik qismida to‘planadi.","Okrug qisqa va beqaror qish bilan, quruq, seroftob, jazirama yoz bilan tavsiflanadi. Qishda okrug hududiga shimoldan sovuq, quruq shamollarning esishi tufayli hamma qismida yanvarning o‘rtacha harorati 0°C dan past bo‘ladi."],0]);
+GEO_OCHIQ.push(["Yerosti suvlari har xil davr yotqiziqlari orasida uchraydi. Paleogen va neogen davri yotqiziqlari orasidagi 140–150 m chuqurdan chuchuk suv chiqadi. Bo‘r davri yotqiziqlari orasidagi 1000–2000 m chuqurdan chiquvchi mineral shifobaxsh suv harorati +60…+70°C ga yetadi. Matndagi ma’lumotlar qaysi tabiiy geografik okrugga oid ekanligini aniqlang.",["Surxondaryo","Quyi Zarafshon","Qizilqum","O‘rta Zarafshon"],0]);
+GEO_OCHIQ.push(["O‘rta Zarafshon tabiiy geografik okrugiga oid ma’lumotlarni aniqlang.",["Okrug tektonik botiqda joylashib, negizi paleozoy erasi ohaktosh slaneslaridan iborat bo‘lib, uning ustini mezozoy va kaynazoy eralarining cho‘kindi jins hamda mergellari, gillari va qumtoshlari qoplab olgan.","Okrugning vodiy qismi sharqdan g‘arb tomonga pasayib boradi. Vodiysining o‘ziga xos xususiyati shundaki, u goh kengayadi, goh torayadi. Yerusti tuzilishi yassi tekislikdan iborat.","Tog‘lari gersin burmalanishida ko‘tarilgan, hozirgi relyefi yangi tektonik harakatlar natijasida shakllangan. Tektonik botiq daryo yotqiziqlari bilan qoplangan. Tog‘oldi qismida konussimon yoyilmalar keng tarqalgan.","Tog‘li qismi kaynozoy erasida burmalangan bo‘lib, kristalli slanes, ohaktosh, marmar, granit kabi jinslardan tarkib topgan. Tog‘larida karst jarayoni rivojlangan."],1]);
+GEO_OCHIQ.push(["Qashqadaryo tabiiy geografik okrugiga oid ma’lumotlarni aniqlang.",["Paleogen davrida dengiz suvining chekinishi tufayli quruqlikka aylangan, so‘ngra daryo o‘zanini yuvib, chuqurlashtirib, qator qayirlar hosil qilgan.","Okrugning vodiy qismi sharqdan g‘arb tomonga pasayib boradi. Vodiysining o‘ziga xos xususiyati shundaki, u goh kengayadi, goh torayadi.","Tog‘lari gersin burmalanishida ko‘tarilgan, hozirgi relyefi yangi tektonik harakatlar natijasida shakllangan. Tektonik botiq daryo yotqiziqlari bilan qoplangan. Tog‘oldi qismida konussimon yoyilmalar tarqalgan.","Tog‘li qismi paleozoy erasida burmalangan bo‘lib, kristalli slanes, ohaktosh, marmar, granit kabi jinslardan tarkib topgan. Tog‘larida karst jarayoni rivojlangan."],3]);
+GEO_OCHIQ.push(["Hudud, asosan, gersin tog‘ hosil bo‘lish jarayonida ko‘tarilib, so‘nggi tektonik jarayonlar ta’sirida turli katta-kichik yo‘nalishdagi yer yoriqlari vujudga kelgan. Bu okrugda yangi tektonik jarayon hozir ham davom etayotganligi tufayli zilzilalar bo‘lib turadi. Bu qaysi okrug ekanligini toping.",["O‘rta Zarafshon","Qizilqum","Chirchiq-Ohangaron","Quyi Zarafshon"],2]);
+GEO_OCHIQ.push(["\"Okrug qisqa va beqaror qish bilan, quruq, seroftob, jazirama yoz bilan tavsiflanadi. Okrugda ba’zan qishda Sibir antisiklonining kirib qolishi va Arktika havo massasining u bilan bir davrga to‘g‘ri kelishi tufayli harorat –20…–25°C gacha pasayadi. Aksincha, yozda havo qizib, eng yuqori harorat +44…+45°C ga ko‘tariladi\". Matndagi ma’lumotlar qaysi tabiiy geografik okrug iqlimiga oid ekanligini aniqlang.",["Quyi Amudaryo","Mirzacho‘l","Qizilqum","Quyi Zarafshon"],3]);
+GEO_OCHIQ.push(["Qaysi okrugda yaylovlardan noto‘g‘ri foydalanish, o‘simliklarga nisbatan noto‘g‘ri munosabatda bo‘lish, yerlarni noto‘g‘ri sug‘orilishi tufayli shamol va irrigatsiya eroziyalari sodir bo‘lmoqda?",["Quyi Amudaryo","Mirzacho‘l","Qizilqum","O‘rta Zarafshon"],3]);
+GEO_OCHIQ.push(["\"Okrugning tekislik qismida yillik yog‘in miqdori 200–350 mm atrofida bo‘lib, tog‘larga tomon orta boradi. Okrugning janubiy qismidagi tog‘larning shimoliy yonbag‘rida yillik o‘rtacha yog‘in miqdori 350–400 mm ni tashkil etadi. Sharqidagi tog‘ tizmasining shimoliy yonbag‘rida esa 600 mm dan ortadi. Tog‘larda qor ko‘p yog‘adi, uning qalinligi 50 sm dan 1 m gacha yetadi\". Matndagi ma’lumotlar qaysi tabiiy geografik okrugga oid ekanligini aniqlang.",["Surxondaryo","Mirzacho‘l","Qashqadaryo","O‘rta Zarafshon"],1]);
+GEO_OCHIQ.push(["Quyi Zarafshon tabiiy geografik okrugiga oid ma’lumotlarni aniqlang.",["Okrug shimoli sharqdan janubi g‘arbga taxminan 170 km cho‘zilgan bo‘lib, shu yo‘nalishda pasayib boradi. Shakliga ko‘ra vodiy uchburchakka o‘xshash. Uning janubi-g‘arbiy qismi keng bo‘lib, 110–115 km ga, shimoli sharqi tor bo‘lib, 15–20 km ga teng.","Okrugda eng ko‘p tarqalgan jinslar to‘rtlamchi davrga xos bo‘lib, ular genetik jihatdan daryo, vaqtincha oqar suvlar, ko‘l va shamol natijasida vujudga kelgan shag‘al, qum, qumoq, lyoss gillaridan iborat. Vohalari atrofida esa eol yo‘l bilan vujudga kelgan qumliklar joylashgan.","Tog‘lari gersin burmalanishida ko‘tarilgan, hozirgi relyefi yangi tektonik harakatlar natijasida shakllangan. Tektonik botiq daryo yotqiziqlari bilan qoplangan. Tog‘oldi qismida konussimon yoyilmalar tarqalgan.","Tog‘li qismi kaynozoy erasida burmalangan bo‘lib, kristalli slanes, ohaktosh, marmar, granit kabi jinslardan tarkib topgan. Tog‘larida karst jarayoni rivojlangan."],1]);
+GEO_OCHIQ.push(["\"Yog‘in okrug bo‘yicha notekis taqsimlangan, eng kam yog‘in tekislik qismining janubi g‘arbiga to‘g‘ri kelib, 250–300 mm bo‘lsa, shimoli sharq tomon ortib borib, 550 mm dan tog‘ tizmalarining nam havoga ro‘para yonbag‘irlariga 2000 mm gacha yog‘in tushadi\". Qaysi okrug iqlimiga xos ekanligini toping.",["Chirchiq-Ohangaron","Mirzacho‘l","Qashqadaryo","O‘rta Zarafshon"],0]);
+GEO_OCHIQ.push(["\"Okrugning yer yuzasi bir xil emas. U janubi-sharqdan shimoli g‘arbga tomon pasayib boradi. Okrugning geologik tuzilishi jihatidan ham bir xil emas. Uning janubidagi tog‘ tizmalari paleozoy erasining gersin tog‘ hosil bo‘lishi jarayonida ko‘tarilgan. Alp tog‘ hosil bo‘lish jarayonida o‘sha pasaygan tog‘lar qayta ko‘tarilib, dengiz suvi chekinib, okrugning tekislik qismi ham quruqlikka aylangan\". Ushbu ta’rif qaysi tabiiy geografik okrug geologik tuzilishiga xos ekanligini toping.",["Mirzacho‘l","Chirchiq-Ohangaron","O‘rta Zarafshon","Qashqadaryo"],0]);
+GEO_OCHIQ.push(["Ustyurt tabiiy geografik okrugiga oid ma’lumotlarni aniqlang.",["O‘zbekistonda eng kam yog‘in tushadigan joy","Sovuq bo‘lmaydigan kunlar O‘zbekiston bo‘yicha eng qisqa","O‘zbekiston bo‘yicha vegetatsiya davridagi ijobiy haroratlar yig‘indisi eng yuqori","O‘zbekiston bo‘yicha eng yuqori harorat kuzatilgan"],1]);
+GEO_OCHIQ.push(["Farg‘ona tabiiy geografik okrugiga oid ma’lumotlarni aniqlang.",["Paleogen davrida dengiz suvining chekinishi tufayli quruqlikka aylangan, so‘ngra daryo o‘zanini yuvib, chuqurlashtirib, qator qayirlar hosil qilgan.","Okrugning vodiy qismi sharqdan g‘arb tomonga pasayib boradi. Vodiysining o‘ziga xos xususiyati shundaki, u goh kengayadi, goh torayadi.","Tog‘lari gersin burmalanishida ko‘tarilgan, hozirgi relyefi yangi tektonik harakatlar natijasida shakllangan. Tektonik botiq daryo yotqiziqlari bilan qoplangan. Tog‘oldi qismida konussimon yoyilmalar keng tarqalgan.","Tog‘li qismi kaynozoy erasida burmalangan bo‘lib, kristalli slanes, ohaktosh, marmar, granit kabi jinslardan tarkib topgan. Tog‘larida karst jarayoni rivojlangan."],2]);
+GEO_OCHIQ.push(["Orol tabiiy geografik okrugiga oid ma’lumotlar berilgan javobni toping.",["Hududida 2005-yilda 50 ming km² qo‘shimcha quruqlik hosil bo‘ldi. Okrugda may oyidan boshlab shimoli g‘arbdan, g‘arbdan esuvchi havo massasi ta’sirida havo isib, yog‘ingarchilik boshlanadi. Okrugga yiliga o‘rtacha 80–100 mm atrofida yog‘in yog‘ib, uning 45 foizi bahorga, 10–11 foizi yozga to‘g‘ri keladi.","Okrugda o‘rtacha yillik yog‘in miqdori 80–100 mm. Bunga asosiy sabab, okeanlardan uzoqda, yerusti tekis, yozgi haroratining yuqoriligidir. Yog‘in, asosan, bahorga to‘g‘ri keladi. Chunki bu davrlarda g‘arbdan va shimoli-g‘arbdan nam havo massalari esib turadi. Qor qoplami uncha qalin emas, lekin mumkin bo‘lgan bug‘lanish yog‘inga nisbatan 20 marta ko‘p.","Okrugga yog‘in kam tushadi, uning o‘rtacha yillik miqdori 100–120 mm. Yog‘inni, asosan, g‘arbiy va shimoli g‘arbiy havo massalari olib keladi. Eng ko‘p yog‘in bahorga, eng kami qishga to‘g‘ri keladi. Qor juda kam yog‘ib, izg‘irinli shamollar uni uchirib ketishi natijasida yer yuzasi muzlaydi.","Okrug hududida yoz jazirama issiq, quruq bo‘ladi. Yillik yog‘in miqdori 75–100 mm atrofida bo‘ladi. Yog‘inning asosiy qismi bahorda va qishda tushadi. Lekin mumkin bo‘lgan bug‘lanish 1000–1500 mm ga yetadi."],0]);
+GEO_OCHIQ.push(["\"Okrugning markaziy qismi botiqdan iborat bo‘lib, nisbatan tekis. Botiqning markaziy qismida cho‘llar bo‘lib, qum relyef shakllari — do‘nglar, o‘simlik bilan mustahkamlangan tepaliklar va kichik ko‘chib yuruvchi qumlik (barxan)lar mavjud. Hozir o‘sha qum do‘nglari va tepaliklarning ko‘p qismi tekislanib, ekinzorlarga aylantirilgan\". Bu qaysi okrug ekanligini toping.",["Qashqadaryo","Qizilqum","Farg‘ona","Quyi Zarafshon"],2]);
+GEO_OCHIQ.push(["Farg‘ona tabiiy geografik okrugiga oid ma’lumotlar berilgan javobni toping.",["Okrug tektonik botiqda joylashib, neogen davrining oxiri va quyi antropogen davrida dengizdan bo‘shab, quruqlikka aylangan. So‘ngra atrofidagi tog‘lardan boshlanadigan daryolar olib kelgan qum, gil, lyossimon jinslar bilan qoplangan.","Okrug Turon plitasining cho‘kkan qismida joylashib, neogen davrida dengiz suvining chekinishi tufayli quruqlikka aylangan, so‘ngra daryo o‘zanini yuvib, chuqurlashtirib, qator qayirlar hosil qilgan. Bu qayirlar gil, qumoq va lyossimon jinslardan tashkil topgan.","Okrug tektonik botiqda joylashib, negizi paleozoy erasi ohaktosh slaneslaridan iborat bo‘lib, uning ustini mezozoy va kaynazoy eralarining cho‘kindi jins hamda mergellari, gillari va qumtoshlari qoplab olgan.","Okrug geologik tuzilishi jihatidan bir xil emas. Uning janubidagi tog‘ tizmalari paleozoy erasining gersin tog‘ hosil bo‘lishi jarayonida ko‘tarilgan. Bu davrda okrugning tekislik qismi dengiz suvi ostida bo‘lgan. So‘ngra ko‘tarilgan tog‘lar yemirilib pasaygan, natijada, ularning quyi qismlarini dengiz suvi bosgan."],0]);
+GEO_OCHIQ.push(["\"Botaniklar bu tabiiy geografik okrug tog‘laridagi o‘simliklarni o‘rganish jarayonida, 2500 m dan yuqoridagi subalp va alp o‘tloqlarida mushukquyruq, taran, qiziltikan, Alp lolasi kabi o‘simliklar borligini aniqlashdi\". Bu qaysi okrug ekanligini toping.",["Qashqadaryo","Chirchiq-Ohangaron","Farg‘ona","O‘rta Zarafshon"],1]);
+GEO_OCHIQ.push(["Quyi Amudaryo tabiiy geografik okrugiga oid ma’lumotlar berilgan javobni toping.",["Okrug yer yuzasi tuzilishi jihatidan janubi sharqdan shimoli g‘arbga qarab pasayib boradi. Uning o‘rtacha mutlaq balandligi 200–300 m bo‘lsa, janubi sharqida 350–400 m, shimoli g‘arbida esa 100 m ga tushib qoladi.","Okrug janubi sharqdan shimoli g‘arb tomonga cho‘zilgan bo‘lib, shu tomon kengayib, pasayib boradi. Okrug negizida bo‘r davri yotqiziqlari joylashgan. Uning ustilarini paleogen, neogen va antropogen alluvial yotqiziqlari qoplab olgan.","Okrug tektonik botiqda joylashib, negizi paleozoy erasi ohaktosh slaneslaridan iborat bo‘lib, uning ustini mezozoy va kaynazoy eralarining cho‘kindi jins hamda mergellari, gillari va qumtoshlari qoplab olgan.","Eng ko‘p tarqalgan jinslar to‘rtlamchi davrga xos bo‘lib, ular genetik jihatdan Zarafshon daryosi, vaqtincha oqar suvlar, ko‘l va shamol natijasida vujudga kelgan shag‘al, qum, qumoq, lyoss gillaridan iborat."],1]);
+GEO_OCHIQ.push(["\"Yerusti tuzilishi jihatidan eng yosh tekislik bo‘lib, eol qumliklari va sho‘rxoklardan iborat. Eol qumliklari barxanlardan, egri-bugri shakldagi qumliklardan iborat bo‘lib, sho‘rxoklar orasida chuqurligi 0–1 m ga yetuvchi botiqchalar mavjud. Okrugga yiliga o‘rtacha 80–100 mm atrofida yog‘in yog‘ib, uning 45 foizi bahorga, 10–11 foizi yozga to‘g‘ri keladi\". Bu qaysi okrug ekanligini toping.",["Ustyurt","Orol","Quyi Amudaryo","Qizilqum"],1]);
+GEO_OCHIQ.push(["\"Okrug tekislik qismining 200–300 m chuqurliklarida chuchuk suv qatlami, 1500–3000 m chuqurliklarda esa mineral termik suv qatlami mavjudligi aniqlangan\". Qaysi okrugga xos ekanligini toping.",["Chirchiq-Ohangaron","Mirzacho‘l","Qashqadaryo","O‘rta Zarafshon"],1]);
+GEO_OCHIQ.push(["\"Okrugda eng ko‘p tarqalgan jinslar to‘rtlamchi davrga xos bo‘lib, ular genetik jihatdan daryo, vaqtincha oqar suvlar, ko‘l va shamol natijasida vujudga kelgan shag‘al, qum, qumoq, lyoss gillaridan iborat. Vohalari atrofida esa eol yo‘l bilan vujudga kelgan qumliklar joylashgan\". Qaysi okrugga xos ekanligini toping.",["Quyi Zarafshon","Mirzacho‘l","Quyi Amudaryo","O‘rta Zarafshon"],0]);
+GEO_OCHIQ.push(["Mirzacho‘l tabiiy geografik okrugiga tegishli bo‘lgan ma’lumotlarni toping.",["O‘lkaning 300–500 m balandliklarida och tusli bo‘z tuproqlar (chirindi miqdori 1–1,5 foiz), 500–800 m balandliklarda oddiy bo‘z tuproq (chirindi miqdori 1,5–2,5 foiz) tarqalgan.","Okrugning 350–400 m balandlikkacha bo‘lgan tekisliklarida och bo‘z tuproqlar tarqalib, chirindi miqdori 1,5–1,7 foiz, 350–400 m dan baland bo‘lgan tog‘oldi tekisliklarida esa tipik bo‘z tuproqlar joylashib, chirindi miqdori 1,7–2,5 foizga boradi.","Okrug tekislik qismi atroflaridagi nisbatan baland joylarda och bo‘z tuproq keng tarqalgan. Adirlarda esa oddiy va to‘q bo‘z tuproqlar uchraydi. Bu tuproq turlari 1200 m gacha bo‘lgan baland joylarda tarqalgan.","Okrugda geografik o‘rniga ko‘ra, och va tipik bo‘z tuproqlar tarqalgan bo‘lib, ular orasidagi chegara taxminan 450 m mutlaq balandlikdan o‘tadi. Okrugning asosiy qismini sug‘oriladigan och bo‘z va bo‘z-o‘tloq tuproqlar egallagan."],3]);
+GEO_OCHIQ.push(["Quyidagi ma’lumotlar qaysi tabiiy geografik okrugga tegishli ekanligini aniqlang.<br>— okrug negizi paleozoy erasi ohaktosh slaneslaridan iborat;<br>— okrugda nisbatan ko‘p tarqalgan jinslar kaynozoy erasining yotqiziqlari hisoblanadi;<br>— okrugning 1000–1500 m chuqurliklarida issiq mineral suvlar mavjud;<br>— okrugda eng ko‘p tarqalgan o‘simlik turi shuvoq hisoblanadi.",["Quyi Amudaryo","O‘rta Zarafshon","Qizilqum","Quyi Zarafshon"],3]);
+GEO_OCHIQ.push(["Farg‘ona tabiiy geografik okrugi adir o‘simliklari berilgan qatorni toping.",["Qo‘ng‘irbosh, bug‘doyiq, kakra, bo‘tako‘z, marmarak, sariqchoy, butalardan do‘lana, tog‘olcha, achchiq bodom uchraydi.","Adirlarda bahorda rang, qo‘ng‘irbosh, shaytonkavush o‘sadi, ular yozda qurib qoladi, so‘ngra oq kavrak, oq shuvoq, qizil burgan, chalov o‘sishni davom ettiradi.","Adirda ko‘proq efemer o‘simliklar hamda shuvoq, kavrak, qo‘ziquloq, bir yillik astragal, javdar, bug‘doyiq kabilar mavjud.","Adirlarida shuvoq, burg‘un, bug‘doyiq, kavrak, oqquray, qo‘ziquloq, qurg‘oqchil va toshloq yerlarda bir yillik astragal, chiy kabilar o‘sadi."],1]);
+GEO_OCHIQ.push(["\"Okrugning 1200–2500 m balandliklarida qo‘ng‘ir tog‘-o‘rmon va jigarrang tog‘-o‘rmon tuproqlari tarqalgan bo‘lib, uning tarkibida chirindi miqdori 10 foizga boradi\". Matnda berilgan ma’lumotlar qaysi okrugga oid ekanligini toping.",["O‘rta Zarafshon","Chirchiq-Ohangaron","Farg‘ona","Mirzacho‘l"],1]);
+GEO_OCHIQ.push(["\"Okrugni har ikki tomonidan o‘rab turgan tog‘lar esa paleozoy erasining ohaktosh, kristall va slanes kabi tog‘ jinslaridan tarkib topgan. Bu jinslar gersin tog‘ hosil bo‘lish jarayonida burmalangan\". Matnda berilgan ma’lumotlar qaysi okrugga oid ekanligini toping.",["Chirchiq-Ohangaron","O‘rta Zarafshon","Surxondaryo","Mirzacho‘l"],1]);
+
+/* ===== 28-to‘plam ===== */
+GEO_OCHIQ.push(["Qaysi sanada Quyosh 23,5° shimoliy kenglikda qoq tepa (zenit)da bo‘ladi?",["22-dekabr","21-mart","22-iyun","22-iyul"],2]);
+GEO_OCHIQ.push(["Qaysi sanalarda Quyosh Shimoliy va Janubiy yarimsharni bir xilda yoritadi va isitadi?",["20-mart, 22-sentabr","21-mart, 21-sentabr","21-mart, 23-sentabr","21-mart, 22-sentabr"],2]);
+GEO_OCHIQ.push(["Qaysi sanadan boshlab Quyosh Yerning Shimoliy yarimshar qismida asta-sekin yuqoriga ko‘tarila boshlaydi?",["21-mart","23-sentabr","22-dekabr","22-mart"],2]);
+GEO_OCHIQ.push(["Qaysi sanada Quyosh Shimoliy yarimsharda eng baland ko‘tariladi?",["22-dekabr","21-mart","22-iyun","23-sentabr"],2]);
+GEO_OCHIQ.push(["23,5° shimoliy kenglikdan o‘tgan parallel chizig‘i qanday ataladi?",["ekvator","Shimoliy tropik","Janubiy tropik","Shimoliy qutbiy doira"],1]);
+GEO_OCHIQ.push(["Quyosh 22-dekabr kuni qaysi kenglikda tik tepadan o‘tadi?",["23,5° janubiy kenglikdan","23,5° shimoliy kenglikdan","66,5° janubiy kenglikdan","66,5° shimoliy kenglikdan"],0]);
+GEO_OCHIQ.push(["Janubiy yarimshardagi 23,5° dan o‘tgan parallel chizig‘i nima deyiladi?",["Janubiy qutbiy doira","Shimoliy tropik","Janubiy tropik","Shimoliy qutbiy doira"],2]);
+GEO_OCHIQ.push(["22-iyun kuni qaysi geografik kenglikda bir sutka – 24 soat davomida Quyosh botmaydi?",["23,5° shimoliy kenglikda","66,5° janubiy kenglikda","23,5° janubiy kenglikda","66,5° shimoliy kenglikda"],3]);
+GEO_OCHIQ.push(["Qaysi sanada 66,5° janubiy kenglikda bir sutka – 24 soat davomida Quyosh botmaydi?",["23-sentabr","22-dekabr","21-mart","22-iyul"],1]);
+GEO_OCHIQ.push(["21-mart, 23-sentabr sanalarida Quyosh Yerning qaysi qismida zenit (qoq tepa)da bo‘ladi?",["23,5° shimoliy kenglikda","66,5° shimoliy kenglikda","23,5° janubiy kenglikda","Ekvator chizig‘ida"],3]);
+GEO_OCHIQ.push(["Migratsiya necha xil bo‘ladi?",["2 xil","3 xil","4 xil","5 xil"],0]);
+GEO_OCHIQ.push(["O‘zbekistonda 2018-yil holatiga ko‘ra tabiiy o‘sish necha ming kishini tashkil etadi?",["513,6 ming kishini","613,6 ming kishini","714,6 ming kishini","655,6 ming kishini"],1]);
+GEO_OCHIQ.push(["O‘zbekistonda 2016-yil holatiga ko‘ra aholining o‘rtacha umr davomiyligi necha yoshni tashkil etadi?",["73,8 yoshni","76,2 yoshni","71,4 yoshni","75,1 yoshni"],0]);
+GEO_OCHIQ.push(["O‘zbekistonda 2016-yil holatiga ko‘ra aholining o‘rtacha umr davomiyligi ayollarda necha yoshni tashkil etadi?",["71,4 yoshni","73,8 yoshni","76,2 yoshni","75,1 yoshni"],2]);
+GEO_OCHIQ.push(["O‘zbekistonda 2018-yil holatiga ko‘ra mexanik ko‘payish har ming kishi hisobiga necha kishini tashkil etadi?",["−10,2 kishini","−12,2 kishini","−14,2 kishini","−16,2 kishini"],3]);
+GEO_OCHIQ.push(["O‘zbekistonda 1991-yil qancha bola tug‘ilgan?",["723,4 ming","701,9 ming","513 ming","716 ming"],0]);
+GEO_OCHIQ.push(["O‘zbekistonda 2001-yil qancha bola tug‘ilgan?",["723,4 ming","701,9 ming","716 ming","513 ming"],3]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi nechanchi yili 24,4 mln kishiga yetgan?",["1990-yilda","2000-yilda","2008-yilda","1980-yilda"],1]);
+GEO_OCHIQ.push(["O‘zbekistonda 2018-yil holatiga ko‘ra immigratsiya har ming kishiga necha kishini tashkil etadi?",["2,1 kishini","2,5 kishini","2,6 kishini","2,8 kishini"],3]);
+GEO_OCHIQ.push(["O‘zbekistonda 2018-yil holatiga ko‘ra emigratsiya har ming kishiga necha kishini tashkil etadi?",["17 kishini","18 kishini","19 kishini","20 kishini"],2]);
+
+/* ===== 29-to‘plam ===== */
+GEO_OCHIQ.push(["Osiyodagi qaysi davlat BMT tomonidan alohida o‘tish iqtisodiyotidagi davlatlar guruhiga kiritiladi?",["Xitoy","Yaponiya","Mongoliya","Koreya"],2]);
+GEO_OCHIQ.push(["Sharqiy Yevropadagi qaysi davlatlar BMT tomonidan alohida o‘tish iqtisodiyotidagi davlatlar guruhiga kiritiladi?",["Slovakiya, Bolgariya","Malta, Italiya","Andorra, Belgiya","Daniya, Norvegiya"],0]);
+GEO_OCHIQ.push(["Quyidagi qaysi davlatlar BMT tomonidan alohida o‘tish iqtisodiyotidagi davlatlar guruhiga kiritiladi?<br>1) Vengriya; 2) Italiya; 3) Chexiya; 4) Daniya; 5) Finlandiya; 6) Lyuksemburg; 7) Polsha; 8) Meksika; 9) Irlandiya.",["2, 4, 8","1, 5, 9","2, 6, 9","1, 3, 7"],3]);
+GEO_OCHIQ.push(["Siyosiy boshqaruvning nechta asosiy shakli ajratiladi?",["2 ta","3 ta","4 ta","5 ta"],0]);
+GEO_OCHIQ.push(["Respublika boshqaruv shaklining keng tarqalishi nechanchi asrga to‘g‘ri keladi?",["XIX asrning boshiga","XIX asrning ikkinchi yarmiga","XX asrning boshiga","XX asrning ikkinchi yarmiga"],3]);
+GEO_OCHIQ.push(["2018-yil holatiga ko‘ra, jahonning siyosiy xaritasida nechta respublika davlatlari mavjud?",["130 ta","140 ta","150 ta","160 ta"],2]);
+GEO_OCHIQ.push(["Respublikalar asosan nechta turga bo‘linadi?",["2 ta","3 ta","4 ta","5 ta"],1]);
+GEO_OCHIQ.push(["Prezidentlik respublikalariga qaysi davlatlar misol bo‘la oladi?",["Meksika, Argentina","Germaniya, Avstriya","Isroil, Hindiston","Misr, Nikaragua"],0]);
+GEO_OCHIQ.push(["Amerika qit’asida joylashgan boshqaruv shakli prezidentlik respublika bo‘lgan davlatlarni toping.",["Kanada, Beliz","Yamayka, Sent-Lyusiya","AQSH, Braziliya","Sent-Kits va Nevis, Barbados"],2]);
+GEO_OCHIQ.push(["Quyidagi variantlardan boshqaruv shakli prezidentlik respublika bo‘lgan davlatlarni belgilang.",["Italiya, Bolgariya","Qozog‘iston, O‘zbekiston","Estoniya, Latviya","Hindiston, Pokiston"],1]);
+GEO_OCHIQ.push(["Quyidagi qaysi variantda boshqaruv shakli prezidentlik respublika bo‘lgan davlat berilgan?",["Gretsiya","Ummon","Belarus","Avstriya"],2]);
+GEO_OCHIQ.push(["Davlatlarning prezidentlik respublikasi boshqaruv shakli eng ko‘p qaysi qit’alarda tarqalgan?",["Antarktidada","Osiyo va Yevropada","Avstraliya va Okeaniyada","Afrika va Amerikada"],3]);
+GEO_OCHIQ.push(["Quyidagi qaysi variantda boshqaruv shakli prezidentlik respublika bo‘lgan davlat berilgan?",["Italiya","Indoneziya","Portugaliya","Jazoir","Misr"],1]);
+GEO_OCHIQ.push(["Ekvator uzunligi 1:80 000 000 masshtabli xaritada necha santimetrga teng bo‘ladi?",["30 sm","40 sm","50 sm","60 sm"],2]);
+GEO_OCHIQ.push(["Quyidagi rasmda berilgan sonlarga javoblarni to‘g‘ri joylashtiring.",["1. Gidrosfera 2. Biosfera 3. Litosferaning g‘ovak pastki qismi","1. Litosferaning yuqori qismi 2. Biosfera 3. Gidrosfera","1. Biosfera 2. Litosferaning yuqori qismi 3. Gidrosfera","1. Gidrosfera 2. Biosfera 3. Litosferaning yuqori qismi"],3,"gx29_v1"]);
+GEO_OCHIQ.push(["Modda va energiya almashinishi jarayonining bo‘lib turishi geografik qobiqning nechanchi xususiyati hisoblanadi?",["1-chi","2-chi","3-chi","4-chi"],1]);
+GEO_OCHIQ.push(["Geografik qobiqning nechta asosiy xususiyati mavjud?",["2 ta","3 ta","4 ta","5 ta"],1]);
+GEO_OCHIQ.push(["Litosfera, gidrosfera, atmosfera va biosferaning doimiy o‘zaro ta’siri geografik qobiqning nechanchi asosiy xususiyati hisoblanadi?",["1-chi","2-chi","3-chi","4-chi"],0]);
+GEO_OCHIQ.push(["Atmosferadagi namning to‘liq yangilanishi uchun qancha vaqt kerak bo‘ladi?",["30 kun","10 yil","3000 yil","10 kun"],3]);
+
+/* ===== 30-to‘plam ===== */
+GEO_OCHIQ.push(["Geografik qobiqning o‘rtacha qalinligi qancha?",["30–35 km","35–40 km","40–45 km","50–55 km"],0]);
+GEO_OCHIQ.push(["Geografik qobiqda organik hayot, jumladan insoniyat jamiyatining mavjudligi uning nechanchi asosiy xususiyatiga kiradi?",["1-chi","2-chi","3-chi","Hamma javob to‘g‘ri"],2]);
+
+/* ===== 31-to‘plam ===== */
+GEO_OCHIQ.push(["Quyidagi rasmda Kanberra shahrida (uning geografik koordinatasi 35° janubiy kenglik, 149° sharqiy uzunlik) Quyoshning A holatdagi ko‘rinishi qaysi sanaga to‘g‘ri keladi?",["22-dekabrga","23-sentabrga","21-martga","22-iyunga"],0,"gx31_v1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda Nyu-York shahrida (uning geografik koordinatasi 40° shimoliy kenglik, 75° g‘arbiy uzunlik) Quyoshning A holatdagi ko‘rinishi qaysi sanaga to‘g‘ri keladi?",["21-mart","22-iyun","23-sentabr","22-dekabr"],1,"gx31_v1"]);
+GEO_OCHIQ.push(["Shimoliy yarimsharda bahorgi va kuzgi teng kunlik qaysi sanalarga to‘g‘ri keladi?",["20-mart, 22-sentabr","21-mart, 21-sentabr","21-mart, 23-sentabr","21-mart, 22-sentabr"],2]);
+GEO_OCHIQ.push(["Shimoliy yarimsharda Quyoshning qishki turish kuni qaysi sanaga to‘g‘ri keladi?",["21-mart","22-iyul","23-sentabr","22-dekabr"],3]);
+GEO_OCHIQ.push(["Quyosh qaysi sanada Shimoliy yarimsharda ufq ustida eng baland ko‘tariladi, kunduz uzun, tun esa qisqa bo‘ladi?",["21-martda","22-iyulda","22-dekabrda","22-iyunda"],3]);
+GEO_OCHIQ.push(["Qaysi sanada Shimoliy yarimsharda kunduz eng qisqa, tun esa eng uzun bo‘ladi?",["23-sentabrda","22-iyulda","22-dekabrda","22-iyunda"],2]);
+GEO_OCHIQ.push(["Qutbiy doiralar qaysi geografik kengliklardan o‘tkaziladi?",["23,5° shimoliy va janubiy kengliklar","56,5° shimoliy va janubiy kengliklar","66,5° shimoliy va janubiy kengliklar","76,5° shimoliy va janubiy kengliklar"],2]);
+GEO_OCHIQ.push(["Tropik chiziqlar qaysi geografik kengliklardan o‘tkaziladi?",["23,5° shimoliy va janubiy kengliklar","56,5° shimoliy va janubiy kengliklar","66,5° shimoliy va janubiy kengliklar","76,5° shimoliy va janubiy kengliklar"],0]);
+GEO_OCHIQ.push(["Quyidagi masshtablardan sonli masshtablarni ajrating:<br>1) 1:25 000; 2) 1 sm da 35 km; 3) 1 sm da 400 m; 4) 1:2 000 000; 5) 1 sm da 560 km.",["1 va 3","2, 3 va 5","1 va 4","2 va 5"],2]);
+GEO_OCHIQ.push(["Quyidagi masshtablardan nomli masshtablarni ajrating:<br>1) 1:30 000; 2) 1 sm da 25 km; 3) 1:40 000; 4) 1:2 000 000; 5) 1 sm da 560 km.",["1 va 3","2 va 5","1 va 4","2 va 3"],1]);
+GEO_OCHIQ.push(["1:100 000 masshtabni nomli masshtabga aylantiring.",["1 sm da 100 m","1 sm da 1 km","1 sm da 10 km","1 sm da 100 km"],1]);
+GEO_OCHIQ.push(["1 sm da 700 m qanday masshtab turiga kiradi?",["Sonli masshtab","Chiziqli masshtab","Nomli masshtab","Harfli masshtab"],2]);
+GEO_OCHIQ.push(["1:250 000 masshtabni nomli masshtabga aylantiring.",["1 sm da 2,5 km","1 sm da 25 km","1 sm da 250 km","1 sm da 25 000 m"],0]);
+GEO_OCHIQ.push(["Daryo uzunligi 1200 km ga teng. Xaritada bu masofa 4 sm bo‘lsa, xarita masshtabini toping.",["1:20 000 000","1:30 000 000","1:25 000 000","1:15 000 000"],1]);
+GEO_OCHIQ.push(["Xaritada 3,5 sm bo‘lgan masofa joyda 175 km bo‘lsa, xarita masshtabini aniqlang.",["1:50 000","1:500 000","1:5 000 000","1:50 000 000"],2]);
+
+/* ===== 32-to‘plam ===== */
+GEO_OCHIQ.push(["Xaritada 6 sm bo‘lgan masofa joyda 300 km bo‘lsa, xarita masshtabini aniqlang.",["1:50 000","1:500 000","1:5 000 000","1:50 000 000"],2]);
+GEO_OCHIQ.push(["1:2 500 000 masshtabda 8 sm chizilgan masofa joyda necha kilometrga teng?",["80 km","20 km","800 km","200 km"],3]);
+GEO_OCHIQ.push(["1 sm da 500 m qanday masshtab turiga kiradi?",["Nomli masshtab","Chiziqli masshtab","Sonli masshtab","Harfli masshtab"],0]);
+GEO_OCHIQ.push(["2017-yil holatiga ko‘ra Qatar davlatida YaIM aholi jon boshiga qanchadan to‘g‘ri kelgan?",["110 588 AQSH dollari","117 940 AQSH dollari","120 395 AQSH dollari","124 740 AQSH dollari"],3]);
+GEO_OCHIQ.push(["Quyidagi qaysi davlatlar yirik industrial-agrar mamlakatlar guruhiga kiritiladi?<br>1) Indoneziya; 2) Xitoy; 3) Eron; 4) Yangi Zelandiya; 5) Belgiya; 6) Ummon; 7) Turkiya; 8) Shveysariya; 9) Bruney.",["1, 3, 7","2, 5, 8","2, 4, 6","1, 7, 9"],0]);
+GEO_OCHIQ.push(["2018-yilda O‘zbekistonda tug‘ilganlar soni necha ming kishini tashkil etgan?",["19,0 ming kishi","154,7 ming kishi","613,6 ming kishi","768,3 ming kishi"],3]);
+GEO_OCHIQ.push(["O‘zbekistonda 2018-yilgi o‘lim ko‘rsatkichi necha ming kishini tashkil qiladi?",["19,0 ming kishi","154,7 ming kishi","768,3 ming kishi","613,6 ming kishi"],1]);
+GEO_OCHIQ.push(["2018-yilda mamlakatga ko‘chib kelganlar (immigratsiya) soni necha ming kishini tashkil etgan?",["2,8 ming kishi","−16,2 ming kishi","19 ming kishi","613,6 ming kishi"],0]);
+GEO_OCHIQ.push(["2018-yilda emigratsiya (ko‘chib ketganlar) va immigratsiya (ko‘chib kelganlar) o‘rtasidagi mexanik ko‘payish balansi qanday bo‘lgan (ming kishi)?",["+16,2 ming kishi","−19,0 ming kishi","−16,2 ming kishi","+2,8 ming kishi"],2]);
+GEO_OCHIQ.push(["2010-yilda jami aholining o‘rtacha umr davomiyligi necha yoshni tashkil etgan?",["70,6 yoshni","73,0 yoshni","75,1 yoshni","71,8 yoshni"],1]);
+GEO_OCHIQ.push(["2000-yilda erkaklar va ayollarning o‘rtacha umr davomiyligi o‘rtasidagi farq necha yoshga teng bo‘lgan?",["2,4 yoshga","3,6 yoshga","4,8 yoshga","5,2 yoshga"],2]);
+GEO_OCHIQ.push(["1991-yilda O‘zbekistonda ayollarning o‘rtacha umr davomiyligi necha yoshni tashkil etgan?",["64,4 yosh","66,4 yosh","69,4 yosh","71,7 yosh"],2]);
+GEO_OCHIQ.push(["2016-yilda erkaklarning o‘rtacha umr davomiyligi 1991-yilga nisbatan qanchaga oshgan?",["5,0 yilga","6,2 yilga","7,0 yilga","8,5 yilga"],2]);
+
+/* ===== 33-to‘plam ===== */
+GEO_OCHIQ.push(["Nechanchi yillargacha sotsialistik tuzum asosida rivojlangan, keyinchalik esa undan voz kechgan Sharqiy Yevropa davlatlari (Polsha, Chexiya, Slovakiya, Vengriya, Bolgariya) hamda Mongoliya BMT tomonidan alohida o‘tish iqtisodiyotidagi davlatlar blokiga birlashtirildi?",["1990-yillargacha","1991-yillargacha","1992-yillargacha","1993-yillargacha"],0]);
+GEO_OCHIQ.push(["Quyidagi davlatlardan qaysilari 1973-yilda Yevropa Ittifoqiga (o‘sha paytdagi hamjamiyatga) a’zo bo‘lgan?",["Gretsiya, Irlandiya, Daniya","Irlandiya, Daniya, Buyuk Britaniya","Avstriya, Irlandiya, Daniya","Ispaniya, Daniya, Buyuk Britaniya"],1]);
+GEO_OCHIQ.push(["Buyuk Britaniyaning Yevropa Ittifoqi tarkibidan to‘liq ajralib chiqishi qaysi yilda yuz berdi?",["2013-yilda","2016-yilda","2017-yilda","2020-yilda"],3]);
+GEO_OCHIQ.push(["1957-yilda imzolangan shartnomaga ko‘ra, qaysi tashkilotlar tashkil etilgan?",["Yevropa Ittifoqi va Mustaqil Davlatlar Hamdo‘stligi","Yevropa iqtisodiy hamkorligi va atom energiyasi bo‘yicha Yevropa hamjamiyati","Shanxay hamkorlik tashkiloti va \"Shanxay beshligi\"","Yevropa ko‘mir va temir ishlab chiqaruvchilar birlashmasi"],1]);
+GEO_OCHIQ.push(["2017-yilda qaysi davlatlar Shanxay hamkorlik tashkilotining (SHHT) teng huquqli a’zolariga aylanishdi?",["Rossiya va Xitoy","Hindiston va Pokiston","Mongoliya va Afg‘oniston","Tojikiston va Qirg‘iziston"],1]);
+GEO_OCHIQ.push(["Quyidagi davlatlardan qaysi biri 2004-yilda Yevropa Ittifoqiga a’zo bo‘lgan?",["Ruminiya","Polsha","Xorvatiya","Bolgariya"],1]);
+GEO_OCHIQ.push(["1986-yilda qaysi davlatlar Yevropa Ittifoqiga a’zo bo‘lishgan?",["Buyuk Britaniya, Daniya, Irlandiya","Avstriya, Shvetsiya, Finlyandiya","Ispaniya, Portugaliya","Ruminiya, Bolgariya"],2]);
+GEO_OCHIQ.push(["1995-yilda Yevropa Ittifoqiga a’zo bo‘lgan davlatlar qatori to‘g‘ri ko‘rsatilgan javobni aniqlang.",["Polsha, Chexiya, Vengriya","Kipr, Malta, Xorvatiya","Slovakiya, Sloveniya, Litva","Avstriya, Shvetsiya, Finlyandiya"],3]);
+GEO_OCHIQ.push(["Shanxay hamkorlik tashkiloti (SHHT) qaysi yildan boshlab va qaysi davlat a’zo bo‘lganidan so‘ng hozirgi rasmiy nomini oldi?",["1996-yil, Xitoy","2001-yil, O‘zbekiston","2017-yil, Hindiston","2004-yil, Qozog‘iston"],1]);
+GEO_OCHIQ.push(["2004-yilda bir vaqtning o‘zida eng ko‘p davlat Yevropa Ittifoqi tashkilotiga a’zo bo‘lgan. Quyidagilardan qaysi biri o‘sha davlatlar qatoriga kirmaydi?",["Vengriya, Slovakiya, Sloveniya","Ruminiya, Bolgariya, Xorvatiya","Kipr, Malta, Polsha","Litva, Latviya, Estoniya"],1]);
+GEO_OCHIQ.push(["Ruminiya va Bolgariya davlatlari nechanchi yilda Yevropa Ittifoqi tashkilotiga a’zo bo‘lishgan?",["2004-yilda","2007-yilda","2013-yilda","2016-yilda"],1]);
+GEO_OCHIQ.push(["Xorvatiya davlati Yevropa Ittifoqi tashkilotiga nechanchi yilda a’zo bo‘lgan?",["2004-yilda","2007-yilda","2013-yilda","2017-yilda"],2]);
+GEO_OCHIQ.push(["Buyuk Britaniyada Yevropa Ittifoqi tarkibidan chiqish bo‘yicha referendum nechanchi yilda o‘tkazilgan?",["2004-yilda","2013-yilda","2016-yilda","2017-yilda"],2]);
+GEO_OCHIQ.push(["MDH tashkilotiga nechanchi yilda asos solingan va u o‘z faoliyatini qachondan boshlagan?",["1991-yil 8-dekabrda asos solingan, 1991-yil 21-dekabrda boshlagan","1991-yil 21-dekabrda asos solingan, 1992-yil 1-yanvarda boshlagan","1996-yil 26-aprelda asos solingan, 2001-yilda boshlagan","1991-yil 8-dekabrda asos solingan, 1995-yilda boshlagan"],0]);
+GEO_OCHIQ.push(["Yevropa ko‘mir va temir ishlab chiqaruvchilar birlashmasi nechanchi yilda tashkil etilgan?",["1951-yilda","1957-yilda","1967-yilda","1973-yilda"],0]);
+GEO_OCHIQ.push(["2001-yilda qaysi davlat tashkilotga a’zo bo‘lganidan so‘ng, uning hozirgi rasmiy nomdagi tashkilot tuzilganligi haqidagi deklaratsiyasi e’lon qilindi?",["Qozog‘iston","O‘zbekiston","Hindiston","Rossiya"],1]);
+GEO_OCHIQ.push(["\"Shanxay beshligi\" nechanchi yilda va qaysi shaharda imzolangan kelishuv bilan bog‘liq holda shakllangan?",["2001-yil, Toshkent shahri","1996-yil 26-aprel, Shanxay shahri","2017-yil, Dehli shahri","1991-yil 21-dekabr, Olmaota shahri"],1]);
+GEO_OCHIQ.push(["Gretsiya nechanchi yilda Yevropa Ittifoqiga a’zo bo‘lgan?",["1973-yilda","1981-yilda","1986-yilda","1995-yilda"],1]);
+GEO_OCHIQ.push(["Hozirgi kunda SHHT yig‘ilishlarida ishtirok etuvchi muloqot hamkor, kuzatuvchi va nomzod davlatlar soni mos ravishda nechta?",["4 ta muloqot hamkor, 4 ta kuzatuvchi, 2 ta nomzod davlat","6 ta muloqot hamkor, 4 ta kuzatuvchi, 2 ta nomzod davlat","6 ta muloqot hamkor, 2 ta kuzatuvchi, 4 ta nomzod davlat","2 ta muloqot hamkor, 6 ta kuzatuvchi, 4 ta nomzod davlat"],1]);
+
+/* ===== 34-to‘plam ===== */
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 1 raqami bilan ko‘rsatilgan tog‘ni aniqlang.",["Quljuqtov","Bo‘kantov","Tomditov","Sulton Uvays"],1,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 2 raqami bilan ko‘rsatilgan tog‘ni aniqlang.",["Sulton Uvays","Quljuqtov","Tomditov","Bo‘kantov"],0,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 3 raqami bilan ko‘rsatilgan tog‘ni aniqlang.",["Quljuqtov","Ovminzatov","Tomditov","Bo‘kantov"],2,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 4 raqami bilan ko‘rsatilgan tog‘ni aniqlang.",["Ovminzatov","Tomditov","Bo‘kantov","Quljuqtov"],0,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 5 raqami bilan ko‘rsatilgan tog‘ni aniqlang.",["Tomditov","Quljuqtov","Ovminzatov","Sulton Uvays"],1,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 1 raqami bilan ko‘rsatilgan tog‘ning eng baland nuqtasi necha metr?",["785 m","974 m","473 m","764 m"],3,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 2 raqami bilan ko‘rsatilgan tog‘ning eng baland nuqtasi necha metr?",["785 m","695 m","764 m","473 m"],3,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 3 raqami bilan ko‘rsatilgan tog‘ning eng baland nuqtasi necha metr?",["473 m","695 m","785 m","974 m"],3,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 4 raqami bilan ko‘rsatilgan tog‘ning eng baland nuqtasi necha metr?",["974 m","695 m","785 m","473 m"],1,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Qizilqum tabiiy geografik okrugi tasvirlangan. 5 raqami bilan ko‘rsatilgan tog‘ning eng baland nuqtasi necha metr?",["695 m","473 m","764 m","785 m"],3,"gx34_qq"]);
+GEO_OCHIQ.push(["Qizilqum tabiiy geografik okrugidagi qoldiq tog‘lardan eng balandi qaysi?",["Sulton Uvays (473 m)","Tomditov (974 m)","Ovminzatov (695 m)","Bo‘kantov (764 m)"],1,"gx34_qq"]);
+GEO_OCHIQ.push(["Qizilqum tabiiy geografik okrugidagi qoldiq tog‘lar orasida joylashgan botiqlar qatorini toping.",["Mingbuloq, Qoraxotin, Mullali, Oyoqog‘itma","Aydar, Arnasoy, Tuzkon, Sardoba","Dalvarzin, Mirzacho‘l, Qarshi, Sherobod","Sariqamish, Asaka-ovdan, Borsakelmas, Sudochye"],0,"gx34_qq"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. 1 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Nurota tizmasi","Morguzar tog‘i","Qo‘ytosh tog‘lari","Turkiston tizmasi"],0,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. 2 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Nurota tizmasi","Turkiston tizmasi","Qo‘ytosh tog‘lari","Morguzar tog‘i"],2,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. 3 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Morguzar tog‘i","Nurota tizmasi","Turkiston tizmasi","Qo‘ytosh tog‘lari"],0,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. 4 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Morguzar tog‘i","Turkiston tizmasi","Qo‘ytosh tog‘lari","Nurota tizmasi"],1,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. I raqami bilan ko‘rsatilgan ko‘lni aniqlang.",["Tuzkon ko‘li","Sariqamish ko‘li","Aydar ko‘li","Arnasoy ko‘li"],2,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. II raqami bilan ko‘rsatilgan ko‘lni aniqlang.",["Aydar ko‘li","Arnasoy ko‘li","Tuzkon ko‘li","Sariqamish ko‘li"],2,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. III raqami bilan ko‘rsatilgan ko‘lni aniqlang.",["Arnasoy ko‘li","Tuzkon ko‘li","Aydar ko‘li","Sariqamish ko‘li"],0,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Mirzacho‘l tabiiy geografik okrugi tasvirlangan. Jizzax shahri yonidan oqib o‘tuvchi daryoni aniqlang.",["Zarafshon","Chirchiq","Sangzor","Qashqadaryo"],2,"gx34_mz"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 1 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Ugom","Piskom","Qurama","Qorjontov"],3,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 2 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Chotqol","Qurama","Qorjontov","Ugom"],3,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 3 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Piskom","Ko‘ksuv","Qorjontov","Ugom"],0,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 4 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Qorjontov","Ko‘ksuv","Piskom","Ugom"],1,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 5 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Qorjontov","Piskom","Qurama","Chotqol"],3,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 6 raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Ugom","Qurama","Piskom","Ko‘ksuv"],1,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 1 raqami bilan ko‘rsatilgan tizmaning eng baland cho‘qqisini aniqlang.",["Mingbuloq (2834 m)","Beshtor (4299 m)","Boboiob (3769 m)","Katta Chimyon (3309 m)"],0,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 2 raqami bilan ko‘rsatilgan tizmaning eng baland cho‘qqisini aniqlang.",["Mingbuloq (2834 m)","Sayram (4236 m)","Katta Chimyon (3309 m)","Beshtor (4299 m)"],1,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 3 raqami bilan ko‘rsatilgan tizmaning eng baland cho‘qqisini aniqlang.",["Beshtor (4299 m)","Boboiob (3769 m)","Katta Chimyon (3309 m)","Sayram (4236 m)"],0,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 5 raqami bilan ko‘rsatilgan tizmaning eng baland cho‘qqisini aniqlang.",["Boboiob (3769 m)","Mingbuloq (2834 m)","Sayram (4236 m)","Katta Chimyon (3309 m)"],3,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada Chirchiq-Ohangaron tabiiy geografik okrugi tasvirlangan. 6 raqami bilan ko‘rsatilgan tizmaning eng baland cho‘qqisini aniqlang.",["Boboiob (3769 m)","Beshtor (4299 m)","Katta Chimyon (3309 m)","Sayram (4236 m)"],0,"gx34_ch"]);
+GEO_OCHIQ.push(["Chirchiq-Ohangaron tabiiy geografik okrugidagi tizmalarning eng baland cho‘qqisi qaysi?",["Sayram (4236 m)","Boboiob (3769 m)","Katta Chimyon (3309 m)","Beshtor (4299 m)"],3,"gx34_ch"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. I raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Turkiston tizmasi","Ziyovuddin tog‘i","Nurota tizmasi","Qo‘ytosh tog‘lari"],2,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. II raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Qo‘ytosh tog‘lari","Turkiston tizmasi","Ziyovuddin tog‘i","Zarafshon tizmasi"],0,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. III raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Nurota tizmasi","Morguzar tog‘i","Ziyovuddin tog‘i","Turkiston tizmasi"],1,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. IV raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Zirabuloq tog‘i","Zarafshon tizmasi","Ziyovuddin tog‘i","Qo‘ytosh tog‘lari"],2,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. V raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Nurota tizmasi","Turkiston tizmasi","Zarafshon tizmasi","Zirabuloq tog‘i"],3,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. VI raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Nurota tizmasi","Zarafshon tizmasi","Zirabuloq tog‘i","Turkiston tizmasi"],1,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. VII raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Nurota tizmasi","Zarafshon tizmasi","Qo‘ytosh tog‘lari","Turkiston tizmasi"],3,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. Ko‘k rang bilan ko‘rsatilgan suv omborini aniqlang.",["Tolimarjon suv ombori","Kattaqo‘rg‘on suv ombori","Chimqo‘rg‘on suv ombori","Pachkamar suv ombori"],1,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada O‘rta Zarafshon tabiiy geografik okrugi tasvirlangan. Okrug hududida tasvirlangan daryolar qatorini toping.",["Chirchiq, Ohangaron","Qashqadaryo, G‘uzordaryo","Zarafshon, Oqdaryo, Qoradaryo","Sangzor, Zarafshon, Sirdaryo"],2,"gx34_oz"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. I raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Chaqchar tizmasi","Ziyovuddin tog‘i","Zirabuloq tog‘i","Zarafshon tizmasi"],1,"gx34_qd"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. II raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Chaqchar tizmasi","Zirabuloq tog‘i","Ziyovuddin tog‘i","Zarafshon tizmasi"],1,"gx34_qd"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. III raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Zirabuloq tog‘i","Hisor tizmasi","Zarafshon tizmasi","Chaqchar tizmasi"],2,"gx34_qd"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. IV raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Zirabuloq tog‘i","Hisor tizmasi","Zarafshon tizmasi","Chaqchar tizmasi"],1,"gx34_qd"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. V raqami bilan ko‘rsatilgan tog‘ tizmasini aniqlang.",["Chaqchar tizmasi","Hisor tizmasi","Zarafshon tizmasi","Zirabuloq tog‘i"],0,"gx34_qd"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. Okrug hududida tasvirlangan daryolar qatorini toping.",["Chirchiq, Ohangaron","Sangzor, Qoradaryo","Qashqadaryo, G‘uzordaryo","Zarafshon, Oqdaryo"],2,"gx34_qd"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. 1 raqami bilan ko‘rsatilgan suv omborini aniqlang.",["Pachkamar suv ombori","Chimqo‘rg‘on suv ombori","Tolimarjon suv ombori","Kattaqo‘rg‘on suv ombori"],1,"gx34_sv"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. 2 raqami bilan ko‘rsatilgan suv omborini aniqlang.",["Tolimarjon suv ombori","Kattaqo‘rg‘on suv ombori","Pachkamar suv ombori","Chimqo‘rg‘on suv ombori"],2,"gx34_sv"]);
+GEO_OCHIQ.push(["Xaritada Qashqadaryo tabiiy geografik okrugi tasvirlangan. 3 raqami bilan ko‘rsatilgan suv omborini aniqlang.",["Tolimarjon suv ombori","Kattaqo‘rg‘on suv ombori","Pachkamar suv ombori","Chimqo‘rg‘on suv ombori"],0,"gx34_sv"]);
+GEO_OCHIQ.push(["Xaritada Ustyurt tabiiy geografik okrugi tasvirlangan. 1 raqami bilan ko‘rsatilgan obyektni aniqlang.",["Qorabovur qirlari","Sariqamish ko‘li","Borsakelmas sho‘rxoki","Asaka-ovdan botig‘i"],1,"gx34_us"]);
+GEO_OCHIQ.push(["Xaritada Ustyurt tabiiy geografik okrugi tasvirlangan. 2 raqami bilan ko‘rsatilgan obyektni aniqlang.",["Asaka-ovdan botig‘i","Orol dengizi","Borsakelmas sho‘rxoki","Qorabovur qirlari"],0,"gx34_us"]);
+GEO_OCHIQ.push(["Xaritada Ustyurt tabiiy geografik okrugi tasvirlangan. 3 raqami bilan ko‘rsatilgan obyektni aniqlang.",["Asaka-ovdan botig‘i","Borsakelmas sho‘rxoki","Sudochye ko‘li","Qorabovur qirlari"],3,"gx34_us"]);
+GEO_OCHIQ.push(["Xaritada Ustyurt tabiiy geografik okrugi tasvirlangan. 4 raqami bilan ko‘rsatilgan obyektni aniqlang.",["Orol dengizi","Sariqamish ko‘li","Qorabovur qirlari","Borsakelmas sho‘rxoki"],3,"gx34_us"]);
+GEO_OCHIQ.push(["Xaritada Ustyurt tabiiy geografik okrugi tasvirlangan. 5 raqami bilan ko‘rsatilgan obyektni aniqlang.",["Sariqamish ko‘li","Qorabovur qirlari","Borsakelmas sho‘rxoki","Orol dengizi"],3,"gx34_us"]);
+GEO_OCHIQ.push(["Xaritada Ustyurt tabiiy geografik okrugi tasvirlangan. 6 raqami bilan ko‘rsatilgan obyektni aniqlang.",["Qorabovur qirlari","Borsakelmas sho‘rxoki","Sariqamish ko‘li","Sudochye ko‘li"],3,"gx34_us"]);
+
+/* ===== 35-to‘plam ===== */
+GEO_OCHIQ.push(["O‘zbekiston Respublikasining aholisi 2019-yil holatiga ko‘ra necha kishidan ortgan?",["34,8 mln","27,9 mln","33,2 mln","31,1 mln"],2]);
+GEO_OCHIQ.push(["Birlashgan Millatlar Tashkilotining aholishunoslik jamg‘armasi ma’lumotlariga ko‘ra (2018-y.) O‘zbekiston aholi soni bo‘yicha jahonda nechanchi o‘rinda turadi?",["41-o‘rin","42-o‘rin","43-o‘rin","44-o‘rin"],3]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi qachon 11,8 mln kishiga yetgan?",["1959-yilda","1970-yilda","1980-yilda","1939-yilda"],1]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi nechanchi yillarda mos ravishda 4,3 mln va 20,3 mln kishi bo‘lgan?",["1865-yil va 1990-yil","1924-yil va 1990-yil","1900-yil va 2005-yil","1924-yil va 2000-yil"],1]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi 1939-yilda qanchani tashkil etgan?",["4,3 mln","6,3 mln","6,4 mln","8,1 mln"],2]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi nechanchi yillarda mos ravishda 6,3 mln va 24,4 mln kishi bo‘lgan?",["1959-yil va 2008-yil","1939-yil va 2000-yil","1950-yil va 2000-yil","1939-yil va 1990-yil"],2]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi soni qaysi yillar oralig‘ida 6,4 mln kishidan 6,3 mln kishiga biroz kamaygan?",["1939–1950-yillar","2000–2008-yillar","1950–1959-yillar","1900–1924-yillar"],0]);
+GEO_OCHIQ.push(["1970-yilda 11,8 mln bo‘lgan O‘zbekiston aholisi soni 1980-yilda necha million kishiga yetgan?",["27,1 mln kishiga","20,3 mln kishiga","15,8 mln kishiga","24,4 mln kishiga"],2]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi nechanchi yillarda mos ravishda 8,1 mln va 27,1 mln kishi bo‘lgan?",["1959-yil va 2008-yil","1970-yil va 2019-yil","1959-yil va 2019-yil","2000-yil va 2008-yil"],0]);
+GEO_OCHIQ.push(["O‘zbekiston aholisi nechanchi yillarda mos ravishda 4,0 mln va 33,2 mln kishi bo‘lgan?",["1865-yil va 2008-yil","1900-yil va 2008-yil","1924-yil va 2019-yil","1900-yil va 2019-yil"],3]);
+GEO_OCHIQ.push(["Quyidagi variantlardan qaysi davlat \"Katta yettilik\" davlatlar guruhiga kiritilmaydi?",["Italiya","Kanada","Yaponiya","Ispaniya"],3]);
+GEO_OCHIQ.push(["Quyidagi variantlardan \"Ko‘chirilgan kapitalizm mamlakatlari\" guruhini tashkil etuvchi davlatlarni belgilang.",["Xitoy, Hindiston","Braziliya, Meksika","Avstraliya, Yangi Zelandiya","Eron, Pokiston"],2]);
+GEO_OCHIQ.push(["Quyidagi qaysi variantda ko‘chirilgan kapitalizm mamlakatlari berilgan?<br>1) Xitoy; 2) JAR; 3) Meksika; 4) Hindiston; 5) Isroil; 6) Singapur.",["1, 2","2, 5","3, 5","2, 6","2, 4"],1]);
+GEO_OCHIQ.push(["Jahon aholisining eng katta qismi qaysi davlatlar guruhida yashaydi?",["rivojlangan","rivojlanayotgan","o‘tish iqtisodiyotidagi","qoloq"],1]);
+GEO_OCHIQ.push(["2018-yil ma’lumotlariga ko‘ra jahon aholisining qanchasi rivojlanayotgan mamlakatlarda yashaydi?",["2 mlrd kishi","4 mlrd kishi","6 mlrd kishi","8 mlrd kishi"],2]);
+GEO_OCHIQ.push(["Ulkan tabiiy-resurs, demografik va iqtisodiy salohiyatga ega bo‘lgan qaysi davlatlar tayanch rivojlanayotgan mamlakatlar guruhini tashkil qiladi?",["Yaponiya, Xitoy","Hindiston, Pokiston","Braziliya, Meksika","Avstraliya, Yangi Zelandiya"],2]);
+GEO_OCHIQ.push(["Ulkan tabiiy-resurs, demografik va iqtisodiy salohiyatga ega bo‘lgan qaysi davlatlar tayanch rivojlanayotgan mamlakatlar guruhini tashkil qiladi?",["Xitoy, Hindiston","Yaponiya, Xitoy","Hindiston, Pokiston","Eron, Pokiston"],0]);
+GEO_OCHIQ.push(["Tashkil etilgan ilk davrda Yevropa ko‘mir va temir ishlab chiqaruvchilar birlashmasiga nechta davlat a’zo bo‘lgan?",["4 ta","6 ta","9 ta","12 ta"],1]);
+GEO_OCHIQ.push(["Yevropa ko‘mir va temir birlashmasining oltita ta’sischi davlati nechanchi yilda Yevropa iqtisodiy hamkorligi va atom energiyasi bo‘yicha Yevropa hamjamiyatini tashkil etishdi?",["1981-yilda","1951-yilda","1957-yilda","1973-yilda"],2]);
+GEO_OCHIQ.push(["Polsha, Chexiya, Vengriya kabi bir vaqtning o‘zida eng ko‘p (10 ta) davlat nechanchi yilda Yevropa Ittifoqiga qabul qilindi?",["1986-yilda","2004-yilda","2007-yilda","2013-yilda"],1]);
+GEO_OCHIQ.push(["1945-yilgi ma’lumotlarga ko‘ra, Yevropa qit’asida nechta mustaqil davlat bo‘lgan?",["24 ta","31 ta","33 ta","43 ta"],1]);
+GEO_OCHIQ.push(["1945-yilda Osiyo qit’asidagi mustaqil davlatlar soni nechta bo‘lgan?",["9 ta","18 ta","40 ta","47 ta"],1]);
+GEO_OCHIQ.push(["1945-yilgi statistikaga ko‘ra, Afrika qit’asida nechta mustaqil davlat qayd etilgan?",["3 ta","4 ta","52 ta","53 ta"],0]);
+GEO_OCHIQ.push(["1945-yilda Amerika qit’asidagi mustaqil davlatlar soni nechta bo‘lgan?",["20 ta","22 ta","35 ta","76 ta"],1]);
+GEO_OCHIQ.push(["1945-yilda Avstraliya va Okeaniya qit’asida nechta mustaqil davlat mavjud edi?",["0 ta","2 ta","12 ta","13 ta"],1]);
+GEO_OCHIQ.push(["1945-yilda jahon bo‘yicha jami mustaqil davlatlar soni nechta bo‘lgan?",["57 ta","76 ta","172 ta","194 ta"],1]);
+GEO_OCHIQ.push(["1990-yilgi ma’lumotlarga ko‘ra, Yevropa qit’asida nechta mustaqil davlat bo‘lgan?",["24 ta","31 ta","33 ta","43 ta"],2]);
+GEO_OCHIQ.push(["1990-yilda Osiyo qit’asidagi mustaqil davlatlar soni nechta bo‘lgan?",["48 ta","18 ta","40 ta","47 ta"],2]);
+GEO_OCHIQ.push(["1990-yilgi statistikaga ko‘ra, Afrika qit’asida nechta mustaqil davlat qayd etilgan?",["3 ta","52 ta","53 ta","54 ta"],1]);
+GEO_OCHIQ.push(["1990-yilda Amerika qit’asidagi mustaqil davlatlar soni nechta bo‘lgan?",["20 ta","22 ta","35 ta","To‘g‘ri javob yo‘q"],2]);
+GEO_OCHIQ.push(["1990-yilda Avstraliya va Okeaniya qit’asida nechta mustaqil davlat mavjud edi?",["13 ta","0 ta","12 ta","2 ta"],2]);
+GEO_OCHIQ.push(["1990-yilda jahon bo‘yicha jami mustaqil davlatlar soni nechta bo‘lgan?",["76 ta","172 ta","191 ta","194 ta"],1]);
+GEO_OCHIQ.push(["O‘zbekiston daryolariga qurilgan GESlardan yiliga qancha energiya olinmoqda?",["5 mlrd kWh","6 mlrd kWh","7 mlrd kWh","8 mlrd kWh"],0]);
+GEO_OCHIQ.push(["O‘zbekistonning umumiy yer maydoni necha gektarni tashkil etadi?",["22,4 mln gektar","44,1 mln gektar","33,7 mln gektar","44,4 mln gektar"],3]);
+
+/* ===== 36-to‘plam ===== */
+GEO_OCHIQ.push(["Oy Yer atrofida deyarli qancha vaqtda bir marta aylanib chiqadi?",["yarim yil","bir yil","bir oy","bir hafta"],2]);
+GEO_OCHIQ.push(["Agar Quyosh, Yer va Oy quyidagi chizmada keltirilgan holatda bo‘lsa, Oyning 2 va 8 raqamlarda ko‘rsatilgan holatlarida Oyning qanday ko‘rinishi vujudga keladi?",["eski oy, oxirgi chorak","yangi oy, tugayotgan oy","Oyning birinchi choragi, chorakam to‘lin oy","yangi oy, qisqarayotgan oy"],1,"gx36_oy"]);
+GEO_OCHIQ.push(["Chizmada Oyning joylashgan holatlaridan qaysi birida Oy ko‘rinmaydi?",["1-holatda","2-holatda","4-holatda","6-holatda"],0,"gx36_oy"]);
+GEO_OCHIQ.push(["Ufq tomonlarini Quyoshga qarab aniqlash uchun Quyosh nuri yaxshi tushadigan ochiq, tekis yerga diametri qanchaga teng bo‘lgan aylana chiziladi?",["1 m","1,5 m","2 m","3 m"],2]);
+GEO_OCHIQ.push(["Ufq tomonlarini Quyoshga qarab aniqlash uchun chizilgan aylana o‘rtasiga uzunligi qancha bo‘lgan tayoq (ustun) qoqib qo‘yiladi?",["1 m","1,5 m","2 m","3 m"],1]);
+GEO_OCHIQ.push(["Yerning sharsimon ekanligini nazariy jihatdan birinchi bo‘lib kim va qachon isbotlagan?",["milodiy IV asrda Aristotel","mil. avv. VI asrda Pifagor","mil. avv. III asrda Eratosfen","mil. avv. IV asrda Aristotel"],3]);
+GEO_OCHIQ.push(["Yerni sharsimon, yumaloq bo‘lsa kerak, degan dastlabki tasavvurning yuzaga kelganiga qancha vaqt bo‘ldi?",["4100 yildan ko‘proq","3200 yildan ko‘proq","2400 yildan ko‘proq","7000 yildan ko‘proq"],2]);
+GEO_OCHIQ.push(["Yevropada birinchi globusni qachon va kim yasagan?",["1544-yilda Myunster","1492-yilda Martin Bexaym","1595-yilda Merkator","1650-yilda B. Varenius"],1]);
+GEO_OCHIQ.push(["Toshkent globusining balandligi, aylanasining uzunligi va og‘irligi mos ravishda berilgan javobni aniqlang.",["1,5 m, 6 m, 490 kg","2,5 m, 2 m, 490 kg","1,5 m, 2 m, 490 kg","2,5 m, 6 m, 490 kg"],3]);
+GEO_OCHIQ.push(["Yerning markazidan Yer yuzasigacha bo‘lgan masofa qutblarda qanchaga teng?",["6378 km ga","6357 km ga","6351 km ga","6375 km ga"],1]);
+GEO_OCHIQ.push(["Nosir Xisrav sayohat xaritasida nechta shahar tasvirlangan?",["14 ta","15 ta","17 ta","20 ta"],1]);
+GEO_OCHIQ.push(["Muhammad al-Xorazmiyning \"O‘rta Osiyo va unga yondosh yerlar xaritasi\"da nechta shahar tasvirlangan?",["4 ta","5 ta","6 ta","7 ta"],2]);
+GEO_OCHIQ.push(["Eratosfen tuzgan dunyo xaritasida 3 va 11 raqamlarda qaysi daryolar tasvirlangan?",["3-Oks, 11-Nil","3-Yaksart, 11-Nil","3-Oks, 11-Dajla","3-Yaksart, 11-Dajla"],1,"gx36_er"]);
+GEO_OCHIQ.push(["Xaritada sayyohlarning bosib o‘tgan yo‘llarini to‘g‘ri joylashtiring.",["1-Vasko da Gama, 2-Xristofor Kolumb, 3-Fernan Magellan","1-Fernan Magellan, 2-Vasko da Gama, 3-Xristofor Kolumb","1-Xristofor Kolumb, 2-Vasko da Gama, 3-Fernan Magellan","1-Xristofor Kolumb, 2-Fernan Magellan, 3-Vasko da Gama"],2,"gx36_dn"]);
+GEO_OCHIQ.push(["Ptolemey tuzgan dunyo xaritasida 5 va 7 raqamlar bilan qaysi daryolar tasvirlangan?",["5-Ra daryosi, 7-Oks","5-Yaksart, 7-Oks","5-Dajla daryosi, 7-Oks","5-Istr daryosi, 7-Oks"],0,"gx36_pt"]);
+GEO_OCHIQ.push(["Nosir Xisrav sayohati xaritasida 1, 2 va 3 raqamlar bilan qaysi dengizlar tasvirlangan?",["1-Qulzum, 2-Abiskun, 3-Rum dengizi","1-Rum, 2-Qulzum, 3-Abiskun dengizi","1-Abiskun, 2-Qulzum, 3-Rum dengizi","1-Rum, 2-Abiskun, 3-Qulzum dengizi"],3,"gx36_nx"]);
+GEO_OCHIQ.push(["Yerning qavariq yuzasi tekis yuzada (qog‘ozda) tasvirlanganda asosiy xatoliklar necha xil bo‘ladi?",["2 xil","3 xil","4 xil","6 xil"],0]);
+GEO_OCHIQ.push(["Pasttekisliklar necha metr balandlikkacha bo‘lgan joylarni egallaydi va qanday rangda beriladi?",["0 m dan 200 m gacha, sariq rangda","dengiz sathidan 500 m gacha, sariq rangda","0 m dan 200 m gacha, yashil rangda","dengiz sathidan 500 m gacha, yashil rangda"],2]);
+GEO_OCHIQ.push(["Geografik xaritalar shartli ravishda necha turga bo‘linadi?",["2 turga","3 turga","4 turga","5 turga"],1]);
+GEO_OCHIQ.push(["200 m dan 500 m gacha bo‘lgan balandliklar nima deyiladi va ular qanday rangda beriladi?",["past tog‘lar, yashil rangda","qirlar, yashil rangda","past tog‘lar, sariq rangda","qirlar, sariq rangda"],3]);
+
+/* ===== 37-to‘plam ===== */
+GEO_OCHIQ.push(["Bitta qo‘yni boqish uchun qancha gektar o‘tloq talab etiladi?",["1–2 gektar","2–3 gektar","3–4 gektar","4–5 gektar"],1]);
+GEO_OCHIQ.push(["O‘zbekiston cho‘llarida necha million boshgacha qo‘y boqsa bo‘ladi?",["5 mln","10 mln","15 mln","20 mln"],1]);
+GEO_OCHIQ.push(["Cho‘llarning samarasi har gektar hisobida obikor yerlardagidan necha marta kam?",["50 marta","100 marta","150 marta","200 marta"],1]);
+GEO_OCHIQ.push(["O‘zbekistonning gaz zaxirasi qanchani tashkil etadi?",["2 trillion kub metrdan ortiq","4 trillion kub metrdan ortiq","6 trillion kub metrdan ortiq","7 trillion kub metrdan ortiq"],0]);
+GEO_OCHIQ.push(["Respublikamizda dengiz sathidan necha metr balandliklar orasidagi hududlar adir mintaqasini tashkil etadi?",["200–1200 metrgacha","400–1000 metrgacha","200–1000 metrgacha","400–1200 metrgacha"],3]);
+GEO_OCHIQ.push(["Dengiz sathidan necha metrdan balandda lalmikor dehqonchilik yuritiladi?",["400 metrdan balandda","600 metrdan balandda","800 metrdan balandda","1000 metrdan balandda"],3]);
+GEO_OCHIQ.push(["O‘zbekistonda dengiz sathidan necha metr balandlikdan boshlab tog‘ mintaqasi joylashgan?",["400 metr","1200 metr","1400 metr","1600 metr"],1]);
+GEO_OCHIQ.push(["O‘zbekistonning qaysi hududi atrofidagi tog‘larda o‘tga chidamli loy, qo‘ng‘ir ko‘mir, mis rudasi, oltin konlari aniqlangan?",["Surxon vodiysi","Ohangaron vodiysi","Ustyurt platosi","Quyi Amudaryo vodiysi"],1]);
+GEO_OCHIQ.push(["Nurota tog‘larida qaysi foydali qazilma konlari bor?<br>1) volfram; 2) oltin; 3) marmar; 4) molibden; 5) polimetall rudalari.",["1, 3","3, 5","2, 4","3, 4"],0]);
+GEO_OCHIQ.push(["O‘zbekiston daryolaridagi yillik suvning necha foizi 3–4 oy davomida bahor oylariga va yoz boshiga to‘g‘ri keladi?",["10–30 %","25–50 %","50–55 %","70–95 %"],3]);
+GEO_OCHIQ.push(["Yugoslaviya davlatining parchalanishi nechanchi yillarda ro‘y bergan?",["1989–1990-yillarda","1990–1991-yillarda","1991–1992-yillarda","1992–1993-yillarda"],2]);
+GEO_OCHIQ.push(["Yugoslaviya davlatining parchalanishi natijasida qaysi davlatlar mustaqil bo‘ldi?<br>1) Moldova; 2) Bosniya va Gersegovina; 3) Bolgariya; 4) Xorvatiya; 5) Malta; 6) Makedoniya; 7) Ruminiya; 8) Estoniya; 9) Ukraina.",["1, 7, 9","2, 4, 6","2, 6, 8","1, 3, 5"],1]);
+GEO_OCHIQ.push(["Makedoniya davlati nechanchi yildan boshlab Shimoliy Makedoniya deb nomlana boshlandi?",["2017-yildan","2018-yildan","2019-yildan","2020-yildan"],2]);
+GEO_OCHIQ.push(["1991–1992-yillarda Yugoslaviya davlati parchalangan vaqtda uning tarkibida faqat qaysi davlatlar qolgan edi?",["Chernogoriya va Serbiya","Sloveniya va Xorvatiya","Makedoniya va Albaniya","Bosniya va Gersegovina"],0]);
+GEO_OCHIQ.push(["Nechanchi yilda Chernogoriya Serbiyadan ajralib mustaqil davlatga aylandi?",["2004-yilda","2005-yilda","2006-yilda","2007-yilda"],2]);
+GEO_OCHIQ.push(["Nechanchi yildan Chexoslovakiya davlati o‘rnida Chexiya va Slovakiya mustaqil respublikalari barpo bo‘ldi?",["1991-yil 1-dekabrdan","1992-yil 1-sentabrdan","1993-yil 1-yanvardan","1994-yil 1-oktabrdan"],2]);
+GEO_OCHIQ.push(["Nechanchi yilda Yevropada ikki nemis davlati (Germaniya Federativ Respublikasi va Germaniya Demokratik Respublikasi) qo‘shilishi natijasida yagona Germaniya Federativ Respublikasi tashkil etildi?",["1989-yilda","1990-yilda","1991-yilda","1992-yilda"],1]);
+GEO_OCHIQ.push(["Afrikada 1993-yilda ko‘p yillik urush natijasida qaysi davlat Efiopiya tarkibidan ajralib, suveren davlat maqomiga ega bo‘ldi?",["Keniya","Jibuti","Uganda","Eritreya"],3]);
+GEO_OCHIQ.push(["Okeaniyada 1994-yilda qaysi davlat AQShning nazorati ostidagi hududdan mustaqil davlatga aylandi?",["Samoa","Tonga","Palau","Nauru"],2]);
+GEO_OCHIQ.push(["Janubi-sharqiy Osiyoda joylashgan Sharqiy Timor davlati nechanchi yilda mustaqil bo‘lgan?",["2000-yilda","2001-yilda","2002-yilda","2003-yilda"],2]);
+GEO_OCHIQ.push(["Afrika qit’asida nechanchi yilda referendum natijalariga ko‘ra Sudan tarkibidan Janubiy Sudan davlati ajralib chiqdi?",["2009-yil 7-avgustda","2010-yil 1-iyunda","2011-yil 9-iyulda","2012-yil 1-martda"],2]);
+GEO_OCHIQ.push(["2004–2013-yillar oralig‘ida Sharqiy Yevropa subregionining nechta davlati Yevropa Ittifoqi tarkibiga kiritildi?",["10 ta","11 ta","13 ta","15 ta"],1]);
+GEO_OCHIQ.push(["Yevropa davlatlari iqtisodiyotida qaysi yilda yuz bergan jahon moliyaviy-iqtisodiy inqirozining salbiy oqibatlari hali ham sezilib turibdi?",["1998-yilda","2001-yilda","2004-yilda","2008-yilda"],3]);
+GEO_OCHIQ.push(["Angliyaning Amerikadagi nechta mustamlakasi 1776-yilda o‘z siyosiy mustaqilligini e’lon qildi?",["50 ta","13 ta","11 ta","10 ta"],1]);
+GEO_OCHIQ.push(["AQSh qaysi davrdan boshlab avval meridional yo‘nalishda butun Amerika qit’asini, keyinchalik esa boshqa hududlar nazoratini sekin-astalik bilan qo‘lga kiritdi?",["Ikkinchi jahon urushidan keyin","XVIII asr oxiridan boshlab","XIX asr oxiridan boshlab","XX asr boshidan boshlab"],2]);
+GEO_OCHIQ.push(["AQSh tashkil topganda uning tarkibidagi dastlabki shtatlar soni nechta edi?",["10 ta","11 ta","13 ta","15 ta"],2]);
+GEO_OCHIQ.push(["Xitoyda monarxiya tuzumining ag‘darilishi qaysi yilda yuz bergan?",["1910-yilda","1947-yilda","1949-yilda","1976-yilda"],0]);
+GEO_OCHIQ.push(["Xitoyda ichki siyosiy kelishmovchiliklar natijasida sotsialistik tuzum qaysi yilda o‘rnatildi?",["1910-yilda","1945-yilda","1949-yilda","1976-yilda"],2]);
+GEO_OCHIQ.push(["Xitoyda iqtisodiyot va jamiyatni erkinlashtirish borasidagi islohotlar konsepsiyasi qaysi yillar oralig‘ida ishlab chiqilgan?",["1949–1976","1976–1989","1989–2016","2004–2013"],1]);
+GEO_OCHIQ.push(["2016-yilda jahon umumiy YaMMning necha foizi Xitoy hissasiga to‘g‘ri kelgan?",["21,5 %","17,8 %","15,2 %","13 %"],1]);
+GEO_OCHIQ.push(["Falastin hududlarida yahudiy va arab davlatlarini tashkil etish rejasi BMT tomonidan qaysi yilda taklif etilgan?",["1948-yilda","1947-yilda","1945-yilda","1949-yilda"],1]);
+GEO_OCHIQ.push(["Isroil davlati tashkil topganligi rasman e’lon qilingan sanani ko‘rsating.",["1947-yil 28-noyabr","1948-yil 14-may","1947-yil 29-noyabr","1948-yil 15-may"],1]);
+GEO_OCHIQ.push(["Arab davlatlari ligasi qo‘shinlari Falastin yerlariga qaysi yilda va qaysi sanada kirib keldi?",["1949-yil 12-fevralda","1947-yil 29-noyabrda","1948-yil 14-mayda","1948-yil 15-mayda"],3]);
+GEO_OCHIQ.push(["Xitoy islohotlar konsepsiyasi muallifi Den Syaopin rahbarlik qilgan davr jami necha yilni tashkil etadi?",["10 yilni","14 yilni","15 yilni","25 yilni"],1]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Osiyo mintaqasida mustaqil davlatlar soni nechta bo‘lgan?",["35 ta","44 ta","48 ta","54 ta"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Yevropa qit’asida nechta mustaqil davlat bo‘lgan?",["31 ta","33 ta","43 ta","44 ta"],3]);
+GEO_OCHIQ.push(["2022-yilgi statistikaga ko‘ra, Afrika qit’asida nechta mustaqil davlat qayd etilgan?",["3 ta","52 ta","53 ta","54 ta"],3]);
+GEO_OCHIQ.push(["2022-yilda Amerika mintaqasidagi mustaqil davlatlar soni nechta bo‘lgan?",["20 ta","22 ta","35 ta","44 ta"],2]);
+GEO_OCHIQ.push(["2022-yil yakuniga ko‘ra, Avstraliya va Okeaniya mintaqasida nechta mustaqil davlat mavjud edi?",["0 ta","2 ta","12 ta","13 ta"],3]);
+GEO_OCHIQ.push(["2022-yilda jahon bo‘yicha jami mustaqil davlatlar soni nechta bo‘lgan?",["57 ta","76 ta","191 ta","194 ta"],3]);
+GEO_OCHIQ.push(["2022-yilda Osiyo va Amerika mintaqalaridagi mustaqil davlatlar soni farqi nechta bo‘lgan?",["4 ta","11 ta","13 ta","15 ta"],2]);
+GEO_OCHIQ.push(["2022-yilda Yevropa va Amerika mintaqalaridagi mustaqil davlatlar yig‘indisi nechta bo‘lgan?",["67 ta","79 ta","89 ta","98 ta"],1]);
+GEO_OCHIQ.push(["2022-yilda Osiyo va Afrika mintaqalaridagi mustaqil davlatlar jami soni nechta bo‘lgan?",["92 ta","100 ta","102 ta","108 ta"],2]);
+GEO_OCHIQ.push(["1900-yilgi ma’lumotlarga ko‘ra, Yevropa qit’asida nechta mustaqil davlat bo‘lgan?",["4 ta","9 ta","20 ta","24 ta"],3]);
+GEO_OCHIQ.push(["1900-yilda Osiyo qit’asidagi mustaqil davlatlar soni nechta bo‘lgan?",["0 ta","3 ta","4 ta","9 ta"],3]);
+GEO_OCHIQ.push(["1900-yilgi statistikaga ko‘ra, Afrika qit’asida nechta mustaqil davlat qayd etilgan?",["3 ta","4 ta","9 ta","24 ta"],1]);
+GEO_OCHIQ.push(["1900-yilda Amerika qit’asidagi mustaqil davlatlar soni nechta bo‘lgan?",["4 ta","9 ta","20 ta","22 ta"],2]);
+GEO_OCHIQ.push(["1900-yilda Avstraliya va Okeaniya qit’asida nechta mustaqil davlat mavjud edi?",["0 ta","2 ta","4 ta","20 ta"],0]);
+GEO_OCHIQ.push(["1900-yilda jahon bo‘yicha jami mustaqil davlatlar soni nechta bo‘lgan?",["57 ta","76 ta","191 ta","194 ta"],0]);
+GEO_OCHIQ.push(["1900-yilda Yevropa va Amerika qit’alaridagi mustaqil davlatlar soni farqi nechta bo‘lgan?",["3 ta","4 ta","5 ta","6 ta"],1]);
+
+/* ===== 38-to‘plam ===== */
+GEO_OCHIQ.push(["Fernan Magellan sayohatidan keyin quyidagilardan qaysilari isbotlandi?<br>1) Yangi dunyo – Amerika qit’asining mavjudligi; 2) Yerning sharsimonligi; 3) quruqlik muhiti yaxlit va bir butun ekanligi; 4) Yer yuzining katta qismini suv qoplab yotishi.",["1, 4","2, 4","3, 4","1, 3"],1]);
+GEO_OCHIQ.push(["Oltin Qoziq yulduzini topish uchun Katta Ayiq yulduzlar turkumi – cho‘michning chekkadagi ikkita yulduzi oralig‘idagi masofa necha marta qo‘yib chiqiladi?",["4","3","7","5"],3]);
+GEO_OCHIQ.push(["Quyosh massasi (og‘irligi) Yer og‘irligidan necha marta katta?",["233 ming marta","313 ming marta","323 ming marta","332 ming marta"],3]);
+GEO_OCHIQ.push(["Quyoshning diametri Yer diametridan necha marta uzun?",["119 marta","109 marta","150 marta","330 marta"],1]);
+GEO_OCHIQ.push(["Quyosh yuzasidagi harorat qanchaga teng?",["+9000 °C","+3000 °C","+6000 °C","+20 000 °C"],2]);
+GEO_OCHIQ.push(["Quyosh o‘z o‘qi atrofida necha Yer sutkasida bir marta aylanib chiqadi?",["25","27","29","31"],1]);
+GEO_OCHIQ.push(["Quyosh atrofida nechta sayyora aylanib turadi?",["7 ta","8 ta","9 ta","10 ta"],1]);
+GEO_OCHIQ.push(["Yupiter Quyoshdan uzoqligiga ko‘ra nechanchi sayyora hisoblanadi?",["2-chi","4-chi","5-chi","6-chi"],2]);
+GEO_OCHIQ.push(["Oyning qaysi kunlari to‘lin Oy bo‘ladi?",["11–12-kunlari","14–15-kunlari","16–18-kunlari","20–21-kunlari"],1]);
+GEO_OCHIQ.push(["Qadimda jangchilarning ko‘zi o‘tkirligini ko‘ra olishiga qarab aniqlangan yulduz Katta Ayiq yulduzlar turkumining cho‘mich bandidagi nechanchi yulduz yonida joylashgan?",["2-chi","3-chi","4-chi","5-chi"],0]);
+GEO_OCHIQ.push(["Ptolemey tuzgan dunyo xaritasida nechta orol tasvirlangan?",["4 ta","6 ta","3 ta","5 ta"],0]);
+GEO_OCHIQ.push(["Toshkent globusining diametri qancha?",["6 metr","2 metr","3 metr","4 metr"],1]);
+GEO_OCHIQ.push(["Ptolemey tuzgan dunyo xaritasida nechta okean tasvirlangan?",["1 ta","2 ta","3 ta","4 ta"],0]);
+GEO_OCHIQ.push(["Nosir Xisravning sayohati xaritasida nechta dengiz tasvirlangan?",["1 ta","2 ta","3 ta","4 ta"],2]);
+GEO_OCHIQ.push(["Ptolemey tuzgan dunyo xaritasida nechta dengiz tasvirlangan?",["1 ta","2 ta","3 ta","4 ta"],1]);
+GEO_OCHIQ.push(["Toshkent globusining og‘irligi qanchaga teng?",["480 kilogramm","450 kilogramm","490 kilogramm","390 kilogramm"],2]);
+GEO_OCHIQ.push(["Nosir Xisrav necha marta sayohat qilgan?",["7 marta","3 marta","4 marta","2 marta"],3]);
+GEO_OCHIQ.push(["Toshkent globusining balandligi necha metr?",["2 metr","1,5 metr","2,5 metr","1 metr"],2]);
+GEO_OCHIQ.push(["Nosir Xisravning sayohati necha yil davom etgan?",["5 yil","7 yil","4 yil","6 yil"],1]);
+GEO_OCHIQ.push(["Hamidulla Hasanov sayohatlari davomida ekvatorni necha marta kesib o‘tgan?",["1 marta","2 marta","3 marta","4 marta"],1]);
+GEO_OCHIQ.push(["Qoraqalpog‘iston Respublikasi va viloyatlar bo‘ysunuvidagi shaharlar bo‘ysunuviga ko‘ra nechanchi toifaga kiradi?",["1-chi","2-chi","3-chi","To‘g‘ri javob yo‘q"],1]);
+GEO_OCHIQ.push(["Qoraqalpog‘iston Respublikasi va viloyatlar bo‘ysunuvidagi shaharlar turkumiga, qoida tariqasida, kamida qancha aholisi bo‘lgan, muhim ma’muriy ahamiyat kasb etadigan, istiqbolli iqtisodiy va madaniy markazlar deb hisoblangan shaharlar kiritilishi mumkin?",["10 ming","20 ming","30 ming","40 ming"],2]);
+GEO_OCHIQ.push(["O‘zbekiston Respublikasi bo‘ysunuvidagi shaharlar bo‘ysunuviga ko‘ra nechanchi toifaga kiradi?",["1-chi","2-chi","3-chi","To‘g‘ri javob yo‘q"],0]);
+GEO_OCHIQ.push(["O‘zbekistondagi tuman bo‘ysunuvidagi shaharlar turkumiga, qoida tariqasida, kamida qancha aholisi bo‘lgan, sanoat korxonalari va rivojlangan infratuzilmasi mavjud aholi punktlari kiritilishi mumkin?",["4 ming","5 ming","6 ming","7 ming"],3]);
+GEO_OCHIQ.push(["O‘zbekiston maydonining kattaligiga ko‘ra Osiyoda nechanchi o‘rinda turadi?",["55","19","15","44"],2]);
+GEO_OCHIQ.push(["O‘zbekistondagi tuman bo‘ysunuvidagi shaharlar bo‘ysunuviga ko‘ra nechanchi toifaga kiradi?",["1-chi","2-chi","3-chi","Hamma javob to‘g‘ri"],2]);
+GEO_OCHIQ.push(["O‘zbekistonda shaharchalar turkumiga sanoat korxonalari, qurilishlar, temiryo‘l stansiyalari va boshqa muhim obyektlar yaqinida joylashgan hamda qoida tariqasida kamida qancha aholisi bo‘lgan aholi punktlari kiritilishi mumkin?",["2 ming","3 ming","5 ming","7 ming"],0]);
+GEO_OCHIQ.push(["O‘zbekistonda dengiz sathidan necha metr balandlikkacha bo‘lgan joylar cho‘l mintaqasi hisoblanadi?",["200 metr","300 metr","400 metr","500 metr"],2]);
+GEO_OCHIQ.push(["Qoraqalpog‘iston Respublikasi (Nukus) hududidagi umumiy foydalanishdagi temiryo‘llarning ekspluatatsiya uzunligi necha kilometrni tashkil etadi?",["138,7","270,6","469,3","844,3"],3]);
+GEO_OCHIQ.push(["Urganch hududida temiryo‘llarning ekspluatatsiya uzunligi necha kilometrga teng?",["155,8","138,7","160,1","348,8"],1]);
+GEO_OCHIQ.push(["Amerikada joylashgan maydoni 1 ming km² ga yetmaydigan davlatlarni belgilang.<br>1) Grenada; 2) Sent-Lyusiya; 3) Barbados; 4) Gaiti; 5) Salvador; 6) Urugvay; 7) Sent-Kits va Nevis; 8) Yamayka; 9) Peru.",["2, 4, 8","1, 5, 9","2, 6, 9","1, 3, 7"],3]);
+GEO_OCHIQ.push(["Okeaniyada joylashgan maydoni 1 ming km² ga yetmaydigan davlatlar qaysilar?<br>1) Fiji; 2) Nauru; 3) Samoa; 4) Vanuatu; 5) Tuvalu; 6) Papua – Yangi Gvineya; 7) Kiribati; 8) Marshall orollari; 9) Yangi Zelandiya.",["2, 4, 6","2, 5, 8","1, 4, 9","1, 3, 7"],1]);
+GEO_OCHIQ.push(["Yevropada joylashgan orol mamlakatlar qaysi javobda to‘g‘ri berilgan?<br>1) Gretsiya; 2) Buyuk Britaniya; 3) Italiya; 4) Malta; 5) Islandiya; 6) Norvegiya.",["2, 4","2, 6","1, 3","2, 5"],3]);
+GEO_OCHIQ.push(["Afrikada joylashgan orol mamlakatlarni belgilang.<br>1) Kabo-Verde; 2) Tanzaniya; 3) Mozambik; 4) Somali; 5) Namibiya; 6) Madagaskar.",["1, 6","2, 6","3, 6","4, 6","5, 6"],0]);
+GEO_OCHIQ.push(["Amerikada joylashgan orol mamlakatlar qaysilar?<br>1) Gaiti; 2) Salvador; 3) Yamayka; 4) Nikaragua; 5) Gonduras; 6) Panama; 7) Kuba; 8) Beliz.",["1, 7, 8","1, 3, 7","1, 6, 8","2, 5, 7"],1]);
+
+/* ===== 39-to‘plam ===== */
+GEO_OCHIQ.push(["Osiyodagi yarimorol mamlakatlar qaysilar?<br>1) Mongoliya; 2) Koreya Respublikasi; 3) Iroq; 4) Saudiya Arabistoni; 5) Filippin; 6) Vyetnam; 7) Nepal; 8) Livan; 9) Bangladesh.",["2, 6, 8","2, 6, 7","1, 3, 5","2, 4, 6"],3]);
+GEO_OCHIQ.push(["Yevropada joylashgan dengizbo‘yi kontinental davlatlar qaysi javobda to‘g‘ri berilgan?<br>1) Germaniya; 2) Irlandiya; 3) Polsha; 4) Avstriya; 5) Islandiya; 6) Malta; 7) Fransiya; 8) Shveysariya; 9) Slovakiya.",["1, 3, 5","2, 6, 8","1, 3, 7","1, 7, 9"],2]);
+GEO_OCHIQ.push(["Dengizga bevosita chiqa olmaydigan davlatlar soni hozirgi kunda nechtani tashkil etadi?",["40 ta","42 ta","44 ta","46 ta"],2]);
+GEO_OCHIQ.push(["Turli tarixiy voqealar ta’sirida dunyoda mustaqil davlatlar sonining muttasil o‘sib kelishi nechanchi asrlar mobaynida ro‘y berdi?",["XIV va XV asrlar","XVI va XVII asrlar","XVIII va XIX asrlar","XX va XXI asrlar"],3]);
+GEO_OCHIQ.push(["Sobiq Sovet Ittifoqining parchalanishidan nechta mustaqil davlat vujudga kelgan?",["13 ta","15 ta","19 ta","17 ta"],1]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Kanada davlatining hududi qancha (mln km²)?",["8,5","9,6","10,0","17,1"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Malta Respublikasining hududi necha kvadrat kilometrni tashkil qiladi?",["298","316","261","181"],1]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Qozog‘iston Respublikasining hududi necha million kvadrat kilometrga teng?",["2,4","2,7","2,8","3,3"],1]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Xitoy davlatining hududi necha million kvadrat kilometrni tashkil etadi?",["8,5","9,5","9,6","10,0"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Monako davlatining hududi kvadrat kilometrda qanchaga teng?",["2","21","26","0,44"],0]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Amerika Qo‘shma Shtatlari (AQSh) davlatining hududi qancha (mln km²)?",["8,5","10,0","9,6","9,5"],3]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Nauru davlatining hududi necha kvadrat kilometrni tashkil qiladi?",["61","2","21","26"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Braziliya davlatining hududi necha million kvadrat kilometrga teng?",["7,7","9,5","8,5","3,3"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Tuvalu davlatining hududi kvadrat kilometrda qanchaga teng?",["21","26","61","160"],1]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, San-Marino davlatining hududi necha kvadrat kilometrni tashkil qiladi?",["160","181","61","261"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 1–5 mln km² bo‘lgan mustaqil davlatlar soni nechta?",["56","44","23","22"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 1–5 mln km² oralig‘idagi davlatlar ulushi necha foizga (%) teng?",["29","12","11","23"],1]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 500 ming – 1 mln km² bo‘lgan davlatlar soni nechta?",["56 ta","44 ta","23 ta","22 ta"],3]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 500 ming – 1 mln km² bo‘lgan davlatlar necha foiz (%) ulushga ega?",["10","29","11","12"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 100–500 ming km² bo‘lgan eng ko‘p guruhni tashkil etuvchi davlatlar soni nechta?",["24","19","44","56"],3]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 100–500 ming km² bo‘lgan davlatlarning ulushi necha foizni (%) tashkil qiladi?",["11","12","23","29"],3]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 50–100 ming km² bo‘lgan mustaqil davlatlar soni nechta?",["19 ta","24 ta","44 ta","56 ta"],0]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 50–100 ming km² bo‘lgan davlatlar jami davlatlarning necha foizini (%) tashkil qiladi?",["10","11","12","19"],0]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 1–50 ming km² oralig‘ida bo‘lgan davlatlar soni nechta?",["23 ta","24 ta","44 ta","56 ta"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 1–50 ming km² bo‘lgan davlatlar necha foiz (%) ulushga ega?",["12 %","19 %","23 %","29 %"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 1 ming km² dan kichik bo‘lgan mustaqil davlatlar soni nechta?",["19 ta","24 ta","44 ta","56 ta"],1]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, hududi 1 ming km² dan kichik bo‘lgan mustaqil davlatlar ulushi necha foizga (%) teng?",["10 %","11 %","12 %","23 %"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, Argentina davlatining hududi necha million kvadrat kilometrga teng?",["2,4 mln","2,7 mln","2,8 mln","3,3 mln"],2]);
+
+/* ===== 40-to‘plam ===== */
+GEO_OCHIQ.push(["Dunyo okeaniga chiqish uchun kamida ikki davlatning hududini kesib o‘tish zarur bo‘lgan davlatlar jahonda nechtani tashkil etadi?",["1 tani","2 tani","3 tani","4 tani"],1]);
+GEO_OCHIQ.push(["O‘zbekiston bilan nechta davlat diplomatik aloqalar o‘rnatgan?",["120 dan ortiq","130 dan ortiq","140 dan ortiq","150 dan ortiq"],1]);
+GEO_OCHIQ.push(["O‘zbekiston Respublikasining maydoni qanchani tashkil etadi?",["447,4 ming km²","449,7 ming km²","448,4 ming km²","448,9 ming km²"],3]);
+GEO_OCHIQ.push(["O‘zbekiston ma’muriy-hududiy tuzilishi nechta pog‘onadan tashkil topgan?",["3 ta","4 ta","2 ta","5 ta"],0]);
+GEO_OCHIQ.push(["O‘zbekiston ma’muriy-hududiy tuzilishining nechanchi pog‘onasida Qoraqalpog‘iston Respublikasi, 12 ta viloyat va Toshkent shahri joylashgan?",["birinchi","ikkinchi","uchinchi","to‘rtinchi"],0]);
+GEO_OCHIQ.push(["O‘zbekiston maydonining kattaligiga ko‘ra jahonda nechanchi o‘rinda turadi?",["44-chi","19-chi","55-chi","15-chi"],2]);
+GEO_OCHIQ.push(["Qoraqalpog‘iston Respublikasidagi tumanlarni tuzish va tugatish Qoraqalpog‘iston Respublikasi hukumatining taklifiga muvofiq Jo‘qorg‘i Kenges tomonidan O‘zbekiston Respublikasi Oliy Majlisining roziligi bilan amalga oshiriladi. Bu O‘zbekiston Konstitutsiyasining nechanchi moddasi?",["51-moddasi","68-moddasi","69-moddasi","72-moddasi"],2]);
+GEO_OCHIQ.push(["Mamlakatimizdagi shaharlar bo‘ysunuviga ko‘ra nechta toifaga bo‘linadi?",["2 ta","3 ta","4 ta","5 ta"],1]);
+GEO_OCHIQ.push(["O‘zbekiston maydonining kattaligiga ko‘ra Yevrosiyo materigida nechanchi o‘rinda turadi?",["55-chi","15-chi","19-chi","44-chi"],2]);
+GEO_OCHIQ.push(["Jahonning siyosiy xaritasida, 2018-yil holatiga ko‘ra jahon hamjamiyati tomonidan mustaqilligi rasman tan olingan nechta suveren davlat mavjud?",["193 ta","194 ta","195 ta","196 ta"],1]);
+GEO_OCHIQ.push(["Jahonning siyosiy xaritasida, 2018-yil holatiga ko‘ra qanchadan ortiq mamlakat mavjud?",["230 dan","240 dan","250 dan","260 dan"],1]);
+GEO_OCHIQ.push(["Jahonning siyosiy xaritasida, 2018-yil holatiga ko‘ra mustaqil suveren davlatlarning nechtasi BMT faoliyatida a’zo davlatlar sifatida ishtirok etmoqda?",["193 tasi","194 tasi","195 tasi","196 tasi"],0]);
+GEO_OCHIQ.push(["Jahonning siyosiy xaritasida, 2018-yil holatiga ko‘ra mustaqil suveren davlatlarning nechtasi BMT faoliyatida kuzatuvchi davlat sifatida ishtirok etmoqda?",["1 tasi","2 tasi","3 tasi","4 tasi"],0]);
+GEO_OCHIQ.push(["Jahondagi nechta mustaqil davlatning maydoni 1 mln km² dan katta?",["5 ta","12 ta","29 ta","33 ta"],2]);
+GEO_OCHIQ.push(["Jahondagi nechta mustaqil davlatning maydoni 2 mln km² dan oshadi?",["5 ta","12 ta","29 ta","33 ta"],1]);
+GEO_OCHIQ.push(["Jahondagi nechta mustaqil davlatning maydoni 5 mln km² dan ortiq?",["6 ta","12 ta","29 ta","33 ta"],0]);
+GEO_OCHIQ.push(["Osiyoda joylashgan maydoni 1 ming km² ga yetmaydigan davlatlarni belgilang.<br>1) Bruney; 2) Singapur; 3) Gruziya; 4) Kipr; 5) Koreya Respublikasi; 6) Qatar; 7) Bahrayn; 8) Livan; 9) Maldiv Respublikasi.",["3, 6, 7","1, 4, 6","2, 7, 9","1, 5, 8"],2]);
+GEO_OCHIQ.push(["2022-yil holatiga ko‘ra, hududining kattaligi 5 mln km² dan katta bo‘lgan yirik davlatlar jahondagi mustaqil davlatlarning necha foizini tashkil etgan?",["12 %","11 %","3 %","10 %"],2]);
+GEO_OCHIQ.push(["2022-yilgi ma’lumotlarga ko‘ra, jahonning eng mitti davlati bo‘lgan Vatikanning hududi necha km² ni tashkil etadi?",["0,21 km²","0,2 km²","0,44 km²","0,61 km²"],2]);
+GEO_OCHIQ.push(["Dunyodagi eng yirik davlat – Rossiyaning hududi necha million kvadrat kilometrni tashkil etadi?",["9,5 mln km²","9,6 mln km²","10,0 mln km²","17,1 mln km²"],3]);
+GEO_OCHIQ.push(["Jahon siyosiy xaritasida dengizga chiqish imkoniyati bor davlatlar jami nechta?",["44 ta","135 ta","120 ta","150 ta"],3]);
+GEO_OCHIQ.push(["Garvard universiteti professori S. Xantingtonning \"Sivilizatsiyalar to‘qnashuvi\" deb nomlangan kitobi qaysi yilda chop etilgan?",["1648-yilda","1814-yilda","1919-yilda","1993-yilda"],3]);
+GEO_OCHIQ.push(["Geosiyosat fani asosan necha xil ilmiy yondashuv ta’sirida rivojlangan?",["2 xil","3 xil","4 xil","5 xil"],1]);
+GEO_OCHIQ.push(["Yevropada kuchli davlatlarning hukmronlik uchun o‘zaro kurashiga sabab bo‘lgan Vestfal shartnomasi qaysi yilda imzolangan?",["1648-yil","1814-yil","1919-yil","1945-yil"],0]);
+GEO_OCHIQ.push(["Siyosiy xaritadagi birinchi bosqich hisoblangan Vestfal shartnomasi tizimi qaysi asrning boshlarigacha davom etgan?",["XVII asrning","XVIII asrning","XIX asrning","XX asrning"],2]);
+GEO_OCHIQ.push(["Fransuz inqilobi va Napoleon armiyasi mag‘lubiyatidan keyin Yevropada yuzaga kelgan vaziyatni o‘rganish maqsadida Vena kongressi qaysi yillarda bo‘lib o‘tgan?",["1514-yil sentabr – 1515-yil iyun","1614-yil sentabr – 1615-yil iyun","1714-yil sentabr – 1715-yil iyun","1814-yil sentabr – 1815-yil iyun"],3]);
+GEO_OCHIQ.push(["Birinchi jahon urushi tugashi munosabati bilan Fransiyaning Versal shahrida tinchlik shartnomasi aynan qaysi sanada imzolangan?",["1917-yil 25-oktabr","1919-yil 28-iyun","1945-yil 9-may","1991-yil 8-dekabr"],1]);
+GEO_OCHIQ.push(["Versal shartnomasi bilan boshlangan geosiyosiy davr qaysi yilda Ikkinchi jahon urushining boshlanishi bilan yakuniga yetdi?",["1939-yilda","1991-yilda","1945-yilda","1919-yilda"],0]);
+GEO_OCHIQ.push(["Germaniyaning Potsdam shahrida Ikkinchi jahon urushi tugashi munosabati bilan Potsdam shartnomasining imzolanishi qaysi yilda yuz bergan?",["1939-yilda","1991-yilda","1648-yilda","1945-yilda"],3]);
+GEO_OCHIQ.push(["Dunyoda bipolyar (ikki qutbli) holatning tugashiga va zamonaviy geosiyosiy bosqich boshlanishiga turtki bo‘lgan Belovej shartnomasi qachon imzolangan?",["1945-yil 2-sentabrda","1993-yil 15-martda","1919-yil 28-iyunda","1991-yil 8-dekabrda"],3]);
+GEO_OCHIQ.push(["Belovej shartnomasidan so‘ng, sobiq SSSR o‘rnida nechta mustaqil davlat yuzaga keldi va ularning MDH tarkibida birlashuvi boshlandi?",["3 ta","10 ta","12 ta","15 ta"],2]);
+GEO_OCHIQ.push(["Versal davri voqeligiga ko‘ra, jahonda ilk sotsialistik tuzumga ega bo‘lgan respublikalar ittifoqining paydo bo‘lishi aynan qaysi vaqtda boshlandi?",["1914-yilning avgustidan","1917-yilning oktabridan","1919-yilning iyunidan","1939-yilning sentabridan"],1]);
+GEO_OCHIQ.push(["Vena geosiyosiy davri voqeligiga ko‘ra, AQSh va Germaniyaning iqtisodiy jihatdan tez sur’atlar bilan rivojlanishi qaysi davrga to‘g‘ri keladi?",["XVII asr o‘rtalariga","XVIII asr boshlariga","XIX asr oxirlariga","XX asr o‘rtalariga"],2]);
+
+/* ===== 41-to‘plam ===== */
+GEO_OCHIQ.push(["Ptolemey tuzgan dunyo xaritasi qaysi geografik uzunliklar bilan chegaralangan?",["0° uzunlik va 180° sharqiy uzunlik","20° g‘arbiy uzunlik va 60° sharqiy uzunlik","10° sharqiy uzunlik va 170° sharqiy uzunlik","40° g‘arbiy uzunlik va 100° sharqiy uzunlik"],0]);
+GEO_OCHIQ.push(["Nosir Xisrav yetti yil davom etgan ikkita sayohatida necha ming kilometrdan ortiq yo‘lni bosib o‘tgan?",["12 ming","7 ming","15 ming","20 ming"],2]);
+GEO_OCHIQ.push(["Nechanchi yilda Xristofor Kolumb boshchiligidagi ekspeditsiya Hindistonga dengiz orqali yo‘l topish maqsadida Ispaniyadan g‘arbga tomon suzib ketadi?",["1820","1519–1522","1498","1492"],3]);
+GEO_OCHIQ.push(["Xristofor Kolumb Amerika qit’asiga necha marotaba sayohat uyushtirgan?",["3 marta","1 marta","4 marta","2 marta"],2]);
+GEO_OCHIQ.push(["Amerigo Vespuchchi qaysi yillarda Amerika qit’asini o‘rgangan?",["1519–1522","1408–1502","1499–1504","1497–1499"],2]);
+GEO_OCHIQ.push(["Vasko da Gama qaysi yili Afrikani aylanib o‘tib, Hindistonga bordi?",["1496","1498","1492","1499"],1]);
+GEO_OCHIQ.push(["Nechanchi yillarda Fernan Magellan boshchiligidagi ekspeditsiya kemalarda dunyoni g‘arbdan sharqqa aylanib chiqdi?",["1507–1510","1408–1502","1499–1504","1519–1522"],3]);
+GEO_OCHIQ.push(["Nechanchi yilning yanvarida rus dengizchi sayyohlari F. Bellinsgauzen va M. Lazarev eng uzoqda joylashgan, muzlar bilan qoplanib yotgan Antarktida materigini kashf etishdi?",["1420","1620","1820","1920"],2]);
+GEO_OCHIQ.push(["Eratosfen va Ptolemeyning dunyo xaritasida mos ravishda nechta daryo tasvirlangan?",["Eratosfen – 7, Ptolemey – 6","Eratosfen – 6, Ptolemey – 7","Eratosfen – 6, Ptolemey – 6","Eratosfen – 7, Ptolemey – 7"],0]);
+GEO_OCHIQ.push(["Nosir Xisravning yashagan yillari to‘g‘ri berilgan javobni toping.",["1044–1088","783–850","1004–1088","973–1048"],2]);
+GEO_OCHIQ.push(["Mahmud Koshg‘ariy \"Devonu lug‘otit turk\" asarini nechanchi asrda yozgan?",["Miloddan avvalgi XI asrda","Milodiy IX asrda","Milodiy XI asrda","Miloddan avvalgi IX asrda"],2]);
+GEO_OCHIQ.push(["Geografiya fani rivojlanib borgan sari unda nechta tarmoq shakllandi?",["5 ta","Bir qancha","2 ta","3 ta"],1]);
+GEO_OCHIQ.push(["Ijtimoiy-iqtisodiy geografiya o‘z navbatida nechta sohaga ajratiladi?",["2 ta","3 ta","4 ta","5 ta"],1]);
+GEO_OCHIQ.push(["Eratosfen nechanchi asrda yashagan?",["Milodiy III asr","Mil. avv. II asr","Mil. avv. III asr","Milodiy II asr"],2]);
+GEO_OCHIQ.push(["Tabiiy geografiya o‘z navbatida nechta sohaga ajratiladi?",["6 ta","4 ta","3 ta","5 ta"],3]);
+GEO_OCHIQ.push(["Nechanchi asrda yunon olimi Eratosfen \"Geografika\" nomli kitob yozib, ushbu fanga asos solgan?",["Miloddan avvalgi II asrda","Milodiy III asrda","Miloddan avvalgi III asrda","Milodiy II asrda"],2]);
+GEO_OCHIQ.push(["Nechanchi yilda Villem Yanszon Yer sharining janubiy yarimsharidagi quruqlik – Avstraliya materigini kashf etdi?",["1506-yilda","1608-yilda","1605-yilda","1519-yilda"],2]);
+GEO_OCHIQ.push(["Eratosfen tuzgan dunyo xaritasida nechta shahar tasvirlangan?",["5 ta","4 ta","3 ta","2 ta"],2]);
+GEO_OCHIQ.push(["Hamidulla Hasanov rahbarligida nechanchi yilda ulkan globus yasalgan?",["1884-yilda","1984-yilda","1985-yilda","1981-yilda"],1]);
+GEO_OCHIQ.push(["O‘rta Osiyoda birinchi temiryo‘l qachon qurilgan?",["XIX asr boshlarida","XIX asr o‘rtalarida","XIX asr oxirida","XX asr boshlarida"],2]);
+GEO_OCHIQ.push(["\"Buyuk Ipak yo‘li\" qaysi asrlarda Sharq va G‘arbni bog‘lab turgan asosiy savdo yo‘li bo‘lib xizmat qilgan?",["mil. avv. I asrdan milodiy XVII asrgacha","milodiy II asrdan miloddan avvalgi XVI asrgacha","milodiy I asrdan milodiy XVII asrgacha","mil. avv. II asrdan milodiy XVI asrgacha"],3]);
