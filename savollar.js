@@ -160,7 +160,26 @@ var GEO_RASM={
 "gx13_v33": "rasmlar/gx13_v33.webp",
 "gx13_w42": "rasmlar/gx13_w42.webp",
 "gx13_w43": "rasmlar/gx13_w43.webp",
-"gx13_w44": "rasmlar/gx13_w44.webp"
+"gx13_w44": "rasmlar/gx13_w44.webp",
+"gx14_v1": "rasmlar/gx14_v1.webp",
+"gx14_v2": "rasmlar/gx14_v2.webp",
+"gx14_v5": "rasmlar/gx14_v5.webp",
+"gx14_v9": "rasmlar/gx14_v9.webp",
+"gx14_v14": "rasmlar/gx14_v14.webp",
+"gx14_v17": "rasmlar/gx14_v17.webp",
+"gx14_v20": "rasmlar/gx14_v20.webp",
+"gx14_v21": "rasmlar/gx14_v21.webp",
+"gx14_v30": "rasmlar/gx14_v30.webp",
+"gx14_v31": "rasmlar/gx14_v31.webp",
+"gx14_v32": "rasmlar/gx14_v32.webp",
+"gx14_v33": "rasmlar/gx14_v33.webp",
+"gx14_v36": "rasmlar/gx14_v36.webp",
+"gx14_v37": "rasmlar/gx14_v37.webp",
+"gx14_v39": "rasmlar/gx14_v39.webp",
+"gx14_v41": "rasmlar/gx14_v41.webp",
+"gx14_v43": "rasmlar/gx14_v43.webp",
+"gx14_v44": "rasmlar/gx14_v44.webp",
+"gx14_v45": "rasmlar/gx14_v45.webp"
 };
 
 /* ===== 1-to‘plam ===== */
@@ -708,3 +727,50 @@ GEO_YOZMA.push(["<b>Grafikdagi ma’lumotlardan foydalanib topshiriqlarni bajari
 GEO_KALIT.push("a) 582 720; b) 2010");
 GEO_YOZMA.push(["<b>Dunyoning geosiyosiy tizimi va shakllanishiga doir topshiriqlarni bajaring.</b><br>a) Qaysi g‘oya tarafdorlari tabiiy muhit jahon tarixi hamda insonlar hayot tarziga ta’sir ko‘rsatadi deb hisoblaydilar? (Geografik ... – «geografik» so‘zisiz yozing)<br>b) Ular ko‘rsatib bergan tabiiy muhit unsurlari orasida qaysi biri insonlar atvorining shakllanishi va davlatlardagi siyosat xususiyatlarining yuzaga kelishida asosiy omil sifatida qaralgan?",[["a) Qaysi g‘oya tarafdorlari tabiiy muhit jahon tarixi hamda insonlar hayot tarziga ta’sir ko‘rsatadi deb hisoblaydilar? (Geografik ... – «geografik» so‘zisiz yozing)",/determinizm/i],["b) Ular ko‘rsatib bergan tabiiy muhit unsurlari orasida qaysi biri insonlar atvorining shakllanishi va davlatlardagi siyosat xususiyatlarining yuzaga kelishida asosiy omil sifatida qaralgan?",/iqlim/i]]]);
 GEO_KALIT.push("a) DETERMINIZM; b) IQLIM");
+
+/* ===== 14-to‘plam ===== */
+GEO_OCHIQ.push(["Sayyohlarning amalga oshirgan ishlari mos ravishda to‘g‘ri berilgan javobni toping.",["1 – D, 2 – B, 3 – C, 4 – A","1 – B, 2 – D, 3 – A, 4 – C","1 – C, 2 – A, 3 – B, 4 – D","1 – A, 2 – D, 3 – B, 4 – C"],0,"gx14_v1"]);
+GEO_OCHIQ.push(["Quyidagi shartli belgidagi raqamlar nimani ifodalaydi?",["joyning koordinatasi","hududdagi xonadonlar soni","joyning nisbiy balandligi","joyning mutlaq balandligi"],3,"gx14_v2"]);
+GEO_OCHIQ.push(["Quyidagi olimlardan qaysi biri X asrda «Iqlimlar kitobi» nomli asar yozgan?",["Mahmud Koshg‘ariy","Yoqut ibn Abdulla","Abu Is’hoq Istaxriy","Abul Hasan Ali Ma’sudiy"],2]);
+GEO_OCHIQ.push(["Gumus nimadan hosil bo‘ladi?",["o‘simlik va hayvon qoldiqlaridan","gil va kesakchalardan","mineral eritmadan","tog‘ jinsidan"],0]);
+GEO_OCHIQ.push(["Jadvaldagi ma’lumotlardan foydalanib aniqlang: samolyot A punktga qo‘nganda Toshkentda soat va sana necha bo‘ladi?",["20:40, 5-mart","23:40, 5-mart","00:40, 6-mart","04:40, 6-mart"],2,"gx14_v5"]);
+GEO_OCHIQ.push(["Jadvaldagi punktlar ichida parvoz davomiyligi eng uzoq bo‘lgan vaqtni aniqlang.",["02:30","02:50","03:00","03:15"],3,"gx14_v5"]);
+GEO_OCHIQ.push(["Havo namligiga oid to‘g‘ri ta’rifni toping.",["0 °C dan sovuq haroratli havo tarkibida namlik bo‘lmaydi","balandlik ortgan sari havo tarkibidagi namlik kamayib boradi","issiq havoda ko‘proq, sovuq havoda kamroq namlik bo‘ladi","havo namligi anemometr yordamida o‘lchanadi"],2]);
+GEO_OCHIQ.push(["Gibraltar bo‘g‘izi qaysi geografik obyektlar oralig‘ida joylashgan?",["Pireney yarimoroli va Osiyo","Kichik Osiyo va Osiyo","Osiyo va Yevropa","Yevropa va Afrika"],3]);
+GEO_OCHIQ.push(["Sxemaga ko‘ra, 66,5° janubiy kenglikda qaysi nuqtada bir sutka – 24 soat davomida Quyosh botmaydi?",["I","II","III","IV"],2,"gx14_v9"]);
+GEO_OCHIQ.push(["Sxemaga ko‘ra, Shimoliy yarimsharning o‘rta kengliklarida qaysi oraliqlarda kunning davomiyligi muttasil (to‘xtovsiz) ortib boradi?",["I, II","II, III","III, IV","IV, I"],2,"gx14_v9"]);
+GEO_OCHIQ.push(["Norin daryosida qurilgan suv omborini aniqlang.",["Buxtarma","To‘xtag‘ul","Chordara","Qopchig‘ay"],1]);
+GEO_OCHIQ.push(["Terayalar – bu ...",["Himolay tog‘larining etaklarida baland bo‘yli o‘t-o‘simliklar, buta va daraxtlardan tarkib topgan botqoqlashgan changalzorlar","Karpat tog‘larining o‘rmonlar bilan qoplangan, yaylov sifatida foydalaniladigan qismlari","Avstraliya materigining cho‘l tabiat zonasida tarkib topgan o‘tib bo‘lmas changalzorlar","Afrikaning tropik iqlim mintaqasida haroratning keskin o‘zgarishi natijasida tog‘ jinslarining parchalanishidan vujudga keladigan toshloq sahrolar"],0]);
+GEO_OCHIQ.push(["Ritmiklik qonuniyatiga mos keluvchi javobni toping.",["Sunami","Abraziya","Dengiz oqimi","Qalqish"],3]);
+GEO_OCHIQ.push(["Rasmdagi blok-sxemada qaysi tabiiy jarayon (tabiat hodisasi) tasvirlangan?",["To‘fon","Sunami","Suv toshqini","Dengiz oqimi"],1,"gx14_v14"]);
+GEO_OCHIQ.push(["Rasmdagi tabiiy jarayon asosan nimalar ta’sirida vujudga keladi?",["kuchli shamollar va siklonlar","suv osti zilzilalari va vulqonlar","iqlim o‘zgarishi va muzliklarning erishi","Oy va Quyoshning tortish kuchi"],1,"gx14_v14"]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br><i>«...Hududining katta qismi tropik, shimoliy qismlari subtropik iqlim mintaqasida joylashgan. Mintaqaning janubida yil davomida quruq va issiq kontinental tropik havo massalari tarkib topadi. Yozi juda issiq (+30 °C), qishi iliq (+18...+24 °C) bo‘lib, 500–1000 mm atrofida yog‘in yog‘adi. Shimoli-g‘arbiy qismida qattiq bargli doimiy yashil o‘rmon va butazorlar zonasi joylashgan...»</i><br>Matnda berilgan ma’lumotlar qaysi tabiiy geografik o‘lkaga tegishli?",["Janubiy Osiyo","O‘rta Yevropa","Markaziy Osiyo","Janubi-g‘arbiy Osiyo"],3]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br><i>«...Zonaning tuproqlari podzol, botqoq va muzloq tuproqlardan iborat. Asosiy o‘simligi qora va oq qarag‘ay, Amerika tilog‘ochi, balzam pixtasi, qarag‘ay. Hayvonlardan qora va qo‘ng‘ir ayiq, Kanada silovsini, Amerika suvsari, skuns, los, vapiti kiyigi, o‘rmon bizoni va boshqalar yashaydi...»</i><br>Matnda tavsifi berilgan tabiat zonasi yozuvsiz xaritada qaysi raqam bilan belgilanganligini toping.",["4","2","1","3"],1,"gx14_v17"]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br><i>«...Mintaqa iqlimi subtropik bo‘lib, yozi issiq va quruq, qishi esa iliq va yomg‘irli. Hududida geosinklinal joylashganligi tufayli seysmik jihatdan faol hudud hisoblanadi. Bir necha harakatdagi vulqonlar bor, zilzilalar takrorlanib turadi. Suv resurslari bilan ta’minlanish darajasi pastroq bo‘lib, ayrim hududlarda suv tanqisligi ham sezilmoqda...»</i><br>Yuqoridagi ta’rif Yevropaning qaysi subregioniga tegishli?",["O‘rta Yevropa","Markaziy Osiyo","Janubiy Osiyo","Janubiy Yevropa"],3]);
+GEO_OCHIQ.push(["Aydarko‘lning shimoliy qirg‘og‘idan janubiy sohiliga suzib o‘tgan sayyoh qaysi tabiiy geografik okrug hududiga kirib kelgan?",["O‘rta Zarafshon","Qizilqum","Mirzacho‘l","Qashqadaryo"],2]);
+GEO_OCHIQ.push(["Harorat va nisbiy namlik o‘lchovlari 1, 2 va 3-meteorologik stansiyalarda bir vaqtning o‘zida amalga oshirildi (jadvalga qarang). 2-meteorologik stansiyada 1 m³ havoning namga to‘yinishi uchun yana necha gramm suv bug‘i kerak bo‘ladi?",["2,15 g","3,15 g","4,25 g","5,85 g"],1,"gx14_v20"]);
+GEO_OCHIQ.push(["Azimutal proyeksiyadagi xaritaga ko‘ra, agar A nuqtada mahalliy vaqt bilan soat 11:00 va sana 1-yanvar bo‘lsa, B nuqtada soat necha bo‘lishini aniqlang.",["02:00","08:00","15:00","20:00"],3,"gx14_v21"]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br><i>«...Okrugning yozi issiq, quruq, davomli, qishi nisbatan iliq. Shimol va sharq tomondan Arktika va Sibir sovuq havo massalari kirib kela olmaganligi sababli yanvarning o‘rtacha harorati 0 °C dan yuqori. Aksincha, g‘arbiy qismi ochiq bo‘lib, mo‘tadil dengiz va subtropik havo massalarining to‘siqsiz kirib kelishiga imkon beradi...»</i><br>Yuqorida keltirilgan ma’lumotlar qaysi tabiiy geografik okrugga tegishli?",["Mirzacho‘l","Farg‘ona","Surxondaryo","Qashqadaryo"],3]);
+GEO_OCHIQ.push(["Chirchiq-Ohangaron tabiiy geografik okrugiga mos keluvchi ta’rifni toping.",["shimol va shimoli-sharqqa tomon balandlashib boradi. Okrugning tekislik qismi yuzasi bir xil emas, unda onda-sonda qoldiq tog‘lar va platolar uchrab turadi. G‘arbiy qismida cho‘l sur-qo‘ng‘ir qumli, sho‘rxok va o‘tloq tuproqlar tarqalgan","vodiy relyef jihatidan sharqdan g‘arbga pasayib boradi. Mavjud daryo o‘zanini yuvib, chuqurlashtirib, qator qayirlar hosil qilgan. Bu qayirlar gil, qumoq va lyossimon jinslardan tashkil topgan","yer usti tuzilishi bir xil emas. Tekislikning yuzasi past-balandliklardan iborat bo‘lib, markaziy qismida daryoning qadimiy o‘zanlarida bir necha botiqlar joylashgan. Bu o‘zansimon botiqlar orasida esa tepachalar joylashgan. Shimoli-sharqiy qismida daryoning uchta terrasasi joylashgan","tog‘lari kaledon va gersin burmalanishida ko‘tarilgan, so‘ngra tashqi kuchlar ta’sirida yemirilgan. Hozirgi relyefi vujudga kelishida antropogen davrida sodir bo‘lgan jarayonlar, xususan, neotektonik jarayonlarning ahamiyati katta"],3]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br><i>«...Yomg‘ir tez-tez yog‘ib turadi, havoning o‘rtacha harorati hamma joyda 0 °C dan yuqori. Shuning uchun o‘simliklar vegetatsiyasi (o‘sishi) yil davomida to‘xtamaydi. Bu yerda yoz quruq va issiq, qish iliq hamda seryomg‘ir bo‘ladi...»</i><br>Yuqoridagi ma’lumotlar qaysi tabiiy geografik o‘lkaga tegishli?",["O‘rta Yevropa","Janubiy Yevropa","Janubiy Osiyo","O‘rta Osiyo"],1]);
+GEO_OCHIQ.push(["Mexanik energiyani elektr energiyasiga aylantirib beruvchi tarmoq – ...",["atom elektr stansiyasi","issiqlik elektr stansiyasi","quyosh energiyasi","gidroelektr stansiyasi"],3]);
+GEO_OCHIQ.push(["Navoiy viloyati haqida berilgan to‘g‘ri ma’lumotni aniqlang.",["neftni qayta ishlash, kimyo, energetika sanoati iqtisodiy rayondagina emas, balki respublikada ham ajralib turadi. Mashinasozlik, metallsozlik va binokorlik materiallari ishlab chiqaruvchi tarmoqlar ham muhim ahamiyatga ega. Shuningdek, hududida ikkita sanoat tuguni shakllangan","sanoati, asosan, undiruvchi tarmoqlari hisobiga yuksak rivojlangan. Xususan, yoqilg‘i resurslarini ishlab chiqarish bo‘yicha birinchi o‘rinni egallaydi, hududida strategik ahamiyatga ega gaz-kimyo majmuasi joylashgan","agrosanoat majmuyi ehtiyoji negizida vujudga kelgan. Hozirda mashinasozlik agrosanoat majmuyiga xizmat ko‘rsatishdan tashqari, ko‘plab turdagi murakkab mashinalar ham ishlab chiqarmoqda","elektr energiyasi ishlab chiqarish bo‘yicha respublikada oldingi o‘rinlarda turadi, yirik kimyo kombinati, qurilish (sement) materiallari, kon-metallurgiya tarmoqlari rivojlangan"],3]);
+GEO_OCHIQ.push(["Malayziya haqida berilgan ma’lumotlar asosida mos javobni toping.",["yarimorol qismida aholisining 80 foizi istiqomat qiladi","eng yirik millat – yavaliklar bo‘lib, jami aholining 50 foizini tashkil etadi","urbanizatsiya darajasi 40 % atrofida, ko‘p tarmoqli qishloq xo‘jaligi shakllangan","hududining qariyb 75 foizini o‘simlik va hayvonot dunyosiga boy ekvatorial nam o‘rmonlar egallagan"],0]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br><i>«O‘zaro savdo-sotiq, kreditlar berish, xalqaro iqtisodiy tashkilotlar barpo etish va boshqa shakldagi iqtisodiy aloqalar orqali bog‘langan jahon mamlakatlarining milliy iqtisodiyotlari majmui – bu...»</i><br>Yuqoridagi ta’rifga mos keluvchi atamani toping.",["transmilliy kompaniya","jahon xo‘jaligi","xalqaro mehnat taqsimoti","ixtisoslashuv"],1]);
+GEO_OCHIQ.push(["Xalqaro savdoda katta talab mavjud bo‘lgan tayyor mahsulotlarni toping.",["oziq-ovqat mahsulotlari, transport vositalari, elektronika jihozlari","kimyoviy mahsulotlar, mashina va jihozlar, transport vositalari","to‘qimachilik mahsulotlari, elektronika qurilmalari, asbob-uskunalar","yoqilg‘i mahsulotlari, transport vositalari, mashina va asbob-uskunalar"],1]);
+GEO_OCHIQ.push(["Jadvaldagi ma’lumotlardan foydalanib aniqlang: III raqamda ko‘rsatilgan davlat ijtimoiy rivojlanishi holatiga ko‘ra qaysi tipga kiradi?",["industrial","postindustrial","sanoatlashgan","agrar"],3,"gx14_v30"]);
+GEO_OCHIQ.push(["Diagramma ma’lumotlaridan foydalanib, yil boshida mamlakatdan necha kishi chetga chiqib ketganligini (tashqi migratsiyani) toping.",["106 200 kishi","475 030 kishi","1 949 750 kishi","70 900 kishi"],1,"gx14_v31"]);
+GEO_OCHIQ.push(["Ushbu chizmaga mos javobni toping. AB yo‘nalish – 225° (j.g‘). AC yo‘nalishi ufqning qaysi tomoniga mos kelishini aniqlang.",["janubi-sharq","shimol-g‘arbi-g‘arb","janub-g‘arbi-g‘arb","shimoli-g‘arb"],2,"gx14_v32"]);
+GEO_OCHIQ.push(["Balandlik mintaqalari bo‘yicha moslashtirish (javoblar A–F variantlardan tanlanadi).<br><b>33.</b> Subarktika iqlim mintaqasidagi tog‘larning etagi qaysi tabiat zonasi bilan boshlanadi?",["tundra va o‘rmon-tundra","o‘rmon-dasht","dasht","chalacho‘l","subalp va alp o‘tloqlari","cho‘l"],0,"gx14_v33"]);
+GEO_OCHIQ.push(["Balandlik mintaqalari bo‘yicha moslashtirish (javoblar A–F variantlardan tanlanadi).<br><b>34.</b> O‘rta Osiyoning 1200–2000 m balandlikdagi mintaqalari qaysi tabiat zonasiga tegishli?",["tundra va o‘rmon-tundra","o‘rmon-dasht","dasht","chalacho‘l","subalp va alp o‘tloqlari","cho‘l"],2,"gx14_v33"]);
+GEO_OCHIQ.push(["Balandlik mintaqalari bo‘yicha moslashtirish (javoblar A–F variantlardan tanlanadi).<br><b>35.</b> Surxondaryo tabiiy geografik okrugining 2500 metrdan baland qismlari qaysi zonaga tegishli?",["tundra va o‘rmon-tundra","o‘rmon-dasht","dasht","chalacho‘l","subalp va alp o‘tloqlari","cho‘l"],4,"gx14_v33"]);
+GEO_OCHIQ.push(["Xaritada yulduzcha bilan tasvirlangan gidrografik obyektni toping.",["Karib dengizi","Meksika qo‘ltig‘i","Sargasso dengizi","Gudzon qo‘ltig‘i"],1,"gx14_v36"]);
+GEO_OCHIQ.push(["Janubiy Amerika materigida 30° parallel chizig‘i qaysi geografik obyekt ustidan kesib o‘tmaganligini aniqlang.",["La-Plata","And","Parana","Patagoniya"],3,"gx14_v37"]);
+GEO_OCHIQ.push(["Kim tomonidan yer po‘stining rivojlanish nazariyasi ishlab chiqildi?",["V. V. Dokuchayev","Ch. Layel","A. A. Grigoryev","V. A. Vernadskiy"],1]);
+GEO_OCHIQ.push(["O‘rta Osiyo o‘lkasining yozuvsiz xaritasida yulduzcha bilan tasvirlangan rayonni toping.",["G‘arbiy Tyanshan","Shimoliy Tyanshan","Sharqiy Tyanshan","Markaziy Tyanshan"],1,"gx14_v39"]);
+GEO_OCHIQ.push(["Pushta – bu ...",["And tog‘idagi baland tog‘ o‘tloqlari","tabiiy sharoiti qattiq, yog‘in kam yog‘adigan o‘lka","Karpat tog‘idagi pasttekisliklarda ahyon-ahyonda uchraydigan dashtlar","Buyuk tekisliklardagi dashtlar"],2]);
+GEO_OCHIQ.push(["Jadvaldagi eksport va import ma’lumotlaridan foydalanib, mamlakatning tashqi savdo aylanmasini aniqlang (mlrd AQSh doll.).",["6,720","56,432","119,584","123,152"],2,"gx14_v41"]);
+GEO_OCHIQ.push(["Jadvaldagi ma’lumotlarga ko‘ra mamlakatning tashqi savdo balansini (saldosini) aniqlang (mlrd AQSh doll.).",["−6,720","6,720","−119,584","119,584"],0,"gx14_v41"]);
+GEO_OCHIQ.push(["Chizma-xaritada IV raqam bilan belgilangan geografik obyektni aniqlang.",["Ziyovuddin","Zirabuloq","Qoratepa","Zarafshon"],0,"gx14_v43"]);
+GEO_OCHIQ.push(["Jadvalga ko‘ra mamlakat aholisi mexanik o‘sish (immigratsiya va emigratsiya farqi) hisobiga qancha kishiga ko‘paygan?",["11 920 kishi","476 800 kishi","488 720 kishi","596 000 kishi"],1,"gx14_v44"]);
+GEO_OCHIQ.push(["Quyidagi xarita-sxemada 3 raqami bilan qaysi tog‘ joylashgan?",["Sulton Uvays","Tomditog‘","Bo‘kantov","Quljuqtov"],1,"gx14_v45"]);
