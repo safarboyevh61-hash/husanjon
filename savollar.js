@@ -197,7 +197,8 @@ var GEO_RASM={
 "gx18_v15": "rasmlar/gx18_v15.webp",
 "gx18_v16": "rasmlar/gx18_v16.webp",
 "gx18_v18": "rasmlar/gx18_v18.webp",
-"gx18_v20": "rasmlar/gx18_v20.webp"
+"gx18_v20": "rasmlar/gx18_v20.webp",
+"gx19_v5": "rasmlar/gx19_v5.webp"
 };
 
 /* ===== 1-to‘plam ===== */
@@ -845,3 +846,10 @@ GEO_OCHIQ.push(["O‘rta Osiyo tog‘laridagi keng bargli o‘rmonlar qaysi tog�
 GEO_OCHIQ.push(["Jadval ma’lumotlaridan foydalanib topshiriqlarni bajaring.<br>a) 2022-yilda tabiiy o‘sish necha promilleni tashkil etganligini aniqlang.<br>b) 2022-yilda aholi soni (har 1000 kishiga) qanchaga oshganligini aniqlang.",["a) 19; b) 17","a) 19; b) 29","a) 17; b) 19","a) 24; b) 29"],2,"gx18_v18"]);
 GEO_OCHIQ.push(["Quyidagi daryolardan qaysi biri O‘rta Osiyo hududidan oqib chiqib ketadi?",["Ishim","Ili","Atrek","Chu"],0]);
 GEO_OCHIQ.push(["Xaritadan foydalanib topshiriqni bajaring.<br>a) Xaritada 4 va 5 raqamlar bilan belgilangan davlatlarni qaysi xususiyat birlashtiradi?<br>b) Xaritada qaysi raqam bilan belgilangan davlat poytaxti dunyodagi eng balandda joylashgan «millioner» shahar maqomini olgan?",["a) quruqlik ichkarisida joylashgan; b) 4","a) federativ davlatlar; b) 3","a) monarxiya tipidagi davlatlar; b) 2","a) baland tog‘lik hududda joylashgan; b) 3"],0,"gx18_v20"]);
+
+/* ===== 19-to‘plam ===== */
+GEO_OCHIQ.push(["Ba’zi issiq buloqlarda suv vaqt-vaqti bilan favvora kabi otilib turadi. Bunday buloqlar nima deyiladi?",["geyzer","magma","golitsin","krater"],0]);
+GEO_OCHIQ.push(["Quyidagi dengizlardan chekka dengiz bo‘lgan javobni aniqlang.",["Arabiston dengizi","Qizil dengiz","O‘rta dengiz","Qora dengiz"],0]);
+GEO_OCHIQ.push(["Quyi Amudaryo okrugi negizida qaysi davr yotqiziqlari joylashgan?",["paleogen","bo‘r","neogen","yura"],1]);
+GEO_OCHIQ.push(["Makvis – bu nima?",["And tog‘laridagi hayvonlar to‘plangan hudud","Antarktidadagi qush nomi","Avstraliyada yashovchi xaltali hayvon","Afrikada uchrovchi o‘simlik nomi"],3]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br>a) Qattiq bargli doimiy yashil o‘rmon va butazorlar zonasi Yevrosiyoning qaysi qismida tarqalgan?<br>b) Janubi-g‘arbiy Osiyo o‘lkasi qaysi tabiat zonalarida joylashganligini aniqlang.",["a) janubida; b) dasht","a) sharqida; b) dasht va savanna","a) shimolida; b) savannalar va cho‘llar","a) g‘arbida; b) chalacho‘l va cho‘llar"],3,"gx19_v5"]);
