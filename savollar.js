@@ -191,7 +191,13 @@ var GEO_RASM={
 "gx16_v12": "rasmlar/gx16_v12.webp",
 "gx16_v13": "rasmlar/gx16_v13.webp",
 "gx17_v2": "rasmlar/gx17_v2.webp",
-"gx17_v3": "rasmlar/gx17_v3.webp"
+"gx17_v3": "rasmlar/gx17_v3.webp",
+"gx18_v4": "rasmlar/gx18_v4.webp",
+"gx18_v10": "rasmlar/gx18_v10.webp",
+"gx18_v15": "rasmlar/gx18_v15.webp",
+"gx18_v16": "rasmlar/gx18_v16.webp",
+"gx18_v18": "rasmlar/gx18_v18.webp",
+"gx18_v20": "rasmlar/gx18_v20.webp"
 };
 
 /* ===== 1-to‘plam ===== */
@@ -818,3 +824,24 @@ GEO_OCHIQ.push(["Quyidagi mamlakatlardan qaysi birida bolalar salmog‘i 14 ga t
 GEO_OCHIQ.push(["Quyidagi xaritada Namib cho‘li qaysi raqam bilan belgilangan?",["16","24","19","17"],0,"gx17_v2"]);
 GEO_OCHIQ.push(["Quyidagilar orasidan to‘g‘ri fikrlar sonini toping.",["2 ta","3 ta","1 ta","4 ta"],1,"gx17_v3"]);
 GEO_OCHIQ.push(["Topografik xaritalarda relyef nima yordamida tasvirlanadi?",["gorizontallar","alohida belgilar","ranglar","chiziqlar"],0]);
+
+/* ===== 18-to‘plam ===== */
+GEO_OCHIQ.push(["Mamlakatimizning yog‘och-taxta xomashyosiga bo‘lgan yillik ehtiyoji qancha?",["100 ming m³","10 ming m³","100 mln m³","10 mln m³"],3]);
+GEO_OCHIQ.push(["Toroslar nima?",["qalashib ketgan muzliklar","kema qatnaydigan davr","bir qancha muz bo‘laklari","Shimoliy Muz okeanidagi ichki dengiz nomi"],0]);
+GEO_OCHIQ.push(["Matnni o‘qing va berilgan ma’lumotlar atmosferaning qaysi qatlamlariga tegishli ekanligini aniqlang.",["a) mezosfera; b) troposfera, termosfera, ekzosfera","a) stratosfera; b) mezosfera, troposfera, ekzosfera","a) ekzosfera; b) mezosfera, termosfera, stratosfera","a) troposfera; b) mezosfera, termosfera, ekzosfera"],3,"gx18_v4"]);
+GEO_OCHIQ.push(["Atrof-muhit holatining monitoringi masalasi qaysi shaharda bo‘lib o‘tgan tabiiy muhit muhofazasiga bag‘ishlangan konferensiya arafasida vujudga kelgan?",["Rio-de-Janeyro","Stokgolm","London","Xelsinki"],1]);
+GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br><i>«Mamlakat relyefining xususiyatlariga ko‘ra tog‘li mamlakat. Asosiy foydali qazilmalari neft, qalay, volfram, boksit, oltin hisoblanadi. Neft asosan mamlakatning orol qismidagi dengiz sayozliklaridan qazib olinadi».</i><br>Matndagi ma’lumotlar qaysi davlatga tegishli?",["Buyuk Britaniya","Fransiya","Malayziya","Nigeriya"],2]);
+GEO_OCHIQ.push(["Sutka davomida havo harorati quyidagicha kuzatildi: +1 °C, +5 °C, +7 °C, +10 °C, +14 °C, +12 °C, +10 °C, +7 °C.<br>a) Havo haroratining sutkalik amplitudasini aniqlang.<br>b) Sutkalik o‘rtacha havo haroratini toping.",["a) +13 °C; b) +8,25 °C","a) +8 °C; b) +6,7 °C","a) +11 °C; b) +6,3 °C","a) +15 °C; b) +8,00 °C"],0]);
+GEO_OCHIQ.push(["Afrika ko‘llari orasida qaysi ko‘lning maydoni 32,9 ming km² ni tashkil etadi?",["Viktoriya","Chad","Tanganika","Nyasa"],2]);
+GEO_OCHIQ.push(["Shimoliy Amerikaning Katta Havza va Kolorado platosida qanday tabiat zonalari shakllangan?",["o‘rmon-dasht va dasht","savannalar va siyrak o‘rmonlar","aralash o‘rmonlar","chalacho‘l va cho‘llar"],3]);
+GEO_OCHIQ.push(["Jadvaldagi ma’lumotlardan foydalanib topshiriqlarni bajaring.<br>a) Soat 07:00 da havoning mutlaq namligini aniqlang.<br>b) Soat 13:00 da 1 m³ havoning to‘yinishi uchun necha gramm suv bug‘i kerak bo‘lishini aniqlang.",["a) 11,05 g; b) 6,6 g","a) 13,05 g; b) 7,6 g","a) 10,05 g; b) 30 g","a) 17 g; b) 30 g"],0,"gx18_v10"]);
+GEO_OCHIQ.push(["Hind okeanida eng baland suv qalqishi qaysi qo‘ltiqda kuzatilgan?",["Penjin","Mezen","Fandi","Kambey"],3]);
+GEO_OCHIQ.push(["Qaysi viloyatlarda bog‘ va tokzor maydonlar birmuncha kam?",["Jizzax, Sirdaryo","Xorazm, Buxoro","Xorazm, Navoiy","Farg‘ona, Andijon"],1]);
+GEO_OCHIQ.push(["Iqtisodiyotning uchlamchi sektoriga tegishli bo‘lgan xo‘jalik yuritish subyektini toping.",["G‘ozg‘on marmar koni","Qalmoqqir koni","Jayronxona sanatoriyasi","«Semurg‘» trikotaj fabrikasi"],2]);
+GEO_OCHIQ.push(["Yevrosiyoning o‘rmon-dasht mintaqasi o‘rmonlar zonasida qanday tuproqlar tarqalgan?",["sur-qo‘ng‘ir","jigarrang","qo‘ng‘ir o‘rmon","qora tuproq"],0]);
+GEO_OCHIQ.push(["Quyida berilgan davlatlar va ularning qishloq xo‘jaligi mahsulotlarini yetishtirish bo‘yicha yetakchilik qiladigan mahsulotlarini mos holda to‘g‘ri joylashtiring.<br>1. Rossiya; 2. Ispaniya; 3. Hindiston; 4. AQSh; 5. Braziliya; 6. Ukraina.<br>a) soya; b) shakarqamish; c) kartoshka; d) kofe; e) qandlavlagi; f) zaytun.",["1-c, 2-e, 3-a, 4-b, 5-d, 6-f","1-a, 2-f, 3-e, 4-d, 5-b, 6-c","1-c, 2-f, 3-b, 4-a, 5-d, 6-e","1-d, 2-f, 3-c, 4-e, 5-a, 6-b"],2,"gx18_v15"]);
+GEO_OCHIQ.push(["Yarimsharlar xaritasidan foydalanib topshiriqlarni bajaring.<br>a) G nuqta ustida Quyosh tik tepaga keladigan sanani aniqlang.<br>b) G nuqta E nuqtaga nisbatan necha kilometr janubroqda joylashganini toping (hisoblashda 1° meridian yoyi 111,1 km ga teng deb qabul qilinsin).",["a) 22-iyun; b) 5221,7 km","a) 23-avgust; b) 2610,8 km","a) 22-iyul; b) 5217 km","a) 21-dekabr; b) 7388,1 km"],0,"gx18_v16"]);
+GEO_OCHIQ.push(["O‘rta Osiyo tog‘laridagi keng bargli o‘rmonlar qaysi tog‘larda uchraydi?",["Shimoliy Tyanshan, Hisor","Hisor, Janubiy Tojikiston","Jung‘oriya Olatovi, G‘arbiy Tyanshan","Shimoliy Tyanshan, Tarbag‘atoy"],1]);
+GEO_OCHIQ.push(["Jadval ma’lumotlaridan foydalanib topshiriqlarni bajaring.<br>a) 2022-yilda tabiiy o‘sish necha promilleni tashkil etganligini aniqlang.<br>b) 2022-yilda aholi soni (har 1000 kishiga) qanchaga oshganligini aniqlang.",["a) 19; b) 17","a) 19; b) 29","a) 17; b) 19","a) 24; b) 29"],2,"gx18_v18"]);
+GEO_OCHIQ.push(["Quyidagi daryolardan qaysi biri O‘rta Osiyo hududidan oqib chiqib ketadi?",["Ishim","Ili","Atrek","Chu"],0]);
+GEO_OCHIQ.push(["Xaritadan foydalanib topshiriqni bajaring.<br>a) Xaritada 4 va 5 raqamlar bilan belgilangan davlatlarni qaysi xususiyat birlashtiradi?<br>b) Xaritada qaysi raqam bilan belgilangan davlat poytaxti dunyodagi eng balandda joylashgan «millioner» shahar maqomini olgan?",["a) quruqlik ichkarisida joylashgan; b) 4","a) federativ davlatlar; b) 3","a) monarxiya tipidagi davlatlar; b) 2","a) baland tog‘lik hududda joylashgan; b) 3"],0,"gx18_v20"]);
