@@ -297,14 +297,13 @@ function build(){$('gd').innerHTML=Array.from({length:45},(_,i)=>`<b data-i="${i
 function mark(){[...$('gd').children].forEach((b,i)=>{const d=i<35?ST.a[i]!=null:(ST.w[i]&&(ST.w[i][0]||ST.w[i][1]));
  b.className=(d?'d ':'')+(i===ST.cur?'cur':'')})}
 function show(i){ST.cur=i;let h='';
- if(i<35){const [t,o,,sv,ab]=Q[i];
-  h=`<div class="q"><b>${i+1}-savol.</b> ${i>=32?Q[i][0].split('<br>33')[0]:''}${i<32?t:''}</div>`;
-  if(i>=32){const lab=['Qattiqbargli o‘rmonlar va butalar o‘sadigan iqlim mintaqasini aniqlang.','Atakama va Namib cho‘llari tarkib topgan iqlim mintaqasini aniqlang.','Rossiyaning tayga o‘rmonlari tarkib topgan iqlim mintaqasini aniqlang.'][i-32];
-   h+=`<p style="color:var(--g)"><b>${i+1}.</b> ${lab}</p>`}
+ if(i<35){const e=EQ[i],q=e.q,t=q[0],o=q[1],sv=q[3],sp=e.o>=32&&e.o<35;
+  h=`<div class="q"><b>${i+1}-savol.</b> ${sp?String(t).split('<br>33')[0]:t}</div>`;
+  if(sp)h+=`<p style="color:var(--g)"><b>${i+1}.</b> ${LB[e.o-32]}</p>`;
   if(sv)h+=SV[sv];
   h+=o.map((x,k)=>`<button class="opt ${ST.a[i]===k?'on':''}" data-k="${k}"><b>${LET[k]})</b> ${x}</button>`).join('');
- }else{const [t,p,sv]=W[i-35];
-  h=`<div class="q"><b>${i+1}-savol (yozma).</b> ${t}</div>`+(sv?SV[sv]:'')+p.map((x,k)=>`<label style="display:block;margin-top:10px;color:#cfe0ff">${x[0]}</label><textarea data-w="${k}" placeholder="Javobingizni shu yerga yozing...">${(ST.w[i]||[])[k]||''}</textarea>`).join('')}
+ }else{const e=EW[i-35],[t,p,sv]=e.w,tt=_st(t);
+  h=`<div class="q"><b>${i+1}-savol (yozma).</b> ${t}</div>`+(sv?SV[sv]:'')+p.map((x,k)=>`<label style="display:block;margin-top:10px;color:#cfe0ff">${tt.includes(_st(x[0]))?String(x[0]).trim().slice(0,2)+' javob:':x[0]}</label><textarea data-w="${k}" placeholder="Javobingizni shu yerga yozing...">${esc((ST.w[i]||[])[k]||'')}</textarea>`).join('')}
  $('qc').innerHTML=h;
  $('qc').querySelectorAll('.opt').forEach(b=>b.onclick=()=>{ST.a[i]=+b.dataset.k;show(i)});
  $('qc').querySelectorAll('textarea').forEach(a=>a.oninput=()=>{(ST.w[i]=ST.w[i]||['',''])[+a.dataset.w]=a.value;mark()});
@@ -315,19 +314,18 @@ $('sub').onclick=()=>{const un=45-[...$('gd').children].filter(b=>b.classList.co
  if(un)ask(`${un} ta savol javobsiz qoldi. Baribir yuborasizmi?`,finish);else finish()};
 function ask(m,cb){const o=document.createElement('div');o.style.cssText='position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,.75);z-index:99;display:flex;align-items:center;justify-content:center;padding:20px';o.innerHTML='<div class="card" style="max-width:380px;text-align:center"><p>'+m+'</p><div class="nav"><button class="btn s" id="cy">'+(cb?'Yuborish':'OK')+'</button>'+(cb?'<button class="btn s" id="cn" style="background:#444;box-shadow:none">Bekor</button>':'')+'</div></div>';document.body.appendChild(o);o.querySelector('#cy').onclick=function(){o.remove();if(cb)cb()};var n=o.querySelector('#cn');if(n)n.onclick=function(){o.remove()}}
 const norm=s=>(s||'').toLowerCase().replace(/[’'`‘]/g,'').replace(/,/g,'.').replace(/\s+/g,' ').trim();
-function finish(){clearInterval(tid);let tp=0,wp=0;
- for(let i=0;i<35;i++)if(ST.a[i]===Q[i][2])tp++;
- W.forEach((w,j)=>{const a=ST.w[35+j]||['',''];w[1].forEach((x,k)=>{if(x[1].test(norm(a[k])))wp++})});
- const raw=tp+wp,max=55,pct=Math.round(raw/max*1000)/10;const wr=[];for(let i=0;i<35;i++)if(ST.a[i]!==Q[i][2])wr.push(i+1);W.forEach((w,j)=>{const a=ST.w[35+j]||['',''];if(!w[1].every((x,k)=>x[1].test(norm(a[k]))))wr.push(36+j)});
- const pq={};for(let i=0;i<35;i++)pq[i+1]=ST.a[i]===Q[i][2]?1:0;W.forEach((w,j)=>{const a=ST.w[35+j]||['',''];pq[36+j]=w[1].filter((x,k)=>x[1].test(norm(a[k]))).length});
-const GR=[['Tabiiy geografiya',[1,2,3,4,5,6,7,8,9,11,12,13,14,15,22,27,30,33,34,35]],['Iqtisodiy-ijtimoiy geografiya',[17,18,19,21,24,25,28,29,31,32,41,42,43,44,45]],['Geografik xaritalar',[10,16,20,23,26,38,40]],['Mantiqiy va hayotiy test topshiriqlari',[36,37,39]]];
-const gsum=GR.map(g=>{const s=g[1].reduce((t,n)=>t+(pq[n]||0),0),m=g[1].reduce((t,n)=>t+(n>35?2:1),0);return '<div class="cr2"><span>'+g[0]+':</span><b>'+s+' / '+m+'</b></div>'}).join('');
-const gr=(raw<24)?null:pct>=70?'A+':pct>=60?'A':pct>=50?'B+':pct>=40?'B':pct>=30?'C+':'C';window.LASTRES={pct:pct,gr:gr,raw:raw};
+function finish(){clearInterval(tid);let tp=0,wp=0;const wr=[],it=[];
+ EQ.forEach((e,i)=>{const ok=ST.a[i]===e.q[2];if(ok)tp++;else wr.push(i+1);it.push({b:e.b,x:ok?1:0})});
+ EW.forEach((e,j)=>{const a=ST.w[35+j]||['',''];let s=0;e.w[1].forEach((x,k)=>{const ok=x[1].test(norm(a[k]));if(ok){s++;wp++}it.push({b:e.b[k],x:ok?1:0})});if(s<e.w[1].length)wr.push(36+j)});
+ const wmax=EW.reduce((t,e)=>t+e.w[1].length,0),raw=tp+wp,max=EQ.length+wmax;
+ const th=raschTheta(it),ball=raschBall(th,raw,max),pct=Math.round(ball/75*10000)/100;
+const gsum='<div class="cr2"><span>Yopiq testlar (1–35):</span><b>'+tp+' / '+EQ.length+'</b></div><div class="cr2"><span>Yozma topshiriqlar (36–45):</span><b>'+wp+' / '+wmax+'</b></div>';
+const gr=raschGrade(ball);window.LASTRES={pct:pct,gr:gr,raw:raw,ball:ball,theta:th};
  const d=new Date(),f=n=>String(n).padStart(2,'0'),ds=`${f(d.getDate())}.${f(d.getMonth()+1)}.${d.getFullYear()}`;
  const no='GT'+String(d.getFullYear()).slice(2)+' '+Math.floor(10+Math.random()*90)+'S'+String(Math.floor(Math.random()*900)+100);
  $('exam').classList.add('hid');const R=$('res');R.classList.remove('hid');
- const sc=`<table><tr><th>Bo‘lim</th><th>To‘g‘ri</th><th>Ball</th></tr><tr><td>Test (1–35)</td><td>${tp}/35</td><td>${tp}</td></tr><tr><td>Yozma (36–45)</td><td>${wp}/20</td><td>${wp}</td></tr><tr><th>Jami</th><th>${pct}%</th><th>${raw}/55</th></tr></table>`;
- const scale='<table><tr><th>A+</th><th>A</th><th>B+</th><th>B</th><th>C+</th><th>C</th></tr><tr><td>70+</td><td>60+</td><td>50+</td><td>40+</td><td>30+</td><td>24 ta javob</td></tr></table>';
+ const sc=`<table><tr><th>Bo‘lim</th><th>To‘g‘ri</th><th>Xom ball</th></tr><tr><td>Test (1–35)</td><td>${tp}/${EQ.length}</td><td>${tp}</td></tr><tr><td>Yozma (36–45)</td><td>${wp}/${wmax}</td><td>${wp}</td></tr><tr><th>Jami</th><th>${raw}/${max}</th><th>${raw}</th></tr><tr><th>Rash modeli bo‘yicha ball</th><th colspan="2">${ball.toFixed(2)} / 75 (${pct.toFixed(2)} %)<br><small>Qobiliyat ko‘rsatkichi θ = ${th.toFixed(2)} logit · variant qiyinligi: ${raschLvl()}</small></th></tr></table>`;
+ const scale='<p style="margin:12px 0 6px">Rash modeli bo‘yicha darajalar (ball):</p><table><tr><th>A+</th><th>A</th><th>B+</th><th>B</th><th>C+</th><th>C</th></tr><tr><td>70 va undan yuqori</td><td>65–70</td><td>60–65</td><td>55–60</td><td>50–55</td><td>45–50</td></tr></table>';
  R.innerHTML=gr?`<div id="cert"><div class="rib"></div><svg class="seal" viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="#ffc400" stroke="#b8860b" stroke-width="3"/><circle cx="32" cy="32" r="22" fill="#8b0030"/><text x="32" y="29" text-anchor="middle" font-size="8" font-weight="900" fill="#ffd24a" font-family="sans-serif">GEOTEST</text><text x="32" y="40" text-anchor="middle" font-size="8" font-weight="900" fill="#ffd24a" font-family="sans-serif">UZ</text></svg>${WM}
 <div style="font-weight:800;font-size:clamp(12px,3.4vw,16px);color:#1a1a1a;letter-spacing:.5px">GEOTESTUZ – GEOGRAFIYA BILIMINI BAHOLASH PLATFORMASI</div>
 <div style="height:3px;background:#111;margin:12px 0"></div>
@@ -339,7 +337,7 @@ const gr=(raw<24)?null:pct>=70?'A+':pct>=60?'A':pct>=50?'B+':pct>=40?'B':pct>=30
 <div class="cr2"><span>Yashash joyi:</span><b>${esc($('vl').value+', '+$('ds').value.trim())}</b></div>
 <hr style="border:0;border-top:1px solid #c9971c;margin:10px 0">
 </div><div><div class="cr2"><span>Umumta’lim fani:</span><b>Geografiya (O‘zbek)</b></div>
-<div class="cr2"><span>Umumiy to‘plangan ball:</span><b>${pct.toFixed(2)}</b></div>
+<div class="cr2"><span>Umumiy to‘plangan ball:</span><b>${ball.toFixed(2)}</b></div>
 <div class="cr2"><span>Umumiy ballga nisbatan foiz ko‘rsatkichi:</span><b>${pct.toFixed(2)} %</b></div>
 <div class="cr2"><span>Sertifikat darajasi:</span><b>${gr}</b></div>
 ${(gr==='A+'||gr==='A')?'<div class="cr2"><span>A/A+ daraja imtiyozi:</span><b>100.0 %</b></div>':''}
@@ -358,19 +356,19 @@ ${gsum}</div></div>
 <div class="cr2"><span>Otasining ismi:</span><b>${esc($('pt').value.trim().toUpperCase())}</b></div>
 <div class="cr2"><span>Yashash joyi:</span><b>${esc($('vl').value+', '+$('ds').value.trim())}</b></div>
 </div><div><div class="cr2"><span>Umumta’lim fani:</span><b>Geografiya (O‘zbek)</b></div>
-<div class="cr2"><span>Umumiy to‘plangan ball:</span><b>${pct.toFixed(2)}</b></div>
+<div class="cr2"><span>Umumiy to‘plangan ball:</span><b>${ball.toFixed(2)}</b></div>
 <div class="cr2"><span>Umumiy ballga nisbatan foiz ko‘rsatkichi:</span><b>${pct.toFixed(2)} %</b></div>
 <div class="cr2"><span>Sertifikat darajasi:</span><b>&nbsp;</b></div>
 ${gsum}</div></div>
 <div class="rm">Afsuski, siz yetarli ball to‘play olmadingiz va ushbu sertifikatni qo‘lga kirita olmadingiz! ❌<br>Kallangizni ishlatib, mavzuni qaytadan o‘qib chiqing!</div>
-<div class="note">Sertifikat uchun kamida 24 ta to‘g‘ri javob kerak. Sizda: ${raw} ta.</div></div>`;
- R.innerHTML+=`<div class="card"><h1 style="font-size:18px">Natija tahlili</h1>${sc}</div>${wr.length?`<div class="rob">🤖 Kallangizni ishlating! 🧠<br>Xato yoki javobsiz topshiriqlar: ${wr.join(', ')}</div>`:''}<button class="btn s" onclick="location.reload()">🔄 Qaytadan boshlash</button>`+review();
+<div class="note">Sertifikat uchun Rash modeli bo‘yicha kamida 45 ball kerak. Sizda: ${ball.toFixed(2)} ball.</div></div>`;
+ R.innerHTML+=`<div class="card"><h1 style="font-size:18px">Natija tahlili</h1>${sc}${scale}</div>${wr.length?`<div class="rob">🤖 Kallangizni ishlating! 🧠<br>Xato yoki javobsiz topshiriqlar: ${wr.join(', ')}</div>`:''}<button class="btn s" onclick="location.reload()">🔄 Qaytadan boshlash</button>`+review();
  scrollTo(0,0)}
 function review(){const st=s=>s.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();let r='';
-for(let i=0;i<35;i++){const t=Q[i][0],o=Q[i][1],c=Q[i][2],u=ST.a[i],ok=u===c,q=i<32?st(t):LB[i-32];
-r+=row(i+1,q,u==null?'— javob berilmagan —':LET[u]+') '+st(o[u]),LET[c]+') '+st(o[c]),ok)}
-W.forEach((w,j)=>{const a=ST.w[35+j]||['',''];const ok=w[1].every((x,k)=>x[1].test(norm(a[k])));
-r+=row(36+j,st(w[0])+' '+w[1].map(x=>x[0]).join(' '),'a) '+esc(a[0]||'—')+' ; b) '+esc(a[1]||'—'),KEY[j],ok)});
+EQ.forEach((e,i)=>{const t=e.q[0],o=e.q[1],c=e.q[2],u=ST.a[i],ok=u===c,q=(e.o>=32&&e.o<35)?LB[e.o-32]:st(t);
+r+=row(i+1,q,u==null?'— javob berilmagan —':LET[u]+') '+st(o[u]),LET[c]+') '+st(o[c]),ok)});
+EW.forEach((e,j)=>{const w=e.w,a=ST.w[35+j]||['',''];const ok=w[1].every((x,k)=>x[1].test(norm(a[k])));const qt=st(w[0]);
+r+=row(36+j,w[1].every(x=>qt.includes(st(x[0])))?qt:qt+' '+w[1].map(x=>x[0]).join(' '),'a) '+esc(a[0]||'—')+' ; b) '+esc(a[1]||'—'),e.k,ok)});
 return '<div class="card"><h1>IMTIHON NATIJALARI TAHLILI</h1><div id="rv"><table><tr><th>№</th><th>Savol</th><th>Sizning javobingiz</th><th>To‘g‘ri javob</th></tr>'+r+'</table></div></div>'}
 function row(n,q,u,c,ok){return '<tr style="background:'+(ok?'rgba(44,255,138,.16)':'rgba(255,77,109,.18)')+'"><td><b>'+n+'</b><br>'+(ok?'✅':'❌')+'</td><td>'+q+'</td><td style="color:'+(ok?'#2cff8a':'#ff6b86')+';font-weight:700">'+u+'</td><td style="color:#2cff8a;font-weight:700">'+c+'</td></tr>'}
 function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
@@ -508,6 +506,44 @@ const IMGF=u=>`<img alt="chizma" loading="lazy" src="${u}" style="width:100%;max
 const _GO=window.GEO_OCHIQ||[],_GY=window.GEO_YOZMA||[],_GK=window.GEO_KALIT||[];Object.keys(window.GEO_RASM||{}).forEach(k=>{SV[k]=IMGF(GEO_RASM[k])});
 const OPENCAP=3850,WRITCAP=600,OPENQ=Q.slice(0,35).concat(_GO),WRITQ=W.concat(_GY),WKEY=KEY.concat(_GK);
 window.GEO_BANK={open:OPENQ,writ:WRITQ,writKey:WKEY};
+/* ===== Milliy sertifikat: har safar bazadan yangi variant + Rash modeli ===== */
+let EQ=[],EW=[];
+const _st=s=>String(s).replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+function _hs(s){let h=2166136261>>>0;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)>>>0}return h/4294967296}
+/* savol qiyinligi (logit): rasm, raqamli ro'yxat, uzun variantlar, ko'p variant -> qiyinroq; yozma -> qiyin */
+function bOpen(q){const t=_st(q[0]),o=q[1].map(_st),avg=o.join('').length/o.length;
+ let b=-0.75;if(q[3])b+=0.45;if(/1\)[\s\S]*2\)/.test(t))b+=0.5;if(avg>40)b+=0.25;if(avg>90)b+=0.2;if(o.length>4)b+=0.25;if(t.length>220)b+=0.2;
+ return b+(_hs(String(q[0])+'|o')-0.5)*0.9}
+function bWrit(w,k){return 0.8+(w[2]?0.3:0)+(k?0.15:0)+(_hs(String(w[0])+'|w'+k)-0.5)*0.7}
+/* Rash modeli: P(to'g'ri)=1/(1+e^-(θ-b)); θ — Nyuton usulida (MAP, N(0;2²)) baholanadi */
+function raschTheta(it){let th=0;for(let n=0;n<200;n++){let g=-th/4,hh=-1/4;for(const r of it){const p=1/(1+Math.exp(-(th-r.b)));g+=r.x-p;hh-=p*(1-p)}const d=g/hh;th-=Math.max(-1,Math.min(1,d));if(Math.abs(d)<1e-7)break}return Math.max(-6,Math.min(6,th))}
+function raschBall(th,raw,max){if(raw>=max)return 75;let L=48+10.5*th;if(L>70)L=70+5*(1-Math.exp(-(L-70)/5));return Math.round(Math.max(0,Math.min(75,L))*100)/100}
+function raschGrade(b){return b>=70?'A+':b>=65?'A':b>=60?'B+':b>=55?'B':b>=50?'C+':b>=45?'C':null}
+function raschLvl(){const all=EQ.map(e=>e.b).concat(...EW.map(e=>e.b)),m=all.reduce((a,b)=>a+b,0)/Math.max(1,all.length);return m<0.034?'osonroq':m<0.071?'o‘rtacha':'qiyinroq'}
+function pickExam(){
+ const rnd=()=>{try{const a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]/4294967296}catch(e){return Math.random()}};
+ const sh=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a};
+ const ld=k=>{try{return new Set(JSON.parse(localStorage.getItem(k)||'[]'))}catch(e){return new Set()}};
+ const sv=(k,s)=>{try{localStorage.setItem(k,JSON.stringify([...s]))}catch(e){}};
+ const take=(pool,seen,n,not)=>{const p=pool.filter(i=>!not.has(i)),f=sh(p.filter(i=>!seen.has(i)));return f.concat(sh(p.filter(i=>seen.has(i)))).slice(0,n)};
+ const okO=i=>{const q=OPENQ[i];return q&&Array.isArray(q[1])&&q[1].length>=2&&Number.isInteger(q[2])&&q[2]>=0&&q[2]<q[1].length};
+ const allO=OPENQ.map((_,i)=>i).filter(okO);let so=ld('geo5_seen_o');if(allO.filter(i=>!so.has(i)).length<35)so=new Set();
+ /* 33–35: moslashtirish (A–F) topshiriqlari — bitta to'plamdan, tartib bilan */
+ const gm={},num=i=>(i>=32&&i<35)?i+1:+((String(OPENQ[i][0]).match(/<b>(3[345])\.<\/b>/)||[])[1]||0);
+ allO.forEach(i=>{const q=OPENQ[i];if(i>=32&&i<35){(gm._o=gm._o||[]).push(i);return}if(q[1].length>=6&&num(i)){const k=String(q[0]).split('<br>')[0];(gm[k]=gm[k]||[]).push(i)}});
+ const G=sh(Object.values(gm).filter(g=>g.length===3&&new Set(g.map(num)).size===3).map(g=>g.sort((a,b)=>num(a)-num(b))));
+ const gall=new Set([].concat(...G));
+ let tail=(G.find(g=>g.every(i=>!so.has(i)))||G[0]||[]).slice();const used=new Set(gall);
+ let head=take(allO,so,35-tail.length,used);
+ const oi=head.concat(tail);oi.forEach(i=>so.add(i));sv('geo5_seen_o',so);
+ const okW=i=>{const w=WRITQ[i];return w&&Array.isArray(w[1])&&w[1].length>0};
+ const allW=WRITQ.map((_,i)=>i).filter(okW);let sw=ld('geo5_seen_w');if(allW.filter(i=>!sw.has(i)).length<10)sw=new Set();
+ const two=allW.filter(i=>WRITQ[i][1].length===2);let wi=take(two.length>=10?two:allW,sw,10,new Set());wi.forEach(i=>sw.add(i));sv('geo5_seen_w',sw);
+ EQ=oi.map(i=>({q:OPENQ[i],o:i,b:bOpen(OPENQ[i])}));
+ EW=wi.map(i=>({w:WRITQ[i],k:WKEY[i],o:i,b:WRITQ[i][1].map((_,k)=>bWrit(WRITQ[i],k))}));
+ ST.a={};ST.w={};ST.cur=0}
+{const _g=$('go').onclick;$('go').onclick=()=>{pickExam();_g()}}
+
 function tzTotal(){return tzMode===1?OPENQ.length:WRITQ.length}
 function tzOpen(m){tzMode=m;$('tzg').innerHTML=Array.from({length:tzTotal()},(_,i)=>`<b data-i='${i}'>${i+1}</b>`).join('');['tzg','tzq','tzn'].forEach(k=>$(k).classList.remove('hid'));tzShow(0)}
 function tzShow(i){tzI=i;const tot=tzTotal(),cap=tzMode===1?OPENCAP:WRITCAP;[...$('tzg').children].forEach((b,k)=>{b.className=k===i?'cur':''});
