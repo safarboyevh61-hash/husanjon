@@ -853,3 +853,36 @@ GEO_OCHIQ.push(["Quyidagi dengizlardan chekka dengiz bo‘lgan javobni aniqlang.
 GEO_OCHIQ.push(["Quyi Amudaryo okrugi negizida qaysi davr yotqiziqlari joylashgan?",["paleogen","bo‘r","neogen","yura"],1]);
 GEO_OCHIQ.push(["Makvis – bu nima?",["And tog‘laridagi hayvonlar to‘plangan hudud","Antarktidadagi qush nomi","Avstraliyada yashovchi xaltali hayvon","Afrikada uchrovchi o‘simlik nomi"],3]);
 GEO_OCHIQ.push(["<b>Matnni o‘qing.</b><br>a) Qattiq bargli doimiy yashil o‘rmon va butazorlar zonasi Yevrosiyoning qaysi qismida tarqalgan?<br>b) Janubi-g‘arbiy Osiyo o‘lkasi qaysi tabiat zonalarida joylashganligini aniqlang.",["a) janubida; b) dasht","a) sharqida; b) dasht va savanna","a) shimolida; b) savannalar va cho‘llar","a) g‘arbida; b) chalacho‘l va cho‘llar"],3,"gx19_v5"]);
+
+/* ===== 20-to‘plam ===== */
+GEO_OCHIQ.push(["Qoradaryo qaysi daryolarning qo‘shilishidan hosil bo‘ladi?",["Oqsuv va Tanxoz","Aravonsoy va Oqbura","Yassi va Ko‘gart","Tor va Qora G‘ulja"],3]);
+GEO_OCHIQ.push(["Yevrosiyo nechta tabiiy geografik o‘lkaga bo‘linadi?",["14 ta","4 ta","10 ta","15 ta"],0]);
+GEO_OCHIQ.push(["O‘rta Osiyoning shimoli-sharqiy qismida qishda havo harorati qancha bo‘ladi?",["−48 °C","−55 °C","−50 °C","−40 °C"],2]);
+GEO_OCHIQ.push(["Yozda Qoraqumda havo harorati qancha bo‘ladi?",["+48 °C","+54 °C","+50 °C","+45 °C"],1]);
+GEO_OCHIQ.push(["O‘rta Osiyoning shimoliy nuqtasi necha gradus kenglikda joylashgan?",["43°","53,8°","34°","58,3°"],1]);
+GEO_OCHIQ.push(["O‘rta Osiyoning sharqiy nuqtasi qaysi daryo vodiysiga to‘g‘ri keladi?",["Qora Irtish","Atrek","Emba","Ili"],0]);
+GEO_OCHIQ.push(["O‘rta Osiyo chegarasi 58° sharqiy uzunlik va 48° shimoliy kenglikka yetgandan keyin qayerga burilib, qaysi shahargacha davom etadi?",["shimolga va shimoli-sharqqa burilib, Qo‘stanoyga boradi","sharqqa va janubi-sharqqa burilib, O‘skemenga boradi","sharqqa va janubi-g‘arbga burilib, Iren-Xabirgaga boradi","shimolga va shimoli-g‘arbga burilib, Ayritovga boradi"],0]);
+GEO_OCHIQ.push(["O‘rta Osiyoning g‘arb tomonida Kaspiy dengizi qirg‘oqlari chegara bo‘ladi. Shimoli-g‘arbiy chegara qaysi obyekt orqali o‘tadi?",["Turon platformasidan","Ustyurtning shimoli-g‘arbidan","Mug‘ojar tog‘laridan","Emba daryosidan"],3]);
+GEO_OCHIQ.push(["O‘rta Osiyoning sharqiy chegarasi bir qancha tog‘lar va qaysi dovon orqali o‘tadi?",["O‘rkashar","Iren-Xabirga","Adinkur","Qarat"],2]);
+GEO_OCHIQ.push(["O‘rta Osiyoni alohida tabiiy geografik o‘lka sifatida ajratishga asos bo‘ladigan nechta tabiiy xususiyati mavjud?",["7 ta","8 ta","6 ta","5 ta"],0]);
+GEO_OCHIQ.push(["O‘rta Osiyo iqlimi qanday?",["dengiz iqlimi","tropik iqlim","keskin kontinental","quruq kontinental"],2]);
+GEO_OCHIQ.push(["O‘rta Osiyo cho‘llarida yog‘in miqdori qancha?",["100–120 mm","70–80 mm","100–150 mm","80–100 mm"],1]);
+GEO_OCHIQ.push(["Chjan Szyan O‘rta Osiyoning qaysi qismlarini o‘rgangan?",["Tyanshan, Yettisuv, Chu vodiysi","Toshkent, Samarqand, Pomir","Issiqko‘l, Farg‘ona, Xorazm","Farg‘ona, Toshkent, Samarqand"],2]);
+GEO_OCHIQ.push(["«O‘rta Osiyo va Kavkaz geografiyasi»ni kim yozgan?",["Muhammad ibn Muso al-Xorazmiy","Abu Rayhon Beruniy","Yoqut ibn Abdulla","Abul Hasan Ali Ma’sudiy"],3]);
+GEO_OCHIQ.push(["«Mamlakatlarning alifbo tartibidagi ro‘yxati» nomli asar muallifi kim?",["Muhammad ibn Muso al-Xorazmiy","Abu Is’hoq Istaxriy","Abul Hasan Ali Ma’sudiy","Yoqut ibn Abdulla"],3]);
+GEO_OCHIQ.push(["O‘rta Osiyo Rossiya imperiyasi tomonidan bosib olinguniga qadar uning tabiatini kimlar o‘rgandi?",["Benevini, N. A. Seversov, F. Yefremov, G. S. Karelin","A. P. Fedchenko, N. A. Seversov, P. P. Semyonov-Tyanshanskiy","F. Yefremov, G. S. Karelin, Benevini, B. Pazuxin, I. Xoxlov","A. P. Fedchenko, G. S. Karelin, A. Seversov"],2]);
+GEO_OCHIQ.push(["O‘rta Osiyo Rossiya imperiyasi tomonidan bosib olingandan keyin kimlar o‘rgandi?",["Fedchenko, Tyanshanskiy, Mushketov","B. Pazuxin, Babushkin","V. L. Shuls, L. S. Berg, A. Obruchev, Kogay","N. L. Korjenevskiy, D. I. Sherbakov, D. V. Nalivkin"],3]);
+GEO_OCHIQ.push(["Jahondagi yoki uning qaysidir qismidagi davlatlarning ma’lum bir tarixiy davrdagi holati aks etgan xaritaga nima deyiladi?",["iqtisodiy xarita","siyosiy xarita","ijtimoiy xarita","joy plani"],1]);
+GEO_OCHIQ.push(["O‘rta Osiyo siyosiy xaritasining shakllanishi necha bosqichdan iborat?",["8 ta","3 ta","5 ta","7 ta"],2]);
+GEO_OCHIQ.push(["Birinchi bosqichda qanday davlatlar bo‘lgan?",["Turkiston general-gubernatorligi, Xiva xonligi va Buxoro amirligi","Qo‘qon xonligi, Xiva xonligi va Buxoro amirligi","Xiva va Qo‘qon xonliklari, Turkiston muxtoriyati","Turkiston muxtoriyati, Buxoro va Xorazm respublikalari"],1]);
+GEO_OCHIQ.push(["Qaysi siyosiy bosqich juda qisqa davrni o‘z ichiga oladi?",["ikkinchi bosqich","to‘rtinchi bosqich","beshinchi bosqich","uchinchi bosqich"],3]);
+GEO_OCHIQ.push(["To‘rtinchi bosqich qaysi yillarni o‘z ichiga oladi?",["1917–1920","1917–1922","1924–1991","1925–1990"],2]);
+GEO_OCHIQ.push(["Nechanchi bosqichda beshta ittifoqdosh respublika tashkil etilgan?",["to‘rtinchi","uchinchi","uchinchi bosqich oxiri – to‘rtinchi bosqich boshlarida","beshinchi"],0]);
+GEO_OCHIQ.push(["O‘rta Osiyo tabiati, geologik tuzilishi, foydali qazilmalari, xo‘jaligi, tarixi haqida asar yozgan buyuk olim kim?",["Abul Hasan Ali Ma’sudiy","Koshg‘ariy","Beruniy","Xorazmiy"],2]);
+GEO_OCHIQ.push(["Zahiriddin Muhammad Bobur nechanchi asrlarda yashagan?",["XVI","XV–XVI","XIV–XV","XVI–XVII"],1]);
+GEO_OCHIQ.push(["Xarita andazalari qanday turlarga bo‘linadi?",["teng burchakli, teng shaklli, teng yonli","teng burchakli, teng maydonli, ixtiyoriy","teng burchakli, teng yonli, teng hajmli, teng maydonli","teng yonli, teng hajmli, teng shaklli"],1]);
+GEO_OCHIQ.push(["Qanday andazalar asosida tuzilgan xaritalarda yo‘nalishlarni aniqlash qulay, biroq maydonlar va masofalarni tasvirlashda xatolarga yo‘l qo‘yiladi?",["teng burchakli","teng maydonli","teng hajmli","ixtiyoriy"],0]);
+GEO_OCHIQ.push(["Qanday andaza asosida tuzilgan xaritalarda burchaklar, shakllarni tasvirlashda ancha xatoliklarga yo‘l qo‘yiladi?",["teng shaklli","ixtiyoriy","teng burchakli","teng maydonli"],3]);
+GEO_OCHIQ.push(["Xarita andazalari foydalanilgan yordamchi geometrik sirtlarning turiga qarab qanday turlarga bo‘linadi?",["konussimon, silindrsimon, azimutli","teng shaklli, teng hajmli, teng maydonli","konussimon, silindrsimon, aylana","teng maydonli, teng hajmli, ixtiyoriy"],0]);
+GEO_OCHIQ.push(["Materiklar va ayrim davlatlar qanday andazada tasvirlanadi?",["azimutli","silindrsimon","konussimon","teng maydonli"],2]);
+GEO_OCHIQ.push(["Dunyo xaritalari qanday andazada tuzilgan?",["ixtiyoriy","konussimon","silindrsimon","azimutli"],2]);
