@@ -179,7 +179,19 @@ var GEO_RASM={
 "gx14_v41": "rasmlar/gx14_v41.webp",
 "gx14_v43": "rasmlar/gx14_v43.webp",
 "gx14_v44": "rasmlar/gx14_v44.webp",
-"gx14_v45": "rasmlar/gx14_v45.webp"
+"gx14_v45": "rasmlar/gx14_v45.webp",
+"gx15_v1": "rasmlar/gx15_v1.webp",
+"gx15_v2": "rasmlar/gx15_v2.webp",
+"gx15_v3": "rasmlar/gx15_v3.webp",
+"gx16_v1": "rasmlar/gx16_v1.webp",
+"gx16_v6": "rasmlar/gx16_v6.webp",
+"gx16_v7": "rasmlar/gx16_v7.webp",
+"gx16_v8": "rasmlar/gx16_v8.webp",
+"gx16_v10": "rasmlar/gx16_v10.webp",
+"gx16_v12": "rasmlar/gx16_v12.webp",
+"gx16_v13": "rasmlar/gx16_v13.webp",
+"gx17_v2": "rasmlar/gx17_v2.webp",
+"gx17_v3": "rasmlar/gx17_v3.webp"
 };
 
 /* ===== 1-to‘plam ===== */
@@ -774,3 +786,35 @@ GEO_OCHIQ.push(["Jadvaldagi ma’lumotlarga ko‘ra mamlakatning tashqi savdo ba
 GEO_OCHIQ.push(["Chizma-xaritada IV raqam bilan belgilangan geografik obyektni aniqlang.",["Ziyovuddin","Zirabuloq","Qoratepa","Zarafshon"],0,"gx14_v43"]);
 GEO_OCHIQ.push(["Jadvalga ko‘ra mamlakat aholisi mexanik o‘sish (immigratsiya va emigratsiya farqi) hisobiga qancha kishiga ko‘paygan?",["11 920 kishi","476 800 kishi","488 720 kishi","596 000 kishi"],1,"gx14_v44"]);
 GEO_OCHIQ.push(["Quyidagi xarita-sxemada 3 raqami bilan qaysi tog‘ joylashgan?",["Sulton Uvays","Tomditog‘","Bo‘kantov","Quljuqtov"],1,"gx14_v45"]);
+
+/* ===== 15-to‘plam ===== */
+GEO_OCHIQ.push(["I raqamda qaysi dinning ibodat maskani ramzi tasvirlangan?",["Islom dini","Buddaviylik dini","Xristianlik dini","Yahudiylik dini"],1,"gx15_v1"]);
+GEO_OCHIQ.push(["II raqamda qaysi dinning ibodat maskani ramzi tasvirlangan?",["Buddaviylik dini","Islom dini","Xristianlik dini","Hinduizm dini"],2,"gx15_v2"]);
+GEO_OCHIQ.push(["III raqamda qaysi dinning ibodat maskani ramzi tasvirlangan?",["Xristianlik dini","Buddaviylik dini","Islom dini","Yahudiylik dini"],2,"gx15_v3"]);
+GEO_OCHIQ.push(["Italiyaning maydoni 301,3 ming km² va aholisi 60,6 mln kishi ekanligini hisobga olib, uning o‘rtacha aholi zichligini toping.",["taxminan 150 kishi/km²","taxminan 201 kishi/km²","taxminan 305 kishi/km²","taxminan 95 kishi/km²"],1]);
+GEO_OCHIQ.push(["Jadvalga ko‘ra Turkiyaning jami aholisi 81,3 mln kishi, shahar aholisi esa 61 mln kishini tashkil etadi. Turkiyaning urbanizatsiya darajasini (%) hisoblang.",["taxminan 65 %","taxminan 75 %","taxminan 81 %","taxminan 50 %"],1]);
+GEO_OCHIQ.push(["Megalopolislarni ulardagi aglomeratsiyalar soni bilan to‘g‘ri moslashtiring.<br>1) Shimoli-sharqiy (Bosvash); 2) Ko‘lbo‘yi (Chipits); 3) Ingliz; 4) Yapon (Tokaydo).<br>a) 30 ta; b) 20 ta; c) 40 ta; d) 35 ta.",["1-c, 2-d, 3-b, 4-a","1-c, 2-d, 3-a, 4-b","1-c, 2-d, 3-a, 4-a","1-c, 2-a, 3-d, 4-b"],1]);
+GEO_OCHIQ.push(["Megalopolislarni ularning eng yirik aglomeratsiyasi bilan to‘g‘ri moslashtiring.<br>1) Shimoli-sharqiy (Bosvash); 2) Ko‘lbo‘yi (Chipits); 3) Tinch okeanbo‘yi (Sansan); 4) Ingliz.<br>a) Nyu-York; b) London; c) Chikago; d) Los-Anjeles.",["1-a, 2-c, 3-b, 4-d","1-a, 2-d, 3-c, 4-b","1-a, 2-c, 3-d, 4-b","1-a, 2-c, 3-b, 4-b"],2]);
+
+/* ===== 16-to‘plam ===== */
+GEO_OCHIQ.push(["Quyidagi xaritada berilgan davlatlardan qaysi birining boshqaruv shakli monarxiya hisoblanadi?",["1","6","5","4"],3,"gx16_v1"]);
+GEO_OCHIQ.push(["Himolay tog‘lari etagidagi terayalarga qishda ekiladigan o‘simlik nomi qaysi javobda xato berilgan?",["bug‘doy","arpa","grechixa","shakarqamish"],3]);
+GEO_OCHIQ.push(["Neftni quvurlar orqali yuborish temiryo‘lda tashishdan necha barobar arzon tushadi?",["6 barobar","3 barobar","4 barobar","5 barobar"],2]);
+GEO_OCHIQ.push(["Geografiya fanlar tizimidagi qaysi fan kichik hududlar tabiatining tuzilishi va xususiyatlarini o‘rganadi?",["geomorfologiya","geoekologiya","landshaftshunoslik","fatsiologiya"],2]);
+GEO_OCHIQ.push(["Britaniya orolida qaysi tabiat zonasi hosil bo‘lgan?",["fasliy nam o‘rmonlar","tayga, aralash o‘rmonlar va keng bargli o‘rmonlar","o‘rmon-dasht va dasht","qattiq bargli doimiy yashil o‘rmonlar va butazorlar"],1]);
+GEO_OCHIQ.push(["Aholining tabiiy takror bo‘lishiga bog‘liq bo‘lgan demografik o‘tish bosqichlarini to‘g‘ri tartiblang.",["1-b; 2-a; 3-d; 4-c","1-d; 2-c; 3-b; 4-a","1-d; 2-a; 3-c; 4-a","1-a; 2-b; 3-d; 4-c"],0,"gx16_v6"]);
+GEO_OCHIQ.push(["Quyidagi xaritada Baffin dengizi qaysi raqam bilan belgilangan?",["2","8","5","9"],3,"gx16_v7"]);
+GEO_OCHIQ.push(["Davlatlarga oid ma’lumotlarni moslashtiring (33–35-topshiriqlarga mos javoblarni A–F variantlardan tanlang).",["33-F, 34-D, 35-E","33-E, 34-C, 35-B","33-A, 34-B, 35-D","33-E, 34-B, 35-A"],3,"gx16_v8"]);
+GEO_OCHIQ.push(["Ustyurt platosining shimoliy qismida qaysi qumli tekislik joylashgan?",["Orolbo‘yi Qoraqumi","Uchtagan qumlari","Orqaunguz Qoraqumi","Katta Bo‘rsiq qumi"],3]);
+GEO_OCHIQ.push(["Yarimsharlar xaritasidan foydalanib aniqlang: xaritadagi B nuqtada mahalliy vaqt 14:00 bo‘lganda D nuqtadagi mahalliy vaqtni toping.",["24:00 yoki 00:00","03:20","09:00","21:00"],1,"gx16_v10"]);
+GEO_OCHIQ.push(["Yarimsharlar xaritasidan foydalanib aniqlang: uchuvchilar E nuqtadan mahalliy vaqt bilan soat 18:00 da uchib, G nuqtaga qo‘ngandagi mahalliy vaqtni aniqlang.",["11:20","12:00","20:40","21:00"],2,"gx16_v10"]);
+GEO_OCHIQ.push(["Quyidagi xaritada York burni qaysi raqam bilan belgilangan?",["1","9","8","2"],0,"gx16_v12"]);
+GEO_OCHIQ.push(["Diagrammadagi ma’lumotlardan foydalanib aniqlang:<br>a) tashqi savdo aylanmasi eng past bo‘lgan yilni;<br>b) tashqi savdo balansida eksport va import miqdori orasidagi farq eng ko‘p bo‘lgan yilni.",["a) 2010; b) 2015","a) 2005; b) 2000","a) 2010; b) 2005","a) 2000; b) 2005"],1,"gx16_v13"]);
+GEO_OCHIQ.push(["Quyida berilgan Janubiy Amerika milliy bog‘lari orasidan qaysi biri Gviana yassi tog‘ligida joylashgan?",["Kanayma","Makarena","Jau","Manu"],0]);
+GEO_OCHIQ.push(["Pomir tog‘laridagi Ismoil Somoniy cho‘qqisi qaysi davlat hududiga to‘g‘ri keladi?",["Qozog‘iston","Qirg‘iziston","Tojikiston","O‘zbekiston"],2]);
+
+/* ===== 17-to‘plam ===== */
+GEO_OCHIQ.push(["Quyidagi mamlakatlardan qaysi birida bolalar salmog‘i 14 ga teng?",["AQSh","Shvetsiya","Niderlandiya","Gretsiya"],3]);
+GEO_OCHIQ.push(["Quyidagi xaritada Namib cho‘li qaysi raqam bilan belgilangan?",["16","24","19","17"],0,"gx17_v2"]);
+GEO_OCHIQ.push(["Quyidagilar orasidan to‘g‘ri fikrlar sonini toping.",["2 ta","3 ta","1 ta","4 ta"],1,"gx17_v3"]);
+GEO_OCHIQ.push(["Topografik xaritalarda relyef nima yordamida tasvirlanadi?",["gorizontallar","alohida belgilar","ranglar","chiziqlar"],0]);
