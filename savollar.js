@@ -338,7 +338,532 @@ var GEO_RASM={
 "gx43_v3_39": "rasmlar/gx43_v3_39.webp",
 "gx43_v3_41": "rasmlar/gx43_v3_41.webp",
 "gx43_v3_43": "rasmlar/gx43_v3_43.webp",
-"gx43_v3_44": "rasmlar/gx43_v3_44.webp"
+"gx43_v3_44": "rasmlar/gx43_v3_44.webp",
+"gx44_1_1": "rasmlar/gx44_1_1.webp",
+"gx44_1_2": "rasmlar/gx44_1_2.webp",
+"gx44_1_3": "rasmlar/gx44_1_3.webp",
+"gx44_1_4": "rasmlar/gx44_1_4.webp",
+"gx44_1_5": "rasmlar/gx44_1_5.webp",
+"gx44_1_6": "rasmlar/gx44_1_6.webp",
+"gx44_1_7": "rasmlar/gx44_1_7.webp",
+"gx44_1_8": "rasmlar/gx44_1_8.webp",
+"gx44_1_9": "rasmlar/gx44_1_9.webp",
+"gx44_1_10": "rasmlar/gx44_1_10.webp",
+"gx44_1_11": "rasmlar/gx44_1_11.webp",
+"gx44_1_12": "rasmlar/gx44_1_12.webp",
+"gx44_1_13": "rasmlar/gx44_1_13.webp",
+"gx44_1_14": "rasmlar/gx44_1_14.webp",
+"gx44_1_15": "rasmlar/gx44_1_15.webp",
+"gx44_1_16": "rasmlar/gx44_1_16.webp",
+"gx44_1_17": "rasmlar/gx44_1_17.webp",
+"gx44_1_18": "rasmlar/gx44_1_18.webp",
+"gx44_1_19": "rasmlar/gx44_1_19.webp",
+"gx44_1_20": "rasmlar/gx44_1_20.webp",
+"gx44_2_1": "rasmlar/gx44_2_1.webp",
+"gx44_2_2": "rasmlar/gx44_2_2.webp",
+"gx44_2_3": "rasmlar/gx44_2_3.webp",
+"gx44_2_4": "rasmlar/gx44_2_4.webp",
+"gx44_2_5": "rasmlar/gx44_2_5.webp",
+"gx44_2_6": "rasmlar/gx44_2_6.webp",
+"gx44_2_7": "rasmlar/gx44_2_7.webp",
+"gx44_2_8": "rasmlar/gx44_2_8.webp",
+"gx44_2_9": "rasmlar/gx44_2_9.webp",
+"gx44_2_10": "rasmlar/gx44_2_10.webp",
+"gx44_2_11": "rasmlar/gx44_2_11.webp",
+"gx44_2_12": "rasmlar/gx44_2_12.webp",
+"gx44_2_13": "rasmlar/gx44_2_13.webp",
+"gx44_2_14": "rasmlar/gx44_2_14.webp",
+"gx44_2_15": "rasmlar/gx44_2_15.webp",
+"gx44_2_16": "rasmlar/gx44_2_16.webp",
+"gx44_2_17": "rasmlar/gx44_2_17.webp",
+"gx44_2_18": "rasmlar/gx44_2_18.webp",
+"gx44_2_19": "rasmlar/gx44_2_19.webp",
+"gx44_2_20": "rasmlar/gx44_2_20.webp",
+"gx44_3_1": "rasmlar/gx44_3_1.webp",
+"gx44_3_2": "rasmlar/gx44_3_2.webp",
+"gx44_3_3": "rasmlar/gx44_3_3.webp",
+"gx44_3_4": "rasmlar/gx44_3_4.webp",
+"gx44_3_5": "rasmlar/gx44_3_5.webp",
+"gx44_3_6": "rasmlar/gx44_3_6.webp",
+"gx44_3_7": "rasmlar/gx44_3_7.webp",
+"gx44_3_8": "rasmlar/gx44_3_8.webp",
+"gx44_3_9": "rasmlar/gx44_3_9.webp",
+"gx44_3_10": "rasmlar/gx44_3_10.webp",
+"gx44_3_11": "rasmlar/gx44_3_11.webp",
+"gx44_3_12": "rasmlar/gx44_3_12.webp",
+"gx44_3_13": "rasmlar/gx44_3_13.webp",
+"gx44_3_14": "rasmlar/gx44_3_14.webp",
+"gx44_3_15": "rasmlar/gx44_3_15.webp",
+"gx44_3_16": "rasmlar/gx44_3_16.webp",
+"gx44_3_17": "rasmlar/gx44_3_17.webp",
+"gx44_3_18": "rasmlar/gx44_3_18.webp",
+"gx44_3_19": "rasmlar/gx44_3_19.webp",
+"gx44_3_20": "rasmlar/gx44_3_20.webp",
+"gx44_4_1": "rasmlar/gx44_4_1.webp",
+"gx44_4_2": "rasmlar/gx44_4_2.webp",
+"gx44_4_3": "rasmlar/gx44_4_3.webp",
+"gx44_4_4": "rasmlar/gx44_4_4.webp",
+"gx44_4_5": "rasmlar/gx44_4_5.webp",
+"gx44_4_6": "rasmlar/gx44_4_6.webp",
+"gx44_4_7": "rasmlar/gx44_4_7.webp",
+"gx44_4_8": "rasmlar/gx44_4_8.webp",
+"gx44_4_9": "rasmlar/gx44_4_9.webp",
+"gx44_4_10": "rasmlar/gx44_4_10.webp",
+"gx44_4_11": "rasmlar/gx44_4_11.webp",
+"gx44_4_12": "rasmlar/gx44_4_12.webp",
+"gx44_4_13": "rasmlar/gx44_4_13.webp",
+"gx44_4_14": "rasmlar/gx44_4_14.webp",
+"gx44_4_15": "rasmlar/gx44_4_15.webp",
+"gx44_4_16": "rasmlar/gx44_4_16.webp",
+"gx44_4_17": "rasmlar/gx44_4_17.webp",
+"gx44_4_18": "rasmlar/gx44_4_18.webp",
+"gx44_4_19": "rasmlar/gx44_4_19.webp",
+"gx44_4_20": "rasmlar/gx44_4_20.webp",
+"gx44_5_1": "rasmlar/gx44_5_1.webp",
+"gx44_5_2": "rasmlar/gx44_5_2.webp",
+"gx44_5_3": "rasmlar/gx44_5_3.webp",
+"gx44_5_4": "rasmlar/gx44_5_4.webp",
+"gx44_5_5": "rasmlar/gx44_5_5.webp",
+"gx44_5_6": "rasmlar/gx44_5_6.webp",
+"gx44_5_7": "rasmlar/gx44_5_7.webp",
+"gx44_5_8": "rasmlar/gx44_5_8.webp",
+"gx44_5_9": "rasmlar/gx44_5_9.webp",
+"gx44_5_10": "rasmlar/gx44_5_10.webp",
+"gx44_5_12": "rasmlar/gx44_5_12.webp",
+"gx44_5_13": "rasmlar/gx44_5_13.webp",
+"gx44_5_14": "rasmlar/gx44_5_14.webp",
+"gx44_5_17": "rasmlar/gx44_5_17.webp",
+"gx44_5_18": "rasmlar/gx44_5_18.webp",
+"gx44_5_20": "rasmlar/gx44_5_20.webp",
+"gx44_6_3": "rasmlar/gx44_6_3.webp",
+"gx44_6_4": "rasmlar/gx44_6_4.webp",
+"gx44_6_5": "rasmlar/gx44_6_5.webp",
+"gx44_6_6": "rasmlar/gx44_6_6.webp",
+"gx44_6_7": "rasmlar/gx44_6_7.webp",
+"gx44_6_8": "rasmlar/gx44_6_8.webp",
+"gx44_6_9": "rasmlar/gx44_6_9.webp",
+"gx44_6_10": "rasmlar/gx44_6_10.webp",
+"gx44_6_11": "rasmlar/gx44_6_11.webp",
+"gx44_6_12": "rasmlar/gx44_6_12.webp",
+"gx44_6_13": "rasmlar/gx44_6_13.webp",
+"gx44_6_14": "rasmlar/gx44_6_14.webp",
+"gx44_6_15": "rasmlar/gx44_6_15.webp",
+"gx44_6_17": "rasmlar/gx44_6_17.webp",
+"gx44_6_18": "rasmlar/gx44_6_18.webp",
+"gx44_6_20": "rasmlar/gx44_6_20.webp",
+"gx44_7_1": "rasmlar/gx44_7_1.webp",
+"gx44_7_2": "rasmlar/gx44_7_2.webp",
+"gx44_7_3": "rasmlar/gx44_7_3.webp",
+"gx44_7_4": "rasmlar/gx44_7_4.webp",
+"gx44_7_5": "rasmlar/gx44_7_5.webp",
+"gx44_7_6": "rasmlar/gx44_7_6.webp",
+"gx44_7_7": "rasmlar/gx44_7_7.webp",
+"gx44_7_8": "rasmlar/gx44_7_8.webp",
+"gx44_7_9": "rasmlar/gx44_7_9.webp",
+"gx44_7_11": "rasmlar/gx44_7_11.webp",
+"gx44_7_12": "rasmlar/gx44_7_12.webp",
+"gx44_7_13": "rasmlar/gx44_7_13.webp",
+"gx44_7_14": "rasmlar/gx44_7_14.webp",
+"gx44_7_16": "rasmlar/gx44_7_16.webp",
+"gx44_7_17": "rasmlar/gx44_7_17.webp",
+"gx44_7_19": "rasmlar/gx44_7_19.webp",
+"gx44_7_20": "rasmlar/gx44_7_20.webp",
+"gx44_8_1": "rasmlar/gx44_8_1.webp",
+"gx44_8_2": "rasmlar/gx44_8_2.webp",
+"gx44_8_3": "rasmlar/gx44_8_3.webp",
+"gx44_8_4": "rasmlar/gx44_8_4.webp",
+"gx44_8_5": "rasmlar/gx44_8_5.webp",
+"gx44_8_6": "rasmlar/gx44_8_6.webp",
+"gx44_8_7": "rasmlar/gx44_8_7.webp",
+"gx44_8_8": "rasmlar/gx44_8_8.webp",
+"gx44_8_9": "rasmlar/gx44_8_9.webp",
+"gx44_8_10": "rasmlar/gx44_8_10.webp",
+"gx44_8_12": "rasmlar/gx44_8_12.webp",
+"gx44_8_13": "rasmlar/gx44_8_13.webp",
+"gx44_8_14": "rasmlar/gx44_8_14.webp",
+"gx44_8_15": "rasmlar/gx44_8_15.webp",
+"gx44_8_16": "rasmlar/gx44_8_16.webp",
+"gx44_8_17": "rasmlar/gx44_8_17.webp",
+"gx44_8_18": "rasmlar/gx44_8_18.webp",
+"gx44_8_19": "rasmlar/gx44_8_19.webp",
+"gx44_8_20": "rasmlar/gx44_8_20.webp",
+"gx44_9_1": "rasmlar/gx44_9_1.webp",
+"gx44_9_2": "rasmlar/gx44_9_2.webp",
+"gx44_9_3": "rasmlar/gx44_9_3.webp",
+"gx44_9_4": "rasmlar/gx44_9_4.webp",
+"gx44_9_6": "rasmlar/gx44_9_6.webp",
+"gx44_9_7": "rasmlar/gx44_9_7.webp",
+"gx44_9_8": "rasmlar/gx44_9_8.webp",
+"gx44_9_9": "rasmlar/gx44_9_9.webp",
+"gx44_9_10": "rasmlar/gx44_9_10.webp",
+"gx44_9_11": "rasmlar/gx44_9_11.webp",
+"gx44_9_12": "rasmlar/gx44_9_12.webp",
+"gx44_9_13": "rasmlar/gx44_9_13.webp",
+"gx44_9_14": "rasmlar/gx44_9_14.webp",
+"gx44_9_15": "rasmlar/gx44_9_15.webp",
+"gx44_9_16": "rasmlar/gx44_9_16.webp",
+"gx44_9_17": "rasmlar/gx44_9_17.webp",
+"gx44_9_18": "rasmlar/gx44_9_18.webp",
+"gx44_9_19": "rasmlar/gx44_9_19.webp",
+"gx44_9_20": "rasmlar/gx44_9_20.webp",
+"gx44_10_1": "rasmlar/gx44_10_1.webp",
+"gx44_10_2": "rasmlar/gx44_10_2.webp",
+"gx44_10_3": "rasmlar/gx44_10_3.webp",
+"gx44_10_4": "rasmlar/gx44_10_4.webp",
+"gx44_10_5": "rasmlar/gx44_10_5.webp",
+"gx44_10_6": "rasmlar/gx44_10_6.webp",
+"gx44_10_7": "rasmlar/gx44_10_7.webp",
+"gx44_10_8": "rasmlar/gx44_10_8.webp",
+"gx44_10_9": "rasmlar/gx44_10_9.webp",
+"gx44_10_10": "rasmlar/gx44_10_10.webp",
+"gx44_10_11": "rasmlar/gx44_10_11.webp",
+"gx44_10_12": "rasmlar/gx44_10_12.webp",
+"gx44_10_13": "rasmlar/gx44_10_13.webp",
+"gx44_10_14": "rasmlar/gx44_10_14.webp",
+"gx44_10_15": "rasmlar/gx44_10_15.webp",
+"gx44_10_16": "rasmlar/gx44_10_16.webp",
+"gx44_10_17": "rasmlar/gx44_10_17.webp",
+"gx44_10_18": "rasmlar/gx44_10_18.webp",
+"gx44_10_19": "rasmlar/gx44_10_19.webp",
+"gx44_10_20": "rasmlar/gx44_10_20.webp",
+"gx44_11_1": "rasmlar/gx44_11_1.webp",
+"gx44_11_2": "rasmlar/gx44_11_2.webp",
+"gx44_11_3": "rasmlar/gx44_11_3.webp",
+"gx44_11_4": "rasmlar/gx44_11_4.webp",
+"gx44_11_5": "rasmlar/gx44_11_5.webp",
+"gx44_11_6": "rasmlar/gx44_11_6.webp",
+"gx44_11_7": "rasmlar/gx44_11_7.webp",
+"gx44_11_8": "rasmlar/gx44_11_8.webp",
+"gx44_11_9": "rasmlar/gx44_11_9.webp",
+"gx44_11_10": "rasmlar/gx44_11_10.webp",
+"gx44_11_11": "rasmlar/gx44_11_11.webp",
+"gx44_11_12": "rasmlar/gx44_11_12.webp",
+"gx44_11_13": "rasmlar/gx44_11_13.webp",
+"gx44_11_14": "rasmlar/gx44_11_14.webp",
+"gx44_11_15": "rasmlar/gx44_11_15.webp",
+"gx44_11_16": "rasmlar/gx44_11_16.webp",
+"gx44_11_17": "rasmlar/gx44_11_17.webp",
+"gx44_11_18": "rasmlar/gx44_11_18.webp",
+"gx44_11_19": "rasmlar/gx44_11_19.webp",
+"gx44_11_20": "rasmlar/gx44_11_20.webp",
+"gx44_12_1": "rasmlar/gx44_12_1.webp",
+"gx44_12_2": "rasmlar/gx44_12_2.webp",
+"gx44_12_3": "rasmlar/gx44_12_3.webp",
+"gx44_12_4": "rasmlar/gx44_12_4.webp",
+"gx44_12_5": "rasmlar/gx44_12_5.webp",
+"gx44_12_6": "rasmlar/gx44_12_6.webp",
+"gx44_12_7": "rasmlar/gx44_12_7.webp",
+"gx44_12_8": "rasmlar/gx44_12_8.webp",
+"gx44_12_9": "rasmlar/gx44_12_9.webp",
+"gx44_12_10": "rasmlar/gx44_12_10.webp",
+"gx44_12_11": "rasmlar/gx44_12_11.webp",
+"gx44_12_12": "rasmlar/gx44_12_12.webp",
+"gx44_12_13": "rasmlar/gx44_12_13.webp",
+"gx44_12_14": "rasmlar/gx44_12_14.webp",
+"gx44_12_15": "rasmlar/gx44_12_15.webp",
+"gx44_12_16": "rasmlar/gx44_12_16.webp",
+"gx44_12_17": "rasmlar/gx44_12_17.webp",
+"gx44_12_18": "rasmlar/gx44_12_18.webp",
+"gx44_12_19": "rasmlar/gx44_12_19.webp",
+"gx44_12_20": "rasmlar/gx44_12_20.webp",
+"gx44_13_1": "rasmlar/gx44_13_1.webp",
+"gx44_13_2": "rasmlar/gx44_13_2.webp",
+"gx44_13_3": "rasmlar/gx44_13_3.webp",
+"gx44_13_4": "rasmlar/gx44_13_4.webp",
+"gx44_13_5": "rasmlar/gx44_13_5.webp",
+"gx44_13_6": "rasmlar/gx44_13_6.webp",
+"gx44_13_8": "rasmlar/gx44_13_8.webp",
+"gx44_13_9": "rasmlar/gx44_13_9.webp",
+"gx44_13_11": "rasmlar/gx44_13_11.webp",
+"gx44_13_12": "rasmlar/gx44_13_12.webp",
+"gx44_13_13": "rasmlar/gx44_13_13.webp",
+"gx44_13_14": "rasmlar/gx44_13_14.webp",
+"gx44_13_15": "rasmlar/gx44_13_15.webp",
+"gx44_13_16": "rasmlar/gx44_13_16.webp",
+"gx44_13_17": "rasmlar/gx44_13_17.webp",
+"gx44_13_18": "rasmlar/gx44_13_18.webp",
+"gx44_13_19": "rasmlar/gx44_13_19.webp",
+"gx44_13_20": "rasmlar/gx44_13_20.webp",
+"gx44_14_1": "rasmlar/gx44_14_1.webp",
+"gx44_14_2": "rasmlar/gx44_14_2.webp",
+"gx44_14_3": "rasmlar/gx44_14_3.webp",
+"gx44_14_4": "rasmlar/gx44_14_4.webp",
+"gx44_14_5": "rasmlar/gx44_14_5.webp",
+"gx44_14_6": "rasmlar/gx44_14_6.webp",
+"gx44_14_7": "rasmlar/gx44_14_7.webp",
+"gx44_14_8": "rasmlar/gx44_14_8.webp",
+"gx44_14_9": "rasmlar/gx44_14_9.webp",
+"gx44_14_10": "rasmlar/gx44_14_10.webp",
+"gx44_14_11": "rasmlar/gx44_14_11.webp",
+"gx44_14_12": "rasmlar/gx44_14_12.webp",
+"gx44_14_13": "rasmlar/gx44_14_13.webp",
+"gx44_14_14": "rasmlar/gx44_14_14.webp",
+"gx44_14_15": "rasmlar/gx44_14_15.webp",
+"gx44_14_16": "rasmlar/gx44_14_16.webp",
+"gx44_14_17": "rasmlar/gx44_14_17.webp",
+"gx44_14_18": "rasmlar/gx44_14_18.webp",
+"gx44_14_20": "rasmlar/gx44_14_20.webp",
+"gx44_15_1": "rasmlar/gx44_15_1.webp",
+"gx44_15_2": "rasmlar/gx44_15_2.webp",
+"gx44_15_3": "rasmlar/gx44_15_3.webp",
+"gx44_15_4": "rasmlar/gx44_15_4.webp",
+"gx44_15_5": "rasmlar/gx44_15_5.webp",
+"gx44_15_6": "rasmlar/gx44_15_6.webp",
+"gx44_15_7": "rasmlar/gx44_15_7.webp",
+"gx44_15_9": "rasmlar/gx44_15_9.webp",
+"gx44_15_10": "rasmlar/gx44_15_10.webp",
+"gx44_15_11": "rasmlar/gx44_15_11.webp",
+"gx44_15_13": "rasmlar/gx44_15_13.webp",
+"gx44_15_14": "rasmlar/gx44_15_14.webp",
+"gx44_15_15": "rasmlar/gx44_15_15.webp",
+"gx44_15_16": "rasmlar/gx44_15_16.webp",
+"gx44_15_17": "rasmlar/gx44_15_17.webp",
+"gx44_15_18": "rasmlar/gx44_15_18.webp",
+"gx44_15_19": "rasmlar/gx44_15_19.webp",
+"gx44_15_20": "rasmlar/gx44_15_20.webp",
+"gx44_16_1": "rasmlar/gx44_16_1.webp",
+"gx44_16_2": "rasmlar/gx44_16_2.webp",
+"gx44_16_3": "rasmlar/gx44_16_3.webp",
+"gx44_16_4": "rasmlar/gx44_16_4.webp",
+"gx44_16_12": "rasmlar/gx44_16_12.webp",
+"gx44_16_17": "rasmlar/gx44_16_17.webp",
+"gx44_16_18": "rasmlar/gx44_16_18.webp",
+"gx44_16_19": "rasmlar/gx44_16_19.webp",
+"gx44_16_20": "rasmlar/gx44_16_20.webp",
+"gx44_17_1": "rasmlar/gx44_17_1.webp",
+"gx44_17_2": "rasmlar/gx44_17_2.webp",
+"gx44_17_3": "rasmlar/gx44_17_3.webp",
+"gx44_17_4": "rasmlar/gx44_17_4.webp",
+"gx44_17_5": "rasmlar/gx44_17_5.webp",
+"gx44_17_6": "rasmlar/gx44_17_6.webp",
+"gx44_17_7": "rasmlar/gx44_17_7.webp",
+"gx44_17_8": "rasmlar/gx44_17_8.webp",
+"gx44_17_11": "rasmlar/gx44_17_11.webp",
+"gx44_17_12": "rasmlar/gx44_17_12.webp",
+"gx44_17_13": "rasmlar/gx44_17_13.webp",
+"gx44_17_14": "rasmlar/gx44_17_14.webp",
+"gx44_17_15": "rasmlar/gx44_17_15.webp",
+"gx44_17_16": "rasmlar/gx44_17_16.webp",
+"gx44_17_17": "rasmlar/gx44_17_17.webp",
+"gx44_17_18": "rasmlar/gx44_17_18.webp",
+"gx44_17_19": "rasmlar/gx44_17_19.webp",
+"gx44_17_20": "rasmlar/gx44_17_20.webp",
+"gx44_18_1": "rasmlar/gx44_18_1.webp",
+"gx44_18_2": "rasmlar/gx44_18_2.webp",
+"gx44_18_3": "rasmlar/gx44_18_3.webp",
+"gx44_18_4": "rasmlar/gx44_18_4.webp",
+"gx44_18_5": "rasmlar/gx44_18_5.webp",
+"gx44_18_6": "rasmlar/gx44_18_6.webp",
+"gx44_18_7": "rasmlar/gx44_18_7.webp",
+"gx44_18_8": "rasmlar/gx44_18_8.webp",
+"gx44_18_9": "rasmlar/gx44_18_9.webp",
+"gx44_18_10": "rasmlar/gx44_18_10.webp",
+"gx44_18_11": "rasmlar/gx44_18_11.webp",
+"gx44_18_12": "rasmlar/gx44_18_12.webp",
+"gx44_18_13": "rasmlar/gx44_18_13.webp",
+"gx44_18_14": "rasmlar/gx44_18_14.webp",
+"gx44_18_15": "rasmlar/gx44_18_15.webp",
+"gx44_18_16": "rasmlar/gx44_18_16.webp",
+"gx44_18_17": "rasmlar/gx44_18_17.webp",
+"gx44_18_18": "rasmlar/gx44_18_18.webp",
+"gx44_18_19": "rasmlar/gx44_18_19.webp",
+"gx44_18_20": "rasmlar/gx44_18_20.webp",
+"gx44_19_1": "rasmlar/gx44_19_1.webp",
+"gx44_19_2": "rasmlar/gx44_19_2.webp",
+"gx44_19_3": "rasmlar/gx44_19_3.webp",
+"gx44_19_4": "rasmlar/gx44_19_4.webp",
+"gx44_19_5": "rasmlar/gx44_19_5.webp",
+"gx44_19_6": "rasmlar/gx44_19_6.webp",
+"gx44_19_7": "rasmlar/gx44_19_7.webp",
+"gx44_19_8": "rasmlar/gx44_19_8.webp",
+"gx44_19_9": "rasmlar/gx44_19_9.webp",
+"gx44_19_10": "rasmlar/gx44_19_10.webp",
+"gx44_19_11": "rasmlar/gx44_19_11.webp",
+"gx44_19_12": "rasmlar/gx44_19_12.webp",
+"gx44_19_13": "rasmlar/gx44_19_13.webp",
+"gx44_19_14": "rasmlar/gx44_19_14.webp",
+"gx44_19_15": "rasmlar/gx44_19_15.webp",
+"gx44_19_16": "rasmlar/gx44_19_16.webp",
+"gx44_19_17": "rasmlar/gx44_19_17.webp",
+"gx44_19_18": "rasmlar/gx44_19_18.webp",
+"gx44_19_19": "rasmlar/gx44_19_19.webp",
+"gx44_19_20": "rasmlar/gx44_19_20.webp",
+"gx44_20_1": "rasmlar/gx44_20_1.webp",
+"gx44_20_2": "rasmlar/gx44_20_2.webp",
+"gx44_20_3": "rasmlar/gx44_20_3.webp",
+"gx44_20_4": "rasmlar/gx44_20_4.webp",
+"gx44_20_5": "rasmlar/gx44_20_5.webp",
+"gx44_20_6": "rasmlar/gx44_20_6.webp",
+"gx44_20_7": "rasmlar/gx44_20_7.webp",
+"gx44_20_8": "rasmlar/gx44_20_8.webp",
+"gx44_20_9": "rasmlar/gx44_20_9.webp",
+"gx44_20_10": "rasmlar/gx44_20_10.webp",
+"gx44_20_11": "rasmlar/gx44_20_11.webp",
+"gx44_20_12": "rasmlar/gx44_20_12.webp",
+"gx44_20_13": "rasmlar/gx44_20_13.webp",
+"gx44_20_14": "rasmlar/gx44_20_14.webp",
+"gx44_20_15": "rasmlar/gx44_20_15.webp",
+"gx44_20_16": "rasmlar/gx44_20_16.webp",
+"gx44_20_17": "rasmlar/gx44_20_17.webp",
+"gx44_20_18": "rasmlar/gx44_20_18.webp",
+"gx44_20_19": "rasmlar/gx44_20_19.webp",
+"gx44_20_20": "rasmlar/gx44_20_20.webp",
+"gx44_21_1": "rasmlar/gx44_21_1.webp",
+"gx44_21_2": "rasmlar/gx44_21_2.webp",
+"gx44_21_3": "rasmlar/gx44_21_3.webp",
+"gx44_21_4": "rasmlar/gx44_21_4.webp",
+"gx44_21_5": "rasmlar/gx44_21_5.webp",
+"gx44_21_6": "rasmlar/gx44_21_6.webp",
+"gx44_21_7": "rasmlar/gx44_21_7.webp",
+"gx44_21_8": "rasmlar/gx44_21_8.webp",
+"gx44_21_9": "rasmlar/gx44_21_9.webp",
+"gx44_21_10": "rasmlar/gx44_21_10.webp",
+"gx44_21_11": "rasmlar/gx44_21_11.webp",
+"gx44_21_12": "rasmlar/gx44_21_12.webp",
+"gx44_21_13": "rasmlar/gx44_21_13.webp",
+"gx44_21_14": "rasmlar/gx44_21_14.webp",
+"gx44_21_15": "rasmlar/gx44_21_15.webp",
+"gx44_21_16": "rasmlar/gx44_21_16.webp",
+"gx44_21_17": "rasmlar/gx44_21_17.webp",
+"gx44_21_18": "rasmlar/gx44_21_18.webp",
+"gx44_21_19": "rasmlar/gx44_21_19.webp",
+"gx44_22_1": "rasmlar/gx44_22_1.webp",
+"gx44_22_2": "rasmlar/gx44_22_2.webp",
+"gx44_22_3": "rasmlar/gx44_22_3.webp",
+"gx44_22_4": "rasmlar/gx44_22_4.webp",
+"gx44_22_5": "rasmlar/gx44_22_5.webp",
+"gx44_22_6": "rasmlar/gx44_22_6.webp",
+"gx44_22_7": "rasmlar/gx44_22_7.webp",
+"gx44_22_8": "rasmlar/gx44_22_8.webp",
+"gx44_22_9": "rasmlar/gx44_22_9.webp",
+"gx44_22_10": "rasmlar/gx44_22_10.webp",
+"gx44_22_13": "rasmlar/gx44_22_13.webp",
+"gx44_22_14": "rasmlar/gx44_22_14.webp",
+"gx44_22_15": "rasmlar/gx44_22_15.webp",
+"gx44_22_17": "rasmlar/gx44_22_17.webp",
+"gx44_22_19": "rasmlar/gx44_22_19.webp",
+"gx44_23_1": "rasmlar/gx44_23_1.webp",
+"gx44_23_2": "rasmlar/gx44_23_2.webp",
+"gx44_23_3": "rasmlar/gx44_23_3.webp",
+"gx44_23_4": "rasmlar/gx44_23_4.webp",
+"gx44_23_5": "rasmlar/gx44_23_5.webp",
+"gx44_23_7": "rasmlar/gx44_23_7.webp",
+"gx44_23_8": "rasmlar/gx44_23_8.webp",
+"gx44_23_9": "rasmlar/gx44_23_9.webp",
+"gx44_23_10": "rasmlar/gx44_23_10.webp",
+"gx44_23_12": "rasmlar/gx44_23_12.webp",
+"gx44_23_18": "rasmlar/gx44_23_18.webp",
+"gx44_23_19": "rasmlar/gx44_23_19.webp",
+"gx44_23_20": "rasmlar/gx44_23_20.webp",
+"gx44_24_1": "rasmlar/gx44_24_1.webp",
+"gx44_24_2": "rasmlar/gx44_24_2.webp",
+"gx44_24_3": "rasmlar/gx44_24_3.webp",
+"gx44_24_4": "rasmlar/gx44_24_4.webp",
+"gx44_24_5": "rasmlar/gx44_24_5.webp",
+"gx44_24_6": "rasmlar/gx44_24_6.webp",
+"gx44_24_7": "rasmlar/gx44_24_7.webp",
+"gx44_24_8": "rasmlar/gx44_24_8.webp",
+"gx44_24_9": "rasmlar/gx44_24_9.webp",
+"gx44_24_10": "rasmlar/gx44_24_10.webp",
+"gx44_24_11": "rasmlar/gx44_24_11.webp",
+"gx44_24_12": "rasmlar/gx44_24_12.webp",
+"gx44_24_13": "rasmlar/gx44_24_13.webp",
+"gx44_24_14": "rasmlar/gx44_24_14.webp",
+"gx44_24_16": "rasmlar/gx44_24_16.webp",
+"gx44_24_17": "rasmlar/gx44_24_17.webp",
+"gx44_24_19": "rasmlar/gx44_24_19.webp",
+"gx44_24_20": "rasmlar/gx44_24_20.webp",
+"gx44_25_1": "rasmlar/gx44_25_1.webp",
+"gx44_25_3": "rasmlar/gx44_25_3.webp",
+"gx44_25_4": "rasmlar/gx44_25_4.webp",
+"gx44_25_5": "rasmlar/gx44_25_5.webp",
+"gx44_25_6": "rasmlar/gx44_25_6.webp",
+"gx44_25_7": "rasmlar/gx44_25_7.webp",
+"gx44_25_8": "rasmlar/gx44_25_8.webp",
+"gx44_25_9": "rasmlar/gx44_25_9.webp",
+"gx44_25_10": "rasmlar/gx44_25_10.webp",
+"gx44_25_11": "rasmlar/gx44_25_11.webp",
+"gx44_25_12": "rasmlar/gx44_25_12.webp",
+"gx44_25_13": "rasmlar/gx44_25_13.webp",
+"gx44_25_14": "rasmlar/gx44_25_14.webp",
+"gx44_25_15": "rasmlar/gx44_25_15.webp",
+"gx44_25_16": "rasmlar/gx44_25_16.webp",
+"gx44_25_17": "rasmlar/gx44_25_17.webp",
+"gx44_25_18": "rasmlar/gx44_25_18.webp",
+"gx44_25_19": "rasmlar/gx44_25_19.webp",
+"gx44_25_20": "rasmlar/gx44_25_20.webp",
+"gx44_26_1": "rasmlar/gx44_26_1.webp",
+"gx44_26_3": "rasmlar/gx44_26_3.webp",
+"gx44_26_9": "rasmlar/gx44_26_9.webp",
+"gx44_26_10": "rasmlar/gx44_26_10.webp",
+"gx44_26_11": "rasmlar/gx44_26_11.webp",
+"gx44_26_12": "rasmlar/gx44_26_12.webp",
+"gx44_26_13": "rasmlar/gx44_26_13.webp",
+"gx44_26_14": "rasmlar/gx44_26_14.webp",
+"gx44_26_15": "rasmlar/gx44_26_15.webp",
+"gx44_26_16": "rasmlar/gx44_26_16.webp",
+"gx44_26_19": "rasmlar/gx44_26_19.webp",
+"gx44_26_20": "rasmlar/gx44_26_20.webp",
+"gx44_27_1": "rasmlar/gx44_27_1.webp",
+"gx44_27_2": "rasmlar/gx44_27_2.webp",
+"gx44_27_8": "rasmlar/gx44_27_8.webp",
+"gx44_27_14": "rasmlar/gx44_27_14.webp",
+"gx44_27_15": "rasmlar/gx44_27_15.webp",
+"gx44_27_16": "rasmlar/gx44_27_16.webp",
+"gx44_27_17": "rasmlar/gx44_27_17.webp",
+"gx44_27_18": "rasmlar/gx44_27_18.webp",
+"gx44_27_19": "rasmlar/gx44_27_19.webp",
+"gx44_27_20": "rasmlar/gx44_27_20.webp",
+"gx44_28_1": "rasmlar/gx44_28_1.webp",
+"gx44_28_3": "rasmlar/gx44_28_3.webp",
+"gx44_28_4": "rasmlar/gx44_28_4.webp",
+"gx44_28_5": "rasmlar/gx44_28_5.webp",
+"gx44_28_6": "rasmlar/gx44_28_6.webp",
+"gx44_28_7": "rasmlar/gx44_28_7.webp",
+"gx44_28_8": "rasmlar/gx44_28_8.webp",
+"gx44_28_9": "rasmlar/gx44_28_9.webp",
+"gx44_28_10": "rasmlar/gx44_28_10.webp",
+"gx44_28_11": "rasmlar/gx44_28_11.webp",
+"gx44_28_12": "rasmlar/gx44_28_12.webp",
+"gx44_28_13": "rasmlar/gx44_28_13.webp",
+"gx44_28_14": "rasmlar/gx44_28_14.webp",
+"gx44_28_15": "rasmlar/gx44_28_15.webp",
+"gx44_28_16": "rasmlar/gx44_28_16.webp",
+"gx44_28_17": "rasmlar/gx44_28_17.webp",
+"gx44_28_18": "rasmlar/gx44_28_18.webp",
+"gx44_28_19": "rasmlar/gx44_28_19.webp",
+"gx44_28_20": "rasmlar/gx44_28_20.webp",
+"gx44_29_1": "rasmlar/gx44_29_1.webp",
+"gx44_29_2": "rasmlar/gx44_29_2.webp",
+"gx44_29_3": "rasmlar/gx44_29_3.webp",
+"gx44_29_4": "rasmlar/gx44_29_4.webp",
+"gx44_29_5": "rasmlar/gx44_29_5.webp",
+"gx44_29_6": "rasmlar/gx44_29_6.webp",
+"gx44_29_8": "rasmlar/gx44_29_8.webp",
+"gx44_29_9": "rasmlar/gx44_29_9.webp",
+"gx44_29_15": "rasmlar/gx44_29_15.webp",
+"gx44_29_16": "rasmlar/gx44_29_16.webp",
+"gx44_29_17": "rasmlar/gx44_29_17.webp",
+"gx44_29_18": "rasmlar/gx44_29_18.webp",
+"gx44_29_19": "rasmlar/gx44_29_19.webp",
+"gx44_29_20": "rasmlar/gx44_29_20.webp",
+"gx44_30_1": "rasmlar/gx44_30_1.webp",
+"gx44_30_3": "rasmlar/gx44_30_3.webp",
+"gx44_30_5": "rasmlar/gx44_30_5.webp",
+"gx44_30_6": "rasmlar/gx44_30_6.webp",
+"gx44_30_7": "rasmlar/gx44_30_7.webp",
+"gx44_30_8": "rasmlar/gx44_30_8.webp",
+"gx44_30_9": "rasmlar/gx44_30_9.webp",
+"gx44_30_10": "rasmlar/gx44_30_10.webp",
+"gx44_30_11": "rasmlar/gx44_30_11.webp",
+"gx44_30_12": "rasmlar/gx44_30_12.webp",
+"gx44_30_13": "rasmlar/gx44_30_13.webp",
+"gx44_30_14": "rasmlar/gx44_30_14.webp",
+"gx44_30_15": "rasmlar/gx44_30_15.webp",
+"gx44_30_16": "rasmlar/gx44_30_16.webp",
+"gx44_30_17": "rasmlar/gx44_30_17.webp",
+"gx44_30_18": "rasmlar/gx44_30_18.webp",
+"gx44_30_19": "rasmlar/gx44_30_19.webp"
 };
 
 /* ===== 1-to‘plam ===== */
@@ -2224,3 +2749,603 @@ GEO_YOZMA.push(["<b>Grafikdagi ma’lumotlardan foydalanib topshiriqlarni bajari
 GEO_KALIT.push("a) 40 °C; b) ≈ 24,2 % (145 mm : 600 mm)");
 GEO_YOZMA.push(["<b>140° g‘arbiy uzunlikda sana 1-yanvar soat 12:00 ga teng bo‘lsa:</b><br>a) Qaysi meridianda soat 9:00 bo‘lishini aniqlang.<br>b) Ushbu meridiandagi sana (kun, oy)ni aniqlang.",[["a) Qaysi meridianda soat 9:00 bo‘lishini aniqlang.",/175/i],["b) Ushbu meridiandagi sana (kun, oy)ni aniqlang.",/\b0?2[.\s-]*(yanvar|0?1)\b|2\s*-?\s*yanvar/i]]]);
 GEO_KALIT.push("a) 175° sharqiy uzunlik; b) 2-yanvar");
+
+/* ===== Rasmli testlar to‘plami — Ixtiyor Muxtarov (30 variant) ===== */
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Havo bulut","Havo yarim bulut","Havo ozgina bulut","Havo ochiq"],3,"gx44_1_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Havo bulut","Havo yarim bulut","Havo ozgina bulut","Havo ochiq"],0,"gx44_1_2"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Havo bulut","Havo yarim bulut","Havo ozgina bulut","Havo ochiq"],1,"gx44_1_3"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Havo bulut","Havo yarim bulut","Havo ozgina bulut","Havo ochiq"],2,"gx44_1_4"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Shabada","O‘rtacha shamol","Kuchli shamol","Quyun"],0,"gx44_1_5"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Shabada","O‘rtacha shamol","Kuchli shamol","Quyun"],1,"gx44_1_6"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Shabada","O‘rtacha shamol","Kuchli shamol","Quyun"],2,"gx44_1_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Shabada","O‘rtacha shamol","Kuchli shamol","Quyun"],3,"gx44_1_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Kuchli shamol","Quyun","Tuman","Shabada"],2,"gx44_1_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Qor","Jala","Yomg‘ir","Bulduruq"],2,"gx44_1_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Qor","Jala","Momaqaldiroq","Bulduruq"],0,"gx44_1_11"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Bulduruq","Jala","Yomg‘ir","Do‘l"],1,"gx44_1_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Bulduruq","Do‘l","Jala","Yomg‘ir"],0,"gx44_1_13"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Bulduruq","Do‘l","Jala","Yomg‘ir"],1,"gx44_1_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Kuchli shamol","Momaqaldiroq","Bulduruq","Jala"],1,"gx44_1_15"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Qat-qat bulut","Patsimon bulut","Tuman","To‘p-to‘p bulut"],3,"gx44_1_16"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Qat-qat-bulut","Patsimon bulut","Tuman","To‘p-to‘p bulut"],0,"gx44_1_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Qat-qat bulut","To‘p-to‘p bulut","Tuman","Patsimon bulut"],3,"gx44_1_18"]);
+GEO_OCHIQ.push(["Quyida ta’svirlangan xarita muallifini aniqlang.",["Ptolemey","Abu Rayhon Beruniy","Muhammad al-Xorazmiy","Eratosfen"],3,"gx44_1_19"]);
+GEO_OCHIQ.push(["Quyida ta’svirlangan xarita muallifini aniqlang.",["Ptolemey","Abu Rayhon Beruniy","Muhammad al-Xorazmiy","Eratosfen"],0,"gx44_1_20"]);
+GEO_OCHIQ.push(["Quyida ta’svirlangan xarita muallifini aniqlang.",["Ptolemey","Abu Rayhon Beruniy","Muhammad al-Xorazmiy","Eratosfen"],2,"gx44_2_1"]);
+GEO_OCHIQ.push(["Quyida ta’svirlangan xarita muallifini aniqlang.",["Ptolemey","Abu Rayhon Beruniy","Muhammad al-Xorazmiy","Eratosfen"],1,"gx44_2_2"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan qaysi geografik hudud ko‘rasatilgan?",["Ichki dengiz","Eritreya dengizi","Efiopiya okeani","Sharqiy dengiz"],2,"gx44_2_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi geografik hudud ko‘rsatilgan?",["Ichki dengiz","Eritreya dengizi","Efiopiya dengizi","Sharqiy dengiz"],1,"gx44_2_4"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi geografik hudud ko‘rsatilgan?",["Ichki dengiz","Eritreya dengizi","Efiopiya okeani","Sharqiy dengiz"],0,"gx44_2_5"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan qaysi geografik hudud ko‘rsatilgan?",["Ichki dengiz","Eritreya dengizi","Efiopiya okeani","Sharqiy dengiz"],3,"gx44_2_6"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan qaysi daryo ko‘rsatilgan?",["Istr daryosi","Dajla daryosi","Yaksart daryosi","Oks daryosi"],0,"gx44_2_7"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Dajla daryosi ko‘rsatilgan?",["2","4","7","6"],2,"gx44_2_8"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam Yaksart daryosi ko‘rsatilgan?",["2","4","7","6"],3,"gx44_2_9"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Oks daryosi ko‘rsatilgan?",["3","1","5","4"],2,"gx44_2_10"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan qaysi daryo ko‘rsatilgan?",["Hind daryosi","Gang daryosi","Nil daryosi","Oks daryosi"],1,"gx44_2_11"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi daryo ko‘rsatilgan?",["Hind daryosi","Gang daryosi","Nil daryosi","Oks daryosi"],0,"gx44_2_12"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi daryo ko‘rsatilgan?",["Hind daryosi","Gang daryosi","Nil daryosi","Oks daryosi"],2,"gx44_2_13"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan qaysi shahar o‘rni ko‘rsatilgan?",["Astrobod","Iskandariya","Siyena","Bobil"],1,"gx44_2_14"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi shahar o‘rni ko‘rsatilgan?",["Astrobod","Iskandariya","Siyena","Bobil"],2,"gx44_2_15"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi shahar o‘rni ko‘rsatilgan?",["Astrobod","Iskandariya","Siyena","Bobil"],3,"gx44_2_16"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “A” harfi bilan qaysi geografik hudud ko‘rsatilgan?",["Skiflar","Massagetlar","So‘g‘diyona","Tavr tog‘lari"],3,"gx44_2_17"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “B” harfi bilan qaysi geografik hudud ko‘rsatilgan?",["Skiflar","Massagetlar","So‘g‘diyona","Tavr tog‘lari"],1,"gx44_2_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “C” harfi bilan qaysi geografik hudud ko‘rsatilgan?",["Skiflar","Massagetlar","So‘g‘diyona","Tavr tog‘lari"],0,"gx44_2_19"]);
+GEO_OCHIQ.push(["Ushbu rasmda ta’svirlangan xaritani muallifi xaritani nechanchi asrda yaratgan?",["Mil.avv. III asr","Milodiy III asr","Mil.avv. II asr","Milodiy II asr"],0,"gx44_2_20"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan qaysi geografik hudud ko‘rsatilgan?",["G‘arbiy okean","Ichki dengiz","Fors ko‘li","Hindiston dengizi"],3,"gx44_3_1"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi geografik hudud ko‘rsatilgan?",["G‘arbiy okean","Ichki dengiz","Fors ko‘li","Hindiston dengizi"],2,"gx44_3_2"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi geografik hudud ko‘rsatilgan?",["G‘arbiy okean","Ichki dengiz","Fors ko‘li","Hindiston dengizi"],1,"gx44_3_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan qaysi geografik hudud ko‘rsatilgan?",["G‘arbiy okean","Ichki dengiz","Fors ko‘li","Hindiston dengizi"],0,"gx44_3_4"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan qaysi daryo ko‘rsatilgan?",["Hind daryosi","Ganga daryosi","Yaksart daryosi","Oks daryosi"],0,"gx44_3_5"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi daryo ko‘rsatilgan?",["Hind daryosi","Ganga daryosi","Yaksart daryosi","Oks daryosi"],1,"gx44_3_6"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi daryo ko‘rsatilgan?",["Hind daryosi","Ganga daryosi","Yaksart daryosi","Oks daryosi"],2,"gx44_3_7"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan qaysi daryo ko‘rsatilgan?",["Hind daryosi","Ganga daryosi","Yaksart daryosi","Oks daryosi"],3,"gx44_3_8"]);
+GEO_OCHIQ.push(["Quyidagi xaritada Ra daryosi qaysi raqam bilan ko‘rsatilgan?",["5","6","4","3"],0,"gx44_3_9"]);
+GEO_OCHIQ.push(["Quyidagi xaritada Nil daryosi qaysi raqam bilan ko‘rsatilgan?",["5","6","4","3"],1,"gx44_3_10"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan qaysi shahar ko‘rsatilgan?",["Samarqand","Binokand","Buxoro","Xo‘jand"],2,"gx44_3_11"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi shahar ko‘rsatilgan?",["Samarqand","Binokand","Buxoro","Xo‘jand"],3,"gx44_3_12"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi shahar ko‘rsatilgan?",["Samarqand","Binokand","Buxoro","Xo‘jand"],1,"gx44_3_13"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan qaysi shahar ko‘rsatilgan?",["Samarqand","Binokand","Buxoro","Xo‘jand"],0,"gx44_3_14"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 5 raqami bilan qaysi shahar ko‘rsatilgan?",["Astrobod","Binokand","Navokat","Xo‘jand"],2,"gx44_3_15"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 6 raqami bilan qaysi shahar ko‘rsatilgan?",["Astrobod","Binokand","Navokat","Xo‘jand"],0,"gx44_3_16"]);
+GEO_OCHIQ.push(["Quyidagi xaritada kimning sayohati ta’svirlangan?",["Ibn Battuta","Al-Farg‘oniy","Nosir Xisrav","Hamidulla Hasanov"],2,"gx44_3_17"]);
+GEO_OCHIQ.push(["5-sinf o‘quv atlasi va darslik matnidagi ma’lumotlardan foydalanib quyidagi a) va b) rasmlar qanday tabiiy sharoitda yashovchi xalqlarning Yer haqidagi tasavvuri mahsuli ekanligini aniqlang.",["a) okeanlar bo‘yida yashovchi aholi; b) cho‘llarda yashovchi aholi","a) issiq mintaqalarda yashovchi aholi; b) materik ichkarisida yashovchi aholi","a) materik ichkarisida yashovchi aholi; b) okeanlar bo‘yida yashovchi aholi","a) okeanlar bo‘yida yashovchi aholi; b) issiq mintaqalarda yashovchi aholi"],3,"gx44_3_18"]);
+GEO_OCHIQ.push(["Quyidagi rasmda nima ta’svirlanganligini aniqlang.",["Yerning yoritilish mintaqalari","Yerning issiqlik mintaqalari","Yerning iqlim mintaqalari","A va B"],3,"gx44_3_19"]);
+GEO_OCHIQ.push(["Shimoliy tropik chizig‘i rasmda qaysi harf bilan belgilangan?",["A","B","C","D"],0,"gx44_3_20"]);
+GEO_OCHIQ.push(["Janubiy tropik chizig‘i rasmda qaysi harf bilan belgilangan?",["A","B","C","D"],1,"gx44_4_1"]);
+GEO_OCHIQ.push(["Ekvator chizig‘i rasmda qaysi harf bilan belgilangan?",["A","B","C","D"],2,"gx44_4_2"]);
+GEO_OCHIQ.push(["A nuqtada yoz fasli bo‘lganda, D nuqtada yilning qaysi fasli bo‘ladi?",["Bahor","Yoz","Kuz","Qish"],3,"gx44_4_3"]);
+GEO_OCHIQ.push(["Rasmda harflar bilan ko‘rsatilgan parallellarning qaysi biri eng uzun?",["A","B","C","D"],2,"gx44_4_4"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda uyga yo‘nalish azimutini aniqlang.",["35⁰","40⁰","45⁰","50⁰"],1,"gx44_4_5"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda daraxtga yo‘nalish azimutini aniqlang.",["310⁰","315⁰","320⁰","325⁰"],2,"gx44_4_6"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda quduqqa yo‘nalish azimutini aniqlang.",["130⁰","135⁰","140⁰","145⁰"],2,"gx44_4_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda tegirmonga yo‘nalish azimutini aniqlang.",["220⁰","230⁰","235⁰","240⁰"],0,"gx44_4_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday geografik asbob ta’svirlangan?",["Ruletka","Flyuger","Anemometr","Yasama o‘lchov g‘ildirak"],3,"gx44_4_9"]);
+GEO_OCHIQ.push(["Ushbu rasmda ta’svirlangan geografik asbob nomini to‘g‘ri belgilang.",["Anemometr","Gigrometr","Nivelir","Seysmogramma"],2,"gx44_4_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda ta’svirlangan qo‘lbola nivelirning balandligi necha metrni tashkil etadi?",["0,5 metr","1,5 metr","2 metr","1 metr"],3,"gx44_4_11"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday relyef shakli ko‘rsatilgan?",["Botiq","Tepalik","A va B javoblar to‘g‘ri","To‘g‘ri javob berilmagan"],1,"gx44_4_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday relyef shakli ko‘rsatilgan?",["Botiq","Tepalik","A va B javoblar to‘g‘ri","To‘g‘ri javob berilmagan"],0,"gx44_4_13"]);
+GEO_OCHIQ.push(["Quyidagi rasmda gorizontallar oralig‘i necha metrdan o‘tkazilgan?",["10 metr","4 metr","6 metr","5 metr"],3,"gx44_4_14"]);
+GEO_OCHIQ.push(["Quyidagi chizmadan foydalanib D nuqta qaysi yarimsharlarda joylashganligini aniqlang.",["Shimoliy hamda Sharqiy yarimsharlar","Janubiy va G‘arbiy yarimsharlar","Shimoliy hamda G‘arbiy yarimsharlar","Janubiy hamda Sharqiy yarimsharlar"],2,"gx44_4_15"]);
+GEO_OCHIQ.push(["Quyidagi chizmadan foydalanib N nuqta qaysi yarimsharlarda joylashganligini aniqlang.",["Shimoliy hamda Sharqiy yarimsharlar","Janubiy hamda G‘arbiy yarimsharlar","Shimoliy hamda G‘arbiy yarimsharlar","Janubiy hamda Sharqiy yarimsharlar"],3,"gx44_4_16"]);
+GEO_OCHIQ.push(["Quyidagi chizmadan foydalanib A nuqtaning geografik koordinatasini aniqlang.",["15⁰ janubiy kenglik va 45⁰ g‘arbiy uzunlik","15⁰ shimoliy kenglik va 45⁰ sharqiy uzunlik","15⁰ janubiy kenglik va 45⁰ sharqiy uzunlik","15⁰ shimoliy kenglik va 45⁰ g‘arbiy uzunlik"],0,"gx44_4_17"]);
+GEO_OCHIQ.push(["Quyidagi chizmadan foydalanib A nuqtaning geografik koordinatasini aniqlang.",["19⁰ g‘arbiy uzunlik va 56⁰ janubiy kenglik","19⁰ sharqiy uzunlik va 56⁰ janubiy kenglik","19⁰ g‘arbiy uzunlik va 56⁰ shimoliy kenglik","19⁰ sharqiy uzunlik va 56⁰ shimoliy kenglik"],1,"gx44_4_18"]);
+GEO_OCHIQ.push(["Quyidagi nuqtalarning qaysi biri orqali Shimoliy qutbga borish nisbatan osonroq?",["A","B","C","D"],0,"gx44_4_19"]);
+GEO_OCHIQ.push(["Quyidagi nuqtalarning qaysi biri eng uzun parallel chizig‘ida joylashganligini aniqlang.",["D","B","C","A va C"],3,"gx44_4_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda ichki yadroning qalinligini aniqlang.",["2080 km","1490 km","1080 km","1390 km"],3,"gx44_5_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda tashqi yadroning qalinligini aniqlang.",["2080 km","1490 km","1080 km","1390 km"],0,"gx44_5_2"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda mantiyaning qalinligini aniqlang.",["2680 km","2850 km","2760 km","2860 km"],3,"gx44_5_3"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda yer po‘stining qalinligini aniqlang.",["25 – 35 km","35 – 40 km","35 – 45 km","30 – 55 km"],1,"gx44_5_4"]);
+GEO_OCHIQ.push(["Quyidagi rasmda yer po‘sti qaysi harf bilan ko‘rsatilgan?",["A","B","C","D"],0,"gx44_5_5"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “B” harfi bilan Yerning qaysi qatlami ko‘rsatilgan?",["Ichki yadro","Tashqi yadro","Mantiya","Yer po‘sti"],2,"gx44_5_6"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “C” harfi bilan Yerning qaysi qatlami ko‘rsatilgan?",["Ichki yadro","Tashqi yadro","Mantiya","Yer po‘sti"],1,"gx44_5_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “D” harfi bilan Yerning qaysi qatlami ko‘rsatilgan?",["Ichki yadro","Tashqi yadro","Mantiya","Yer po‘sti"],0,"gx44_5_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan ko‘rsatilgan qatlam qanday jinslardan tashkil topgan?",["Gil, ohaktosh, granit, qumtosh, bo‘r","Granit, ohaktosh, qum, qumtosh, bo‘r","Gil, ohaktosh, qum, qumtosh, bo‘r","Gil, ohaktosh, qum, qumtosh, mergel"],2,"gx44_5_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi raqam bazalt qatlam ko‘rsatilgan?",["1","2","3","4"],2,"gx44_5_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi raqam granit qatlam ko‘rsatilgan?",["1","2","3","4"],1,"gx44_5_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi raqam bilan cho‘kindi qatlam ko‘rsatilgan?",["1","2","3","4"],0,"gx44_5_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 3 raqami bilan ta’svirlangan qatlam asosan qanday jinslardan tashkil topgan?",["Temir, magniy, kalsiy","Temir, qo‘rg‘oshin, mergel","Magniy, kalsiy, rux","Temir, rux, gil"],0,"gx44_5_13"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “A” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["6 sm","5 sm","4 sm","3 sm"],1,"gx44_5_14"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “B” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["6 sm","5 sm","4 sm","3 sm"],0,"gx44_5_14"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “D” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["1 sm","2 sm","3 sm","4 sm"],1,"gx44_5_14"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “C” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["1 sm","2 sm","3 sm","4 sm"],0,"gx44_5_17"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “E” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["1 sm","2 sm","3 sm","4 sm"],2,"gx44_5_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “F” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["1 sm","2 sm","3 sm","4 sm"],3,"gx44_5_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “H” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["6 sm","7 sm","8 sm","9 sm"],2,"gx44_5_20"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “G” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["6 sm","7 sm","8 sm","9 sm"],0,"gx44_5_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “J” harfi bilan ko‘rsatilgan nuqtada litosfera plitalarining harakat tezligi yiliga necha sm ni tashkil etadi?",["8 sm","7 sm","6 sm","5 sm"],3,"gx44_5_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada nima aks ettirilgan?",["Litosfera plitalari harakati","Litosfera plitalarining to‘qnashish chegaralari","Litosfera plitalarining ajralish chegarasi","Sayyoramizdagi yirik seysmik mintaqalar"],3,"gx44_6_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi harflar bilan belgilangan hududlar seysmik mintaqalarga tegishli ekanligini aniqlang.",["G – J – H – B – D – I – C","A – B – D – I – C – J – H","F – B – D – I – C – G – J","A – F – G – J – H – I – C"],0,"gx44_6_4"]);
+GEO_OCHIQ.push(["Quyidagi vulqon kesmasida 1 raqami bilan vulqonning qaysi qismi ko‘rsatilgan?",["Vulqon o‘chog‘i","Magma","Vulqon kanali","Yon krater"],0,"gx44_6_5"]);
+GEO_OCHIQ.push(["Quyidagi vulqon kesmasida qaysi raqam ostida vulqon kanali ko‘rsatilgan?",["1","2","3","4"],2,"gx44_6_6"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan nima ko‘rsatilgan?",["Magma","Vulqon o‘chog‘i","Vulqon kanali","Yon krater"],0,"gx44_6_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 4 raqami bilan nima ko‘rsatilgan?",["Vulqon o‘chog‘i","Lava","Magma","Krater"],3,"gx44_6_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 5 raqami bilan nima ko‘rsatilgan?",["Krater","Magma","Vulqon o‘chog‘i","Lava"],3,"gx44_6_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi raqam bilan vulqon kuli ko‘rsatilgan?",["4","5","6","7"],2,"gx44_6_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 7 raqami bilan nima ko‘rsatilgan?",["Lava","Yon krater","Krater","Vulqon kanali"],1,"gx44_6_11"]);
+GEO_OCHIQ.push(["Ushbu rasmda nima tasvirlanganligini aniqlang.",["Aylanma havo oqimi","Buloq","Geyzer","Bulut"],2,"gx44_6_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan nima tasvirlangan?",["Dengiz sathi","Botiq","Shelf","Cho‘kma"],0,"gx44_6_13"]);
+GEO_OCHIQ.push(["Quyidagi 2 raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["Qir","Botiq","Pasttekislik","Past tog‘"],2,"gx44_6_14"]);
+GEO_OCHIQ.push(["Quyidagi 3 raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["Qir","Botiq","Pasttekislik","Yassi tog‘"],0,"gx44_6_15"]);
+GEO_OCHIQ.push(["Quyidagi 4 raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["Baland tog‘","O‘rtacha tog‘","O‘rtacha baland tog‘","Past tog‘"],3,"gx44_6_15"]);
+GEO_OCHIQ.push(["Quyidagi 5 raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["Baland tog‘","O‘rtacha tog‘","O‘rtacha baland tog‘","Past tog‘"],1,"gx44_6_17"]);
+GEO_OCHIQ.push(["Quyidagi 6 raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["Baland tog‘","O‘rtacha tog‘","O‘rtacha baland tog‘","Past tog‘"],0,"gx44_6_18"]);
+GEO_OCHIQ.push(["Quyidagi 7 raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["Baland tog‘","O‘rtacha tog‘","O‘rtacha baland tog‘","Past tog‘"],2,"gx44_6_18"]);
+GEO_OCHIQ.push(["Quyidagi 8 raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["Dengiz sathi","Botiq","Cho‘kma","Shelf"],1,"gx44_6_20"]);
+GEO_OCHIQ.push(["Quyida 1 raqami bilan qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],0,"gx44_7_1"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],1,"gx44_7_2"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],3,"gx44_7_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],2,"gx44_7_4"]);
+GEO_OCHIQ.push(["Ushbu jadvaldagi so‘roq o‘rniga mos raqamlarni qo‘ying.",["96,5 %","95,6 %","96,6 %","95,5 %"],0,"gx44_7_5"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan nima ko‘rsatilgan?",["Chuqur okean botig‘i","Orol","Suv osti tog‘ tizmasi","Materik yonbag‘ri"],1,"gx44_7_6"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan nima ko‘rsatilgan?",["Chuqur okean botig‘i","Orol","Suv osti tog‘ tizmasi","Materik yonbag‘ri"],2,"gx44_7_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 3 raqami bilan nima ko‘rsatilgan?",["Chuqur okean botiqlari","Orol","Suv osti tog‘ tizmasi","Materik yonbag‘ri"],3,"gx44_7_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 4 raqami bilan nima ko‘rsatilgan?",["Okean tubi","Shelf","Chuqur okean botig‘i","Suv osti tog‘ tizmasi"],1,"gx44_7_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 5 raqami bilan nima ko‘rsatilgan?",["Okean tubi","Shelf","Chuqur okean botig‘i","Suv osti tog‘ tizmasi"],0,"gx44_7_6"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 6 raqami bilan nima ko‘rsatilgan?",["Okean botig‘i","Shelf","Chuqur okean botig‘i","Suv osti tog‘ tizmasi"],2,"gx44_7_11"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday geografik asbob ko‘rsatilgan?",["Gigrometr","Flyuger","Anemometr","Exolot"],3,"gx44_7_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda daryo vodiysining ko‘ndalang kesimi aks ettirilgan. Rasmlarda ko‘rsatilgan harflardan qaysi biri daryo o‘zanini bildiradi?",["A","B","C","D"],0,"gx44_7_13"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “A” harfi bilan daryo havzasining qaysi tarkibiy qismi ko‘rsatilgan?",["Daryo mansabi","Delta","Daryo o‘zani","Daryo manbayi"],1,"gx44_7_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “D” harfi bilan daryo havzasining qaysi tarkibiy qismi ko‘rsatilgan?",["Daryo mansabi","Daryo manbayi","Delta","Daryo o‘zani"],0,"gx44_7_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “E” harfi bilan daryo havzasining qaysi tarkibiy qismi ko‘rsatilgan?",["Daryo mansabi","Daryo manbayi","Delta","Daryo o‘zani"],3,"gx44_7_16"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “F” harfi bilan daryo havzasining qaysi tarkibiy qismi ko‘rsatilgan?",["Daryo mansabi","Daryo manbayi","Delta","Daryo o‘zani"],1,"gx44_7_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “B” harfi bilan daryo havzasining qaysi tarkibiy qismi ko‘rsatilgan?",["Irmoq","Suvayirg‘ich","Daryo o‘zani","Daryo havzasi"],1,"gx44_7_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday ko‘l tasvirlangan?",["Oqar ko‘l","Tektonik ko‘l","Oqmas ko‘l","Morena ko‘l"],2,"gx44_7_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday ko‘l tasvirlangan?",["Oqar ko‘l","Tektonik ko‘l","Oqmas ko‘l","Morena ko‘l"],0,"gx44_7_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday geografik asbob tasvirlangan?",["Azimut","Kompas","Metall barometr","Simobli barometr"],2,"gx44_8_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday geografik asbob tasvirlangan?",["Anemometr","Flyuger","Gigrometr","Reyka"],1,"gx44_8_2"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday geografik asbob tasvirlangan?",["Anemometr","Flyuger","Gigrometr","Yog‘in o‘lchagich"],3,"gx44_8_3"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada nima tasvirlangan?",["Gidrosferadagi suv tarkibi","Havoning gaz tarkibi","Havoning ifloslanish tarkibi","Okeanlar ulushi"],1,"gx44_8_4"]);
+GEO_OCHIQ.push(["Quyidagi rasmda nima tasvirlanganligini aniqlang.",["Mantiyaning tuzilishi","Yadroning tuzilishi","Gidrosferaning tuzilishi","Litosferaning tuzilishi"],3,"gx44_8_5"]);
+GEO_OCHIQ.push(["Quyidagi rasmda nima tasvirlanganligini aniqlang.",["Litosfera plitalarining harakat mexanizmi","Litosfera plitalarining uyurmali harakati","Astenosfera qatlamidagi moddalar harakati","Mantiyadagi moddalar harakati"],0,"gx44_8_6"]);
+GEO_OCHIQ.push(["Quyidagi rasmda okean tubi ko‘rsatilgan bo‘lib, 1 raqami bilan qanday relyef shakli tasvirlangan?",["Materik yonbag‘ri","Materik etagi","Materik sayozligi","Okean tagi"],2,"gx44_8_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan qanday relyef shakli ko‘rsatilganligini aniqlang.",["Materik yonbag‘ri","Materik etagi","Materik sayozligi","Okean tagi"],0,"gx44_8_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 3 raqami bilan qanday relyef shakli ko‘rsatilganligini aniqlang.",["Materik yonbag‘ri","Materik etagi","Materik sayozligi","Okean tagi"],1,"gx44_8_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 4 raqami bilan qanday relyef shakli ko‘rsatilganligini aniqlang.",["O‘rta okean tizmalari","Okean tagi","Chuqur cho‘kmalar","Materik sayozligi"],2,"gx44_8_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 5 raqami bilan qanday relyef shakli ko‘rsatilganligini aniqlang.",["Orollar","O‘rta okean tizmalari","Okean tagi","Materik yonbag‘ri"],0,"gx44_8_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 6 raqami bilan qanday relyef shakli ko‘rsatilganligini aniqlang.",["Orollar","O‘rta okean tizmalari","Okean tagi","Materik etagi"],1,"gx44_8_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 7 raqami bilan qanday relyef shakli ko‘rsatilganligini aniqlang.",["Orollar","O‘rta okean tizmalari","Okean tagi","Materik etagi"],2,"gx44_8_13"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday jarayon aks ettirilganligini aniqlang.",["Oy va Quyoshning tortishi","Koriolis kuchi","Atmosfera – okean – quruqlik tizimidagi suvning aylanma harakati","Okean – atmosfera – quruqlik tizimidagi suvning aylanma harakati"],3,"gx44_8_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda tasvirlangan hayvonlar qaysi materik uchun xos?",["Avstraliya","Janubiy Amerika","Yevrosiyo","Afrika"],3,"gx44_8_15"]);
+GEO_OCHIQ.push(["Quyidagi rasmda tasvirlangan hayvonlar qaysi materik uchun xos?",["Avstraliya","Janubiy Amerika","Yevrosiyo","Afrika"],0,"gx44_8_16"]);
+GEO_OCHIQ.push(["Quyidagi rasmda tasvirlangan hayvonlar qaysi materik uchun xos?",["Shimoliy Amerika","Antarktida","Avstraliya","Janubiy Amerika"],1,"gx44_8_17"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan Piraniya balig‘i qaysi materik uchun xos?",["Shimoliy Amerika","Janubiy Amerika","Yevrosiyo","Afrika"],1,"gx44_8_18"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi baliqqa mos to‘g‘ri tarifni toping.",["Daryo odamxo‘ri","Ekvatorial o‘rmonlar zo‘nasida yashaydi","Subekvatorial o‘rmonlar zonasida yashaydi","A va B javoblar to‘g‘ri"],3,"gx44_8_19"]);
+GEO_OCHIQ.push(["Ushbu rasmda Chako milliy bog‘ining tabiiy go‘zalligi tasvirlangan bo‘lib, ushbu milliy bog‘ qaysi davlat hududida joylashganligini aniqlang.",["Braziliya","Peru","Argentina","Urugvay"],2,"gx44_8_20"]);
+GEO_OCHIQ.push(["Ushbu rasmda Jau milliy bog‘i go‘zalligi tasvirlangan bo‘lib, ushbu milliy bog‘ning qaysi davlat hududida joylashganligini aniqlang.",["Braziliya","Peru","Argentina","Urugvay"],0,"gx44_9_1"]);
+GEO_OCHIQ.push(["Ushbu rasmda qanday hayvon tasvirlanganligini aniqlang.",["Tog‘ qo‘yi","O‘rmon bizoni","Qo‘yho‘kiz","Qor echkisi"],2,"gx44_9_2"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvonni asosan qaysi tabiat zonasida uchratish mumkin?",["Tundra va o‘rmon-tundra","Tayga","Arktika cho‘llari","Aralash va keng bargli o‘rmonlar"],0,"gx44_9_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon qaysi materik uchun xos?",["Shimoliy Amerika","Janubiy Amerika","Avstraliya","Afrika"],0,"gx44_9_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda qanday hayvon tasvirlanganligini aniqlang.",["Qo‘yho‘kiz","O‘rmon bizoni","Yak","Yovvoyi buqa"],2,"gx44_9_6"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Shimoliy Yevropa o‘lkasi ko‘rsatilgan?",["I","II","III","IV"],0,"gx44_9_7"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan O‘rta Yevropa o‘lkasi ko‘rsatilgan?",["I","II","III","IV"],1,"gx44_9_8"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Janubiy Yevropa o‘lkasi ko‘rsatilgan?",["I","II","III","IV"],2,"gx44_9_9"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Sharqiy Yevropa o‘lkasi ko‘rsatilgan?",["I","II","III","IV"],3,"gx44_9_10"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan G‘arbiy Sibir o‘lkasi ko‘rsatilgan?",["V","VI","VII","VIII"],0,"gx44_9_11"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Sharqiy Sibir o‘lkasi ko‘rsatilgan?",["V","VI","VII","VIII"],1,"gx44_9_12"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Uzoq Sharq o‘lkasi ko‘rsatilgan?",["V","VI","VII","VIII"],2,"gx44_9_13"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Janubi-g‘arbiy Osiyo o‘lkasi ko‘rsatilgan?",["V","VI","VII","VIII"],3,"gx44_9_14"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Old Osiyo o‘lkasi ko‘rsatilgan?",["IX","X","XI","XII"],0,"gx44_9_15"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan O‘rta Osiyo o‘lkasi ko‘rsatilgan?",["IX","X","XI","XII"],1,"gx44_9_16"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Markaziy Osiyo o‘lkasi ko‘rsatilgan?",["IX","X","XI","XII"],2,"gx44_9_17"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Sharqiy Osiyo o‘lkasi ko‘rsatilgan?",["IX","X","XI","XII"],3,"gx44_9_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Janubiy Osiyo o‘lkasi ko‘rsatilgan?",["XI","XII","XIII","XIV"],2,"gx44_9_19"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Janubi-sharqiy Osiyo o‘lkasi ko‘rsatilgan?",["XI","XII","XIII","XIV"],3,"gx44_9_20"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi tasvirlangan?",["Alohida joylashgan hovlilar","Turar joylar va boshqa binolar","O‘tga chidamli binolar","O‘tga chidamsiz binolar"],1,"gx44_10_1"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Alohida joylashgan hovlilar","Turar joylar va boshqa binolar","O‘tga chidamli binolar","O‘tga chidamsiz binolar"],0,"gx44_10_2"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Alohida joylashgan hovlilar","Turar joylar va boshqa binolar","O‘tga chidamli binolar","O‘tga chidamsiz binolar"],2,"gx44_10_3"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Alohida joylashgan hovlilar","Turar joylar va boshqa binolar","O‘tga chidamli binolar","O‘tga chidamsiz binolar"],3,"gx44_10_4"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Radiomachtalar va televizion machtalar","Yoqilg‘i omborlari","Elektr stansiyalari","Zavod va fabrikalar"],3,"gx44_10_5"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Radiomachtalar va televizion machtalar","Yoqilg‘i omborlari","Elektr stansiyalari","Zavod va fabrikalar"],1,"gx44_10_6"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Radimachtalar va televizion machtalar","Yoqilg‘i omborlari","Elektr stansiyalari","Zavod va fabrikalar"],2,"gx44_10_7"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Radiomachtalar va televizion machtalar","Yoqilg‘i omborlari","Elektr stansiyalari","Zavod va fabrikalar"],0,"gx44_10_8"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Masjidlar","Mashhur yodgorliklar","Qabristonlar","Minora tipidagi inshootlar"],0,"gx44_10_9"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Masjidlar","Mashhur yodgorliklar","Qabristonlar","Minora tipidagi inshootlar"],3,"gx44_10_10"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Masjidlar","Mashhur yodgorliklar","Qabristonlar","Minora tipidagi inshootlar"],1,"gx44_10_11"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Masjidlar","Mashhur yodgorliklar","Qabristonlar","Minora tipidagi inshootlar"],2,"gx44_10_12"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Mukammallashtirilgan shosse yo‘llar","Tor izli temiryo‘llar","Elektr uzatgich linyalari","Aloqa linyalari"],1,"gx44_10_13"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Mukammallashtirilgan shosse yo‘llar","Tor izli temiryo‘llar","Elektr uzatgich linyalari","Aloqa linyalari"],3,"gx44_10_14"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Mukammallashtirilgan shosse yo‘llar","Tor izli temiryo‘llar","Elektr uzatgich linyalari","Aloqa linyalari"],2,"gx44_10_15"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Mukammallashtirilgan shosse yo‘llar","Tor izli temiryo‘llar","Elektr uzatgich linyalari","Aloqa linyalari"],0,"gx44_10_16"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Tuproq (qishloq) yo‘llar","Yaxshilangan tuproq yo‘llar, trubalar","Mukammallashtirilgan shosse yo‘llar","Shosse"],1,"gx44_10_17"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Tuproq (qishloq) yo‘llar","Yaxshilangan tuproq yo‘llar, trubalar","Mukammallashtirilgan shosse yo‘llar","Shosse"],0,"gx44_10_18"]);
+GEO_OCHIQ.push(["Quyidagi topografik shartli belgidagi (14) raqami qanday ma’noga ega?",["To‘shamali qismining kengligi","To‘shamasining qalinligi","To‘shamasining materiali","Umumiy kengligi"],3,"gx44_10_19"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Ignabargli o‘rmonlar","Bargli o‘rmonlar","Dashtlar","Aralash o‘rmonlar"],3,"gx44_10_20"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Ignabargli o‘rmonlar","Bargli o‘rmonlar","Dashtlar","Aralash o‘rmonlar"],0,"gx44_11_1"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Ignabargli o‘rmonlar","Bargli o‘rmonlar","Dashtlar","Aralash o‘rmonlar"],1,"gx44_11_2"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Siyrak o‘rmonlar","Kesilgan o‘rmonlar","Yongan va qurib qolgan o‘rmonlar","Shamol sindirgan daraxtlar"],3,"gx44_11_3"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Siyrak o‘rmonlar","Kesilgan o‘rmonlar","Yongan va qurib qolgan o‘rmonlar","Shamol sindirgan daraxtlar"],0,"gx44_11_4"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Siyrak o‘rmonlar","Kesilgan o‘rmonlar","Yongan va qurib qolgan o‘rmonlar","Shamol sindirgan daraxtlar"],1,"gx44_11_5"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Siyrak o‘rmonlar","Kesilgan o‘rmonlar","Yongan va qurib qolgan o‘rmonlar","Shamol sindirgan daraxtlar"],2,"gx44_11_6"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Alohida butalar","Chakalakzorlar","Daraxtlari kesilib ochilgan o‘rmon yo‘li","O‘tloqlar"],2,"gx44_11_7"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Alohida butalar","Chakalakzorlar","Daraxtlari kesilib ochilgan o‘rmon yo‘li","O‘tloqlar"],0,"gx44_11_8"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Alohida butalar","Chakalakzorlar","Daraxtlari kesilib ochilgan o‘rmon yo‘li","O‘tloqlar"],1,"gx44_11_9"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["Alohida butalar","Chakalakzorlar","Daraxtlari kesilib ochilgan o‘rmon yo‘li","O‘tloqlar"],3,"gx44_11_10"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["O‘tloqlar","Mevazorlar","Qamishzorlar","Chakalakzorlar"],2,"gx44_11_11"]);
+GEO_OCHIQ.push(["Quyida qanday topografik shartli belgi ko‘rsatilgan?",["O‘tloqlar","Mevazorlar","Qamishzorlar","Chakalakzorlar"],1,"gx44_11_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan tosh ustun qaysi milliy bog‘da joylashgan?",["Zomin","Hisor","Kitob","Zarafshon"],0,"gx44_11_13"]);
+GEO_OCHIQ.push(["Quyidagi rasmda keltirilgan a va b da nimalar tasvirlangan?",["a – siklon va b – antisiklonda havo bosimi va shamollarning yo‘nalishi","a – antisiklon va b – siklonda havo bosimi hamda shamollarning yo‘nalishi","a – sovuq front va b – iliq frontda havo bosimi hamda shamollarning yo‘nalishi","a – iliq front va b – sovuq frontda havo bosimi hamda shamollarning yo‘nalishi"],0,"gx44_11_14"]);
+GEO_OCHIQ.push(["Quyidagi chizmada qaysi shahardagi yog‘inlarning oylar bo‘yicha taqsimlanishi va havo haroratining farqlanishi ko‘rsatilgan?",["Mashhad","Dushanbe","G‘ulja","Ostona"],0,"gx44_11_15"]);
+GEO_OCHIQ.push(["Quyidagi chizmada qaysi shahardagi yog‘inlarning oylar bo‘yicha taqsimlanishi ko‘rsatilgan?",["Mashhad","Dushanbe","G‘ulja","Ostona"],1,"gx44_11_16"]);
+GEO_OCHIQ.push(["Quyidagi chizmada qaysi shahardagi yog‘inlarning oylar bo‘yicha taqsimlanishi ko‘rsatilgan?",["Mashhad","Dushanbe","G‘ulja","Ostona"],2,"gx44_11_17"]);
+GEO_OCHIQ.push(["Quyidagi chizmada qaysi shahardagi yog‘inlarning oylar bo‘yicha taqsimlanishi ko‘rsatilgan?",["G‘azali","G‘ulja","Dushanbe","Ostona"],3,"gx44_11_18"]);
+GEO_OCHIQ.push(["Quyidagi chizmada qaysi shahardagi yog‘inlarning oylar bo‘yicha taqsimlanishi ko‘rsatilgan?",["G‘azali","G‘ulja","Dushanbe","Ostona"],0,"gx44_11_19"]);
+GEO_OCHIQ.push(["Och bo‘z tuproqning kesmasida yuvilib turadigan qavat qaysi harf bilan ko‘rsatilgan?",["D","B","A 2","A 1"],2,"gx44_11_20"]);
+GEO_OCHIQ.push(["Och bo‘z tuproqning kesmasida chirindi yig‘iladigan qavat qaysi harf bilan ko‘rsatilgan?",["D","B","A 2","A 1"],3,"gx44_12_1"]);
+GEO_OCHIQ.push(["Och bo‘z tuproqning kesmasida moddalar to‘planuvchi qavat qaysi harf bilan ko‘rsatilgan?",["D","B","A 2","A 1"],1,"gx44_12_2"]);
+GEO_OCHIQ.push(["Och bo‘z tuproqning kesmasida tuproq ona jinsi – lyoss qaysi harf bilan ko‘rsatilgan?",["D","B","A 2","A 1"],0,"gx44_12_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi o‘simlik turi tasvirlanganligini aniqlang.",["Yantoq","Shuvoq","Saksovul","Burgan"],2,"gx44_12_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini to‘g‘ri toping.",["Morxo‘r","Jayron","Tyanshan qo‘yi","Oqquyruq"],0,"gx44_12_5"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini to‘g‘ri toping.",["Morxo‘r","Jayron","Tyanshan qo‘yi","Oqquyruq"],1,"gx44_12_6"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini to‘g‘ri toping.",["Morxo‘r","Jayron","Tyanshan qo‘yi","Oqquyruq"],2,"gx44_12_7"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan qush nomini to‘g‘ri toping.",["Oddiy sor","Oqbosh qumoy","Kaklik","O‘rdak"],0,"gx44_12_8"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan qush nomini to‘g‘ri toping.",["Oddiy sor","Oqbosh qumoy","Kaklik","O‘rdak"],1,"gx44_12_9"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan qush nomini to‘g‘ri toping.",["Oddiy sor","Oqbosh qumoy","Kaklik","O‘rdak"],2,"gx44_12_10"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan qush nomini to‘g‘ri toping.",["Oqbosh qumoy","Oq laylak","O‘rdak","Oqqush"],3,"gx44_12_11"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan qush nomini to‘g‘ri toping.",["Qarg‘a","Kaklik","Oddiy sor","Qora laylak"],3,"gx44_12_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan qush nomini tog‘ri toping.",["Kaklik","Oqbosh qumoy","G‘oz","O‘rdak"],3,"gx44_12_13"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Qo‘ng‘ir ayiq","Tyanshan ayig‘i","Hisor ayig‘i","Tibet ayig‘i"],1,"gx44_12_14"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Yo‘l-yo‘l sirtlon","Qoraquloq","Gepard","Leopard"],0,"gx44_12_15"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Qor qoploni","Leopard","Gepard","Qoraquloq"],0,"gx44_12_16"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Qor qoploni","Leopard","Gepard","Qoraquloq"],3,"gx44_12_17"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Qor qoploni","Leopard","Gepard","Qoraquloq"],1,"gx44_12_18"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Qor qoploni","Leopard","Gepard","Qoraquloq"],2,"gx44_12_19"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Ingichka barmoqli yumronqoziq","Qo‘shoyoq","Tipratikan","Ko‘rsichqon"],2,"gx44_12_20"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Ingichka barmoqli yumronqoziq","Qo‘shoyoq","Tipratikan","Ko‘rsichqon"],0,"gx44_13_1"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Turkman ko‘lvoriloni","O‘rta Osiyo ko‘zoynakli iloni","Kapcha ilon","Bo‘g‘ma ilon"],0,"gx44_13_2"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Turkman ko‘lvoriloni","O‘rta Osiyo ko‘zoynakli iloni","Kapcha ilon","Bo‘g‘ma ilon"],1,"gx44_13_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan hayvon nomini aniqlang.",["Gekkan kaltakesagi","Echkemar","Falanga","Kaltakesak"],1,"gx44_13_4"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada O‘zbekistonda ishlatiladigan suvning taqsimlanishi aks etgan bo‘lib, unda xo‘jalik – ichimliklarining ulushi necha foizni tashkil etadi?",["2,2 %","1,5 %","5,2 %","6,2 %"],3,"gx44_13_5"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada O‘zbekistonda ishlatiladigan suvning taqsimlanishi aks etgan bo‘lib, unda sanoatning ulushi necha foizni tashkil etadi?",["2,2 %","1,5 %","5,2 %","6,2 %"],0,"gx44_13_6"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada O‘zbekistonda ishlatiladigan suvning taqsimlanishi aks etgan bo‘lib, unda baliq xo‘jaligining ulushi necha foizni tashkil etadi?",["2,2 %","1,5 %","5,2 %","6,2 %"],1,"gx44_13_6"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada O‘zbekistonda ishlatiladigan suvning taqsimlanishi aks etgan bo‘lib, ushbu suvning necha foizi sug‘orish uchun sarflanadi?",["80,1 %","90,3 %","90,5 %","90,1 %"],3,"gx44_13_8"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda suvni ifloslovchi asosiy tarmoqlar aks ettirilgan bo‘lib, unda kommunal xo‘jalik suvlarining ulushi necha foizni tashkil etadi?",["3 %","5 %","4 %","6 %"],2,"gx44_13_9"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda suvni ifloslovchi asosiy tarmoqlar aks ettirilgan bo‘lib, unda sanoatning ulushi necha foizni tashkil etadi?",["16 %","17 %","18 %","19 %"],2,"gx44_13_9"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda suvni ifloslovchi asosiy tarmoqlar aks etgan bo‘lib, unda sug‘oriladigan yerlar ulushi necha foizni tashkil etadi?",["68 %","78 %","88 %","58 %"],1,"gx44_13_11"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda atmosferaga chiqariladigan zararli birikmalar hissasi aks ettirilgan bo‘lib, unda oltingugurt qo‘shoksidining ulushi necha foizga teng?",["16 %","17 %","18 %","19 %"],0,"gx44_13_12"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda atmosferaga chiqariladigan zararli birikmalar hissasi aks ettirilgan bo‘lib, unda uglevodorodning ulushi necha foizni tashkil etadi?",["17,9 %","18,9 %","16,9 %","15,9 %"],0,"gx44_13_13"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda atmosferaga chiqariladigan zararli birikmalar hissasi aks ettirilgan bo‘lib, unda azot oksidlarining hissasi necha foizga teng?",["9,8 %","7,9 %","8,9 %","6,8 %"],2,"gx44_13_14"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda atmosferaga chiqariladigan zararli birikmalar hissasi aks ettirilgan bo‘lib, unda qattiq birikmalarning ulushi necha foizga teng?",["4 %","7 %","5 %","6 %"],3,"gx44_13_15"]);
+GEO_OCHIQ.push(["Ushbu diagrammada O‘zbekistonda atmosferaga chiqariladigan zararli birikmalar hissasi aks ettirilgan bo‘lib, unda uglerod oksidining ulushi necha foizga teng?",["41 %","61 %","71 %","51 %"],3,"gx44_13_16"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi ask ettirilganligini aniqlang.",["Gips","Marmar","Granit","Ohaktosh"],3,"gx44_13_17"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["Vermikulit","Granit","Gips","Ohaktosh"],2,"gx44_13_18"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["Keramzit xomashyosi","Qum-shag‘al materiallari","G‘isht-cherepitsa xomashyosi","Sement xomashyosi"],0,"gx44_13_19"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["Granit","Gips","Ohaktosh","Marmar"],3,"gx44_13_20"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["G‘isht-cherepitsa xomashyosi","Sement xomashyosi","Qum-shag‘al materiallari","Keramzit xomashyosi"],2,"gx44_14_1"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["Qurilish toshi","Marmar","Granit","Vermikulit"],2,"gx44_14_2"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["Keramzit xomashyosi","G‘isht-cherepitsa xomashyosi","Qum-shag‘al materiallari","Sement xomashyosi"],1,"gx44_14_3"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["Vermikulit","Sement xomashyosi","Granit","Qurilish toshi"],3,"gx44_14_4"]);
+GEO_OCHIQ.push(["Quyida qanday shartli belgi aks ettirilganligini aniqlang.",["Qurilish toshi","G‘isht-cherepitsa xomashyosi","Vermikulit","Sement xomashyosi"],3,"gx44_14_5"]);
+GEO_OCHIQ.push(["Quyidagi rasmda tug‘ilish 768,3 kishiga, o‘lim esa 154,7 kishiga teng bo‘lsa, so‘roq o‘rnidagi to‘g‘ri javobni aniqlang.",["611,6","612,5","613,6","615,9"],2,"gx44_14_6"]);
+GEO_OCHIQ.push(["Ushbu rasmda aholining o‘lim darajasi 154,7 kishiga, tabiiy o‘sish esa 613,6 kishiga teng bo‘lsa tug‘ilish darajasini aniqlang.",["668,3 kishi","768,3 kishi","868,3 kishi","758,3 kishi"],1,"gx44_14_7"]);
+GEO_OCHIQ.push(["Ushbu rasmda aholining tug‘ilish darajasi 768,3 kishiga, tabiiy o‘sish darajasi esa 613,6 kishiga teng bo‘lsa, aholining o‘lim darajasini aniqlang.",["154,7 kishi","144,7 kishi","164,7 kishi","158,7 kishi"],0,"gx44_14_8"]);
+GEO_OCHIQ.push(["Ushbu rasmda aholi immigratsiyasi 2,8 kishiga, emmigratsiya esa 19 kishiga teng bo‘lsa, aholining mexanik ko‘payishi necha kishiga teng ekanligini aniqlang.",["– 16,2 kishi","+ 16,2 kishi","– 15,4 kishi","+ 15,4 kishi"],0,"gx44_14_9"]);
+GEO_OCHIQ.push(["Quyidagi chizmada O‘zbekiston aholisining umr davomiyligi aks ettirilgan bo‘lib, “X” harfi bilan 2016-yildagi ayollarning o‘rtacha umr davomiyligi necha yoshga teng ekanligini aniqlang.",["76,2","73,8","71,4","74,1"],0,"gx44_14_10"]);
+GEO_OCHIQ.push(["Quyidagi chizmada O‘zbekiston aholisining umr davomiyligi aks ettirilgan bo‘lib, “Y” harfi bilan 2016-yil aholining o‘rtacha umr davomiyligi necha yoshga teng ekanligini aniqlang.",["76,2","73,8","71,4","74,1"],1,"gx44_14_11"]);
+GEO_OCHIQ.push(["Quyidagi chizmada O‘zbekiston aholisining umr davomiyligi aks ettirilgan bo‘lib, “Z” harfi bilan 2016-yildagi erkaklarning o‘rtacha umr davomiyligi necha yoshga teng ekanligini aniqlang.",["76,2","73,8","71,4","74,1"],2,"gx44_14_12"]);
+GEO_OCHIQ.push(["O‘zbekistonda mehnatda band aholining necha foizi sanoatda mehnat bilan band?",["27,3 %","9,5 %","11,0 %","13,5 %"],3,"gx44_14_13"]);
+GEO_OCHIQ.push(["O‘zbekistonda mehnatda band aholining necha foizi qishloq xo‘jaligida band?",["13,5 %","27,3 %","9,5 %","4,8 %"],1,"gx44_14_14"]);
+GEO_OCHIQ.push(["O‘zbekistonda mehnatda band aholining necha foizi qurilishda band?",["13,5 %","27,3 %","9,5 %","4,8 %"],2,"gx44_14_15"]);
+GEO_OCHIQ.push(["O‘zbekistonda mehnatda band aholining necha foizi transportda band?",["13,5 %","27,3 %","9,5 %","4,8 %"],3,"gx44_14_16"]);
+GEO_OCHIQ.push(["O‘zbekistonda mehnatda band aholining necha foizi savdo sohasida band?",["4,5 %","11,0 %","8,2 %","4,8 %"],1,"gx44_14_17"]);
+GEO_OCHIQ.push(["O‘zbekistonda mehnatda band aholining necha foizi sog‘liqni saqlash sohasida faoliyat olib boradi?",["4,5 %","11,0 %","8,2 %","4,8 %"],0,"gx44_14_18"]);
+GEO_OCHIQ.push(["O‘zbekistonda mehnatda band aholining necha foizi ta’lim sohasida faoliyat olib boradi?",["4,5 %","11,0 %","8,2 %","4,8 %"],2,"gx44_14_13"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada O‘zbekiston aholisining nechanchi yildagi milliy tarkibi aks ettirilganligini aniqlang.",["1989-yil","2018-yil","1979-yil","2008-yil"],0,"gx44_14_20"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada O‘zbekiston aholisining nechanchi yildagi milliy tarkibi aks ettirilganligini aniqlang.",["1989-yil","2018-yil","1979-yil","2008-yil"],1,"gx44_15_1"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada nechanchi yildagi O‘zbekiston aholisining qishloq va shahar aholi salmog‘i aks ettirilgan?",["1989-yil","2019-yil","1979-yil","2009-yil"],0,"gx44_15_2"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada nechanchi yildagi O‘zbekiston aholisining qishloq va shahar aholisi salmog‘i aks ettirilganligini aniqlang.",["1989-yil","2019-yil","1979-yil","2009-yil"],1,"gx44_15_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda kichik biznesning yalpi mahsulotdagi ulushi aks ettirilgan bo‘lib, X harfi o‘rnidagi to‘g‘ri javobni aniqlang.",["31,0 %","38,2 %","52,5 %","54,5 %"],0,"gx44_15_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda kichik biznesning yalpi mahsulotdagi ulushi aks ettirilgan bo‘lib, “Y” harfi o‘rnidagi to‘g‘ri javobni aniqlang.",["31,0 %","38,2 %","52,5 %","54,5 %"],1,"gx44_15_5"]);
+GEO_OCHIQ.push(["Ushbu rasmda kichik biznesning yalpi mahsulotdagi ulushi aks ettirilgan bo‘lib, “Z” harfi o‘rnidagi to‘g‘ri javobni aniqlang.",["31,0 %","38,2 %","52,5 %","54,5 %"],2,"gx44_15_6"]);
+GEO_OCHIQ.push(["Ushbu rasmda kichik biznesning yalpi mahsulotdagi ulushi aks ettirilgan bo‘lib, “M” harfi o‘rnidagi to‘g‘ri javobni aniqlang.",["31,0 %","38,2 %","52,5 %","54,5 %"],3,"gx44_15_7"]);
+GEO_OCHIQ.push(["Ushbu rasmda kichik biznesning yalpi mahsulotdagi ulushi aks ettirilgan bo‘lib, “N” harfi o‘rnidagi to‘g‘ri javobni aniqlang.",["55,9 %","56,9 %","54,9 %","53,9 %"],2,"gx44_15_7"]);
+GEO_OCHIQ.push(["Ushbu rasmda nechanchi yildagi sanoat tarmoqlarining mahsulot ishlab chiqarish tarkibi aks ettirilgan?",["2007-yil","2017-yil","2008-yil","2018-yil"],1,"gx44_15_9"]);
+GEO_OCHIQ.push(["Mamlakatimizda 1970-yilda qancha elektr energiyasi ishlab chiqarilgan?",["17,3 mlrd kW/h","33,9 mlrd kW/h","18,3 mlrd kW/h","20,3 mlrd kW/h"],2,"gx44_15_10"]);
+GEO_OCHIQ.push(["Mamlakatimizda 1980-yilda qancha elektr energiyasi ishlab chiqarilgan?",["17,3 mlrd kW/h","33,9 mlrd kW/h","18,3 mlrd kW/h","20,3 mlrd kW/h"],1,"gx44_15_11"]);
+GEO_OCHIQ.push(["Mamlakatimizda 2017-yilda qancha elektr energiyasi ishlab chiqarilgan?",["50,1 mlrd kW/h","70,1 mlrd kW/h","60,1 mlrd kW/h","80,1 mlrd kW/h"],2,"gx44_15_11"]);
+GEO_OCHIQ.push(["Ushbu rasmda alyuminiy ishlab chiqarish jarayoni aks ettirilgan. Ushbu jarayondagi uzluksizlikni to‘ldiring.",["Duraluminiy olish","Magniy olish","Kalsiy olish","Melxior ishlab chiqarish"],0,"gx44_15_13"]);
+GEO_OCHIQ.push(["Ushbu xaritada nima aks ettirilgan?",["O‘zbekiston don mahsulotlari eksporti","O‘zbekiston paxta mahsulotlari eksporti","O‘zbekiston oziq-ovqat mahsulotlari eksporti","O‘zbekiston avtomobillari eksporti"],3,"gx44_15_14"]);
+GEO_OCHIQ.push(["Ushbu rasmda 1 raqami bilan nechanchi yildagi qishloq xo‘jaligi ekin maydonlari tarkibi ko‘rsatilgan?",["1990-yil","1980-yil","1970-yil","1960-yil"],2,"gx44_15_15"]);
+GEO_OCHIQ.push(["Ushbu rasmda 2 raqami bilan nechanchi yildagi qishloq xo‘jaligi ekin maydonlari tarkibi ko‘rsatilgan?",["2008-yil","2009-yil","2007-yil","2006-yil"],0,"gx44_15_16"]);
+GEO_OCHIQ.push(["Ushbu rasmda 3 raqami bilan nechanchi yildagi qishloq xo‘jaligi ekin maydonlari tarkibi ko‘rsatilgan?",["2016-yil","2017-yil","2018-yil","2019-yil"],1,"gx44_15_17"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi so‘roq o‘rnidagi to‘g‘ri javobni aniqlang.",["17,5 mlrd t/km","27,5 mlrd t/km","22,8 mlrd t/km","15,9 mlrd t/km"],1,"gx44_15_18"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi so‘roq o‘rnidagi to‘g‘ri javobni aniqlang.",["23,9 mlrd t/km","33,0 mlrd t/km","17,5 mlrd t/km","22,9 mlrd t/km"],3,"gx44_15_19"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi so‘roq o‘rnidagi to‘g‘ri javobni aniqlang.",["33,0 mlrd t/km","23,0 mlrd t/km","35,8 mlrd t/km","28,9 mlrd t/km"],0,"gx44_15_20"]);
+GEO_OCHIQ.push(["“A” harfi o‘rniga qaysi xizmat sohasi mos kelishini aniqlang.",["Sog‘liqni saqlash xizmati","Axborot xizmati","Reklama xizmati","Boshqa xizmatlar"],0,"gx44_16_1"]);
+GEO_OCHIQ.push(["Rasmdagi teleminoraning balandligini aniqlang.",["365 metr","375 metr","385 metr","345 metr"],1,"gx44_16_2"]);
+GEO_OCHIQ.push(["Toshkent viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["9,1 %","7,1 %","15,5 %","9,4 %"],0,"gx44_16_3"]);
+GEO_OCHIQ.push(["Samarqand viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["6,8 %","6,6 %","7,1 %","5,7 %"],2,"gx44_16_4"]);
+GEO_OCHIQ.push(["Qashqadaryo viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["6,6 %","7,1 %","5,7 %","6,8 %"],3,"gx44_16_3"]);
+GEO_OCHIQ.push(["Farg‘ona viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["6,6 %","7,1 %","5,7 %","6,8 %"],0,"gx44_16_4"]);
+GEO_OCHIQ.push(["Andijon viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["6,6 %","7,1 %","5,7 %","6,8 %"],2,"gx44_16_4"]);
+GEO_OCHIQ.push(["Navoiy viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["4,8 %","4,2 %","3,2 %","4,9 %"],3,"gx44_16_3"]);
+GEO_OCHIQ.push(["Buxoro viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["2,0 %","2,3 %","4,8 %","3,2 %"],2,"gx44_16_4"]);
+GEO_OCHIQ.push(["Surxondaryo viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["3,2 %","4,2 %","2,3 %","5,7 %"],1,"gx44_16_4"]);
+GEO_OCHIQ.push(["Namangan viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["4,2 %","6,6 %","6,8 %","9,1 %"],0,"gx44_16_3"]);
+GEO_OCHIQ.push(["Qoraqalpog‘iston Respublikasining YAIMdagi ulushi necha foizni tashkil etadi?",["3,2 %","2,3 %","4,2 %","2,4 %"],0,"gx44_16_12"]);
+GEO_OCHIQ.push(["Xorazm viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["3,2 %","2,3 %","2,0 %","3,5 %"],0,"gx44_16_4"]);
+GEO_OCHIQ.push(["Jizzax viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["3,2 %","2,3 %","2,0 %","3,5 %"],1,"gx44_16_3"]);
+GEO_OCHIQ.push(["Sirdaryo viloyatining YAIMdagi ulushi necha foizni tashkil etadi?",["3,2 %","2,3 %","2,0 %","3,5 %"],2,"gx44_16_4"]);
+GEO_OCHIQ.push(["Toshkent shahrining YAIMdagi ulushi necha foizni tashkil etadi?",["14,5 %","9,1 %","15,5 %","20,0 %"],2,"gx44_16_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan Imom al- Buxoriy majmuasi qaysi viloyatda joylashganligini aniqlang.",["Buxoro viloyati","Qashqadaryo viloyati","Farg‘ona viloyati","Samarqand viloyati"],3,"gx44_16_17"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlatlarni bog‘lab turuvchi ko‘prik tasvirlangan?",["O‘zbekiston – Tojikiston","O‘zbekiston – Qozog‘iston","O‘zbekiston – Qirg‘iziston","O‘zbekiston – Afg‘oniston"],3,"gx44_16_18"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada Qoraqalpog‘iston Respublikasi aholisining nechanchi yildagi milliy tarkibi aks ettirilgan?",["2008-yil","2018-yil","2007-yil","2017-yil"],1,"gx44_16_19"]);
+GEO_OCHIQ.push(["Rasmda qaysi shahar ko‘rsatilgan?",["Urganch","Buxoro","Xiva","Shahrisabz"],2,"gx44_16_20"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs qaysi davlat qirolichasi hisoblanadi?",["Buyuk Britaniya","Daniya","Norvegiya","Irlandiya"],1,"gx44_17_1"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs qaysi davlat qiroli hisoblanadi?",["Gana","Lesoto","Ummon","Zambiya"],1,"gx44_17_2"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs qaysi davlat sultoni hisoblanadi?",["BAA","Qatar","Ummon","Yaman"],2,"gx44_17_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi irq vakili ko‘rsatilgan?",["Mongoloid","Negroid","Yevropeoid","Avstroloid"],2,"gx44_17_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi irq vakili ko‘rsatilgan?",["Mongoloid","Negroid","Yevropeoid","Avstroloid"],0,"gx44_17_5"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi irq vakili ko‘rsatilgan?",["Mongoloid","Negroid","Yevropeoid","Avstroloid"],1,"gx44_17_6"]);
+GEO_OCHIQ.push(["Jahon elektr energetika tizimida IESlarning ulushi necha foizni tashkil etadi?",["54 %","71 %","80 %","64 %"],3,"gx44_17_7"]);
+GEO_OCHIQ.push(["Jahon elektr energetika tizimida AESlarning ulushi necha foizni tashkil etadi?",["13 %","14 %","15 %","16 %"],3,"gx44_17_8"]);
+GEO_OCHIQ.push(["Jahon elektr energetika tizimida GESlarning ulushi necha foizni tashkil etadi?",["19 %","18 %","17 %","16 %"],0,"gx44_17_8"]);
+GEO_OCHIQ.push(["Jahon elektr energetika tizimida noan’anaviy energiyaning ulushi necha foizni tashkil etadi?",["2 %","1 %","3 %","5 %"],1,"gx44_17_8"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Daniya","Finlyandiya","Germaniya","Italiya"],2,"gx44_17_11"]);
+GEO_OCHIQ.push(["Ushbu xaritada qaysi davlat relyefi ko‘rsatilgan?",["Polsha","Lixtenshteyn","Fransiya","Germaniya"],3,"gx44_17_12"]);
+GEO_OCHIQ.push(["Quyida qaysi davlat bayrog‘i aks ettirilgan?",["Norvegiya","Buyuk Britaniya","Islandiya","Shvetsiya"],1,"gx44_17_13"]);
+GEO_OCHIQ.push(["Xaritada qizil rang bilan qaysi hudud ko‘rsatilgan?",["Angliya","Uels","Shotlandiya","Shimoliy Irlandiya"],0,"gx44_17_14"]);
+GEO_OCHIQ.push(["Xaritada sariq rang bilan qaysi hudud ko‘rsatilgan?",["Angliya","Uels","Shotlandiya","Shimoliy Irlandiya"],1,"gx44_17_15"]);
+GEO_OCHIQ.push(["Xaritada moviy rang bilan qaysi hudud ko‘rsatilgan?",["Angliya","Uels","Shotlandiya","Shimoliy Irlandiya"],2,"gx44_17_16"]);
+GEO_OCHIQ.push(["Xaritada yashil rang bilan qaysi hudud ko‘rsatilgan?",["Angliya","Uels","Shotlandiya","Shimoliy Irlandiya"],3,"gx44_17_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Fransiya","Italiya","Shvetsiya","Rossiya"],0,"gx44_17_18"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Fransiya","Italiya","Shvetsiya","Rossiya"],1,"gx44_17_19"]);
+GEO_OCHIQ.push(["Ushbu rasmda Stromboli vulqoni tasvirlangan bo‘lib, ushbu vulqonning qaysi davlatda joylashganligini aniqlang.",["Fransiya","Italiya","Ispaniya","Gretsiya"],1,"gx44_17_20"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi obida qaysi shaharda joylashganligini aniqlang.",["Afina","Parij","Milan","Rim"],3,"gx44_18_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Fransiya","Italiya","Shvetsiya","Rossiya"],3,"gx44_18_2"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi cherkov qaysi shaharda joylashgan?",["Sankt-Peterburg","Moskva","Astraxan","Grozniy"],1,"gx44_18_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i tasvirlangan?",["Qirg‘iziston","Tojikiston","Qozog‘iston","Turkmaniston"],2,"gx44_18_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Qirg‘iziston","Tojikiston","Qozog‘iston","Turkmaniston"],2,"gx44_18_5"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i tasvirlangan?",["Qirg‘iziston","Tojikiston","Qozog‘iston","Turkmaniston"],0,"gx44_18_6"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i tasvirlangan?",["Qirg‘iziston","Tojikiston","Qozog‘iston","Turkmaniston"],3,"gx44_18_7"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i tasvirlangan?",["Qirg‘iziston","Tojikiston","Qozog‘iston","Turkmaniston"],1,"gx44_18_8"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi obida qaysi davlatda joylashganligini aniqlang.",["Qirg‘iziston","Tojikiston","Qozog‘iston","Turkmaniston"],1,"gx44_18_9"]);
+GEO_OCHIQ.push(["Ushbu bayroq qaysi davlatga tegishli ekanligini aniqlang.",["Turkiya","Xitoy","Pokiston","Nepal"],0,"gx44_18_10"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi obida qaysi davlat hududida joylashganligini aniqlang.",["Butan","Nepal","Turkiya","Pokiston"],2,"gx44_18_11"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi obida qaysi davlat hududida joylashganligini aniqlang.",["Butan","Nepal","Turkiya","Pokiston"],2,"gx44_18_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Eron","Tojikiston","Ozarbayjon","Armaniston"],0,"gx44_18_13"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Pokiston","Bangladesh","Butan","Afg‘oniston"],3,"gx44_18_14"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Pokiston","Bangladesh","Butan","Afg‘oniston"],0,"gx44_18_15"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilganligini aniqlang.",["Turkiya","Xitoy","Shri-Lanka","Butan"],1,"gx44_18_16"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Yaponiya","Koreya Respublikasi","Filippin","Indoneziya"],1,"gx44_18_17"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Yaponiya","Koreya Respublikasi","Filippin","Indoneziya"],0,"gx44_18_18"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Shri-Lanka","Bangladesh","Nepal","Hindiston"],3,"gx44_18_19"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Filippin","Maldiv","Indoneziya","Sharqiy Timor"],2,"gx44_18_20"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["AQSH","Malayziya","Fiji","Tonga"],1,"gx44_19_1"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Singapur","Maldiv","Fiji","Tonga"],0,"gx44_19_2"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["KDR","MAR","JAR","BAA"],2,"gx44_19_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Nigeriya","Niger","Zambiya","Mavritaniya"],0,"gx44_19_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Jazoir","Liviya","Suriya","Misr"],3,"gx44_19_5"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi tarixiy obida qaysi davlat hududida joylashganligini aniqlang.",["Jazoir","Liviya","Suriya","Misr"],3,"gx44_19_6"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi bayroq qaysi davlatga tegishli ekanligini aniqlang.",["Yangi Zellandiya","Avstraliya","Tonga","Fiji"],1,"gx44_19_7"]);
+GEO_OCHIQ.push(["Rasmdagi shaharni aniqlang.",["Kanberra","Monreal","Sidney","Gongkong"],2,"gx44_19_8"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["AQSH","Malayziya","Buyuk Britaniya","Norvegiya"],0,"gx44_19_9"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlat bayrog‘i aks ettirilgan?",["Avstraliya","Argentina","Kanada","Kuba"],2,"gx44_19_10"]);
+GEO_OCHIQ.push(["Ushbu minora qaysi shaharda joylashgan?",["Monreal","Toronto","Vankuver","Kvebek"],1,"gx44_19_11"]);
+GEO_OCHIQ.push(["Ushbu bayroq qaysi davlatga tegishli ekanligini aniqlang.",["Portugaliya","Chili","Ekvador","Braziliya"],3,"gx44_19_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlatning kosmik surati aks ettirilgan?",["O‘zbekiston","Tojikiston","Qirg‘iziston","Turkmaniston"],3,"gx44_19_13"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi davlatning kosmik surati aks ettirilgan?",["O‘zbekiston","Tojikiston","Qirg‘iziston","Turkmaniston"],1,"gx44_19_14"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Eratosfen","Gomer","Ptolemey","Aristotel"],2,"gx44_19_15"]);
+GEO_OCHIQ.push(["Rasmdagi shaxs kim ekanligini aniqlang.",["Al-Xorazmiy","Nosir Xisrav","Ibn Battuta","Al-Farg‘oniy"],1,"gx44_19_16"]);
+GEO_OCHIQ.push(["Rasmdagi shaxs kim ekanligini aniqlang.",["Al-Xorazmiy","Nosir Xisrav","Ibn Sino","Al-Farg‘oniy"],0,"gx44_19_17"]);
+GEO_OCHIQ.push(["Rasmdagi shaxs kim ekanligini aniqlang.",["I.Y.Oshev","Zokirov","Dolimov","Hasanov"],3,"gx44_19_18"]);
+GEO_OCHIQ.push(["Rasmdagi shaxs kim ekanligini aniqlang.",["A.Vegener","A.Moxorovichich","R.Amundsen","F.Bellinsgauzen"],1,"gx44_19_19"]);
+GEO_OCHIQ.push(["Rasmdagi shaxs kim ekanligini aniqlang.",["A.Vegener","A.Moxorovichich","R.Amundsen","F.Bellinsgauzen"],0,"gx44_19_20"]);
+GEO_OCHIQ.push(["Ushbu rasmda Yerning necha mln yil avvalgi holati aks ettirilgan?",["200 mln","250 mln","300 mln","350 mln"],1,"gx44_20_1"]);
+GEO_OCHIQ.push(["Ushbu rasmda Yerning necha mln yil avvalgi holati aks ettirilgan?",["250 mln","200 mln","150 mln","100 mln"],2,"gx44_20_2"]);
+GEO_OCHIQ.push(["Ushbu rasmda Yerning necha mln yil avvalgi holati aks ettirilgan?",["90 mln","80 mln","70 mln","60 mln"],3,"gx44_20_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda Yerning necha mln yil avvalgi holati aks ettirilgan?",["250 mln","200 mln","150 mln","100 mln"],0,"gx44_20_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda Yerning necha mln yil avvalgi holati aks ettirilgan?",["250 mln","200 mln","150 mln","100 mln"],3,"gx44_20_5"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Abu Rayhon Beruniy","Al-Farg‘oniy","Al-Xorazmiy","Abu Ali ibn Sino"],0,"gx44_20_6"]);
+GEO_OCHIQ.push(["Ushbu xaritada nima tasvirlanganligini aniqlang.",["Dunyo okeani va uning yirik qisimlari","Okeanlar va dengizlar chegarasi","Seysmik hududlar","Litosfera plitalari"],3,"gx44_20_7"]);
+GEO_OCHIQ.push(["Ushbu rasmda qanday jarayon tasvirlanganligini aniqlang.",["Litosfera plitalarining vertikal harakati","Mantiya qatlamining uyurmali harakati","Litosfera plitalarining gorizontal harakati","O‘rta okean tizmalarining hosil bo‘lishi"],2,"gx44_20_8"]);
+GEO_OCHIQ.push(["Ushbu rasmda qanday jarayon tasvirlanganligini aniqlang.",["Litosfera plitalarining vertikal harakati","Mantiya qatlamining uyurmali harakati","Litosfera plitalarining gorizontal harakati","O‘rta okean tizmalarining hosil bo‘lishi"],3,"gx44_20_9"]);
+GEO_OCHIQ.push(["Ushbu rasmda qanday jarayon tasvirlanganligini aniqlang.",["Litosfera plitalarining ham gorizontal ham vertikal harakati","O‘rta okean tizmalarining hosil bo‘lish jarayoni","Chuqur okean botiqlari va quruqlikda baland tog‘larning hosil bo‘lishi","Mantiya moddalarining uyurmali harakati"],2,"gx44_20_10"]);
+GEO_OCHIQ.push(["Ushbu rasmda qanday jarayon tasvirlanganligini aniqlang.",["Litosfera plitalarining bir-biri bilan to‘qnashishi","Chuqur okean botiqlari va quruqlikda baland tog‘larning hosil bo‘lishi","Litosfera plitalarining ham gorizontal ham vertikal harakati","O‘rta okean tizmalarining hosil bo‘lishi"],0,"gx44_20_11"]);
+GEO_OCHIQ.push(["Ushbu rasmda qanday jarayon tasvirlanganligini aniqlang.",["Litosfera plitalarining bir-biri bilan to‘qnashishi","Litosfera plitalarining vertikal harakati","Quruqlikda baland tog‘larning hosil bo‘lishi","Litosfera plitalarining bir-biridan uzoqlashishi"],3,"gx44_20_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi irq vakili ko‘rsatilgan?",["Negroid","Yevropeoid","Mongoloid","Avstraloid"],3,"gx44_20_13"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi irq vakili ko‘rsatilgan?",["Negroid","Yevropeoid","Mongoloid","Avstraloid"],2,"gx44_20_14"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi irq vakili ko‘rsatilgan?",["Negroid","Yevropeoid","Mongoloid","Avstraloid"],1,"gx44_20_15"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi irq vakili ko‘rsatilgan?",["Negroid","Yevropeoid","Mongoloid","Avstraloid"],0,"gx44_20_16"]);
+GEO_OCHIQ.push(["Shimoliy yarimsharning necha foizi quruqlikdan iborat?",["29 %","39 %","19 %","49 %"],1,"gx44_20_17"]);
+GEO_OCHIQ.push(["Shimoliy yarimsharning necha foizi suvlikdan iborat?",["41 %","81 %","61 %","71 %"],2,"gx44_20_18"]);
+GEO_OCHIQ.push(["Janubiy yarimsharning necha foizi quruqlikdan iborat?",["29 %","39 %","19 %","49 %"],2,"gx44_20_19"]);
+GEO_OCHIQ.push(["Janubiy yarimsharning necha foizi suvlikdan iborat?",["41 %","81 %","61 %","71 %"],1,"gx44_20_20"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi geograf kim ekanligini aniqlang.",["A. Vegener","Y.M.Shokalskiy","B.Varenius","F.Bellinsgauzen"],1,"gx44_21_1"]);
+GEO_OCHIQ.push(["Ushbu rasmda geografik o‘rni va havzasining xususiyatiga ko‘ra qanday dengiz guruhi ko‘rsatilgan?",["Materik ichkarisidagi dengizlar","Chekka dengizlar","Materiklar orasidagi dengizlar","A va B"],2,"gx44_21_2"]);
+GEO_OCHIQ.push(["Ushbu rasmda geografik o‘rni va havzasining xususiyatiga ko‘ra qanday dengiz guruhi ko‘rsatilgan?",["Materik ichkarisidagi dengizlar","Chekka dengizlar","Materiklar orasidagi dengizlar","A va C"],0,"gx44_21_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda geografik o‘rni va havzasining xususiyatiga ko‘ra qanday dengiz guruhi ko‘rsatilgan?",["Materik ichkarisidagi dengizlar","Chekka dengizlar","Materiklar orasidagi dengizlar","To‘g‘ri javob yo‘q"],1,"gx44_21_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi dengiz o‘rni ko‘rsatilgan?",["Oxota dengizi","Yava dengizi","Sulu dengizi","Qizil dengiz"],3,"gx44_21_5"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi dengiz o‘rni ko‘rsatilgan?",["O‘rta dengiz","Azov dengizi","Qora dengiz","Egey dengizi"],2,"gx44_21_6"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi dengiz o‘rni ko‘rsatilgan?",["Qizil dengiz","Arabiston dengizi","Janubiy Xitoy dengizi","Shimoliy dengiz"],1,"gx44_21_7"]);
+GEO_OCHIQ.push(["Ushbu xaritada “A” harfi bilan qaysi geografik hudud ko‘rsatilgan?",["Gibraltar bo‘g‘ozi","Mozambik bo‘g‘ozi","Gvineya qo‘ltig‘i","Suvaysh kanali"],1,"gx44_21_8"]);
+GEO_OCHIQ.push(["Ushbu xaritada “B” harfi o‘rnida qaysi geografik hudud ko‘rsatilgan?",["Gibraltar bo‘g‘ozi","Mozambik bo‘g‘ozi","Gvineya qo‘ltig‘i","Suvaysh kanali"],2,"gx44_21_9"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],0,"gx44_21_10"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],1,"gx44_21_11"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],2,"gx44_21_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi okean o‘rni ko‘rsatilgan?",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],3,"gx44_21_13"]);
+GEO_OCHIQ.push(["Ushbu rasmda “J” harfi bilan qanday relyef shakli ko‘rsatilgan?",["Okean tubi tekisligi","Suv osti tog‘ tizmasi","Shelf","Materik yonbag‘ri"],0,"gx44_21_14"]);
+GEO_OCHIQ.push(["Ushbu rasmda “C” harfi bilan qanday relyef shakli ko‘rsatilgan?",["Orol","Vulqon oroli","Shelf","Materik yonbag‘ri"],1,"gx44_21_15"]);
+GEO_OCHIQ.push(["Ushbu rasmda “G” harfi bilan qanday relyef shakli ko‘rsatilgan?",["Suv osti tog‘ tizmasi","Materik yonbag‘ri","Okean tubi tekisligi","Chuqur okean botig‘i"],3,"gx44_21_16"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 va 12 sonlari bilan qaysi gidrografik obyektlar ko‘rsatilgan?",["Adriatika dengizi, Kerch bo‘g‘izi","Azov dengizi, Tirren dengizi","Kerch bo‘g‘izi, Toranto qo‘ltig‘i","Liguriy dengizi, Azov dengizi"],1,"gx44_21_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 7 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Fors qo‘ltig‘i","Adan qo‘ltig‘i","Qizil dengiz","Arabiston dengizi"],2,"gx44_21_18"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 13 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Fors qo‘ltig‘i","Adan qo‘ltig‘i","Ummon qo‘ltig‘i","Antalya qo‘ltig‘i"],0,"gx44_21_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 11 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Fors qo‘ltig‘i","Adan qo‘ltig‘i","Ummon qo‘ltig‘i","Antalya qo‘ltig‘i"],1,"gx44_21_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 3 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Egey dengizi","Ioni dengizi","Tirren dengizi","Azov dengizi"],0,"gx44_22_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Orol dengizi","Qora dengiz","Kaspiy dengizi","Marmar dengizi"],2,"gx44_22_2"]);
+GEO_OCHIQ.push(["Ushbu rasmda ko‘rsatilgan shaxsning kimligini aniqlang.",["D.Livingiston","Ibn Battuta","Nosir Xisrav","Al-Farg‘oniy"],1,"gx44_22_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda ko‘rsatilgan shaxsning kimligini aniqlang.",["Ibn Battuta","A.Vegener","Vasko da Gama","David Livingiston"],3,"gx44_22_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda ko‘rsatilgan shaxsning kimligini aniqlang.",["A. Vegener","Vasko da Gama","David Livingiston","A.Vespuchchi"],1,"gx44_22_5"]);
+GEO_OCHIQ.push(["Ushbu rasmda ko‘rsatilgan shaxsning kimligini aniqlang.",["Vasiliy Yunker","Nikolay Vavilov","E.P.Kovalevskiy","A.V.Yeliseyev"],0,"gx44_22_6"]);
+GEO_OCHIQ.push(["Ushbu rasmda ko‘rsatilgan shaxsning kimligini aniqlang.",["Vasiliy Yunker","Nikolay Vavilov","E.P.Kovalevskiy","A.P.Yeliseyev"],1,"gx44_22_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Niger daryosi","Senegal daryosi","Nil daryosi","Oranj daryosi"],1,"gx44_22_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Niger daryosi","Senegal daryosi","Kongo daryosi","Zambezi daryosi"],0,"gx44_22_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 3 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Rudolf ko‘li","Rukva ko‘li","Chad ko‘li","Nyasa ko‘li"],2,"gx44_22_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 4 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Niger daryosi","Zambezi daryosi","Limpopo daryosi","Kongo daryosi"],3,"gx44_22_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 6 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Rudolf ko‘li","Tanganika ko‘li","Viktoriya ko‘li","Nyasa ko‘li"],2,"gx44_22_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 7 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Rudolf ko‘li","Tanganika ko‘li","Viktoriya ko‘li","Nyasa ko‘li"],1,"gx44_22_13"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 8 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Rudolf ko‘li","Tanganika ko‘li","Viktoriya ko‘li","Nyasa ko‘li"],3,"gx44_22_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 9 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Niger daryosi","Oranj daryosi","Zambezi daryosi","Limpopo daryosi"],2,"gx44_22_15"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 10 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Niger daryosi","Oranj daryosi","Zambezi daryosi","Limpopo daryosi"],3,"gx44_22_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 11 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Niger daryosi","Oranj daryosi","Zambezi daryosi","Limpopo daryosi"],1,"gx44_22_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 12 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Nil daryosi","Kongo daryosi","Niger daryosi","Shari daryosi"],0,"gx44_22_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 5 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Issiqko‘l","Balxash ko‘li","Baykal ko‘li","Orol dengizi"],1,"gx44_22_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 14 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Sidra qo‘ltig‘i","Gabes qo‘ltig‘i","Foks qo‘ltig‘i","Gonduras qo‘ltig‘i"],0,"gx44_22_2"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan qaysi orol tasvirlanganligini aniqlang.",["Sitsiliya oroli","Kalimantan oroli","Madagaskar oroli","Yangi Gvineya oroli"],2,"gx44_23_1"]);
+GEO_OCHIQ.push(["Rasmdagi daraxt nomini aniqlang.",["Seyba","Palma","Rafiya palmasi","Baobab"],3,"gx44_23_2"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi daraxt qaysi materik uchun xos hisoblanadi?",["Afrika","Avstraliya","Yevrosiyo","Janubiy Amerika"],0,"gx44_23_3"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi daraxt qaysi tabiat zonasi uchun xos ekanligini aniqlang.",["Ekvatorial o‘rmonlar","Savanna va siyrak o‘rmonlar","Chalacho‘l va cho‘l","Fasliy nam o‘rmonlar"],1,"gx44_23_4"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi hayvonlar qaysi materik uchun xos hisoblanadi?",["Afrika","Avstraliya","Yevrosiyo","Janubiy Amerika"],0,"gx44_23_5"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi hayvon nomini aniqlang.",["Karlik begemot","Okapi","Mitti begemot","Antilopa"],1,"gx44_23_7"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “I” raqami bilan Afrikaning qaysi geografik o‘lkasi ko‘rsatilgan?",["Sudan tekisligi","Sahroi Kabir","Shimoliy Gvineya rayoni","Atlas tog‘li o‘lkasi"],3,"gx44_23_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “II” raqami bilan Afrikaning qaysi geografik o‘lkasi ko‘rsatilgan?",["Sudan tekisligi","Sahroi Kabir","Shimoliy Gvineya rayoni","Atlas tog‘li o‘lkasi"],1,"gx44_23_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “III” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Sudan tekisliklari","Sahroi Kabir","Shimoliy Gvineya rayoni","Atlas tog‘li o‘lkasi"],0,"gx44_23_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “IV” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Kongo kotlavinasi","Efiopiya tog‘ligi","Shimoliy Gvineya rayoni","Janubiy Afrika yassitog‘ligi"],2,"gx44_23_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “V” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Gvineya rayoni","Sharqiy Afrika yassitog‘ligi","Kongo kotlovinasi","Janubiy Afrika yassitog‘ligi"],2,"gx44_23_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VI” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Gvineya rayoni","Kongo kotlovinasi","Sharqiy Afrika yassitog‘ligi","Efiopiya tog‘ligi"],3,"gx44_23_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VII” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Gvineya rayoni","Sharqiy Afrika yassitog‘ligi","Janubiy Afrika yassitog‘ligi","Kap tog‘lari"],1,"gx44_23_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VIII” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Janubiy Afrika yassitog‘ligi","Kap tog‘lari","Madagaskar","Sharqiy Afrika yassitog‘ligi"],0,"gx44_23_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “IX” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Janubiy Afrika yassitog‘ligi","Kap tog‘lari","Madagaskar","Sharqiy Afrika yassitog‘ligi"],1,"gx44_23_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “X” raqami bilan Afrikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Janubiy Afrika yassitog‘ligi","Kap tog‘lari","Madagaskar","Sharqiy Afrika yassitog‘ligi"],2,"gx44_23_9"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxsni aniqlang.",["Jak Iv Kusto","Y.M.Shokalskiy","A.Vespuchchi","Vasko da Gama"],0,"gx44_23_18"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi kema nomini aniqlang.",["Santa-Mariya","Niniya","Pinta","Chellenjer"],3,"gx44_23_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Chalacho‘llar va cho‘llar","Savannalar va siyrak o‘rmonlar","Sernam ekvatorial o‘rmonlar","Balandlik mintaqalanish o‘lkalari"],0,"gx44_23_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Chalacho‘llar va cho‘llar","Savannalar va siyrak o‘rmonlar","Sernam ekvatorial o‘rmonlar","Balandlik mintaqalanish o‘lkalari"],1,"gx44_24_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 3 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Chalacho‘llar va cho‘llar","Savannalar va siyrak o‘rmonlar","Sernam ekvatorial o‘rmonlar","Fasliy nam o‘rmonlar"],2,"gx44_24_2"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Kap tog‘lari o‘rni ko‘rsatilgan?",["1","2","3","4"],3,"gx44_24_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qaysi raqam bilan Efiopiya tog‘ligi o‘rni ko‘rsatilgan?",["1","2","3","4"],1,"gx44_24_4"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Abel Tasman","Jeyms Kuk","Metyu Flinders","Luis Torres"],0,"gx44_24_5"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Abel Tasman","Jeyms Kuk","Metyu Flinders","Luis Torres"],1,"gx44_24_6"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Abel Tasman","Jeyms Kuk","Metyu Flinders","Luis Torres"],2,"gx44_24_7"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Abel Tasman","Jeyms Kuk","Metyu Flinders","Luis Torres"],3,"gx44_24_8"]);
+GEO_OCHIQ.push(["Rasmdagi hayvon nomini aniqlang.",["Xaltali bo‘ri","Vombat","Chiyabo‘ri","Tulki"],0,"gx44_24_9"]);
+GEO_OCHIQ.push(["Rasmdagi hayvon nomini aniqlang.",["Karlik begemot","Okapi","Vombat","Yexidna"],2,"gx44_24_10"]);
+GEO_OCHIQ.push(["Rasmdagi hayvon nomini aniqlang.",["Okapi","Lirodum","Koala","Vombat"],2,"gx44_24_11"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “I” raqami bilan Avstraliyaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Avstraliya","Shimoli-Sharq","Janubi-Sharq","Markaziy tekislik"],0,"gx44_24_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “II” raqami bilan Avstraliyaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Avstraliya","Shimoli-Sharq","Janubi-Sharq","Markaziy tekislik"],1,"gx44_24_13"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “III” raqami bilan Avstraliyaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Avstraliya","Shimoli-Sharq","Janubi-Sharq","Markaziy tekislik"],2,"gx44_24_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “IV” raqami bilan Avstraliyaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Avstraliya","Shimoli-Sharq","Janubi-Sharq","Markaziy tekislik"],3,"gx44_24_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “V” raqami bilan Avstraliyaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["G‘arbiy Avstraliya","Janubi-G‘arb","Tasmaniya oroli","Markaziy tekislik"],0,"gx44_24_16"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VI” raqami bilan Avstraliyaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["G‘arbiy Avstraliya","Janubi-G‘arb","Tasmaniya oroli","Markaziy tekislik"],1,"gx44_24_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VII” raqami bilan Avstraliyaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["G‘arbiy Avstraliya","Janubi-G‘arb","Tasmaniya oroli","Markaziy tekislik"],2,"gx44_24_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 4 raqami bilan Avstraliyaning qaysi yarimoroli ko‘rsatilgan?",["Arnem-Lend yarimoroli","Keyp-York yarimoroli","Ungava yarimoroli","Melvill yarimoroli"],1,"gx44_24_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Avstraliya qo‘ltig‘i","Katta Avstraliya qo‘ltig‘i","Karpentoriya qo‘ltig‘i","Tasman dengizi"],1,"gx44_24_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 5 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Tasman dengizi","Fiji dengizi","Marjon dengizi","Karpentoriya qo‘ltig‘i"],2,"gx44_25_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan qaysi gidrografik obyekt ko‘rsatilgan?",["Tasman dengizi","Fiji dengizi","Marjon dengizi","Karpentoriya qo‘ltig‘i"],0,"gx44_25_1"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Jeyms Kuk","F.Magellan","X.Kolumb","V.Balboa"],3,"gx44_25_3"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Jeyms Kuk","F.Magellan","X.Kolumb","V.Balboa"],1,"gx44_25_4"]);
+GEO_OCHIQ.push(["Quyida qaysi okean ko‘rsatilganligini aniqlang.",["Tinch okeani","Atlantika okeani","Hind okeani","Shimoliy Muz okeani"],0,"gx44_25_5"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Mikluxo-Maklay","V.M.Golovin","F.P.Litke","S.O.Makarov"],0,"gx44_25_6"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["M.Lazarev","M.Lomonosov","F.Bellinsgauzen","V.Balboa"],2,"gx44_25_7"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["M.Lazarev","M.Lomonosov","F.Bellinsgauzen","V.Balboa"],0,"gx44_25_8"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["F.Bellinsgauzen","M.Lazarev","R.Skott","R.Amundsen"],3,"gx44_25_9"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["F.Bellinsgauzen","M.Lazarev","R.Skott","R.Amundsen"],2,"gx44_25_10"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Y.M.Shokalskiy","E.Shekelton","Jeyms Kuk","R.Skott"],1,"gx44_25_11"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi hayvonlar qaysi materik uchun xos hisoblanadi?",["Avstraliya","Janubiy Amerika","Shimoliy Amerika","Antarktida"],3,"gx44_25_12"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["X.Kolumb","F.Magellan","A.Vespuchchi","E.Bonplan"],2,"gx44_25_13"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["X.Kolumb","F.Magellan","A.Vespuchchi","E.Bonplan"],0,"gx44_25_14"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi baliq nomini aniqlang.",["Daryo odamxo‘ri","Piraniya","Oy baliq","A va B"],3,"gx44_25_15"]);
+GEO_OCHIQ.push(["Ushbu xaritadan foydalanib qaysi sayohat mashrutkalari aks ettirilganini aniqlang.",["F.Magellan","A.Vespuchchi","X.Kolumb","Vasko da Gama"],2,"gx44_25_16"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi hayvon nomini aniqlang.",["Yalqov","Tapir","Yaguar","Maymun"],0,"gx44_25_17"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi hayvon nomini aniqlang.",["Yalqov","Tapir","Yaguar","Maymun"],2,"gx44_25_18"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi hayvon nomini aniqlang.",["Yalqov","Tapir","Yaguar","Maymun"],1,"gx44_25_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “I” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Orinoko tekisligi","Gviana yassitog‘ligi","Amazoniya","Braziliya yassitog‘ligi"],0,"gx44_25_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “II” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Orinoko tekisligi","Gviana yassitog‘ligi","Amazoniya","Braziliya yassitog‘ligi"],1,"gx44_26_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “III” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Orinoko tekisligi","Gviana yassitog‘ligi","Amazoniya","Braziliya yassitog‘ligi"],2,"gx44_25_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “IV” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Orinoko tekisligi","Gviana yassitog‘ligi","Amazoniya","Braziliya yassitog‘ligi"],3,"gx44_26_3"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “V” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Ichki tekisliklar va pampa","Patagoniya","Shimoliy And","Markaziy And"],0,"gx44_25_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VI” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Ichki tekisliklar va pampa","Patagoniya","Shimoliy And","Markaziy And"],1,"gx44_26_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VII” raqami bilan Janubiy Amerika materigining qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Ichki tekisliklar va pampa","Patagoniya","Shimoliy And","Markaziy And"],2,"gx44_25_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VIII” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Ichki tekisliklar va pampa","Patagoniya","Shimoliy And","Markaziy And"],3,"gx44_26_3"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “IX” raqami bilan Janubiy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Patagoniya","Shimoliy And","Markaziy And","Janubiy And"],3,"gx44_25_20"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Jon Kabot","Genri Gudzon","Aleksandr Makkenzi","Vitus Bering"],0,"gx44_26_9"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Jon Kabot","Genri Gudzon","Aleksandr Makkenzi","Vitus Bering"],1,"gx44_26_10"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Jon Kabot","Genri Gudzon","Aleksandr Makkenzi","Vitus Bering"],2,"gx44_26_11"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs kim ekanligini aniqlang.",["Jon Kabot","Genri Gudzon","Aleksandr Makkenzi","Vitus Bering"],3,"gx44_26_12"]);
+GEO_OCHIQ.push(["Ushbu rasmda 1 raqami bilan qaysi tabiat zonasi ko‘rsatilganligini aniqlang.",["Qattiq bargli doimiy yashil o‘rmonlar va butazorlar","Sernam ekvatorial o‘rmonlar","Balandlik mintaqalanish o‘lkalari","Aralash o‘rmonlar"],2,"gx44_26_13"]);
+GEO_OCHIQ.push(["Ushbu rasmda 2 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Chala cho‘llar va cho‘llar","Dashtlar","Savannalar va siyrak o‘rmonlar","Qattiq bargli doimiy yashil o‘rmonlar va butazorlar"],0,"gx44_26_14"]);
+GEO_OCHIQ.push(["Ushbu rasmda 3 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Sernam ekvatorial o‘rmonlar","Fasliy sernam o‘rmonlar","Savannalar va siyrak o‘rmonlar","Qattiq bargli doimiy yashil o‘rmonlar va butazorlar"],1,"gx44_26_15"]);
+GEO_OCHIQ.push(["Ushbu rasmda 4 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Sernam ekvatorial o‘rmonlar","Savannalar va siyrak o‘rmonlar","Fasliy sernam o‘rmonlar","Qattiq bargli doimiy yashil o‘rmonlar va butazorlar"],1,"gx44_26_16"]);
+GEO_OCHIQ.push(["Ushbu rasmda 5 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Sernam ekvatorial o‘rmonlar","Fasliy sernam o‘rmonlar","Dashtlar","Savannalar va siyrak o‘rmonlar"],0,"gx44_26_15"]);
+GEO_OCHIQ.push(["Ushbu rasmda 6 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Sernam ekvatorial o‘rmonlar","Fasliy sernam o‘rmonlar","Dashtlar","Savannalar va siyrak o‘rmonlar"],2,"gx44_26_15"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “I” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Grenlandiya","Kanada-Arktika arxipelagi","Subarktika tekisliklari","Lavrentiy qirlari"],0,"gx44_26_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “II” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Grenlandiya","Kanada-Arktika arxipelagi","Subarktika tekisliklari","Lavrentiy qirlari"],1,"gx44_26_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “III” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Grenlandiya","Kanada-Arktika arxipelagi","Subarktika tekisliklari","Lavrentiy qirlari"],2,"gx44_27_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “IV” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Grenlandiya","Kanada-Arktika arxipelagi","Subarktika tekisliklari","Lavrentiy qirlari"],3,"gx44_27_2"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “V” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Nyufandlend oroli","Appalachi va Appalachibo‘yi rayonlari","Markaziy tekisliklar","Buyuk tekisliklar"],0,"gx44_26_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VI” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Nyufandlend oroli","Appalachi va Appalachibo‘yi rayonlari","Markaziy tekisliklar","Buyuk tekisliklar"],1,"gx44_26_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VII” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Nyufandlend oroli","Appalachi va Appalachibo‘yi rayonlari","Markaziy tekisliklar","Buyuk tekisliklar"],2,"gx44_26_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “VIII” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Nyufandlend oroli","Appalachi va Appalachibo‘yi rayonlari","Markaziy tekisliklar","Buyuk tekisliklar"],3,"gx44_26_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “IX” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Qirg‘oq tekisliklari","Alyaska va Kanada shimoli-g‘arbi Kordilyerasi","Kanada janubi-g‘arbi va AQSH shimoli- g‘arbi Kordilyerasi","AQSH janubi-g‘arbi Kordilyerasi"],0,"gx44_26_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “X” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Qirg‘oq tekisliklari","Alyaska va Kanada shimoli-g‘arbi Kordilyerasi","Kanada janubi-g‘arbi va AQSH shimoli- sharqi Kordilyerasi","AQSH janubi-g‘arbi Kordilyerasi"],1,"gx44_27_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “XI” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Qirg‘oq tekisliklari","Alyaska va Kanada shimoli-g‘arbi Kordilyerasi","Kanada janubi-g‘arbi va AQSH shimoli- g‘arbi Kordilyerasi","AQSH janubi-g‘arbi Kordilyerasi"],2,"gx44_26_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “XII” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Qirg‘oq tekisliklari","Alyaska va Kanada shimoli-g‘arbi Kordilyerasi","Kanada janubi-g‘arbi va AQSH shimoli- g‘arbi Kordilyerasi","AQSH janubi-g‘arbi Kordilyerasi"],3,"gx44_27_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda ‘XIII” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Meksika","Markaziy Amerika bo‘yni","Orollar","AQSH janubi-g‘arbi Kordilyerasi"],0,"gx44_26_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “XIV” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Meksika","Markaziy Amerika bo‘yni","Orollar","AQSH janubi-g‘arbi Kordilyerasi"],1,"gx44_26_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “XV” raqami bilan Shimoliy Amerikaning qaysi tabiiy geografik o‘lkasi ko‘rsatilgan?",["Shimoliy Meksika","Markaziy Amerika bo‘yni","Orollar","AQSH janubi-g‘arbi Kordilyerasi"],2,"gx44_26_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 1 raqami bilan Shimoliy Muz okeanining qaysi dengizi ko‘rsatilgan?",["Bofort dengizi","Chukotka dengizi","Sharqiy Sibir dengizi","Laptevlar dengizi"],0,"gx44_27_14"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 2 raqami bilan Shimoliy Muz okeanining qaysi dengizi ko‘rsatilgan?",["Shimoliy dengiz","Grenlandiya dengizi","Barens dengizi","Norvegiya dengizi"],3,"gx44_27_15"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 3 raqami bilan Shimoliy Muz okeanining qaysi dengizi ko‘rsatilgan?",["Chukotka dengizi","Bofort dengizi","Sharqiy Sibir dengizi","Laptevlar dengizi"],2,"gx44_27_16"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 4 raqami bilan Shimoliy Muz okeanining qaysi dengizi ko‘rsatilgan?",["Chukotka dengizi","Bofort dengizi","Sharqiy Sibir dengizi","Laptevlar dengizi"],0,"gx44_27_17"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 5 raqami bilan Shimoliy Muz okeanining qaysi dengizi ko‘rsatilgan?",["Norvegiya dengizi","Grenlandiya dengizi","Shimoliy dengiz","Baffin dengizi"],1,"gx44_27_18"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 6 raqami bilan Shimoliy Muz okeanining qaysi dengizi ko‘rsatilgan?",["Laptevlar dengizi","Barens dengizi","Kara dengizi","Norvegiya dengizi"],1,"gx44_27_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 7 raqami bilan Shimoliy Muz okeanining qaysi dengizi ko‘rsatilgan?",["Chukotka dengizi","Bofort dengizi","Sharqiy Sibir dengizi","Laptevlar dengizi"],3,"gx44_27_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi raqam bilan Kara dengizi ko‘rsatilgan?",["6","10","8","7"],2,"gx44_28_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi raqam bilan Baffin dengizi ko‘rsatilgan?",["9","10","8","7"],0,"gx44_27_19"]);
+GEO_OCHIQ.push(["Quyidagi rasmda 10 raqami bilan Shimoliy Muz okeanidagi qaysi dengiz ko‘rsatilgan?",["Laptevlar dengizi","Kara dengizi","Sharqiy Sibir dengizi","Barens dengizi"],0,"gx44_28_3"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi gidrografik obyekt ko‘rsatilganligini aniqlang.",["Balxash ko‘li","Issiqko‘l","Kaspiy ko‘li","Baykal ko‘li"],3,"gx44_28_4"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi gidrografik obyekt ko‘rsatilganligini aniqlang.",["Balxash ko‘li","Issiqko‘l","Kaspiy ko‘li","Baykal ko‘li"],2,"gx44_28_5"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi yarimorol ko‘rsatilganligini aniqlang.",["Arabiston yarimoroli","Somali yarimoroli","Hindiston yarimoroli","Yukatan yarimoroli"],1,"gx44_28_6"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi yarimorol ko‘rsatilganligini aniqlang.",["Arabiston yarimoroli","Somali yarimoroli","Hindiston yarimoroli","Yukatan yarimoroli"],2,"gx44_28_7"]);
+GEO_OCHIQ.push(["Ushbu rasmda qaysi orol ko‘rsatilgan?",["Yangi Gvineya oroli","Yangi Kaledoniya oroli","Yangi Gebrid oroli","Yangi Zellandiya oroli"],3,"gx44_28_8"]);
+GEO_OCHIQ.push(["Ushbu xaritada “B” harfi bilan qaysi davlat ko‘rsatilgan?",["Meksika","Argentina","Kanada","AQSH"],1,"gx44_28_9"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Yaponiya","Buyuk Britaniya","Finlyandiya","Shvetsiya"],1,"gx44_28_10"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Braziliya","Fransiya","Kanada","Avstriya"],2,"gx44_28_11"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Filippin","Indoneziya","Yaponiya","Yangi Zellandiya"],2,"gx44_28_12"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Ispaniya","Fransiya","Polsha","Germaniya"],1,"gx44_28_13"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs qaysi davlat imperatori hisoblanadi?",["Koreya Respublikasi","Tayvan","Yaponiya","Vietnam"],2,"gx44_28_14"]);
+GEO_OCHIQ.push(["Ushbu rasmdagi shaxs qaysi davlat imperatori hisoblanadi?",["Bruney","Butan","Tailand","BAA"],0,"gx44_28_15"]);
+GEO_OCHIQ.push(["Ushbu xaritada yashil rang bilan qaysi davlat hududi ko‘rsatilgan?",["Argentina","Chili","Kolumbiya","Braziliya"],3,"gx44_28_16"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 5 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Ekvador","Kolumbiya","Peru","Chili"],2,"gx44_28_17"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 7 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Liviya","Jazoir","Mali","Sudan"],0,"gx44_28_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Mongoliya","Rossiya","Hindiston","Xitoy"],3,"gx44_28_19"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Kanada","AQH","Meksika","Braziliya"],1,"gx44_28_20"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Efiopiya","Somali","Marokash","Keniya"],1,"gx44_29_1"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Mavritaniya","Jazoir","Liviya","Mali"],0,"gx44_29_2"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “R” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Kolumbiya","Peru","Gayana","Ekvador"],3,"gx44_29_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada moviy rang bilan Yevropaning qaysi subregioni ko‘rsatilgan?",["Shimoliy Yevropa","Janubiy Yevropa","G‘arbiy Yevropa","Sharqiy Yevropa"],0,"gx44_29_4"]);
+GEO_OCHIQ.push(["Quyidagi xaritada sariq rang bilan Yevropaning qaysi subregioni ko‘rsatilgan?",["Shimoliy Yevropa","Janubiy Yevropa","G‘arbiy Yevropa","Sharqiy Yevropa"],1,"gx44_29_5"]);
+GEO_OCHIQ.push(["Quyidagi xaritada yashil rang bilan Yevropaning qaysi subregioni ko‘rsatilgan?",["Shimoliy Yevropa","Janubiy Yevropa","G‘arbiy Yevropa","Sharqiy Yevropa"],2,"gx44_29_6"]);
+GEO_OCHIQ.push(["Quyidagi xaritada qizil rang bilan Yevropaning qaysi subregioni ko‘rsatilgan?",["Shimoliy Yevropa","Janubiy Yevropa","G‘arbiy Yevropa","Sharqiy Yevropa"],3,"gx44_29_5"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “A” harfi bilan qaysi davlat ko‘rsatilgan?",["Lixtenshteyn","Lyuksemburg","San-Marino","Vatikan"],0,"gx44_29_8"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “B” harfi bilan qaysi davlat ko‘rsatilgan?",["Lixtenshteyn","Lyuksemburg","San-Marino","Vatikan"],2,"gx44_29_9"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “D” harfi bilan qaysi davlat ko‘rsatilgan?",["Monako","Andorra","Malta","Vatikan"],2,"gx44_29_8"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “E” harfi bilan qaysi davlat ko‘rsatilgan?",["Monako","Andorra","Malta","Vatikan"],3,"gx44_29_9"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “F” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Monako","Andorra","Malta","Vatikan"],1,"gx44_29_8"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “G” harfi bilan qaysi davlat ko‘rsatilgan?",["Monako","Andorra","Malta","Vatikan"],0,"gx44_29_9"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “H” harfi bilan qaysi davlat ko‘rsatilgan?",["Lixtenshteyn","Lyuksemburg","San-Marino","Andorra"],1,"gx44_29_8"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Bangaldesh","Hindiston","Yaponiya","Saudiya Arabistoni"],1,"gx44_29_15"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi davlat hududi ko‘rsatilgan?",["Butan","Laos","Bruney","Nepal"],3,"gx44_29_16"]);
+GEO_OCHIQ.push(["Quyidagi rasmda “J” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Mongoliya","Qozog‘iston","Qirg‘iziston","Rossiya"],1,"gx44_29_17"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “A” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Shri-Lanka","Indoneziya","Filippin","Maldiv"],0,"gx44_29_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “N” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Kambodja","Laos","Tailand","Myanma"],0,"gx44_29_19"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “G” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Pokiston","Eron","Turkmaniston","Afg‘oniston"],3,"gx44_29_20"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan Hindistonning qaysi yirik sharhi ko‘rsatilgan?",["Mumbay","Dehli","Kolkata","Chennay"],1,"gx44_30_1"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan Hindistonning qaysi yirik shahri ko‘rsatilgan?",["Mumbay","Dehli","Kolkata","Chennay"],2,"gx44_30_1"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan Hindistonning qaysi yirik shahri ko‘rsatilgan?",["Mumbay","Dehli","Kolkata","Chennay"],0,"gx44_30_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 4 raqami bilan Hindistonning qaysi yirik shahri ko‘rsatilgan?",["Mumbay","Dehli","Kolkata","Chennay"],3,"gx44_30_3"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “A” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Iroq","Suriya","Iordaniya","Kuvayt"],0,"gx44_30_5"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “I” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Iroq","Suriya","Iordaniya","Kuvayt"],3,"gx44_30_6"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “B” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Yaman","Ummon","BAA","Qatar"],1,"gx44_30_7"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “J” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Yaman","Ummon","BAA","Qatar"],0,"gx44_30_8"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “D” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Eron","Iroq","Saudiya Arabistoni","Qatar"],2,"gx44_30_9"]);
+GEO_OCHIQ.push(["Quyidagi xaritada “F” harfi bilan qaysi davlat hududi ko‘rsatilgan?",["Eron","Armaniston","Ozarbayjon","Turkiya"],3,"gx44_30_10"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Jibuti","Eritreya","Ruanda","Burundi"],1,"gx44_30_11"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 2 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Malavi","Uganda","Burundi","Ruanda"],0,"gx44_30_12"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 16 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Argentina","Paragvay","Urugvay","Chili"],3,"gx44_30_13"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 6 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Venesuela","Paragvay","Urugvay","Boliviya"],2,"gx44_30_14"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 12 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Venesuela","Paragvay","Urugvay","Boliviya"],3,"gx44_30_15"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 10 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Namibiya","Botsvana","Angola","Zambiya"],2,"gx44_30_16"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 17 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Kamerun","Nigeriya","Niger","Kongo"],1,"gx44_30_17"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 9 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Liviya","Misr","Jazoir","Sudan"],1,"gx44_30_18"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Gana","Burkina-Faso","Togo","Kot-d’Ivuar"],0,"gx44_30_19"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 15 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Marokash","Senegal","Mavritaniya","Tunis"],3,"gx44_30_17"]);
