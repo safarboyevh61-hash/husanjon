@@ -863,7 +863,169 @@ var GEO_RASM={
 "gx44_30_16": "rasmlar/gx44_30_16.webp",
 "gx44_30_17": "rasmlar/gx44_30_17.webp",
 "gx44_30_18": "rasmlar/gx44_30_18.webp",
-"gx44_30_19": "rasmlar/gx44_30_19.webp"
+"gx44_30_19": "rasmlar/gx44_30_19.webp",
+"gx45_1": "rasmlar/gx45_1.webp",
+"gx45_2": "rasmlar/gx45_2.webp",
+"gx45_3": "rasmlar/gx45_3.webp",
+"gx45_4": "rasmlar/gx45_4.webp",
+"gx45_5": "rasmlar/gx45_5.webp",
+"gx45_7": "rasmlar/gx45_7.webp",
+"gx45_8": "rasmlar/gx45_8.webp",
+"gx45_9": "rasmlar/gx45_9.webp",
+"gx45_10": "rasmlar/gx45_10.webp",
+"gx45_11": "rasmlar/gx45_11.webp",
+"gx45_12": "rasmlar/gx45_12.webp",
+"gx45_13": "rasmlar/gx45_13.webp",
+"gx45_14": "rasmlar/gx45_14.webp",
+"gx45_17": "rasmlar/gx45_17.webp",
+"gx45_18": "rasmlar/gx45_18.webp",
+"gx45_19": "rasmlar/gx45_19.webp",
+"gx45_20": "rasmlar/gx45_20.webp",
+"gx45_21": "rasmlar/gx45_21.webp",
+"gx45_23": "rasmlar/gx45_23.webp",
+"gx45_27": "rasmlar/gx45_27.webp",
+"gx45_28": "rasmlar/gx45_28.webp",
+"gx45_29": "rasmlar/gx45_29.webp",
+"gx45_30": "rasmlar/gx45_30.webp",
+"gx45_31": "rasmlar/gx45_31.webp",
+"gx45_35": "rasmlar/gx45_35.webp",
+"gx45_36": "rasmlar/gx45_36.webp",
+"gx45_37": "rasmlar/gx45_37.webp",
+"gx45_38": "rasmlar/gx45_38.webp",
+"gx45_39": "rasmlar/gx45_39.webp",
+"gx45_40": "rasmlar/gx45_40.webp",
+"gx45_44": "rasmlar/gx45_44.webp",
+"gx45_48": "rasmlar/gx45_48.webp",
+"gx45_54": "rasmlar/gx45_54.webp",
+"gx45_55": "rasmlar/gx45_55.webp",
+"gx45_56": "rasmlar/gx45_56.webp",
+"gx45_57": "rasmlar/gx45_57.webp",
+"gx45_58": "rasmlar/gx45_58.webp",
+"gx45_59": "rasmlar/gx45_59.webp",
+"gx45_60": "rasmlar/gx45_60.webp",
+"gx45_61": "rasmlar/gx45_61.webp",
+"gx45_63": "rasmlar/gx45_63.webp",
+"gx45_64": "rasmlar/gx45_64.webp",
+"gx45_67": "rasmlar/gx45_67.webp",
+"gx45_68": "rasmlar/gx45_68.webp",
+"gx45_69": "rasmlar/gx45_69.webp",
+"gx45_70": "rasmlar/gx45_70.webp",
+"gx45_71": "rasmlar/gx45_71.webp",
+"gx45_72": "rasmlar/gx45_72.webp",
+"gx45_73": "rasmlar/gx45_73.webp",
+"gx45_75": "rasmlar/gx45_75.webp",
+"gx45_78": "rasmlar/gx45_78.webp",
+"gx45_79": "rasmlar/gx45_79.webp",
+"gx45_80": "rasmlar/gx45_80.webp",
+"gx45_81": "rasmlar/gx45_81.webp",
+"gx45_83": "rasmlar/gx45_83.webp",
+"gx45_84": "rasmlar/gx45_84.webp",
+"gx45_85": "rasmlar/gx45_85.webp",
+"gx45_86": "rasmlar/gx45_86.webp",
+"gx45_87": "rasmlar/gx45_87.webp",
+"gx45_88": "rasmlar/gx45_88.webp",
+"gx45_89": "rasmlar/gx45_89.webp",
+"gx45_90": "rasmlar/gx45_90.webp",
+"gx45_91": "rasmlar/gx45_91.webp",
+"gx45_92": "rasmlar/gx45_92.webp",
+"gx45_95": "rasmlar/gx45_95.webp",
+"gx45_96": "rasmlar/gx45_96.webp",
+"gx45_97": "rasmlar/gx45_97.webp",
+"gx45_98": "rasmlar/gx45_98.webp",
+"gx45_99": "rasmlar/gx45_99.webp",
+"gx45_100": "rasmlar/gx45_100.webp",
+"gx45_110": "rasmlar/gx45_110.webp",
+"gx45_111": "rasmlar/gx45_111.webp",
+"gx45_113": "rasmlar/gx45_113.webp",
+"gx45_114": "rasmlar/gx45_114.webp",
+"gx45_115": "rasmlar/gx45_115.webp",
+"gx45_116": "rasmlar/gx45_116.webp",
+"gx45_118": "rasmlar/gx45_118.webp",
+"gx45_119": "rasmlar/gx45_119.webp",
+"gx45_120": "rasmlar/gx45_120.webp",
+"gx45_121": "rasmlar/gx45_121.webp",
+"gx45_122": "rasmlar/gx45_122.webp",
+"gx45_125": "rasmlar/gx45_125.webp",
+"gx45_127": "rasmlar/gx45_127.webp",
+"gx45_129": "rasmlar/gx45_129.webp",
+"gx45_134": "rasmlar/gx45_134.webp",
+"gx45_135": "rasmlar/gx45_135.webp",
+"gx45_137": "rasmlar/gx45_137.webp",
+"gx45_138": "rasmlar/gx45_138.webp",
+"gx45_139": "rasmlar/gx45_139.webp",
+"gx45_142": "rasmlar/gx45_142.webp",
+"gx45_143": "rasmlar/gx45_143.webp",
+"gx45_144": "rasmlar/gx45_144.webp",
+"gx45_145": "rasmlar/gx45_145.webp",
+"gx45_146": "rasmlar/gx45_146.webp",
+"gx45_147": "rasmlar/gx45_147.webp",
+"gx45_148": "rasmlar/gx45_148.webp",
+"gx45_150": "rasmlar/gx45_150.webp",
+"gx45_151": "rasmlar/gx45_151.webp",
+"gx45_155": "rasmlar/gx45_155.webp",
+"gx45_157": "rasmlar/gx45_157.webp",
+"gx45_159": "rasmlar/gx45_159.webp",
+"gx45_161": "rasmlar/gx45_161.webp",
+"gx45_162": "rasmlar/gx45_162.webp",
+"gx45_163": "rasmlar/gx45_163.webp",
+"gx45_164": "rasmlar/gx45_164.webp",
+"gx45_165": "rasmlar/gx45_165.webp",
+"gx45_166": "rasmlar/gx45_166.webp",
+"gx45_168": "rasmlar/gx45_168.webp",
+"gx45_169": "rasmlar/gx45_169.webp",
+"gx45_170": "rasmlar/gx45_170.webp",
+"gx45_171": "rasmlar/gx45_171.webp",
+"gx45_172": "rasmlar/gx45_172.webp",
+"gx45_173": "rasmlar/gx45_173.webp",
+"gx45_174": "rasmlar/gx45_174.webp",
+"gx45_175": "rasmlar/gx45_175.webp",
+"gx45_176": "rasmlar/gx45_176.webp",
+"gx45_177": "rasmlar/gx45_177.webp",
+"gx45_179": "rasmlar/gx45_179.webp",
+"gx45_180": "rasmlar/gx45_180.webp",
+"gx45_182": "rasmlar/gx45_182.webp",
+"gx45_183": "rasmlar/gx45_183.webp",
+"gx45_185": "rasmlar/gx45_185.webp",
+"gx45_186": "rasmlar/gx45_186.webp",
+"gx45_190": "rasmlar/gx45_190.webp",
+"gx45_192": "rasmlar/gx45_192.webp",
+"gx45_194": "rasmlar/gx45_194.webp",
+"gx45_195": "rasmlar/gx45_195.webp",
+"gx45_196": "rasmlar/gx45_196.webp",
+"gx45_197": "rasmlar/gx45_197.webp",
+"gx45_198": "rasmlar/gx45_198.webp",
+"gx45_199": "rasmlar/gx45_199.webp",
+"gx45_200": "rasmlar/gx45_200.webp",
+"gx45_201": "rasmlar/gx45_201.webp",
+"gx45_204": "rasmlar/gx45_204.webp",
+"gx45_213": "rasmlar/gx45_213.webp",
+"gx45_214": "rasmlar/gx45_214.webp",
+"gx45_220": "rasmlar/gx45_220.webp",
+"gx45_226": "rasmlar/gx45_226.webp",
+"gx45_229": "rasmlar/gx45_229.webp",
+"gx45_232": "rasmlar/gx45_232.webp",
+"gx45_234": "rasmlar/gx45_234.webp",
+"gx45_235": "rasmlar/gx45_235.webp",
+"gx45_236": "rasmlar/gx45_236.webp",
+"gx45_238": "rasmlar/gx45_238.webp",
+"gx45_258": "rasmlar/gx45_258.webp",
+"gx45_262": "rasmlar/gx45_262.webp",
+"gx45_266": "rasmlar/gx45_266.webp",
+"gx45_268": "rasmlar/gx45_268.webp",
+"gx45_269": "rasmlar/gx45_269.webp",
+"gx45_270": "rasmlar/gx45_270.webp",
+"gx45_272": "rasmlar/gx45_272.webp",
+"gx45_273": "rasmlar/gx45_273.webp",
+"gx45_275": "rasmlar/gx45_275.webp",
+"gx45_277": "rasmlar/gx45_277.webp",
+"gx45_281": "rasmlar/gx45_281.webp",
+"gx45_283": "rasmlar/gx45_283.webp",
+"gx45_284": "rasmlar/gx45_284.webp",
+"gx45_288": "rasmlar/gx45_288.webp",
+"gx45_289": "rasmlar/gx45_289.webp",
+"gx45_295": "rasmlar/gx45_295.webp",
+"gx45_297": "rasmlar/gx45_297.webp",
+"gx45_299": "rasmlar/gx45_299.webp"
 };
 
 /* ===== 1-to‘plam ===== */
@@ -3349,3 +3511,201 @@ GEO_OCHIQ.push(["Quyidagi xaritada 17 raqami bilan qaysi davlat hududi ko‘rsat
 GEO_OCHIQ.push(["Quyidagi xaritada 9 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Liviya","Misr","Jazoir","Sudan"],1,"gx44_30_18"]);
 GEO_OCHIQ.push(["Quyidagi xaritada 3 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Gana","Burkina-Faso","Togo","Kot-d’Ivuar"],0,"gx44_30_19"]);
 GEO_OCHIQ.push(["Quyidagi xaritada 15 raqami bilan qaysi davlat hududi ko‘rsatilgan?",["Marokash","Senegal","Mavritaniya","Tunis"],3,"gx44_30_17"]);
+
+/* ===== Xaritali va amaliy testlar — Xurramov S., Mamanazarov O. (Samarqand 2025) ===== */
+GEO_OCHIQ.push(["Grafikdagi ma’lumotlar asosida 2015-yilda shahar aholisi tabiiy o‘sish hisobiga necha kishiga ko‘payganini aniqlang (jami aholisi yil boshida 100 000 kishi) ---tug‘ilish - - - o‘lim",["6000","500","600","5000"],1,"gx45_1"]);
+GEO_OCHIQ.push(["Quyidagi okean tubi relyefi rasmida Abissal va Batial qaysi raqamlar bilan belgilangan?",["4 va 6","2 va 7","3 va 6","1 va 8"],0,"gx45_2"]);
+GEO_OCHIQ.push(["Rasmda A harfi bilan ko‘rsatilgan nuqtaning mutlaq balandligini aniqlang",["2100 m","3000 m","3300 m","2400 m"],3,"gx45_3"]);
+GEO_OCHIQ.push(["A nuqtaning mutlaq balandligi 6000 metr, A va C nuqtalarning nisbiy balandligi 1200 metr. D nuqtada havo harorati 0 °C ga teng. C nuqtadagi havo bosimni aniqlang.",["380 mm Hg","480 mm Hg","330 mm Hg","280 mm Hg"],3,"gx45_4"]);
+GEO_OCHIQ.push(["Berilgan tasvirda C nuqtaga nisbatan ufqning A tomoni Janubi-sharq tomonida joylashgan bo‘lsa, B nuqtani ufqning qaysi tomonida ekanligini aniqlang?",["Janubiy-janubi-sharq","Shimoliy-shimoli-g‘arb","Shimoliy-sharq-sharq","Shimoliy-g‘arb-g‘arb"],0,"gx45_5"]);
+GEO_OCHIQ.push(["Quyidagi yozuvsiz xaritada Atlas tog‘lari, Darfur platosi, Sharqiy Afrika yassitog‘ligi qaysi raqamlar bilan belgilanganligini mos ravishda toping",["1, 3, 5","1, 4, 6","2, 7, 8","4, 5, 6"],1,"gx45_7"]);
+GEO_OCHIQ.push(["Grafikdagi ma’lumotlar asosida 2005- yilda shahar aholisi tabiiy va mexanik o‘sish hisobiga necha kishiga ko‘payganini aniqlang (jami aholisi yil boshida 100 000 kishi).",["500","700","5000","7000"],1,"gx45_8"]);
+GEO_OCHIQ.push(["Agar topografik xaritada A va B nuqtalar orasidagi haqiqiy masofa 7,6 km bo‘lsa, mazkur nuqtalar orasidagi masofa necha santimetrga teng bo'ladi? Masshtab 1:200 000",["3, 2","4, 8","3, 8","5, 2"],2,"gx45_9"]);
+GEO_OCHIQ.push(["22-dekabr kuni Quyoshning tik tepadan o‘tishi quyidagi rasmda qaysi raqam bilan belgilangan?",["4","2","6","5"],0,"gx45_10"]);
+GEO_OCHIQ.push(["Quyidagi chizmadan foydalanib A va B nuqtalar orasidagi masofani 1◦ meridian uzunligi hisobida necha kilometrga teng ekanligini aniqlang (1◦ meridian yoyining uuzunligi 111 km).",["2220 km","1665 km","2775 km","1110 km"],0,"gx45_11"]);
+GEO_OCHIQ.push(["Shimoliy Amerika materigining yozuvsiz xaritasida 1 va 3 raqamlar bilan qaysi yarimorollar ko‘rsatilgan?",["Florida ya.o va Labrador ya.o","Yukatan ya.o va Labrador ya.o","Yangi Shotlandiya ya.o va Kaliforniya ya.o","Yukatan ya.o va Florida ya.o"],0,"gx45_12"]);
+GEO_OCHIQ.push(["Quyidagi chizmadan foydalanib A nuqtaning geografik koordinatasini aniqlang.",["15° j.k, 45° g‘b.u","15° sh.k, 45° g‘b.u","45° j.k, 15° shq.u","45° sh.k, 15° g‘b.u"],0,"gx45_13"]);
+GEO_OCHIQ.push(["Quyidagi chizmada gorizontallar har 100 metr balandlikdan o'tkazilgan. Ushbu chizmada qanday relyef shakli tasvirlangan?",["qirlar","past tog‘lar","pasttekislik","o‘rtacha tog‘lar"],1,"gx45_14"]);
+GEO_OCHIQ.push(["Ushbu chizmada gorizontallar 10 metrdan o'tkazilgan, A va B nuqtalar orasidagi nisbiy balandlikni aniqlang.",["30 m","40 m","50 m","70 m"],1,"gx45_17"]);
+GEO_OCHIQ.push(["Quyidagi okean tubi relyefi rasmida shelf va abissal qaysi raqamlar bilan belgilangan",["2 va 5","1 va 3","4 va 6","2 va 6"],3,"gx45_18"]);
+GEO_OCHIQ.push(["AQShda turli tarmoqlarga ixtisoslashgan qishloq xo‘jalik mintaqalari vujudga kelgan. To‘q mallarangda qaysi mintaqa belgilangan?",["bug‘doy","sut","makkajo‘xori","paxta"],3,"gx45_19"]);
+GEO_OCHIQ.push(["Quyidagi chizmada gorizontallar har 50 m da o‘tkazilgan bo‘lsa, A nuqtaning mutlaq balandligini toping.",["450 m","500 m","750 m","600 m"],1,"gx45_20"]);
+GEO_OCHIQ.push(["Jadvalning qaysi qatorida ma’lumotlar to‘g‘ri berilgan?",["II","IV","I","III"],0,"gx45_21"]);
+GEO_OCHIQ.push(["Quyidagi chizmada 3 raqam bilan Yer po‘stining qaysi qatlami belgilangan?",["Bazaltli qatlam","Granit qatlam","Cho‘kindili qatlam","Yadro qatlam"],0,"gx45_23"]);
+GEO_OCHIQ.push(["Quyidagi topografik xaritadan foydalanib shamol yo‘nalishini aniqlang.",["janubi-g‘arbdan shimoli-sharqqa","shimoli-sharqdan janubi-g‘arbga","janubi-sharqdan shimoli-g‘arbga","shimoli-g‘arbdan janubi-sharqqa"],0,"gx45_27"]);
+GEO_OCHIQ.push(["Surxondaryo viloyati bilan chegaradosh bo'lgan qaysi davlatlarning hududi A va B harflar bilan ko‘rsatilgan?",["Turkmaniston, Tojikiston","Tojikiston, Afg‘oniston","Turkmaniston, Afg‘oniston"],0,"gx45_28"]);
+GEO_OCHIQ.push(["Chizmada ko‘rsatilgan tabiiy geografik okrug hududini o‘rab turadigan tog‘ tizmalarini toping.",["1 va 3","2 va 4","2 va 3","1 va 2"],2,"gx45_29"]);
+GEO_OCHIQ.push(["Quyidagi yozuvsiz xaritada I va XIV raqamlari bilan Yevrosiyoning qaysi tabiiy geografik o'lkalar belgilanganligini mos ravishda topingJan",["Shimoliy Yevropa, Janubi-sharqiy Osiyo","G‘arbiy Yevropa, Sharqiy Osiyo","Janubiy Yevropa, Old Osiyo","G‘arbiy Sibir, Janubiy Osiyo"],0,"gx45_30"]);
+GEO_OCHIQ.push(["A nuqtada havo harorati +3°C, B nuqtada havo bosimi 720 mm Hg, D nuqtaning mutloq balandligi 1200 m. Ushbu ma’lumotlar asosida C nuqtadagi havo haroratini hisoblang.",["+7,8⁰C","+8,4⁰C","+4,8⁰C","+6,6⁰C"],0,"gx45_31"]);
+GEO_OCHIQ.push(["Quyidagi rasmda daryo mansabi qaysi harf bilan ko‘rsatilgan?",["F","D","A","E"],1,"gx45_35"]);
+GEO_OCHIQ.push(["Alp burmalanishida ko‘tarilgan tog‘lar rasmda qaysi raqamlar bilan ko‘rsatilgan?",["2, 4, 6, 11, 14","1, 4, 5, 13, 14","1, 2, 6, 11, 12","3, 5, 6, 10, 15"],1,"gx45_36"]);
+GEO_OCHIQ.push(["Quyidagi rasmda tasvirlangan “Tosh ustun” tabiat yodgorligi qaysi milliy bo‘g‘da joylashgan?",["Ugom–Chotqol milliy bog‘ida","Zarafshon milliy bog‘ida","Zomin milliy bog‘ida","Do‘rmon milliy bog‘ida"],2,"gx45_37"]);
+GEO_OCHIQ.push(["Surxondaryo tabiiy geografik okrugning sxematik xaritasi 1 raqami bilan qaysi tog‘ tizmasi ko‘rsatilgan?",["Hisor","Bobotog‘","Ko‘hitang","Zarafshon"],1,"gx45_38"]);
+GEO_OCHIQ.push(["TOPSHIRIQNI BAJARING. Daraxtni azimutini aniqlang.",["365°","360°","50°","5°"],3,"gx45_39"]);
+GEO_OCHIQ.push(["Quyidagi grafik va jadvaldan foydalanib soat 7:00 da havoning mutlaq namligi qancha bo‘lganini aniqlang.",["7.1 gr","7.7 gr","6.2gr","6.8 gr"],3,"gx45_40"]);
+GEO_OCHIQ.push(["Topshiriqni bajaring.",["65°","70°","135°","430°"],1,"gx45_44"]);
+GEO_OCHIQ.push(["30 g‘.u soat 7:00 bo‘lsa, qayerda soat 12:00 bo‘ladi.",["55° sh.u","45° shq.","90° g‘.u","80° g‘.u"],1,null]);
+GEO_OCHIQ.push(["30° shq.u soat 7:00 bo‘lsa,qayerda soat 11:00 bo‘ladi.",["55° sh.u","45° shq.","90° shq.u","80° g‘.u"],2,"gx45_48"]);
+GEO_OCHIQ.push(["Rasmda “k” harfi bilan daryo vodiysining qaysi elementi ko‘rsatilgan?",["estuariy","irmoqlar","suvayirg‘ich","daryo manbai"],2,"gx45_54"]);
+GEO_OCHIQ.push(["Quyidagi xarita-sxemada 4 raqami bilan qaysi dengiz ko‘rsatilgan?",["Liguriy","Adriatika","Tirren","Ioniya"],1,"gx45_55"]);
+GEO_OCHIQ.push(["Ushbu rasmda tasvirlangan tepalikning qaysi yonbag‘ri qiya?",["sharq","janub","g‘arb","shimol"],0,"gx45_56"]);
+GEO_OCHIQ.push(["Rasmdagi a va b harflar o‘rniga 4 sekund va 6 sekund so‘zlari mos ravishda qo‘yilsa, dengizning chuqurligini aniqlang",["6000 m va 4500 m","6500 m va 8500 m","4500 m va 3000 m","6000 m va 9000 m"],0,"gx45_57"]);
+GEO_OCHIQ.push(["Rasmda qaysi harf bilan belgilangan parallelda 22-dekabr kuni bir sutka davomida Quyosh botmaydi?",["C","E","B","A"],1,"gx45_58"]);
+GEO_OCHIQ.push(["Rasmdagi holat quyidagi qaysi geografik obyekt uchun xos?",["Dekan yassitog‘ligi","Meksika tog‘ligi","Kamchatka yarimoroli","Viktoriya sharsharasi"],2,"gx45_59"]);
+GEO_OCHIQ.push(["Quyidagi qaysi orol vujudga kelishiga ko‘ra rasmda tasvirlangan tipga xos emas?.",["Gavayi","Tasmaniya","Mariana","Pasxa"],1,"gx45_60"]);
+GEO_OCHIQ.push(["Rasmda ko‘rsatilgan A va B gorizantallarning nisbiy balandligini aniqlang",["1000 m","500 m","600 m","300 m"],0,"gx45_61"]);
+GEO_OCHIQ.push(["Tuman aholisi 2000-yilning boshida 200000 kishini tashkil etgan.Grafikdagi ma’lumotlardan foydalanib tuman aholisin2000- yilda yilda yalpi o‘sish hisobiga necha kishiga ko‘payganligi aniqlang?",["120 kishiga","12000 kishiga","1200 kishiga","120000 kishiga"],2,"gx45_63"]);
+GEO_OCHIQ.push(["Ushbu grafikdan foydalanib Angren shahar aholisi 2015- yilda mexanik o‘sish hisobiga qancha kishiga ko‘payganligini aniqlang? (Yil boshida shahar aholisi 155 ming kishi. A.120 kishi B.155 kishi C.145 kishiga D.200 kishi. 6 5. Xaritada raqamlar bilan ko‘rsatilgan nuqtalardan qaysi biri Janubiy tropik chizig‘iga eng yaqin joylashgan?",["1","2","4","3."],1,"gx45_64"]);
+GEO_OCHIQ.push(["Rasmda ko‘rsatilgan A nuqtaning mutlaq balandligi 400 m, u yerdagi havo bosimi 730 mm Hg. B nuqtadagi havo bosimini aniqlang..",["610 mm Hg","550 mm Hg","600 mm Hg","580 mm Hg."],3,"gx45_67"]);
+GEO_OCHIQ.push(["Terrigen yotqiziqlar ko‘p to‘planadigan joylar rasmda qaysi harf bilan belgilangan?.",["D, A","F, B","G, F","J, B."],0,"gx45_68"]);
+GEO_OCHIQ.push(["Quyidagi rasmda nima tasvirlangan?",["Iliq front","Geotermik o‘choq","Termik depressiya","Sovuq front"],0,"gx45_69"]);
+GEO_OCHIQ.push(["Rasmda qanday relyef shakli aks ettirilgan?.",["Botiq","Tepalik","Yassitog‘lik","Cho‘qqi"],0,"gx45_70"]);
+GEO_OCHIQ.push(["Quyidagi xarita-sxemada 1, 8, 2 raqamlari bilan qaysi gidrografik obyektlar ko‘rsatilgan?",["Azov, Apsheron, Adan","Egey, Ioniya, Sidra","Kaspiy, Kerch, Adan","Kaspiy, Bob-al-Mandob, Azov"],3,"gx45_71"]);
+GEO_OCHIQ.push(["Qishda Murmansk portining muzlamasligiga sabab bo‘luvchi oqimlar quyidagi xarita-sxemada qaysi sonlar bilan ko‘rsatilgan?.",["9, 10, 12","1, 2, 4","16, 17, 19","9, 8, 7"],3,"gx45_72"]);
+GEO_OCHIQ.push(["Quyidagi rasmda O‘rta Osiyo iqlimidagi qanday holat aks etgan?.",["Siklon","Termik depressiya","Antisiklon","Front zonasi"],2,"gx45_73"]);
+GEO_OCHIQ.push(["Quyidagi grafikdan foydalanib, soat 12:00 dagi havo harorati va atmosfera hodisasini aniqlang..",["+20⁰C, shabada","+21⁰C, shamol","+24⁰C, patsimon bulut","+18⁰C, qat-qat bulut."],2,"gx45_75"]);
+GEO_OCHIQ.push(["Baliq ko‘p ovlanadigan va suvo‘tlar yig‘ib olinadigan dengizlar rasmda qaysi raqamlar bilan ko‘rsatilgan?",["1, 5, 6","1, 3, 4","2, 7, 8","3, 5, 6."],1,"gx45_78"]);
+GEO_OCHIQ.push([".Chizmada tasvirlangan orolning 1- gorizontalida havo bosimi 710 mm Hg, 3- gorizontalida esa 610 mm Hg, 2- gorizontalda havo harorati +26ºC ga, 4- gorizontalda nisbiy namlik 60% ga teng. A nuqtadagi havo haroratini aniqlang,",["22°C","18°C","20°C","32°C"],2,"gx45_79"]);
+GEO_OCHIQ.push(["A nuqtada me’yordagi (normal) atmosfera bosimi qayd etilgan bo‘lsa, B nuqtadagi havo bosimini aniqlang.",["700 mm Hg","720 mm Hg","740 mm Hg","750 mm Hg"],2,"gx45_80"]);
+GEO_OCHIQ.push(["Hududining 2/3 qismi o‘rmon landshaftlari bilan band bo‘lgan davlat rasmda qaysi raqam bilan ko‘rsatilgan?",["1","2","3","4."],1,"gx45_81"]);
+GEO_OCHIQ.push(["Rasmda ko‘rsatilgan jarayon sodir bo‘lmasligi uchun qanday chora- tadbirni amalga oshirish kerak?",["Yonbag‘irlarda suvli qatlamga tushadigan suv miqdorini kamaytirish kerak","Yonbag‘irlarda bostirib sug‘orish ishlarini olib borish","Yonbag‘irlarni o‘simlik qoplamidan tozalash ishlarini olib boorish","Yonbag‘ir yo‘nalishiga parallel shaklda bostirib sug‘orish ishlarini olib boorish"],0,"gx45_83"]);
+GEO_OCHIQ.push(["Rasmda ko‘rsatilgan shamol turini aniqlang",["Briz","Musson","Passat","Fyon"],1,"gx45_84"]);
+GEO_OCHIQ.push(["Ushbu xarita-sxemadagi yo‘nalish bo‘yicha sayyohlar A nuqtadan B nuqtaga borishlari uchun qaysi tabiat zonalaridan o‘tishlari kerak?",["Qattiq bargli doimiy yashil o‘rmonlar zonasidan chalacho‘llar zonasiga","Savannalardan nam ekvatorial o‘rmonlar zonasiga","Nam ekvatorial o‘rmonlar zonasidan savannalar zonasiga","Savannalardan chalacho‘l va cho‘l zonasiga"],2,"gx45_85"]);
+GEO_OCHIQ.push(["Quyidagi balandlik mintaqalari shakllangan tog‘ qaysi tabiat zonasida joylashgan? 1 – o‘rmon-dasht va dasht; 2 – aralash va keng bargli o‘rmonlar; 3 – subalp o‘tloqlari; 4 – alp o‘tloqlari; 5 – tog‘ tundrasi; 6 – qor va muz zonasi",["tundra va o‘rmon tundra zonasida","o‘rmon-dasht va dasht zonasida","aralash va keng bargli o‘rmonlar zonasida","subekvatorial o‘rmonlar zonasida"],1,"gx45_86"]);
+GEO_OCHIQ.push(["Xaritada A va B nuqtalar bilan qaysi orollar o‘rni ko‘rsatilgan?",["A-Grenlandiya, B-Gaiti","A-Viktoriya, B-Yamayka","A-Baffin Yeri, B-Kuba","A-Banks, B-Kuba"],2,"gx45_87"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 8 raqami bilan qaysi davlatbelgilangan?",["Angola","Chad","JAR","Namibiya"],3,"gx45_88"]);
+GEO_OCHIQ.push(["Chizmadagi D va N nuqtalar qaysi yarimsharda joylashganini aniqlang.",["D-janubiy; N-janubiy","D-janubiy; N-shimoliy","D-shimoliy; N-shimoliy","D-shimoliy; N-janubiy."],3,"gx45_89"]);
+GEO_OCHIQ.push(["Xaritadagi 2 va 8 raqamlari bilan qaysi davlatlar ko‘rsatilgan?",["Ummon va Yaman","Pokiston va Turkmaniston","Tailand va Pokiston","Iroq va Ummon"],0,"gx45_90"]);
+GEO_OCHIQ.push(["Xaritadagi 2 raqami bilan qaysi tabiat zonasi ko‘rsatilgan?",["Sernam ekvatorial o‘rmonlar","Dashtlar","Qattiq bargli, doimiy yashil o‘rmonlar va butazorlar","Savanna va siyrak o‘rmonlar"],1,"gx45_91"]);
+GEO_OCHIQ.push(["Rasmdagi qaysi harf bilan daryo irmoqlari belgilangan?",["C","D","E","F"],0,"gx45_92"]);
+GEO_OCHIQ.push(["Atlantika okeanining g‘arbidagi botiqqa exolot orqali yuborilgan tovush 11,656 sekundda qaytib chiqqan bo‘lsa, ushbu botiqning chuqurligini va nomini aniqlang.",["10 047 m- Kermadek","8 742 m-Puerto-Riko","8 742 m-Zond","10 047 m-Puerto-Riko"],1,null]);
+GEO_OCHIQ.push(["Agar harorati 10°C, nisiy namlik 90% ga teng bo‘lsa, 1m3 havo to‘yinishi uchun qancha suv bug‘I kerak?",["1,5 gr","0,9 gr","1,2 gr","2 gr"],1,null]);
+GEO_OCHIQ.push(["Xaritada ajratib ko‘rsatilgan iqlim mintaqani toping;",["ekvatorial","tropik","subtropik","subekvatorial"],3,"gx45_95"]);
+GEO_OCHIQ.push(["Xaritada A xarfi bilan qaysi qo‘ltiq ko‘rsatilgan?",["Katta Avstraliya","Karpentariya","Gvineya","Biskay"],1,"gx45_96"]);
+GEO_OCHIQ.push(["Rasmda yer po‘stining harakatlari natijasida hosil bo‘lgan qaysi relyef shakli ko‘rsatilgan?",["Graben","Burmali tog‘","Jarlik","Gorst"],3,"gx45_97"]);
+GEO_OCHIQ.push(["Quyidagi rasmda ob-havoning qaysi holati tasvirlangan? s",["Termik depressiya","Antisiklon","Siklon","Turbulentlik"],1,"gx45_98"]);
+GEO_OCHIQ.push(["Quyidagi 1: 200 000 masshtabli topografik xaritada berilgan A va B nuqtalar oralig‘i xaritada 2,6 cm bo‘lsa, ular orasidagi haqiqiy masofani toping.",["5,2 km","2,6 km","1,3 km","4,2 km"],0,"gx45_99"]);
+GEO_OCHIQ.push(["Quyidagi xaritada strelka bilan qaysi geografik obyekt ko‘rsatilgan?",["Drakon tog‘lari","Chad ko‘li","Livingston sharsharasi","Tanganika ko‘li"],3,"gx45_100"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qaysi ob-havo hodisalarining shartli belgisi ko‘rsatilgan?",["Bulduruq","Jala","Yomg‘ir","Do‘l"],1,"gx45_110"]);
+GEO_OCHIQ.push(["Quyidagi rasmdan foydalangan holda yer po‘stining qalinligini aniqlang.",["25 – 35 km","35 – 40 km","35 – 45 km","30 – 55 km"],1,"gx45_111"]);
+GEO_OCHIQ.push(["Quyidagi diagrammadan foydalanib, yillik yog‘in miqdorining necha foizi bahor mavsumiga to‘g‘ri kelishini aniqlang.",["24,1%","26,6%","37,1%","37,2"],3,"gx45_113"]);
+GEO_OCHIQ.push(["Ushbu diagrammadan foydalanib, yillik ampilitudani toping.",["30°C","42° C","40°C","12°C"],2,"gx45_114"]);
+GEO_OCHIQ.push(["Ushbu diagrammadan foydalanib, ampilitudani toping",["+5.25° C","+6.25° C","12° C","-8°C"],1,"gx45_115"]);
+GEO_OCHIQ.push(["Quyidagi rasmda ko‘rsatilgan A nuqta orolning eng baland cho‘qqisiga nisbatan ufqning qaysi tomonida joylashganligini aniqlang.",["shimol","shimoli-sharq","shimoli-g‘arb","janubi-g‘arb."],1,"gx45_116"]);
+GEO_OCHIQ.push(["Quyidagi xaritada A va B nuqtalar orasi 4,2 cm ga teng, ular orasidagi haqiqiy masofa 84 km. Xaritaning masshtabini aniqlang.",["1:20 000","1:20 000 000","1:2 000 000","1:200 000"],2,"gx45_118"]);
+GEO_OCHIQ.push(["Quyidagi chizmadan foydalanib, A nuqtanning geografik koordinatasini aniqlang.",["15° j.k, 45° g‘b.u","15° sh.k, 45° g‘b.u","45° j.k, 15° shq.u","45° sh.k, 15° g‘b.u"],0,"gx45_119"]);
+GEO_OCHIQ.push(["Quyidagi grafiklarning qaysi birida tog‘larda balandlik mintaqalari soni (X) va joyning geografik kengligi (Y) orasidagi bog‘lanish qonuniyati to‘g‘ri tasvirlangan? (Bir xil balandlikdagi tog‘ tizmalari)",["D","C","A","B"],0,"gx45_120"]);
+GEO_OCHIQ.push(["Quyidagi diagrammada nima tasvirlangan?",["Gidrosferadagi suv tarkibi","Havoning gaz tarkibi","Havoning ifloslanish tarkibi","Okeanlar ulushi"],1,"gx45_121"]);
+GEO_OCHIQ.push(["Quyidagi rasmda qanday jarayon tasvirlanganligini aniqlang.",["Litosfera plitalarining harakat mexanizmi","Litosfera plitalarining uyurmali harakati","Astenosfera qatlamidagi moddalar harakati","Mantiyadagi moddalar harakati"],0,"gx45_122"]);
+GEO_OCHIQ.push(["Quyidagi xaritada 1 raqami bilan Hindistonning qaysi yirik shahri ko‘rsatilgan?",["Mumbay","Dehli","Kolkata","Chennay"],1,"gx45_125"]);
+GEO_OCHIQ.push(["Rasmda ko‘rsatilgan A nuqtaning mutlaq balandligi 400 m, u yerdagi havo bosimi 720 mm Hg. B nuqtadagi havo bosimini aniqlang.",["610 mm Hg","570 mm Hg","600 mm Hg","580 mm Hg"],1,"gx45_127"]);
+GEO_OCHIQ.push([". Quyidagi rasmda ko‘rsatilgan A nuqtadan Bosh meridiangacha bo‘lgan masofani aniqlang.",["3416 km","2558 km","3664 km","2220 km"],0,"gx45_129"]);
+GEO_OCHIQ.push(["Janubiy tropik chizig‘i rasmda qaysi harf bilan ko‘rsatilgan?",["A","B","C","D"],1,"gx45_134"]);
+GEO_OCHIQ.push(["Quyidagi 5(1000-2000) raqami bilan tasvirlangan relyef shaklini to‘g‘ri aniqlang.",["baland tog‘lar","o‘rtacha tog‘lar","Pasttekislik","Yassitog‘"],1,"gx45_135"]);
+GEO_OCHIQ.push(["Ko‘lning 4-gorizontalida joylashgan qismiga exolotdan tovush yuborildi va 6 sekundda tovush qaytib keldi. 3- gorizontalida joylashgan qismiga yuborilgan tovush necha sekundda yetib boradi?",["2,66 sekund","2 sekund","3,75 sekund","4 sekund"],0,"gx45_137"]);
+GEO_OCHIQ.push(["Quyidagi ma’lumotlar asosida Xiva shahridagi havoning yillik o‘rtacha harorati va amplitudasini toping.",["13,9℃ va 16℃","14,5℃ va 36℃","14,5℃ va 16℃","18,1℃ va 30℃"],1,"gx45_138"]);
+GEO_OCHIQ.push(["Grafikda ko‘rsatilgan B nuqtadagi haroratni aniqlang.",["20,4⁰C","18,6⁰C","19,7⁰C","21,2⁰C"],0,"gx45_139"]);
+GEO_OCHIQ.push(["Matnni o‘qing: “Relyefi asosan past va yassitog‘liklardan iborat. Shimol va sharqdan janub va g‘arbga tomon nishab. G‘arbiy va janubiy chekkalarida passtekisliklar joylashgan?",["I","IV","V","IX"],3,"gx45_142"]);
+GEO_OCHIQ.push(["Quyida ko‘rsatilgan B nuqtadagi havo haroratini toping?",["27,6°C","27°C","26°C","26,4°C"],0,"gx45_143"]);
+GEO_OCHIQ.push(["Rasmda 1 raqami bilan ko‘rsatilgan okean oqimi quyidagi qaysi cho‘lning shakllanishiga ta’sir qilgan?",["Tar","Atakama","Sahroyi Kabir","Namib"],2,"gx45_144"]);
+GEO_OCHIQ.push(["Quyidagi xaritada dashtlar hamda sernam ekvatorial o‘rmonlar tabiat zonalari qaysi raqamlar bilan belgilanganligini aniqlang.",["4 va 1","2 va 1","3 va 1","3 va 4"],1,"gx45_145"]);
+GEO_OCHIQ.push(["Farg‘ona viloyati bilan chegaradosh bo‘lgan qaysi davlatlarning hududi A va B harflar bilan ko‘rsatilgan?",["Tojikiston va Qirg‘iziston","Qozog‘iston va Qirg‘iziston","Qozog‘iston va Tojikiston","Qirg‘iziston va Turkmaniston"],0,"gx45_146"]);
+GEO_OCHIQ.push(["Quyidagi diogramma asosida Qashqadaryo viloyatining 2023-yildagi o‘rtacha haroratini aniqlang.",["6,25˚C","12,08˚C","10,4˚C","7,6˚C"],0,"gx45_148"]);
+GEO_OCHIQ.push(["Chizmada ko‘rsatilgan tabiiy geografik okrug hududidan oqib o‘tadigan daryolarni toping.",["2, 4","1, 2","1, 4","3, 4"],0,"gx45_150"]);
+GEO_OCHIQ.push(["Quyidagi O‘rta Osiyoning yozuvsiz xaritasida A harfi bilan qaysi tabiiy geografik rayoni ko‘rsatilganligini aniqlang?",["Orolbo‘yi qumli cho‘llari","Janubiy yosh tog‘lar","Batxiz-qorabel qirlari","Janubiy tyanshan tog‘lari"],2,"gx45_151"]);
+GEO_OCHIQ.push(["1:40000 ni nomli masshtabga aylantiring?",["1 smda 4 km","1 snda 400 km","1 smda 4 m","1 smda 400 m"],3,null]);
+GEO_OCHIQ.push(["Berilgan tasvirdan foydalanib A nuqtadagi havo haroratini aniqlang.",["27,6˚C","20,4˚C","19,3˚C","18˚C"],3,"gx45_155"]);
+GEO_OCHIQ.push(["Quyidagi grafik misolida qaraydigan bo‘lsak, qaysi yili tabiiy o‘sish eng past bo‘lgan?",["2015","2005","2010","1990"],3,"gx45_157"]);
+GEO_OCHIQ.push(["5200 metr balandlikda havo harorati -8,6°C ni tashkil etdi. Shu vaqtda tog‘ etagidagi havo harorati qanchaga teng bo‘ladi?",["+28,2°C","+22,6°C","+31,2°C","25,4°C"],1,null]);
+GEO_OCHIQ.push(["Quyidagi okean tubi relyefi rasmida shelf va okean botiqlari qaysi raqamlar bilan berilgan?",["3, 5","4, 6","2, 6","3, 4"],2,"gx45_159"]);
+GEO_OCHIQ.push(["Berilgan tasvirda usta turgan nuqtaga nisbatan mayoqning yo‘nalish azimuti shimoli-sharq tomonga to‘g‘ri kelsa, zavodning yo‘nalish azimutini aniqlang?",["Janubi-g‘arb","Shimoliy-shimoli-g‘arb","Janub-janubi-sharq","Shimoli-g‘arb"],2,"gx45_161"]);
+GEO_OCHIQ.push(["Tasvirdaga qaysi nuqtadaga paralell yoyi eng qisqa bo‘ladi?",["B","C","A","D"],3,"gx45_162"]);
+GEO_OCHIQ.push(["Yevrosiyo materigining xaritasida B nuqta bilan qaysi tabiiy geografik o‘lkasi berilgan?",["Sharqiy sibir","Uzoq sharq","G‘arbiy sibir","Sharqiy Osiyo"],0,"gx45_163"]);
+GEO_OCHIQ.push(["Quyida berilgan tasvirda daryoning kundalang qirqimida daryo o‘zani qaysi harf bilan tasvirlangan?",["C","D","B","A"],3,"gx45_164"]);
+GEO_OCHIQ.push(["Quyidagi tasvirdan foydalanib D nuqtaning koordinatasini toping.",["36˚ sh.k va 63˚ g‘b.u","49˚ jn.k va 67˚ shq.u","36˚ jn.k va 63˚ shq.u","49˚ sh.k va 67˚ g‘b.u"],0,"gx45_165"]);
+GEO_OCHIQ.push(["Tasvirda berilgan B nuqtaning mutloq balandligi 1200 metr bo‘lsa, B va D nuqtaning nisbiy balandligini aniqlang? ( har bir gorizantall 300 metrdan )",["600 m","300 m","1800 m","1200 m"],0,"gx45_166"]);
+GEO_OCHIQ.push(["Quyida berilgan tasvirda yer va quyosh harakati bilan bog‘liq bo‘lgan Afeliy hodisasi qaysi raqam bilan berilgan?",["I","III","IV","I"],0,"gx45_168"]);
+GEO_OCHIQ.push(["Tasvirdan foydalanib O‘zbekiston sanoat tarmoqlari tarkibida ishlab chiqarish hajmiga ko‘ra yengil sanoat va elektr energiya ko‘rsatgichlari qaysi raqamlar bilan berilganligini aniqlang?",["6 va 2","3 va 5","8 va 1","3 va 2"],0,"gx45_169"]);
+GEO_OCHIQ.push(["Quyidagi tasvirdan foydalanib zilzila bo‘layotgan hududning gipotsentri qaysi raqamda berilganligini toping.",["4","2","3","1"],3,"gx45_170"]);
+GEO_OCHIQ.push(["Berilgan tasvirda C nuqtaga nisbatan ufqning A tomoni shimoli-g‘arb tomonida joylashgan bo‘lsa, B nuqtani ufqning qaysi tomonida ekanligini aniqlang?",["Janubiy-janubi-g‘arb","Shimoliy-shimoli-g‘arb","Shimoliy-shimoli-sharq","Shimoliy-g‘arb-g‘arb"],2,"gx45_171"]);
+GEO_OCHIQ.push(["Diogrammadan foydalanib mintaqa aholisi 2020-yilda necha kishiga ko‘payganini aniqlang.",["434 000","622 370","856 240","233 890"],1,"gx45_172"]);
+GEO_OCHIQ.push(["Quyidagi yer qatlamlarining aragrafik tasviridan 2 raqami bilan qaysi qatlam berilgan?",["Cho‘kindi qatlam","Granit qatlam","Bazalit qatlam","Quyi mantiya"],1,"gx45_173"]);
+GEO_OCHIQ.push(["Grafikdan foydalanib 2000-yilda mintaqa aholisi necha kishiga ko‘payganligini aniqlang. ( yil boshida 300 000 kishi )",["3400","1950","4500","8900"],1,"gx45_174"]);
+GEO_OCHIQ.push(["Topografik xaritadan foydalanib masalani yeching. Matnni o‘qing: A harfi bilan berilgan gorizantallning mutloq balangligi 300 metrga teng bo‘lsa, B harfdagi gorizantallning mutloq balandligini aniqlang? ( Har bir garizantall 100 m )",["700 m","500 m","1300 m","800 m"],3,"gx45_175"]);
+GEO_OCHIQ.push(["Grafikdan foydalanib II-raqamdagi huduning aholisi joriy yilda necha kishiga ko‘payganligini aniqlang. ( yil boshida hudud aholisi 4 000 000 kishi )",["40 000","20 000","5 600","48 000"],1,"gx45_176"]);
+GEO_OCHIQ.push(["Quyida berilgan tasvirda qaysi raqam ostida paralell yoylari eng uzun bo‘ladi?",["6","2","5","4"],2,"gx45_179"]);
+GEO_OCHIQ.push(["Grafikdan foydalanib yillik amplitudani aniqlang?",["28˚C","30˚C","16˚C","24˚C"],0,"gx45_180"]);
+GEO_OCHIQ.push(["Xaritada berilgan Yevrosiyo materigining tabiiy geografik o‘lkalari berilgan, C harfi bilan berilgan o‘lka nomini ko‘rsating?",["Sharqiy Yevropa","G‘arbiy Yevropa","Markaziy Osiyo","G‘arbiy Sibir"],0,"gx45_163"]);
+GEO_OCHIQ.push(["Grafikdan foydalanib Bahor faslinig o‘rtacha yog‘in miqdorini aniqlang.",["89 mm","74 mm","100 mm","220 mm"],1,"gx45_182"]);
+GEO_OCHIQ.push(["Berilgan tasvirda usta turgan nuqtaga nisbatan Daraxtning azimuti 45˚ ga teng bo‘lsa, Piramidaning azimut yo‘nalishini aniqlang.",["Shimoliy-g‘arb-g‘arb","Janubi-g‘arb","Shimoli-sharq","shimol"],3,"gx45_183"]);
+GEO_OCHIQ.push(["Grafik asosida A va B nuqtalarning nisbiy balandligini aniqlang?",["200 m","250 m","450 m","300 m"],1,"gx45_185"]);
+GEO_OCHIQ.push(["Quyidagi Afrika materigining yozuvsiz xaritasida A harfi bilan qaysi tabiat zonasi o‘rni Ko‘rsatilgan?",["Sernam ekvatorial o‘rmanlar","Savanna va siyrak o‘rmonlar","Fasliy nam o‘rmonlar","Chalacho‘llar va cho‘llar"],1,"gx45_186"]);
+GEO_OCHIQ.push(["Agar Sayram cho‘qqisining har 90 metr balandligidan gorizontallar o‘tkazilsa, bu cho‘qqini nechta gorizontal kesib o‘tadi?",["43 ta","34 ta","28 ta","47 ta"],3,null]);
+GEO_OCHIQ.push(["Berilgan topografik sxemada botiq tasvirlangan. Ushbu botiqning 4-raqamli gorizantal dengiz sathidan 400 m pastda bo‘lsa, 2-raqamli gorizantalning dengiz sathidan qancha pastda ekanligini aniqlang?",["300 m","200 m","400 m","140 m"],1,"gx45_190"]);
+GEO_OCHIQ.push(["Tasvirdagi qaysi nuqtada havo harorati eng yuqori bo‘ladi?",["1","3","4","5"],2,"gx45_192"]);
+GEO_OCHIQ.push(["Quyidagi berilgan topografik xaritada O‘rta osiyo tog‘laridan biri tasvirlangan bo‘lsa, 4-raqamli gorizontalda qaysi mintaqa berilganligini aniqlang.",["Cho‘l mintsqasi","Chalacho‘llar mintaqasi","Dasht mintaqasi","O‘rmon dasht va o‘rmon mintaqasi"],0,"gx45_194"]);
+GEO_OCHIQ.push(["Quyidagi tasvirda 3 - raqami uchun eng xos javob variantini aniqlang.",["Keng bargli o‘rmonlar","Aralash o‘rmonlar","Tayga","Subalp va alp o‘tloqlari"],1,"gx45_195"]);
+GEO_OCHIQ.push(["Quyidagi topografik chizmada har bir gorizontal 500 metrdan o‘tgan. 4 va 2-gorizontallarda tasvirlangan nuqtalarning havo haroratlari orasidagi farqlarni aniqlang”",["6°C","12°C","4,5°C","7,6°C"],0,"gx45_196"]);
+GEO_OCHIQ.push(["Grafikdagi ma’lumotlar asosida 2000-yilda shahar aholisi tabiiy va mexanik o‘sish hisobiga necha kishiga ko‘payganini aniqlang. (jami aholi yil boshida 100 000 kishi).",["400","1100","500","4000"],0,"gx45_197"]);
+GEO_OCHIQ.push(["Grafikdagi ma’lumotlar asosida o‘lim va emigratsiya hisobiga aholi soni kamayishining eng past ko‘rsatgichi qaysi yilda qayd etilganini aniqlang.",["2000","1990","2015","1995"],1,"gx45_198"]);
+GEO_OCHIQ.push(["10-soat mintaqasida joylashgan A nuqtada 2-mart soat 01:50 bo‘lsa, B nuqtadagi sanani va vaqtni toping.",["1-mart, 05:50","2-mart, 05:50","3-mart, 04:50","1-mart, 03:50"],0,"gx45_199"]);
+GEO_OCHIQ.push(["0° janubiy kenglik va 10° Janubiy kenglik orasida joylashgan nuqtani aniqlang.",["Atlas","Efiopiya tog‘lari","Sharqiy Afrika yassitog‘ligi","Kap to‘g‘lari"],2,"gx45_200"]);
+GEO_OCHIQ.push(["Agar quyidagi chizmada gorizontallar har 50 metrdan o‘tkazilgan bo‘lsa, A nuqtaning mutlaq balandligini aniqlang.",["1050 m","950 m","1000 m","1400 m"],0,"gx45_201"]);
+GEO_OCHIQ.push(["Agar 110° sharqiy uzunlikdagi meridianda kunduzi tush payti (mahalliy vaqt 12:00) bo‘lsa, qaysi meridianda ertalab (mahalliy vaqt 06:00)bo‘ladi?",["20° shq.u.","180° shq.u.","135° g‘b.u.","165° shq.u."],0,null]);
+GEO_OCHIQ.push(["Berilgan tasvir uchun quyidagi javob variantlaridan qaysi biri III raqamga mos kelishini toping?",["Cho‘l","Adir","Yaylov","Tog‘"],3,"gx45_147"]);
+GEO_OCHIQ.push(["O‘rta Osiyoning sxematik xaritasida Balxashbo‘yi tekisligi qaysi raqam bilan berilganligini aniqlang?",["1","2","3","4"],3,"gx45_204"]);
+GEO_OCHIQ.push(["Quyidagi O‘rta Osiyoning yozuvsiz xaritasida B harfi bilan qaysi tabiiy geografik rayoni ko‘rsatilganligini aniqlang?",["Markaziy Tyanshan to‘g‘lari","Janubiy yosh tog‘lar","Batxiz-qorabel qirlari","Janubiy tyanshan tog‘lari"],0,"gx45_151"]);
+GEO_OCHIQ.push(["Quyida berilgan tasvirda yer va quyosh harakati bilan bog‘liq bo‘lgan perigeliy hodisasi qaysi raqam bilan berilgan?",["II","III","IV","I"],1,"gx45_168"]);
+GEO_OCHIQ.push(["Berilgan tasvirdan foydalanib A nuqtadagi havo haroratini aniqlang.",["27,6˚C","20,4˚C","19,3˚C","18˚C"],3,"gx45_155"]);
+GEO_OCHIQ.push(["Quyidagi okean tubi relyefi rasmida dengiz sathi va abissal qaysi raqamlar bilan berilgan?",["3, 5","4, 6","2, 6","1, 6"],3,"gx45_159"]);
+GEO_OCHIQ.push(["Berilgan tasvirda usta turgan nuqtaga nisbatan zavodning yo‘nalish azimuti shimoli-g‘arb tomonga to‘g‘ri kelsa, mayoqning yo‘nalish azimutini aniqlang?",["Janubi-g‘arb","Shimoliy-shimoli-g‘arb","Shimoliy-sharq-sharq","Shimoli-g‘arb"],2,"gx45_161"]);
+GEO_OCHIQ.push(["Toshkent shahrida (geografik koordinatasi 41° sh.k va 69° shq.u) turgan sayyoh soat 12:00 da Izmir shahrida (uning geografik koordinatasi 38°24ꞌsh.k va 27°09ꞌshq.u) turgan sayyohga qo‘ng‘iroq qildi, xuddi shu vaqtda Izmir shahrida soat necha bo‘lganini aniqlang?",["9:12","14:32","10:12","15:00"],0,null]);
+GEO_OCHIQ.push(["Yevrosiyo materigining xaritasida A nuqta bilan qaysi tabiiy geografik o‘lkasi berilgan?",["Sharqiy sibir","Markaziy Osiyo","G‘arbiy sibir","Sharqiy Osiyo"],1,"gx45_163"]);
+GEO_OCHIQ.push(["Quyida berilgan tasvirda daryoning kundalang qirqimida daryo qayiri qaysi harf bilan tasvirlangan?",["C","D","B","A"],2,"gx45_164"]);
+GEO_OCHIQ.push(["Quyidagi jadval asosida olimlar va ularga tegishli bo‘lgan asarlarni moslashtiring.",["I-d, II-a","I-b, II-c","I-a, II-b","I-c, II-a"],3,"gx45_213"]);
+GEO_OCHIQ.push(["Shimoliy Amerika materigining yozuvsiz xaritasida 5 raqami ostida qaysi iqlim mintaqasi berilganligini aniqlang?",["Tropik","Subtropik","Mo‘tadil","Subekvotorial"],0,"gx45_214"]);
+GEO_OCHIQ.push(["Quyidagi tasvirdan foydalanib zilzila bo‘layotgan hududning epotsentri qaysi raqamda berilganligini toping.",["4","2","3","1"],1,"gx45_170"]);
+GEO_OCHIQ.push(["Berilgan tasvirda C nuqtaga nisbatan ufqning A tomoni sharq tomonida joylashgan bo‘lsa, B nuqtani ufqning qaysi tomonida ekanligini aniqlang?",["Janubiy-janubi-g‘arb","Shimoliy-shimoli-g‘arb","janub-janubi-sharq","Shimoliy-g‘arb-g‘arb"],2,"gx45_171"]);
+GEO_OCHIQ.push(["Diagrammadan foydalanib mintaqa aholisi 2015-yilda necha foizga (%) ko‘payganini aniqlang.",["1,4%","0,5%","1,9%","0,9%"],2,"gx45_172"]);
+GEO_OCHIQ.push(["Quyidagi yer qatlamlarining aragrafik tasviridan 6 raqami bilan qaysi qatlam berilgan?",["Cho‘kindi qatlam","Granit qatlam","Bazalit qatlam","Quyi mantiya"],3,"gx45_173"]);
+GEO_OCHIQ.push(["Shimoliy Amerika materigining yozuvsiz Xaritasida 2 va 4 raqamlar bilan qaysi yarimorol va qo‘ltiq tasvirlangan?",["Kaliforniya, Alyaska","Vankuver, Meksika","Labrador, Gudzon","Kalifoniya, Gudzon"],2,"gx45_220"]);
+GEO_OCHIQ.push(["Ushbu tasvirdagi 1-raqamdagi nuqtaning mutloq balandligi 4200 m, 1 va 3- nuqtalarning nisbiy balandligi 2800 m ga teng, 4-nuqtada harorat 0˚ C ga teng bo‘lsa, 3-nuqtadagi havo bosimni aniqlang.",["550 mm Hg","630 mm Hg","620 mm Hg","650 mm Hg"],2,"gx45_177"]);
+GEO_OCHIQ.push(["Berilgan tasvir uchun quyidagi javob variantlaridan qaysi biri IV raqamga mos kelishini toping?",["Cho‘l","Adir","Yaylov","Tog‘"],2,"gx45_147"]);
+GEO_OCHIQ.push(["Agar havo harorati +30° C, havoning nisbiy namligi 70 % bo‘lsa, 1 m3 havoning to‘yinishi uchun qancha suv bug‘i kerak bo‘ladi? (30℃ haroratda 1 m3 havo o‘zida 30 g suv bug‘ini tutib tura oladi)",["7.6 g","11 g","9 g","13 g"],2,null]);
+GEO_OCHIQ.push(["Topografik xaritada Akonkagua cho‘qqisining har 100 metr balandligidan gorizontallar o‘tkazilsa, bu cho‘qqini nechta gorizontallar bilan tasvirlash mumkin?",["69 ta","56 ta","67 ta","58 ta"],0,null]);
+GEO_OCHIQ.push(["A nuqtaning mutloq balandligi 4320 metr, B nuqtada Havo harorati -16˚ C ga teng, B nuqta va C nuqta orasidagi nisbiy balandlik 260 metr, D nuqtada harorat 0˚ C bo‘lsa, C nuqtadagi havo bosimi va haroratini toping?",["368 mm Hg, -16,6˚ C","567,4 mm Hg, 11,3˚ C","467,4 mm Hg, -17,6˚ C","612,3 mm Hg, 18,7˚ C"],2,"gx45_226"]);
+GEO_OCHIQ.push(["Tog‘ning nisbiy balandligi 4200 m bo‘lib, cho‘qqisida havo harorati -7℃ bo‘lsa, tog‘ etagida havo harorati qanchaga teng bo‘lishini aniqlang.",["24,6℃","24,8℃","18,2℃","-24,6℃"],2,null]);
+GEO_OCHIQ.push(["Tog‘ etagida havo harorati 15,5℃, cho‘qqisida esa -2,8℃ ga teng bo‘lsa, cho‘qqining nisbiy balandligini aniqlang.",["2783 m","3050 m","6700 m","2934 m"],1,null]);
+GEO_OCHIQ.push(["Quyidagi xarita-chizmada Bo‘kantov va Tomditov To‘g‘lari qaysi raqam bilan berilgan?",["5 va 1","1 va 3","1 va 4","2 va 5"],1,"gx45_229"]);
+GEO_OCHIQ.push(["Quyida ko‘rsatilgan B nuqtadagi havo haroratini toping?",["27,6°C","27°C","26°C","26,4°C"],0,"gx45_232"]);
+GEO_OCHIQ.push(["22-iyun kuni Quyishning tik tepadan o‘tishi quyidagi rasmda qaysi raqam bilan belgilangan?",["1","2","6","5"],1,"gx45_234"]);
+GEO_OCHIQ.push(["Quyidagi grafikda hudud aholisi tabiiy va mexanik o‘sish hisobiga 2000- yilda necha kishiga ko‘payganini aniqlang? ( Shahar aholisi yil boshida 200 000 kishi ).",["1200 kishi","2300 kishi","1400 kishi","2000 kishi"],2,"gx45_235"]);
+GEO_OCHIQ.push(["Quyida berilgan daryolar sistemasi tasvirida daryo mansabi qaysi raqam bilan berilgan?",["2","3","6","3"],2,"gx45_236"]);
+GEO_OCHIQ.push(["Rasmda “g” harfi bilan daryo vodiysini qaysi elementi ko‘rsatilgan?",["estuariy","irmoqlar","suvayirg‘ich","daryo manbai"],1,"gx45_238"]);
+GEO_OCHIQ.push(["Jahon xo‘jaligining asosiy sohalari birlashtirilgan sektorlar va ularga tegishli bo‘lgan korxonalar to‘g‘ri moslashtirilgan javobni toping. 1) birlamchi sektor 2) ikkilamchi sektor 3) uchlamchi sektor a) “Milliy” stadion b) “Xadicha” buyurtmaxonasi c) Sherabod sement zavodi",["1-b, 2-c, 3-a","1-c, 2-a, 3-b","1-a, 2-b, 3-c","1-a, 2-c, 3-b"],0,null]);
+GEO_OCHIQ.push(["Agar 45◦ sharqiy uzunlikdagi meridianda kunduzi tush payti (mahalliy vaqt 12:00) bo‘lsa, qaysi meridianda ertalab (mahalliy vaqt 06:00) bo‘ladi?",["45◦ g‘.u.","135◦ shq.u.","135◦ g‘.u.","165◦ shq.u"],0,null]);
+GEO_OCHIQ.push(["Hayotboshi cho‘qqisidan uning adirlarigacha bo‘lgan nisbiy balandlik 1800 metr. Agar Hayotboshi cho‘qqisida havo harorati +18 ℃ ni tashkil etsa, uning etagidagi adirlarda havo harorati necha gradusga teng bo‘ladi?",["26,8°C","28,8°C","24,6°C","30,8°C"],1,null]);
+GEO_OCHIQ.push(["Quyidagi xaritada IV va V raqamlari qaysi obyektlar tasvirlangan?",["Nurota, Turkiston tog‘lari","Qo‘ytosh, Zarafshon tizmasi","Nurota, Qo‘ytosh tog‘lari","Aydarko‘l, Tuzkon ko‘llari"],2,"gx45_258"]);
+GEO_OCHIQ.push(["Yevropaning yozuvsiz xaritasida 1 va 2 raqamlar bilan qaysi davlatlar tasvirlangan?",["Polsha va Vengriya","Germaniya va Ruminiya","Fransiya va Chexiya","Germaniya va Slovakiya"],1,"gx45_262"]);
+GEO_OCHIQ.push(["Havo harorati +20⁰C bo‘lganda, nisbiy namlik 60% ga teng bo‘lsa, 1 metr kub havodagi namlik miqdorini aniqlang.",["8,9 gramm","9,6 gramm","11,4 gramm","10,2 gramm"],3,null]);
+GEO_OCHIQ.push(["Berilgan rasm quyidagi qaysi qonuniyatni o‘zida namoyon etadi?",["Sektorlik","Koriolis kuchi","Balandlik mintaqalanishi","Zonallik"],1,"gx45_266"]);
+GEO_OCHIQ.push(["100° sharqiy uzunlikdagi meridian Yevroosiyo materigini 76° shimoliy kenglik va 13° shimoliy kenglikda kesib o‘tsa, Yevoosiyo materigi ushbu meridian bo‘ylab qancha masofaga cho'zilgan?",["7345 km","5634 km","6289 km","6993 km"],3,null]);
+GEO_OCHIQ.push([". Quyidagi rasmda alohida rang bilan belgilangan hududlar qaysi tabiat zonasida joylashgan?",["Balandlik mintaqalari","Savanna va siyrak o‘rmonlar","Qattiq bargli doimiy yashil o‘rmonlar va butazorlar","Chalacho‘l va cho‘llar"],3,"gx45_268"]);
+GEO_OCHIQ.push(["Quyidagi chizmada II raqami ostida qaysi ko‘l tasvirlangan?",["Arnasoy","Shardara","Tuzkon","Aydarko‘l"],2,"gx45_269"]);
+GEO_OCHIQ.push(["Quyidagi chizmada VI raqami ostida qaysi obyekt tasvirlangan?",["Nurota","Zarafshon","Morguzar","Turkiston"],1,"gx45_270"]);
+GEO_OCHIQ.push(["Jadval ma’lumoti asosida topshiriqni bajaring? Soat 10::00 da 1m3 havoning to‘yinishi uchun necha gramm suv bug‘i kerak bo‘lishini aniqlang.",["23,4 g","21,3 g","11,6 g","6,6 g"],3,"gx45_272"]);
+GEO_OCHIQ.push(["Quyidagi xaritada Qizilqum cho‘li qaysi raqam ostida berilgan?",["6","5","7","3"],0,"gx45_273"]);
+GEO_OCHIQ.push(["Tog‘ etagidagi mutlaq balandligi 442 metr bo‘lgan A va shu tog‘ cho‘qqisidagi B nuqtalar orasidagi nisbiy balandlik 750 metrni tashkil qiladi. Agar A nuqtada havo bosimi 752 mm Hg bo‘lsa, B nuqtadagi havo bosimini aniqlang.",["623 mm Hg","762 mm Hg","742 mm Hg","677 mm Hg"],3,null]);
+GEO_OCHIQ.push(["Quyidagi yozuvsiz xaritada Pireney, Hindiston va Arabiston yarimorollari qaysi raqamlar bilan belgilanganligini mos ravishda toping.",["1, 4, 2","2, 5, 4","1, 3, 6","3, 5, 6"],0,"gx45_275"]);
+GEO_OCHIQ.push(["Yarimsharlar xaritasidan foydalanib topshiriqlarni bajaring. Xaritadagi G nuqtada (140° g‘.u) mahalliy vaqt 14:00 bo‘lganda D(160° shq.u) nuqtadagi mahalliy vaqtni toping.",["04:00","20:00","14:00","17:00"],2,"gx45_277"]);
+GEO_OCHIQ.push(["Samolyot Toshkentdan soat 11:00 da uchib ketib, Tokioga u yerdagi vaqt bilan soat 19:00 da qo‘ndi. Toshkent IV-soat mintaqasi, Tokio esa IX-soat mintaqasida joylashgan bo‘lsa, samolyot ikki shahar orasidagi parvozni qancha vaqtda amalga oshirgan?",["5 soat","3 soat","4 soat","7 soat"],1,null]);
+GEO_OCHIQ.push(["Quyidagi yozuvsiz xaritadan 4 raqami bilan qaysi hudud tasvirlanganligini aniqlang?",["Alyaska y.o","Kaliforniya y.o","Florida y.o","Labrador y.o"],0,"gx45_281"]);
+GEO_OCHIQ.push(["Quyidagi grafik va jadvaldan foydalanib soat 13:00 da havoning namga to‘yinishi uchun qancha suvi kerakligini aniqlang?",["18 gr","5.2 gr","12 gr","15 gr"],2,"gx45_283"]);
+GEO_OCHIQ.push(["Ushbu diagrammadan foydalanib, yillik ampilitudani toping.",["30°C","42°C","40°C","12°C"],2,"gx45_284"]);
+GEO_OCHIQ.push(["Urganch shahrida yil davomida quyidagi o‘rtacha oylik haroratlar kuzatildi: Yanvar -4,8℃; fevral 1,7℃; mart 4,8℃; aprel 13,9℃; may 21,1℃; iyun 25,7℃; iyul 27,5℃; avgust 25,2℃; sentabr 19℃; oktabr 11,1℃; noyabr 3,3℃; dekabr 2,3℃. Ushbu ma’lumotlar asosida Urganch shahridagi o‘rtacha yillik haroratni aniqlang.",["14,8℃","12,5℃","33,3℃","18,8℃"],1,null]);
+GEO_OCHIQ.push(["Quyidagi rasmda Zond va Tonga cho‘kmalari qaysi raqamlar bilan ko‘rsatilgan?",["4 va 7","3 va 6","1 va 2","5 va 6"],3,"gx45_288"]);
+GEO_OCHIQ.push(["Materiklar va ularga oid ma’lumotlar to‘g‘ri moslashtirilgan javobni toping. 1) Avstraliya; 2) Yevrosiyo; 3) Afrika a) bu yerda ekvatorial o‘rmonlar zonasi gileya deb ham ataladi; b) Materikning g‘arbiy qismida qattiq bargli o‘rmonlar va butalar, janubi-sharqida evkalipt o‘rmonlari mavjud; c) Tropik mintaqada chalacho‘l va cho‘l zonalari hamda savannalar mavjud, iyulning o‘rtacha harorati +30° ga teng; d) O‘lkada qimmatbaho mebellar ishlanadigan qizil daraxt, seyba, palma, muskat daraxtlari o‘sadi; e) Cho‘l zonasida efemer o‘simliklar bilan birga doimiy yashil butazorlar (evkalipt, akatsiya) dan iborat o‘tib bo‘lmas changalzorlar mavjud; f) Aralash o‘rmonlar materikning g‘arbiy va sharqiy qismlarida joylashgan, asosiy qismi chimli podzol tuproqlar bilan qoplangan.",["1-b, e 2-a, c 3-d, f","1-a, f 2-b, d 3-c,e","1-b, e 2-c, f 3-a, d","1-a, b, 2-c, e 3-d,f"],2,"gx45_289"]);
+GEO_OCHIQ.push(["Sargasso dengizining 500 litr suvidan qancha tuz olsa bo‘ladi?",["21 kg","18,5 kg","19,5 kg","23,5 kg"],1,null]);
+GEO_OCHIQ.push(["Yozuvsiz xaritada Surxondaryo viloyatining Jarqo‘rg‘on va Denov sanoat punktlari qaysi raqamlar bilan tasvirlangan?",["2 va 3","1 va 4","5 va 3","2 va 4"],0,"gx45_295"]);
+GEO_OCHIQ.push(["Afrikaning yozuvsiz xaritasida 1 va 2 raqamlar bilan qaysi tabiiy geografik obyektlari ifodalangan?",["Atlas tog‘lari va Kap tog‘lari","Axaggar tog‘lari va Drakon tog‘lari","Darfur platasi va Namib cho‘li","Kattara botig‘i va Efiopiya tog‘i"],2,"gx45_297"]);
+GEO_OCHIQ.push(["Xaritada berilgan qaysi raqam bilan Afrika materigining dengiz sathidan eng past nuqtasi ko‘rsatilgan?",["2","4","1","3"],0,"gx45_299"]);
