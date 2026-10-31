@@ -773,10 +773,7 @@ function start(){
  /* ko'rilgan savollar: bazaning hammasi ishlatilmaguncha qayta chiqmaydi */
  var tot=(window.GEO_OCHIQ||[]).length+(window.GEO_PED||[]).length;if(Object.keys(SEEN).length>tot*0.8)SEEN={};v.forEach(function(x){SEEN[x.id]=1});try{localStorage.setItem('geo5_seen_at',JSON.stringify(SEEN))}catch(e){}
  AT.v=v;AT.a=[];AT.fin=false;AT.t0=new Date();window.atDone=false;cells();atShow(0);return true}
-$('b2').onclick=function(){
- if(!atStarted){if(!start())return;atStarted=true;atRem=120*60*1000}
- $('cover').classList.add('hid');$('att').classList.remove('hid');
- atEnd=Date.now()+atRem;atTick();clearInterval(atTid);atTid=setInterval(atTick,250);atShow(atCur||0);scrollTo(0,0)};
+var _b2w=$('b2').onclick;$('b2').onclick=function(){if(!atStarted&&!window.atDone){if(!start())return}return _b2w.apply(this,arguments)};
 $('atpv').onclick=function(){atShow(atCur-1)};$('atnx').onclick=function(){atShow(atCur+1)};
 $('atg').onclick=function(e){if(e.target.dataset.i!=null)atShow(+e.target.dataset.i)};
 $('atsub').onclick=function(){var un=AT.v.length-AT.a.filter(function(x){return x!=null}).length;
