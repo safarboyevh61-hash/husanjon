@@ -541,11 +541,16 @@ function raschBall(th,raw,max){if(raw>=max)return 75;let L=48+10.5*th;if(L>70)L=
 function raschGrade(b){return b>=70?'A+':b>=65?'A':b>=60?'B+':b>=55?'B':b>=50?'C+':b>=45?'C':null}
 function raschLvl(){const all=EQ.map(e=>e.b).concat(...EW.map(e=>e.b)),m=all.reduce((a,b)=>a+b,0)/Math.max(1,all.length);return m<0.034?'osonroq':m<0.071?'o‘rtacha':'qiyinroq'}
 function pickExam(){
+ ST.a={};ST.w={};ST.cur=0;
  const rnd=()=>{try{const a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]/4294967296}catch(e){return Math.random()}};
  const sh=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a};
  const ld=k=>{try{return new Set(JSON.parse(localStorage.getItem(k)||'[]'))}catch(e){return new Set()}};
  const sv=(k,s)=>{try{localStorage.setItem(k,JSON.stringify([...s]))}catch(e){}};
  const take=(pool,seen,n,not)=>{const p=pool.filter(i=>!not.has(i)),f=sh(p.filter(i=>!seen.has(i)));return f.concat(sh(p.filter(i=>seen.has(i)))).slice(0,n)};
+const takeT=(pool,seen,n,not,bf)=>{const p=pool.filter(i=>!not.has(i));if(p.length<=n)return take(pool,seen,n,not);const bs=p.map(bf).sort((x,y)=>x-y),lo=bs[Math.floor(bs.length*.3)],hi=bs[Math.floor(bs.length*.8)],L=[[],[],[]];
+  sh(p.filter(i=>!seen.has(i))).concat(sh(p.filter(i=>seen.has(i)))).forEach(i=>{const b=bf(i);L[b<lo?0:b>hi?2:1].push(i)});
+  const e=Math.round(n*.3),h=Math.round(n*.2),plan=[e,n-e-h,h];let out=[],need=0;for(let k=0;k<3;k++){const t=L[k].splice(0,plan[k]);out=out.concat(t);need+=plan[k]-t.length}
+  if(need>0)out=out.concat([].concat(L[1],L[0],L[2]).slice(0,need));return out.sort((x,y)=>bf(x)-bf(y))};
  const okO=i=>{const q=OPENQ[i];return q&&Array.isArray(q[1])&&q[1].length>=2&&Number.isInteger(q[2])&&q[2]>=0&&q[2]<q[1].length};
  const allO=OPENQ.map((_,i)=>i).filter(okO);let so=ld('geo5_seen_o');if(allO.filter(i=>!so.has(i)).length<35)so=new Set();
  /* 33–35: moslashtirish (A–F) topshiriqlari — bitta to'plamdan, tartib bilan */
@@ -554,11 +559,11 @@ function pickExam(){
  const G=sh(Object.values(gm).filter(g=>g.length===3&&new Set(g.map(num)).size===3).map(g=>g.sort((a,b)=>num(a)-num(b))));
  const gall=new Set([].concat(...G));
  let tail=(G.find(g=>g.every(i=>!so.has(i)))||G[0]||[]).slice();const used=new Set(gall);
- let head=take(allO,so,35-tail.length,used);
+ let head=takeT(allO,so,35-tail.length,used,i=>bOpen(OPENQ[i]));
  const oi=head.concat(tail);oi.forEach(i=>so.add(i));sv('geo5_seen_o',so);
  const okW=i=>{const w=WRITQ[i];return w&&Array.isArray(w[1])&&w[1].length>0};
  const allW=WRITQ.map((_,i)=>i).filter(okW);let sw=ld('geo5_seen_w');if(allW.filter(i=>!sw.has(i)).length<10)sw=new Set();
- const two=allW.filter(i=>WRITQ[i][1].length===2);let wi=take(two.length>=10?two:allW,sw,10,new Set());wi.forEach(i=>sw.add(i));sv('geo5_seen_w',sw);
+ const two=allW.filter(i=>WRITQ[i][1].length===2);let wi=takeT(two.length>=10?two:allW,sw,10,new Set(),i=>{const w=WRITQ[i],k=w[1].map((_,j)=>bWrit(w,j));return k.reduce((x,y)=>x+y,0)/k.length});wi.forEach(i=>sw.add(i));sv('geo5_seen_w',sw);
  EQ=oi.map(i=>({q:OPENQ[i],o:i,b:bOpen(OPENQ[i])}));
  EW=wi.map(i=>({w:WRITQ[i],k:WKEY[i],o:i,b:WRITQ[i][1].map((_,k)=>bWrit(WRITQ[i],k))}));
  ST.a={};ST.w={};ST.cur=0}
@@ -709,4 +714,74 @@ var cv=g('cvbox');if(cv&&!g('cvback')){var x=document.createElement('button');x.
 })();
 </script>
 <script>(function(){function init(w){var d=w.querySelector('.kcd');function set(v){d.textContent=v}w.addEventListener('click',function(e){var b=e.target.closest('.kcb');if(!b)return;var k=b.getAttribute('data-k'),v=d.textContent;if(k==='AC')set('0');else if(k==='DEL')set(v.length>1&&v!=='Xatolik'?v.slice(0,-1):'0');else if(k==='='){try{var x=v.replace(/%/g,'/100');if(!/^[0-9+\-*\/.() ]+$/.test(x))throw 0;var r=Function('"use strict";return ('+x+')')();if(!isFinite(r))throw 0;if(r%1!==0)r=parseFloat(r.toFixed(4));set(String(r))}catch(_){set('Xatolik');setTimeout(function(){set('0')},1200)}}else{if(v==='0'&&k!=='.'||v==='Xatolik')set(k);else set(v+k)}})}Array.prototype.forEach.call(document.querySelectorAll('.kcalc'),init);Array.prototype.forEach.call(document.querySelectorAll('.kctg'),function(b){b.addEventListener('click',function(){var c=b.nextElementSibling;var h=c.classList.toggle('kchid');b.textContent=h?'🧮 KALKULYATOR':'✖ KALKULYATORNI YOPISH'})})})()</script>
+<script>
+/* ATTESTATSIYA — Rasch (40 Geografiya + 10 Pedagogik mahorat) */
+(function(){
+var AT={v:[],a:[],t0:null,fin:false};var SEEN={};try{SEEN=JSON.parse(localStorage.getItem('geo5_seen_at')||'{}')||{}}catch(e){SEEN={}}
+var LT=['A','B','C','D'];
+function shuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+var LO=-1,HI=1;function lvl(b){return b<LO?0:b>HI?2:1}
+function setQ(items){var b=items.map(function(x){return x.b}).sort(function(a,c){return a-c});if(b.length>10){LO=b[Math.floor(b.length*.3)];HI=b[Math.floor(b.length*.8)]}}
+/* bitta bo'lim: [oson,o'rtacha,murakkab] reja; yetmasa — eng yaqin chekkadan to'ldiriladi */
+function pick(items,plan){
+ setQ(items);var g=[[],[],[]];items.forEach(function(x){g[lvl(x.b)].push(x)});g=g.map(function(a){return shuf(a.filter(function(x){return !SEEN[x.id]})).concat(shuf(a.filter(function(x){return SEEN[x.id]})))});
+ var out=[],need=0;
+ for(var k=0;k<3;k++){var t=g[k].splice(0,plan[k]);out=out.concat(t);need+=plan[k]-t.length}
+ if(need>0){var rest=g[0].concat(g[1],g[2]);rest.sort(function(a,b){return a.b-b.b});
+  /* o'rtachaga yaqinroq (|b| kichik) savollar avval */
+  rest.sort(function(a,b){return Math.abs(a.b)-Math.abs(b.b)});out=out.concat(rest.splice(0,need))}
+ return out.sort(function(a,b){return a.b-b.b})}
+function build(){
+ var geo=[],ped=[];
+ (window.GEO_OCHIQ||[]).forEach(function(q){if(q&&q[0]&&Array.isArray(q[1])&&q[1].length===4&&typeof q[2]==='number')geo.push({q:q,b:bOpen(q),f:'g',id:'g'+(window.GEO_OCHIQ.indexOf(q))})});
+ (window.GEO_PED||[]).forEach(function(q){if(q&&q[0]&&Array.isArray(q[1])&&q[1].length>=2&&typeof q[2]==='number')ped.push({q:q,b:bOpen(q),f:'p',id:'p'+(window.GEO_PED.indexOf(q))})});
+ var seenQ={};var u=function(x){var k=String(x.q[0]);if(seenQ[k])return false;seenQ[k]=1;return true};
+ geo=geo.filter(u);ped=ped.filter(u);
+ return pick(geo,[12,20,8]).concat(pick(ped,[3,5,2]))}
+function q(i){return AT.v[i]}
+function cells(){$('atg').innerHTML=AT.v.map(function(_,i){return '<b data-i="'+i+'"'+''+'>'+(i+1)+'</b>'}).join('')}
+function mk(){[].forEach.call($('atg').children,function(b,k){b.classList.toggle('d',AT.a[k]!=null);b.classList.toggle('cur',k===atCur)})}
+window.atShow=function(i){
+ if(!AT.v.length)return;atCur=i;var x=q(i),qq=x.q,sec=i<40?'Asosiy fan':'Pedagogik mahorat';
+ var h='<div class="tzcnt">'+sec+'</div><div class="q"><b>'+(i+1)+'-savol.</b> '+qq[0]+'</div>'+(qq[3]&&SV[qq[3]]?SV[qq[3]]:'')+
+  qq[1].map(function(o,k){return '<button class="opt '+(AT.a[i]===k?'on':'')+'" data-k="'+k+'"><b>'+LT[k]+')</b> '+o+'</button>'}).join('');
+ $('atq').innerHTML=h;
+ [].forEach.call($('atq').querySelectorAll('.opt'),function(b){b.onclick=function(){if(AT.fin||window.atDone)return;AT.a[i]=+b.dataset.k;atShow(i)}});
+ $('atpv').disabled=i===0;$('atnx').disabled=i===AT.v.length-1;mk()};
+window.atTick=function(){var s=Math.max(0,Math.round((atEnd-Date.now())/1000)),f=function(n){return String(n).padStart(2,'0')};
+ $('atm').textContent=f(s/3600|0)+':'+f(s/60%60|0)+':'+f(s%60);$('atm').classList.toggle('low',s<600);
+ if(s<=0&&!AT.fin){clearInterval(atTid);try{ringAlarm()}catch(e){}setTimeout(function(){window.atDone=true;atFinish()},400)}};
+function atFinish(){
+ if(AT.fin)return;AT.fin=true;clearInterval(atTid);var t1=new Date();
+ var ok=AT.v.map(function(x,i){return AT.a[i]===x.q[2]});var tp=ok.filter(Boolean).length,n=AT.v.length;
+ var it=AT.v.map(function(x,i){return {b:x.b,x:ok[i]?1:0}});
+ var th=raschTheta(it),pct=Math.round(tp/n*100);
+ var f=function(v){return String(v).padStart(2,'0')},hm=function(d){return f(d.getHours())+':'+f(d.getMinutes())},d0=AT.t0;
+ var ds=f(d0.getDate())+'.'+f(d0.getMonth()+1)+'.'+d0.getFullYear();
+ var cell=function(a,z){var h='';for(var i=a;i<z;i++){var o=ok[i],un=AT.a[i]==null;h+='<span style="display:inline-block;width:42px;height:42px;line-height:38px;text-align:center;margin:4px;border-radius:'+(i>=40?'50%':'10px')+';font-weight:800;color:'+(o?'#0a7a3c':'#b0243a')+';background:'+(o?'#d9f7e6':'#fde0e4')+';border:2px '+(o?'solid #2cb86a':'dashed #e5566d')+'">'+(i+1)+'</span>'}return h};
+ var gt=ok.slice(0,40).filter(Boolean).length,pt=ok.slice(40).filter(Boolean).length;
+ var R=$('res');
+ R.innerHTML='<div style="background:#fff;color:#123;border-radius:16px;padding:16px;margin:10px 14px"><div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap"><div style="font-size:38px;font-weight:900;color:#1b6bff;text-align:center">'+pct+'%<small style="display:block;font-size:12px;color:#678;font-weight:600">Bajarildi</small></div><div style="line-height:1.75"><b>Jami ball:</b> <span style="color:#1b6bff;font-weight:900;font-size:20px">'+pct+'</span><br><b>Sanasi:</b> '+ds+'<br><b>Boshlandi:</b> '+hm(d0)+'<br><b>Yakunlandi:</b> '+hm(t1)+'</div></div>'+
+ '<div style="margin-top:10px;font-size:13px;color:#456">To‘g‘ri: <b>'+tp+'/'+n+'</b> · Asosiy fan '+gt+'/40 · Pedagogik mahorat '+pt+'/10 · θ = '+th.toFixed(2)+' logit (taxminiy)</div>'+
+ '<div style="margin:12px 0 4px;font-size:12px;color:#456;display:flex;gap:12px;flex-wrap:wrap"><span><b style="color:#2cb86a">■</b> To‘g‘ri</span><span><b style="color:#e5566d">▫</b> Noto‘g‘ri / javobsiz</span></div>'+
+ '<h4 style="margin:12px 0 2px;color:#456">Asosiy fan</h4><div>'+cell(0,Math.min(40,n))+'</div><h4 style="margin:12px 0 2px;color:#456">Pedagogik mahorat</h4><div>'+cell(40,n)+'</div></div>'+
+ '<div style="padding:0 14px 30px"><button class="btn s" id="atre">⬅️ BOSH SAHIFAGA</button></div>';
+ $('att').classList.add('hid');R.classList.remove('hid');scrollTo(0,0);
+ $('atre').onclick=function(){R.classList.add('hid');$('cover').classList.remove('hid');atStarted=false;AT.v=[];AT.a=[];AT.fin=false;window.atDone=false;['atsub','atpv','atnx'].forEach(function(k){$(k).disabled=false});scrollTo(0,0)}}
+function start(){
+ var v=build();if(v.length<50){ask('Attestatsiya uchun savollar yetarli emas ('+v.length+'/50). Sahifani yangilab qayta urinib ko‘ring.');return false}
+ /* ko'rilgan savollar: bazaning hammasi ishlatilmaguncha qayta chiqmaydi */
+ var tot=(window.GEO_OCHIQ||[]).length+(window.GEO_PED||[]).length;if(Object.keys(SEEN).length>tot*0.8)SEEN={};v.forEach(function(x){SEEN[x.id]=1});try{localStorage.setItem('geo5_seen_at',JSON.stringify(SEEN))}catch(e){}
+ AT.v=v;AT.a=[];AT.fin=false;AT.t0=new Date();window.atDone=false;cells();atShow(0);return true}
+$('b2').onclick=function(){
+ if(!atStarted){if(!start())return;atStarted=true;atRem=120*60*1000}
+ $('cover').classList.add('hid');$('att').classList.remove('hid');
+ atEnd=Date.now()+atRem;atTick();clearInterval(atTid);atTid=setInterval(atTick,250);atShow(atCur||0);scrollTo(0,0)};
+$('atpv').onclick=function(){atShow(atCur-1)};$('atnx').onclick=function(){atShow(atCur+1)};
+$('atg').onclick=function(e){if(e.target.dataset.i!=null)atShow(+e.target.dataset.i)};
+$('atsub').onclick=function(){var un=AT.v.length-AT.a.filter(function(x){return x!=null}).length;
+ if(un)ask(un+' ta savol javobsiz qoldi. Baribir yuborasizmi?',atFinish);else atFinish()};
+})();
+</script>
+<script>(function(){var _f=finish;finish=function(){var r=_f.apply(this,arguments);exStarted=false;exRem=0;return r}})()</script>
 </body></html>
