@@ -380,9 +380,9 @@ ${gsum}</div></div>
 <div class="cr2"><span>Umumiy ballga nisbatan foiz ko‘rsatkichi:</span><b>${pct.toFixed(2)} %</b></div>
 <div class="cr2"><span>Sertifikat darajasi:</span><b>&nbsp;</b></div>
 ${gsum}</div></div>
-<div class="rm">Afsuski, siz yetarli ball to‘play olmadingiz va ushbu sertifikatni qo‘lga kirita olmadingiz! ❌<br>Kallangizni ishlatib, mavzuni qaytadan o‘qib chiqing!</div>
+<div class="rm">Afsuski, siz yetarli ball to‘play olmadingiz va ushbu sertifikatni qo‘lga kirita olmadingiz! ❌</div>
 <div class="note">Sertifikat uchun Rash modeli bo‘yicha kamida 45 ball kerak. Sizda: ${ball.toFixed(2)} ball.</div></div>`;
- R.innerHTML+=`<div class="card"><h1 style="font-size:18px">Natija tahlili</h1>${sc}${scale}</div>${wr.length?`<div class="rob">🤖 Kallangizni ishlating! 🧠<br>Xato yoki javobsiz topshiriqlar: ${wr.join(', ')}</div>`:''}<button class="btn s" onclick="location.reload()">🔄 Qaytadan boshlash</button>`+review();
+ R.innerHTML+=`<div class="card"><h1 style="font-size:18px">Natija tahlili</h1>${sc}${scale}</div>${wr.length?`<div class="rob">Xato yoki javobsiz topshiriqlar: ${wr.join(', ')}</div>`:''}<button class="btn s" onclick="location.reload()">🔄 Qaytadan boshlash</button>`+review();
  scrollTo(0,0)}
 function review(){const st=s=>s.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();let r='';
 EQ.forEach((e,i)=>{const t=e.q[0],o=e.q[1],c=e.q[2],u=ST.a[i],ok=u===c,q=(e.o>=32&&e.o<35)?LB[e.o-32]:st(t);
