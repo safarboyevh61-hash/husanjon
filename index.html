@@ -757,7 +757,7 @@ function atFinish(){
  if(AT.fin)return;AT.fin=true;clearInterval(atTid);var t1=new Date();
  var ok=AT.v.map(function(x,i){return AT.a[i]===x.q[2]});var tp=ok.filter(Boolean).length,n=AT.v.length;
  var it=AT.v.map(function(x,i){return {b:x.b,x:ok[i]?1:0}});
- var th=raschTheta(it),pct=Math.round(tp/n*100);
+ var th=raschTheta(it),pct=Math.round(tp/n*100);try{window.tzAfterAtt&&window.tzAfterAtt({pct:pct,th:th,raw:tp,max:n})}catch(e){}
  var f=function(v){return String(v).padStart(2,'0')},hm=function(d){return f(d.getHours())+':'+f(d.getMinutes())},d0=AT.t0;
  var ds=f(d0.getDate())+'.'+f(d0.getMonth()+1)+'.'+d0.getFullYear();
  var cell=function(a,z){var h='';for(var i=a;i<z;i++){var o=ok[i],un=AT.a[i]==null;h+='<span style="display:inline-block;width:42px;height:42px;line-height:38px;text-align:center;margin:4px;border-radius:'+(i>=40?'50%':'10px')+';font-weight:800;color:'+(o?'#0a7a3c':'#b0243a')+';background:'+(o?'#d9f7e6':'#fde0e4')+';border:2px '+(o?'solid #2cb86a':'dashed #e5566d')+'">'+(i+1)+'</span>'}return h};
@@ -793,5 +793,347 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
   try{if(window.TelegramWebviewProxy){e.preventDefault();TelegramWebviewProxy.postEvent('web_app_open_tg_link',JSON.stringify({path_full:path}));return}}catch(_){}
   try{if(window.webkit&&webkit.messageHandlers&&webkit.messageHandlers.performAction){e.preventDefault();webkit.messageHandlers.performAction.postMessage(JSON.stringify({eventType:'web_app_open_tg_link',eventData:{path_full:path}}));return}}catch(_){}
 },true);
+</script>
+<style id="tzp-css">
+/* ===== TESTUZ PLATFORMA: kabinet, reyting, auditoriya, dasturchi bo'limi ===== */
+.tzsec{padding:14px 12px 150px;max-width:560px;margin:0 auto}
+.tzsec h2{margin:6px 0 4px;text-align:center;color:#fff;font-size:21px;font-weight:900;text-shadow:0 0 12px #00e5ff}
+.tzsec .tzsub{text-align:center;color:#9bd;font-size:13px;margin:0 0 12px;line-height:1.45}
+.tzback{display:block;width:100%;border:0;border-radius:12px;padding:11px;font:800 14px system-ui,sans-serif;color:#fff;background:linear-gradient(135deg,#7a1030,#b0123f);box-shadow:0 0 12px rgba(255,40,90,.45);margin:0 0 10px;cursor:pointer}
+.tzw{margin:0 0 12px;padding:14px;border-radius:16px;border:2px solid #2cff8a;background:linear-gradient(135deg,rgba(10,157,74,.25),rgba(0,40,30,.6));box-shadow:0 0 18px rgba(44,255,138,.35);text-align:center}
+.tzw div{font-size:17px;color:#fff}.tzw b{color:#2cff8a}.tzw small{display:block;color:#bfe;margin:4px 0 10px}
+.tzbtn{display:block;width:100%;border:0;border-radius:12px;padding:12px;font:900 15px system-ui,sans-serif;color:#fff;cursor:pointer;background:linear-gradient(135deg,#0a6cff,#00c8ff);box-shadow:0 0 14px rgba(0,229,255,.45);margin:6px 0}
+.tzbtn.g{background:linear-gradient(135deg,#0a9d4a,#2cff8a);color:#032;box-shadow:0 0 14px rgba(44,255,138,.5)}
+.tzbtn.p{background:linear-gradient(135deg,#7a2cf0,#ff3df2);box-shadow:0 0 14px rgba(255,61,242,.5)}
+.tzbtn.y{background:linear-gradient(135deg,#ffb800,#ffd24a);color:#3a2600;box-shadow:0 0 14px rgba(255,210,74,.5)}
+.tzbtn:disabled{opacity:.55;cursor:default}
+.tzbar{display:flex;align-items:center;gap:10px;padding:10px 12px;margin:0 0 10px;border-radius:14px;background:rgba(10,18,50,.8);border:1px solid #2b4aa8}
+.tzbar .av{flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:900 16px system-ui;color:#032;background:linear-gradient(135deg,#2cff8a,#00e5ff)}
+.tzbar b{display:block;color:#fff;font-size:15px}.tzbar small{color:#9bd;font-size:12px}
+.tzmenu{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 14px}
+.tzmenu button{border:2px solid var(--a,#00e5ff);border-radius:16px;padding:12px 8px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(0,0,0,.35));color:#fff;font:900 14px system-ui,sans-serif;cursor:pointer;box-shadow:0 0 14px color-mix(in srgb,var(--a,#00e5ff) 45%,transparent);text-shadow:0 0 8px var(--a,#00e5ff);line-height:1.25}
+.tzmenu button small{display:block;font:600 11px system-ui;color:#cfe;text-shadow:none;margin-top:4px}
+.tzmenu button.wide{grid-column:span 2}
+.tzcard{background:rgba(10,18,50,.85);border:1px solid #2b4aa8;border-radius:16px;padding:14px;margin:10px 0;box-shadow:0 0 18px rgba(0,229,255,.15)}
+.tzcard h3{margin:0 0 8px;color:#7df9ff;font-size:16px}
+.tzrow{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed rgba(125,249,255,.18);font-size:14px}
+.tzrow:last-child{border-bottom:0}.tzrow span{color:#9bd}.tzrow b{color:#fff;text-align:right}
+.tztiles{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tztile{border-radius:14px;padding:12px 8px;text-align:center;background:rgba(0,0,0,.3);border:1px solid rgba(125,249,255,.25)}
+.tztile b{display:block;font:900 24px system-ui;color:#2cff8a;text-shadow:0 0 10px rgba(44,255,138,.5)}.tztile small{color:#9bd;font-size:12px}
+.tzt{width:100%;border-collapse:collapse;font-size:13px}
+.tzt th{color:#7df9ff;text-align:left;font-weight:800;padding:6px 4px;border-bottom:1px solid #2b4aa8}
+.tzt td{padding:6px 4px;border-bottom:1px solid rgba(43,74,168,.4);color:#e8f1ff;vertical-align:top}
+.tzt tr.me td{background:rgba(44,255,138,.16);color:#fff;font-weight:800}
+.tzt td.o{font-weight:900;color:#ffd24a;width:34px}
+.tzgr{display:inline-block;min-width:26px;text-align:center;padding:2px 6px;border-radius:8px;font-weight:900;color:#032;background:#2cff8a}
+.tzgr.g2{background:#7df9ff}.tzgr.g3{background:#ffd24a}.tzgr.g0{background:#555;color:#ddd}
+.tzmuted{color:#9bd;font-size:13px;text-align:center;padding:10px}
+.tzerr{color:#ff8fa3;font-size:13px;text-align:center;padding:8px}
+/* auditoriya */
+.tzs{border-radius:18px;padding:14px;margin:12px 0;background:linear-gradient(160deg,rgba(18,35,107,.85),rgba(5,10,28,.9));border:2px solid #2b4aa8;box-shadow:0 0 18px rgba(0,229,255,.18)}
+.tzs.live{border-color:#ff3d6e;box-shadow:0 0 22px rgba(255,61,110,.45)}
+.tzs.done{opacity:.9;border-color:#3b4c7a}
+.tzs .top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.tzs .bd{font:800 12px system-ui;padding:4px 10px;border-radius:20px;background:#12307a;color:#7df9ff}
+.tzs.live .bd{background:#ff3d6e;color:#fff;animation:tzblink 1.2s infinite}.tzs.done .bd{background:#2a3555;color:#cfe}
+@keyframes tzblink{50%{opacity:.55}}
+.tzs .cd{font:900 18px ui-monospace,monospace;color:#ffd24a;text-shadow:0 0 10px rgba(255,210,74,.6)}
+.tzs .tt{font-size:16px;font-weight:900;color:#fff;margin:2px 0 6px}
+.tzs .mt{font-size:13px;color:#bcd;margin:3px 0}
+.tzroom{margin-top:8px}
+.tzbig{text-align:center;padding:14px 10px;border-radius:16px;background:rgba(0,0,0,.35);border:2px solid #ffd24a;margin:10px 0}
+.tzbig small{display:block;color:#ffe7a3;font-weight:700;margin-bottom:4px}
+.tzbig b{font:900 34px ui-monospace,monospace;color:#ffd24a;text-shadow:0 0 14px rgba(255,210,74,.7)}
+.tztabs{display:flex;gap:6px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none}
+.tztabs button{flex:none;border:1px solid #2b4aa8;border-radius:20px;padding:7px 12px;background:rgba(10,18,50,.8);color:#cfe;font:800 12px system-ui;cursor:pointer}
+.tztabs button.on{background:linear-gradient(135deg,#0a6cff,#00c8ff);color:#fff;border-color:#7df9ff}
+.tzhall{border-radius:18px;padding:12px 10px 14px;background:linear-gradient(180deg,#1b1209,#2a1c0e);border:3px solid #6b4a24;box-shadow:inset 0 0 30px rgba(0,0,0,.6)}
+.tzboard{margin:0 auto 12px;width:86%;padding:10px;border-radius:8px;background:#0c3b2a;border:4px solid #8a6a3a;color:#d9f7e6;text-align:center;font:800 13px system-ui;box-shadow:0 4px 0 #4a3418}
+.tzseats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tzseat{border-radius:10px;padding:6px 4px 5px;text-align:center;background:linear-gradient(180deg,#a0743f,#7a5428);border:1px solid #c79a5c;color:#fff7e6;font-size:10px;line-height:1.2;min-height:46px;box-shadow:0 3px 0 #4a3418}
+.tzseat i{display:block;font-style:normal;font-size:16px}
+.tzseat b{display:block;font-size:10.5px;word-break:break-word}
+.tzseat.me{background:linear-gradient(180deg,#0a9d4a,#06753a);border-color:#2cff8a;box-shadow:0 0 12px #2cff8a}
+.tzseat.empty{opacity:.35}
+.tzform label{display:block;color:#7df9ff;font:800 12px system-ui;margin:8px 0 4px}
+.tzform input,.tzform select{width:100%;box-sizing:border-box;padding:10px;border-radius:10px;border:1px solid #2b4aa8;background:#0a1232;color:#fff;font:600 15px system-ui}
+.tzform .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tzchk{display:flex;align-items:center;gap:8px;color:#cfe;font-size:13px;margin:10px 0}
+.tzchk input{width:20px;height:20px}
+.tzbox{margin:10px 0;padding:12px 14px;border-radius:14px;border:2px solid #7df9ff;background:rgba(0,40,80,.55);color:#e8f1ff;text-align:center;font-size:14px;line-height:1.5}
+.tzbox b{color:#ffd24a}
+</style>
+<script src="config.js"></script>
+<script>
+/* ===== TESTUZ PLATFORMA ===== */
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const LS={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{v==null?localStorage.removeItem(k):localStorage.setItem(k,v)}catch(e){}}};
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const API_RE=/^https:\/\/script\.google\.com\/(a\/[\w.-]+\/)?macros\/s\/[\w-]+\/exec$/;
+const Q=new URLSearchParams(location.search);
+/* --- bot manzili (API): config.js, havoladagi ?api= yoki oldin saqlangani --- */
+let API=(window.TZ_API&&API_RE.test(window.TZ_API))?window.TZ_API:'';
+{const a=Q.get('api')||'';if(API_RE.test(a)){LS.set('tz_api',a);if(!API)API=a}}
+if(!API){const a=LS.get('tz_api')||'';if(API_RE.test(a))API=a}
+/* --- foydalanuvchi ID: Telegram orqali kirsa — Telegram ID (istalgan qurilmada bir xil) --- */
+let TG='';try{const h=new URLSearchParams(location.hash.slice(1)).get('tgWebAppData');if(h){const u=JSON.parse(new URLSearchParams(h).get('user')||'{}');if(u&&u.id)TG='tg'+u.id}}catch(e){}
+if(TG)LS.set('tz_tg',TG);else TG=LS.get('tz_tg')||'';
+let UID=LS.get('tz_uid')||'';const OLD=(TG&&UID&&UID!==TG&&/^w/.test(UID))?UID:'';
+if(TG)UID=TG;else if(!/^w[a-z0-9]{8,16}$/.test(UID))UID='w'+(Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2)).slice(0,10);
+LS.set('tz_uid',UID);
+let OFF=0;const now=()=>Date.now()+OFF;
+/* --- serverga murojaat (JSONP) --- */
+function call(act,params,timeout){return new Promise(res=>{
+  if(!API){res({ok:false,err:'noapi'});return}
+  const cb='tzcb'+Date.now().toString(36)+Math.random().toString(36).slice(2,7),s=document.createElement('script');let done=false;
+  const fin=v=>{if(done)return;done=true;try{delete window[cb]}catch(_){window[cb]=undefined}s.remove();if(v&&v.now)OFF=v.now-Date.now();res(v||{ok:false,err:'net'})};
+  window[cb]=fin;s.onerror=()=>fin(null);
+  s.src=API+'?'+new URLSearchParams(Object.assign({api:act,cb:cb},params||{})).toString();
+  document.head.appendChild(s);setTimeout(()=>fin(null),timeout||25000)})}
+/* natijalar navbati: internet bo'lmasa keyin yuboriladi */
+function qGet(){try{return JSON.parse(LS.get('tz_q')||'[]')}catch(e){return[]}}
+async function flush(){const L=qGet();if(!L.length||!API)return null;let last=null;const keep=[];
+  for(const it of L){let r=null;for(let k=0;k<3;k++){r=await call('res',it,30000);if(r.err!=='net')break;await sleep(2000*(k+1))}
+    if(r.err==='net')keep.push(it);else last={it,r}}
+  LS.set('tz_q',JSON.stringify(keep));return last}
+function enqueue(it){const L=qGet();L.push(it);LS.set('tz_q',JSON.stringify(L.slice(-20)));return flush()}
+
+/* --- saytdagi mavjud holat --- */
+const isDev=()=>{try{return !!DEV}catch(e){return false}};
+const paid=()=>{try{return !!lsGet()}catch(e){return false}};
+function prof(){try{return JSON.parse(LS.get('geo5_prof')||'null')}catch(e){return null}}
+const fullName=p=>p?[p.ln,p.fn,p.pt].filter(Boolean).join(' '):'';
+const f2=n=>String(n).padStart(2,'0');
+const fmtT=ms=>{const d=new Date(ms);return f2(d.getDate())+'.'+f2(d.getMonth()+1)+'.'+d.getFullYear()+' · '+f2(d.getHours())+':'+f2(d.getMinutes())};
+const fmtD=ms=>{const s=Math.max(0,Math.floor(ms/1000)),d=Math.floor(s/86400);return (d?d+' kun ':'')+f2(Math.floor(s/3600)%24)+':'+f2(Math.floor(s/60)%60)+':'+f2(s%60)};
+const grCls=g=>g==='A+'||g==='A'?'':g==='B+'||g==='B'?'g2':g?'g3':'g0';
+const grB=g=>`<span class="tzgr ${grCls(g)}">${esc(g||'—')}</span>`;
+const turNom=t=>t==='att'?'Attestatsiya':t==='aud'?'Auditoriya':'Milliy sertifikat';
+function noApi(){return `<div class="tzbox">🔌 Reyting va Auditoriya uchun saytni <b>@TestUz_Sertifikat_Bot</b> orqali oching (botdagi «🚀 Testni boshlash» tugmasi). Bir marta ochsangiz, keyin brauzerda ham ishlaydi.</div>`}
+
+/* ===== bo'limlar ===== */
+const host=$('fanlar').parentNode;
+host.insertAdjacentHTML('beforeend',`<div id="tzAud" class="tzsec hid"></div><div id="tzCab" class="tzsec hid"></div><div id="tzDev" class="tzsec hid"></div>`);
+const SECS=['intro','fanlar','cover','exam','att','tz','res','tzAud','tzCab','tzDev'];
+function goSec(id){SECS.forEach(s=>{const e=$(s);if(e)e.classList.toggle('hid',s!==id)});scrollTo(0,0);cur=id}
+let cur='intro';
+function toFanlar(){goSec('fanlar');paintBar()}
+
+/* ===== 1) profil doim saqlanadi; qaytib kirganda qayta yozish shart emas ===== */
+function regProfile(){const p=prof();if(!p||!API||isDev()||!paid())return;
+  call('reg',{uid:UID,old:OLD,ln:p.ln,fn:p.fn,pt:p.pt||'',vl:p.vl||'',ds:p.ds||''}).then(r=>{if(r&&r.ok)LS.set('tz_regd',UID+'|'+fullName(p))})}
+$('ok').addEventListener('click',()=>{setTimeout(()=>{if(!$('intro').classList.contains('hid'))return;cur='fanlar';paintBar();regProfile();if(PEND){const v=PEND;PEND=null;v()}},30)});
+function welcome(){const p=prof();if(!p||!paid()||$('tzWelcome'))return;
+  $('intro').insertAdjacentHTML('afterbegin',`<div class="tzw" id="tzWelcome"><div>👋 Xush kelibsiz, <b>${esc(p.fn)} ${esc(p.ln)}</b>!</div><small>Ma'lumotlaringiz saqlangan (${esc(p.vl||'')}${p.ds?', '+esc(p.ds):''}) — qayta kiritish shart emas.</small><button class="tzbtn g" id="tzGo">▶ Davom etish</button></div>`);
+  $('tzGo').onclick=()=>$('ok').click()}
+// Telegram orqali kirganda, boshqa telefonda yoki ma'lumot o'chib ketgan bo'lsa — profil serverdan tiklanadi
+async function restore(){if(paid()||prof()||!TG||!API)return false;const r=await call('me',{uid:TG});if(!r.ok||!r.prof)return false;
+  const p={ln:r.prof.ln,fn:r.prof.fn,pt:r.prof.pt||'',vl:r.prof.vl||'',ds:r.prof.ds||''};LS.set('geo5_prof',JSON.stringify(p));
+  try{lsSet(nrm(p.ln)+'|'+nrm(p.fn)+'|'+nrm(p.pt));unlock(false);$('pc').value='✔ To‘lov qilingan';$('pc').disabled=true;$('pc').style.borderColor='#2cff8a';loadProf()}catch(e){}
+  LS.set('tz_regd',UID+'|'+fullName(p));return true}
+
+/* ===== fanlar menyusiga: foydalanuvchi paneli va yangi bo'limlar ===== */
+$('fanlar').insertAdjacentHTML('afterbegin',`<div class="tzbar" id="tzBar"><div class="av" id="tzAv">👤</div><div><b id="tzNm"></b><small id="tzLoc"></small></div></div>
+<div class="tzmenu"><button style="--a:#ff3df2" id="tzBtnAud">🏛 AUDITORIYA<small>Jonli test — hamma bir vaqtda</small></button><button style="--a:#2cff8a" id="tzBtnCab">👤 MENING KABINETIM<small>Natijalar va o'rnim</small></button><button class="wide" style="--a:#ffd24a" id="tzBtnDev" hidden>👨‍💻 DASTURCHI BO'LIMI<small>Statistika, foydalanuvchilar, auditoriya boshqaruvi</small></button></div>`);
+function paintBar(){const p=prof();$('tzNm').textContent=isDev()?'Dasturchi rejimi':p?(p.ln+' '+p.fn):'Mehmon';$('tzLoc').textContent=isDev()?'Barcha bo‘limlar ochiq':p?[p.vl,p.ds].filter(Boolean).join(', '):'';
+  $('tzAv').textContent=p&&!isDev()?(p.fn||'?').charAt(0).toUpperCase()+(p.ln||'').charAt(0).toUpperCase():'👤';$('tzBtnDev').hidden=!isDev()}
+$('tzBtnAud').onclick=()=>openAud();$('tzBtnCab').onclick=()=>openCab();$('tzBtnDev').onclick=()=>openDev();
+// dasturchi kodi yozilganda — dasturchi bo'limi uchun saqlanadi
+$('kc').addEventListener('input',()=>{const v=$('kc').value.trim();if(v.length>=4)setTimeout(()=>{if(isDev())LS.set('tz_key',v)},50)});
+
+/* ===== 2) natijalar serverga: reyting va kabinet uchun ===== */
+function ansVec(){const a=[],bs=[];
+  EQ.forEach((e,i)=>{a.push(ST.a[i]===e.q[2]?'1':'0');bs.push(e.b)});
+  EW.forEach((e,j)=>{const w=ST.w[35+j]||['',''];e.w[1].forEach((x,k)=>{a.push(x[1].test(norm(w[k]||''))?'1':'0');bs.push(e.b[k])})});
+  return{ans:a.join(''),bs:bs.map(x=>Math.round(x*1000)/1000).join(',')}}
+function resBox(html){const R=$('res');if(!R)return;let b=$('tzResBox');if(!b){R.insertAdjacentHTML('afterbegin','<div class="tzbox" id="tzResBox"></div>');b=$('tzResBox')}b.innerHTML=html}
+let AUD=null;
+const _fin=finish;finish=function(){const aud=AUD;let v=null;try{v=ansVec()}catch(e){}const r=_fin.apply(this,arguments);try{afterMilliy(aud,v)}catch(e){}return r};
+function afterMilliy(aud,v){const L=window.LASTRES;if(!L)return;
+  const it={uid:UID,fan:'geo',tur:aud?'aud':'milliy',raw:L.raw,max:(v&&v.ans.length)||L.raw,th:Math.round(L.theta*1000)/1000,ball:L.ball,gr:L.gr||'',pct:L.pct,dev:isDev()?'1':'0'};
+  if(v)it.ans=v.ans;if(aud){it.sid=aud.sid;if(v)it.bs=v.bs;LS.set('tz_done_'+aud.sid,'1');AUD=null;$('exback').style.display=''}
+  if(!API){resBox(aud?'✅ Test yakunlandi.':'📊 '+noApi());return}
+  resBox(aud?`🏛 <b>Auditoriya testi yakunlandi.</b><br>Javoblaringiz yuborilmoqda…`:'📊 Natijangiz reytingga qo‘shilmoqda…');
+  enqueue(it).then(x=>{const r=x&&x.r;
+    if(aud){resBox(r&&r.ok?`🏛 <b>Javoblaringiz qabul qilindi!</b><br>Pastdagi natija — dastlabki hisob. Yakuniy ball va o‘rinlar barcha qatnashchilar javoblari asosida Rasch modeli bo‘yicha test tugagach (<b>${fmtT(aud.end+OFF)}</b>) e’lon qilinadi.<button class="tzbtn p" id="tzResAud">🏛 Auditoriyaga qaytish</button>`:`⚠️ Internet yo‘q — javoblaringiz saqlandi va internet paydo bo‘lishi bilan yuboriladi.<button class="tzbtn p" id="tzResAud">🏛 Auditoriyaga qaytish</button>`);
+      const b=$('tzResAud');if(b)b.onclick=()=>openAud(aud.sid,'res');return}
+    if(it.dev==='1'){resBox('👨‍💻 Dasturchi rejimidagi natija reytingga qo‘shilmaydi.<button class="tzbtn g" id="tzResCab">👤 Kabinet</button>');}
+    else resBox(r&&r.ok&&r.orin?`🏆 Umumiy reytingdagi o‘rningiz: <b>${r.orin}</b> / ${r.jami}<br><small>(eng yaxshi natijangiz bo‘yicha)</small><button class="tzbtn g" id="tzResCab">👤 Kabinetim va reyting</button>`:`📊 Natijangiz saqlandi.<button class="tzbtn g" id="tzResCab">👤 Kabinetim</button>`);
+    const c=$('tzResCab');if(c)c.onclick=()=>openCab()})}
+window.tzAfterAtt=function(a){if(!a)return;const it={uid:UID,fan:'geo',tur:'att',raw:a.raw,max:a.max,th:Math.round(a.th*1000)/1000,ball:0,gr:'',pct:a.pct,dev:isDev()?'1':'0'};
+  setTimeout(()=>{if(!API){resBox('📊 '+noApi());return}resBox('📊 Natijangiz reytingga qo‘shilmoqda…');
+    enqueue(it).then(x=>{const r=x&&x.r;resBox(it.dev==='1'?'👨‍💻 Dasturchi rejimidagi natija reytingga qo‘shilmaydi.':r&&r.ok&&r.orin?`🏆 Attestatsiya reytingidagi o‘rningiz: <b>${r.orin}</b> / ${r.jami}<button class="tzbtn g" id="tzResCab">👤 Kabinetim va reyting</button>`:'📊 Natijangiz saqlandi.');const c=$('tzResCab');if(c)c.onclick=()=>openCab()})},50)};
+
+/* ===== 3) MENING KABINETIM ===== */
+async function openCab(){goSec('tzCab');const C=$('tzCab'),p=prof();
+  C.innerHTML=`<button class="tzback" id="tzCabBack">⬅️ Fanlar menyusi</button><h2>👤 Mening kabinetim</h2><div class="tzsub">Natijalaringiz, reytingdagi o‘rningiz va Auditoriya testlari</div>
+  <div class="tzcard"><h3>🪪 Ma’lumotlarim</h3>${p?`<div class="tzrow"><span>F.I.Sh</span><b>${esc(fullName(p))}</b></div><div class="tzrow"><span>Viloyat</span><b>${esc(p.vl||'—')}</b></div><div class="tzrow"><span>Tuman / shahar</span><b>${esc(p.ds||'—')}</b></div>`:'<div class="tzmuted">Ma’lumotlar kiritilmagan.</div>'}<div class="tzrow"><span>Shaxsiy ID</span><b>${esc(UID)}</b></div></div>
+  <div id="tzCabBody"><div class="tzmuted">⏳ Yuklanmoqda…</div></div>`;
+  $('tzCabBack').onclick=toFanlar;
+  const B=$('tzCabBody');
+  let localH=[];try{localH=JSON.parse(LS.get('geo5_hist_m|'+(lsGet()||'dev'))||'[]')}catch(e){}
+  const localHtml=localH.length?`<div class="tzcard"><h3>📋 Shu qurilmadagi natijalarim</h3><table class="tzt"><tr><th>Sana</th><th>Natija</th><th>Daraja</th></tr>${localH.slice().reverse().slice(0,20).map(h=>`<tr><td>${fmtT(h.t)}</td><td>${(+h.p).toFixed(1)}%</td><td>${grB(h.g==='-'?'':h.g)}</td></tr>`).join('')}</table></div>`:'';
+  if(!API){B.innerHTML=noApi()+localHtml;return}
+  flush();
+  const [me,top,tA]=await Promise.all([call('me',{uid:UID}),call('top',{uid:UID,tur:'milliy'}),call('top',{uid:UID,tur:'att'})]);
+  if(!me.ok){B.innerHTML=`<div class="tzerr">Serverga ulanib bo‘lmadi. Internetni tekshirib, qayta oching.</div>`+localHtml;return}
+  const rk=me.rank||{},m=rk.milliy||{},a=rk.att||{};
+  const topT=(t,isAtt)=>!t.ok||!t.top.length?'<div class="tzmuted">Hali natijalar yo‘q.</div>':`<table class="tzt"><tr><th>#</th><th>Ishtirokchi</th><th>Viloyat</th><th>${isAtt?'Foiz':'Ball'}</th>${isAtt?'':'<th></th>'}</tr>${t.top.slice(0,20).map(x=>`<tr class="${x.me?'me':''}"><td class="o">${x.o}</td><td>${esc(x.n)}</td><td>${esc(x.vl)}</td><td>${isAtt?x.v+'%':(+x.v).toFixed(2)}</td>${isAtt?'':`<td>${grB(x.gr)}</td>`}</tr>`).join('')}${t.men>20?`<tr class="me"><td class="o">${t.men}</td><td colspan="${isAtt?3:4}">Siz</td></tr>`:''}</table>`;
+  B.innerHTML=`<div class="tztiles">
+     <div class="tztile"><b>${m.orin?m.orin+'<small style="font-size:14px;color:#9bd"> / '+m.jami+'</small>':'—'}</b><small>Milliy sertifikat reytingidagi o‘rnim</small></div>
+     <div class="tztile"><b>${m.eng?(+m.eng.ball).toFixed(1):'—'}</b><small>Eng yaxshi ball ${m.eng&&m.eng.gr?'('+esc(m.eng.gr)+')':''}</small></div>
+     <div class="tztile"><b>${a.orin?a.orin+'<small style="font-size:14px;color:#9bd"> / '+a.jami+'</small>':'—'}</b><small>Attestatsiya reytingidagi o‘rnim</small></div>
+     <div class="tztile"><b>${(me.res||[]).length}</b><small>Topshirilgan testlar</small></div></div>
+   ${(me.aud||[]).length?`<div class="tzcard"><h3>🏛 Auditoriya natijalarim</h3><table class="tzt"><tr><th>O‘rin</th><th>Xona</th><th>Ball</th><th></th></tr>${me.aud.map(x=>`<tr><td class="o">${x.orin}</td><td>${x.xona}-xona (${x.xorin}-o‘rin)</td><td>${(+x.ball).toFixed(2)}</td><td>${grB(x.gr)}</td></tr>`).join('')}</table></div>`:''}
+   <div class="tzcard"><h3>🏆 Umumiy reyting — Milliy sertifikat (Geografiya)</h3>${topT(top,false)}</div>
+   <div class="tzcard"><h3>🎓 Reyting — Attestatsiya</h3>${topT(tA,true)}</div>
+   <div class="tzcard"><h3>📋 Natijalarim</h3>${(me.res||[]).filter(r=>r.tur!=='aud').length?`<table class="tzt"><tr><th>Sana</th><th>Test</th><th>Natija</th><th></th></tr>${me.res.filter(r=>r.tur!=='aud').map(r=>`<tr><td>${fmtT(r.t)}</td><td>${turNom(r.tur)}</td><td>${r.tur==='att'?r.pct+'%':(+r.ball).toFixed(2)+' ball'}</td><td>${r.tur==='att'?'':grB(r.gr)}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali test topshirmagansiz.</div>'}</div>`+localHtml}
+
+/* ===== 4) AUDITORIYA — jonli test xonasi ===== */
+let audTimer=null,audPoll=null,LIST=[],ROOM=null,VIEW={sid:null,mode:'list',tab:0};
+function stopAud(){clearInterval(audTimer);clearInterval(audPoll);audTimer=audPoll=null}
+async function openAud(sid,mode){if(!paid()&&!isDev()){PEND=()=>openAud(sid,mode);goSec('intro');alertBox('Auditoriyaga kirish uchun avval to‘lov kodini kiriting va ma’lumotlaringizni yozing.');return}
+  goSec('tzAud');stopAud();VIEW={sid:sid||null,mode:sid?(mode||'room'):'list',tab:0};
+  const A=$('tzAud');A.innerHTML=`<button class="tzback" id="tzAudBack">⬅️ Fanlar menyusi</button><h2>🏛 AUDITORIYA</h2><div class="tzsub">Jonli test xonasi: test belgilangan kun va soatda <b>hamma uchun bir vaqtda</b> boshlanadi. Oldindan ro‘yxatdan o‘ting — qatnashchilar teng xonalarga bo‘linadi, natijalar <b>Rasch modeli</b> bo‘yicha hisoblanib, har kimning o‘rni e’lon qilinadi.</div><div id="tzAudBody"><div class="tzmuted">⏳ Yuklanmoqda…</div></div>`;
+  $('tzAudBack').onclick=()=>{stopAud();toFanlar()};
+  if(!API){$('tzAudBody').innerHTML=noApi();return}
+  await loadList();render();
+  audTimer=setInterval(tickAud,1000);
+  audPoll=setInterval(async()=>{if(cur!=='tzAud'){stopAud();return}if(VIEW.mode==='room')await loadRoom();else if(VIEW.mode==='list')await loadList();render()},30000+Math.random()*8000)}
+async function loadList(){const r=await call('aud',{uid:UID});if(r.ok)LIST=r.list;else if(!LIST.length)LIST=null}
+async function loadRoom(){const r=await call('room',{sid:VIEW.sid,uid:UID});if(r.ok)ROOM=r}
+function ses(sid){return(LIST||[]).find(s=>s.sid===sid)||(ROOM&&ROOM.ses&&ROOM.ses.sid===sid?ROOM.ses:null)}
+function holat(s){const t=now();return t<s.start?'kutilmoqda':t<s.end?'boshlandi':'tugadi'}
+async function render(){const B=$('tzAudBody');if(!B)return;
+  if(VIEW.mode==='room'){if(!ROOM||ROOM.ses.sid!==VIEW.sid)await loadRoom();return renderRoom()}
+  if(VIEW.mode==='res')return renderRes();
+  if(LIST===null){B.innerHTML='<div class="tzerr">Serverga ulanib bo‘lmadi. Internetni tekshiring.</div>';return}
+  if(!LIST.length){B.innerHTML='<div class="tzbox">📅 Hozircha rejalashtirilgan jonli test yo‘q.<br>Yangi test e’lon qilinganda bot orqali xabar keladi.</div>';return}
+  B.innerHTML=LIST.map(s=>{const h=holat(s),done=LS.get('tz_done_'+s.sid);
+    let act='';
+    if(h==='kutilmoqda')act=s.men?`<button class="tzbtn g" data-room="${s.sid}">✅ Ro‘yxatdasiz — xonani ko‘rish</button>`:`<button class="tzbtn y" data-reg="${s.sid}">✍️ Ro‘yxatdan o‘tish</button>`;
+    else if(h==='boshlandi')act=s.men?(done?`<button class="tzbtn" disabled>✅ Javoblaringiz yuborilgan</button>`:`<button class="tzbtn p" data-start="${s.sid}">▶ TESTNI BOSHLASH</button><button class="tzbtn" data-room="${s.sid}">🚪 Xonani ko‘rish</button>`):`<button class="tzbtn" disabled>🔒 Ro‘yxatga olish yopilgan</button>`;
+    else act=`<button class="tzbtn y" data-res="${s.sid}">🏆 Natijalar va o‘rinlar</button>`;
+    return `<div class="tzs ${h==='boshlandi'?'live':h==='tugadi'?'done':''}"><div class="top"><span class="bd">${h==='kutilmoqda'?'⏳ Ro‘yxatga olish ochiq':h==='boshlandi'?'🔴 Test ketmoqda':'✅ Yakunlangan'}</span><span class="cd" data-cd="${s.sid}"></span></div>
+      <div class="tt">📝 ${esc(s.nomi)}</div><div class="mt">📅 ${fmtT(s.start)} · ⏱ ${s.dur} daqiqa</div>
+      <div class="mt">👥 ${s.n} kishi ro‘yxatda · 🚪 ${s.xonalar} ta xona (${s.g} kishidan)${h!=='kutilmoqda'?' · 📨 '+s.topshirdi+' kishi topshirdi':''}</div><div style="margin-top:8px">${act}</div></div>`}).join('');
+  bindAud(B);tickAud()}
+function bindAud(B){
+  B.querySelectorAll('[data-reg]').forEach(b=>b.onclick=async()=>{b.disabled=true;b.textContent='⏳ Ro‘yxatga olinmoqda…';
+    if(!LS.get('tz_regd'))await new Promise(r=>{regProfile();setTimeout(r,1800)});
+    let r=await call('audreg',{sid:b.dataset.reg,uid:UID});
+    if(!r.ok&&/ism-familiya/i.test(r.err||'')){const p=prof();if(p){await call('reg',{uid:UID,old:OLD,ln:p.ln,fn:p.fn,pt:p.pt||'',vl:p.vl||'',ds:p.ds||''});r=await call('audreg',{sid:b.dataset.reg,uid:UID})}}
+    if(r.ok){alertBox(`✅ Ro‘yxatdan o‘tdingiz!\nHozirgi joyingiz: ${r.xona}-xona, ${r.joy}-o‘rin (yakuniy taqsimot test boshlanganda).\nTest boshlanishidan oldin shu yerga qayting.`);VIEW={sid:b.dataset.reg,mode:'room',tab:r.xona-1};ROOM=null;await loadList();render()}
+    else{b.disabled=false;b.textContent='✍️ Ro‘yxatdan o‘tish';alertBox(r.err==='net'?'Internet yo‘q. Qayta urinib ko‘ring.':(r.err||'Xatolik'))}});
+  B.querySelectorAll('[data-room]').forEach(b=>b.onclick=()=>{VIEW={sid:b.dataset.room,mode:'room',tab:-1};ROOM=null;render()});
+  B.querySelectorAll('[data-res]').forEach(b=>b.onclick=()=>{VIEW={sid:b.dataset.res,mode:'res',tab:0};render()});
+  B.querySelectorAll('[data-start]').forEach(b=>b.onclick=()=>startAud(b.dataset.start));
+  B.querySelectorAll('[data-list]').forEach(b=>b.onclick=async()=>{VIEW={sid:null,mode:'list',tab:0};await loadList();render()})}
+function tickAud(){const t=now();
+  document.querySelectorAll('[data-cd]').forEach(el=>{const s=ses(el.dataset.cd);if(!s)return;const h=holat(s);el.textContent=h==='kutilmoqda'?fmtD(s.start-t):h==='boshlandi'?fmtD(s.end-t):''});
+  const big=$('tzBig');if(big&&ROOM){const s=ROOM.ses,h=holat(s);big.querySelector('small').textContent=h==='kutilmoqda'?'Test boshlanishiga qoldi':h==='boshlandi'?'Test tugashiga qoldi':'Test yakunlandi';
+    big.querySelector('b').textContent=h==='tugadi'?'✅':fmtD((h==='kutilmoqda'?s.start:s.end)-t);
+    if(h!==big.dataset.h){big.dataset.h=h;if(big.dataset.init)render();big.dataset.init='1'}}
+  if(VIEW.mode==='list'&&LIST){let ch=false;LIST.forEach(s=>{const h=holat(s);if(s._h&&s._h!==h)ch=true;s._h=h});if(ch)render()}}
+function renderRoom(){const B=$('tzAudBody'),R=ROOM;if(!R){B.innerHTML='<div class="tzerr">Xona ma’lumotini olib bo‘lmadi.</div><button class="tzbtn" data-list="1">⬅ Testlar ro‘yxati</button>';bindAud(B);return}
+  const s=R.ses,h=holat(s),me=R.odam.find(o=>o.u===R.men),done=LS.get('tz_done_'+s.sid);
+  if(VIEW.tab<0)VIEW.tab=me?me.x-1:0;
+  const tabs=Array.from({length:R.k},(_,i)=>{const n=R.odam.filter(o=>o.x===i+1).length;return `<button class="${VIEW.tab===i?'on':''}" data-tab="${i}">${i+1}-xona (${n})${me&&me.x===i+1?' ⭐':''}</button>`}).join('');
+  const people=R.odam.filter(o=>o.x===VIEW.tab+1).sort((a,b)=>a.j-b.j);
+  const seats=people.map(o=>`<div class="tzseat ${o.u===R.men?'me':''}"><i>${o.u===R.men?'🧑‍🎓':'🪑'}</i><b>${esc(o.n)}</b>${esc(o.vl.replace(/ viloyati| Respublikasi/,''))}</div>`).join('')+(people.length%4?Array.from({length:4-people.length%4},()=>'<div class="tzseat empty"><i>🪑</i></div>').join(''):'');
+  let act='';
+  if(h==='kutilmoqda')act=me?`<div class="tzbox">✅ Siz ro‘yxatdasiz: <b>${me.x}-xona, ${me.j}-o‘rin</b>.<br><small>Yangi qatnashchilar qo‘shilgani sari xonalar teng qilib qayta taqsimlanadi — yakuniy joyingiz test boshlanganda belgilanadi.</small><br>Test boshlanishi bilan shu yerda «▶ Testni boshlash» tugmasi paydo bo‘ladi.</div>`:`<button class="tzbtn y" data-reg="${s.sid}">✍️ Ro‘yxatdan o‘tish</button>`;
+  else if(h==='boshlandi')act=me?(done?'<div class="tzbox">✅ Javoblaringiz yuborilgan. Natijalar test tugagach e’lon qilinadi.</div>':`<button class="tzbtn p" data-start="${s.sid}">▶ TESTNI BOSHLASH</button>`):'<div class="tzbox">🔒 Test boshlangan — ro‘yxatga olish yopilgan.</div>';
+  else act=`<button class="tzbtn y" data-res="${s.sid}">🏆 Natijalar va o‘rinlar</button>`;
+  B.innerHTML=`<button class="tzbtn" data-list="1">⬅ Testlar ro‘yxati</button>
+    <div class="tzs ${h==='boshlandi'?'live':''}"><div class="tt">📝 ${esc(s.nomi)}</div><div class="mt">📅 ${fmtT(s.start)} · ⏱ ${s.dur} daqiqa · 👥 ${R.odam.length} kishi · 🚪 ${R.k} ta xona</div>
+    <div class="tzbig" id="tzBig"><small></small><b></b></div>${act}</div>
+    <div class="tztabs">${tabs}</div>
+    <div class="tzhall"><div class="tzboard">🧑‍🏫 DOSKA · ${VIEW.tab+1}-xona · ${people.length} o‘rin</div><div class="tzseats">${seats||'<div class="tzmuted" style="grid-column:span 4;color:#e8d5b5">Bu xonada hali hech kim yo‘q.</div>'}</div></div>`;
+  B.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{VIEW.tab=+b.dataset.tab;renderRoom()});
+  bindAud(B);tickAud()}
+async function renderRes(){const B=$('tzAudBody');B.innerHTML='<div class="tzmuted">⏳ Natijalar hisoblanmoqda (Rasch modeli)…</div>';
+  const r=await call('audres',{sid:VIEW.sid,uid:UID},60000);
+  if(!r.ok){B.innerHTML=`<div class="tzerr">${esc(r.err==='net'?'Serverga ulanib bo‘lmadi.':r.err)}</div><button class="tzbtn" data-list="1">⬅ Testlar ro‘yxati</button>`;bindAud(B);return}
+  if(r.kut){B.innerHTML=`<button class="tzbtn" data-list="1">⬅ Testlar ro‘yxati</button><div class="tzbox">⏳ Natijalar test tugagach e’lon qilinadi: <b>${fmtT(r.end)}</b><br>Hozircha <b>${r.topshirdi}</b> kishi javoblarini topshirdi.</div>`;bindAud(B);return}
+  const me=r.men,mine=me?r.list.filter(x=>x.x===me.x):[];const tab=VIEW.tab||0;
+  const rows=(tab===1&&me?mine:r.list);
+  const dr=['A+','A','B+','B','C+','C','—'].filter(g=>r.darajalar[g]).map(g=>`${grB(g==='—'?'':g)} ${r.darajalar[g]}`).join(' &nbsp;');
+  B.innerHTML=`<button class="tzbtn" data-list="1">⬅ Testlar ro‘yxati</button><div class="tzs done"><div class="tt">🏆 ${esc(r.ses.nomi)}</div><div class="mt">📅 ${fmtT(r.ses.start)} · 👥 ${r.jami} kishi qatnashdi · o‘rtacha ball: <b>${r.ortacha}</b></div><div class="mt" style="margin-top:6px">${dr}</div></div>
+   ${me?`<div class="tzbox">Sizning natijangiz: <b>${me.b.toFixed(2)} ball</b> ${grB(me.gr)}<br>🏅 Umumiy o‘rin: <b>${me.o}</b> / ${r.jami} · 🚪 ${me.x}-xonada: <b>${me.xo}</b> / ${mine.length}<br><small>To‘g‘ri javoblar: ${me.raw}/${me.max} · θ = ${me.th.toFixed(2)} logit</small></div>`:''}
+   <div class="tztabs"><button class="${tab===0?'on':''}" data-rt="0">Barcha qatnashchilar</button>${me?`<button class="${tab===1?'on':''}" data-rt="1">Mening xonam (${me.x}-xona)</button>`:''}</div>
+   <div class="tzcard"><table class="tzt"><tr><th>#</th><th>Ishtirokchi</th><th>Viloyat</th><th>Xona</th><th>Ball</th><th></th></tr>${rows.map(x=>`<tr class="${x.me?'me':''}"><td class="o">${tab===1?x.xo:x.o}</td><td>${esc(x.n)}</td><td>${esc(x.vl.replace(/ viloyati| Respublikasi/,''))}</td><td>${x.x}</td><td>${x.b.toFixed(2)}</td><td>${grB(x.gr)}</td></tr>`).join('')}</table>
+   <div class="tzmuted">Ball va darajalar Rasch modeli bo‘yicha: savollar qiyinligi barcha qatnashchilar javoblaridan birga baholangan. A+ ≥70 · A ≥65 · B+ ≥60 · B ≥55 · C+ ≥50 · C ≥45</div></div>`;
+  B.querySelectorAll('[data-rt]').forEach(b=>b.onclick=()=>{VIEW.tab=+b.dataset.rt;renderRes()});bindAud(B)}
+/* jonli testni boshlash: hamma uchun bir xil variant va bir xil tugash vaqti */
+function mb32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function seeded(seed,fn){const r=mb32(seed),C=window.crypto,own=Object.prototype.hasOwnProperty.call(C,'getRandomValues'),orig=C.getRandomValues;
+  const keys=['geo5_seen_o','geo5_seen_w'],sv=keys.map(k=>LS.get(k));
+  try{keys.forEach(k=>LS.set(k,'[]'));Object.defineProperty(C,'getRandomValues',{value:function(a){for(let i=0;i<a.length;i++)a[i]=Math.floor(r()*4294967296)>>>0;return a},configurable:true,writable:true});return fn()}
+  finally{if(own)C.getRandomValues=orig;else delete C.getRandomValues;keys.forEach((k,i)=>LS.set(k,sv[i]))}}
+const _pe=pickExam;pickExam=function(){if(AUD&&AUD.seed)return seeded(AUD.seed,_pe);return _pe.apply(this,arguments)};
+window.tzSeededPick=seed=>{AUD={seed:seed};try{pickExam()}finally{AUD=null}return EQ.map(e=>e.o).concat(EW.map(e=>'w'+e.o))};
+async function startAud(sid){let s=ses(sid);if(!s){await loadList();s=ses(sid)}if(!s)return;
+  if(holat(s)!=='boshlandi'){alertBox('Test hali boshlanmagan yoki yakunlangan.');return}
+  if(LS.get('tz_done_'+sid)){alertBox('Siz bu testga javoblaringizni yuborgansiz.');return}
+  stopAud();AUD={sid:s.sid,seed:s.seed,end:s.end-OFF,nomi:s.nomi};
+  const go=()=>{goSec('exam');try{exStarted=true}catch(e){}$('go').onclick();end=AUD.end;tick();$('exback').style.display='none';try{window.tvStart&&tvStart()}catch(e){}};
+  goSec('cover');if(window.__intro&&__intro.introMilliy)__intro.introMilliy(go);else go()}
+
+/* ===== 5) DASTURCHI BO'LIMI (faqat dasturchi rejimida) ===== */
+async function openDev(){if(!isDev())return;goSec('tzDev');const D=$('tzDev');
+  D.innerHTML=`<button class="tzback" id="tzDevBack">⬅️ Fanlar menyusi</button><h2>👨‍💻 Dasturchi bo‘limi</h2><div class="tzsub">Faqat dasturchi rejimida ko‘rinadi</div>
+   <div class="tzcard tzform"><label>Admin paroli (bot paroli)</label><div class="two"><input id="tzKey" type="password" value="${esc(LS.get('tz_key')||'')}" autocomplete="off"><button class="tzbtn" id="tzKeyGo" style="margin:0">Kirish</button></div></div>
+   <div id="tzDevBody"></div>`;
+  $('tzDevBack').onclick=toFanlar;$('tzKeyGo').onclick=()=>{LS.set('tz_key',$('tzKey').value.trim());loadDev()};
+  if(!API){$('tzDevBody').innerHTML=noApi()+'<div class="tzmuted">Yoki botga /api deb yozing — config.js orqali saytni botga doimiy ulash yo‘li keladi.</div>';return}
+  loadDev()}
+async function loadDev(flash){const B=$('tzDevBody'),key=LS.get('tz_key')||'';B.innerHTML='<div class="tzmuted">⏳ Yuklanmoqda…</div>';
+  const r=await call('adm',{key:key},40000);
+  if(!r.ok){B.innerHTML=`<div class="tzerr">${esc(r.err==='net'?'Serverga ulanib bo‘lmadi.':r.err)}</div>`;return}
+  const st=r.stat,tm=new Date(now()+86400000);const dd=tm.getFullYear()+'-'+f2(tm.getMonth()+1)+'-'+f2(tm.getDate());
+  B.innerHTML=`<div class="tztiles"><div class="tztile"><b>${st.jami}</b><small>Jami foydalanuvchilar</small></div><div class="tztile"><b>${st.bugun}</b><small>Bugun qo‘shildi</small></div><div class="tztile"><b>${st.hafta}</b><small>Oxirgi 7 kunda</small></div><div class="tztile"><b>${st.natija}</b><small>Jami natijalar (bugun ${st.bugunNatija})</small></div></div>
+   <div class="tzcard tzform"><h3>🏛 Yangi Auditoriya testi</h3>
+     <label>Test nomi</label><input id="tzNm2" value="Geografiya — Milliy sertifikat sinov testi">
+     <label>Fan</label><select id="tzFan"><option value="geo">Geografiya (Milliy sertifikat, 45 savol)</option></select>
+     <div class="two"><div><label>Sana</label><input id="tzDt" type="date" value="${dd}"></div><div><label>Soat</label><input id="tzTm" type="time" value="20:00"></div></div>
+     <div class="two"><div><label>Davomiyligi (daqiqa)</label><input id="tzDur" type="number" value="150" min="10" max="300"></div><div><label>Xona hajmi (kishi)</label><input id="tzGs" type="number" value="25" min="2" max="500"></div></div>
+     <label class="tzchk"><input type="checkbox" id="tzNot" checked> 📢 Bot orqali barcha foydalanuvchilarga xabar yuborish</label>
+     <button class="tzbtn p" id="tzMk">➕ Testni e’lon qilish</button><div id="tzMkMsg" class="tzmuted"></div></div>
+   <div class="tzcard"><h3>📅 Auditoriya testlari</h3>${r.sessiyalar.length?`<table class="tzt"><tr><th>Vaqt</th><th>Nomi</th><th>👥</th><th></th></tr>${r.sessiyalar.map(s=>`<tr><td>${fmtT(s.start)}<br><small>${s.holat}</small></td><td>${esc(s.nomi)}</td><td>${s.n}</td><td><button class="tzbtn y" style="padding:6px;font-size:12px" data-dres="${s.sid}">🏆</button><button class="tzbtn" style="padding:6px;font-size:12px;background:#7a1030" data-ddel="${s.sid}">🗑</button></td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali test yaratilmagan.</div>'}</div>
+   <div class="tzcard"><h3>🆕 Yangi foydalanuvchilar</h3>${r.yangi.length?`<table class="tzt"><tr><th>Ism</th><th>Hudud</th><th>Sana</th><th>O‘rin</th></tr>${r.yangi.map(u=>`<tr><td>${esc(u.n)}</td><td>${esc(u.vl)}${u.ds?', '+esc(u.ds):''}</td><td>${fmtT(u.t)}</td><td>${u.o||'—'}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali foydalanuvchi yo‘q.</div>'}</div>
+   <div class="tzcard"><h3>📝 So‘nggi natijalar</h3>${r.soni.length?`<table class="tzt"><tr><th>Ism</th><th>Test</th><th>Natija</th><th>O‘rin</th></tr>${r.soni.map(x=>`<tr><td>${esc(x.n)}${x.dev?' <small>(dev)</small>':''}<br><small>${fmtT(x.t)}</small></td><td>${turNom(x.tur)}</td><td>${x.tur==='att'?x.pct+'%':(+x.ball).toFixed(2)+' '+grB(x.gr)}</td><td>${x.o||'—'}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali natija yo‘q.</div>'}</div>
+   <div class="tzcard"><h3>🏆 Reyting (Milliy sertifikat) — top 30</h3>${r.top.length?`<table class="tzt"><tr><th>#</th><th>Ism</th><th>Viloyat</th><th>Ball</th><th></th></tr>${r.top.map(x=>`<tr><td class="o">${x.o}</td><td>${esc(x.n)}</td><td>${esc(x.vl)}</td><td>${(+x.v).toFixed(2)}</td><td>${grB(x.gr)}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali natija yo‘q.</div>'}</div>`;
+  $('tzMk').onclick=async()=>{const b=$('tzMk'),m=$('tzMkMsg'),d=$('tzDt').value,t=$('tzTm').value;if(!d||!t){m.textContent='Sana va soatni tanlang.';return}
+    const ms=new Date(d+'T'+t).getTime();if(!(ms>now())){m.textContent='Vaqt kelajakda bo‘lishi kerak.';return}
+    b.disabled=true;m.textContent=$('tzNot').checked?'⏳ Yaratilmoqda va xabar yuborilmoqda (biroz vaqt oladi)…':'⏳ Yaratilmoqda…';
+    const x=await call('admaud',{key:LS.get('tz_key')||'',nomi:$('tzNm2').value,fan:$('tzFan').value,start:ms,dur:$('tzDur').value,g:$('tzGs').value,notify:$('tzNot').checked?'1':'0'},300000);
+    b.disabled=false;if(x.ok)loadDev('✅ Test e’lon qilindi'+(x.xabar?' · '+x.xabar+' kishiga xabar yuborildi':'')+'.');else m.textContent='❌ '+(x.err==='net'?'Serverga ulanib bo‘lmadi':x.err)};
+  if(flash)$('tzMkMsg').textContent=flash;
+  B.querySelectorAll('[data-ddel]').forEach(b=>b.onclick=async()=>{if(!confirmBox())return;const x=await call('admdel',{key:LS.get('tz_key')||'',sid:b.dataset.ddel});if(x.ok)loadDev();else alertBox(x.err||'Xatolik')});
+  B.querySelectorAll('[data-dres]').forEach(b=>b.onclick=()=>openAud(b.dataset.dres,'res'))}
+let delArm=0;function confirmBox(){if(Date.now()-delArm<4000)return true;delArm=Date.now();alertBox('O‘chirish uchun 🗑 tugmasini yana bir marta bosing.');return false}
+
+/* ===== yordamchi oyna ===== */
+function alertBox(m){try{if(typeof ask==='function'){ask(esc(m).replace(/\n/g,'<br>'));return}}catch(e){}alert(m)}
+let PEND=null;
+
+/* ===== ishga tushirish ===== */
+async function boot(){
+  // saqlangan ma'lumotlar maydonlarga qaytariladi (avval sahifa ochilganda bo'sh qolardi)
+  if(paid()&&prof()&&!$('ln').value){try{loadProf()}catch(e){}}
+  if(await restore()){}
+  welcome();
+  if(paid()&&prof()&&LS.get('tz_regd')!==UID+'|'+fullName(prof()))regProfile();
+  flush();
+  const v=Q.get('view'),aud=Q.get('aud');
+  if(v==='aud'||aud||v==='cab'){const go=()=>{if(v==='cab')openCab();else openAud(aud||null,aud?'room':undefined)};
+    if(paid()&&prof()){$('ok').click();setTimeout(go,120)}else PEND=go}}
+if(document.readyState==='complete')setTimeout(boot,200);else addEventListener('load',()=>setTimeout(boot,200));
+})();
 </script>
 </body></html>
