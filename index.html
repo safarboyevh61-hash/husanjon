@@ -734,12 +734,24 @@ function pick(items,plan){
   rest.sort(function(a,b){return Math.abs(a.b)-Math.abs(b.b)});out=out.concat(rest.splice(0,need))}
  return out.sort(function(a,b){return a.b-b.b})}
 function build(){
+ if(window.__atPin)return pinBuild(window.__atPin);
  var geo=[],ped=[];
  (window.GEO_OCHIQ||[]).forEach(function(q){if(q&&q[0]&&Array.isArray(q[1])&&q[1].length===4&&typeof q[2]==='number')geo.push({q:q,b:bOpen(q),f:'g',id:'g'+(window.GEO_OCHIQ.indexOf(q))})});
  (window.GEO_PED||[]).forEach(function(q){if(q&&q[0]&&Array.isArray(q[1])&&q[1].length>=2&&typeof q[2]==='number')ped.push({q:q,b:bOpen(q),f:'p',id:'p'+(window.GEO_PED.indexOf(q))})});
  var seenQ={};var u=function(x){var k=String(x.q[0]);if(seenQ[k])return false;seenQ[k]=1;return true};
  geo=geo.filter(u);ped=ped.filter(u);
  return pick(geo,[12,20,8]).concat(pick(ped,[3,5,2]))}
+/* Auditoriya: dasturchi biriktirgan savollar (raqam — bazadagi savol, {t,v,a} — o'z savoli) */
+function pinBuild(P){var GO=window.GEO_OCHIQ||[],GP=window.GEO_PED||[];
+ var mk=function(x,src,f,k){if(x&&typeof x==='object'){var q=[x.t,x.v,x.a,null];return{q:q,b:bOpen(q),f:f,id:'c'+f+k}}var q=src[x];return q?{q:q,b:bOpen(q),f:f,id:f+x}:null};
+ return (P.g||[]).map(function(x,k){return mk(x,GO,'g',k)}).concat((P.p||[]).map(function(x,k){return mk(x,GP,'p',k)})).filter(Boolean)}
+/* dasturchi: yangi variant (12 oson + 20 o'rtacha + 8 qiyin fan, 3+5+2 pedagogik), boshqa testlardagi savollarsiz */
+window.atGenVariant=function(rnd,ex,nt){var prev=window.__atRnd;window.__atRnd=rnd;try{
+ var geo=[],ped=[],sq={};
+ (window.GEO_OCHIQ||[]).forEach(function(q,k){if(q&&q[0]&&Array.isArray(q[1])&&q[1].length===4&&typeof q[2]==='number'){var t=nt(q[0]);if(!sq[t]&&!ex.has(t)){sq[t]=1;geo.push({q:q,b:bOpen(q),f:'g',id:'g'+k,k:k})}}});
+ (window.GEO_PED||[]).forEach(function(q,k){if(q&&q[0]&&Array.isArray(q[1])&&q[1].length>=2&&typeof q[2]==='number'){var t=nt(q[0]);if(!sq[t]&&!ex.has(t)){sq[t]=1;ped.push({q:q,b:bOpen(q),f:'p',id:'p'+k,k:k})}}});
+ var g=pick(geo,[12,20,8]),p=pick(ped,[3,5,2]);if(g.length<40||p.length<10)return null;
+ return{g:g.map(function(x){return x.k}),p:p.map(function(x){return x.k})}}finally{window.__atRnd=prev}};
 function q(i){return AT.v[i]}
 function cells(){$('atg').innerHTML=AT.v.map(function(_,i){return '<b data-i="'+i+'"'+''+'>'+(i+1)+'</b>'}).join('')}
 function mk(){[].forEach.call($('atg').children,function(b,k){b.classList.toggle('d',AT.a[k]!=null);b.classList.toggle('cur',k===atCur)})}
@@ -1219,21 +1231,122 @@ function seeded(seed,fn){const r=mb32(seed),C=window.crypto,own=Object.prototype
   const keys=['geo5_seen_o','geo5_seen_w'],sv=keys.map(k=>LS.get(k));
   try{keys.forEach(k=>LS.set(k,'[]'));Object.defineProperty(C,'getRandomValues',{value:function(a){for(let i=0;i<a.length;i++)a[i]=Math.floor(r()*4294967296)>>>0;return a},configurable:true,writable:true});return fn()}
   finally{if(own)C.getRandomValues=orig;else delete C.getRandomValues;keys.forEach((k,i)=>LS.set(k,sv[i]))}}
-const _pe=pickExam;pickExam=function(){if(AUD&&AUD.seed)return seeded(AUD.seed,_pe);return _pe.apply(this,arguments)};
+const _pe=pickExam;pickExam=function(){if(AUD&&AUD.sav)return pinMilliy(AUD.sav);if(AUD&&AUD.seed)return seeded(AUD.seed,_pe);return _pe.apply(this,arguments)};
+function pinEsc(sav){const f=x=>x&&typeof x==='object'?{t:esc(x.t).replace(/\n/g,'<br>'),v:x.v.map(esc),a:x.a}:x,o={};Object.keys(sav||{}).forEach(k=>o[k]=(sav[k]||[]).map(f));return o}
+function pinMilliy(sav){const P=pinEsc(sav);
+  EQ=(P.o||[]).map(x=>{const q=typeof x==='number'?OPENQ[x]:[x.t,x.v,x.a,null];return{q:q,o:typeof x==='number'?x:-1,b:bOpen(q)}});
+  EW=(P.w||[]).map(i=>({w:WRITQ[i],k:WKEY[i],o:i,b:WRITQ[i][1].map((_,k)=>bWrit(WRITQ[i],k))}));
+  ST.a={};ST.w={};ST.cur=0}
 window.tzSeededPick=seed=>{AUD={seed:seed};try{pickExam()}finally{AUD=null}return EQ.map(e=>e.o).concat(EW.map(e=>'w'+e.o))};
 async function startAud(sid){let s=ses(sid);if(!s){await loadList();s=ses(sid)}if(!s)return;
   if(holat(s)!=='boshlandi'){alertBox('Test hali boshlanmagan yoki yakunlangan.');return}
   if(!(KIR[sid]||s.kir||(ROOM&&ROOM.ses&&ROOM.ses.sid===sid&&ROOM.kir))){const kr=await kirish(sid);
     if(!kr.ok){alertBox(kr.err==='net'?'Serverga ulanib bo‘lmadi. Internetni tekshirib, darhol qayta bosing.':(kr.err||'Kirish mumkin emas'));render();return}}
+  if(s.pin&&!s.sav){for(let k=0;k<5;k++){await loadList();const t=(LIST||[]).find(x=>x.sid===sid);if(t&&t.sav){s=t;break}await sleep(1500)}
+    if(!s.sav){alertBox('Savollarni yuklab bo‘lmadi. Internetni tekshirib, «▶ Testni boshlash»ni qayta bosing.');render();return}}
   if(LS.get('tz_done_'+sid)){alertBox('Siz bu testga javoblaringizni yuborgansiz.');return}
   stopAud();
   if((s.tur||'milliy')==='att'){AUDA={sid:s.sid,seed:s.seed,end:s.end-OFF,nomi:s.nomi};window.__atEndFix=AUDA.end;
     try{atStarted=false;window.atDone=false}catch(e){}
-    goSec('cover');window.__atRnd=mb32(s.seed);try{$('b2').onclick()}finally{delete window.__atRnd}
+    goSec('cover');window.__atRnd=mb32(s.seed);window.__atPin=s.sav?pinEsc(s.sav):null;try{$('b2').onclick()}finally{delete window.__atRnd;delete window.__atPin}
     try{$('atback').style.display='none'}catch(e){}return}
-  AUD={sid:s.sid,seed:s.seed,end:s.end-OFF,nomi:s.nomi};
+  AUD={sid:s.sid,seed:s.seed,end:s.end-OFF,nomi:s.nomi,sav:s.sav||null};
   const go=()=>{goSec('exam');try{exStarted=true}catch(e){}$('go').onclick();end=AUD.end;tick();$('exback').style.display='none';try{window.tvStart&&tvStart()}catch(e){}};
   goSec('cover');if(window.__intro&&__intro.introMilliy)__intro.introMilliy(go);else go()}
+
+/* ===== 📋 AUDITORIYA SAVOLLARI (dasturchi): bazadan biriktirish, ko'rish, almashtirish, o'z savoli ===== */
+document.head.insertAdjacentHTML('beforeend',`<style>
+.svq{text-align:left}.svq .svh{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}.svq .svt{font-size:14.5px;line-height:1.45}
+.svq .svt img{max-width:100%;height:auto;background:#fff;border-radius:8px}.svq ol{margin:6px 0 8px 20px;padding:0}.svq li{margin:3px 0;font-size:14px}.svq li.ok{color:#2cff8a;font-weight:700}
+.svk{color:#2cff8a;font-weight:700;margin:6px 0}.lv{font-size:12px;padding:2px 9px;border-radius:10px;background:#1b2a55;white-space:nowrap}.lv.l0{background:#0f4d2e}.lv.l1{background:#5a4a0c}.lv.l2{background:#5c1427}
+.svc{border:1px dashed #3b5aa5;border-radius:12px;padding:10px;margin:8px 0}.svc input:not([type=radio]),.svc textarea{width:100%;box-sizing:border-box;border-radius:10px;padding:8px;background:#0b1430;color:#eaf2ff;border:1px solid #2b3f75;margin:4px 0;font:14px system-ui,sans-serif}
+.svc textarea{min-height:90px}.svsum{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:8px 0}.svrow{display:flex;gap:8px;align-items:center;margin:2px 0}
+</style>`);
+let DEVS=[],SVGRP=null;const SVPL={},SVTH={},SVLT=['🟢 oson','🟡 o‘rtacha','🔴 qiyin'];
+const ntx=t=>_st(String(t||'')).toLowerCase().slice(0,160);
+function svSrc(k){return k==='o'?OPENQ:k==='w'?WRITQ:k==='g'?(window.GEO_OCHIQ||[]):(window.GEO_PED||[])}
+function svB(k,q){return k==='w'?q[1].map((_,j)=>bWrit(q,j)).reduce((a,c)=>a+c,0)/Math.max(1,q[1].length):bOpen(q)}
+function svPool(k){if(SVPL[k])return SVPL[k];const out=[],seen={};
+  svSrc(k).forEach((q,i)=>{if(!q||!q[0]||!Array.isArray(q[1]))return;
+    if(k==='w'){if(q[1].length!==2)return}
+    else{if(!Number.isInteger(q[2])||q[2]<0||q[2]>=q[1].length)return;if(k==='o'&&(q[1].length>=6||(i>=32&&i<35)))return;if(k==='g'&&q[1].length!==4)return}
+    const t=ntx(q[0]);if(seen[t])return;seen[t]=1;out.push({i:i,b:svB(k,q),t:t})});
+  const bs=out.map(x=>x.b).sort((a,c)=>a-c);SVTH[k]=[bs[Math.floor(bs.length*.3)]||0,bs[Math.floor(bs.length*.8)]||0];return SVPL[k]=out}
+function svLvl(k,b){svPool(k);const th=SVTH[k];return b<th[0]?0:b>th[1]?2:1}
+function svText(k,x){if(x&&typeof x==='object')return x.t;const q=svSrc(k)[x];return q?q[0]:''}
+function svTexts(s){const S=new Set();if(!s||!s.sav)return S;(s.tur==='att'?['g','p']:['o','w']).forEach(k=>(s.sav[k]||[]).forEach(x=>S.add(ntx(svText(k,x)))));return S}
+function svExcl(sid){const ex=new Set();DEVS.forEach(s=>{if(s.sid!==sid)svTexts(s).forEach(t=>ex.add(t))});return ex}
+function svGroups(){if(SVGRP)return SVGRP;const gm={},num=i=>(i>=32&&i<35)?i+1:+((String(OPENQ[i][0]).match(/<b>(3[345])\.<\/b>/)||[])[1]||0);
+  OPENQ.forEach((q,i)=>{if(!q||!Array.isArray(q[1]))return;if(i>=32&&i<35){(gm._o=gm._o||[]).push(i);return}if(q[1].length>=6&&num(i)){const k=String(q[0]).split('<br>')[0];(gm[k]=gm[k]||[]).push(i)}});
+  return SVGRP=Object.values(gm).filter(g=>g.length===3&&new Set(g.map(num)).size===3).map(g=>g.sort((a,b)=>num(a)-num(b)))}
+// Milliy sertifikat varianti: sayt algoritmi (30% oson, 50% o'rtacha, 20% qiyin), boshqa testlardagi savollar chetlab o'tiladi
+function svGenM(seed,ex){const so=[],sw=[];OPENQ.forEach((q,i)=>{if(q&&ex.has(ntx(q[0])))so.push(i)});WRITQ.forEach((w,i)=>{if(w&&ex.has(ntx(w[0])))sw.push(i)});
+  const r=mb32(seed),C=window.crypto,own=Object.prototype.hasOwnProperty.call(C,'getRandomValues'),orig=C.getRandomValues,keys=['geo5_seen_o','geo5_seen_w'],sv=keys.map(k=>LS.get(k)),e0=EQ,w0=EW;
+  try{LS.set(keys[0],JSON.stringify(so));LS.set(keys[1],JSON.stringify(sw));
+    Object.defineProperty(C,'getRandomValues',{value:function(a){for(let i=0;i<a.length;i++)a[i]=Math.floor(r()*4294967296)>>>0;return a},configurable:true,writable:true});
+    _pe();if(EQ.length!==35||EW.length!==10)return null;return{o:EQ.map(e=>e.o),w:EW.map(e=>e.o)}}
+  finally{if(own)C.getRandomValues=orig;else delete C.getRandomValues;keys.forEach((k,i)=>LS.set(k,sv[i]));EQ=e0;EW=w0;ST.a={};ST.w={};ST.cur=0}}
+function svGenA(seed,ex){return window.atGenVariant?window.atGenVariant(mb32(seed),ex,ntx):null}
+async function svPost(sid,sav){try{const rr=await fetch(API,{method:'POST',body:JSON.stringify({act:'admsav',key:LS.get('tz_key')||'',sid:sid,sav:sav})});return await rr.json()}catch(e){return{ok:false,err:'Serverga ulanib bo‘lmadi'}}}
+// hali savol biriktirilmagan kelgusi testlar: avval Milliy sertifikat, keyin Attestatsiya — bir-birida takrorlanmaydi
+async function autoPin(list){const t=now();let n=0;
+  const need=list.filter(s=>!s.sav&&s.start>t+30000).sort((a,b)=>(a.tur==='att')-(b.tur==='att')||a.start-b.start);
+  for(const s of need){const ex=svExcl(s.sid),sav=s.tur==='att'?svGenA(s.seed,ex):svGenM(s.seed,ex);if(!sav)continue;const r=await svPost(s.sid,sav);if(r.ok){s.sav=sav;n++}}return n}
+function svInfo(k,x){if(x&&typeof x==='object'){const q=[esc(x.t).replace(/\n/g,'<br>'),x.v.map(esc),x.a];return{h:q[0],o:q[1],c:q[2],b:bOpen(q),own:1}}
+  const q=svSrc(k)[x];if(!q)return{h:'<i>Savol topilmadi</i>',b:0};const img=key=>key&&typeof key==='string'&&typeof SV!=='undefined'&&SV[key]?SV[key]:'';
+  if(k==='w')return{h:q[0]+img(q[2]),key:WKEY[x],b:svB('w',q)};return{h:q[0]+img(q[3]),o:q[1],c:q[2],b:bOpen(q)}}
+const svOpts=I=>I.o?`<ol type="A">${I.o.map((t,j)=>`<li class="${j===I.c?'ok':''}">${t}${j===I.c?' ✅':''}</li>`).join('')}</ol>`:'';
+function svCard(s,k,idx,num,edit,canOwn){const I=svInfo(k,s.sav[k][idx]),L=svLvl(k,I.b);
+  return `<div class="tzcard svq" id="svq_${k}${idx}"><div class="svh"><b>${num}-savol</b><span class="lv l${L}">${SVLT[L]}</span>${I.own?'<span class="lv">✍️ o‘zingizniki</span>':''}</div>
+   <div class="svt">${I.h}</div>${svOpts(I)}${I.key!=null?`<div class="svk">✅ Javob: ${esc(String(I.key))}</div>`:''}
+   ${edit?`<div class="two"><button class="tzbtn" data-svr="${k}:${idx}" style="margin:0">🔄 Almashtirish</button>${canOwn?`<button class="tzbtn" data-svo="${k}:${idx}" style="margin:0">✍️ O‘zim yozaman</button>`:'<span></span>'}</div>`:''}<div class="svp" id="svp_${k}${idx}"></div></div>`}
+async function svSave(s,ns){const m=$('svMsg');if(m)m.textContent='⏳ Saqlanmoqda…';const r=await svPost(s.sid,ns);if(r.ok){s.sav=ns;return true}if(m)m.textContent='';alertBox('❌ Saqlanmadi: '+(r.err||'xato'));return false}
+async function savView(sid,focus){const s=DEVS.find(x=>x.sid===sid),B=$('tzDevBody');if(!s||!B){loadDev();return}
+  const edit=now()<s.start,att=s.tur==='att';
+  if(!s.sav){const ex=svExcl(sid),ns=att?svGenA(s.seed,ex):svGenM(s.seed,ex);if(ns&&edit){const r=await svPost(sid,ns);if(r.ok)s.sav=ns}else if(ns)s.sav=ns}
+  if(!s.sav){B.innerHTML='<button class="tzbtn" id="svBack">⬅ Dasturchi bo‘limi</button><div class="tzerr">Savollar bazasi yuklanmagan — sahifani yangilab qayta oching.</div>';$('svBack').onclick=()=>loadDev();return}
+  const parts=[],cnt=[0,0,0],add=(k,i,num,own)=>{cnt[svLvl(k,svInfo(k,s.sav[k][i]).b)]++;parts.push(svCard(s,k,i,num,edit,own))};
+  if(att){s.sav.g.forEach((_,i)=>add('g',i,i+1,true));parts.push('<h3 style="margin:16px 0 6px">🧑‍🏫 Pedagogik mahorat (41–50)</h3>');s.sav.p.forEach((_,i)=>add('p',i,41+i,true))}
+  else{s.sav.o.forEach((_,i)=>{if(i===32)parts.push(`<div class="tzcard"><h3>🔗 33–35: moslashtirish topshirig‘i</h3>${edit?'<button class="tzbtn" id="svGrp">🔄 Guruhni almashtirish</button>':''}</div>`);add('o',i,i+1,i<32)});
+    parts.push('<h3 style="margin:16px 0 6px">✍️ Yozma savollar (36–45)</h3>');s.sav.w.forEach((_,i)=>add('w',i,36+i,false))}
+  B.innerHTML=`<button class="tzbtn" id="svBack">⬅ Dasturchi bo‘limi</button>
+   <div class="tzcard"><h3>📋 ${esc(s.nomi)}</h3><div class="tzmuted">📅 ${fmtT(s.start)} · ${att?'50':'45'} ta savol · test bazangizdan olingan, boshqa Auditoriya testlarida takrorlanmaydi</div>
+   <div class="svsum"><span class="lv l0">🟢 oson: ${cnt[0]}</span><span class="lv l1">🟡 o‘rtacha: ${cnt[1]}</span><span class="lv l2">🔴 qiyin: ${cnt[2]}</span></div>
+   ${edit?'<div class="tzmuted">Yoqmagan savolni <b>«🔄 Almashtirish»</b> bilan bazadagi boshqa savolga yoki <b>«✍️ O‘zim yozaman»</b> bilan o‘z savolingizga almashtiring — darhol saqlanadi. Qatnashchilar savollarni faqat test boshlanganda ko‘radi.</div><button class="tzbtn" id="svRe">🔀 Hammasini qaytadan tanlash</button>':'<div class="tzbox">🔒 Test boshlangan — savollarni endi o‘zgartirib bo‘lmaydi.</div>'}
+   <div id="svMsg" class="tzmuted"></div></div>${parts.join('')}<button class="tzbtn" id="svBack2">⬅ Dasturchi bo‘limi</button>`;
+  $('svBack').onclick=$('svBack2').onclick=()=>loadDev();
+  if(edit){
+    $('svRe').onclick=async()=>{const b=$('svRe');if(b.dataset.arm!=='1'){b.dataset.arm='1';b.textContent='❗ Hammasi almashadi — tasdiqlash uchun yana bosing';setTimeout(()=>{b.dataset.arm='';b.textContent='🔀 Hammasini qaytadan tanlash'},4000);return}
+      const ex=svExcl(sid),sd=Math.floor(Math.random()*2e9)+1,ns=att?svGenA(sd,ex):svGenM(sd,ex);if(ns&&await svSave(s,ns))savView(sid)};
+    if($('svGrp'))$('svGrp').onclick=async()=>{const used=svTexts(s),ex=svExcl(sid),cur=s.sav.o.slice(32,35).join(',');
+      const G=svGroups().filter(g=>g.join(',')!==cur&&g.every(i=>!ex.has(ntx(OPENQ[i][0]))));if(!G.length){alertBox('Bazada boshqa moslashtirish guruhi yo‘q.');return}
+      const g=G[Math.floor(Math.random()*G.length)],ns=JSON.parse(JSON.stringify(s.sav));ns.o.splice(32,3,...g);if(await svSave(s,ns))savView(sid,'svq_o32')};
+    B.querySelectorAll('[data-svr]').forEach(b=>b.onclick=()=>{const a=b.dataset.svr.split(':');svPicker(s,a[0],+a[1],'')});
+    B.querySelectorAll('[data-svo]').forEach(b=>b.onclick=()=>{const a=b.dataset.svo.split(':');svOwn(s,a[0],+a[1])})}
+  if(focus){const e=document.getElementById(focus);if(e)e.scrollIntoView({block:'center'})}else scrollTo(0,0)}
+// bazadan almashtirish: shu darajadagi, hali ishlatilmagan savollar; qidiruv bilan
+function svPicker(s,k,idx,query){const box=$('svp_'+k+idx);if(!box)return;document.querySelectorAll('.svp').forEach(e=>{if(e!==box)e.innerHTML=''});
+  const used=svTexts(s),ex=svExcl(s.sid),L=svLvl(k,svInfo(k,s.sav[k][idx]).b),P=svPool(k).filter(x=>!used.has(x.t)&&!ex.has(x.t));
+  let list;if(query){const qq=query.toLowerCase();list=P.filter(x=>x.t.includes(qq)).slice(0,12)}
+  else{const same=P.filter(x=>svLvl(k,x.b)===L);list=(same.length>=4?same:P).slice().sort(()=>Math.random()-.5).slice(0,4)}
+  box.innerHTML=`<div class="svc"><b>🔄 Bazadan almashtirish</b><div class="tzmuted" style="text-align:left;padding:0">${query?'Qidiruv natijalari':SVLT[L]+' darajadagi tasodifiy savollar'} · bazada ${P.length} ta ishlatilmagan savol</div>
+   <input id="svpIn" placeholder="🔍 Bazadan qidirish (so‘z yozing)" value="${esc(query||'')}" autocomplete="off">
+   ${list.length?list.map(x=>{const I=svInfo(k,x.i),l=svLvl(k,x.b);return `<div class="tzcard svq" style="margin:8px 0"><span class="lv l${l}">${SVLT[l]}</span><div class="svt" style="margin-top:6px">${I.h}</div>${svOpts(I)}${I.key!=null?`<div class="svk">✅ ${esc(String(I.key))}</div>`:''}<button class="tzbtn g" data-svput="${x.i}" style="margin:0">✅ Shuni qo‘yish</button></div>`}).join(''):'<div class="tzmuted">Mos savol topilmadi.</div>'}
+   <div class="two"><button class="tzbtn" id="svpMore" style="margin:0">🔀 Boshqalari</button><button class="tzbtn" id="svpX" style="margin:0">✖ Yopish</button></div></div>`;
+  const inp=$('svpIn');let tm;inp.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{svPicker(s,k,idx,inp.value.trim());const i2=$('svpIn');if(i2){i2.focus();const n=i2.value.length;try{i2.setSelectionRange(n,n)}catch(e){}}},450)};
+  $('svpMore').onclick=()=>svPicker(s,k,idx,'');$('svpX').onclick=()=>{box.innerHTML=''};
+  box.querySelectorAll('[data-svput]').forEach(b=>b.onclick=async()=>{b.disabled=true;const ns=JSON.parse(JSON.stringify(s.sav));ns[k][idx]=+b.dataset.svput;if(await svSave(s,ns))savView(s.sid,'svq_'+k+idx);else b.disabled=false})}
+// o'z savolingiz: matn, 4 ta javob, to'g'ri javob
+function svOwn(s,k,idx){const box=$('svp_'+k+idx);if(!box)return;document.querySelectorAll('.svp').forEach(e=>{if(e!==box)e.innerHTML=''});
+  const cur=s.sav[k][idx],o=cur&&typeof cur==='object'?cur:null;
+  box.innerHTML=`<div class="svc"><b>✍️ O‘z savolingiz</b><textarea id="svoT" placeholder="Savol matni">${o?esc(o.t):''}</textarea>
+   ${['A','B','C','D'].map((L,j)=>`<div class="svrow"><input type="radio" name="svoA" value="${j}" ${o&&o.a===j?'checked':''} style="width:22px;height:22px;flex:none"><b>${L})</b><input id="svo${j}" placeholder="${L} javob" value="${o&&o.v[j]?esc(o.v[j]):''}" autocomplete="off"></div>`).join('')}
+   <div class="tzmuted" style="text-align:left;padding:0">To‘g‘ri javob oldidagi doirachani belgilang.</div>
+   <div class="two"><button class="tzbtn g" id="svoOk" style="margin:0">💾 Saqlash</button><button class="tzbtn" id="svoX" style="margin:0">✖ Bekor qilish</button></div></div>`;
+  $('svoX').onclick=()=>{box.innerHTML=''};
+  $('svoOk').onclick=async()=>{const t=$('svoT').value.trim(),v=[0,1,2,3].map(j=>$('svo'+j).value.trim()),a=box.querySelector('input[name=svoA]:checked');
+    if(t.length<5){alertBox('Savol matnini yozing.');return}if(v.some(x=>!x)){alertBox('4 ta javobning hammasini yozing.');return}if(!a){alertBox('To‘g‘ri javobni belgilang.');return}
+    const ns=JSON.parse(JSON.stringify(s.sav));ns[k][idx]={t:t,v:v,a:+a.value};if(await svSave(s,ns))savView(s.sid,'svq_'+k+idx)}}
 
 /* ===== 📣 kanal reklamasi matni ===== */
 function promoMatn(list){const t=now(),L=(list||[]).filter(s=>s.start>t).sort((a,b)=>a.start-b.start);
@@ -1280,7 +1393,7 @@ async function loadDev(flash){const B=$('tzDevBody'),key=LS.get('tz_key')||'';B.
      <div class="two"><button class="tzbtn" id="tzPromoCopy" style="margin:0">📋 Nusxalash</button><button class="tzbtn" id="tzPromoShare" style="margin:0">📤 Ulashish</button></div>
      <button class="tzbtn" id="tzPromoNew">🔄 Matnni qayta tayyorlash</button><div id="tzPromoMsg" class="tzmuted"></div></div>
    ${r.trig===false?'<div class="tzbox">⚠️ <b>Avtomatik e’lon hali yoqilmagan.</b> Test tugagach natijalarni hammaga birdan yuborish uchun pastdagi ro‘yxatda <b>📨</b> tugmasini bosing.<br><small>To‘liq avtomatik bo‘lishi uchun: Apps Script’da <b>ornat</b> funksiyasini tanlab, bir marta <b>▶ Run</b> bosing va ruxsat bering.</small></div>':''}
-   <div class="tzcard"><h3>📅 Auditoriya testlari</h3><div class="tzmuted" style="text-align:left;padding:0 0 6px">🏆 — natijalar · 📨 — natija va o‘rinni hamma qatnashchiga botga yuborish (sertifikatlari bilan) · 🎓 — faqat sertifikatlar · 🗑 — o‘chirish<br>💳 To‘lov cheklari botga keladi: «✅ Tasdiqlash»ni bossangiz, foydalanuvchi avtomatik ro‘yxatga olinadi.</div><div id="tzBulk" class="tzbox" hidden></div>${r.sessiyalar.length?`<table class="tzt"><tr><th>Vaqt</th><th>Nomi</th><th>👥</th><th title="Davomatdan o‘tganlar">🚪</th><th></th></tr>${r.sessiyalar.map(s=>`<tr><td>${fmtT(s.start)}<br><small>${s.holat}</small></td><td>${s.tur==='att'?'🎓':'📝'} ${esc(s.nomi)}<br><small>${s.narx?som(s.narx):'bepul'}${s.kut?` · ⏳ ${s.kut} ta chek kutilmoqda`:''}</small></td><td>${s.n}</td><td>${s.kir||0}</td><td><button class="tzbtn y" style="padding:6px;font-size:12px" data-dres="${s.sid}">🏆</button>${s.holat==='tugadi'?`<button class="tzbtn p" style="padding:6px;font-size:12px" data-delon="${s.sid}" title="Natijalarni hammaga yuborish">${s.elon?'✅📨':'📨'}</button><button class="tzbtn g" style="padding:6px;font-size:12px" data-dsert="${s.sid}">🎓</button>`:''}<button class="tzbtn" style="padding:6px;font-size:12px;background:#7a1030" data-ddel="${s.sid}">🗑</button></td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali test yaratilmagan.</div>'}</div>
+   <div class="tzcard"><h3>📅 Auditoriya testlari</h3><div class="tzmuted" style="text-align:left;padding:0 0 6px">🏆 — natijalar · 📨 — natija va o‘rinni hamma qatnashchiga botga yuborish (sertifikatlari bilan) · 🎓 — faqat sertifikatlar · 🗑 — o‘chirish<br>💳 To‘lov cheklari botga keladi: «✅ Tasdiqlash»ni bossangiz, foydalanuvchi avtomatik ro‘yxatga olinadi.</div><div id="tzBulk" class="tzbox" hidden></div>${r.sessiyalar.length?`<table class="tzt"><tr><th>Vaqt</th><th>Nomi</th><th>👥</th><th title="Davomatdan o‘tganlar">🚪</th><th></th></tr>${r.sessiyalar.map(s=>`<tr><td>${fmtT(s.start)}<br><small>${s.holat}</small></td><td>${s.tur==='att'?'🎓':'📝'} ${esc(s.nomi)}<br><small>${s.narx?som(s.narx):'bepul'}${s.kut?` · ⏳ ${s.kut} ta chek kutilmoqda`:''}</small></td><td>${s.n}</td><td>${s.kir||0}</td><td><button class="tzbtn g" style="padding:6px;font-size:12px" data-dsav="${s.sid}" title="Savollar">📋</button><button class="tzbtn y" style="padding:6px;font-size:12px" data-dres="${s.sid}">🏆</button>${s.holat==='tugadi'?`<button class="tzbtn p" style="padding:6px;font-size:12px" data-delon="${s.sid}" title="Natijalarni hammaga yuborish">${s.elon?'✅📨':'📨'}</button><button class="tzbtn g" style="padding:6px;font-size:12px" data-dsert="${s.sid}">🎓</button>`:''}<button class="tzbtn" style="padding:6px;font-size:12px;background:#7a1030" data-ddel="${s.sid}">🗑</button></td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali test yaratilmagan.</div>'}</div>
    <div class="tzcard"><h3>🆕 Yangi foydalanuvchilar</h3>${r.yangi.length?`<table class="tzt"><tr><th>Ism</th><th>Hudud</th><th>Sana</th><th>O‘rin</th></tr>${r.yangi.map(u=>`<tr><td>${esc(u.n)}</td><td>${esc(u.vl)}${u.ds?', '+esc(u.ds):''}</td><td>${fmtT(u.t)}</td><td>${u.o||'—'}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali foydalanuvchi yo‘q.</div>'}</div>
    <div class="tzcard"><h3>📝 So‘nggi natijalar</h3>${r.soni.length?`<table class="tzt"><tr><th>Ism</th><th>Test</th><th>Natija</th><th>O‘rin</th></tr>${r.soni.map(x=>`<tr><td>${esc(x.n)}${x.dev?' <small>(dev)</small>':''}<br><small>${fmtT(x.t)}</small></td><td>${turNom(x.tur)}</td><td>${x.tur==='att'?x.pct+'%':(+x.ball).toFixed(2)+' '+grB(x.gr)}</td><td>${x.o||'—'}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali natija yo‘q.</div>'}</div>
    <div class="tzcard"><h3>🏆 Reyting (Milliy sertifikat) — top 30</h3>${r.top.length?`<table class="tzt"><tr><th>#</th><th>Ism</th><th>Viloyat</th><th>Ball</th><th></th></tr>${r.top.map(x=>`<tr><td class="o">${x.o}</td><td>${esc(x.n)}</td><td>${esc(x.vl)}</td><td>${(+x.v).toFixed(2)}</td><td>${grB(x.gr)}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali natija yo‘q.</div>'}</div>`;
@@ -1291,6 +1404,8 @@ async function loadDev(flash){const B=$('tzDevBody'),key=LS.get('tz_key')||'';B.
     const x=await call('admaud',{key:LS.get('tz_key')||'',nomi:$('tzNm2').value,fan:$('tzFan').value,tur:$('tzTur').value,narx:$('tzNarx').value,start:ms,dur:$('tzDur').value,g:$('tzGs').value,notify:$('tzNot').checked?'1':'0'},300000);
     b.disabled=false;if(x.ok)loadDev('✅ Test e’lon qilindi'+(x.xabar?' · '+x.xabar+' kishiga xabar yuborildi':'')+'.');else m.textContent='❌ '+(x.err==='net'?'Serverga ulanib bo‘lmadi':x.err)};
   if(flash)$('tzMkMsg').textContent=flash;
+  DEVS=r.sessiyalar||[];B.querySelectorAll('[data-dsav]').forEach(b=>b.onclick=()=>savView(b.dataset.dsav));
+  autoPin(DEVS).then(n=>{if(n&&$('tzMkMsg'))$('tzMkMsg').textContent='📋 '+n+' ta Auditoriya testiga bazadan savollar biriktirildi (Milliy va Attestatsiyada takrorlanmaydi). Ko‘rish: ro‘yxatdagi 📋 tugmasi.'});
   $('tzPromo').value=promoMatn(r.sessiyalar);$('tzPromoNew').onclick=()=>{$('tzPromo').value=promoMatn(r.sessiyalar);$('tzPromoMsg').textContent='🔄 Matn qayta tayyorlandi.'};
   const plain=()=>$('tzPromo').value.replace(/<[^>]+>/g,'');
   $('tzPromoCopy').onclick=async()=>{try{await navigator.clipboard.writeText(plain())}catch(e){const x=document.createElement('textarea');x.value=plain();document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(_){}x.remove()}$('tzPromoMsg').textContent='📋 Nusxalandi — kanalingizga yoki guruhga joylashtiring.'};
