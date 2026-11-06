@@ -927,7 +927,7 @@ async function flush(){const L=qGet();if(!L.length||!API)return null;let last=nu
   for(const it of L){let r=null;for(let k=0;k<3;k++){r=await call('res',it,30000);if(r.err!=='net')break;await sleep(2000*(k+1))}
     if(r.err==='net')keep.push(it);else last={it,r}}
   LS.set('tz_q',JSON.stringify(keep));return last}
-function enqueue(it){const L=qGet();L.push(it);LS.set('tz_q',JSON.stringify(L.slice(-20)));return flush()}
+function enqueue(it){if(it&&it.sid)it.kv='1';const L=qGet();L.push(it);LS.set('tz_q',JSON.stringify(L.slice(-20)));return flush()}
 
 /* --- saytdagi mavjud holat --- */
 const isDev=()=>{try{return !!DEV}catch(e){return false}};
@@ -1068,7 +1068,13 @@ async function openAud(sid,mode){
   await loadList();render();
   audTimer=setInterval(tickAud,1000);
   audPoll=setInterval(async()=>{if(cur!=='tzAud'){stopAud();return}if(VIEW.mode==='room')await loadRoom();else if(VIEW.mode==='list')await loadList();render()},30000+Math.random()*8000)}
-async function loadList(){const r=await call('aud',{uid:UID});if(r.ok){LIST=r.list;if(r.karta)KRT=r.karta}else if(!LIST||!LIST.length)LIST=null}
+// davomat: test boshlanishidan OLDINM oldin ochiladi, boshlangach KECHM dan keyin yopiladi
+let KECHM=60000,OLDINM=600000,KIRBUSY=0,KIRT=0;const KIR={},KIRSTOP={},AUTO={};
+const hm=ms=>{const d=new Date(ms);return f2(d.getHours())+':'+f2(d.getMinutes())};
+async function kirish(sid){const r=await call('audkir',{sid:sid,uid:UID,key:isDev()?(LS.get('tz_key')||''):''},30000);
+  if(!r.ok&&/Noma.lum so.rov/.test(r.err||'')){KIR[sid]=true;return{ok:true,eski:true}} // eski bot (davomatsiz) — to'sib qo'ymaslik
+  if(r.ok)KIR[sid]=true;else if(r.kech||/ro‘yxatdan o‘tmagansiz|ro'yxatdan o'tmagansiz|kirgansiz/.test(r.err||''))KIRSTOP[sid]=r.err;return r}
+async function loadList(){const r=await call('aud',{uid:UID});if(r.ok){LIST=r.list;if(r.karta)KRT=r.karta;if(r.kech)KECHM=r.kech;if(r.oldin)OLDINM=r.oldin;LIST.forEach(x=>{if(x.kir)KIR[x.sid]=true})}else if(!LIST||!LIST.length)LIST=null}
 async function loadRoom(){const r=await call('room',{sid:VIEW.sid,uid:UID});if(r.ok)ROOM=r}
 function ses(sid){return(LIST||[]).find(s=>s.sid===sid)||(ROOM&&ROOM.ses&&ROOM.ses.sid===sid?ROOM.ses:null)}
 function holat(s){const t=now();return t<s.start?'kutilmoqda':t<s.end?'boshlandi':'tugadi'}
@@ -1084,14 +1090,16 @@ async function render(){const B=$('tzAudBody');if(!B)return;
   if(!LT.length){B.innerHTML=tabs+`<div class="tzbox">📅 Hozircha ${AUDTUR==='att'?'Attestatsiya':'Milliy sertifikat'} bo‘yicha jonli test yo‘q.<br>Yangi test e’lon qilinganda bot orqali xabar keladi.</div>`;bindAud(B);return}
   B.innerHTML=tabs+LT.map(s=>{const h=holat(s),done=LS.get('tz_done_'+s.sid);
     let act='';
-    if(h==='kutilmoqda')act=s.men?`<button class="tzbtn g" data-room="${s.sid}">✅ Ro‘yxatdasiz — xonani ko‘rish</button>`:regBtn(s);
-    else if(h==='boshlandi')act=s.men?(done?`<button class="tzbtn" disabled>✅ Javoblaringiz yuborilgan</button>`:`<button class="tzbtn p" data-start="${s.sid}">▶ TESTNI BOSHLASH</button><button class="tzbtn" data-room="${s.sid}">🚪 Xonani ko‘rish</button>`):`<button class="tzbtn" disabled>🔒 Ro‘yxatga olish yopilgan</button>`;
+    if(h==='kutilmoqda')act=s.men?`<button class="tzbtn g" data-room="${s.sid}">✅ Ro‘yxatdasiz — xonani ko‘rish</button><div class="tzmuted">🚪 <b>${hm(s.start-OLDINM)}</b> dan xonaga kiring · ⛔ <b>${hm(s.start+KECHM)}</b> dan keyin kirish yopiladi</div>`:regBtn(s);
+    else if(h==='boshlandi')act=s.men?(done?`<button class="tzbtn" disabled>✅ Javoblaringiz yuborilgan</button>`:!(KIR[s.sid]||s.kir)&&now()>s.start+KECHM&&!isDev()?`<div class="tzerr">⛔ Kechikdingiz: test ${hm(s.start)} da boshlandi, kirish ${hm(s.start+KECHM)} da yopildi.</div>`:`<button class="tzbtn p" data-start="${s.sid}">▶ TESTNI BOSHLASH</button><button class="tzbtn" data-room="${s.sid}">🚪 Xonani ko‘rish</button>`):`<button class="tzbtn" disabled>🔒 Ro‘yxatga olish yopilgan</button>`;
     else act=`<button class="tzbtn y" data-res="${s.sid}">🏆 Natijalar va o‘rinlar</button>`;
     return `<div class="tzs ${h==='boshlandi'?'live':h==='tugadi'?'done':''}"><div class="top"><span class="bd">${h==='kutilmoqda'?'⏳ Ro‘yxatga olish ochiq':h==='boshlandi'?'🔴 Test ketmoqda':'✅ Yakunlangan'}</span><span class="cd" data-cd="${s.sid}"></span></div>
       <div class="tt">${s.tur==='att'?'🎓':'📝'} ${esc(s.nomi)}${s.narx?`<span class="tzprice">${som(s.narx)}</span>`:''}</div><div class="mt">📅 ${fmtT(s.start)} · ⏱ ${s.dur} daqiqa</div>
       <div class="mt">👥 ${s.n} kishi ro‘yxatda · 🚪 ${s.xonalar} ta xona (${s.g} kishidan)${h!=='kutilmoqda'?' · 📨 '+s.topshirdi+' kishi topshirdi':''}</div><div style="margin-top:8px">${act}</div></div>`}).join('');
   bindAud(B);tickAud()}
-function regBtn(s){if(isDev())return `<button class="tzbtn y" data-reg="${s.sid}">✍️ Ro‘yxatdan o‘tish (dasturchi)</button>`;
+function regBtn(s){const o=!isDev()&&(LIST||[]).find(x=>x.men&&x.sid!==s.sid&&x.start<s.end&&s.start<x.end&&holat(x)!=='tugadi');
+  if(o)return `<div class="tzbox">🔒 Siz «${esc(o.nomi)}» testiga ro‘yxatdan o‘tgansiz.<br><small>Bir vaqtda faqat <b>bitta</b> Auditoriyada qatnashish mumkin: Milliy sertifikat <b>yoki</b> Attestatsiya.${o.narx?'':' Almashtirmoqchi bo‘lsangiz, avval o‘sha testda «Ro‘yxatdan chiqish»ni bosing.'}</small></div><button class="tzbtn" data-room="${o.sid}">🚪 «${esc(o.nomi.slice(0,40))}» ga o‘tish</button>`;
+  if(isDev())return `<button class="tzbtn y" data-reg="${s.sid}">✍️ Ro‘yxatdan o‘tish (dasturchi)</button>`;
   if(s.tol==='kutilmoqda')return `<button class="tzbtn" disabled>⏳ To‘lov tekshirilmoqda…</button><div class="tzmuted">Chekingiz adminga yuborilgan. Tasdiqlangach avtomatik ro‘yxatga olinasiz va botga xabar keladi.</div>`;
   if(s.narx>0)return (s.tol==='rad etildi'?'<div class="tzerr">❌ Oldingi chek tasdiqlanmadi — qayta yuboring.</div>':'')+`<button class="tzbtn y" data-pay="${s.sid}">💳 To‘lash va ro‘yxatdan o‘tish — ${som(s.narx)}</button>`;
   return `<button class="tzbtn y" data-reg="${s.sid}">✍️ Ro‘yxatdan o‘tish (bepul)</button>`}
@@ -1105,6 +1113,11 @@ function bindAud(B){
     if(r.ok){alertBox(`✅ Ro‘yxatdan o‘tdingiz!\nHozirgi joyingiz: ${r.xona}-xona, ${r.joy}-o‘rin (yakuniy taqsimot test boshlanganda).\nTest boshlanishidan oldin shu yerga qayting.`);VIEW={sid:b.dataset.reg,mode:'room',tab:r.xona-1};ROOM=null;await loadList();render()}
     else if(r.tolov){VIEW={sid:b.dataset.reg,mode:'pay',tab:0};await loadList();render()}
     else{b.disabled=false;b.textContent='✍️ Ro‘yxatdan o‘tish';alertBox(r.err==='net'?'Internet yo‘q. Qayta urinib ko‘ring.':(r.err||'Xatolik'))}});
+  B.querySelectorAll('[data-kir]').forEach(b=>b.onclick=async()=>{b.disabled=true;b.textContent='⏳ …';const r=await kirish(b.dataset.kir);if(!r.ok)alertBox(r.err==='net'?'Internet yo‘q. Qayta urinib ko‘ring.':(r.err||'Xatolik'));if(ROOM)ROOM.kir=!!r.ok;render()});
+  B.querySelectorAll('[data-chiq]').forEach(b=>b.onclick=async()=>{if(b.dataset.arm!=='1'){b.dataset.arm='1';b.textContent='❗ Tasdiqlash uchun yana bir marta bosing';setTimeout(()=>{b.dataset.arm='';b.textContent='❌ Ro‘yxatdan chiqish'},4000);return}
+    b.disabled=true;b.textContent='⏳ …';const r=await call('audchiq',{sid:b.dataset.chiq,uid:UID,init:INIT||''});
+    if(r.ok){alertBox('Ro‘yxatdan chiqdingiz. Endi boshqa Auditoriyani tanlashingiz mumkin.');VIEW={sid:null,mode:'list',tab:0};ROOM=null;await loadList();render()}
+    else{b.disabled=false;b.textContent='❌ Ro‘yxatdan chiqish';alertBox(r.err==='net'?'Internet yo‘q.':(r.err||'Xatolik'))}});
   B.querySelectorAll('[data-room]').forEach(b=>b.onclick=()=>{VIEW={sid:b.dataset.room,mode:'room',tab:-1};ROOM=null;render()});
   B.querySelectorAll('[data-res]').forEach(b=>b.onclick=()=>{VIEW={sid:b.dataset.res,mode:'res',tab:0};render()});
   B.querySelectorAll('[data-start]').forEach(b=>b.onclick=()=>startAud(b.dataset.start));
@@ -1159,17 +1172,25 @@ function tickAud(){const t=now();
   document.querySelectorAll('[data-cd]').forEach(el=>{const s=ses(el.dataset.cd);if(!s)return;const h=holat(s);el.textContent=h==='kutilmoqda'?fmtD(s.start-t):h==='boshlandi'?fmtD(s.end-t):''});
   const big=$('tzBig');if(big&&ROOM){const s=ROOM.ses,h=holat(s);big.querySelector('small').textContent=h==='kutilmoqda'?'Test boshlanishiga qoldi':h==='boshlandi'?'Test tugashiga qoldi':'Test yakunlandi';
     big.querySelector('b').textContent=h==='tugadi'?'✅':fmtD((h==='kutilmoqda'?s.start:s.end)-t);
-    if(h!==big.dataset.h){big.dataset.h=h;if(big.dataset.init)render();big.dataset.init='1'}}
+    if(h!==big.dataset.h){big.dataset.h=h;if(big.dataset.init)render();big.dataset.init='1'}
+    const s2=ROOM.ses,me2=ROOM.odam.find(o=>o.u===ROOM.men);
+    if(VIEW.mode==='room'&&me2&&!KIR[s2.sid]&&!ROOM.kir&&!KIRSTOP[s2.sid]&&!KIRBUSY&&t-KIRT>5000&&t>=s2.start-OLDINM&&t<=s2.start+KECHM+15000){
+      KIRBUSY=1;KIRT=t;kirish(s2.sid).then(r=>{KIRBUSY=0;if(r.ok)ROOM.kir=true;if(r.ok||KIRSTOP[s2.sid])render()})}
+    if(VIEW.mode==='room'&&me2&&(KIR[s2.sid]||ROOM.kir)&&h==='boshlandi'&&!LS.get('tz_done_'+s2.sid)&&!AUTO[s2.sid]&&t<s2.start+5*60000){AUTO[s2.sid]=1;startAud(s2.sid)}}
   if(VIEW.mode==='list'&&LIST){let ch=false;LIST.forEach(s=>{const h=holat(s);if(s._h&&s._h!==h)ch=true;s._h=h});if(ch)render()}}
 function renderRoom(){const B=$('tzAudBody'),R=ROOM;if(!R){B.innerHTML='<div class="tzerr">Xona ma’lumotini olib bo‘lmadi.</div><button class="tzbtn" data-list="1">⬅ Testlar ro‘yxati</button>';bindAud(B);return}
   const s=R.ses,h=holat(s),me=R.odam.find(o=>o.u===R.men),done=LS.get('tz_done_'+s.sid);
   if(VIEW.tab<0)VIEW.tab=me?me.x-1:0;
   const tabs=Array.from({length:R.k},(_,i)=>{const n=R.odam.filter(o=>o.x===i+1).length;return `<button class="${VIEW.tab===i?'on':''}" data-tab="${i}">${i+1}-xona (${n})${me&&me.x===i+1?' ⭐':''}</button>`}).join('');
   const people=R.odam.filter(o=>o.x===VIEW.tab+1).sort((a,b)=>a.j-b.j);
-  const seats=people.map(o=>`<div class="tzseat ${o.u===R.men?'me':''}"><i>${o.u===R.men?'🧑‍🎓':'🪑'}</i><b>${esc(o.n)}</b>${esc(o.vl.replace(/ viloyati| Respublikasi/,''))}</div>`).join('')+(people.length%4?Array.from({length:4-people.length%4},()=>'<div class="tzseat empty"><i>🪑</i></div>').join(''):'');
+  const seats=people.map(o=>`<div class="tzseat ${o.u===R.men?'me':''}"><i>${o.u===R.men?'🧑‍🎓':'🪑'}</i><b>${o.k?'🟢 ':''}${esc(o.n)}</b>${esc(o.vl.replace(/ viloyati| Respublikasi/,''))}</div>`).join('')+(people.length%4?Array.from({length:4-people.length%4},()=>'<div class="tzseat empty"><i>🪑</i></div>').join(''):'');
   let act='';
-  if(h==='kutilmoqda')act=me?`<div class="tzbox">✅ Siz ro‘yxatdasiz: <b>${me.x}-xona, ${me.j}-o‘rin</b>.<br><small>Yangi qatnashchilar qo‘shilgani sari xonalar teng qilib qayta taqsimlanadi — yakuniy joyingiz test boshlanganda belgilanadi.</small><br>Test boshlanishi bilan shu yerda «▶ Testni boshlash» tugmasi paydo bo‘ladi.</div>`:regBtn(ses(s.sid)||s);
-  else if(h==='boshlandi')act=me?(done?'<div class="tzbox">✅ Javoblaringiz yuborilgan. Natijalar test tugagach e’lon qilinadi.</div>':`<button class="tzbtn p" data-start="${s.sid}">▶ TESTNI BOSHLASH</button>`):'<div class="tzbox">🔒 Test boshlangan — ro‘yxatga olish yopilgan.</div>';
+  const kir=!!(KIR[s.sid]||R.kir),tn=now(),ochiq=tn>=s.start-OLDINM;
+  if(h==='kutilmoqda')act=!me?regBtn(ses(s.sid)||s):kir?`<div class="tzbox" style="border-color:#2cff8a">✅ <b>Davomatdan o‘tdingiz — siz xonadasiz!</b><br>Test <b>${hm(s.start)}</b> da shu yerda <b>o‘zi boshlanadi</b>. Sahifani yopmang. 🔔<br><small>Joyingiz: ${me.x}-xona, ${me.j}-o‘rin</small></div>`
+      :KIRSTOP[s.sid]?`<div class="tzerr">${esc(KIRSTOP[s.sid])}</div>`
+      :ochiq?`<div class="tzbox">⏳ Davomat olinmoqda…</div><button class="tzbtn p" data-kir="${s.sid}">🚪 Xonaga kirish</button>`
+      :`<div class="tzbox">✅ Siz ro‘yxatdasiz: <b>${me.x}-xona, ${me.j}-o‘rin</b>.<br>🚪 Xonaga kirish (davomat) <b>${hm(s.start-OLDINM)}</b> da ochiladi.<br>⛔ Test <b>${hm(s.start)}</b> da boshlanadi, <b>${hm(s.start+KECHM)}</b> dan keyin kirish yopiladi — kechikmang!<br><small>Bir vaqtda faqat bitta Auditoriyada qatnashish mumkin.</small></div>${(ses(s.sid)||s).narx?'':`<button class="tzbtn" data-chiq="${s.sid}" style="background:#5a1a2a">❌ Ro‘yxatdan chiqish</button>`}`;
+  else if(h==='boshlandi')act=me?(done?'<div class="tzbox">✅ Javoblaringiz yuborilgan. Natijalar test tugagach e’lon qilinadi.</div>':kir||isDev()||tn<=s.start+KECHM?`<button class="tzbtn p" data-start="${s.sid}">▶ TESTNI BOSHLASH</button>`:`<div class="tzerr">⛔ <b>Kechikdingiz.</b> Test ${hm(s.start)} da boshlandi, kirish ${hm(s.start+KECHM)} da yopildi.<br><small>Keyingi Auditoriya testida vaqtida keling — e’lonlar botga keladi.</small></div>`):'<div class="tzbox">🔒 Test boshlangan — ro‘yxatga olish yopilgan.</div>';
   else act=`<button class="tzbtn y" data-res="${s.sid}">🏆 Natijalar va o‘rinlar</button>`;
   B.innerHTML=`<button class="tzbtn" data-list="1">⬅ Testlar ro‘yxati</button>
     <div class="tzs ${h==='boshlandi'?'live':''}"><div class="tt">📝 ${esc(s.nomi)}</div><div class="mt">📅 ${fmtT(s.start)} · ⏱ ${s.dur} daqiqa · 👥 ${R.odam.length} kishi · 🚪 ${R.k} ta xona</div>
@@ -1202,6 +1223,8 @@ const _pe=pickExam;pickExam=function(){if(AUD&&AUD.seed)return seeded(AUD.seed,_
 window.tzSeededPick=seed=>{AUD={seed:seed};try{pickExam()}finally{AUD=null}return EQ.map(e=>e.o).concat(EW.map(e=>'w'+e.o))};
 async function startAud(sid){let s=ses(sid);if(!s){await loadList();s=ses(sid)}if(!s)return;
   if(holat(s)!=='boshlandi'){alertBox('Test hali boshlanmagan yoki yakunlangan.');return}
+  if(!(KIR[sid]||s.kir||(ROOM&&ROOM.ses&&ROOM.ses.sid===sid&&ROOM.kir))){const kr=await kirish(sid);
+    if(!kr.ok){alertBox(kr.err==='net'?'Serverga ulanib bo‘lmadi. Internetni tekshirib, darhol qayta bosing.':(kr.err||'Kirish mumkin emas'));render();return}}
   if(LS.get('tz_done_'+sid)){alertBox('Siz bu testga javoblaringizni yuborgansiz.');return}
   stopAud();
   if((s.tur||'milliy')==='att'){AUDA={sid:s.sid,seed:s.seed,end:s.end-OFF,nomi:s.nomi};window.__atEndFix=AUDA.end;
@@ -1211,6 +1234,22 @@ async function startAud(sid){let s=ses(sid);if(!s){await loadList();s=ses(sid)}i
   AUD={sid:s.sid,seed:s.seed,end:s.end-OFF,nomi:s.nomi};
   const go=()=>{goSec('exam');try{exStarted=true}catch(e){}$('go').onclick();end=AUD.end;tick();$('exback').style.display='none';try{window.tvStart&&tvStart()}catch(e){}};
   goSec('cover');if(window.__intro&&__intro.introMilliy)__intro.introMilliy(go);else go()}
+
+/* ===== 📣 kanal reklamasi matni ===== */
+function promoMatn(list){const t=now(),L=(list||[]).filter(s=>s.start>t).sort((a,b)=>a.start-b.start);
+  const M=L.find(s=>s.tur!=='att'),A=L.find(s=>s.tur==='att'),f=L[0];
+  if(!f)return '🏛 <b>TESTUZ — AUDITORIYA</b>\n\nYaqin kunlarda yangi jonli testlar e’lon qilinadi. Kuzatib boring! 🔔\n\n🤖 @TestUz_Sertifikat_Bot\n🔗 @GEOGRAFIYA_QUIZ_TESTLARI';
+  const d=new Date(f.start),b=new Date(t),kun=Math.round((new Date(d.getFullYear(),d.getMonth(),d.getDate())-new Date(b.getFullYear(),b.getMonth(),b.getDate()))/864e5);
+  const qachon=kun===0?'bugun':kun===1?'ertaga':f2(d.getDate())+'.'+f2(d.getMonth()+1)+'.'+d.getFullYear()+' kuni';
+  const juma=d.getDay()===5,bepul=L.every(s=>!s.narx),soat=hm(f.start);
+  const yon=[M&&`📝 <b>Milliy sertifikat</b> — 45 savol, ${M.dur} daqiqa`,A&&`🎓 <b>Attestatsiya</b> — 50 savol (40 fan + 10 pedagogik mahorat), ${A.dur} daqiqa`].filter(Boolean).join('\n');
+  return (juma?'🕌 <b>JUMA AYYOMI MUNOSABATI BILAN'+(bepul?' — MUTLAQO BEPUL!':'!')+'</b>\n\n':'🔥 <b>DIQQAT, YANGI JONLI TEST'+(bepul?' — BEPUL!':'!')+'</b>\n\n')+
+   `🎓 <b>TESTUZ</b> platformasida ${qachon} soat <b>${soat}</b> da <b>Geografiya</b> fanidan <b>Rasch modeli</b> asosidagi jonli <b>AUDITORIYA</b> testlariga <b>START</b> beriladi! 🚀\n\n${yon}\n\n`+
+   `${bepul?'✅ Mutlaqo <b>BEPUL</b> — hech qanday to‘lovsiz\n':''}✅ Natijalar xuddi haqiqiy imtihondagidek <b>Rasch modeli</b> bilan hisoblanadi\n✅ Har bir qatnashchiga <b>sertifikat</b> 🏆 va reytingdagi o‘rni\n✅ Hamma bir vaqtda, xonalarga bo‘linib — <b>real imtihon muhiti</b>\n\n`+
+   `⚠️ <b>Qoidalar:</b>\n• Faqat <b>bitta</b> yo‘nalishni tanlang: Milliy sertifikat <b>yoki</b> Attestatsiya\n• <b>${hm(f.start-OLDINM)}</b> dan xonaga kiring — <b>${hm(f.start+KECHM)}</b> dan keyin eshik yopiladi, kechikkanlar kiritilmaydi!\n\n`+
+   `👇 <b>Hoziroq</b> pastdagi tugma orqali ro‘yxatdan o‘ting — vaqt cheklangan! ⏳\n\n`+
+   `📣 <b>Yaqinlaringizga ham ulashing!</b>\nBu xabarni o‘qituvchi hamkasblaringizga, abituriyent va o‘quvchilarga, sinf va kurs guruhlariga, o‘zingiz a’zo bo‘lgan Telegram kanal va guruhlarga yuboring. Bilimini sinab ko‘rmoqchi, Milliy sertifikat yoki Attestatsiyaga tayyorlanayotgan har bir inson uchun bu — ajoyib imkoniyat! Yaxshilikka sababchi bo‘ling 🤝\n\n`+
+   `🤖 Bot: @TestUz_Sertifikat_Bot\n🔗 Kanal: @GEOGRAFIYA_QUIZ_TESTLARI\n\n#TESTUZ #MilliySertifikat #Attestatsiya #Geografiya #Rasch`}
 
 /* ===== 5) DASTURCHI BO'LIMI (faqat dasturchi rejimida) ===== */
 async function openDev(){if(!isDev())return;goSec('tzDev');const D=$('tzDev');
@@ -1234,8 +1273,14 @@ async function loadDev(flash){const B=$('tzDevBody'),key=LS.get('tz_key')||'';B.
      <label>Qatnashish narxi (so‘m) — 0 bo‘lsa bepul</label><input id="tzNarx" type="number" value="10000" min="0" step="1000">
      <label class="tzchk"><input type="checkbox" id="tzNot" checked> 📢 Bot orqali barcha foydalanuvchilarga xabar yuborish</label>
      <button class="tzbtn p" id="tzMk">➕ Testni e’lon qilish</button><div id="tzMkMsg" class="tzmuted"></div></div>
+   <div class="tzcard tzform"><h3>📣 Kanal uchun reklama</h3><div class="tzmuted" style="text-align:left;padding:0">Matn yaqin Auditoriya testlari asosida tayyorlandi — xohlasangiz o‘zgartiring. «Kanalga yuborish» bosilsa, xabar <b>ro‘yxatdan o‘tish tugmalari</b> bilan kanalga chiqadi (bot kanalda admin bo‘lishi kerak).</div>
+     <label>Kanal</label><input id="tzKanal" value="@GEOGRAFIYA_QUIZ_TESTLARI" autocomplete="off">
+     <label>Reklama matni</label><textarea id="tzPromo" rows="16" style="width:100%;box-sizing:border-box;min-height:300px;border-radius:12px;padding:10px;background:#0b1430;color:#eaf2ff;border:1px solid #2b3f75;font:14px/1.45 system-ui,sans-serif"></textarea>
+     <button class="tzbtn p" id="tzPromoSend">📢 Kanalga yuborish</button>
+     <div class="two"><button class="tzbtn" id="tzPromoCopy" style="margin:0">📋 Nusxalash</button><button class="tzbtn" id="tzPromoShare" style="margin:0">📤 Ulashish</button></div>
+     <button class="tzbtn" id="tzPromoNew">🔄 Matnni qayta tayyorlash</button><div id="tzPromoMsg" class="tzmuted"></div></div>
    ${r.trig===false?'<div class="tzbox">⚠️ <b>Avtomatik e’lon hali yoqilmagan.</b> Test tugagach natijalarni hammaga birdan yuborish uchun pastdagi ro‘yxatda <b>📨</b> tugmasini bosing.<br><small>To‘liq avtomatik bo‘lishi uchun: Apps Script’da <b>ornat</b> funksiyasini tanlab, bir marta <b>▶ Run</b> bosing va ruxsat bering.</small></div>':''}
-   <div class="tzcard"><h3>📅 Auditoriya testlari</h3><div class="tzmuted" style="text-align:left;padding:0 0 6px">🏆 — natijalar · 📨 — natija va o‘rinni hamma qatnashchiga botga yuborish (sertifikatlari bilan) · 🎓 — faqat sertifikatlar · 🗑 — o‘chirish<br>💳 To‘lov cheklari botga keladi: «✅ Tasdiqlash»ni bossangiz, foydalanuvchi avtomatik ro‘yxatga olinadi.</div><div id="tzBulk" class="tzbox" hidden></div>${r.sessiyalar.length?`<table class="tzt"><tr><th>Vaqt</th><th>Nomi</th><th>👥</th><th></th></tr>${r.sessiyalar.map(s=>`<tr><td>${fmtT(s.start)}<br><small>${s.holat}</small></td><td>${s.tur==='att'?'🎓':'📝'} ${esc(s.nomi)}<br><small>${s.narx?som(s.narx):'bepul'}${s.kut?` · ⏳ ${s.kut} ta chek kutilmoqda`:''}</small></td><td>${s.n}</td><td><button class="tzbtn y" style="padding:6px;font-size:12px" data-dres="${s.sid}">🏆</button>${s.holat==='tugadi'?`<button class="tzbtn p" style="padding:6px;font-size:12px" data-delon="${s.sid}" title="Natijalarni hammaga yuborish">${s.elon?'✅📨':'📨'}</button><button class="tzbtn g" style="padding:6px;font-size:12px" data-dsert="${s.sid}">🎓</button>`:''}<button class="tzbtn" style="padding:6px;font-size:12px;background:#7a1030" data-ddel="${s.sid}">🗑</button></td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali test yaratilmagan.</div>'}</div>
+   <div class="tzcard"><h3>📅 Auditoriya testlari</h3><div class="tzmuted" style="text-align:left;padding:0 0 6px">🏆 — natijalar · 📨 — natija va o‘rinni hamma qatnashchiga botga yuborish (sertifikatlari bilan) · 🎓 — faqat sertifikatlar · 🗑 — o‘chirish<br>💳 To‘lov cheklari botga keladi: «✅ Tasdiqlash»ni bossangiz, foydalanuvchi avtomatik ro‘yxatga olinadi.</div><div id="tzBulk" class="tzbox" hidden></div>${r.sessiyalar.length?`<table class="tzt"><tr><th>Vaqt</th><th>Nomi</th><th>👥</th><th title="Davomatdan o‘tganlar">🚪</th><th></th></tr>${r.sessiyalar.map(s=>`<tr><td>${fmtT(s.start)}<br><small>${s.holat}</small></td><td>${s.tur==='att'?'🎓':'📝'} ${esc(s.nomi)}<br><small>${s.narx?som(s.narx):'bepul'}${s.kut?` · ⏳ ${s.kut} ta chek kutilmoqda`:''}</small></td><td>${s.n}</td><td>${s.kir||0}</td><td><button class="tzbtn y" style="padding:6px;font-size:12px" data-dres="${s.sid}">🏆</button>${s.holat==='tugadi'?`<button class="tzbtn p" style="padding:6px;font-size:12px" data-delon="${s.sid}" title="Natijalarni hammaga yuborish">${s.elon?'✅📨':'📨'}</button><button class="tzbtn g" style="padding:6px;font-size:12px" data-dsert="${s.sid}">🎓</button>`:''}<button class="tzbtn" style="padding:6px;font-size:12px;background:#7a1030" data-ddel="${s.sid}">🗑</button></td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali test yaratilmagan.</div>'}</div>
    <div class="tzcard"><h3>🆕 Yangi foydalanuvchilar</h3>${r.yangi.length?`<table class="tzt"><tr><th>Ism</th><th>Hudud</th><th>Sana</th><th>O‘rin</th></tr>${r.yangi.map(u=>`<tr><td>${esc(u.n)}</td><td>${esc(u.vl)}${u.ds?', '+esc(u.ds):''}</td><td>${fmtT(u.t)}</td><td>${u.o||'—'}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali foydalanuvchi yo‘q.</div>'}</div>
    <div class="tzcard"><h3>📝 So‘nggi natijalar</h3>${r.soni.length?`<table class="tzt"><tr><th>Ism</th><th>Test</th><th>Natija</th><th>O‘rin</th></tr>${r.soni.map(x=>`<tr><td>${esc(x.n)}${x.dev?' <small>(dev)</small>':''}<br><small>${fmtT(x.t)}</small></td><td>${turNom(x.tur)}</td><td>${x.tur==='att'?x.pct+'%':(+x.ball).toFixed(2)+' '+grB(x.gr)}</td><td>${x.o||'—'}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali natija yo‘q.</div>'}</div>
    <div class="tzcard"><h3>🏆 Reyting (Milliy sertifikat) — top 30</h3>${r.top.length?`<table class="tzt"><tr><th>#</th><th>Ism</th><th>Viloyat</th><th>Ball</th><th></th></tr>${r.top.map(x=>`<tr><td class="o">${x.o}</td><td>${esc(x.n)}</td><td>${esc(x.vl)}</td><td>${(+x.v).toFixed(2)}</td><td>${grB(x.gr)}</td></tr>`).join('')}</table>`:'<div class="tzmuted">Hali natija yo‘q.</div>'}</div>`;
@@ -1246,6 +1291,14 @@ async function loadDev(flash){const B=$('tzDevBody'),key=LS.get('tz_key')||'';B.
     const x=await call('admaud',{key:LS.get('tz_key')||'',nomi:$('tzNm2').value,fan:$('tzFan').value,tur:$('tzTur').value,narx:$('tzNarx').value,start:ms,dur:$('tzDur').value,g:$('tzGs').value,notify:$('tzNot').checked?'1':'0'},300000);
     b.disabled=false;if(x.ok)loadDev('✅ Test e’lon qilindi'+(x.xabar?' · '+x.xabar+' kishiga xabar yuborildi':'')+'.');else m.textContent='❌ '+(x.err==='net'?'Serverga ulanib bo‘lmadi':x.err)};
   if(flash)$('tzMkMsg').textContent=flash;
+  $('tzPromo').value=promoMatn(r.sessiyalar);$('tzPromoNew').onclick=()=>{$('tzPromo').value=promoMatn(r.sessiyalar);$('tzPromoMsg').textContent='🔄 Matn qayta tayyorlandi.'};
+  const plain=()=>$('tzPromo').value.replace(/<[^>]+>/g,'');
+  $('tzPromoCopy').onclick=async()=>{try{await navigator.clipboard.writeText(plain())}catch(e){const x=document.createElement('textarea');x.value=plain();document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(_){}x.remove()}$('tzPromoMsg').textContent='📋 Nusxalandi — kanalingizga yoki guruhga joylashtiring.'};
+  $('tzPromoShare').onclick=()=>{const u='https://t.me/share/url?url='+encodeURIComponent('https://t.me/TestUz_Sertifikat_Bot?start=auditoriya')+'&text='+encodeURIComponent(plain().slice(0,3000));
+    try{if(window.Telegram&&Telegram.WebApp&&Telegram.WebApp.openTelegramLink){Telegram.WebApp.openTelegramLink(u);return}}catch(e){}window.open(u,'_blank')};
+  $('tzPromoSend').onclick=async()=>{const b=$('tzPromoSend'),m=$('tzPromoMsg');b.disabled=true;m.textContent='⏳ Kanalga yuborilmoqda…';
+    let x;try{const rr=await fetch(API,{method:'POST',body:JSON.stringify({act:'admkanal',key:LS.get('tz_key')||'',kanal:$('tzKanal').value.trim(),matn:$('tzPromo').value})});x=await rr.json()}catch(e){x={ok:false,err:'Serverga ulanib bo‘lmadi. Qayta urinib ko‘ring.'}}
+    b.disabled=false;m.innerHTML=x.ok?'✅ Reklama <b>'+esc(x.kanal)+'</b> kanaliga joylandi!':'❌ '+esc(x.err||'Xatolik')};
   B.querySelectorAll('[data-ddel]').forEach(b=>b.onclick=async()=>{if(!confirmBox())return;const x=await call('admdel',{key:LS.get('tz_key')||'',sid:b.dataset.ddel});if(x.ok)loadDev();else alertBox(x.err||'Xatolik')});
   B.querySelectorAll('[data-dres]').forEach(b=>b.onclick=()=>openAud(b.dataset.dres,'res'));
   B.querySelectorAll('[data-dsert]').forEach(b=>b.onclick=()=>bulkSert(b.dataset.dsert,b));
