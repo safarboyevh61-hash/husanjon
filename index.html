@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=tz-ver content=22><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-visual"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><style>.kcalc{width:min(300px,86%);margin:4px auto 12px;background:#111827;padding:12px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.45);user-select:none;-webkit-user-select:none}.kcd{min-height:48px;font:600 clamp(24px,8vw,32px)/1.2 system-ui,sans-serif;text-align:right;padding:6px 10px;border-radius:8px;background:#f9fafb;color:#111827;margin-bottom:12px;overflow-x:auto;white-space:nowrap}.kcg{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.kcb{height:42px;padding:0;border:0;border-radius:8px;font:600 18px system-ui,sans-serif;color:#f9fafb;background:#374151;box-shadow:0 3px 0 #1f2937;cursor:pointer;touch-action:manipulation}.kcb:active{transform:translateY(3px);box-shadow:0 0 0 #1f2937}.kcb.kco{background:#14b8a6;box-shadow:0 3px 0 #0f766e}.kcb.kcs{grid-column:span 2}</style>
+<!doctype html><html><head><meta charset=utf8><meta name=tz-ver content=25><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-visual"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><style>.kcalc{width:min(300px,86%);margin:4px auto 12px;background:#111827;padding:12px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.45);user-select:none;-webkit-user-select:none}.kcd{min-height:48px;font:600 clamp(24px,8vw,32px)/1.2 system-ui,sans-serif;text-align:right;padding:6px 10px;border-radius:8px;background:#f9fafb;color:#111827;margin-bottom:12px;overflow-x:auto;white-space:nowrap}.kcg{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.kcb{height:42px;padding:0;border:0;border-radius:8px;font:600 18px system-ui,sans-serif;color:#f9fafb;background:#374151;box-shadow:0 3px 0 #1f2937;cursor:pointer;touch-action:manipulation}.kcb:active{transform:translateY(3px);box-shadow:0 0 0 #1f2937}.kcb.kco{background:#14b8a6;box-shadow:0 3px 0 #0f766e}.kcb.kcs{grid-column:span 2}</style>
 <style>.kchid{display:none}.kcalc{margin-top:6px}.kctg{display:block;width:min(300px,86%);margin:10px auto;padding:12px;border:0;border-radius:12px;font:800 15px system-ui,sans-serif;color:#fff;background:linear-gradient(135deg,#14b8a6,#0072ff);box-shadow:0 0 12px rgba(0,229,208,.5);cursor:pointer;touch-action:manipulation}</style><style>
 /* ===== 👤 PROFIL ===== */
 #tzSplash svg,.pf svg,.pf-sh svg{background:none!important;border:0!important;box-shadow:none!important;max-width:none}
@@ -962,6 +962,17 @@ i.g{color:var(--og);border-color:var(--og);background:rgba(95,209,0,.08)}i.r{col
 .ok-bi{flex:none;width:52px;height:52px;border-radius:16px;padding:11px;box-sizing:border-box;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.25)}
 .ok-ban>div{flex:1;position:relative;z-index:1}.ok-ban b{display:block;font:900 20px system-ui;letter-spacing:1px}.ok-ban small{display:block;font:700 12.5px system-ui;opacity:.9;margin-top:2px}.ok-ban em{position:relative;z-index:1;font:900 18px system-ui;font-style:normal;background:#fff;color:#3f9a00;border-radius:12px;padding:6px 11px}
 #fanlar .ok-ban{max-width:640px;margin:14px auto 0}
+/* 🟢 jonli: kim onlayn, qaysi fanda raqib kutyapti */
+.ok-jl{display:none;margin:10px 0 0;padding:9px 12px;border-radius:14px;border:1.5px solid rgba(95,209,0,.35);background:rgba(95,209,0,.07);font:600 13px/1.45 system-ui;color:#cfe9c0;text-align:center}
+.ok-jl.on{display:block}.ok-jl span{display:inline-flex;align-items:center;gap:7px}.ok-jl b{color:#fff}
+.ok-jl i,.ok-jo i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#5fd100;box-shadow:0 0 0 0 rgba(95,209,0,.6);animation:okPl 1.6s infinite;flex:none}
+@keyframes okPl{0%{box-shadow:0 0 0 0 rgba(95,209,0,.55)}70%{box-shadow:0 0 0 8px rgba(95,209,0,0)}100%{box-shadow:0 0 0 0 rgba(95,209,0,0)}}
+.ok-jl em{display:block;font-style:normal;color:#ffd24a;font-weight:800;margin-top:3px}
+.ok-kt{position:absolute;top:-8px;right:-4px;font:800 10px system-ui;font-style:normal;color:#1a1300;background:#ffd24a;border-radius:10px;padding:2px 6px;box-shadow:0 2px 8px rgba(0,0,0,.35);animation:okKt 1.2s ease-in-out infinite alternate;white-space:nowrap}
+@keyframes okKt{to{transform:scale(1.08)}}
+.ok-jr{display:none;flex-direction:column;align-items:center;gap:8px;margin:8px 0 0}.ok-jr.on{display:flex}
+.ok-jo{display:inline-flex;align-items:center;gap:7px;font:700 13px system-ui;color:#cfe9c0}.ok-jo b{color:#fff}
+.ok-jb{border:1.5px solid #ffd24a;background:rgba(255,210,74,.12);color:#ffd24a;border-radius:14px;padding:10px 14px;font:800 13.5px system-ui;cursor:pointer;max-width:100%}
 
 /* ===== 🎡 G'ildirak va 📚 Oynani ochish ===== */
 .gm.ww{background:#f4f5f8!important;color:#1d1d2b;overflow-y:auto;-webkit-user-select:none;user-select:none;--wf:system-ui,-apple-system,sans-serif}
@@ -1107,6 +1118,37 @@ i.g{color:var(--og);border-color:var(--og);background:rgba(95,209,0,.08)}i.r{col
 .ww-v.u span{font-size:clamp(13px,3.6vw,15px)}
 .ww-bulut .ww-v small{top:17px}.ww-bulut .ww-v span{margin-top:6px}
 .ww-whl{width:min(88vw,430px,max(230px,calc(100vh - 175px)))}
+/* ===== 💳 har bir test alohida · ⭐ PRO — hammasi bepul ===== */
+.pro-c b em{display:block;font:800 11px system-ui;color:#e8dcb0;font-style:normal;margin-top:1px}
+.pro-c b{white-space:nowrap}
+.bl-pro{display:flex;align-items:center;gap:10px;width:100%;margin:4px 0 12px;padding:10px 12px;border:1.5px solid #ffb84d;border-radius:14px;background:linear-gradient(135deg,rgba(255,154,26,.18),rgba(255,210,74,.08));color:#fff;text-align:left;cursor:pointer;font-family:system-ui,sans-serif}
+.bl-pro>span{font-size:22px}.bl-pro div{flex:1}.bl-pro b{display:block;font:900 14.5px system-ui;color:#ffd27a}.bl-pro small{display:block;font:600 12px system-ui;color:#e8dcb0;margin-top:2px}.bl-pro em{font:900 20px system-ui;color:#ffd27a;font-style:normal}
+.bl-tag s{opacity:.7;font-weight:700}
+.bl-pfn{display:block;margin:8px 2px 0;color:#9bb0d0;font:600 12px system-ui,sans-serif;text-align:center}
+.bl-pr small{display:block;font:800 15px system-ui,sans-serif;color:#ffe9b0;text-shadow:none;margin-bottom:2px}
+.pro-c s.n{text-decoration:none}
+
+/* ===== 🎖 Oylik ball ===== */
+.pf-bal{display:flex;align-items:center;gap:4px;height:44px;padding:0 13px 0 9px;border-radius:22px;border:1.5px solid rgba(255,210,74,.6);background:linear-gradient(135deg,#4a3508,#1a2340 70%);color:#ffd24a;cursor:pointer;flex:none;font-family:system-ui,sans-serif;box-shadow:0 0 14px rgba(255,190,40,.18)}
+.pf-bal i{font-style:normal;font-size:19px;line-height:1}.pf-bal b{font:900 19px system-ui,sans-serif;color:#fff;margin-left:1px}.pf-bal small{font:800 11px system-ui,sans-serif;color:#ffd24a;align-self:flex-end;margin:0 0 12px 1px}
+.ob-hd{text-align:center;padding:2px 0 8px}.ob-hd small{display:block;font:800 12.5px system-ui,sans-serif;color:#ffd24a;letter-spacing:.6px}
+.ob-hd div{margin-top:4px}.ob-hd b{font:900 58px/1.05 system-ui,sans-serif;color:#fff}.ob-hd span{font:800 17px system-ui,sans-serif;color:#c9d2ee;margin-left:6px}
+.ob-hd em{display:block;font:700 13px system-ui,sans-serif;color:#7dffb0;font-style:normal;margin-top:4px}
+.ob-2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 2px}.ob-2>div{background:#121a33;border-radius:16px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.ob-2 span{font:700 12.5px system-ui,sans-serif;color:#9bb0d0}.ob-2 b{font:900 24px system-ui,sans-serif;color:#fff}
+.ob-h{margin:16px 2px 8px!important;font:900 15px system-ui,sans-serif!important;color:#fff;text-align:left!important;text-shadow:none!important}
+.ob-l>div{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:14px;background:#121a33;margin-bottom:6px}.ob-l>div>span{font-size:22px}.ob-l>div>div{flex:1}
+.ob-l b{display:block;font:800 14px system-ui,sans-serif;color:#fff}.ob-l small{font:600 12px system-ui,sans-serif;color:#9bb0d0}.ob-l small .tzgr{font-size:11px;padding:1px 6px}
+.ob-l em{font:900 18px system-ui,sans-serif;color:#2cff8a;font-style:normal}.ob-l em.z{color:#6b7a99}
+.ob-bo{color:#9bb0d0;font:600 13.5px/1.5 system-ui,sans-serif;text-align:center;margin:4px 8px}
+.ob-t{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ob-t>div{background:#121a33;border-radius:16px;padding:10px 12px}.ob-t>div>b{display:block;font:800 13px system-ui,sans-serif;color:#ffd24a;margin-bottom:6px}
+.ob-t p{display:flex;justify-content:space-between;align-items:center;margin:5px 0;font:700 13px system-ui,sans-serif;color:#fff}.ob-t em{font-style:normal;color:#2cff8a;font-weight:900;white-space:nowrap}
+.ob-n{margin:12px 0 4px;padding-left:18px;color:#c9d2ee;font:600 12.5px/1.6 system-ui,sans-serif;text-align:left}
+.ob-tr{display:flex;flex-wrap:wrap;gap:6px}.ob-tr span{background:#121a33;border-radius:12px;padding:6px 10px;font:700 12.5px system-ui,sans-serif;color:#c9d2ee}.ob-tr b{color:#fff}
+.ob-res{margin:10px 0 4px;padding:10px 12px;border-radius:14px;background:linear-gradient(135deg,rgba(255,210,74,.2),rgba(255,154,26,.08));border:1.5px solid rgba(255,210,74,.55);color:#fff;font:700 14px/1.45 system-ui,sans-serif;text-align:center}
+.ob-res.z{border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.05);color:#c9d2ee;font-weight:600;font-size:13px}
+.pf-top h2{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:380px){.pf-top{gap:6px}.pf-bal{padding:0 9px 0 7px;gap:2px}.pf-bal i{font-size:16px}.pf-bal b{font-size:17px}}
 </style></head><body>
 <style>
 #tzSplash{position:fixed;inset:0;z-index:300000;background:radial-gradient(circle at 50% 42%,#fff 0,#f2f5fb 60%,#e3e9f6 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;transition:opacity .48s,transform .48s;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
@@ -2150,7 +2192,7 @@ function afterMilliy(aud,v){const L=window.LASTRES;if(!L)return;
     if(aud){resBox(r&&r.ok?`🏛 <b>Javoblaringiz qabul qilindi!</b><br>Pastdagi natija — dastlabki hisob. Yakuniy ball va o‘rinlar barcha qatnashchilar javoblari asosida Rasch modeli bo‘yicha <b>${fmtT(aud.end+OFF+GR)}</b> da e’lon qilinadi.<br><small>Shu sahifada qolsangiz, natija va 🎓 sertifikatingiz shu yerda o‘zi chiqadi. Yopsangiz ham — bot orqali xabar keladi.</small><button class="tzbtn p" id="tzResAud">🏛 Auditoriyaga qaytish</button>`:`⚠️ Internet yo‘q — javoblaringiz saqlandi va internet paydo bo‘lishi bilan yuboriladi.<button class="tzbtn p" id="tzResAud">🏛 Auditoriyaga qaytish</button>`);
       const b=$('tzResAud');if(b)b.onclick=()=>openAud(aud.sid,'res');if(r&&r.ok)audWait(aud);return}
     if(it.dev==='1'){resBox('👨‍💻 Dasturchi rejimidagi natija reytingga qo‘shilmaydi.<div id="tzCertMil"></div><button class="tzbtn g" id="tzResCab">👤 Kabinet</button>');}
-    else resBox(r&&r.ok&&r.orin?`🏆 Umumiy reytingdagi o‘rningiz: <b>${r.orin}</b> / ${r.jami}<br><small>(eng yaxshi natijangiz bo‘yicha)</small><div id="tzCertMil"></div><button class="tzbtn g" id="tzResCab">👤 Kabinetim va reyting</button>`:`📊 Natijangiz saqlandi.<div id="tzCertMil"></div><button class="tzbtn g" id="tzResCab">👤 Kabinetim</button>`);
+    else resBox(r&&r.ok&&r.orin?`🏆 Umumiy reytingdagi o‘rningiz: <b>${r.orin}</b> / ${r.jami}<br><small>(eng yaxshi natijangiz bo‘yicha)</small>${obNatija(r)}<div id="tzCertMil"></div><button class="tzbtn g" id="tzResCab">👤 Kabinetim va reyting</button>`:`📊 Natijangiz saqlandi.<div id="tzCertMil"></div><button class="tzbtn g" id="tzResCab">👤 Kabinetim</button>`);
     const c=$('tzResCab');if(c)c.onclick=()=>openCab();
     // 🎓 daraja olgan bo'lsa — sertifikat chiziladi va botga avtomatik yuboriladi
     const cb=$('tzCertMil');if(cb&&r&&r.ok&&r.rid){certFlow(cb,{rid:r.rid},'r'+r.rid)}})}
@@ -2178,7 +2220,7 @@ window.tzAfterAtt=function(a){if(!a)return;
     LS.set('tz_done_'+aud.sid,'1');setTimeout(()=>audYubor(aud,it),60);return}const it={uid:UID,fan:'geo',tur:'att',raw:a.raw,max:a.max,th:Math.round(a.th*1000)/1000,ball:0,gr:'',pct:a.pct,dev:isDev()?'1':'0'};
   setTimeout(()=>{if(!API){resBox('📊 '+noApi());return}resBox('📊 Natijangiz reytingga qo‘shilmoqda…');
     enqueue(it).then(x=>{const r=x&&x.r,dr=attDar(a.pct);
-      resBox((it.dev==='1'?'👨‍💻 Dasturchi rejimidagi natija reytingga qo‘shilmaydi.':r&&r.ok&&r.orin?`🏆 Attestatsiya reytingidagi o‘rningiz: <b>${r.orin}</b> / ${r.jami}`:'📊 Natijangiz saqlandi.')+(dr?`<br>🏅 Daraja: <b>${dr}</b>`:'')+'<div id="tzCertMil"></div><button class="tzbtn g" id="tzResCab">👤 Kabinetim va reyting</button>');
+      resBox((it.dev==='1'?'👨‍💻 Dasturchi rejimidagi natija reytingga qo‘shilmaydi.':r&&r.ok&&r.orin?`🏆 Attestatsiya reytingidagi o‘rningiz: <b>${r.orin}</b> / ${r.jami}`:'📊 Natijangiz saqlandi.')+(dr?`<br>🏅 Daraja: <b>${dr}</b>`:'')+obNatija(r)+'<div id="tzCertMil"></div><button class="tzbtn g" id="tzResCab">👤 Kabinetim va reyting</button>');
       const c=$('tzResCab');if(c)c.onclick=()=>openCab();
       const cb=$('tzCertMil');if(cb&&r&&r.ok&&r.rid){certFlow(cb,{rid:r.rid},'r'+r.rid)}})},50)};
 
@@ -2907,7 +2949,7 @@ function pfRender(){const B=$('tzProf');if(!B)return;const p=prof(),s=stat(),me=
   const t0=(me.prof&&me.prof.t0)||act().first,d0=new Date(t0+5*3600e3),qosh=`Qo‘shilgan: ${OYLAR[d0.getUTCMonth()]} ${d0.getUTCFullYear()}`;
   const hw=hafta(s.D),bu=s.D[kunK(Date.now())]||{n:0,m:0},bM=Math.min(10,Math.floor(bu.m)),rk=s.rank&&s.rank.milliy&&s.rank.milliy.orin?s.rank.milliy:null;
   const ord=NISH.map((b,i)=>({b,i,ok:b.ok(s)})).sort((a,b)=>(b.ok-a.ok)||(a.i-b.i)).slice(0,4);
-  B.innerHTML=`<div class="pf-top"><button class="pf-ic" id="pfBack" aria-label="Orqaga">‹</button><h2>Profil</h2><button class="pf-ic" id="pfRk" aria-label="Reyting">🏆</button><button class="pf-ic" id="pfUl" aria-label="Ulashish">📤</button></div>
+  B.innerHTML=`<div class="pf-top"><button class="pf-ic" id="pfBack" aria-label="Orqaga">‹</button><h2>Profil</h2>${obPill()}<button class="pf-ic" id="pfRk" aria-label="Reyting">🏆</button><button class="pf-ic" id="pfUl" aria-label="Ulashish">📤</button></div>
    <div class="pf-av a1"><div class="pf-ring"><span>${esc(ini)}</span></div>${s.S.cur?`<em class="pf-fl">🔥${s.S.cur}</em>`:''}</div>
    <div class="pf-nm a2">${esc(ism)}</div><div class="pf-loc a2">${p&&(p.vl||p.ds)?'📍 '+esc([p.vl,p.ds].filter(Boolean).join(', ')):''}</div>
    <button class="pf-promo a3" id="pfPromo"><span>${proOn()?'⭐ PRO faol — '+proSana(proGet())+' gacha':'⭐ PRO bilan ko‘proq o‘rganing'}</span><img src="${TZLOGO}" alt=""><b>›</b></button>
@@ -2929,7 +2971,7 @@ function pfRender(){const B=$('tzProf');if(!B)return;const p=prof(),s=stat(),me=
   B.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>marraOyna(+b.dataset.m));B.querySelectorAll('[data-n]').forEach(b=>b.onclick=()=>nishonOyna(NISH[+b.dataset.n]));
   B.querySelectorAll('[data-cnt]').forEach(e=>{const z=+e.dataset.cnt,t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/900);e.textContent=sp3(z*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)})}
 async function openProf(){goSec('tzProf');$('tzProf').classList.remove('pf-in');void $('tzProf').offsetWidth;$('tzProf').classList.add('pf-in');pfRender();
-  if(API&&!isDev()){const r=await call('me',{uid:UID},25000);if(r&&r.ok){LS.set('tz_me',JSON.stringify({prof:r.prof?{t0:r.prof.t0}:null,res:(r.res||[]).map(x=>({t:x.t,tur:x.tur,pct:x.pct})),sert:(r.sert||[]).map(x=>({k:x.kod})),aud:r.aud||[],rank:r.rank||{}}));
+  if(API&&!isDev()){const r=await call('me',{uid:UID},25000);if(r&&r.ok){LS.set('tz_me',JSON.stringify({prof:r.prof?{t0:r.prof.t0}:null,res:(r.res||[]).map(x=>({t:x.t,tur:x.tur,pct:x.pct})),sert:(r.sert||[]).map(x=>({k:x.kod})),aud:r.aud||[],rank:r.rank||{},ob:r.ob||null}));
     if(cur==='tzProf'){pfRender();$('tzProf').classList.remove('pf-in')}pfYangi(true)}}}
 window.tzOpenProf=openProf;window.tzProfil={yangi:()=>pfYangi(true),stat,bar:()=>paintBar()};
 // fanlar menyusi: profil tugmasi, panelda 🔥 seriya va ⭐ XP
@@ -2955,80 +2997,116 @@ function yangiliklar(){if(!TZV)return false;const seen=+LS.get('tz_vseen')||0;LS
   const sh=pfSheet(`<div class="pf-upd"><div class="pf-uimg"><img src="${TZLOGO}" alt=""><i class="s1">✦</i><i class="s2">✦</i><i class="s3">✦</i></div></div><h3 class="pf-sht big">TESTUZ yangilandi! 🎉</h3>
    <ul class="pf-new">${YANGILIK.map(x=>'<li>'+x+'</li>').join('')}</ul><button class="pf-pb in" id="pfNw">PROFILNI KO‘RISH</button><button class="pf-lk" data-x>Davom etish</button>`,'dark upd');
   sh.o.querySelector('#pfNw').onclick=()=>{sh.close();if(prof()||isDev()){if(!$('intro').classList.contains('hid')&&paid())$('ok').click();setTimeout(openProf,150)}};return true}
-const YANGILIK=['🎡 <b>G‘ildirakni aylantirish</b> — g‘ildirakni aylantiring, tushgan savolga javob bering (3 xil uslub)','📚 <b>Oynani ochish</b> — «Sehrli kutubxona», «Bulutlar» va «Sinf xonasi» uslublarida: kitobni oching — ichida savol. Ilg‘orlar ro‘yxati bilan','🥊 <b>OKTAGON</b> — birga bir jang: fanni tanlang va onlayn raqib bilan bir xil 10 ta savolga javob bering. Bronza → Kumush → Oltin → Brilliant','📊 <b>Fanlar bo‘yicha daraja</b> — har bir fandan qay darajada ekaningizni bilib oling','🖼 <b>Rasmli savollar</b> — Bellashuv testlarida endi rasm va xaritalar ham chiqadi (rasmni bosib kattalashtiring)','⚔️ <b>Bellashuv</b> — ustoz yuklagan mavzuli testlar bo‘yicha raqib bilan bellashing: 🪢 Arqon tortish, 🏎️ Poyga, 🏗️ Minora, ⚡ Kim tezroq','🏆 <b>Turnir va reyting</b> — har bir mavzuda 20 savollik turnir, haftalik va umumiy reyting','📩 <b>Duetga chaqirish</b> — reytingdagi o‘yinchini Telegram orqali bellashuvga chaqiring','🎬 <b>Arqon tortish</b> — yangi video va musiqa bilan','🌐 <b>Onlayn duet</b> — «Arqon tortish»ni internet orqali raqib bilan o‘ynang: tasodifiy raqib yoki do‘stni kod bilan chaqiring','🪢 <b>Arqon tortish</b> — stadion, tomoshabinlar, musiqa va jonli arqon','💵 <b>To‘lov oynasi yangilandi</b> — Milliy sertifikat va Attestatsiya bo‘limlarida','📊 <b>Tahlil</b> — darajangiz, mavzular bo‘yicha bilimingiz va qaysi savollarda qiynalganingiz','🤖 <b>AI tahlil</b> — har bir xato savolning tushuntirishi va «Xatolar ustida ishlash» mashqi','📋 <b>Shaxsiy reja</b> — maqsad, imtihon sanasi va kunlik vaqt','🔥 <b>Olovni yoqing!</b> — kunning birinchi testi yoki o‘yinidan keyin telefoningizga puflab seriyangizni yoqing','🗓 <b>Seriyalar</b> — kalendar, rekord, marralar va ❄ muzlatish','🎮 <b>4 ta yangi o‘yin</b>: Qit’alar, Rost yoki yolg‘on, Juftini top, So‘z yasash','🏆 O‘yin oxirida yulduzlar, rekord va salyut','🧭 <b>Pastki menyu</b> — Asosiy, Testlar, Auditoriya, O‘yinlar va Profil bir bosishda','🎮 <b>O‘yinlar</b>: Bayroqlar, Poytaxtlar, So‘ztopar va Sirli so‘z — XP to‘plang, seriyani uzaytiring','⭐ <b>TESTUZ PRO</b> — oylik obuna: ikkala bo‘lim + cheksiz o‘yinlar','🆓 <b>Ro‘yxatdan o‘tish endi bepul</b> — profil va bo‘limlarni ko‘rish uchun to‘lov shart emas','🔓 <b>Har bir bo‘lim alohida ochiladi</b>: 🎓 Milliy sertifikat va 👩‍🏫 Attestatsiya — faqat kerakli bo‘limga to‘lov qilasiz','🤖 Telegram orqali kirsangiz, to‘lov tasdiqlangach bo‘lim <b>kodsiz o‘zi ochiladi</b>','👤 <b>Profil</b> — ismingiz, qo‘shilgan sanangiz, testlar soni va eng yaxshi natijangiz','🔥 <b>Seriyalar</b> — har kuni test ishlang: 3, 5, 7, 14, 30 kunlik marralarni yuting','🏅 <b>Nishonlar</b> — Ilk qadam, Mergan, Sertifikat egasi va boshqalar','📈 <b>Haftalik faollik</b> grafigi va ⭐ <b>XP</b> ochkolari'];
+const YANGILIK=['🥊 <b>Oktagon</b> — raqib qidirish yaxshilandi: bir vaqtda qidirgan o‘yinchilar endi albatta topishadi. 🟢 Oktagon’da hozir nechta odam borligi va qaysi fanda raqib kutayotgani ko‘rinadi','🎖 <b>Oylik ball</b> — pullik Milliy sertifikat testida A+ — 6, A — 5, B+ — 4, B — 3, C+ — 2, C — 1 ball; Attestatsiyada Oliy toifa — 6, 1-toifa — 5, 2-toifa — 4, Mutaxassis — 3 ball. Profilda 🏆 kubok yonida. O‘yinlar balga qo‘shilmaydi','💳 <b>Yangi tartib</b> — Milliy sertifikat va Attestatsiya: har bir testda qatnashish 10 000 so‘m. Kirish kodi faqat 1 marta ishlaydi (1 ta test)','⭐ <b>TESTUZ PRO — hammasi bepul</b>: barcha testlar va o‘yinlar cheksiz. 1 oy — 200 000, 3 oy — 500 000, 12 oy — 1 500 000 so‘m','🎡 <b>G‘ildirakni aylantirish</b> — g‘ildirakni aylantiring, tushgan savolga javob bering (3 xil uslub)','📚 <b>Oynani ochish</b> — «Sehrli kutubxona», «Bulutlar» va «Sinf xonasi» uslublarida: kitobni oching — ichida savol. Ilg‘orlar ro‘yxati bilan','🥊 <b>OKTAGON</b> — birga bir jang: fanni tanlang va onlayn raqib bilan bir xil 10 ta savolga javob bering. Bronza → Kumush → Oltin → Brilliant','📊 <b>Fanlar bo‘yicha daraja</b> — har bir fandan qay darajada ekaningizni bilib oling','🖼 <b>Rasmli savollar</b> — Bellashuv testlarida endi rasm va xaritalar ham chiqadi (rasmni bosib kattalashtiring)','⚔️ <b>Bellashuv</b> — ustoz yuklagan mavzuli testlar bo‘yicha raqib bilan bellashing: 🪢 Arqon tortish, 🏎️ Poyga, 🏗️ Minora, ⚡ Kim tezroq','🏆 <b>Turnir va reyting</b> — har bir mavzuda 20 savollik turnir, haftalik va umumiy reyting','📩 <b>Duetga chaqirish</b> — reytingdagi o‘yinchini Telegram orqali bellashuvga chaqiring','🎬 <b>Arqon tortish</b> — yangi video va musiqa bilan','🌐 <b>Onlayn duet</b> — «Arqon tortish»ni internet orqali raqib bilan o‘ynang: tasodifiy raqib yoki do‘stni kod bilan chaqiring','🪢 <b>Arqon tortish</b> — stadion, tomoshabinlar, musiqa va jonli arqon','💵 <b>To‘lov oynasi yangilandi</b> — Milliy sertifikat va Attestatsiya bo‘limlarida','📊 <b>Tahlil</b> — darajangiz, mavzular bo‘yicha bilimingiz va qaysi savollarda qiynalganingiz','🤖 <b>AI tahlil</b> — har bir xato savolning tushuntirishi va «Xatolar ustida ishlash» mashqi','📋 <b>Shaxsiy reja</b> — maqsad, imtihon sanasi va kunlik vaqt','🔥 <b>Olovni yoqing!</b> — kunning birinchi testi yoki o‘yinidan keyin telefoningizga puflab seriyangizni yoqing','🗓 <b>Seriyalar</b> — kalendar, rekord, marralar va ❄ muzlatish','🎮 <b>4 ta yangi o‘yin</b>: Qit’alar, Rost yoki yolg‘on, Juftini top, So‘z yasash','🏆 O‘yin oxirida yulduzlar, rekord va salyut','🧭 <b>Pastki menyu</b> — Asosiy, Testlar, Auditoriya, O‘yinlar va Profil bir bosishda','🎮 <b>O‘yinlar</b>: Bayroqlar, Poytaxtlar, So‘ztopar va Sirli so‘z — XP to‘plang, seriyani uzaytiring','⭐ <b>TESTUZ PRO</b> — oylik obuna: ikkala bo‘lim + cheksiz o‘yinlar','🆓 <b>Ro‘yxatdan o‘tish endi bepul</b> — profil va bo‘limlarni ko‘rish uchun to‘lov shart emas','🔓 <b>Har bir bo‘lim alohida ochiladi</b>: 🎓 Milliy sertifikat va 👩‍🏫 Attestatsiya — faqat kerakli bo‘limga to‘lov qilasiz','🤖 Telegram orqali kirsangiz, to‘lov tasdiqlangach bo‘lim <b>kodsiz o‘zi ochiladi</b>','👤 <b>Profil</b> — ismingiz, qo‘shilgan sanangiz, testlar soni va eng yaxshi natijangiz','🔥 <b>Seriyalar</b> — har kuni test ishlang: 3, 5, 7, 14, 30 kunlik marralarni yuting','🏅 <b>Nishonlar</b> — Ilk qadam, Mergan, Sertifikat egasi va boshqalar','📈 <b>Haftalik faollik</b> grafigi va ⭐ <b>XP</b> ochkolari'];
 (async()=>{try{await (window.tzSplashP||Promise.resolve())}catch(e){}setTimeout(()=>{pfYangi(false);if(!yangiliklar())verTek()},500)})();
 
-/* ===================== 🔓 BO'LIMLAR: har biri alohida to'lov; ro'yxatdan o'tish bepul ===================== */
-/* ms — 🎓 Milliy sertifikat imtihoni, at — 👩‍🏫 Attestatsiya imtihoni (Test baza — avvalgidek faqat dasturchi uchun).
-   Ochilish: bot yuborgan kod (MS-/AT-, eski GEO- kod ikkalasini ochadi) yoki Telegram orqali kirganda — bot tasdiqlagan to'lov o'zi. */
+/* ===================== 💳 TESTDA QATNASHISH: har bir test alohida to'lanadi · ⭐ PRO — hammasi bepul ===================== */
+/* ms — 🎓 Milliy sertifikat imtihoni, at — 👩‍🏫 Attestatsiya imtihoni. 1 ta to'lov = 1 ta kod = 1 ta test.
+   Kod faqat 1 marta ishlaydi: bot tekshiradi va «ishlatildi» deb belgilaydi (API.kod). Kod qabul qilinsa — shu qurilmada 1 ta test (tz_kr).
+   Telegram orqali kirganda — bot tasdiqlagan to'lov kodsiz ishlatiladi (API.qatnash). Yangi test boshlanganda 1 ta test hisobdan yechiladi. */
 const BL={ms:{n:'Milliy sertifikat',e:'🎓',c:['#00c8ff','#2a6bff'],ich:['45 savollik imtihon — Rasch modeli bo‘yicha ball va daraja (A+ … C)','Har safar yangi variant: oson, o‘rta va qiyin savollar','🎓 Shaxsiy sertifikat — bot orqali avtomatik']},
   at:{n:'Attestatsiya',e:'👩‍🏫',c:['#ff3df2','#7a2cf0'],ich:['50 savollik imtihon: 40 ta fan + 10 ta pedagogik mahorat','Har safar yangi variant: oson, o‘rta va qiyin savollar','🏅 Toifa: Oliy, 1-, 2-toifa, Mutaxassis va sertifikat']}};
 const ownr=()=>LS.get('geo5_owner')||'';
-// eski foydalanuvchilar bitta to'lov bilan hammasini ochgan — ikkala bo'lim ochiq qoladi
-if(!LS.get('tz_bl_mig')){if(ownr()){LS.set('tz_pay_ms',ownr());LS.set('tz_pay_at',ownr())}LS.set('tz_bl_mig','1')}
-const blOch=b=>isDev()||proOn()||(!!ownr()&&LS.get('tz_pay_'+b)===ownr());
-function blSet(b){if(ownr())LS.set('tz_pay_'+b,ownr());else LS.set('tz_pay_pend_'+b,'1');blPaint()}
-function narx(b){try{const j=JSON.parse(LS.get('tz_narx')||'{}');return String(j[b]||'10 000 so‘m').replace(/'/g,'‘')}catch(e){return '10 000 so‘m'}}
+const KRJ=()=>{try{const j=JSON.parse(LS.get('tz_kr')||'{}');return j&&typeof j==='object'?j:{}}catch(e){return {}}};
+const krN=b=>Math.max(0,Math.floor(+KRJ()[b]||0));
+function krQo(b,d){const j=KRJ();j[b]=Math.max(0,Math.floor(+j[b]||0)+d);LS.set('tz_kr',JSON.stringify(j));try{blPaint()}catch(e){}}
+// eski tartib (bir marta to'lab bo'limni ochish) → har bir ochiq bo'lim uchun 1 ta test
+if(!LS.get('tz_kr_mig')){if(!LS.get('tz_bl_mig')&&ownr()){LS.set('tz_pay_ms',ownr());LS.set('tz_pay_at',ownr())}
+  ['ms','at'].forEach(b=>{if((ownr()&&LS.get('tz_pay_'+b)===ownr())||LS.get('tz_pay_pend_'+b))krQo(b,1);LS.set('tz_pay_'+b,null);LS.set('tz_pay_pend_'+b,null)});LS.set('tz_bl_mig','1');LS.set('tz_kr_mig','1')}
+const blBepul=()=>isDev()||proOn();
+const blOch=b=>blBepul()||krN(b)>0;
+let KRS={}; // bot: Telegram foydalanuvchisining hali ishlatilmagan to'lovlari {ms:n, at:n}
+const NARX0={ms:'10 000 so‘m',at:'10 000 so‘m',p1:'200 000 so‘m',p3:'500 000 so‘m',p12:'1 500 000 so‘m'};
+function narx(b){const d=NARX0[b]||'10 000 so‘m';try{const j=JSON.parse(LS.get('tz_narx')||'{}');return String(j[b]||d).replace(/'/g,'‘')}catch(e){return d}}
 const blSig=(b,a)=>{let n=c53('TESTUZ|HS|2026|'+b+'|'+a,7),o='';for(let i=0;i<4;i++){o+=GABC[n%32];n=Math.floor(n/32)}return o};
+// kod ko'rinishi va imzosi (tez tekshiruv); haqiqiy tekshiruv — botda (kod 1 marta ishlaydi)
 function blKod(v){const c=String(v||'').trim().toUpperCase().replace(/\s+/g,'').replace(/[‐-―]/g,'-');
-  const m=c.match(/^(MS|AT)-([A-Z0-9]{4})-([A-Z0-9]{4})$/);if(m){const b=m[1].toLowerCase();return blSig(b,m[2])===m[3]?{b:[b],x:'b'+c53(c,1).toString(16)+c53(c,2).toString(16)}:{err:'❌ Kod noto‘g‘ri. Tekshirib, qaytadan yozing.'}}
-  if(/^GEO-/.test(c)){const x=ochk(c);return x?{b:['ms','at'],x}:{err:'❌ Kod noto‘g‘ri.'}}if(/^PRO-/.test(c))return proKod(c);return null}
-function blQolla(v){const r=blKod(v);if(!r)return{err:'Kod MS-XXXX-XXXX, AT-XXXX-XXXX yoki PRO-XXXX-XXXX ko‘rinishida bo‘ladi.'};if(r.err)return r;
-  if(r.pro?r.pro<=proGet():r.b.every(blOch))return{ok:true,b:r.b,pro:r.pro,avval:1};
-  const o=useN(),n=o[r.x]||0;if(n>=2)return{err:'❌ Bu kod 2 marta ishlatilgan. Yangi kod oling.'};o[r.x]=n+1;try{localStorage.setItem('geo5_used2',JSON.stringify(o))}catch(e){}
-  if(r.pro)proSet(r.pro);else r.b.forEach(blSet);return{ok:true,b:r.b,pro:r.pro}}
+  const m=c.match(/^(MS|AT)-([A-Z0-9]{4})-([A-Z0-9]{4})$/);if(m){const b=m[1].toLowerCase();return blSig(b,m[2])===m[3]?{c,b:[b]}:{err:'❌ Kod noto‘g‘ri. Tekshirib, qaytadan yozing.'}}
+  if(/^GEO-/.test(c))return ochk(c)?{c,b:['ms','at']}:{err:'❌ Kod noto‘g‘ri.'};
+  if(/^PRO-/.test(c)){const r=proKod(c);return r.err?r:{c,b:['ms','at'],pro:r.pro}}return null}
+async function blQolla(v){const r=blKod(v);if(!r)return{err:'Kod MS-XXXX-XXXX, AT-XXXX-XXXX yoki PRO-XXXX-XXXX ko‘rinishida bo‘ladi.'};if(r.err)return r;
+  if(!API)return{err:'🤖 Kodni ishlatish uchun TESTUZ’ni bot orqali oching: @TestUz_Sertifikat_Bot → /start → «🚀 Testni boshlash». Kod faqat 1 marta ishlaydi — uni bot tekshiradi.'};
+  const s=await call('kod',Object.assign({kod:r.c,uid:UID},INIT?{init:INIT}:{}),15000);
+  if(!s||!s.ok)return{err:s&&s.err&&s.err!=='net'&&s.err!=='noapi'?s.err:'📡 Bot bilan aloqa bo‘lmadi. Internetni tekshirib, qayta urinib ko‘ring.'};
+  if(r.pro)proSet(r.pro);else r.b.forEach(b=>krQo(b,1));return{ok:true,b:r.b,pro:r.pro}}
 const blNom=bs=>bs.map(b=>BL[b].e+' '+BL[b].n).join(' va ');
 function blBot(b){const u='https://t.me/TestUz_Sertifikat_Bot?start=tolov_'+b;try{copyCard()}catch(e){}
   try{if(INIT&&window.Telegram&&Telegram.WebApp&&Telegram.WebApp.openTelegramLink){Telegram.WebApp.openTelegramLink(u);return}}catch(e){}
   let w=null;try{w=window.open(u,'_blank')}catch(e){}if(!w)location.href=u}
 async function blSync(){if(!API)return;const r=await call('bolim',INIT?{init:INIT}:{},20000);if(!r||!r.ok)return null;
-  if(r.narx)LS.set('tz_narx',JSON.stringify(r.narx));if(r.pro)proSet(+r.pro);try{proPaint()}catch(e){}const yangi=['ms','at'].filter(b=>r[b]&&!blOch(b)&&ownr());yangi.forEach(blSet);blPaint();return{r,yangi}}
-// 🔒 yopiq bo'limga kirganda: shu bo'lim uchun to'lov oynasi
+  if(r.narx)LS.set('tz_narx',JSON.stringify(r.narx));if(r.pro)proSet(+r.pro);try{proPaint()}catch(e){}KRS=r.kr||{};blPaint();return{r}}
+// Telegram orqali to'langan testni ishlatish (bot kodni «ishlatildi» deb belgilaydi) → shu qurilmada 1 ta test
+async function blTg(b){if(!INIT||!API)return false;const r=await call('qatnash',{init:INIT,b,uid:UID},15000);if(r&&r.ok){KRS[b]=Math.max(0,+r.qoldi||0);krQo(b,1);return true}return false}
+// 💳 to'lov oynasi: har bir testda qatnashish — alohida to'lov
 function blOyna(b,davom){const B=BL[b],nx=narx(b);
-  const sh=pfSheet(`<div class="bl-hd" style="--a:${B.c[0]};--b:${B.c[1]}"><span>${B.e}</span><div><small>🔒 Bo‘lim yopiq</small><b>${B.n} bo‘limi</b></div></div>
+  const sh=pfSheet(`<div class="bl-hd" style="--a:${B.c[0]};--b:${B.c[1]}"><span>${B.e}</span><div><small>💳 Testda qatnashish</small><b>${B.n} testi</b></div></div>
    <ul class="bl-ich">${B.ich.map(x=>'<li>'+x+'</li>').join('')}</ul>
-   ${sonN(nx)===10000&&document.querySelector('img.bill')?`<img class="bl-bill" alt="10 000 so‘m" src="${document.querySelector('img.bill').src}">`:''}<div class="bl-pr">Testda qatnashish ${esc(nx)}</div><small class="bl-prs">Bir marta to‘lanadi · faqat shu bo‘lim uchun</small>
+   ${sonN(nx)===10000&&document.querySelector('img.bill')?`<img class="bl-bill" alt="10 000 so‘m" src="${document.querySelector('img.bill').src}">`:''}<div class="bl-pr"><small>Har bir testda qatnashish</small>${esc(nx)}</div><small class="bl-prs">1 ta to‘lov = 1 ta test · kod faqat 1 marta ishlaydi</small>
+   <button type="button" class="bl-pro" id="blPro"><span>⭐</span><div><b>PRO bilan — hammasi bepul</b><small>Cheksiz test va o‘yinlar · 1 oy — ${esc(narx('p1'))}</small></div><em>›</em></button>
    <div class="bl-card"><small>AloqaBank · UZCARD</small><b>5614 6887 0951 6164</b><span>KHUSAN SAFARBOYEV</span><button type="button" id="blCp">📋 Nusxa</button></div>
-   <ol class="bl-st"><li>Kartaga <b>${esc(nx)}</b> o‘tkazing (Payme, Click, Uzum yoki bank ilovasi).</li><li><b>«🤖 Chekni botga yuborish»</b>ni bosing va chek skrinshotini yuboring.</li><li>To‘lov tasdiqlangach, bot <b>kirish kodi</b>ni yuboradi va bo‘lim ochiladi.${INIT?' Telegram orqali kirgansiz — bo‘lim kodsiz ham o‘zi ochiladi.':''}</li></ol>
+   <ol class="bl-st"><li>Kartaga <b>${esc(nx)}</b> o‘tkazing (Payme, Click, Uzum yoki bank ilovasi).</li><li><b>«🤖 Chekni botga yuborish»</b>ni bosing va chek skrinshotini yuboring.</li><li>To‘lov tasdiqlangach, bot <b>kirish kodi</b>ni yuboradi — kod <b>1 ta test</b>ni ochadi va faqat <b>1 marta</b> ishlaydi.${INIT?' Telegram orqali kirgansiz — kod shart emas: «To‘lov qildim — tekshirish»ni bosing.':''}</li></ol>
    <button class="pf-pb bl-bot" id="blBot">🤖 Chekni botga yuborish</button>
    <div class="bl-kod"><input id="blIn" placeholder="${b.toUpperCase()}-XXXX-XXXX 🔑" autocomplete="off" autocapitalize="characters" spellcheck="false"><button type="button" id="blGo">Ochish</button></div>
    <div class="bl-msg" id="blMsg"></div>
    ${INIT&&API?'<button class="pf-lk" id="blChk">🔄 To‘lov qildim — tekshirish</button>':''}<button class="pf-lk" data-x>Keyinroq</button>`,'dark bl');
-  const M=(t,ok)=>{const e=sh.o.querySelector('#blMsg');e.className='bl-msg '+(ok?'ok':'no');e.innerHTML=t};
-  const tayyor=bs=>{M('✅ '+blNom(bs)+' bo‘limi ochildi!',true);setTimeout(()=>{sh.close();if(bs.indexOf(b)>=0&&davom)setTimeout(davom,250)},1100)};
+  const M=(t,ok)=>{const e=sh.o.querySelector('#blMsg');e.className='bl-msg '+(ok?'ok':'no');e.innerHTML=t};let bitdi=false;
+  const tayyor=(t)=>{if(bitdi)return;bitdi=true;M(t||'✅ To‘lov tasdiqlandi — test boshlanmoqda!',true);setTimeout(()=>{sh.close();if(davom)setTimeout(davom,250)},1100)};
   sh.o.querySelector('#blCp').onclick=()=>{try{copyCard()}catch(e){}M('📋 Karta raqami nusxalandi: 5614 6887 0951 6164',true)};
   sh.o.querySelector('#blBot').onclick=()=>blBot(b);
-  const inp=sh.o.querySelector('#blIn'),go=()=>{const r=blQolla(inp.value);if(r.err){M(r.err);return}
-    if(r.b.indexOf(b)<0){M('✅ Kod qabul qilindi: '+blNom(r.b)+' bo‘limi ochildi. '+B.n+' bo‘limi uchun alohida to‘lov qilinadi.',true);return}tayyor(r.b)};
-  sh.o.querySelector('#blGo').onclick=go;inp.addEventListener('keydown',e=>{if(e.key==='Enter')go()});
-  const ch=sh.o.querySelector('#blChk');if(ch)ch.onclick=async()=>{ch.disabled=true;ch.textContent='⏳ Tekshirilmoqda…';const x=await blSync();ch.disabled=false;ch.textContent='🔄 To‘lov qildim — tekshirish';
-    if(blOch(b))tayyor([b]);else M(x?'⏳ To‘lov hali tasdiqlanmagan. Admin tekshirgach, bot xabar yuboradi — keyin shu yerda bo‘lim o‘zi ochiladi.':'⚠️ Bot bilan aloqa bo‘lmadi. Internetni tekshiring.')};
-  if(API)blSync().then(()=>{const e=sh.o.querySelector('.bl-nx b');if(e)e.textContent=narx(b);if(blOch(b))tayyor([b])})}
-// bo'lim tugmalari: yopiq bo'lsa — to'lov oynasi (Auditoriya testlari o'z to'lovi bilan — ularga tegilmaydi)
-const GATE={b1:'ms',go:'ms',b2:'at'};
-Object.keys(GATE).forEach(id=>{const e=$(id);if(!e)return;e.addEventListener('click',ev=>{if(AUD||AUDA||window.__atRnd||isDev())return;const b=GATE[id];if(blOch(b))return;
-  ev.preventDefault();ev.stopImmediatePropagation();blOyna(b,()=>$(id).click())},true)});
-// bo'lim tugmalari ostida: 🔒 narx yoki ✅ ochiq
+  sh.o.querySelector('#blPro').onclick=()=>{sh.close();setTimeout(proPage,250)};
+  const inp=sh.o.querySelector('#blIn'),gb=sh.o.querySelector('#blGo'),go=async()=>{if(gb.disabled)return;gb.disabled=true;M('⏳ Kod tekshirilmoqda…',true);const r=await blQolla(inp.value);gb.disabled=false;if(r.err){M(r.err);return}
+    if(r.pro){tayyor('⭐ TESTUZ PRO yoqildi — hammasi bepul!');return}
+    if(r.b.indexOf(b)<0){M('✅ Kod qabul qilindi: '+blNom(r.b)+' uchun 1 ta test qo‘shildi. '+B.n+' testi uchun alohida to‘lov qilinadi.',true);return}tayyor()};
+  gb.onclick=go;inp.addEventListener('keydown',e=>{if(e.key==='Enter')go()});
+  const ch=sh.o.querySelector('#blChk');if(ch)ch.onclick=async()=>{ch.disabled=true;ch.textContent='⏳ Tekshirilmoqda…';const x=await blSync();
+    if(blBepul()){tayyor('⭐ TESTUZ PRO faol — hammasi bepul!');return}
+    if((KRS[b]||0)>0&&await blTg(b)){tayyor();return}ch.disabled=false;ch.textContent='🔄 To‘lov qildim — tekshirish';
+    M(x?'⏳ To‘lov hali tasdiqlanmagan. Admin tekshirgach, bot xabar yuboradi — keyin shu tugmani yana bosing.':'⚠️ Bot bilan aloqa bo‘lmadi. Internetni tekshiring.')};
+  if(API)blSync().then(async()=>{if(!sh.o.isConnected||bitdi)return;if(blBepul()){tayyor('⭐ TESTUZ PRO faol — hammasi bepul!');return}
+    if(INIT&&(KRS[b]||0)>0){M('✅ To‘langan testingiz topildi…',true);if(await blTg(b))tayyor()}});
+  return sh}
+// yangi test boshlanishidan oldin: 🎟 to'langan test bormi?
+function blTasdiq(b,n,fn){const B=BL[b];const sh=pfSheet(`<div class="bl-hd" style="--a:${B.c[0]};--b:${B.c[1]}"><span>${B.e}</span><div><small>🎟 To‘langan testlar: ${n} ta</small><b>${B.n} testi</b></div></div>
+   <p class="pf-mut c">Test boshlanganda <b>1 ta test</b> hisobingizdan yechiladi. Har bir testda qatnashish — <b>${esc(narx(b))}</b>.</p>
+   <button class="pf-pb in" id="blBs">▶ TESTNI BOSHLASH</button><button class="pf-lk" data-x>Keyinroq</button>`,'dark bl');
+  sh.o.querySelector('#blBs').onclick=()=>{sh.close();setTimeout(fn,250)}}
+// bo'lim tugmalari: yangi test — to'lov bilan (Auditoriya testlari o'z to'lovi bilan — ularga tegilmaydi)
+const GATE={b1:'ms',go:'ms',b2:'at'};let BLPASS='';
+const blYangi=b=>{try{return b==='ms'?!exStarted:!atStarted&&!window.atDone}catch(e){return true}};
+function blStart(b){const id=b==='ms'?'b1':'b2';if(!blBepul()){if(krN(b)<1){blOyna(b,()=>blStart(b));return}krQo(b,-1)}BLPASS=b;$(id).click()}
+Object.keys(GATE).forEach(id=>{const e=$(id);if(!e)return;e.addEventListener('click',ev=>{const b=GATE[id];
+  if(BLPASS===b){BLPASS='';return}
+  if(AUD||AUDA||window.__atRnd||blBepul()||!blYangi(b))return;
+  ev.preventDefault();ev.stopImmediatePropagation();
+  const n=krN(b);if(n>0){blTasdiq(b,n,()=>blStart(b));return}
+  if(INIT&&API&&(KRS[b]||0)>0){blTasdiq(b,KRS[b],async()=>{const w=pfSheet('<h3 class="pf-sht">⏳ To‘lov tekshirilmoqda…</h3>','dark');const ok=await blTg(b);w.close();if(ok)setTimeout(()=>blStart(b),250);else blOyna(b,()=>blStart(b))});return}
+  blOyna(b,()=>blStart(b))},true)});
+// bo'lim tugmalari ostida: narx doim ko'rinadi
 function blPaint(){[['b1','ms'],['b2','at']].forEach(([id,b])=>{const e=$(id);if(!e)return;let t=$('blt_'+id);
-  if(!t){t=document.createElement('div');t.id='blt_'+id;e.insertAdjacentElement('afterend',t);t.onclick=()=>{if(!blOch(b))blOyna(b,()=>$(id).click())}}
-  const o=blOch(b);t.className='bl-tag '+(o?'on':'off')+(id[0]==='t'?' sm':'');t.textContent=o?'✅ '+BL[b].n+' bo‘limi ochiq':'🔒 '+narx(b)+' — bo‘limni ochish'})}
+  if(!t){t=document.createElement('div');t.id='blt_'+id;e.insertAdjacentElement('afterend',t);t.onclick=()=>{if(!blOch(b))blOyna(b,()=>blStart(b))}}
+  const n=krN(b),bp=blBepul();t.className='bl-tag '+(bp||n?'on':'off');
+  t.innerHTML=bp?`⭐ ${proOn()?'PRO':'Dasturchi'}: bepul <s>${esc(narx(b))}</s>`:n?`🎟 To‘langan: ${n} ta test · har biri ${esc(narx(b))}`:`💳 Har bir testda qatnashish — ${esc(narx(b))}`})}
 blPaint();
-// profil: bo'limlarim
-window.tzBlHtml=()=>`<div class="pf-card a5 bl-pf"><div class="pf-h"><h3>Bo‘limlarim</h3></div>${['ms','at'].map(b=>`<button class="bl-row ${blOch(b)?'on':''}" data-bl="${b}"><span>${BL[b].e}</span><b>${BL[b].n}</b><em>${blOch(b)?'✅ Ochiq':'🔒 '+esc(narx(b))}</em></button>`).join('')}</div>`;
-document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest('[data-bl]');if(!t)return;const b=t.dataset.bl;if(blOch(b)){goSec('cover');return}blOyna(b,()=>{if(cur==='tzProf')openProf()})});
+// profil: testlarim
+window.tzBlHtml=()=>`<div class="pf-card a5 bl-pf"><div class="pf-h"><h3>Testlarim</h3></div>${['ms','at'].map(b=>{const n=krN(b),bp=blBepul();return `<button class="bl-row ${bp||n?'on':''}" data-bl="${b}"><span>${BL[b].e}</span><b>${BL[b].n}</b><em>${bp?'⭐ Bepul':n?'🎟 '+n+' ta test':'💳 '+esc(narx(b))}</em></button>`}).join('')}<small class="bl-pfn">Har bir testda qatnashish — ${esc(narx('ms'))} · ⭐ PRO bilan hammasi bepul</small></div>`;
+document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest('[data-bl]');if(!t)return;const b=t.dataset.bl;if(blOch(b)){goSec('cover');return}blOyna(b,()=>{goSec('cover');setTimeout(()=>blStart(b),300)})});
 // ro'yxatdan o'tish bepul: kirish sahifasida to'lov qismi o'rniga izoh
-{const t=document.querySelector('#intro .card .ttl');if(t)t.insertAdjacentHTML('afterend',`<div class="bl-free"><b>🆓 Ro‘yxatdan o‘tish — bepul!</b><span>Ism-familiyangizni yozing va «Davom etish»ni bosing. Profil, fanlar va bo‘limlarni ko‘rish uchun to‘lov shart emas.</span><span>🔓 <b>Milliy sertifikat</b> va <b>Attestatsiya</b> bo‘limlari alohida ochiladi — faqat kerakli bo‘limga to‘lov qilasiz.</span></div>`)}
-// ro'yxatdan o'tgach: oldindan kiritilgan kod (ro'yxatdan oldin) shu foydalanuvchiga beriladi
-$('ok').addEventListener('click',()=>setTimeout(()=>{['ms','at'].forEach(b=>{if(LS.get('tz_pay_pend_'+b)&&ownr()){LS.set('tz_pay_'+b,ownr());LS.set('tz_pay_pend_'+b,null)}});if(+LS.get('tz_pro_pend')&&ownr()){proSet(+LS.get('tz_pro_pend'));LS.set('tz_pro_pend',null)}blPaint();if(TG&&API)blSync()},80));
-// botdagi «🚀 Bo'limni ochib testni boshlash» tugmasi: ?kod=MS-…
-{const k=Q.get('kod');if(k){setTimeout(()=>{const r=blQolla(k);try{const q=new URLSearchParams(location.search);q.delete('kod');history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+location.hash)}catch(e){}
-  if(r.ok){const sh=pfSheet(`<div class="pf-upd"><div class="pf-uimg"><img src="${TZLOGO}" alt=""><i class="s1">✦</i><i class="s2">✦</i><i class="s3">✦</i></div></div><h3 class="pf-sht">${r.pro?'⭐ TESTUZ PRO yoqildi!':'🔓 '+esc(blNom(r.b))+' bo‘limi ochildi!'}</h3>
-    <p class="pf-mut c">${r.pro?proSana(r.pro)+' gacha: ikkala bo‘lim ochiq va o‘yinlar cheksiz. ':''}${ownr()?'Bo‘limga o‘tib, testni boshlashingiz mumkin.':'Endi ism-familiyangizni yozib ro‘yxatdan o‘ting (bepul) — bo‘lim siz uchun ochiq bo‘ladi.'}</p><button class="pf-pb in" data-x id="blKG">${ownr()?'BO‘LIMGA O‘TISH':'RO‘YXATDAN O‘TISH'}</button>`,'dark upd');
-    sh.o.querySelector('#blKG').onclick=()=>{if(ownr()){if(!$('intro').classList.contains('hid'))$('ok').click();setTimeout(()=>goSec('cover'),200)}}}
-  else alertBox(r.err)},700)}}
-// Telegram orqali kirganda: tasdiqlangan to'lovlar va narxlar
+{const t=document.querySelector('#intro .card .ttl');if(t)t.insertAdjacentHTML('afterend',`<div class="bl-free"><b>🆓 Ro‘yxatdan o‘tish — bepul!</b><span>Ism-familiyangizni yozing va «Davom etish»ni bosing. Profil, fanlar va o‘yinlar uchun to‘lov shart emas.</span><span>💳 <b>Milliy sertifikat</b> va <b>Attestatsiya</b>: har bir testda qatnashish — <b>${esc(narx('ms'))}</b>.</span><span>⭐ <b>PRO</b> obuna bilan — hammasi bepul.</span></div>`)}
+// ro'yxatdan o'tgach: oldindan kiritilgan PRO kod shu foydalanuvchiga beriladi
+$('ok').addEventListener('click',()=>setTimeout(()=>{if(+LS.get('tz_pro_pend')&&ownr()){proSet(+LS.get('tz_pro_pend'));LS.set('tz_pro_pend',null)}blPaint();if(TG&&API)blSync()},80));
+// botdagi «🚀 Testni boshlash» tugmasi: ?kod=MS-… (bir nechta bo'lsa — vergul bilan)
+{const k=Q.get('kod');if(k){setTimeout(async()=>{try{const q=new URLSearchParams(location.search);q.delete('kod');history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+location.hash)}catch(e){}
+  const L=k.split(',').map(x=>x.trim()).filter(Boolean).slice(0,4),bs=[];let pro=0,xato='';
+  for(const x of L){const r=await blQolla(x);if(r.ok){if(r.pro)pro=r.pro;else r.b.forEach(b=>{if(bs.indexOf(b)<0)bs.push(b)})}else xato=xato||r.err}
+  if(!pro&&!bs.length){alertBox(xato||'❌ Kod noto‘g‘ri.');return}
+  const sh=pfSheet(`<div class="pf-upd"><div class="pf-uimg"><img src="${TZLOGO}" alt=""><i class="s1">✦</i><i class="s2">✦</i><i class="s3">✦</i></div></div><h3 class="pf-sht">${pro?'⭐ TESTUZ PRO yoqildi!':'🎟 '+esc(blNom(bs))+(bs.length>1?': 1 tadan test to‘landi!':': 1 ta test to‘landi!')}</h3>
+    <p class="pf-mut c">${pro?proSana(pro)+' gacha hammasi bepul: barcha testlar va o‘yinlar cheksiz. ':'Kod qabul qilindi va endi boshqa joyda ishlamaydi. '}${ownr()?'':'Avval ism-familiyangizni yozib ro‘yxatdan o‘ting (bepul) — test siz uchun saqlanadi.'}</p>
+    <button class="pf-pb in" data-x id="blKG">${!ownr()?'RO‘YXATDAN O‘TISH':pro?'BOSHLASH':'▶ TESTNI BOSHLASH'}</button>`,'dark upd');
+  sh.o.querySelector('#blKG').onclick=()=>{if(!ownr())return;if(!$('intro').classList.contains('hid'))$('ok').click();setTimeout(()=>{goSec('cover');if(!pro)setTimeout(()=>blStart(bs[0]),300)},200)}},700)}}
+// Telegram orqali kirganda: to'langan testlar va narxlar
 (async()=>{try{await (window.tzSplashP||Promise.resolve())}catch(e){}setTimeout(()=>{if(API)blSync()},1500)})();
 
+window.tzGoSec=goSec;
 /* ===================== ⭐ PRO obuna · 🧭 pastki menyu · 🎮 o'yinlar ===================== */
 // ---------- ⭐ TESTUZ PRO: muddat shu telefondagi foydalanuvchiga bog'lanadi ----------
 const PRO0=Date.UTC(2026,0,1),PLANS=[['p1',1,'1 oy'],['p3',3,'3 oy'],['p12',12,'12 oy']];
@@ -3046,13 +3124,13 @@ function proPage(){const on=proOn();let sel='p3';
   const o=document.createElement('div');o.className='pro-pg';document.body.appendChild(o);
   const draw=()=>{const p1=sonN(narx('p1'));
     o.innerHTML=`<button class="pro-x" aria-label="Yopish">✕</button><div class="pro-in">
-     <small class="pro-k">Bilimingizni ikki barobar tez oshiring</small><h2>TESTUZ PRO</h2>
+     <small class="pro-k">⭐ PRO bilan — hammasi bepul!</small><h2>TESTUZ PRO</h2>
      <div class="pro-lg">${lavr(false)}<img src="${TZLOGO}" alt="">${lavr(true)}</div>
      <div class="pro-st"><div><b>5 500+</b><small>Test savollari</small></div><div><b>2</b><small>Bo‘lim</small></div><div><b>♾</b><small>O‘yinlar</small></div></div>
      ${on?`<div class="pro-on">⭐ PRO faol: <b>${proSana(proGet())}</b> gacha</div>`:''}
-     <ul class="pro-f">${[['📖','Ikkala bo‘lim ochiq','Milliy sertifikat va Attestatsiya imtihonlari — cheklovsiz, har safar yangi variant.'],['🎮','Cheksiz o‘yinlar','Bayroqlar, Poytaxtlar, So‘ztopar va Sirli so‘z — kunlik cheklovsiz o‘ynang.'],['🏅','Sertifikat va reyting','Har bir imtihondan keyin sertifikat va umumiy reytingdagi o‘rningiz.']].map(([e,t,d])=>`<li><span>${e}</span><div><b>${t}</b><p>${d}</p></div></li>`).join('')}</ul>
+     <ul class="pro-f">${[['🆓','Hammasi bepul',`Milliy sertifikat va Attestatsiya — har bir test uchun ${esc(narx('ms'))} to‘lamaysiz: cheksiz test, har safar yangi variant.`],['🎮','Barcha o‘yinlar cheksiz','Oktagon, Bellashuv, G‘ildirak, Oynani ochish, Bayroqlar va boshqalar — kunlik cheklovsiz.'],['🏅','Sertifikat va reyting','Har bir imtihondan keyin sertifikat va umumiy reytingdagi o‘rningiz.']].map(([e,t,d])=>`<li><span>${e}</span><div><b>${t}</b><p>${d}</p></div></li>`).join('')}</ul>
      <div class="pro-pl">${PLANS.map(([k,m,t])=>{const v=sonN(narx(k)),old=p1*m,ch=old>v&&m>1?Math.round((1-v/old)*100):0;
-       return `<button class="pro-c${k===sel?' on':''}" data-p="${k}">${k==='p12'?'<i>Eng foydali</i>':ch?`<i class="g">−${ch}%</i>`:''}<b>${esc(narx(k))}</b>${ch?`<s>${sp3(old)} so‘m</s>`:'<s>&nbsp;</s>'}<small>${t}</small></button>`}).join('')}</div>
+       return `<button class="pro-c${k===sel?' on':''}" data-p="${k}">${k==='p12'?`<i>${ch?'−'+ch+'% · ':''}eng foydali</i>`:ch?`<i class="g">−${ch}%</i>`:''}<b>${esc(narx(k).replace(/\s*so[‘']m$/,''))}<em>so‘m</em></b>${ch?`<s>${sp3(old)} so‘m</s>`:'<s class="n">&nbsp;</s>'}<small>${t}</small></button>`}).join('')}</div>
      <button class="pro-go" id="proGo">${on?'MUDDATNI UZAYTIRISH':'OBUNA BO‘LISH'}</button>
      <button class="pro-kd" id="proKd">🔑 PRO kodim bor</button></div>`;
     o.querySelector('.pro-x').onclick=()=>{o.classList.add('out');setTimeout(()=>o.remove(),300)};
@@ -3061,7 +3139,7 @@ function proPage(){const on=proOn();let sel='p3';
   draw();requestAnimationFrame(()=>o.classList.add('on'));if(API)blSync().then(()=>{if(o.isConnected&&!o.querySelector('.pf-sh'))draw()})}
 function proTolov(k,pg,kodOnly){const pl=PLANS.find(x=>x[0]===k),nx=narx(k);
   const sh=pfSheet(`<h3 class="pf-sht">To‘lov turini tanlang</h3>
-   <div class="pro-sum"><div><span>⭐ TESTUZ PRO · ${pl[2]}</span><b>${esc(nx)}</b></div><div><span>Ikkala bo‘lim + cheksiz o‘yinlar</span><b>✓</b></div><div class="t"><span>Jami summa</span><b>${esc(nx)}</b></div></div>
+   <div class="pro-sum"><div><span>⭐ TESTUZ PRO · ${pl[2]}</span><b>${esc(nx)}</b></div><div><span>Hammasi bepul: barcha testlar + o‘yinlar</span><b>✓</b></div><div class="t"><span>Jami summa</span><b>${esc(nx)}</b></div></div>
    <div class="bl-kod"><input id="proIn" placeholder="PRO-XXXX-XXXX 🔑 kod" autocomplete="off" autocapitalize="characters" spellcheck="false"><button type="button" id="proOk">Qo‘llash</button></div><div class="bl-msg" id="proMsg"></div>
    ${kodOnly?'':`<div class="pro-pay"><button type="button" data-pp="payme"><b class="pm">payme</b></button><button type="button" data-pp="click"><b class="ck">● click</b></button><button type="button" data-pp="uzum"><b class="uz">uzum</b></button></div>
    <div class="bl-card"><small>AloqaBank · UZCARD — shu kartaga o‘tkazing</small><b>5614 6887 0951 6164</b><span>KHUSAN SAFARBOYEV</span><button type="button" id="proCp">📋 Nusxa</button></div>
@@ -3070,7 +3148,7 @@ function proTolov(k,pg,kodOnly){const pl=PLANS.find(x=>x[0]===k),nx=narx(k);
   const M=(t,ok)=>{const e=sh.o.querySelector('#proMsg');e.className='bl-msg '+(ok?'ok':'no');e.innerHTML=t};
   const yoqildi=()=>{M('⭐ TESTUZ PRO yoqildi: '+proSana(proGet())+' gacha!',true);setTimeout(()=>{sh.close();if(pg&&pg.isConnected){pg.classList.add('out');setTimeout(()=>pg.remove(),300)}},1300)};
   const ok=sh.o.querySelector('#proOk'),inp=sh.o.querySelector('#proIn');
-  ok.onclick=()=>{const r=blQolla(inp.value);if(r.err){M(r.err);return}if(r.pro)yoqildi();else M('✅ Kod qabul qilindi: '+blNom(r.b)+' bo‘limi ochildi.',true)};
+  ok.onclick=async()=>{if(ok.disabled)return;ok.disabled=true;M('⏳ Kod tekshirilmoqda…',true);const r=await blQolla(inp.value);ok.disabled=false;if(r.err){M(r.err);return}if(r.pro)yoqildi();else M('✅ Kod qabul qilindi: '+blNom(r.b)+' uchun 1 ta test qo‘shildi.',true)};
   const cp=sh.o.querySelector('#proCp');if(cp)cp.onclick=()=>{try{copyCard()}catch(e){}M('📋 Karta raqami nusxalandi.',true)};
   sh.o.querySelectorAll('[data-pp]').forEach(b=>b.onclick=()=>{try{copyCard()}catch(e){}const u={payme:'https://payme.uz/',click:'https://click.uz/',uzum:'https://uzumbank.uz/'}[b.dataset.pp];
     M('📋 Karta raqami nusxalandi. Ilovada shu kartaga '+esc(nx)+' o‘tkazing, keyin chekni botga yuboring.',true);try{const a=$(b.dataset.pp==='payme'?'pm':b.dataset.pp==='click'?'cl':'uz');if(a&&a.href){a.click();return}}catch(e){}try{window.open(u,'_blank')}catch(e){}});
@@ -3081,8 +3159,8 @@ window.tzPro=proPage;
 // asosiy sahifada PRO banneri
 document.querySelector('.tzmenu').insertAdjacentHTML('beforebegin','<button class="pro-ban" id="tzProBan"></button>');$('tzProBan').onclick=proPage;
 function proPaint(){const b=$('tzProBan');if(!b)return;const on=proOn();b.className='pro-ban'+(on?' on':'');
-  b.innerHTML=on?`<span>⭐</span><div><b>TESTUZ PRO faol</b><small>${proSana(proGet())} gacha · ikkala bo‘lim va cheksiz o‘yinlar</small></div><em>›</em>`
-    :`<span>⭐</span><div><b>TESTUZ PRO — oylik obuna</b><small>Ikkala bo‘lim + cheksiz o‘yinlar · <span style="white-space:nowrap">1 oy — ${esc(narx('p1'))}</span></small></div><em>›</em>`}
+  b.innerHTML=on?`<span>⭐</span><div><b>TESTUZ PRO faol</b><small>${proSana(proGet())} gacha · hammasi bepul</small></div><em>›</em>`
+    :`<span>⭐</span><div><b>TESTUZ PRO — hammasi bepul</b><small>Barcha testlar va o‘yinlar cheksiz · <span style="white-space:nowrap">1 oy — ${esc(narx('p1'))}</span></small></div><em>›</em>`}
 proPaint();
 
 // ---------- 🧭 pastki menyu ----------
@@ -4451,6 +4529,8 @@ const OKF=[['geo','Geografiya','🌍','#00c2ff'],['att','Attestatsiya','👩‍�
 const OKD=[['Bronza','🥉',0],['Kumush','🥈',50],['Oltin','🥇',150],['Brilliant','💎',300]];
 const OKEMO=['😀','😂','😎','🔥','👍','😱','😡','🤝'];
 let OKM=null; // API.okt men: {fq, men}
+// qurilma belgisi: bitta akkaunt ikki telefonda qidirsa — server aniq xabar beradi
+const OKQD=(()=>{let d=LS.get('tz_qd')||'';if(!/^[a-z0-9]{6,12}$/.test(d)){d=(Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2)).replace(/[^a-z0-9]/g,'').slice(0,10);LS.set('tz_qd',d)}return d})();
 const okDr=b=>{let d=OKD[0];OKD.forEach(x=>{if(b>=x[2])d=x});return d};
 const okF=f=>OKF.find(x=>x[0]===f)||OKF[0];
 const okBor=f=>f==='geo'?!!(window.GEO_BANK&&GEO_BANK.open&&GEO_BANK.open.length):f==='att'?!!(window.GEO_PED&&GEO_PED.length):!!(OKM&&OKM.fq&&OKM.fq[f]>=10);
@@ -4470,18 +4550,30 @@ function okBan(){return `<button class="ok-ban" id="okBan"><span class="ok-bi">$
 
 function oktagon(boshFan,kod){document.querySelectorAll('.gm.okt').forEach(x=>x.remove());
   const o=document.createElement('div');o.className='gm okt';document.body.appendChild(o);requestAnimationFrame(()=>o.classList.add('on'));navPaint();
-  const A=bsJ('tz_okt',{});let fan=okF(boshFan||A.fan||'geo')[0],dead=false,tik=0,M=null,busy=false,ketdi=false,mus=null,oyin=null,xatoN=0;
+  const A=bsJ('tz_okt',{});let fan=okF(boshFan||A.fan||'geo')[0],dead=false,tik=0,M=null,busy=false,ketdi=false,mus=null,oyin=null,xatoN=0,J=null,jlT=0;
   const toxta=()=>{clearInterval(tik);tik=0;try{mus&&mus.stop()}catch(e){}mus=null;if(oyin&&oyin.toz)oyin.toz()};
   const chiq=()=>{ketdi=true;toxta();if(M&&!M.end)call('duel',{d:'chiq',uid:UID,id:M.id},8000);M=null;oyin=null};
   const yop=()=>{chiq();dead=true;o.classList.remove('on');setTimeout(()=>{o.remove();navPaint();if(cur==='tzGames')openGames()},250)};
   const xato=t=>pfSheet(`<h3 class="pf-sht">❌ ${esc(t)}</h3><button class="pf-lk" data-x>YOPISH</button>`,'dark');
+  const birXato=()=>pfSheet(`<h3 class="pf-sht">📱 Bir xil akkaunt</h3><p class="pf-mut c">Bu Telegram akkaunt bilan boshqa telefonda ham raqib qidirilyapti — o‘zingiz bilan o‘ynab bo‘lmaydi.<br><br>Sinab ko‘rish uchun ikkinchi telefonda <b>boshqa Telegram akkaunt</b> bilan kiring yoki do‘stingizga «🔗 Do‘stni chaqirish» kodini yuboring.</p><button class="pf-lk" data-x>TUSHUNARLI</button>`,'dark okt-sh');
+  const xatoR=(r,t)=>{if(r&&r.bir)birXato();else xato(r&&r.err||t)};
+  // 🟢 jonli: Oktagon'da hozir nechta odam va qaysi fanda raqib kutyapti
+  const jonliPaint=()=>{if(!J||J.n==null)return;const kut=Object.keys(J.kut||{}).filter(f=>okBor(f)),el=o.querySelector('#okJl');
+    if(el){el.classList.add('on');el.innerHTML=`<span><i></i>${J.n>1?`Hozir Oktagon’da: <b>${J.n} kishi</b>`:'Hozir Oktagon’da faqat siz'}</span>${kut.length?`<em>⚔️ ${kut.map(f=>esc(okF(f)[1])).join(', ')} — raqib kutyapti</em>`:''}`}
+    o.querySelectorAll('.ok-fg [data-f]').forEach(b=>{const t=b.querySelector('.ok-kt'),k=kut.indexOf(b.dataset.f)>=0;if(k&&!t)b.insertAdjacentHTML('beforeend','<i class="ok-kt">⚔️ kutyapti</i>');else if(!k&&t)t.remove()});
+    const r=o.querySelector('#okJr');if(r){const f2=kut.find(f=>f!==fan);r.classList.add('on');
+      r.innerHTML=`<span class="ok-jo"><i></i>Hozir onlayn: <b>${J.n}</b></span>`+(f2?`<button class="ok-jb" data-j="${f2}">${okF(f2)[2]} ${esc(okF(f2)[1])} fanida raqib kutyapti — o‘tish ›</button>`:'');
+      const b=r.querySelector('[data-j]');if(b)b.onclick=()=>{const f=b.dataset.j;chiq();fan=f;LS.set('tz_okt',JSON.stringify({fan}));sfxAC();boshlaAmal('izla')}}};
+  const jonli=async(maj)=>{if(dead||!API||(!maj&&document.hidden)||!o.querySelector('#okJl,#okJr'))return;if(!maj&&Date.now()-jlT<4500)return;jlT=Date.now();
+    const r=await call('okt',{d:'jonli',uid:UID},10000);if(dead||!r||!r.ok||r.n==null)return;J=r;jonliPaint()};
+  const jt=setInterval(()=>{if(dead){clearInterval(jt);return}jonli()},5000);
   // ---------- 1) bosh sahifa: daraja, fan tanlash, qoidalar ----------
   const bosh=()=>{chiq();ketdi=false;const F=okF(fan),me=OKM&&OKM.men&&OKM.men[fan]||{b:0,j:0,g:0,m:0,p:0},d=okDr(me.b||0);
     o.innerHTML=`<div class="ok-pg"><div class="ok-tb"><button class="ok-ib" id="okX" aria-label="Orqaga">‹</button><button class="ok-ib" id="okMu" aria-label="Ovoz">${aqMute()?'🔇':'🔊'}</button></div>
      <div class="ok-em"><div class="ok-emi">${okQilich()}</div><h1>OKTAGON</h1><small>JANG REJIMI</small></div>
      <div class="ok-st"><div><i>${d[1]}</i><small>${d[0]}</small></div><div><b class="g">${me.b||0}</b><small>ball</small></div><div><b>${me.j||0}</b><small>janglar</small></div></div>
      <h3 class="ok-h">Qaysi fandan bellashasiz?</h3><div class="ok-fg">${OKF.map(([k,n,e,c])=>{const bor=okBor(k),m=OKM&&OKM.men&&OKM.men[k];
-       return `<button data-f="${k}" class="${k===fan?'on':''}${bor?'':' yoq'}" style="--c:${c}"><span>${e}</span><b>${n}</b><small>${bor?(m?okDr(m.b)[1]+' '+m.b+' ball':'Ochiq'):'🔒 Tez orada'}</small></button>`}).join('')}</div>
+       return `<button data-f="${k}" class="${k===fan?'on':''}${bor?'':' yoq'}" style="--c:${c}"><span>${e}</span><b>${n}</b><small>${bor?(m?okDr(m.b)[1]+' '+m.b+' ball':'Ochiq'):'🔒 Tez orada'}</small></button>`}).join('')}</div><div class="ok-jl" id="okJl"></div>
      <div class="ok-cd"><b>Birga bir jang. Bilimni bellashib oshiring.</b><p>Qidirish orqali siz ayni vaqtda onlayn bo‘lgan inson bilan <b>${esc(F[1])}</b> fanidan bir xil ${10} ta test yechasiz. Kim ko‘proq to‘g‘ri javob topsa — g‘olib bo‘ladi.</p></div>
      <h3 class="ok-h">📊 Fanlar bo‘yicha darajangiz <button class="ok-al" id="okRy">🏆 Reyting ›</button></h3><div class="ok-lv">${okDarajalar()}</div>
      <div class="ok-2"><button class="ok-sb" id="okXo">🔗 Do‘stni chaqirish</button><button class="ok-sb" id="okKo">🔑 Kod bilan kirish</button></div><p class="ok-nt">${bsQoldi()}</p>
@@ -4490,7 +4582,7 @@ function oktagon(boshFan,kod){document.querySelectorAll('.gm.okt').forEach(x=>x.
     o.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{sfxAC();if(!okBor(b.dataset.f)){pfSheet(`<h3 class="pf-sht">${okF(b.dataset.f)[2]} ${esc(okF(b.dataset.f)[1])}</h3><p class="pf-mut c">Bu fan bo‘yicha savollar tez orada qo‘shiladi. Ustoz kamida 10 ta savol yuklagach, Oktagon shu fanda ham ochiladi.</p><button class="pf-lk" data-x>YOPISH</button>`,'dark');return}
       fan=b.dataset.f;LS.set('tz_okt',JSON.stringify({fan}));bsSfx('zing');bosh()});
     o.querySelector('#okRy').onclick=()=>okReyting(fan);
-    o.querySelector('#okGo').onclick=()=>{sfxAC();qoidalar('izla')};o.querySelector('#okXo').onclick=()=>{sfxAC();qoidalar('xona')};o.querySelector('#okKo').onclick=kodOyna};
+    o.querySelector('#okGo').onclick=()=>{sfxAC();qoidalar('izla')};o.querySelector('#okXo').onclick=()=>{sfxAC();qoidalar('xona')};o.querySelector('#okKo').onclick=kodOyna;jonliPaint();jonli()};
   const okDarajalar=()=>{const m=OKM&&OKM.men||{},K=OKF.filter(f=>m[f[0]]);if(!K.length)return'<div class="ok-bo">Hali jang qilmadingiz. Birinchi jangdan keyin har bir fan bo‘yicha darajangiz shu yerda chiqadi.</div>';
     return K.map(([k,n,e,c])=>{const x=m[k],d=okDr(x.b),nx=OKD[OKD.indexOf(d)+1],pr=nx?Math.round((x.b-d[2])/(nx[2]-d[2])*100):100;
       return `<div class="ok-lr" style="--c:${c}"><span>${e}</span><div><b>${esc(n)}</b><small>${d[1]} ${d[0]} · ${x.b} ball · 🏆 ${x.g} · ✖ ${x.m} · 🎯 ${x.p}%${x.o?` · ${x.o}-o‘rin`:''}</small><i><em style="width:${pr}%"></em></i></div></div>`}).join('')};
@@ -4511,21 +4603,21 @@ function oktagon(boshFan,kod){document.querySelectorAll('.gm.okt').forEach(x=>x.
     sh.o.querySelector('#okKr').onclick=()=>{if(ki.value.length!==4)return;sh.close();sfxAC();kir(ki.value)}};
   const nomOl=()=>{let n=bsNom();if(!n||n.length<2){const p=prof();n=p?[p.ln,p.fn].filter(Boolean).join(' '):'';}if(!n||n.length<2)n='O‘yinchi '+String(UID).slice(-3);bsNomSaqla(n);return n};
   // ---------- 2) raqib qidirish ----------
-  const P0=()=>({uid:UID,nom:nomOl(),oy:'okt',tur:fan,v:21});
+  const P0=()=>({uid:UID,nom:nomOl(),oy:'okt',tur:fan,v:21,qd:OKQD});
   const boshlaAmal=async act=>{ketdi=false;M=null;oyin=null;
-    if(act==='izla'){radar();const r=await call('duel',Object.assign({d:'izla'},P0()),15000);if(ketdi)return;if(!r||!r.ok){bosh();xato(r&&r.err||'Aloqa yo‘q. Internetni tekshiring.');return}qabul(r)}
+    if(act==='izla'){radar();const r=await call('duel',Object.assign({d:'izla'},P0()),15000);if(ketdi)return;if(!r||!r.ok){bosh();xatoR(r,'Aloqa yo‘q. Internetni tekshiring.');return}qabul(r)}
     else{kutYuk('🔗 Xona ochilmoqda');const r=await call('duel',Object.assign({d:'xona'},P0()),15000);if(ketdi)return;if(!r||!r.ok){bosh();xato(r&&r.err||'Aloqa yo‘q.');return}M=r;xonaKut(r.kod)}};
-  const kir=async k=>{ketdi=false;M=null;oyin=null;kutYuk('🔑 Xonaga kirilmoqda');const r=await call('duel',{d:'kir',uid:UID,nom:nomOl(),kod:k,v:21},15000);if(ketdi)return;
-    if(!r||!r.ok){bosh();xato(r&&r.err||'Aloqa yo‘q.');return}if(r.oy!=='okt'){chiq();o.remove();navPaint();bsKodBilan(k);return}fan=r.fan||fan;qabul(r)};
+  const kir=async k=>{ketdi=false;M=null;oyin=null;kutYuk('🔑 Xonaga kirilmoqda');const r=await call('duel',{d:'kir',uid:UID,nom:nomOl(),kod:k,v:21,qd:OKQD},15000);if(ketdi)return;
+    if(!r||!r.ok){bosh();xatoR(r,'Aloqa yo‘q.');return}if(r.oy!=='okt'){chiq();o.remove();navPaint();bsKodBilan(k);return}fan=r.fan||fan;qabul(r)};
   const kutYuk=t=>{o.innerHTML=`<div class="ok-pg c"><div class="ok-sp">${okQilich('#5fd100')}</div><p class="ok-mt">${t}…</p></div>`};
   const radar=()=>{const t0=Date.now();o.innerHTML=`<div class="ok-pg c ok-rdp"><div class="ok-sh2"><i></i></div><h2>RAQIB QIDIRILMOQDA...</h2><p class="ok-mt">${okF(fan)[2]} ${esc(okF(fan)[1])} · Iltimos, kuting…</p>
-     <div class="ok-rd"><i></i><i></i><i></i><em></em><b>👤</b>${[0,1,2,3,4].map(k=>`<s style="--d:${k*1.3}s;--x:${15+((k*37)%70)}%;--y:${18+((k*53)%64)}%"></s>`).join('')}</div><p class="ok-mt" id="okKt">0:00</p>
-     <div class="ok-ft"><button class="ok-gb" id="okBe">✕ BEKOR QILISH</button></div></div>`;
+     <div class="ok-rd"><i></i><i></i><i></i><em></em><b>👤</b>${[0,1,2,3,4].map(k=>`<s style="--d:${k*1.3}s;--x:${15+((k*37)%70)}%;--y:${18+((k*53)%64)}%"></s>`).join('')}</div><p class="ok-mt" id="okKt">0:00</p><div class="ok-jr" id="okJr"></div>
+     <div class="ok-ft"><button class="ok-gb" id="okBe">✕ BEKOR QILISH</button></div></div>`;jonliPaint();jonli(1);
     o.querySelector('#okBe').onclick=bosh;const kt=o.querySelector('#okKt');clearInterval(tik);
-    tik=setInterval(()=>{const s=Math.floor((Date.now()-t0)/1000);if(kt)kt.textContent=Math.floor(s/60)+':'+f2(s%60);if(s>=75){clearInterval(tik);topilmadi();return}if(s%2===0)sor('holat')},500)};
-  const topilmadi=()=>{chiq();ketdi=false;o.innerHTML=`<div class="ok-pg c"><div class="ok-sp off">😴</div><h2>Raqib topilmadi</h2><p class="ok-mt">Hozircha ${esc(okF(fan)[1])} fanidan onlayn raqib yo‘q. Do‘stingizni chaqiring yoki birozdan keyin qayta urining.</p>
+    tik=setInterval(()=>{const s=Math.floor((Date.now()-t0)/1000);if(kt)kt.textContent=Math.floor(s/60)+':'+f2(s%60);if(s>=120){clearInterval(tik);topilmadi();return}if(s%2===0)sor('holat')},500)};
+  const topilmadi=()=>{chiq();ketdi=false;o.innerHTML=`<div class="ok-pg c"><div class="ok-sp off">😴</div><h2>Raqib topilmadi</h2><p class="ok-mt">Hozircha ${esc(okF(fan)[1])} fanidan onlayn raqib yo‘q. Do‘stingizni chaqiring yoki birozdan keyin qayta urining.</p><div class="ok-jr" id="okJr"></div>
      <div class="ok-ft col"><button class="ok-gb" id="okQi">🔄 QAYTA QIDIRISH</button><button class="ok-sb" id="okXo2">🔗 Do‘stni kod bilan chaqirish</button><button class="ok-sb" id="okOr">‹ Orqaga</button></div></div>`;
-    o.querySelector('#okQi').onclick=()=>boshlaAmal('izla');o.querySelector('#okXo2').onclick=()=>boshlaAmal('xona');o.querySelector('#okOr').onclick=bosh};
+    o.querySelector('#okQi').onclick=()=>boshlaAmal('izla');o.querySelector('#okXo2').onclick=()=>boshlaAmal('xona');o.querySelector('#okOr').onclick=bosh;jonliPaint();jonli(1)};
   const xonaKut=k=>{const t0=Date.now();o.innerHTML=`<div class="ok-pg c"><div class="ok-sp">${okQilich('#5fd100')}</div><h2>Do‘stingizni kuting</h2><p class="ok-mt">${okF(fan)[2]} ${esc(okF(fan)[1])} · do‘stingiz Oktagon’da «🔑 Kod bilan kirish»ga shu kodni yozsin yoki havolani ochsin:</p>
      <div class="aq-kod">${String(k).split('').map(d=>`<b>${d}</b>`).join('')}</div><p class="ok-mt" id="okKt">Kutilmoqda… 0:00</p>
      <div class="ok-ft col"><button class="ok-gb" id="okSh">📤 KODNI YUBORISH</button><button class="ok-sb" id="okBe">Bekor qilish</button></div></div>`;
@@ -4754,6 +4846,39 @@ window.tzWW=wwBosh;
 function wwBan(){return `<div class="ww-ban"><button data-w="gildirak"><span class="ww-bw">${wwGsvg(['','','','','','','',''],'rang',0)}</span><b>🎡 G‘ildirak</b><small>Aylantiring — tushgan savolga javob bering</small></button><button data-w="quti" class="k"><span class="ww-bk">${[3,0,4,1].map(i=>`<i style="--k1:${WWK[i][0]};--k2:${WWK[i][1]}"></i>`).join('')}</span><b>📚 Oynani ochish</b><small>Sehrli kitoblarni oching</small></button></div>`}
 // havola: ?ww=gildirak yoki ?ww=quti
 {const w=Q.get('ww')||'';if(w==='gildirak'||w==='quti')(async()=>{try{await (window.tzSplashP||Promise.resolve())}catch(e){}setTimeout(()=>wwBosh(w),1700)})()}
+
+/* ===================== 🎖 OYLIK BALL: faqat pullik Milliy sertifikat va Attestatsiya testlari ===================== */
+/* Ball serverda (bot) hisoblanadi: to'lov kodi yoki ⭐ PRO bilan topshirilgan testlar. O'yinlar (XP) alohida — ballga qo'shilmaydi.
+   🎓 A+ 6, A 5, B+ 4, B 3, C+ 2, C 1 · 👩‍🏫 Oliy toifa 6, 1-toifa 5, 2-toifa 4, Mutaxassis 3. Har oy 0 dan boshlanadi. */
+const OBMS=[['A+',6],['A',5],['B+',4],['B',3],['C+',2],['C',1]],OBAT=[['Oliy toifa',6],['1-toifa',5],['2-toifa',4],['Mutaxassis',3]];
+const obOyK=t=>{const d=new Date((t||now())+5*3600e3);return d.getUTCFullYear()+'-'+f2(d.getUTCMonth()+1)};
+const obOyNom=k=>{const a=String(k||'').split('-');return (OYLAR[+a[1]-1]||'')+' '+(a[0]||'')};
+const obSana=t=>{const d=new Date(t+5*3600e3);return f2(d.getUTCDate())+'.'+f2(d.getUTCMonth()+1)};
+// shu oyning bali (oy almashgan bo'lsa — 0 dan, o'tgan oy «oldingi oylar»ga o'tadi)
+function obGet(){const m=meC(),o=m&&m.ob,k=obOyK();if(o&&o.oy===k)return o;
+  return {oy:k,ball:0,ms:0,at:0,n:0,L:[],orin:0,jami:0,tarix:o&&o.oy<k?[{oy:o.oy,ball:o.ball||0}].concat((o.tarix||[]).filter(x=>x.oy!==o.oy)).slice(0,6):[]}}
+function obSet(o){if(!o||!o.oy)return;try{const m=meC()||{};m.ob=o;LS.set('tz_me',JSON.stringify(m))}catch(e){}}
+// profil: 🏆 kubok yonidagi ball
+function obPill(){const o=obGet();return `<button class="pf-bal" id="pfBal" aria-label="Oylik ball"><i>🎖</i><b>${o.ball}</b><small>ball</small></button>`}
+function obOyna(){const o=obGet(),dev=isDev();
+  const sh=pfSheet(`<div class="ob-hd"><small>🎖 OYLIK BALL · ${esc(obOyNom(o.oy).toUpperCase())}</small><div><b>${o.ball}</b><span>ball</span></div>${o.orin?`<em>🏆 Bu oy: ${o.orin}-o‘rin · ${o.jami} ishtirokchi</em>`:''}</div>
+   <div class="ob-2"><div><span>🎓 Milliy sertifikat</span><b>${o.ms||0}</b></div><div><span>👩‍🏫 Attestatsiya</span><b>${o.at||0}</b></div></div>
+   <h4 class="ob-h">Bu oydagi pullik testlar</h4>${o.L&&o.L.length?`<div class="ob-l">${o.L.map(x=>`<div><span>${x.tur==='att'?'👩‍🏫':'🎓'}</span><div><b>${x.tur==='att'?'Attestatsiya':'Milliy sertifikat'}</b><small>${obSana(x.t)} · ${x.d?(x.tur==='att'?esc(x.d):grB(x.d)):'daraja yo‘q'}</small></div><em class="${x.b?'':'z'}">${x.b?'+'+x.b:'0'}</em></div>`).join('')}</div>`
+     :`<p class="ob-bo">${dev?'👨‍💻 Dasturchi rejimida ball hisoblanmaydi.':'Bu oyda hali pullik test topshirmadingiz. Milliy sertifikat yoki Attestatsiya testini topshiring — ball shu yerda to‘planadi.'}</p>`}
+   <h4 class="ob-h">Ball qanday beriladi</h4>
+   <div class="ob-t"><div><b>🎓 Milliy sertifikat</b>${OBMS.map(([g,b])=>`<p><span>${grB(g)}</span><em>${b} ball</em></p>`).join('')}</div><div><b>👩‍🏫 Attestatsiya</b>${OBAT.map(([g,b])=>`<p><span>${g}</span><em>${b} ball</em></p>`).join('')}</div></div>
+   <ul class="ob-n"><li>Faqat <b>pullik</b> testlar hisoblanadi (to‘lov kodi yoki ⭐ PRO bilan).</li><li>🎮 O‘yinlardagi XP alohida — ballga qo‘shilmaydi.</li><li>Har oyning 1-sanasida ball 0 dan boshlanadi.</li></ul>
+   ${o.tarix&&o.tarix.length?`<h4 class="ob-h">Oldingi oylar</h4><div class="ob-tr">${o.tarix.map(x=>`<span>${esc(obOyNom(x.oy))} <b>${x.ball}</b></span>`).join('')}</div>`:''}
+   <button class="pf-lk" data-x>YOPISH</button>`,'dark');
+  return sh}
+// natija sahifasida: shu test uchun ball
+function obNatija(r){if(!r||!r.ob)return '';obSet(r.ob);
+  if(r.obb>0)return `<div class="ob-res">🎖 <b>+${r.obb} ball</b> — ${esc(obOyNom(r.ob.oy))}dagi balingiz: <b>${r.ob.ball}</b>${r.ob.orin?` · 🏆 ${r.ob.orin}-o‘rin`:''}</div>`;
+  if(r.pul)return `<div class="ob-res z">🎖 Bu natija uchun ball yo‘q: ball Milliy sertifikatda C, Attestatsiyada Mutaxassis darajasidan boshlanadi.</div>`;
+  return ''}
+document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('#pfBal'))obOyna()});
+// botdagi «👤 Profilda ko'rish»: ?view=prof
+if(Q.get('view')==='prof')setTimeout(()=>{if(!prof()&&!isDev())return;try{if(!$('intro').classList.contains('hid'))$('ok').click()}catch(e){}setTimeout(()=>{try{openProf()}catch(e){}},400)},2400);
 
 })();
 </script>
