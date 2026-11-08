@@ -1891,6 +1891,9 @@ html.lt .gq-hero h2{background:linear-gradient(90deg,#d81b60,#c27c0e);-webkit-ba
 .gq-st b{display:block;font:900 17px system-ui}.gq-st b small{font:700 11px system-ui;color:var(--kx-mu)}.gq-st span{font:700 10.5px system-ui;color:var(--kx-mu)}
 .gq-qd{border-color:rgba(255,126,179,.3)}
 .gq-pg .kx-btn{margin-top:12px}
+.gq-okt.gq-pf{margin:12px 0}
+.gq-pg .gq-ban+.bl-grid{margin-bottom:4px}
+.gq-ban.dev{background:linear-gradient(135deg,#1fb978,#0b7a5a);box-shadow:0 10px 24px -12px #0b7a5a}
 </style></head><body>
 <style>
 #tzSplash{position:fixed;inset:0;z-index:300000;background:radial-gradient(circle at 50% 42%,#fff 0,#f2f5fb 60%,#e3e9f6 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;transition:opacity .48s,transform .48s;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
@@ -6615,8 +6618,11 @@ new MutationObserver(()=>{if(BIL_D||BIL_XATO)bilRasmYangila()}).observe(document
 const BIL_ND={oddiy:{n:'Oddiy',b:1,c:'#4da3ff'},noyob:{n:'Noyob',b:3,c:'#a77bff'},afsonaviy:{n:'Afsonaviy',b:5,c:'#ffc23d'}};
 const BIL_ALB={qiz:{n:'Gulli qizlar',e:'🌸'},geo:{n:'Sayyora',e:'🌍'},kitob:{n:'Kitob javoni',e:'📚'}};
 const BIL_PAKET=5; // har 5 ⭐ — 1 ta yangi stiker
-const bilS=()=>{let s={};try{s=JSON.parse(LS.get('tz_bil')||'{}')||{}}catch(e){s={}}s.y=+s.y||0;s.s=s.s||{};s.b=+s.b||0;s.hb=s.hb||{};s.p=+s.p||0;s.n=+s.n||0;return s};
-const bilSaqla=s=>LS.set('tz_bil',JSON.stringify(s));
+// 👨‍💻 dasturchi rejimida barcha stikerlar bepul ochiq (faqat ko'rinishda — saqlanmaydi va serverga yuborilmaydi)
+const bilDev=()=>{try{return isDev()}catch(e){return false}};
+const bilS=()=>{let s={};try{s=JSON.parse(LS.get('tz_bil')||'{}')||{}}catch(e){s={}}s.y=+s.y||0;s.s=s.s||{};s.b=+s.b||0;s.hb=s.hb||{};s.p=+s.p||0;s.n=+s.n||0;
+  if(bilDev()){s._v=[];BIL_STK.forEach(x=>{if(!(s.s[x[0]]>0)){s.s[x[0]]=1;s._v.push(x[0])}})}return s};
+const bilSaqla=s=>{const c=Object.assign({},s,{s:Object.assign({},s.s)});if(c._v){c._v.forEach(id=>{const v=(+c.s[id]||0)-1;if(v>0)c.s[id]=v;else delete c.s[id]});delete c._v}LS.set('tz_bil',JSON.stringify(c))};
 const bilHk=(t)=>{const d=Math.floor(((t||Date.now())+5*3600e3)/864e5);return d-(d+3)%7};
 const bilBor=s=>Object.keys(s.s).filter(k=>s.s[k]>0);
 const bilById=id=>BIL_STK.find(x=>x[0]===id);
@@ -6624,7 +6630,7 @@ const bilKey=t=>{let h=7;for(const ch of String(t))h=(h*31+ch.charCodeAt(0))>>>0
 // ---- qiz foydalanuvchini aniqlash: otasining ismi (…qizi / …ovna) yoki ism bo'yicha
 const BIL_QIZ_ISM=new Set(('malika madina mohinur mohira gulnoza gulnora dilnoza dilfuza dildora nilufar nodira nozima nargiza shahnoza shaxnoza sevara sevinch sabina sitora zarina zilola ziyoda kamola kamila lola laylo aziza barno feruza fotima fatima oysha hilola xilola iroda umida yulduz zuhra zuxra zulfiya dilorom mahliyo mahbuba muxlisa muslima mushtariy nigora nafisa rano rayhona robiya sarvinoz shohista shoira tamara asal asila charos diyora dilshoda durdona ezoza gulchehra gulbahor gulshan hulkar husnora jasmina komila lobar lazokat marjona maftuna malohat munisa muattar nazokat nasiba navbahor odina oydin ozoda parizoda parvina rushana ruxshona sabrina sadoqat saida sanobar sayyora shahlo shirin surayyo tabassum xadicha hadicha xurshida zebo zebiniso zamira zarnigor anora ayzoda bonu dilyora dinara elina evelina gavhar gulasal gulruh kumush maryam mehribon mohlaroyim muazzam noila nozanin oygul aygul gulshat gulnara saule aliya altinay ayjamal gulmira venera dilbar anna anastasiya natalya olga svetlana elena yelena irina mariya ekaterina yekaterina tatyana viktoriya alina polina kristina darya sofiya valeriya yuliya marina oksana lyudmila galina nadejda veronika diana karina milana amina aisha leyla elmira gulsara raxima rahima sabohat soliha solihaxon xosiyat zuhro mohidil mohichehra mohigul nigina ominaxon ominа munira manzura mavluda mukaddas muqaddas nodiraxon nurjahon oyjamol oyshaxon ra’no xurmo yasmina yasmin rayxona sevinchxon sohiba umidaxon gulsanam bibisora bibixonim zaynab xonzoda mohlaro').split(' '));
 const BIL_OGIL=new Set('musa iso isa yahyo yahya mustafa muso abdulla ota nikita ilya sasha misha luka danila akbar husan hasan kamol jamol sanjar anvar'.split(' '));
-function bilQizmi(){const s=bilS();if(s.q===1||s.q===0)return!!s.q;const p=prof()||{},n=x=>String(x||'').toLowerCase().replace(/[‘’ʻʼ'`]/g,'').trim();
+function bilQizmi(){if(bilDev())return true;const s=bilS();if(s.q===1||s.q===0)return!!s.q;const p=prof()||{},n=x=>String(x||'').toLowerCase().replace(/[‘’ʻʼ'`]/g,'').trim();
   const pt=n(p.pt);if(/qizi$|ovna$|evna$|ichna$/.test(pt))return true;if(/ogli$|ugli$|ovich$|evich$|ich$/.test(pt))return false;
   const a=(typeof kxKirgan==='function'&&kxKirgan())||{},fn=n(p.fn||String(a.ism||'').split(' ')[0]);if(!fn)return false;
   if(BIL_QIZ_ISM.has(fn))return true;if(BIL_OGIL.has(fn))return false;
@@ -6642,7 +6648,7 @@ function bilTanla(alb,nd){const s=bilS(),L=BIL_STK.filter(x=>x[3]===alb);if(!L.l
   return T[Math.floor(Math.random()*T.length)]}
 function bilQosh(st){const s=bilS(),yangi=!s.s[st[0]];s.s[st[0]]=(s.s[st[0]]||0)+1;const bon=yangi?BIL_ND[st[2]].b:1;s.b+=bon;const hk=bilHk();s.hb[hk]=(s.hb[hk]||0)+bon;bilSaqla(s);return{st,yangi,bon}}
 // ---- serverga yozish
-async function bilYoz(b,bon,mk){const s=bilS();if(!(API&&kxRej()==='on'))return null;
+async function bilYoz(b,bon,mk){if(bilDev())return null;const s=bilS();if(!(API&&kxRej()==='on'))return null;
   try{return await call('bilim',{d:'yoz',uid:UID,ism:bilIsm(),fan:'geo',b,bon:Math.min(5,bon||0),mk:mk||'',y:s.y,s:bilBor(s).join('.'),a:s.a||'',qiz:bilQizmi()?1:0},20000)}catch(e){return null}}
 // ---- test yakunida: ball (0–10), yulduzcha, stiker paketi
 function bilYulduz(b){return b>=10?3:b>=8?2:b>=5?1:0}
@@ -6686,14 +6692,14 @@ function bilAvatarTanla(){const s=bilS(),L=bilBor(s).filter(id=>{const x=bilById
   const x=sh.o.querySelector('#blAvX');if(x)x.onclick=()=>{bilAvatar('');sh.close();if(typeof pfRender==='function')pfRender()};sh.o.querySelector('#blAvAl').onclick=()=>{sh.close();setTimeout(bilAlbom,200)}}
 // ---- albom
 function bilAlbom(t0){const s=bilS(),qiz=bilQizmi();
-  const tabs=qiz?['qiz','geo','kitob']:['geo','kitob'];let t=tabs.indexOf(t0)>=0?t0:tabs[0];
+  const tabs=qiz?['qiz','geo','kitob']:['geo','kitob','qiz'];let t=tabs.indexOf(t0)>=0?t0:tabs[0];
   const P=orSahifa('🌸 Stikerlar albomi',`<div class="bl-hd"><div><b>${s.y}</b><small>⭐ yulduz</small></div><div><b>${bilBor(s).length}</b><small>stiker</small></div><div><b>${s.b}</b><small>jami ball</small></div></div>
     <div class="bl-pk wide"><span>🎁 Keyingi stiker</span><i style="--p:${Math.min(100,Math.round(s.p/BIL_PAKET*100))}%"></i><em>${s.p}/${BIL_PAKET} ⭐</em></div>
     <div class="or-tabs or-tb2" id="blTb">${tabs.map(k=>`<button data-t="${k}" class="${k===t?'on':''}">${BIL_ALB[k].e} ${BIL_ALB[k].n}</button>`).join('')}</div><div id="blGr"></div>
     <div class="bl-qd"><b>Qanday yutiladi?</b><ul>${qiz?`<li>🌸 <b>Gulli qizlar</b> — faqat qizlar uchun. ${BIL_QULF}: har bir test uchun 1 ta stiker (kuniga ${BIL_IMT_KUN} tagacha), natija qancha yuqori bo‘lsa — noyob va afsonaviy chiqishi shuncha ko‘p.</li>`:''}<li>🌍 Har bir mavzulashtirilgan testda <b>0–10 ball</b> olasiz (har to‘g‘ri javob — 1 ball). 10 ball — ⭐⭐⭐, 8–9 — ⭐⭐, 5–7 — ⭐. Har <b>${BIL_PAKET} ⭐</b> — yangi «Sayyora» stikeri.</li><li>Yangi stiker bonus beradi: oddiy +1, noyob +3, afsonaviy +5 ball.</li><li>📚 Kitoblar har hafta «Bilimli inson» barabanida beriladi.</li></ul>
     <button class="bl-lk" id="blJins">${qiz?'Men o‘g‘il bolaman — albomni o‘zgartirish':'Men qiz bolaman — «Gulli qizlar» albomini ochish'}</button></div>`,'bl-alb');
   const gr=()=>{const L=BIL_STK.filter(x=>x[3]===t),n=L.filter(x=>s.s[x[0]]).length,G=P.bd.querySelector('#blGr');
-    G.innerHTML=(t==='qiz'?bilQulfBan():'')+`<p class="or-sub">${n} / ${L.length} to‘plandi${n===L.length?' — 🏆 albom to‘liq!':''}</p><div class="bl-grid ${t==='qiz'?'tall':''}">${L.map(x=>s.s[x[0]]?`<button class="bl-c" data-id="${x[0]}">${bilKarta(x[0])}${s.s[x[0]]>1?`<em class="bl-x">×${s.s[x[0]]}</em>`:''}${s.a===x[0]?'<em class="bl-ava">avatar</em>':''}<small>${esc(x[1])}</small></button>`
+    G.innerHTML=(t==='qiz'?(qiz?bilQulfBan():bilQulfBanO()):'')+`<p class="or-sub">${n} / ${L.length} to‘plandi${n===L.length?' — 🏆 albom to‘liq!':''}</p><div class="bl-grid ${t==='qiz'?'tall':''}">${L.map(x=>s.s[x[0]]?`<button class="bl-c" data-id="${x[0]}">${bilKarta(x[0])}${s.s[x[0]]>1?`<em class="bl-x">×${s.s[x[0]]}</em>`:''}${s.a===x[0]?'<em class="bl-ava">avatar</em>':''}<small>${esc(x[1])}</small></button>`
       :t==='qiz'?`<button class="bl-c qulf n-${x[2]}" data-lk="${x[0]}">${bilKarta(x[0])}<i class="gq-q">🔒</i><small>${BIL_ND[x[2]].n}</small></button>`
       :`<div class="bl-c yoq n-${x[2]}"><span class="bl-sil"><img src="${BIL_IMG(x[0])}" alt="" loading="lazy"></span><b>?</b><small>${BIL_ND[x[2]].n}</small></div>`).join('')}</div>`;
     G.querySelectorAll('[data-id]').forEach(b=>b.onclick=()=>{const st=bilById(b.dataset.id);bilOchil({st,yangi:true,bon:BIL_ND[st[2]].b},'Sizning stikeringiz')});
@@ -6702,7 +6708,8 @@ function bilAlbom(t0){const s=bilS(),qiz=bilQizmi();
   P.bd.querySelector('#blJins').onclick=()=>{const s1=bilS();s1.q=qiz?0:1;bilSaqla(s1);P.yop();bilBelgi();setTimeout(()=>bilAlbom(),280)};
   gr();bilTiklash()}
 // 🔒 qulflangan «Gulli qizlar» — faqat Milliy sertifikat va Attestatsiya testlari orqali
-const bilQulfBan=()=>`<div class="gq-ban"><span class="gq-bi">🔒</span><div><b>${BIL_QULF}</b><small>Har bir test — 1 ta stiker · kuniga ${BIL_IMT_KUN} tagacha · bugun: ${bilImtBugun()}/${BIL_IMT_KUN}</small></div></div>
+const bilQulfBanO=()=>`<div class="gq-ban"><span class="gq-bi">🔒</span><div><b>Bu to‘plam qizlar uchun</b><small>Qizlar Milliy sertifikat va Attestatsiya testlarida qatnashib ochadi · ${BIL_STK.filter(x=>x[3]==='qiz').length} ta stiker</small></div></div>`;
+const bilQulfBan=()=>(bilDev()?`<div class="gq-ban dev"><span class="gq-bi">👨‍💻</span><div><b>Dasturchi rejimi — barcha stikerlar bepul ochiq</b><small>Oddiy foydalanuvchilarda qizlar stikerlari Milliy sertifikat va Attestatsiya testlari orqali ochiladi</small></div></div>`:'')+`<div class="gq-ban"><span class="gq-bi">🔒</span><div><b>${BIL_QULF}</b><small>Har bir test — 1 ta stiker · kuniga ${BIL_IMT_KUN} tagacha · bugun: ${bilImtBugun()}/${BIL_IMT_KUN}</small></div></div>
   <div class="gq-bt"><button class="gq-ex ms" data-ex="ms">📜 Milliy sertifikat testi</button><button class="gq-ex at" data-ex="att">🏛 Attestatsiya testi</button></div>`;
 function bilExBog(el,P,sh){el.querySelectorAll('[data-ex]').forEach(b=>b.onclick=()=>{if(sh)sh.close();if(P)P.yop();setTimeout(()=>bilImtBosh(b.dataset.ex),sh||P?300:0)})}
 function bilImtBosh(k){document.querySelectorAll('.or-pg').forEach(x=>x.remove());document.body.classList.remove('or-ochiq');
@@ -6711,7 +6718,7 @@ const bilKun=()=>new Date(Date.now()+5*3600e3).toISOString().slice(0,10);
 const bilImtBugun=()=>Math.min(BIL_IMT_KUN,+(LS.get('tz_bilx_'+bilKun())||0));
 function bilQulfOyna(id,P){const st=bilById(id);if(!st)return;
   const sh=kxSh(`<div class="gq-qo"><div class="gq-qi">${bilKarta(id)}<i class="gq-q big">🔒</i></div><h3>${esc(st[1])}</h3><span class="bl-chip" style="--c:${BIL_ND[st[2]].c}">${BIL_ND[st[2]].n} · 🌸 Gulli qizlar</span>
-    <p class="gq-qt">🔒 Bu stiker hali qulflangan.<br><b>${BIL_QULF}.</b></p><div class="gq-bt">${['ms','att'].map(k=>`<button class="gq-ex ${k==='ms'?'ms':'at'}" data-ex="${k}">${k==='ms'?'📜 Milliy sertifikat testi':'🏛 Attestatsiya testi'}</button>`).join('')}</div></div>`);
+    <p class="gq-qt">🔒 Bu stiker hali qulflangan.<br><b>${bilQizmi()?BIL_QULF+'.':'Bu stikerlarni qizlar Milliy sertifikat va Attestatsiya testlarida qatnashib ochadi.'}</b></p><div class="gq-bt" ${bilQizmi()?'':'hidden'}>${['ms','att'].map(k=>`<button class="gq-ex ${k==='ms'?'ms':'at'}" data-ex="${k}">${k==='ms'?'📜 Milliy sertifikat testi':'🏛 Attestatsiya testi'}</button>`).join('')}</div></div>`);
   bilExBog(sh.o,P,sh)}
 // Milliy sertifikat / Attestatsiya natijasi: ball (0–10), yulduz va qizlar uchun «Gulli qizlar» stikeri
 function bilImtihon(it){if(!it||!/^(milliy|att|aud)$/.test(String(it.tur||'')))return null;
@@ -6731,7 +6738,14 @@ function bilImtihon(it){if(!it||!/^(milliy|att|aud)$/.test(String(it.tur||'')))r
 function bilQizFan(n){const s=bilS(),L=BIL_STK.filter(x=>x[3]==='qiz'),bor=L.filter(x=>s.s[x[0]]),afs=L.filter(x=>x[2]==='afsonaviy');
   return bor.concat(afs.filter(x=>!s.s[x[0]])).concat(L).slice(0,n).map(x=>x[0])}
 function bilQizBolim(){const s=bilS(),L=BIL_STK.filter(x=>x[3]==='qiz'),bor=L.filter(x=>s.s[x[0]]);
-  if(!bilQizmi()){const sh=kxSh(`<h3>🌸 Gulli qizlar</h3><p class="kx-mut">Bu bo‘lim faqat qizlar uchun.</p><button class="kx-btn kxh" id="gqOk">Yopish</button>`);sh.o.querySelector('#gqOk').onclick=()=>sh.close();return}
+  if(!bilQizmi()){const F=bilQizFan(3),Lk=L.filter(x=>x[2]!=='oddiy').slice(0,6);
+    const P=orSahifa('🌸 Gulli qizlar',`<div class="gq-hero"><div class="gq-oktb"><div class="gq-okti">${F.map((id,i)=>`<span class="gq-fi f${i}">${bilKarta(id)}</span>`).join('')}</div></div>
+        <em class="gq-tag">🌸 Qizlar uchun to‘plam</em><h2>Gulli qizlar to‘plami</h2><p>${L.length} ta chiroyli stiker. Ularni qizlar Milliy sertifikat va Attestatsiya testlarida qatnashib yutib oladi.</p></div>
+      <div class="gq-ban"><span class="gq-bi">🔒</span><div><b>Bu stikerlarni faqat qizlar ochadi</b><small>Siz uchun — 🌍 «Sayyora» va 📚 «Kitob javoni» albomlari</small></div></div>
+      <div class="bl-grid tall">${Lk.map(x=>`<button class="bl-c qulf n-${x[2]}" data-lk="${x[0]}">${bilKarta(x[0])}<i class="gq-q">🔒</i><small>${BIL_ND[x[2]].n}</small></button>`).join('')}</div>
+      <button class="kx-btn kxb" id="gqAl">🌸 Barcha ${L.length} ta stikerni ko‘rish</button><button class="kx-btn kxh" id="gqMy">🌍 Mening albomim</button>`,'gq-pg');
+    P.bd.querySelectorAll('[data-lk]').forEach(b=>b.onclick=()=>bilQulfOyna(b.dataset.lk,P));
+    P.bd.querySelector('#gqAl').onclick=()=>{P.yop();setTimeout(()=>bilAlbom('qiz'),280)};P.bd.querySelector('#gqMy').onclick=()=>{P.yop();setTimeout(()=>bilAlbom('geo'),280)};return}
   const nd=k=>bor.filter(x=>x[2]===k).length,F=bilQizFan(3);
   const P=orSahifa('🌸 Gulli qizlar',`<div class="gq-hero"><div class="gq-oktb"><div class="gq-okti">${F.map((id,i)=>`<span class="gq-fi f${i}">${bilKarta(id)}</span>`).join('')}</div></div>
       <em class="gq-tag">🌸 Faqat qizlar uchun</em><h2>Gulli qizlar to‘plami</h2><p>Milliy sertifikat va Attestatsiya testlarida qatnashing — har bir test uchun chiroyli stiker yutib oling!</p></div>
@@ -6818,6 +6832,9 @@ Object.assign(KX_GO,{bil:()=>bilBaraban(),stk:()=>bilAlbom(),gq:()=>bilQizBolim(
   if(loc)loc.insertAdjacentHTML('afterend',`<div class="pf-card a3 bl-pc"><div class="pf-h"><h3>${BIL_ALB[alb].e} Stikerlarim</h3><button id="blPAl">Albom ›</button></div>
     <div class="bl-pst">${bor.length?bor.slice(-5).reverse().map(id=>`<button data-id="${id}">${bilKarta(id)}</button>`).join(''):'<span class="bl-pz0">Mavzulashtirilgan testlarni yechib, chiroyli stikerlar to‘plang!</span>'}</div>
     <div class="bl-pm"><span>⭐ ${s.y} yulduz</span><span>${L.filter(x=>s.s[x[0]]).length}/${L.length} ${BIL_ALB[alb].n.toLowerCase()}</span><span>🏅 ${s.b} ball</span></div><button class="bl-lk" id="blPBr">🏆 Bilimli inson barabani ›</button></div>`);
+  const pc=B.querySelector('.bl-pc');if(pc){const q=bilQizmi(),LQ=BIL_STK.filter(x=>x[3]==='qiz'),nq=LQ.filter(x=>s.s[x[0]]).length;
+    pc.insertAdjacentHTML('afterend',`<button class="gq-okt gq-pf" id="gqPf"><span class="gq-oe"><span class="gq-f">${bilQizFan(3).map((id,i)=>`<span class="gq-fi f${i}">${bilKarta(id)}</span>`).join('')}</span></span><span class="gq-ot"><em>🌸 ${q?'Faqat qizlar uchun':'Qizlar uchun to‘plam'}</em><b>Gulli qizlar</b><small>${q?'Milliy sertifikat va Attestatsiya testlarida qatnashing — chiroyli stikerlarni yutib oling!':'Qizlar Milliy sertifikat va Attestatsiya testlarida qatnashib yutadigan stikerlar'}</small><i class="gq-pr">${q?`🌸 ${nq} / ${LQ.length} · 🔒 ${LQ.length-nq} ta qulfda`:`🔒 ${LQ.length} ta stiker · qizlar ochadi`}</i></span></button>`);
+    const g=B.querySelector('#gqPf');if(g)g.onclick=()=>bilQizBolim()}
   const a=B.querySelector('#blPAl');if(a)a.onclick=()=>bilAlbom();const br=B.querySelector('#blPBr');if(br)br.onclick=()=>bilBaraban();
   B.querySelectorAll('.bl-pst [data-id]').forEach(b=>b.onclick=bilAvatarTanla)}catch(e){}}}
 bilAvatarYoz();bilBelgi();
