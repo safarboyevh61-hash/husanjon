@@ -6063,7 +6063,7 @@ window.kxOflaynXabar=function(){if(Date.now()-KX_CLK>2500||Date.now()-KX_OFS<600
   sh.o.querySelector('#kxGoOn').onclick=()=>{sh.close();kxRejQoy('on')}};
 async function kxSw(on){if(!('serviceWorker' in navigator)||!/^https?:$/.test(location.protocol))return false;
   try{if(on){const reg=await navigator.serviceWorker.register('sw.js');const w=reg.installing||reg.waiting||reg.active;
-      const urls=[location.pathname,'./','index.html','savollar.js','config.js','mavzu-testlar.json','zonalar.json','stikerlar.json'].concat([5,6,7,8,9,10].map(n=>'savol-javob-'+n+'.json'),Object.values(typeof GEO_O==='object'?GEO_O:{}).map(g=>g.f));
+      const urls=[location.pathname,'./','index.html','savollar.js','config.js','mavzu-testlar.txt','zonalar.txt','stikerlar.txt'].concat([5,6,7,8,9,10].map(n=>'savol-javob-'+n+'.txt'),Object.values(typeof GEO_O==='object'?GEO_O:{}).map(g=>g.f));
       const yub=x=>{try{x.postMessage({t:'yukla',u:urls})}catch(e){}};if(reg.active)yub(reg.active);else if(w)w.addEventListener('statechange',()=>{if(w.state==='activated')yub(w)});return true}
     const rs=await navigator.serviceWorker.getRegistrations();await Promise.all(rs.map(r=>r.unregister()));if(window.caches){const ks=await caches.keys();await Promise.all(ks.filter(k=>/^testuz-/.test(k)).map(k=>caches.delete(k)))}return true}catch(e){return false}}
 async function kxRejQoy(r){LS.set('tz_rejim',r==='off'?'off':null);kxNetPaint();
@@ -6272,7 +6272,8 @@ const OR_JAVON=[['geo','Geografiya','🌍',['#2f7bff','#0b3fb3'],['qgeo7']],['bi
   ['ing','Ingliz tili','🔤',['#06b6d4','#0e7490'],[]],['tar','Tarix','🏛',['#b45309','#78350f'],[]],['att','Attestatsiya (pedagogika)','👩‍🏫',['#ec4899','#9d174d'],[]]];
 const OR_K={};
 async function orYukla(f){if(OR_K[f])return OR_K[f];
-  try{const r=await fetch(f,{cache:'no-cache'});if(!r.ok)throw new Error(r.status);const j=await r.json();OR_K[f]=j;return j}catch(e){return null}}
+  // avval .txt nusxa (telefondan GitHub'ga yuklash oson), bo'lmasa .json
+  for(const u of [f.replace(/\.json$/,'.txt'),f]){try{const r=await fetch(u,{cache:'no-cache'});if(!r.ok)throw new Error(r.status);const j=JSON.parse(await r.text());OR_K[f]=j;return j}catch(e){}}return null}
 function orXp(xp,o){try{const a=act(),k=kunK(Date.now()),d=a.d[k]||(a.d[k]={m:0});d.gx=(d.gx||0)+Math.round(xp||0);if(o)d.o=(d.o||0)+1;actSet(a);paintBar()}catch(e){}}
 const orMix=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const orNorm=s=>String(s||'').toLowerCase().replace(/[‘’ʻʼ`´'"]/g,'').replace(/[^a-z0-9а-яёўқғҳ\s]/gi,' ').replace(/\s+/g,' ').trim();
@@ -6553,7 +6554,8 @@ const BIL_STK=[["q01", "Malika", "oddiy", "qiz"], ["q02", "Mohinur", "noyob", "q
 const BIL_BOSH='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';let BIL_D=null,BIL_XATO=false;
 const BIL_IMG=id=>BIL_D&&BIL_D[id]?BIL_D[id]:BIL_XATO?'stiker-'+id+'.webp?v=2':BIL_BOSH+'#'+id;
 function bilRasmYangila(){document.querySelectorAll('img[src^="data:image/gif"]').forEach(im=>{const m=(im.getAttribute('src')||'').match(/#([qgk]\d{2,3})$/);if(m)im.src=BIL_IMG(m[1])})}
-(function bilYuklaD(k){fetch('stikerlar.json?v=34',{cache:k?'reload':'default'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{BIL_D=j;bilRasmYangila()})
+(function bilYuklaD(k){const ol=u=>fetch(u,{cache:k?'reload':'default'}).then(r=>{if(!r.ok)throw 0;return r.text()}).then(t=>JSON.parse(t));
+  ol('stikerlar.txt?v=34').catch(()=>ol('stikerlar.json?v=34')).then(j=>{BIL_D=j;bilRasmYangila()})
   .catch(()=>{if(!k)return setTimeout(()=>bilYuklaD(1),1500);BIL_XATO=true;bilRasmYangila()})})(0);
 new MutationObserver(()=>{if(BIL_D||BIL_XATO)bilRasmYangila()}).observe(document.body,{childList:true,subtree:true});
 const BIL_ND={oddiy:{n:'Oddiy',b:1,c:'#4da3ff'},noyob:{n:'Noyob',b:3,c:'#a77bff'},afsonaviy:{n:'Afsonaviy',b:5,c:'#ffc23d'}};
