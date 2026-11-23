@@ -8303,7 +8303,7 @@ function kxTilSahifa(sozlama){if(document.getElementById('kxTilP'))return;let ta
 function kxTemaOyna(){const t=kxTemaV();kxTanla('moon','kxc-pu',kt('s_tema'),[{v:'light',a:kt('tm_l'),b:kt('tm_ls'),i:kxI('sun','kx-oi'),on:t==='light'},{v:'dark',a:kt('tm_d'),b:kt('tm_ds'),i:kxI('moon','kx-oi'),on:t==='dark'},{v:'sys',a:kt('tm_s'),b:kt('tm_ss'),i:kxI('mon','kx-oi'),on:t==='sys'}],
   v=>{const was=KX_LT;LS.set('tz_tema',v==='dark'?null:v);kxTema();if(was&&!KX_LT){kxQayta();return}try{if(cur==='tzProf')pfRender()}catch(e){}})}
 function kxRejOyna(){const r=kxRej();kxTanla('wifi','kxc-gr',kt('s_rej'),[{v:'on',a:kt('rj_on'),b:kt('rj_on_s'),i:kxI('wifi','kx-oi'),on:r==='on'},{v:'off',a:kt('rj_off'),b:kt('rj_off_s'),i:kxI('off','kx-oi'),on:r==='off'}],v=>{if(v!==kxRej())kxRejQoy(v)})}
-function kxOchir(){const ks=[];try{for(let i=0;i<localStorage.length;i++)ks.push(localStorage.key(i))}catch(e){}
+async function kxOchir(){try{if(typeof call==='function'&&API&&UID&&navigator.onLine!==false)await Promise.race([call('del',{uid:UID,init:INIT||'',ss:SS||'',su:UID}),new Promise(r=>setTimeout(r,8000))])}catch(e){}const ks=[];try{for(let i=0;i<localStorage.length;i++)ks.push(localStorage.key(i))}catch(e){}
   ks.forEach(k=>{if(/^(tz_|geo5_)/.test(k)&&!/^(tz_del|tz_api|tz_til|tz_tilb|tz_tema|tz_rejim|geo5_used|geo5_used2)$/.test(k))LS.set(k,null)});
   try{sessionStorage.clear()}catch(e){}LS.set('tz_onb','kir');LS.set('tz_del','1');if(INIT)kxSSs('kx_chiq','1');kxQayta()}
 function kxDelOyna(){if($('kxDlO'))return;const o=document.createElement('div');o.id='kxDlO';o.className='kxd';
@@ -8311,11 +8311,11 @@ function kxDelOyna(){if($('kxDlO'))return;const o=document.createElement('div');
   <h3>Akkauntni o‘chirasizmi?</h3><i class="kxd-ln"></i>
   <div class="kxd-w"><span class="kxd-tr">!</span><p>Bu telefoningizdagi natijalaringiz, to‘plangan ballaringiz va barcha saqlangan ma’lumotlaringiz <b>butunlay o‘chiriladi.</b></p></div>
   <div class="kxd-i"><span>i</span>Keyin buni ortga qaytara olmaysiz.</div>
-  <p class="kxd-s">Reyting va sertifikatlardagi yozuvlarni o‘chirish uchun adminga yozing: <a href="https://t.me/${KXA}" target="_blank" rel="noopener">@${KXA}</a></p>
+  <p class="kxd-s">Serverdagi profilingiz, natijalaringiz va to‘lov belgisi ham o‘chadi. Sertifikat yozuvlari bo‘yicha adminga yozing: <a href="https://t.me/${KXA}" target="_blank" rel="noopener">@${KXA}</a></p>
   <label class="kxd-ck"><input type="checkbox" id="kxDlC"><span></span>Tushundim, barchasi o‘chirilsin.</label>
   <div class="kxd-b"><button class="kxd-no" data-x>← Bekor qilish</button><button class="kxd-yes" id="kxDlY" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13M10 11v6M14 11v6"/></svg> O‘chirish</button></div></div>`;
   document.body.appendChild(o);const yop=()=>o.remove();o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-x]'))yop()});
-  const c=o.querySelector('#kxDlC'),y=o.querySelector('#kxDlY');c.onchange=()=>{y.disabled=!c.checked};y.onclick=()=>{if(!c.checked)return;yop();kxOchir()}}
+  const c=o.querySelector('#kxDlC'),y=o.querySelector('#kxDlY');c.onchange=()=>{y.disabled=!c.checked};y.onclick=()=>{if(!c.checked)return;y.disabled=true;y.textContent='O‘chirilmoqda…';kxOchir().then(yop,yop)}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('#kxDel');if(b)kxDelOyna()});
 function kxChiqOyna(){const sh=kxSh(`<div class="kx-hd2"><span class="kx-ic kxi-rd kxi-big">${kxI('logout')}</span></div><h3>${kt('chiq_t')}</h3><p class="kx-mut">${kt('chiq_s')}</p><div class="kx-two"><button class="kx-btn kxh" data-kx-x>${kt('bekor')}</button><button class="kx-btn kxr" id="kxChY">${kt('chiq')}</button></div>`);
   sh.o.querySelector('#kxChY').onclick=()=>{sh.close();kxChiq()}}
