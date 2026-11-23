@@ -4566,7 +4566,10 @@ function welcome(){const p=prof();if(!p||!paid()||$('tzWelcome'))return;
   $('intro').insertAdjacentHTML('afterbegin',`<div class="tzw" id="tzWelcome"><div>👋 Xush kelibsiz, <b>${esc(p.fn)} ${esc(p.ln)}</b>!</div><small>Ma'lumotlaringiz saqlangan (${esc(p.vl||'')}${p.ds?', '+esc(p.ds):''}) — qayta kiritish shart emas.</small><button class="tzbtn g" id="tzGo">▶ Davom etish</button></div>`);
   $('tzGo').onclick=()=>$('ok').click()}
 // Telegram orqali kirganda, boshqa telefonda yoki ma'lumot o'chib ketgan bo'lsa — profil serverdan tiklanadi
-async function restore(){if(paid()||prof()||!TG||!API)return false;const r=await call('me',{uid:TG});if(!r.ok||!r.prof)return false;
+async function tzDelTikla(){if(!LS.get('tz_del'))return;const p=prof();if(!p||!p.ln||!p.fn)return;LS.set('tz_del',null);if(!TG||!API||paid())return;
+  try{const r=await call('me',{uid:TG});if(r&&r.ok&&r.prof&&r.prof.pay!==false&&nrm(r.prof.ln)===nrm(p.ln)&&nrm(r.prof.fn)===nrm(p.fn)&&nrm(r.prof.pt||'')===nrm(p.pt||'')){lsSet(nrm(p.ln)+'|'+nrm(p.fn)+'|'+nrm(p.pt));unlock(false)}}catch(e){}}
+$('ok').addEventListener('click',()=>setTimeout(tzDelTikla,600));
+async function restore(){if(LS.get('tz_del'))return false;if(paid()||prof()||!TG||!API)return false;const r=await call('me',{uid:TG});if(!r.ok||!r.prof)return false;
   const p={ln:r.prof.ln,fn:r.prof.fn,pt:r.prof.pt||'',vl:r.prof.vl||'',ds:r.prof.ds||''};LS.set('geo5_prof',JSON.stringify(p));
   LS.set('tz_regd',UID+'|'+fullName(p));if(r.prof.pay===false)return false;
   try{lsSet(nrm(p.ln)+'|'+nrm(p.fn)+'|'+nrm(p.pt));unlock(false);$('pc').value='✔ To‘lov qilingan';$('pc').disabled=true;$('pc').style.borderColor='#2cff8a';loadProf()}catch(e){}
@@ -8301,8 +8304,8 @@ function kxTemaOyna(){const t=kxTemaV();kxTanla('moon','kxc-pu',kt('s_tema'),[{v
   v=>{const was=KX_LT;LS.set('tz_tema',v==='dark'?null:v);kxTema();if(was&&!KX_LT){kxQayta();return}try{if(cur==='tzProf')pfRender()}catch(e){}})}
 function kxRejOyna(){const r=kxRej();kxTanla('wifi','kxc-gr',kt('s_rej'),[{v:'on',a:kt('rj_on'),b:kt('rj_on_s'),i:kxI('wifi','kx-oi'),on:r==='on'},{v:'off',a:kt('rj_off'),b:kt('rj_off_s'),i:kxI('off','kx-oi'),on:r==='off'}],v=>{if(v!==kxRej())kxRejQoy(v)})}
 function kxOchir(){const ks=[];try{for(let i=0;i<localStorage.length;i++)ks.push(localStorage.key(i))}catch(e){}
-  ks.forEach(k=>{if(/^(tz_|geo5_)/.test(k)&&!/^(tz_api|tz_til|tz_tilb|tz_tema|tz_rejim|geo5_used|geo5_used2)$/.test(k))LS.set(k,null)});
-  try{sessionStorage.clear()}catch(e){}LS.set('tz_onb','kir');if(INIT)kxSSs('kx_chiq','1');kxQayta()}
+  ks.forEach(k=>{if(/^(tz_|geo5_)/.test(k)&&!/^(tz_del|tz_api|tz_til|tz_tilb|tz_tema|tz_rejim|geo5_used|geo5_used2)$/.test(k))LS.set(k,null)});
+  try{sessionStorage.clear()}catch(e){}LS.set('tz_onb','kir');LS.set('tz_del','1');if(INIT)kxSSs('kx_chiq','1');kxQayta()}
 function kxDelOyna(){if($('kxDlO'))return;const o=document.createElement('div');o.id='kxDlO';o.className='kxd';
   o.innerHTML=`<div class="kxd-c" role="dialog" aria-modal="true" aria-label="Akkauntni o‘chirish"><span class="kxd-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13M10 11v6M14 11v6"/></svg></span><button class="kxd-x" data-x aria-label="Yopish">✕</button>
   <h3>Akkauntni o‘chirasizmi?</h3><i class="kxd-ln"></i>
