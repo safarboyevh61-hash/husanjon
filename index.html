@@ -8438,6 +8438,49 @@ function orKartochka(nom,Q0){const Q=orMix(Q0);let i=0,bil=0,bilm=0;const P=orSa
   chiz()}
 
 /* ---------- 🤖 AI bilan savol-javob ---------- */
+/* ---------- 🎙 AI savol-javob: ovozli rejim ---------- */
+const orOvS={on:()=>LS.get('tz_sjov')==='1',k:{},src:null,rec:null,root:null,jv:null,band:null,q:null,ses:0,
+  holat(t,c){const e=this.root&&this.root.querySelector('#orHol');if(e){e.textContent=t||'';e.className='or-hol'+(c?' '+c:'');e.hidden=!t}},
+  tugma(){const r=this.root;if(!r)return;const b=r.querySelector('#orOvz'),m=r.querySelector('#orMk');if(b){b.textContent=this.on()?'🎙 Ovozli rejim: yoniq':'🎙 Ovozli rejim';b.classList.toggle('on',this.on())}if(m)m.classList.toggle('rec',!!this.rec)},
+  tirik(){return !!(this.root&&document.body.contains(this.root))},
+  async gap(t){t=String(t||'').replace(/\s+/g,' ').trim().slice(0,320);if(!t||!API||kxRej()!=='on')return false;
+    let a=this.k[t];if(!a){const r=await call('aisjtts',{t:t,uid:UID},45000);if(!r||!r.ok||!r.b){if(r&&r.err==='limit')this.holat('🔇 Bugungi ovoz limiti tugadi — savollar matnda davom etadi','w');return false}a=this.k[t]={b:r.b,r:r.r}}
+    if(!this.tirik())return false;const ac=sfxAC(),buf=mfGapDek(a);if(!ac||!buf)return false;try{if(ac.state==='suspended')await ac.resume()}catch(e){}
+    this.jim();return new Promise(res=>{let ok=false;const tug=()=>{if(ok)return;ok=true;if(this.src===sr)this.src=null;res(true)};const sr=ac.createBufferSource();sr.buffer=buf;sr.connect(ac.destination);sr.onended=tug;this.src=sr;try{sr.start()}catch(e){tug()}setTimeout(tug,buf.duration*1000+1200)})},
+  jim(){try{if(this.src){this.src.onended=null;this.src.stop()}}catch(e){}this.src=null},
+  wav(f,sr){const R=16000,k=sr/R,n=Math.floor(f.length/k),b=new DataView(new ArrayBuffer(44+n*2)),w=(o,t)=>{for(let i=0;i<t.length;i++)b.setUint8(o+i,t.charCodeAt(i))};
+    w(0,'RIFF');b.setUint32(4,36+n*2,true);w(8,'WAVEfmt ');b.setUint32(16,16,true);b.setUint16(20,1,true);b.setUint16(22,1,true);b.setUint32(24,R,true);b.setUint32(28,R*2,true);b.setUint16(32,2,true);b.setUint16(34,16,true);w(36,'data');b.setUint32(40,n*2,true);
+    for(let i=0;i<n;i++){const x=i*k,i0=Math.floor(x),a=f[i0],c=i0+1<f.length?f[i0+1]:a,v=Math.max(-1,Math.min(1,a+(c-a)*(x-i0)));b.setInt16(44+i*2,v<0?v*32768:v*32767,true)}
+    const u=new Uint8Array(b.buffer);let o='';for(let i=0;i<u.length;i+=8190)o+=String.fromCharCode.apply(null,u.subarray(i,i+8190));return btoa(o)},
+  // mikrofondan tinglash: gap boshlangach 1,6 s jimlikda yoki 15 s da to'xtaydi; {b:wav base64}|{err}
+  async tingla(){if(this.rec)return{err:'band'};if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)return{err:'yoq'};
+    let st=null;try{st=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,channelCount:1}})}catch(e){return{err:'ruxsat'}}
+    const AC=window.AudioContext||window.webkitAudioContext,ac=new AC(),ms=ac.createMediaStreamSource(st),pr=ac.createScriptProcessor(4096,1,1),mu=ac.createGain();mu.gain.value=0;
+    const P=[];let n=0,gapir=0,jimT=0,t0=Date.now(),tugadi=false,res0=null,shov=.012,kadr=0;
+    const yop=()=>{if(tugadi)return;tugadi=true;try{pr.disconnect();ms.disconnect();mu.disconnect()}catch(e){}try{st.getTracks().forEach(t=>t.stop())}catch(e){}try{ac.close()}catch(e){}this.rec=null;this.tugma();
+      if(!gapir||n<ac.sampleRate*.35){res0({err:'jim'});return}const f=new Float32Array(n);let o=0;P.forEach(p=>{f.set(p,o);o+=p.length});res0({b:this.wav(f,ac.sampleRate)})};
+    pr.onaudioprocess=e=>{if(tugadi)return;const d=e.inputBuffer.getChannelData(0);let s2=0;for(let i=0;i<d.length;i++)s2+=d[i]*d[i];const rms=Math.sqrt(s2/d.length),now=Date.now();kadr++;
+      if(kadr<=4){shov=Math.max(.008,Math.min(.03,(shov*(kadr-1)+rms)/kadr));return}
+      const bor=rms>Math.max(.02,shov*3);if(bor){gapir++;jimT=0}else if(!jimT)jimT=now;
+      if(gapir>=2||bor){P.push(new Float32Array(d));n+=d.length}
+      if(!this.tirik()||now-t0>15000||(gapir>=3&&jimT&&now-jimT>1600)||(gapir<3&&now-t0>9000))yop()};
+    ms.connect(pr);pr.connect(mu);mu.connect(ac.destination);this.rec={yop:yop};this.tugma();return new Promise(r=>{res0=r})},
+  async eshit(){if(!this.tirik()||!this.q||(this.band&&this.band()))return;const q=this.q,ses=this.ses;this.jim();this.holat('🎤 Tinglayapman… gapiring','rec');
+    const a=await this.tingla();if(!this.tirik()||ses!==this.ses)return;
+    if(a.err){this.holat(a.err==='ruxsat'?'🎤 Mikrofonga ruxsat berilmadi. Telefon sozlamalaridan ruxsat bering yoki javobni yozing.':a.err==='yoq'?'🎤 Bu qurilmada mikrofon ishlamadi — javobni yozing.':a.err==='jim'?'🤔 Ovoz eshitilmadi. 🎤 tugmasini bosib qayta ayting yoki yozing.':'','w');return}
+    this.holat('🧠 AI tekshirmoqda…','ai');let r=null;
+    try{const x=await fetch(API,{method:'POST',body:JSON.stringify({act:'aisjov',s:q[0].slice(0,600),j:q[1].slice(0,900),b:a.b,uid:UID,init:INIT||'',ss:SS||'',su:UID})});r=await x.json()}catch(e){r={ok:false,err:'net'}}
+    if(!this.tirik()||ses!==this.ses)return;
+    if(!r||!r.ok){const e=r&&r.err;this.holat(e==='jim'||e==='qisqa'?'🤔 Gapingizni tushunmadim. 🎤 tugmasini bosib qayta ayting.':e==='limit'?'⏳ Bugungi ovozli javoblar limiti tugadi — javobni yozing.':e==='nokey'?'⚠️ AI kaliti ulanmagan — javobni yozing.':/Noma.lum/i.test(e||'')?'⚠️ Bot hali yangilanmagan — ovozli rejim ishlashi uchun botga «aiovoz» faylini qo‘shing.':'⚠️ Ovozni tekshirib bo‘lmadi. Qayta urinib ko‘ring yoki javobni yozing.','w');return}
+    this.holat('');this.jv(r.matn,{ball:r.ball,izoh:r.izoh})},
+  async savol(q){this.q=q;const ses=++this.ses;if(!this.on())return;this.holat('🔊 AI savolni o‘qimoqda…','ai');await this.gap(q[0]);if(!this.tirik()||ses!==this.ses||!this.on())return;this.eshit()},
+  async baho(b,tj){if(!this.on()||!this.tirik())return;this.ses++;this.holat('');const qis=String(tj||'').replace(/\s+/g,' ').trim();
+    await this.gap(b>=7?'To‘g‘ri! Barakalla.':b>=4?'Qisman to‘g‘ri.'+(qis.length<=170?' To‘g‘ri javob: '+qis:''):'Xato.'+(qis.length<=200?' To‘g‘ri javob: '+qis:''))},
+  toxta(){this.ses++;this.q=null;this.jim();if(this.rec)try{this.rec.yop()}catch(e){}this.holat('')},
+  ula(root,jv,band){this.root=root;this.jv=jv;this.band=band;const b=root.querySelector('#orOvz'),m=root.querySelector('#orMk');
+    if(b)b.onclick=()=>{const y=!this.on();LS.set('tz_sjov',y?'1':'0');this.tugma();if(!y){this.toxta();return}try{const ac=sfxAC();if(ac&&ac.state==='suspended')ac.resume()}catch(e){}if(this.q&&!(this.band&&this.band()))this.savol(this.q)};
+    if(m)m.onclick=()=>{if(this.rec){this.rec.yop();return}if(!this.q||(this.band&&this.band()))return;try{const ac=sfxAC();if(ac&&ac.state==='suspended')ac.resume()}catch(e){}this.ses++;this.eshit()};
+    this.tugma()}};
 function orMahalliyBaho(u,j){const T=s=>orNorm(s).split(' ').filter(w=>w.length>=3||/\d/.test(w));const a=T(u),b=T(j);if(!a.length)return{ball:0,baho:'notogri'};
   const st=w=>w.replace(/(lari|lar|ning|dagi|ga|da|dan|ni|si|i)$/,'').slice(0,7);const B=new Set(b.map(st));const hit=a.filter(w=>B.has(st(w))).length;
   const r=b.length?hit/Math.min(b.length,Math.max(3,a.length)):0,nums=(j.match(/\d+([.,]\d+)?/g)||[]),numOk=nums.every(n=>u.includes(n));
@@ -8451,18 +8494,18 @@ async function orAi(s0,k0){s0=s0||+(LS.get('or_sinf')||7);const P=orSahifa('🤖
     L.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>suhbat(+b.dataset.k))};
   const suhbat=k=>{const pool=k<0?J.m.flatMap(m=>m.q.map(x=>[x[0],x[1],m.n])):J.m[k].q.map(x=>[x[0],x[1],J.m[k].n]);const Q=orMix(pool).slice(0,10),nom=k<0?s+'-sinf · aralash':s+'-sinf · '+J.m[k].n;
     let i=0,jami=0;const R=[];
-    P.bd.innerHTML=`<p class="or-sub">${esc(nom)}</p><div class="or-chat" id="orCh"></div><div class="or-ft2"><div class="or-inp" id="orIn"><textarea id="orTx" rows="1" placeholder="Javobingizni yozing…"></textarea><button class="or-snd" id="orSd" aria-label="Yuborish">${kxI('send')}</button></div><div class="or-aib2"><button id="orBil">🤷 Bilmayman</button><button id="orTug">⏹ Yakunlash</button></div></div>`;
+    P.bd.innerHTML=`<p class="or-sub">${esc(nom)}</p><div class="or-chat" id="orCh"></div><div class="or-ft2"><div class="or-hol" id="orHol" hidden></div><div class="or-inp" id="orIn"><textarea id="orTx" rows="1" placeholder="Javobingizni yozing…"></textarea><button class="or-mic" id="orMk" type="button" aria-label="Ovoz bilan javob berish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M5.500 11.500a6.500 6.500 0 0 0 13 0M12 18v3M8.500 21h7"/></svg></button><button class="or-snd" id="orSd" aria-label="Yuborish">${kxI('send')}</button></div><div class="or-aib2"><button id="orOvz" class="or-ovz"></button><button id="orBil">🤷 Bilmayman</button><button id="orTug">⏹ Yakunlash</button></div></div>`;
     const ch=P.bd.querySelector('#orCh'),tx=P.bd.querySelector('#orTx'),sd=P.bd.querySelector('#orSd');
     const xab=(h,kim,cls)=>{const d=document.createElement('div');d.className='or-m '+kim+' '+(cls||'');d.innerHTML=h;ch.appendChild(d);requestAnimationFrame(()=>d.scrollIntoView({behavior:'smooth',block:'end'}));return d};
-    const sor=()=>{if(i>=Q.length)return yakun();P.hr.textContent=(i+1)+'/'+Q.length;xab(`<small>${i+1}-savol · ${esc(Q[i][2].replace(/^\d+\s*-\s*mavzu\s*[:.]?\s*/i,''))}</small>${esc(Q[i][0])}`,'ai');tx.disabled=false;sd.disabled=false;setTimeout(()=>{try{tx.focus()}catch(e){}},200)};
-    let bz=false;const javob=async(u)=>{if(bz)return;const q=Q[i];bz=true;tx.disabled=true;sd.disabled=true;if(u)xab(esc(u),'men');const t=xab('<span class="or-typ"><i></i><i></i><i></i></span>','ai');
-      let r=null,mah=false;if(u){if(API&&kxRej()==='on'){const x=await call('aisj',{s:q[0].slice(0,600),j:q[1].slice(0,900),u:u.slice(0,500),uid:UID},30000);if(x&&x.ok)r=x}if(!r){r=orMahalliyBaho(u,q[1]);mah=true}}else r={ball:0,baho:'notogri',izoh:'Mayli — to‘g‘ri javobni eslab qoling.'};
+    const sor=()=>{if(i>=Q.length){orOvS.toxta();return yakun()}P.hr.textContent=(i+1)+'/'+Q.length;xab(`<small>${i+1}-savol · ${esc(Q[i][2].replace(/^\d+\s*-\s*mavzu\s*[:.]?\s*/i,''))}</small>${esc(Q[i][0])}`,'ai');tx.disabled=false;sd.disabled=false;if(orOvS.on())orOvS.savol(Q[i]);else{orOvS.q=Q[i];orOvS.ses++;setTimeout(()=>{try{tx.focus()}catch(e){}},200)}};
+    let bz=false;const javob=async(u,pre)=>{if(bz)return;orOvS.toxta();const q=Q[i];bz=true;tx.disabled=true;sd.disabled=true;if(u)xab(esc(u),'men');const t=xab('<span class="or-typ"><i></i><i></i><i></i></span>','ai');
+      let r=null,mah=false;if(pre&&u)r=pre;else if(u){if(API&&kxRej()==='on'){const x=await call('aisj',{s:q[0].slice(0,600),j:q[1].slice(0,900),u:u.slice(0,500),uid:UID},30000);if(x&&x.ok)r=x}if(!r){r=orMahalliyBaho(u,q[1]);mah=true}}else r={ball:0,baho:'notogri',izoh:'Mayli — to‘g‘ri javobni eslab qoling.'};
       const b=Math.max(0,Math.min(10,+r.ball||0));jami+=b;R.push({q,u,b});t.className='or-m ai '+(b>=7?'tog':b>=4?'qis':'xat');
       t.innerHTML=`<div class="or-bal"><b>${b>=7?'✅ To‘g‘ri':b>=4?'🟡 Qisman to‘g‘ri':'❌ Noto‘g‘ri'}</b><em>${b}/10</em></div>${r.izoh?`<p>${esc(r.izoh)}</p>`:''}<div class="or-tj"><small>To‘g‘ri javob</small>${esc(q[1])}</div>${mah&&u?'<small class="or-mah">ℹ️ AI ulanmagan — javob kalit so‘zlar bo‘yicha tekshirildi</small>':''}`;
-      requestAnimationFrame(()=>t.scrollIntoView({behavior:'smooth',block:'end'}));i++;bz=false;setTimeout(sor,900)};
+      requestAnimationFrame(()=>t.scrollIntoView({behavior:'smooth',block:'end'}));try{await orOvS.baho(b,q[1])}catch(e){}i++;bz=false;setTimeout(sor,orOvS.on()?350:900)};
     const yub=()=>{const u=tx.value.trim();if(!u||bz)return;tx.value='';tx.style.height='';javob(u)};
     sd.onclick=yub;tx.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();yub()}};tx.oninput=()=>{tx.style.height='';tx.style.height=Math.min(120,tx.scrollHeight)+'px'};
-    P.bd.querySelector('#orBil').onclick=()=>{if(!bz&&i<Q.length)javob('')};P.bd.querySelector('#orTug').onclick=()=>yakun();
+    orOvS.ula(P.bd,(u,pre)=>javob(u,pre),()=>bz||i>=Q.length);P.bd.querySelector('#orBil').onclick=()=>{if(!bz&&i<Q.length)javob('')};P.bd.querySelector('#orTug').onclick=()=>yakun();
     const yakun=()=>{const n=R.length,p=n?Math.round(jami/(n*10)*100):0;orXp(Math.round(jami/2),1);P.hr.textContent='';
       P.bd.innerHTML=`<div class="or-nat"><div class="or-ring" style="--p:${p}"><b>${p}%</b></div><h3>${n} ta savol · ${jami}/${n*10} ball</h3><p class="kx-mut">${p>=80?'🏆 Ajoyib! Mavzuni yaxshi bilasiz':p>=50?'👍 Yaxshi — yana mashq qiling':'📖 Savol-javoblarni yana bir o‘qib chiqing'} · +${Math.round(jami/2)} XP</p>
         <button class="kx-btn kxg" id="orQa">🔁 Yana 10 ta savol</button><button class="kx-btn kxh" id="orBo">Boshqa mavzu</button></div>`;
@@ -12534,4 +12577,15 @@ html:not(.lt) body .tzn button{font-size:10.5px!important}
   window.tzMt={och:och,yop:yop,holat:function(){return{st:st,T:T}},natija:J};
 })();
 </script>
+<style id="tzOvozCss">
+.or-inp .or-mic{flex:0 0 46px;width:46px;height:46px;border-radius:50%;border:2px solid #e9b6ff;background:radial-gradient(circle at 35% 30%,#c66bff,#7a1fe0 65%,#3d0f9a);box-shadow:0 0 12px rgba(214,120,255,.85);display:grid;place-items:center;padding:0;margin:0 6px 0 0;cursor:pointer}
+.or-inp .or-mic svg{width:24px!important;height:24px!important;fill:none!important;stroke:#fff!important;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;background:none!important;display:block!important}
+.or-inp .or-mic.rec{border-color:#ffd0d0;background:radial-gradient(circle at 35% 30%,#ff7a7a,#e01f3d 65%,#8a0f24);animation:orRec 1s ease-in-out infinite}
+@keyframes orRec{0%,100%{box-shadow:0 0 0 0 rgba(255,80,100,.75),0 0 12px rgba(255,90,110,.9)}50%{box-shadow:0 0 0 12px rgba(255,80,100,0),0 0 22px rgba(255,90,110,1)}}
+.or-hol{margin:0 0 8px;padding:9px 14px;border-radius:14px;font:700 14px/1.3 system-ui,sans-serif;color:#fff;background:linear-gradient(180deg,#3a1aa8,#200a78);border:1.5px solid #b48cff;box-shadow:0 0 10px rgba(160,110,255,.55)}
+.or-hol[hidden]{display:none}
+.or-hol.rec{background:linear-gradient(180deg,#b01f3d,#6a0f24);border-color:#ffb0b8;box-shadow:0 0 12px rgba(255,90,110,.75)}
+.or-hol.w{background:linear-gradient(180deg,#8a5a06,#4a2c00);border-color:#ffe27a;box-shadow:0 0 10px rgba(255,210,70,.6)}
+.or-aib2 .or-ovz.on{background:linear-gradient(180deg,#22b83a,#0d7a22)!important;border-color:#b0ffb0!important;box-shadow:0 0 12px rgba(90,255,90,.8)!important;color:#fff!important}
+</style>
 </body></html>
