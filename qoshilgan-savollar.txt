@@ -1,0 +1,153 @@
+5-sinf: darslikdan qo'shilgan 64 ta savol (🖼 — rasmli)
+
+=== 1-mavzu: Geografiya nimani o‘rganadi? ===
+Eratosfen qaysi xalqning olimi bo‘lgan?
+   ✅ qadimgi yunon
+Tabiiy geografiya nimani o‘rganadi?
+   ✅ Yer yuzi tabiatining holati, uning o‘zgarishi va ro‘y beradigan tabiiy hodisalarni
+5-sinfda tabiiy geografiyaning qaysi bo‘limi o‘rganiladi?
+   ✅ «Tabiiy geografiya boshlang‘ich kursi»
+«Tabiiy geografiya boshlang‘ich kursi» o‘quvchini 6-sinfda o‘rganiladigan qaysi kursni oson o‘zlashtirishga tayyorlaydi?
+   ✅ materiklar va okeanlar tabiiy geografiyasi
+5-sinf «Geografiya» darsligi nechta bobdan iborat?
+   ✅ 7 ta
+Inson yashashi uchun zarur bo‘lgan hamma narsani — havo va suvni, oziq-ovqat va foydali qazilmalarni qayerdan oladi?
+   ✅ tabiatdan
+Yer yuzini tasvirlash, sayyoramizning kattaligini aniqlash, xaritasini tuzish uchun qancha vaqt kerak bo‘lgan?
+   ✅ bir necha ming yillar
+Geograf-sayyohlar nimalarni kashf qilishgan?
+   ✅ yangi yerlarni, dengiz va okeanlarni
+Darslikning qaysi bobini o‘qib, globus va xaritada Yer yuzasining katta qismlari qanday tasvirlanishini bilib olasiz?
+   ✅ «Geografik xaritalar» bobini
+
+=== 5-mavzu: Yerning o‘z o‘qi va Quyosh atrofida aylanishi ===
+🖼 Rasmda Yerning Quyosh atrofida yillik aylanishi ko‘rsatilgan. 22-iyun kuni Quyosh qaysi kenglikda tik tepaga keladi?
+   ✅ 23,5° shimoliy kenglikda
+🖼 Rasmda ko‘rsatilgan 21-mart va 23-sentabr kunlari Quyosh Yerni qanday yoritadi?
+   ✅ Shimoliy va Janubiy yarimsharni bir xilda yoritadi
+🖼 Rasmda Yerning yoritilish va issiqlik mintaqalari tasvirlangan. Ekvatorning ikki tomonida, Shimoliy va Janubiy tropiklar orasida qaysi mintaqa joylashgan?
+   ✅ tropik issiq mintaqa
+22-iyun kuni 66,5° shimoliy kenglikda qanday hodisa kuzatiladi?
+   ✅ bir sutka — 24 soat davomida Quyosh botmaydi
+
+=== 6-mavzu: Azimut va masofani o‘lchash ===
+🖼 Rasmga qarang. Daraxtga yo‘nalish azimuti necha gradusga teng?
+   ✅ 45°
+🖼 Rasmga qarang. Stadionga yo‘nalish azimuti necha gradusga teng?
+   ✅ 225°
+
+=== 8-mavzu: Masshtab ===
+🖼 Rasmdagi «1:100 000» ko‘rinishida yozilgan masshtab qanday masshtab deb ataladi?
+   ✅ sonli masshtab
+🖼 Rasmdagi «1 cm da 1 km» ko‘rinishida yozilgan masshtab qanday masshtab deb ataladi?
+   ✅ nomli masshtab
+Avtobus bekatidan uygacha bo‘lgan 600 m masofa chizmada 6 cm qilib chizildi. Chizmaning masshtabini aniqlang.
+   ✅ 1:10 000
+Chiziqli masshtab qanday shaklda bo‘ladi?
+   ✅ teng qismlarga bo‘lingan to‘g‘ri chiziq shaklida
+Ikki shahar orasidagi 900 km li masofa xaritada 5 cm ga teng qilib tasvirlangan. Shu xaritaning masshtabini aniqlang.
+   ✅ 1:18 000 000
+Masshtabi 1:11 000 000 bo‘lgan xaritada Toshkent va Samarqand shaharlari orasidagi masofa 3 cm ga teng. Shaharlar orasidagi haqiqiy masofani aniqlang.
+   ✅ 330 km
+Sonli masshtabni nomli masshtabga aylantirishda (1 cm da necha km borligini aniqlash uchun) nechta nol o‘chiriladi?
+   ✅ 5 ta
+
+=== 11-mavzu: Geografik koordinatalar ===
+Geografik xaritalarda geografik kenglik darajalari qayerga yozib qo‘yiladi?
+   ✅ xaritaning chap va o‘ng chekkasidagi ramka yoniga
+Globusda geografik uzunliklar qayerga yozib qo‘yilgan darajalar yordamida aniqlanadi?
+   ✅ ekvator chizig‘i ustiga
+Qutblarning geografik kengligi necha gradus deb olingan?
+   ✅ 90°
+🖼 Rasmga qarang. 0° li (Bosh) meridiandan g‘arb tomondagi nuqtalarning uzunligi qanday ataladi?
+   ✅ g‘arbiy uzunlik
+Xarita va globusdagi daraja to‘ri qaysi chiziqlarning kesishishidan hosil bo‘lgan?
+   ✅ meridian va parallel chiziqlarining
+🖼 Rasmga qarang. Ekvatordan shimolda joylashgan nuqtalarning kengligi qanday ataladi?
+   ✅ shimoliy kenglik
+
+=== 27-mavzu: Ob-havo va iqlim ===
+🖼 Rasmda Yerning issiqlik mintaqalari tasvirlangan. Shimoliy va Janubiy tropiklar orasida qaysi mintaqa joylashgan?
+   ✅ issiq tropik mintaqa
+🖼 Rasmga ko‘ra mo‘tadil mintaqalar qaysi chiziqlar orasida joylashgan?
+   ✅ tropiklar bilan qutbiy doiralar orasida
+Ob-havoni oldindan aytish uchun kerak bo‘ladigan troposferaning holati haqidagi ma’lumotlar qayerda to‘planadi?
+   ✅ meteorologik stansiyalarda
+O‘zbekiston okeandan uzoqda joylashganligi sababli uning qishi va yozi qanday bo‘ladi?
+   ✅ qishi sovuq, yozi juda issiq
+Ispaniya va Gretsiyaga iliq, sernam havo qaysi okeandan kelib turadi?
+   ✅ Atlantika okeanidan
+Yer yuzining qaysi joylari Quyoshdan eng ko‘p nur oladi?
+   ✅ ekvatorga yaqin yerlar
+
+=== 28-mavzu: Yerning hayot qobig‘i-Biosfera ===
+🖼 Rasmda biosferaning tuzilishi tasvirlangan. Biosfera qaysi qobiqlarni o‘z ichiga oladi?
+   ✅ troposfera, gidrosfera va litosferaning yuqori qismini
+O‘simliklar tayyorlagan organik moddalarni yeydigan hayvonlar qanday ataladi?
+   ✅ o‘txo‘rlar
+O‘simlik va hayvonlar qoldiqlarini chiritib, minerallarga aylantirib turadigan organizmlar qaysilar?
+   ✅ mikroblar
+Quyidagi qaysi hudud o‘simlik va hayvonot dunyosiga juda boy hisoblanadi?
+   ✅ sernam ekvatorial o‘rmonlar
+
+=== 32-mavzu: Joy balandligi va gorizontallarga doir mashq va masalalar ===
+🖼 Rasmda a) harfi bilan relyefning qaysi shakli gorizontallar yordamida tasvirlangan?
+   ✅ tepalik
+🖼 Rasmga qarang. Joyning dengiz sathidan hisoblangan balandligi qanday balandlik deyiladi?
+   ✅ mutlaq balandlik
+Gorizontallar deb nimaga aytiladi?
+   ✅ quruqlik yuzasidagi mutlaq balandligi bir xil bo‘lgan nuqtalarni xaritalarda tutashtiruvchi chiziqlarga
+Gorizontallarga qo‘yiladigan, yer yuzasining qiya tomonini ko‘rsatuvchi chiziqcha nima deb ataladi?
+   ✅ bergshtrix
+O‘zbekistonning eng baland nuqtasi — Hazrati Sulton cho‘qqisi (4643 m) topografik xaritada har 200 metr balandlikdan gorizontallar bilan tasvirlansa, nechta gorizontal hosil bo‘ladi?
+   ✅ 23 ta
+Jomolungma cho‘qqisi (8848 m) topografik xaritada har 400 metr balandlikdan gorizontallar bilan tasvirlansa, nechta gorizontal hosil bo‘ladi?
+   ✅ 22 ta
+Tepalik etagining mutlaq balandligi 400 m, cho‘qqisining mutlaq balandligi 650 m. Tepalikning nisbiy balandligini aniqlang.
+   ✅ 250 m
+Uzunligi 1 metr bo‘lgan qo‘lbola nivelir tepalik etagidan eng baland nuqtasigacha 12 marta ko‘chirib o‘rnatildi. Tepalikning balandligi qancha?
+   ✅ 12 m
+Toshkent shahrining dengiz sathidan o‘rtacha balandligi 400 m, Mingbuloq botig‘iniki esa −12 m. Ularning balandliklari orasidagi farq qancha?
+   ✅ 412 m
+
+=== 34-mavzu: Karta va globusdan joyning geografik koordinatalarini va daraja to‘ridan foydalanib masofalarni aniqlash ===
+🖼 Rasmdagi chap chizmaga qarang (daraja to‘ri: kengliklar 35° va 45°, uzunliklar 65° va 55°). D nuqta qaysi yarimsharlarda joylashgan?
+   ✅ Shimoliy va G‘arbiy yarimsharlarda
+🖼 Rasmdagi o‘ng chizmaga qarang (daraja to‘ri: kengliklar 10° va 15°, uzunliklar 135° va 140°). N nuqta qaysi yarimsharlarda joylashgan?
+   ✅ Janubiy va Sharqiy yarimsharlarda
+
+=== 35-mavzu: Yerning ichki tuzilishiga doir mashq va masalalar ===
+🖼 Rasmda Yerning ichki tuzilishi tasvirlangan. Mantiyaning qalinligi qancha?
+   ✅ 2860 km
+🖼 Rasmga ko‘ra Yer po‘stining o‘rtacha qalinligi qancha?
+   ✅ 35–40 km
+Yer ichiga chuqur tushgan sari harorat har 1000 m da 33 °C ko‘tariladi. Shunga ko‘ra 50 km chuqurlikda harorat qanchaga yetadi?
+   ✅ 1650 °C
+Yer ichiga tushgan sari harorat har 1000 m da 33 °C ko‘tarilsa, 5 km chuqurlikda harorat necha gradusga ko‘tariladi?
+   ✅ 165 °C
+Yer yuzasidagi tog‘ jinslarining o‘rtacha yillik harorati +5 °C bo‘lsa, 2000 metr chuqurlikda harorat taxminan necha °C ga yetadi? (har 1000 m da 33 °C ko‘tariladi)
+   ✅ 71 °C
+
+=== 36-mavzu: Okean chuqurligini aniqlashga doir mashq va masalalar ===
+🖼 Rasmda chuqurlikni exolot yordamida o‘lchash ko‘rsatilgan. Exolotdan yuborilgan tovush to‘lqini 3 sekundda qaytib keldi. Dengiz chuqurligini aniqlang.
+   ✅ 2 250 m
+Exolotdan yuborilgan tovush to‘lqini 7 sekundda qaytib keldi. Okean chuqurligini aniqlang.
+   ✅ 5 250 m
+🖼 Rasmdagi exolot yuborgan tovush to‘lqini suvda 1 sekundda qancha masofaga tarqaladi?
+   ✅ 1500 m
+
+=== 40-mavzu: Namlanish darajasini aniqlashga doir mashq va masalalar ===
+Amudaryo etagida yillik yog‘in miqdori 150 mm, yillik bug‘lanish 2000 mm. Namlanish darajasini aniqlang.
+   ✅ 0,075
+Andijon viloyatida yillik yog‘in miqdori 500 mm, yillik bug‘lanish 1500 mm. Namlanish darajasini aniqlang.
+   ✅ 0,33
+Piskom qishlog‘ida yillik yog‘in miqdori 900 mm, yillik bug‘lanish ham 900 mm. Namlanish darajasini aniqlang.
+   ✅ 1,0
+Sirdaryo viloyatida yillik yog‘in miqdori 250 mm, yillik bug‘lanish 1800 mm. Namlanish darajasini aniqlang.
+   ✅ 0,14
+O‘simliklar uchun namlanish darajasi qancha bo‘lganda eng qulay sharoit bo‘ladi?
+   ✅ 1,1 dan 0,9 gacha
+Namlanish darajasi deb nimaga aytiladi?
+   ✅ yillik yog‘in miqdorining yillik mumkin bo‘lgan bug‘lanish miqdoriga nisbatiga
+🖼 Rasmda tasvirlangan asbob yordamida nima aniqlanadi?
+   ✅ yer yuzasiga yoqqan yog‘in miqdori
