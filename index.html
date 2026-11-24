@@ -8719,7 +8719,14 @@ const TZ_REG=[
  ['#ln,#fn,#pt','Endi ro‘yxatdan o‘ting: familiyangiz, ismingiz va otangizning ismini to‘liq va xatosiz yozing.'],
  ['#vl,#ds','Keyin viloyatingiz va tumaningizni tanlang.'],
  ['#ok','Bu juda muhim: Milliy sertifikat va Attestatsiya testlarida qatnashsangiz, sertifikat aynan shu ma’lumotlar bilan beriladi. Hammasini to‘ldirib, Davom etish tugmasini bosing.']];
-function tzTour(S,erkin,kalit,shart){S=S||TZ_TUR;kalit=kalit||(erkin?'tz_tour_r':'tz_tour');if(document.getElementById('tzTur'))return;const til0=(typeof KXL==='string'&&TZ_TR[KXL])?KXL:'uz',LT=TZ_TR[til0]||null,kod=S===TZ_BOSH?'b':S===TZ_TIL?'t':S===TZ_KIR?'k':S===TZ_REG?'r':'u';
+// ovoz keshi (butun ilova uchun bitta): bir marta olingan gap qayta so'ralmaydi; navbat bilan oldindan yuklanadi
+const TZ_OVK={};let TZ_OVN=Promise.resolve();
+function tzOvOl(t,l){const k=l+'|'+t;if(TZ_OVK[k])return TZ_OVK[k];if(!API||(typeof kxRej==='function'&&kxRej()!=='on'))return Promise.resolve(null);
+  return TZ_OVK[k]=(async()=>{try{const r=await call('aisjtts',{t:t,uid:UID,l:l,k:'1'},40000);if(r&&r.ok&&r.b)return{b:r.b,r:r.r}}catch(e){}delete TZ_OVK[k];return null})()}
+function tzOvTil(){return (typeof KXL==='string'&&TZ_TR[KXL])?KXL:'uz'}
+function tzOvMatn(S,l){const LT=TZ_TR[l]||null,kod=S===TZ_BOSH?'b':S===TZ_TIL?'t':S===TZ_KIR?'k':S===TZ_REG?'r':'u';return S.map((x,k)=>(LT&&LT[kod]&&LT[kod][k])||x[1])}
+function tzOvOldin(L){const l=tzOvTil();L.forEach(S=>tzOvMatn(S,l).forEach(t=>{TZ_OVN=TZ_OVN.then(()=>tzOvTil()===l?tzOvOl(t,l):null).catch(()=>null)}))}
+function tzTour(S,erkin,kalit,shart){S=S||TZ_TUR;try{if(S===TZ_REG)tzOvOldin([TZ_TUR])}catch(_){}kalit=kalit||(erkin?'tz_tour_r':'tz_tour');if(document.getElementById('tzTur'))return;const til0=(typeof KXL==='string'&&TZ_TR[KXL])?KXL:'uz',LT=TZ_TR[til0]||null,kod=S===TZ_BOSH?'b':S===TZ_TIL?'t':S===TZ_KIR?'k':S===TZ_REG?'r':'u';
   const TZ_TUR_=S.map((x,k)=>[x[0],(LT&&LT[kod]&&LT[kod][k])||x[1]]);const o=document.createElement('div');o.id='tzTur';if(erkin)o.className='erkin';
   o.innerHTML='<div class="tu-ring" hidden></div><div class="tu-p"><canvas class="tu-orb" width="360" height="360"></canvas><div class="tu-nm">AI yordamchi</div><div class="tu-tx"></div><div class="tu-ov" hidden>🔊 Ovoz chiqishi uchun ekranga bosing</div><div class="tu-dt"></div><div class="tu-bt"><button class="tu-sk">O‘tkazib yuborish</button><button class="tu-nx">Keyingi ›</button></div><button class="tu-x" aria-label="Yopish">✕</button></div>';
   document.body.appendChild(o);const $q=s=>o.querySelector(s),cv=$q('.tu-orb'),cx=cv.getContext('2d'),ring=$q('.tu-ring'),tx=$q('.tu-tx'),pn=$q('.tu-p'),ovh=$q('.tu-ov');
@@ -8770,7 +8777,7 @@ function tzTour(S,erkin,kalit,shart){S=S||TZ_TUR;kalit=kalit||(erkin?'tz_tour_r'
     cx.fillStyle='rgba(255,122,242,'+(gap?.5:.28)+')';[-66,66].forEach(dx=>{cx.beginPath();cx.ellipse(180+dx+qar*.3,160,9,5,0,0,6.283);cx.fill()});
     cx.restore();requestAnimationFrame(chiz)};requestAnimationFrame(chiz);
   // --- ovoz
-  const ol=async t=>{if(K[t]!==undefined)return K[t];K[t]=null;if(!API||(typeof kxRej==='function'&&kxRej()!=='on'))return null;try{const r=await call('aisjtts',{t:t,uid:UID,l:til0},30000);if(r&&r.ok&&r.b)K[t]={b:r.b,r:r.r}}catch(e){}return K[t]};
+  const ol=async t=>{if(K[t])return K[t];const a=await tzOvOl(t,til0);if(a)K[t]=a;return a||null};
   const jim=()=>{try{if(src){src.onended=null;src.stop()}}catch(e){}src=null;gap=false;clearTimeout(tm)};
   const ayt=async(t,keyin)=>{const s=++ses;jim();gap=true;let a=K[t];if(a===undefined||a===null){a=await Promise.race([ol(t),new Promise(r=>setTimeout(()=>r(null),9000))])}if(!tirik||s!==ses)return;
     const ac=sfxAC(),bf=a&&ac?mfGapDek(a):null;if(!bf){tm=setTimeout(()=>{gap=false;keyin()},Math.max(4200,t.length*72));return}
@@ -8784,7 +8791,7 @@ function tzTour(S,erkin,kalit,shart){S=S||TZ_TUR;kalit=kalit||(erkin?'tz_tour_r'
   const yop=()=>{if(!tirik)return;tirik=false;ses++;jim();LS.set(kalit,'1');removeEventListener('resize',joy);removeEventListener('scroll',joy,true);clearInterval(kz);o.classList.add('ket');setTimeout(()=>o.remove(),300)};
   const bor=n=>{if(!tirik)return;if(n>=TZ_TUR_.length)return yop();i=n;joy(1);tx.textContent=TZ_TUR_[i][1];$q('.tu-dt').innerHTML=TZ_TUR_.map((x,k)=>'<i class="'+(k===i?'on':'')+'"></i>').join('');
     $q('.tu-nx').textContent=i===TZ_TUR_.length-1?(LT?LT.bs:'Boshlash ▶'):(LT?LT.nx:'Keyingi ›');$q('.tu-sk').hidden=i===TZ_TUR_.length-1;if(TZ_TUR_[i+1])ol(TZ_TUR_[i+1][1]);ayt(TZ_TUR_[i][1],()=>{if(i<TZ_TUR_.length-1)bor(i+1);else if(erkin){ring.hidden=true;setTimeout(yop,2500)}})};
-  $q('.tu-nx').onclick=()=>bor(i+1);$q('.tu-sk').onclick=yop;$q('.tu-x').onclick=yop;addEventListener('resize',joy);let kz=0;if(erkin){addEventListener('scroll',joy,true);kz=setInterval(()=>{try{const tn=(typeof KXL==='string'&&TZ_TR[KXL])?KXL:'uz';if(tn!==til0){yop();LS.set(kalit,null);return}if(shart?!shart():(prof()||!document.getElementById('ln').getClientRects().length))yop()}catch(_){}},500)}
+  $q('.tu-nx').onclick=()=>bor(i+1);$q('.tu-sk').onclick=yop;$q('.tu-x').onclick=yop;addEventListener('resize',joy);let kz=0;if(erkin){addEventListener('scroll',joy,true);kz=setInterval(()=>{try{const tn=(typeof KXL==='string'&&TZ_TR[KXL])?KXL:'uz';if(tn!==til0){yop();LS.set(kalit,null);try{tzOvOldin([TZ_TIL,TZ_KIR,TZ_REG])}catch(_){}return}if(shart?!shart():(prof()||!document.getElementById('ln').getClientRects().length))yop()}catch(_){}},500)}
   if(!erkin&&LS.get('tz_tour_r')==='1')TZ_TUR_[0]=[null,LT?LT.u0:'Barakalla, ro‘yxatdan o‘tdingiz! Endi ilovadan qanday foydalanishni bir daqiqada ko‘rsatib beraman.'];
   if(LT){$q('.tu-nm').textContent=LT.nm;$q('.tu-sk').textContent=LT.sk;ovh.textContent=LT.ov}requestAnimationFrame(()=>o.classList.add('on'));bor(0)}
 window.tzTour=tzTour;
@@ -8793,7 +8800,9 @@ try{if(prof()&&ownr()&&!Q.get('view')&&!Q.get('aud')){const de=document.document
 // birinchi kirish (yoki akkaunt o'chirilgach): Boshlash → til → kirish → ro'yxat — har bosqichda AI tushuntiradi
 {let n=0;const vis=e=>!!(e&&e.getClientRects().length&&getComputedStyle(e).visibility!=='hidden'&&+getComputedStyle(e).opacity>.05),q=x=>document.querySelector(x);
   const B=[['b',TZ_BOSH,()=>vis(q('#tzSplash.pst .tzs-go'))],['t',TZ_TIL,()=>!vis(q('#tzSplash'))&&vis(q('#kxOnb .kx-ob-b[data-st="0"]'))],['k',TZ_KIR,()=>!vis(q('#tzSplash'))&&vis(q('#kxOnb .kx-ob-b[data-st="3"]'))&&!q('.kx-sh,.kx-usul,.kx-md')],['r',TZ_REG,()=>!vis(q('#tzSplash'))&&!vis(q('#kxOnb'))&&vis(q('#ln'))]];
-  const iv=setInterval(()=>{try{if(n++>3600||prof()){clearInterval(iv);return}if(document.getElementById('tzTur'))return;for(const x of B){const kl=x[0]==='r'?'tz_tour_r':'tz_tk_'+x[0];if(LS.get(kl)==='1'||!x[2]())continue;tzTour(x[1],true,kl,x[2]);break}}catch(e){}},700)}
+  const iv=setInterval(()=>{try{if(n++>9000||prof()){clearInterval(iv);return}if(document.getElementById('tzTur'))return;for(const x of B){const kl=x[0]==='r'?'tz_tour_r':'tz_tk_'+x[0];if(LS.get(kl)==='1'||!x[2]())continue;tzTour(x[1],true,kl,x[2]);break}}catch(e){}},250)}
+// ilova ochilishi bilan (logotip aylanayotganda) gaplar oldindan tayyorlab qo'yiladi — AI kechikmay gapiradi
+setTimeout(()=>{try{if(!prof())tzOvOldin([TZ_BOSH,TZ_TIL,TZ_KIR,TZ_REG]);else if(LS.get('tz_tour')!=='1')tzOvOldin([TZ_TUR])}catch(e){}},0);
 // birinchi marta: bosh sahifa ochiq, boshqa oyna yo'q bo'lganda
 {let n=0;const iv=setInterval(()=>{if(LS.get('tz_tour')==='1'||n++>3000){clearInterval(iv);return}try{if(document.getElementById('tzTur'))return;const h=document.getElementById('tzHm'),sp=document.getElementById('tzSplash'),ob=document.getElementById('kxOnb'),f=document.getElementById('fanlar');
   const vis=e=>!!(e&&e.getClientRects().length&&getComputedStyle(e).visibility!=='hidden'&&+getComputedStyle(e).opacity>.05);if(!vis(h)||!f||f.dataset.v!=='main'||vis(sp)||vis(ob)||document.querySelector('.or-pg,#tzMt.on,.kxd')||!prof())return;const r=h.getBoundingClientRect();if(r.height<200||r.top<-20)return;clearInterval(iv);setTimeout(()=>tzTour(),600)}catch(e){}},1000)}
@@ -12273,7 +12282,7 @@ html.hb-hlock #fanlar[data-v="main"] #tzHm{position:fixed;left:8px;right:8px;top
   addEventListener('resize',fitHub);
   var CL=[4,35.9,67.6],RT=[17.8,46.5,73.4],RH=[29,26.6,26.4],BT=[41.2,67.8,94.3];
   function draw(){var h='';
-    if(st.v==='a'){h='<div class="hb-w hb-full">'+rows('p1',1210,1220,[[0,188,[]],[188,424,[]],[424,1030,[['data-a="tur" data-t="ms"',44,640,'Milliy sertifikat testlari'],['data-a="tur" data-t="at"',652,1180,'Attestatsiya testlari']]],[1030,1220,[['data-a="fanlar"',76,1144,'Barcha fanlar']]]],50)+'<div class="hb-below hb-ab">'+'<button class="hb-info hb-aud" data-a="aud"><b>🏛</b><span>AUDITORIYA — jonli testlar<small>Jonli Milliy sertifikat va Attestatsiya testlari · oldindan ro‘yxatdan o‘tish</small></span><i style="font:900 24px system-ui;font-style:normal">›</i></button>'+'</div></div>'}
+    if(st.v==='a'){h='<div class="hb-w hb-full">'+rows('p1',1210,1220,[[0,188,[['data-a="menyu"',40,230,'Menyu'],['data-a="bell"',1000,1190,'Yangiliklar']]],[188,424,[]],[424,1030,[['data-a="tur" data-t="ms"',44,640,'Milliy sertifikat testlari'],['data-a="tur" data-t="at"',652,1180,'Attestatsiya testlari']]],[1030,1220,[['data-a="fanlar"',76,1144,'Barcha fanlar']]]],50)+'<div class="hb-below hb-ab">'+'<button class="hb-info hb-aud" data-a="aud"><b>🏛</b><span>AUDITORIYA — jonli testlar<small>Jonli Milliy sertifikat va Attestatsiya testlari · oldindan ro‘yxatdan o‘tish</small></span><i style="font:900 24px system-ui;font-style:normal">›</i></button>'+'</div></div>'}
     else if(st.v==='b'){var s=hs('back',1,0,16,9,'aria-label="Orqaga"');
       FANS.forEach(function(F,i){var c=i%3,r=(i-c)/3,ok=tayyor(F[1]);s+=hs('fan',CL[c],RT[r],29,RH[r],'data-k="'+F[0]+'" aria-label="'+esc(F[2])+'"');
         if(!ok)s+='<span class="hb-tz" style="left:'+(CL[c]+1.2)+'%;top:'+BT[r]+'%;width:26.6%;height:5.4%">Tez orada</span>'});
@@ -12321,6 +12330,8 @@ html.hb-hlock #fanlar[data-v="main"] #tzHm{position:fixed;left:8px;right:8px;top
     else if(a==='fan'){var FF=fan(b.dataset.k);if(!tayyor(FF[1])){toast(FF[2]+' testlari tez orada yuklanadi');return}st.k=b.dataset.k;st.v=st.tur?'d':'c';st.tf=!!st.tur;draw()}
     else if(a==='tur2'){st.tur=b.dataset.t;st.v='d';draw()}
     else if(a==='baza')baza();
+    else if(a==='bell'){if(window.tzBildir)window.tzBildir()}
+    else if(a==='menyu'){yop();setTimeout(function(){var e=document.querySelector('#tzHm [data-hm="more"]');if(e)e.click()},60)}
     else if(a==='aud'){band(1500);yop();try{var ab=document.getElementById('tzIntroAud');if(ab)ab.click()}catch(_){}}
     else if(a==='bz')bazaOch(b.dataset.b);
     else if(a==='go')boshla();
