@@ -13452,4 +13452,213 @@ html body nav#tzNav.tzn button[data-mtn].on .nv-df{height:22px;bottom:22px}
   setInterval(function(){var n=document.getElementById('tzNav');if(!n||n.hidden)return;var a=n.querySelectorAll('button.on');if(a.length>1)for(var i=0;i<a.length-1;i++)a[i].classList.remove('on')},300);
 })();
 </script>
+<style id="tzQulfCss">
+/* ===== v163: ilova qulfi (PIN-kod va barmoq izi) ===== */
+#tzQulf{position:fixed;inset:0;z-index:2147483000;display:flex;flex-direction:column;align-items:center;color:#fff;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  background:radial-gradient(120% 70% at 50% 0,#3a1fb8 0,#1a0c78 38%,#0a0440 72%,#05022a 100%);padding:calc(14px + env(safe-area-inset-top,0px)) 20px calc(18px + env(safe-area-inset-bottom,0px));-webkit-user-select:none;user-select:none;touch-action:manipulation;overflow:hidden}
+#tzQulf *{box-sizing:border-box}
+#tzQulf .ql-un{align-self:flex-end;border:0;background:none;color:#ffd84a;font:800 14px/1 system-ui;padding:10px 4px;min-height:40px}
+#tzQulf .ql-un[hidden]{visibility:hidden;display:block}
+#tzQulf .ql-lg{margin-top:2vh;width:74px;height:74px;border-radius:24px;display:grid;place-items:center;background:linear-gradient(160deg,#8a4dff,#2f6bff);border:2px solid #c9b3ff;box-shadow:0 0 22px rgba(140,90,255,.9),inset 0 2px 5px rgba(255,255,255,.55)}
+#tzQulf .ql-lg svg{width:38px;height:38px;fill:#fff;filter:drop-shadow(0 2px 2px rgba(0,0,60,.6))}
+#tzQulf h2{margin:16px 0 4px;font:900 22px/1.25 system-ui;text-align:center}
+#tzQulf p{margin:0;min-height:20px;font:700 14px/1.35 system-ui;color:#cfd4ff;text-align:center}
+#tzQulf p.x{color:#ff9aa6}
+#tzQulf .ql-d{display:flex;gap:18px;margin:20px 0 6px}
+#tzQulf .ql-d i{width:17px;height:17px;border-radius:50%;border:2px solid #9d8cff;background:rgba(255,255,255,.08);transition:transform .12s,background .12s}
+#tzQulf .ql-d i.on{background:#ffd84a;border-color:#fff2b0;box-shadow:0 0 12px rgba(255,210,70,.95);transform:scale(1.15)}
+#tzQulf .ql-d.x i{background:#ff5468;border-color:#ffc0c8;box-shadow:0 0 12px rgba(255,80,100,.9)}
+#tzQulf .ql-d.x{animation:qlX .4s}
+#tzQulf .ql-d.ok i{background:#3fe07a;border-color:#c8ffd9;box-shadow:0 0 12px rgba(70,240,130,.9)}
+@keyframes qlX{20%{transform:translateX(-10px)}40%{transform:translateX(9px)}60%{transform:translateX(-6px)}80%{transform:translateX(4px)}}
+#tzQulf .ql-k{margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:min(2.2vh,16px) 22px;width:min(100%,330px)}
+#tzQulf .ql-k button{justify-self:center;width:min(19vw,76px);height:min(19vw,76px);max-height:10.5vh;border-radius:50%;border:1.5px solid rgba(160,150,255,.55);background:linear-gradient(180deg,rgba(120,100,255,.38),rgba(40,20,150,.38));color:#fff;font:800 27px/1 system-ui;box-shadow:inset 0 2px 3px rgba(255,255,255,.25),0 3px 8px rgba(0,0,40,.5);display:grid;place-items:center;padding:0}
+#tzQulf .ql-k button:active{background:linear-gradient(180deg,#ffd84a,#c98200);border-color:#fff2b0;transform:scale(.94)}
+#tzQulf .ql-k button.t{border-color:transparent;background:none;box-shadow:none}
+#tzQulf .ql-k button svg{width:36px;height:36px;fill:none;stroke:#ffd84a;stroke-width:1.7;stroke-linecap:round}
+#tzQulf .ql-k button[hidden]{visibility:hidden;display:grid}
+#tzQulf .ql-bx{margin-top:14px;border:0;background:none;color:#cfd4ff;font:700 13.5px/1 system-ui;padding:10px;min-height:40px}
+#tzQulf.chiq{animation:qlCh .28s ease-in forwards}
+@keyframes qlCh{to{opacity:0;transform:scale(1.06)}}
+/* profil qatori va oynalar */
+.ql-row{display:flex;align-items:center;gap:12px;width:100%;margin:12px 0;padding:13px 14px;border-radius:18px;border:1.5px solid #8f7bff;background:linear-gradient(180deg,#2a17a8,#150a6e);color:#fff;font-family:system-ui,sans-serif;text-align:left;box-shadow:0 0 10px rgba(120,90,255,.45)}
+.ql-row>span{font-size:24px}.ql-row>div{flex:1;min-width:0}.ql-row b{display:block;font:800 15px/1.25 system-ui}.ql-row small{display:block;font:600 12px/1.3 system-ui;color:#cfd4ff}
+.ql-row em{font:800 12px/1 system-ui;font-style:normal;padding:6px 9px;border-radius:99px;background:#3a2bb8;color:#cfd4ff}.ql-row em.on{background:#1f9d4b;color:#fff}
+#tzQlSh{position:fixed;inset:0;z-index:2147482000;background:rgba(4,2,30,.72);display:flex;align-items:flex-end;justify-content:center;font-family:system-ui,sans-serif}
+#tzQlSh>div{width:min(100%,460px);padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px));border-radius:24px 24px 0 0;background:linear-gradient(180deg,#24149c,#0e065c);border:2px solid #8f7bff;border-bottom:0;color:#fff;animation:qlUp .25s ease-out}
+@keyframes qlUp{from{transform:translateY(40px);opacity:0}}
+#tzQlSh h3{margin:0 0 6px;font:900 18px/1.25 system-ui;color:#ffd84a}#tzQlSh p{margin:0 0 12px;font:600 13.5px/1.4 system-ui;color:#dfe2ff}
+#tzQlSh button{display:block;width:100%;margin-top:9px;padding:14px;border-radius:14px;border:1.5px solid #8f7bff;background:#2a1ab0;color:#fff;font:800 15px/1 system-ui}
+#tzQlSh button.a{background:linear-gradient(180deg,#f5b621,#b56d00);border-color:#ffe9a0}
+#tzQlSh button.d{background:#5a1030;border-color:#ff9aa6}
+#tzQlSh button.g{background:none;border-color:transparent;color:#cfd4ff}
+#tzQulf svg{background:none!important;border-radius:0!important;box-shadow:none!important}
+/* v164: robot va ovoz bilan ochish */
+#tzQulf .ql-rb{width:min(19vh,150px);height:min(19vh,150px);margin-top:-6px;flex:0 0 auto}
+#tzQulf .ql-rb+h2{margin-top:2px}
+#tzQulf .ql-mk{margin-top:10px;display:flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1.5px solid #9fe8ff;background:linear-gradient(180deg,#2f6bff,#1a2fb8);color:#fff;font:800 14.5px/1 system-ui;box-shadow:0 0 12px rgba(80,170,255,.7),inset 0 2px 3px rgba(255,255,255,.4)}
+#tzQulf .ql-mk span{font-size:17px}
+#tzQulf .ql-mk.on{border-color:#ffe9a0;background:linear-gradient(180deg,#ff5468,#b01030);box-shadow:0 0 16px rgba(255,90,110,.9);animation:qlMk 1s ease-in-out infinite}
+@keyframes qlMk{50%{transform:scale(1.05)}}
+@media (max-height:700px){#tzQulf .ql-rb{width:15vh;height:15vh}#tzQulf h2{font-size:19px;margin-top:0}#tzQulf .ql-d{margin:12px 0 4px}#tzQulf .ql-mk{padding:9px 16px}}
+#tzQulf .ql-k [data-q="bz"]{grid-column:1}#tzQulf .ql-k [data-n="0"]{grid-column:2}#tzQulf .ql-k [data-q="del"]{grid-column:3}
+</style>
+<script id="tzQulfJs">
+/* ===== v163: ilova qulfi — PIN-kod va barmoq izi (faqat shu qurilmada) ===== */
+(function(){
+  var K='tzq_pin',KS='tzq_ask',TIL={
+    uz:{ov:'Ovoz bilan ochish',ting:'Tinglayapman… PIN-kodni ayting',o_x:'Xato! PIN-kod noto‘g‘ri.',o_ok:'To‘g‘ri! Xush kelibsiz.',o_t:'Tushunmadim. To‘rtta raqamni dona-dona ayting.',o_m:'Mikrofonga ruxsat berilmadi',o_n:'Ovozni tanib bo‘lmadi. PIN-kodni tering',esh:'Eshitdim',sal:'Assalomu alaykum',kir:'PIN-kodni kiriting',un:'PIN-kod esimda emas',xato:'PIN-kod noto‘g‘ri',kut:'Ko‘p xato. {n} soniya kuting',yan:'Yangi 4 xonali PIN-kod o‘ylab toping',qay:'PIN-kodni yana bir marta kiriting',mos:'PIN-kodlar mos kelmadi. Qaytadan',bek:'Bekor qilish',esk:'Hozirgi PIN-kodni kiriting',
+      rt:'Ilovani qulflash',rs:'PIN-kod va barmoq izi bilan himoya',yoq:'Yoqilgan',och:'O‘chirilgan',un_t:'PIN-kodni unutdingizmi?',un_s:'Hisobingizdan chiqasiz va Telegram, telefon yoki Gmail orqali qaytadan kirasiz. Shundan keyin yangi PIN-kod o‘rnatishingiz mumkin. Natijalaringiz saqlanib qoladi.',un_b:'Hisobdan chiqish',
+      s_t:'Ilova qulfi',s_s:'Qulf faqat shu telefonda ishlaydi. PIN-kodni hech kimga aytmang.',s_o:'PIN-kodni o‘zgartirish',s_b1:'Barmoq izini yoqish',s_b0:'Barmoq izini o‘chirish',s_x:'Qulfni o‘chirish',yop:'Yopish',
+      t_t:'Ilovani qulflab qo‘yasizmi?',t_s:'PIN-kod o‘rnatsangiz, ilovangizni sizdan boshqa hech kim ocha olmaydi. Barmoq izi bilan ham ochish mumkin.',t_a:'PIN-kod o‘rnatish',t_k:'Keyinroq',
+      b_t:'Barmoq izi bilan ochasizmi?',b_s:'Har safar PIN-kod termasdan, barmoq izi bilan kirasiz.',b_a:'Barmoq izini yoqish',b_k:'Kerak emas',b_y:'Barmoq izi yoqildi ✅',b_n:'Bu telefon yoki brauzerda barmoq izi ishlamadi. PIN-kod bilan kirasiz.',tay:'PIN-kod o‘rnatildi ✅',ochd:'Qulf o‘chirildi',bz:'Barmoq izi'},
+    ru:{ov:'Открыть голосом',ting:'Слушаю… назовите PIN-код',o_x:'Неверно! PIN-код неправильный.',o_ok:'Верно! Добро пожаловать.',o_t:'Не понял. Назовите четыре цифры по одной.',o_m:'Нет доступа к микрофону',o_n:'Не удалось распознать голос. Введите PIN-код',esh:'Услышал',sal:'Здравствуйте',kir:'Введите PIN-код',un:'Не помню PIN-код',xato:'Неверный PIN-код',kut:'Много ошибок. Подождите {n} с',yan:'Придумайте новый PIN-код из 4 цифр',qay:'Введите PIN-код ещё раз',mos:'PIN-коды не совпали. Заново',bek:'Отмена',esk:'Введите текущий PIN-код',
+      rt:'Блокировка приложения',rs:'Защита PIN-кодом и отпечатком',yoq:'Включена',och:'Выключена',un_t:'Забыли PIN-код?',un_s:'Вы выйдете из аккаунта и войдёте снова через Telegram, телефон или Gmail. После этого можно задать новый PIN-код. Результаты сохранятся.',un_b:'Выйти из аккаунта',
+      s_t:'Блокировка приложения',s_s:'Блокировка работает только на этом телефоне. Никому не сообщайте PIN-код.',s_o:'Изменить PIN-код',s_b1:'Включить отпечаток',s_b0:'Выключить отпечаток',s_x:'Отключить блокировку',yop:'Закрыть',
+      t_t:'Заблокировать приложение?',t_s:'Если задать PIN-код, никто кроме вас не откроет приложение. Можно открывать и отпечатком пальца.',t_a:'Задать PIN-код',t_k:'Позже',
+      b_t:'Открывать по отпечатку?',b_s:'Вход по отпечатку пальца без ввода PIN-кода.',b_a:'Включить отпечаток',b_k:'Не нужно',b_y:'Отпечаток включён ✅',b_n:'На этом телефоне или в этом браузере отпечаток не сработал. Вход по PIN-коду.',tay:'PIN-код установлен ✅',ochd:'Блокировка отключена',bz:'Отпечаток'},
+    en:{ov:'Unlock by voice',ting:'Listening… say your PIN',o_x:'Wrong! The PIN is incorrect.',o_ok:'Correct! Welcome.',o_t:'I did not catch that. Say the four digits one by one.',o_m:'Microphone access was denied',o_n:'Could not recognise speech. Type your PIN',esh:'Heard',sal:'Hello',kir:'Enter your PIN',un:'Forgot PIN',xato:'Wrong PIN',kut:'Too many attempts. Wait {n} s',yan:'Create a new 4-digit PIN',qay:'Enter the PIN again',mos:'PINs did not match. Try again',bek:'Cancel',esk:'Enter your current PIN',
+      rt:'App lock',rs:'Protect with PIN and fingerprint',yoq:'On',och:'Off',un_t:'Forgot your PIN?',un_s:'You will be signed out and can sign in again via Telegram, phone or Gmail. Then you can set a new PIN. Your results are kept.',un_b:'Sign out',
+      s_t:'App lock',s_s:'The lock works only on this phone. Never share your PIN.',s_o:'Change PIN',s_b1:'Turn on fingerprint',s_b0:'Turn off fingerprint',s_x:'Turn off lock',yop:'Close',
+      t_t:'Lock the app?',t_s:'With a PIN nobody but you can open the app. You can also unlock with your fingerprint.',t_a:'Set a PIN',t_k:'Later',
+      b_t:'Unlock with fingerprint?',b_s:'Sign in with your fingerprint instead of typing the PIN.',b_a:'Turn on fingerprint',b_k:'No, thanks',b_y:'Fingerprint is on ✅',b_n:'Fingerprint did not work on this phone or browser. Use your PIN.',tay:'PIN is set ✅',ochd:'Lock turned off',bz:'Fingerprint'},
+    kaa:{ov:'Dawıs penen ashıw',ting:'Tıńlap atırman… PIN-kodtı aytıń',o_x:'Qáte! PIN-kod nadurıs.',o_ok:'Durıs! Xosh kelipsiz.',o_t:'Túsinbedim. Tórt sandı bólek-bólek aytıń.',o_m:'Mikrofonǵa ruxsat berilmedi',o_n:'Dawıstı tanıp bolmadı. PIN-kodtı teriń',esh:'Esittim',sal:'Assalawma áleykum',kir:'PIN-kodtı kirgiziń',un:'PIN-kod esimde joq',xato:'PIN-kod nadurıs',kut:'Kóp qáte. {n} sekund kútiń',yan:'Jańa 4 xanalı PIN-kod oylap tabıń',qay:'PIN-kodtı jáne bir márte kirgiziń',mos:'PIN-kodlar sáykes kelmedi. Qaytadan',bek:'Biykar etiw',esk:'Házirgi PIN-kodtı kirgiziń',
+      rt:'Qosımshanı qulıplaw',rs:'PIN-kod hám barmaq izi menen qorǵaw',yoq:'Qosılǵan',och:'Óshirilgen',un_t:'PIN-kodtı umıttıńız ba?',un_s:'Esabıńızdan shıǵasız hám Telegram, telefon yamasa Gmail arqalı qaytadan kiresiz. Sonnan keyin jańa PIN-kod ornata alasız. Nátiyjeleringiz saqlanadı.',un_b:'Esaptan shıǵıw',
+      s_t:'Qosımsha qulpı',s_s:'Qulıp tek usı telefonda isleydi. PIN-kodtı hesh kimge aytpań.',s_o:'PIN-kodtı ózgertiw',s_b1:'Barmaq izin qosıw',s_b0:'Barmaq izin óshiriw',s_x:'Qulıptı óshiriw',yop:'Jabıw',
+      t_t:'Qosımshanı qulıplaysız ba?',t_s:'PIN-kod ornatsańız, qosımshańızdı sizden basqa hesh kim asha almaydı. Barmaq izi menen de ashıwǵa boladı.',t_a:'PIN-kod ornatıw',t_k:'Keyinirek',
+      b_t:'Barmaq izi menen ashasız ba?',b_s:'Hár saparı PIN-kod termesten, barmaq izi menen kiresiz.',b_a:'Barmaq izin qosıw',b_k:'Kerek emes',b_y:'Barmaq izi qosıldı ✅',b_n:'Bul telefon yamasa brauzerde barmaq izi islemedi. PIN-kod penen kiresiz.',tay:'PIN-kod ornatıldı ✅',ochd:'Qulıp óshirildi',bz:'Barmaq izi'}};
+  function T(k){var l='uz';try{if(typeof KXL==='string'&&TIL[KXL])l=KXL}catch(_){}return TIL[l][k]||TIL.uz[k]||k}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function get(){try{return JSON.parse(localStorage.getItem(K)||'null')}catch(_){return null}}
+  function set(o){try{if(o)localStorage.setItem(K,JSON.stringify(o));else localStorage.removeItem(K)}catch(_){}}
+  function P(){try{return JSON.parse(localStorage.getItem('geo5_prof')||'null')}catch(_){return null}}
+  function b64(u){var s='';new Uint8Array(u).forEach(function(c){s+=String.fromCharCode(c)});return btoa(s)}
+  function unb(s){var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u}
+  function rnd(n){var u=new Uint8Array(n);(window.crypto||{getRandomValues:function(a){for(var i=0;i<a.length;i++)a[i]=Math.random()*256|0}}).getRandomValues(u);return u}
+  function hash(salt,pin){var t=salt+'|'+pin+'|testuz';
+    if(window.crypto&&crypto.subtle)return crypto.subtle.digest('SHA-256',new TextEncoder().encode(t)).then(function(d){return 's'+b64(d)});
+    var h=2166136261;for(var r=0;r<3000;r++)for(var i=0;i<t.length;i++){h^=t.charCodeAt(i)+r;h=Math.imul(h,16777619)}return Promise.resolve('f'+(h>>>0).toString(36))}
+  /* ---------- barmoq izi (WebAuthn, qurilmaning o'zida) ---------- */
+  function bzBor(){try{if(!window.PublicKeyCredential||!navigator.credentials||!window.isSecureContext)return Promise.resolve(false);return PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable().catch(function(){return false})}catch(_){return Promise.resolve(false)}}
+  function bzYarat(){var p=P()||{};return navigator.credentials.create({publicKey:{challenge:rnd(32),rp:{name:'TestUz',id:location.hostname},user:{id:rnd(16),name:'testuz',displayName:[p.fn,p.ln].filter(Boolean).join(' ')||'TestUz'},
+      pubKeyCredParams:[{type:'public-key',alg:-7},{type:'public-key',alg:-257}],authenticatorSelection:{authenticatorAttachment:'platform',userVerification:'required',residentKey:'discouraged'},timeout:60000,attestation:'none'}}).then(function(c){return b64(c.rawId)})}
+  function bzSora(id){return navigator.credentials.get({publicKey:{challenge:rnd(32),rpId:location.hostname,allowCredentials:[{type:'public-key',id:unb(id),transports:['internal']}],userVerification:'required',timeout:60000}}).then(function(a){return !!a})}
+  /* ---------- AI robot (o'zimizning chizma), ovozi va nutqni tanish ---------- */
+  function robot(cv){var cx=cv.getContext('2d'),tirik=true,t0=performance.now(),pk=1.2,pkU=0,qar=0,qarN=0,qarT=0,lev=0,R={gap:false,kayf:'',an:null},buf=new Uint8Array(256);
+    function rr(x,y,w,h,r){cx.beginPath();cx.moveTo(x+r,y);cx.arcTo(x+w,y,x+w,y+h,r);cx.arcTo(x+w,y+h,x,y+h,r);cx.arcTo(x,y+h,x,y,r);cx.arcTo(x,y,x+w,y,r);cx.closePath()}
+    function lg(x0,y0,x1,y1,a){var g=cx.createLinearGradient(x0,y0,x1,y1);a.forEach(function(c,k){g.addColorStop(k/(a.length-1),c)});return g}
+    function chiz(now){if(!tirik||!document.body.contains(cv))return;var t=(now-t0)/1000,l=0,gap=R.gap,ky_=R.kayf;
+      if(R.an&&gap){R.an.getByteTimeDomainData(buf);var s=0;for(var k=0;k<buf.length;k++){var v=(buf[k]-128)/128;s+=v*v}l=Math.min(1,Math.sqrt(s/buf.length)*5)}else if(gap)l=.3+.3*Math.abs(Math.sin(t*9))*Math.abs(Math.sin(t*2.3));
+      lev+=(l-lev)*.35;if(t>pk){pkU=t;pk=t+2.2+Math.random()*2.8}var q=t-pkU,qis=q<.16?Math.abs(1-q/.08):1;
+      if(t>qarT){qarN=(Math.random()*2-1)*9;qarT=t+1.2+Math.random()*2.2}qar+=(qarN-qar)*.08;if(ky_==='t')qar*=.6;
+      var bob=Math.sin(t*1.7)*5,egil=(Math.sin(t*.9)*3.5+(gap?Math.sin(t*5)*1.8:0)+(ky_==='x'?Math.sin(t*22)*5:0)+(ky_==='t'?7:0))*Math.PI/180,salom=(t<2.6||ky_==='ok')?1:0;
+      var kr=ky_==='x'?'#ff6b7d':ky_==='ok'?'#6dff9a':ky_==='t'?'#ffd84a':gap?'#7dffea':'#5ff2ff';
+      cx.clearRect(0,0,360,360);var g0=cx.createRadialGradient(180,170,10,180,170,175);g0.addColorStop(0,ky_==='x'?'rgba(255,90,110,.34)':ky_==='ok'?'rgba(90,255,150,.34)':ky_==='t'?'rgba(255,215,80,.3)':'rgba(120,150,255,.26)');g0.addColorStop(1,'rgba(0,0,0,0)');cx.fillStyle=g0;cx.fillRect(0,0,360,360);
+      cx.fillStyle='rgba(10,0,50,.45)';cx.beginPath();cx.ellipse(180,338,74-bob,10,0,0,6.283);cx.fill();cx.save();cx.translate(0,bob);
+      function qol(x,y,bur,ch){cx.save();cx.translate(x,y);cx.rotate(bur);cx.fillStyle=lg(-13,0,13,0,ch?['#dfe6ff','#aab6f2']:['#aab6f2','#dfe6ff']);rr(-13,-6,26,74,13);cx.fill();cx.fillStyle='#6f7fe0';cx.beginPath();cx.arc(0,62,11,0,6.283);cx.fill();cx.restore()}
+      qol(116,238,.38+Math.sin(t*2)*.06,1);qol(244,238,salom?-2.3+Math.sin(t*9)*.38:-.38-Math.sin(t*2)*.06,0);
+      cx.fillStyle=lg(0,222,0,330,['#f4f6ff','#c9d2fb','#9fabec']);rr(122,222,116,104,34);cx.fill();cx.fillStyle='rgba(60,70,170,.16)';rr(122,300,116,26,13);cx.fill();
+      cx.fillStyle='#16215c';rr(150,246,60,40,12);cx.fill();cx.fillStyle=kr;cx.shadowColor=kr;cx.shadowBlur=10;cx.font='900 26px system-ui,sans-serif';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('AI',180,267);cx.shadowBlur=0;
+      cx.fillStyle='#8a97e0';rr(162,206,36,24,8);cx.fill();cx.translate(180,214);cx.rotate(egil);cx.translate(-180,-214);
+      cx.strokeStyle='#8a97e0';cx.lineWidth=5;cx.lineCap='round';cx.beginPath();cx.moveTo(180,62);cx.lineTo(180,40);cx.stroke();
+      cx.fillStyle=ky_==='t'?'#ff5468':gap?'#ff7af2':kr;cx.shadowColor=cx.fillStyle;cx.shadowBlur=14+Math.sin(t*5)*6;cx.beginPath();cx.arc(180,34,8+(gap?lev*4:0)+(ky_==='t'?2+Math.sin(t*8)*2.5:0),0,6.283);cx.fill();cx.shadowBlur=0;
+      cx.strokeStyle=lg(60,60,300,60,['#5b6fe8','#9a6bff','#5b6fe8']);cx.lineWidth=13;cx.beginPath();cx.arc(180,134,110,Math.PI*1.13,Math.PI*1.87);cx.stroke();
+      cx.fillStyle=lg(0,58,0,214,['#ffffff','#e9edff','#b9c4f6']);rr(70,58,220,156,58);cx.fill();cx.fillStyle='rgba(255,255,255,.75)';rr(96,66,120,16,8);cx.fill();
+      [[58,0],[302,1]].forEach(function(e){cx.fillStyle=ky_==='t'?lg(e[0]-22,0,e[0]+22,0,['#ffd84a','#f59a00']):lg(e[0]-22,0,e[0]+22,0,e[1]?['#8f7bff','#4d5fe0']:['#4d5fe0','#8f7bff']);if(ky_==='t'){cx.shadowColor='#ffd84a';cx.shadowBlur=10+Math.sin(t*8)*8}rr(e[0]-22,100,44,74,20);cx.fill();cx.shadowBlur=0;cx.fillStyle='#2b3aa8';rr(e[0]-9,116,18,42,9);cx.fill()});
+      cx.fillStyle=lg(0,82,0,192,['#0d1233','#060818']);rr(92,82,176,110,40);cx.fill();cx.fillStyle='rgba(255,255,255,.07)';cx.beginPath();cx.ellipse(140,98,54,13,-.25,0,6.283);cx.fill();
+      var kh=(ky_==='ok'?16:ky_==='t'?42:gap?30:36)*qis+3,ky=128-(gap?lev*3:0);cx.fillStyle=kr;cx.shadowColor=kr;cx.shadowBlur=20;
+      if(ky_==='x'){cx.strokeStyle=kr;cx.lineWidth=7;[-38,38].forEach(function(dx){cx.beginPath();cx.moveTo(180+dx-13,ky-13);cx.lineTo(180+dx+13,ky+13);cx.moveTo(180+dx+13,ky-13);cx.lineTo(180+dx-13,ky+13);cx.stroke()})}
+      else if(ky_==='ok'){cx.strokeStyle=kr;cx.lineWidth=8;[-38,38].forEach(function(dx){cx.beginPath();cx.arc(180+dx,ky+8,15,1.15*Math.PI,1.85*Math.PI);cx.stroke()})}
+      else [-38,38].forEach(function(dx){rr(180+dx-14+qar,ky-kh/2,28,kh,Math.min(14,kh/2));cx.fill()});
+      cx.shadowBlur=12;if(gap){var oh=5+lev*26,ow=30-lev*6;cx.fillStyle=kr;rr(180-ow/2,168-oh/2,ow,oh,Math.min(ow/2,oh/2));cx.fill()}
+      else{cx.strokeStyle=kr;cx.lineWidth=5;cx.beginPath();if(ky_==='x')cx.arc(180,178,15,1.2*Math.PI,1.8*Math.PI);else if(ky_==='t')cx.arc(180,164,6,0,6.283);else cx.arc(180+qar*.4,ky_==='ok'?154:158,ky_==='ok'?22:17,.18*Math.PI,.82*Math.PI);cx.stroke()}
+      cx.shadowBlur=0;cx.fillStyle='rgba(255,122,242,'+(gap||ky_==='ok'?.5:.28)+')';[-66,66].forEach(function(dx){cx.beginPath();cx.ellipse(180+dx,160,9,5,0,0,6.283);cx.fill()});
+      cx.restore();requestAnimationFrame(chiz)}
+    requestAnimationFrame(chiz);R.toxta=function(){tirik=false};return R}
+  function tilK(){var l='uz';try{if(typeof KXL==='string'&&TIL[KXL])l=KXL}catch(_){}return l}
+  var OVK={},ovSrc=null;
+  function ovOl(k){var t=T(k),l=tilK(),kk=l+k;if(OVK[kk])return OVK[kk];try{if(typeof tzOvOl!=='function'||typeof mfGapDek!=='function'||typeof sfxAC!=='function')return Promise.resolve(null);return OVK[kk]=Promise.resolve(tzOvOl(t,l)).catch(function(){return null})}catch(_){return Promise.resolve(null)}}
+  function ayt(k,R){try{if(ovSrc){ovSrc.onended=null;ovSrc.stop()}}catch(_){}ovSrc=null;var tug=false;function end(){if(tug)return;tug=true;if(R)R.gap=false}
+    if(R)R.gap=true;setTimeout(end,2600);
+    Promise.race([ovOl(k),new Promise(function(r){setTimeout(function(){r(null)},1500)})]).then(function(a){if(!a||tug)return;var ac=sfxAC(),bf=ac?mfGapDek(a):null;if(!bf)return;try{if(ac.state!=='running')ac.resume()}catch(_){}
+      var sr=ac.createBufferSource();sr.buffer=bf;try{if(R&&!R.an){R.an=ac.createAnalyser();R.an.fftSize=256;R.an.connect(ac.destination)}}catch(_){}sr.connect((R&&R.an)||ac.destination);tug=true;if(R)R.gap=true;sr.onended=function(){if(R)R.gap=false};ovSrc=sr;try{sr.start()}catch(_){if(R)R.gap=false}}).catch(function(){})}
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  var SOZ={'nol':0,'nol’':0,'ноль':0,'нуль':0,'нол':0,'zero':0,'oh':0,'bir':1,'бир':1,'один':1,'раз':1,'one':1,'ikki':2,'икки':2,'eki':2,'два':2,'two':2,'to':2,'too':2,'uch':3,'уч':3,'ush':3,'úsh':3,'три':3,'three':3,'tort':4,'тўрт':4,'турт':4,'tórt':4,'четыре':4,'four':4,'for':4,'besh':5,'беш':5,'bes':5,'пять':5,'five':5,'olti':6,'олти':6,'alti':6,'altı':6,'шесть':6,'six':6,'yetti':7,'етти':7,'jeti':7,'семь':7,'seven':7,'sakkiz':8,'саккиз':8,'segiz':8,'восемь':8,'eight':8,'toqqiz':9,'тўққиз':9,'туккиз':9,'togiz':9,'toǵız':9,'девять':9,'nine':9};
+  function raqamlar(m){m=String(m||'').toLowerCase().replace(/[‘’ʻʼ`']/g,'').replace(/o‘|oʻ/g,'o');var o='';m.split(/[^0-9a-zа-яёўқғҳáúóıǵńş]+/i).forEach(function(w){if(!w)return;if(/^\d+$/.test(w)){o+=w;return}if(SOZ[w]!==undefined)o+=SOZ[w]});return o}
+  window.tzQulfRaqam=raqamlar;
+
+  /* ---------- PIN ekrani ---------- */
+  var FP='<svg viewBox="0 0 24 24"><path d="M6.200 6.300A8.200 8.200 0 0 1 12 4c2.400 0 4.500 1 6 2.600M4 12a8 8 0 0 1 1-3.800M20 12c0 3-.400 5.400-1.200 7.600M8 20.500c.800-2 1.200-4.600 1.200-8.300a2.800 2.800 0 0 1 5.600 0c0 3.800-.500 6.700-1.500 9M12 12.200c0 3.300-.300 5.900-1 8M17.300 9.600c.300.800.500 1.700.500 2.600 0 2.200-.200 4.200-.600 6M4.800 16.500c.400-1.300.600-2.800.600-4.500a6.600 6.600 0 0 1 9.300-6"/></svg>';
+  var QF='<svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 1.800A5.200 5.200 0 0 0 6.800 7v2.600H6A2.600 2.600 0 0 0 3.400 12.200v7A2.600 2.600 0 0 0 6 21.800h12a2.600 2.600 0 0 0 2.600-2.600v-7A2.600 2.600 0 0 0 18 9.600h-.8V7A5.200 5.200 0 0 0 12 1.800zm-2.800 7.800V7a2.800 2.800 0 0 1 5.600 0v2.600zm2.800 3.500a1.700 1.700 0 0 1 .9 3.150v1.850h-1.800v-1.850A1.700 1.700 0 0 1 12 13.100z"/></svg>';
+  /* rej: 'och' (qulfni ochish) | 'tek' (PIN ni tekshirish, bekor qilsa bo'ladi) | 'yangi' (yangi PIN) ; natija: Promise<pin|true|null> */
+  function ekran(rej){return new Promise(function(res){
+    var eski=document.getElementById('tzQulf');if(eski)eski.remove();
+    var o=get(),p=P()||{},E=document.createElement('div'),v='',b1='',qad=rej==='yangi'?1:0,band=false,xs=0;E.id='tzQulf';E.setAttribute('role','dialog');
+    E.innerHTML='<button class="ql-un" data-q="un"'+(rej==='och'?'':' hidden')+'>'+esc(T('un'))+'</button>'+(rej==='och'?'<canvas class="ql-rb" id="qlRb" width="360" height="360"></canvas>':'<div class="ql-lg">'+QF+'</div>')+'<h2>'+(rej==='och'?esc(T('sal'))+(p.fn?',<br>'+esc(p.fn):''):esc(T('s_t')))+'</h2><p id="qlM"></p><div class="ql-d" id="qlD"><i></i><i></i><i></i><i></i></div>'+
+      (rej==='och'&&SR?'<button class="ql-mk" data-q="mk" id="qlMk"><span>🎤</span><b>'+esc(T('ov'))+'</b></button>':'')+'<div class="ql-k">'+[1,2,3,4,5,6,7,8,9].map(function(n){return '<button data-q="n" data-n="'+n+'">'+n+'</button>'}).join('')+'<button class="t" data-q="bz" id="qlBz" hidden aria-label="'+esc(T('bz'))+'">'+FP+'</button><button data-q="n" data-n="0">0</button><button class="t" data-q="del" aria-label="⌫">⌫</button></div>'+
+      '<button class="ql-bx" data-q="bek"'+(rej==='och'?' hidden style="visibility:hidden"':'')+'>'+esc(T('bek'))+'</button>';
+    document.body.appendChild(E);
+    var M=E.querySelector('#qlM'),D=E.querySelector('#qlD'),RB=E.querySelector('#qlRb')?robot(E.querySelector('#qlRb')):null,MK=E.querySelector('#qlMk'),rec=null,kT=0;
+    function kayf(k,ms){if(!RB)return;RB.kayf=k;clearTimeout(kT);if(ms)kT=setTimeout(function(){if(RB.kayf===k)RB.kayf=''},ms)}
+    if(rej==='och'){ovOl('o_x');ovOl('o_ok');ovOl('o_t')}
+    function mt(t,x){M.textContent=t;M.className=x?'x':''}
+    function chiz(){[].forEach.call(D.children,function(i,k){i.className=k<v.length?'on':''})}
+    function bosh(){mt(rej==='yangi'?(qad===1?T('yan'):T('qay')):rej==='tek'?T('esk'):T('kir'))}
+    function tamom(r){try{if(rec)rec.abort()}catch(_){}E.classList.add('chiq');setTimeout(function(){E.remove()},260);res(r)}
+    function xato(t){D.classList.add('x');mt(t,1);band=true;if(rej==='och'){kayf('x',1500);ayt('o_x',RB)}try{navigator.vibrate&&navigator.vibrate(120)}catch(_){}setTimeout(function(){D.classList.remove('x');v='';chiz();band=false;if(!kutT)bosh()},650)}
+    var kutT=0;function kut(n){kutT=1;band=true;(function f(){if(n<=0){kutT=0;band=false;bosh();return}mt(T('kut').replace('{n}',n),1);n--;setTimeout(f,1000)})()}
+    function tayyor(){
+      if(rej==='yangi'){if(qad===1){b1=v;v='';qad=2;chiz();bosh();return}if(v!==b1){qad=1;b1='';xato(T('mos'));return}D.classList.add('ok');return setTimeout(function(){tamom(v)},250)}
+      band=true;hash(o.s,v).then(function(h){band=false;if(h===o.h){D.classList.add('ok');if(rej==='och'){kayf('ok');ayt('o_ok',null)}setTimeout(function(){tamom(rej==='och'?true:v)},rej==='och'?420:220)}else{xs++;if(xs>=5){xs=0;xato(T('xato'));setTimeout(function(){kut(30)},660)}else xato(T('xato'))}})}
+    function mkHol(on){if(!MK)return;MK.classList.toggle('on',!!on);MK.querySelector('b').textContent=on?T('ting'):T('ov');if(on){kayf('t');mt(T('ting'))}else if(RB&&RB.kayf==='t'){kayf('');if(!band)bosh()}}
+    function tingla(){if(!SR||band)return;if(rec){try{rec.stop()}catch(_){}return}var r=new SR(),tugadi=false,topildi=false;rec=r;r.lang={uz:'uz-UZ',ru:'ru-RU',en:'en-US',kaa:'uz-UZ'}[tilK()]||'uz-UZ';r.interimResults=false;r.maxAlternatives=6;r.continuous=false;
+      r.onresult=function(ev){topildi=true;var C=[];for(var a=0;a<ev.results.length;a++)for(var b=0;b<ev.results[a].length;b++){var d=raqamlar(ev.results[a][b].transcript);if(d.length===4&&C.indexOf(d)<0)C.push(d)}
+        rec=null;mkHol(false);if(!C.length){kayf('x',1500);mt(T('o_t'),1);ayt('o_t',RB);return}
+        band=true;Promise.all(C.map(function(d){return hash(o.s,d)})).then(function(H){band=false;var k=H.indexOf(o.h);v=C[k<0?0:k];chiz();if(k>=0){D.classList.add('ok');kayf('ok');ayt('o_ok',null);setTimeout(function(){tamom(true)},420)}else{xs++;if(xs>=5){xs=0;xato(T('xato'));setTimeout(function(){kut(30)},660)}else xato(T('xato'))}})};
+      r.onerror=function(ev){tugadi=true;rec=null;mkHol(false);var e=ev&&ev.error;if(e==='not-allowed'||e==='service-not-allowed')mt(T('o_m'),1);else if(e==='no-speech'||e==='aborted'){}else mt(T('o_n'),1)};
+      r.onend=function(){if(rec===r){rec=null;mkHol(false);if(!topildi&&!tugadi&&!band){mt(T('o_t'),1);kayf('x',1200)}}};
+      try{var ac=typeof sfxAC==='function'&&sfxAC();if(ac&&ac.state!=='running')ac.resume()}catch(_){}
+      try{r.start();mkHol(true)}catch(_){rec=null;mkHol(false);mt(T('o_n'),1)}}
+    function bz(){if(!o||!o.c||band)return;bzSora(o.c).then(function(ok){if(ok&&document.body.contains(E)){D.classList.add('ok');[].forEach.call(D.children,function(i){i.className='on'});setTimeout(function(){tamom(true)},200)}}).catch(function(){})}
+    E.addEventListener('click',function(e){var b=e.target.closest('[data-q]');if(!b)return;var q=b.dataset.q;
+      if(q==='n'){if(band||v.length>=4)return;v+=b.dataset.n;chiz();if(v.length===4)setTimeout(tayyor,120)}
+      else if(q==='del'){if(band)return;v=v.slice(0,-1);chiz()}
+      else if(q==='bek')tamom(null);
+      else if(q==='bz')bz();
+      else if(q==='mk')tingla();
+      else if(q==='un')unut()});
+    bosh();
+    if(rej==='och'&&o&&o.c)bzBor().then(function(ok){if(!ok)return;E.querySelector('#qlBz').hidden=false;setTimeout(bz,350)})})}
+  /* ---------- pastdan chiqadigan oyna ---------- */
+  function oyna(h,ust){var e=document.getElementById('tzQlSh');if(e)e.remove();e=document.createElement('div');e.id='tzQlSh';if(ust)e.style.zIndex='2147483600';e.innerHTML='<div>'+h+'</div>';document.body.appendChild(e);
+    return new Promise(function(res){e.addEventListener('click',function(ev){var b=ev.target.closest('[data-v]');if(!b&&ev.target!==e)return;e.remove();res(b?b.dataset.v:'')})})}
+  function xabar(t){try{if(typeof toast==='function')return toast(t)}catch(_){}var d=document.createElement('div');d.textContent=t;d.style.cssText='position:fixed;left:50%;bottom:120px;transform:translateX(-50%);z-index:2147483640;background:#1f9d4b;color:#fff;font:800 14px system-ui;padding:11px 16px;border-radius:14px;max-width:86vw;text-align:center';document.body.appendChild(d);setTimeout(function(){d.remove()},2600)}
+  function unut(){oyna('<h3>'+esc(T('un_t'))+'</h3><p>'+esc(T('un_s'))+'</p><button class="d" data-v="ha">'+esc(T('un_b'))+'</button><button class="g" data-v="">'+esc(T('bek'))+'</button>',1).then(function(v){if(v!=='ha')return;set(null);
+    try{if(typeof kxChiq==='function')kxChiq();else localStorage.removeItem('geo5_prof')}catch(_){try{localStorage.removeItem('geo5_prof')}catch(e){}}setTimeout(function(){location.reload()},900)})}
+  function bzTaklif(){return bzBor().then(function(ok){if(!ok)return;return oyna('<h3>'+esc(T('b_t'))+'</h3><p>'+esc(T('b_s'))+'</p><button class="a" data-v="ha">'+esc(T('b_a'))+'</button><button class="g" data-v="">'+esc(T('b_k'))+'</button>').then(function(v){if(v==='ha')return bzYoq()})})}
+  function bzYoq(){return bzYarat().then(function(id){var o=get();if(!o)return;o.c=id;set(o);xabar(T('b_y'))}).catch(function(){xabar(T('b_n'))})}
+  function ornat(){return ekran('yangi').then(function(pin){if(!pin)return false;var s=b64(rnd(12));return hash(s,pin).then(function(h){var e=get()||{};set({s:s,h:h,c:e.c||''});ochiq=true;xabar(T('tay'));return true})})}
+  function sozlama(){var o=get();if(!o)return ornat().then(function(ok){if(ok)return bzTaklif()}).then(qator);
+    bzBor().then(function(bor){oyna('<h3>🔒 '+esc(T('s_t'))+'</h3><p>'+esc(T('s_s'))+'</p><button data-v="o">'+esc(T('s_o'))+'</button>'+(bor?'<button data-v="b">'+esc(o.c?T('s_b0'):T('s_b1'))+'</button>':'')+'<button class="d" data-v="x">'+esc(T('s_x'))+'</button><button class="g" data-v="">'+esc(T('yop'))+'</button>').then(function(v){
+      if(!v)return;ekran('tek').then(function(pin){if(!pin)return;
+        if(v==='o')return ornat();
+        if(v==='b'){var q=get();if(q.c){q.c='';set(q);return}return bzYoq()}
+        if(v==='x'){set(null);xabar(T('ochd'))}}).then(qator)})})}
+  /* ---------- profil bo'limidagi qator ---------- */
+  function qator(){var B=document.getElementById('tzProf');if(!B||!P())return;var r=B.querySelector('.ql-row'),o=get(),h='<span>🔒</span><div><b>'+esc(T('rt'))+'</b><small>'+esc(T('rs'))+'</small></div><em class="'+(o?'on':'')+'">'+esc(o?T('yoq'):T('och'))+'</em>';
+    if(r){if(r.dataset.h!==h){r.innerHTML=h;r.dataset.h=h}return}var a=B.querySelector('#pfPromo')||B.querySelector('.pf-loc');if(!a)return;r=document.createElement('button');r.type='button';r.className='ql-row';r.innerHTML=h;r.dataset.h=h;r.addEventListener('click',sozlama);a.insertAdjacentElement('afterend',r)}
+  /* ---------- qulflash ---------- */
+  var ochiq=false,yashT=0;
+  function qulfla(){if(document.getElementById('tzQulf'))return;if(!get())return;if(!P()){set(null);return}ochiq=false;var s=document.getElementById('tzQlSh');if(s)s.remove();ekran('och').then(function(){ochiq=true})}
+  qulfla();
+  document.addEventListener('visibilitychange',function(){if(document.hidden)yashT=Date.now();else if(yashT&&Date.now()-yashT>60000&&ochiq)qulfla()});
+  /* birinchi marta taklif: ro'yxatdan o'tib, tanishuv tugagach bir marta */
+  function taklif(){try{if(get()||!P()||localStorage.getItem(KS)||localStorage.getItem('tz_tour')!=='1')return;if(document.getElementById('tzTur')||document.getElementById('tzQlSh')||document.getElementById('tzQulf'))return;
+      var h=document.getElementById('tzHome')||document.querySelector('.hb-home');var n=document.getElementById('tzNav');if(!n||n.hidden||!n.querySelector('[data-nv="home"].on'))return;if(document.querySelector('.kx-sh,.kx-md,#tzGo.on,#tzSplash:not([hidden])'))return;
+      localStorage.setItem(KS,'1');oyna('<h3>🔒 '+esc(T('t_t'))+'</h3><p>'+esc(T('t_s'))+'</p><button class="a" data-v="ha">'+esc(T('t_a'))+'</button><button class="g" data-v="">'+esc(T('t_k'))+'</button>').then(function(v){if(v==='ha')ornat().then(function(ok){if(ok)return bzTaklif()}).then(qator)})}catch(_){}}
+  setInterval(function(){qator();if(get()&&!P())set(null)},800);
+  setTimeout(function(){setInterval(taklif,2500)},6000);
+  window.tzQulf={qulfla:qulfla,sozlama:sozlama,bor:function(){return !!get()}};
+})();
+</script>
 </body></html>
