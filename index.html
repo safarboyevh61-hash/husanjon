@@ -14259,7 +14259,7 @@ html:not(.fn-oy) #tzGames *,html:not(.fn-oy) #tzFnBg *{animation-play-state:paus
   var e0=b.onclick;
   b.onclick=function(ev){if(!tol())tikla();if(!tol()&&!(ev&&ev.isTrusted))return;return e0?e0.apply(this,arguments):undefined};
   var korin=function(){var i=g('intro');return !!(i&&!i.classList.contains('hid')&&i.offsetParent!==null)};
-  var tg=/tgWebAppData/.test(location.hash)||!!L('tz_tg'),kut=null,n=0,qol=false;
+  var tg=/tgWebAppData/.test(location.hash)||!!L('tz_tg'),kut=null,n=0,qol=false,bosh=!!(L('geo5_prof')&&L('geo5_owner')),kel=0;
   K.forEach(function(k){g(k).addEventListener('input',function(e){if(e.isTrusted)qol=true})});
   var iv=setInterval(function(){n++;
     var sp=g('tzSplash'),i=g('intro');
@@ -14268,7 +14268,8 @@ html:not(.fn-oy) #tzGames *,html:not(.fn-oy) #tzFnBg *{animation-play-state:paus
     var bor=!!(L('geo5_prof')&&L('geo5_owner'));
     if(!bor&&tg&&!qol&&!L("tz_del")&&n<24){if(!kut&&i){kut=document.createElement('div');kut.id='tzKirK';kut.innerHTML='<i></i>Ma’lumotlaringiz tekshirilmoqda… Bir oz kuting';i.insertBefore(kut,i.firstChild)}}
     else if(kut){kut.remove();kut=null}
-    if(bor&&!qol&&!document.querySelector('.pf-sh,.tz-dlg')&&!/[?&](view|aud)=/.test(location.search)){if(!tol())tikla();if(tol()){clearInterval(iv);if(kut)kut.remove();b.click()}}
+    if(bosh){clearInterval(iv);return}
+    if(bor&&!qol){kel++;if(kel>=3&&!document.querySelector('.pf-sh,.tz-dlg,.kx-sh,.kx-md')&&!/[?&](view|aud)=/.test(location.search)){if(!tol())tikla();if(tol()){clearInterval(iv);if(kut)kut.remove();b.click();setTimeout(function(){try{var h=document.querySelector('#tzNav [data-nv="home"]');if(h&&!document.getElementById('tzNav').hidden)h.click()}catch(e){}},300)}}}
   },500);
 }catch(_){}})();</script>
 </body></html>
