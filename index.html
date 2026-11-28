@@ -5439,7 +5439,7 @@ const YANGILIK=['🕯️ <b>Mafiya</b>: o‘lgan o‘yinchi oxirgi so‘zini yoz
    Kod faqat 1 marta ishlaydi: bot tekshiradi va «ishlatildi» deb belgilaydi (API.kod). Kod qabul qilinsa — shu qurilmada 1 ta test (tz_kr).
    Telegram orqali kirganda — bot tasdiqlagan to'lov kodsiz ishlatiladi (API.qatnash). Yangi test boshlanganda 1 ta test hisobdan yechiladi. */
 const BL={ms:{n:'Milliy sertifikat',e:'🎓',c:['#00c8ff','#2a6bff'],ich:['45 savollik imtihon — Rasch modeli bo‘yicha ball va daraja (A+ … C)','Har safar yangi variant: oson, o‘rta va qiyin savollar','🎓 Shaxsiy sertifikat — bot orqali avtomatik']},
-  at:{n:'Attestatsiya',e:'👩‍🏫',c:['#ff3df2','#7a2cf0'],ich:['50 savollik imtihon: 40 ta fan + 10 ta pedagogik mahorat','Har safar yangi variant: oson, o‘rta va qiyin savollar','🏅 Toifa: Oliy, 1-, 2-toifa, Mutaxassis va sertifikat']}};
+  at:{n:'Attestatsiya',e:'👩‍🏫',c:['#ff3df2','#7a2cf0'],ich:['50 savollik imtihon: 40 ta test savoli fan bo‘yicha, 10 ta test savoli esa pedagogik mahoratdan','Har safar yangi variant: oson, o‘rta va qiyin savollar','🏅 Toifa: Oliy, 1-, 2-toifa, Mutaxassis va sertifikat']}};
 const ownr=()=>LS.get('geo5_owner')||'';
 const KRJ=()=>{try{const j=JSON.parse(LS.get('tz_kr')||'{}');return j&&typeof j==='object'?j:{}}catch(e){return {}}};
 const krN=b=>Math.max(0,Math.floor(+KRJ()[b]||0));
