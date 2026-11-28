@@ -4011,7 +4011,7 @@ $('atpv').onclick=()=>atShow(atCur-1);$('atnx').onclick=()=>atShow(atCur+1);
 $('atsub').onclick=()=>ask('Attestatsiya savollari hali yuklanmagan. Tez orada qo‘shiladi.');
 $('atback').onclick=()=>{clearInterval(atTid);$('att').classList.add('hid');$('cover').classList.remove('hid')};
 let exStarted=false,exRem=0,atStarted=false,atRem=0;
-$('b1').onclick=()=>{if(exStarted){end=Date.now()+exRem;tick();tid=setInterval(tick,250);$('cover').classList.add('hid');$('exam').classList.remove('hid');show(ST.cur);scrollTo(0,0)}else{exStarted=true;$('go').onclick()}};
+$('b1').onclick=()=>{if(exStarted){/* v201: test ketayotgan paytda qayta bosilsa vaqt nolga tushib, test o'zi topshirilib ketmasin */if(exRem>0){end=Date.now()+exRem;exRem=0}clearInterval(tid);tick();tid=setInterval(tick,250);$('cover').classList.add('hid');$('exam').classList.remove('hid');show(ST.cur);scrollTo(0,0)}else{exStarted=true;$('go').onclick()}};
 $('exback').onclick=()=>{exRem=Math.max(0,end-Date.now());clearInterval(tid);$('exam').classList.add('hid');$('cover').classList.remove('hid');scrollTo(0,0)};
 $('b2').onclick=()=>{$('cover').classList.add('hid');$('att').classList.remove('hid');
  if(!atStarted){atStarted=true;atRem=120*60*1000;$('atg').innerHTML=Array.from({length:50},(_,i)=>'<b data-i="'+i+'">'+(i+1)+'</b>').join('');$('atg').onclick=e=>{if(e.target.dataset.i!=null)atShow(+e.target.dataset.i)};atShow(0)}
@@ -12375,7 +12375,8 @@ html.hb-hlock #fanlar[data-v="main"] #tzHm{position:fixed;left:8px;right:8px;top
   var busy=0,KEY={Geografiya:'geo',Tarix:'tar',Biologiya:'bio'};
   function band(ms){busy++;setTimeout(function(){busy--;tek()},ms||1600)}
   function ochiq(id){var e=g(id);return !!e&&!e.classList.contains('hid')}
-  function tek(){if(busy>0||H.classList.contains('on'))return;var k=null;
+  function tek(){var sv=g('svf');if(sv&&sv.style.display&&sv.style.display!=='none'){if(H.classList.contains('on')&&st.v!=='a')yop();return}/* v201: test boshlanishidagi sanoq paytida markaz qayta ochilmasin */
+    if(busy>0||H.classList.contains('on'))return;var k=null;
     if(ochiq('cover'))k='geo';
     else if(ochiq('tzFan')&&g('fzMs')){var h2=document.querySelector('#tzFan .fz-hero h2');k=h2&&KEY[h2.textContent.trim()]}
     if(k){st={v:'c',tur:null,k:k};draw();H.classList.add('on')}}
